@@ -4,7 +4,7 @@
 1. clone repo
 2. open terminal, cd into the project directory
 ```
-cd app
+cd client
 npm install
 npm start
 ```
