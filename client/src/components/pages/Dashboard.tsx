@@ -14,7 +14,7 @@ const Dashboard = () => {
                 <div style={{width: "100%"}}>
                     <Image
                         src={require("../../images/dashboardImg.png")}
-                        style={{height: "450px", objectFit: "contain"}}
+                        style={{height: "410px", objectFit: "contain"}}
                     />
                 </div>
             </Flex>

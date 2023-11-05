@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card = (props: CardProps) => {
     return (
-        <Paper style={{width: "320px"}} shadow="sm" p="md" withBorder>
+        <Paper style={{width: "285px"}} shadow="sm" p="md" withBorder>
             <Image
                 src={props.img}
                 height={160}
