@@ -3,7 +3,7 @@ import Card from "../global/Card";
 
 const Dashboard = () => {
     return (
-        <div style={{padding: "30px"}}>
+        <div style={{padding: "15px"}}>
             <div style={{width: "450px"}}>
                 <Title style={{padding: "0 0 12px 0"}} order={4} c="blue.4">Welcome to KALM</Title>
                 <Title order={1}>Translate your knowledge into logic</Title>
@@ -18,6 +18,7 @@ const Dashboard = () => {
                     description="description of feature description of feature description of feature description of feature description"
                     titleColor="cyan.7"
                     buttonColor="cyan.6"
+                    link="/parseFrame"
                 />
                 <Card 
                     img="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
@@ -25,6 +26,7 @@ const Dashboard = () => {
                     description="description of feature description of feature description of feature description of feature description"
                     titleColor="green.7"
                     buttonColor="green.6"
+                    link="/training"
                 />
                 <Card 
                     img="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
@@ -32,6 +34,7 @@ const Dashboard = () => {
                     description="description of feature description of feature description of feature description of feature description"
                     titleColor="violet.7"
                     buttonColor="violet.3"
+                    link="/cleanFrame"
                 />
                 <Card 
                     img="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
@@ -39,6 +42,7 @@ const Dashboard = () => {
                     description="description of feature description of feature description of feature description of feature description"
                     titleColor="grape.7"
                     buttonColor="grape.3"
+                    link="/questionAnswer"
                 />
             </Flex>
         </div>
