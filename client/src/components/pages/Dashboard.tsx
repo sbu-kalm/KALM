@@ -3,13 +3,21 @@ import Card from "../global/Card";
 
 const Dashboard = () => {
     return (
-        <div style={{padding: "15px"}}>
-            <div style={{width: "450px"}}>
-                <Title style={{padding: "0 0 12px 0"}} order={4} c="blue.4">Welcome to KALM</Title>
-                <Title order={1}>Translate your knowledge into logic</Title>
-                <Text style={{padding: "12px 0"}} size="md" fw={500} c="gray.6">short description of kalm short description of kalm short description of kalm short description of kalm short description of kalm</Text>
-                <Button variant="filled" radius="lg" size="sm" bg="blue.4">Get started!</Button>
-            </div>
+        <div style={{padding: "0 0 0 25px"}}>
+            <Flex align="center">
+                <div style={{width: "700px"}}>
+                    <Title style={{padding: "0 0 12px 0"}} order={4} c="blue.4">Welcome to KALM</Title>
+                    <Title order={1}>Translate your knowledge into logic</Title>
+                    <Text style={{padding: "12px 0"}} size="md" fw={500} c="gray.6">short description of kalm short description of kalm short description of kalm short description of kalm short description of kalm</Text>
+                    <Button variant="filled" radius="lg" size="sm" bg="blue.4">Get started!</Button>
+                </div>
+                <div style={{width: "100%"}}>
+                    <Image
+                        src={require("../../images/dashboardImg.png")}
+                        style={{height: "450px", objectFit: "contain"}}
+                    />
+                </div>
+            </Flex>
             <Title style={{padding: "20px 0px"}} order={2} c="blue.4">Available Features</Title>
             <Flex gap="md" wrap="wrap">
                 <Card 
