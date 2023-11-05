@@ -10,13 +10,12 @@ interface CardProps {
 
 const Card = (props: CardProps) => {
     return (
-        <Paper style={{width: "330px"}} shadow="sm" p="md" withBorder>
+        <Paper style={{width: "320px"}} shadow="sm" p="md" withBorder>
             <Image
                 src={props.img}
                 height={160}
-                alt="Norway"
             />
-            <Text style={{padding: "10px 0px"}} size="lg" fw={500} c={props.titleColor}>{props.title}</Text>
+            <Text style={{padding: "10px 0px"}} size="lg" fw={600} c={props.titleColor}>{props.title}</Text>
             <Text>{props.description}</Text>
             <Button style={{margin: "10px 0px 0px 0px"}} bg={props.buttonColor} fullWidth>Try Now</Button>
         </Paper>
