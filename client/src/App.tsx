@@ -1,9 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route, useNavigate, Link} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { useState } from 'react';
-import { AppShell, Burger, NavLink, Box} from '@mantine/core';
+import { AppShell, Burger, NavLink, ThemeIcon} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Home, Plus, Database, MessageSquare, HelpCircle, Disc, HardDrive } from 'react-feather';
 import Dashboard from './components/pages/Dashboard';
@@ -50,7 +48,7 @@ function App() {
           <AppShell.Header>
             <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <div>
-              <h1> KALM </h1>
+              <h1 style={{margin:"0px 10px", color:"#339AF0"}}> KALM </h1>
             </div>
           </AppShell.Header>
 
