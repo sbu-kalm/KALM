@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
-import { AppShell, Burger, NavLink, ThemeIcon, UnstyledButton, Group, Box, Stack } from '@mantine/core';
+import { AppShell, Burger, NavLink, ThemeIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Home, Plus, Database, MessageSquare, HelpCircle, Disc, HardDrive } from 'react-feather';
 import Dashboard from './components/pages/Dashboard';
@@ -19,9 +19,9 @@ function App() {
   const navData = [
     { icon: Home, label: 'Dashboard', color: "blue", route: '/' },
     { icon: Plus, label: 'Create Frame', color: "cyan", route: '/createFrame' },
-    { icon: Database, label: 'Parse Frame', color: "orange", route: '/parseFrame' },
     { icon: HardDrive, label: 'Training', color: "grape", route: '/training' },
     { icon: Disc, label: 'Clean Frame', color: "green", route: '/cleanFrame' },
+    { icon: Database, label: 'Parse Frame', color: "orange", route: '/parseFrame' },
     { icon: MessageSquare, label: 'Question Answer', color: "yellow", route: '/questionAnswer' },
     { icon: HelpCircle, label: 'FAQ', color: "red", route: '/faq' },
   ];
@@ -49,7 +49,7 @@ function App() {
       <BrowserRouter>
         <AppShell
           header={{ height: 60 }}
-          navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
+          navbar={{ width: 250, breakpoint: 'sm', collapsed: { mobile: !opened } }}
           padding="md"
         >
           <AppShell.Header>
@@ -59,7 +59,7 @@ function App() {
             </div>
           </AppShell.Header>
 
-          <AppShell.Navbar p="md">
+          <AppShell.Navbar p="sm">
             {navItems}
           </AppShell.Navbar>
 

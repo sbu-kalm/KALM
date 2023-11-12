@@ -1,7 +1,7 @@
 const CreateFrame = () => {
     return (
         <>
-        <h1>CreateFrame</h1>
+            <h1>CreateFrame</h1>
         </>
     )
 }
