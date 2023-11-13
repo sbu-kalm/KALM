@@ -48,7 +48,7 @@ const Training = () => {
                         minRows={18}
                         maxRows={18}
                     />
-                    <Button variant="filled" size={"xs"} style={{margin: "30px 0", borderRadius: "10px"}}>Match Roles</Button>
+                    <Button variant="filled" size={"xs"} style={{margin: "30px 0", borderRadius: "10px"}} color="blue.5">Match Roles</Button>
                 </div>
                 <div style={{minWidth: "220px"}}>
                     <Flex gap={3} align={"flex-end"}>
