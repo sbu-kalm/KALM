@@ -49,7 +49,7 @@ function App() {
       <BrowserRouter>
         <AppShell
           header={{ height: 60 }}
-          navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
+          navbar={{ width: 245, breakpoint: 'sm', collapsed: { mobile: !opened } }}
           padding="md"
         >
           <AppShell.Header>
@@ -59,7 +59,7 @@ function App() {
             </div>
           </AppShell.Header>
 
-          <AppShell.Navbar p="md">
+          <AppShell.Navbar p="sm">
             {navItems}
           </AppShell.Navbar>
 
