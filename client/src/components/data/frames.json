@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Buying"
+    },
+    {
+        "id": "2",
+        "name": "Selling"
+    },
+    {
+        "id": "3",
+        "name": "Renting"
+    },
+    {
+        "id": "4",
+        "name": "Trading"
+    },
+    {
+        "id": "5",
+        "name": "Travel"
+    }
+]

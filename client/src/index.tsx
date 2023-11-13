@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
+import 'mantine-datatable/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 
