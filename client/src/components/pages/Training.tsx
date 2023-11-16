@@ -31,6 +31,10 @@ const Training = () => {
         setShownFrames(framesSubset);
     }
 
+    const showAllFrames = () => {
+        setShownFrames(frames.current);
+    }
+
     return (
         <div style={{padding: "15px 0 0 20px"}}>
             <Title order={2} c="blue">Training</Title>
@@ -56,22 +60,27 @@ const Training = () => {
                         <Text c="red">*</Text>
                     </Flex>
                     <Text size="xs" c="blue" style={{marginBottom: 4}}>Chosen Frame: {chosenFrame}</Text>
-                    <Flex style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px"}}>
-                        <Flex direction={"column"}>
-                            {alphabet.map((letter, index) => {
-                                return <Button key={index} onClick={() => {getFrames(letter)}} style={{padding: "0px"}} variant='transparent' size="compact-xs">
-                                    {letter}
-                                </Button>
-                            })}
+                    <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px"}}>
+                        <Flex>
+                            <Flex direction={"column"}>
+                                {alphabet.map((letter, index) => {
+                                    return <Button key={index} onClick={() => {getFrames(letter)}} style={{padding: "0px"}} variant='transparent' size="compact-xs">
+                                        {letter}
+                                    </Button>
+                                })}
+                            </Flex>
+                            <Flex direction={"column"} style={{height: "568px", overflowY: "scroll", flexShrink: 0}}>
+                                {shownFrames.map((frame, index) => {
+                                    return <div>
+                                        <Button style={{height: "35px"}} onClick = {() => {setChosenFrame(frame)}} fullWidth justify={"flex-start"} key={index} variant='transparent' fw={500} c={"black"}>
+                                            {frame}
+                                        </Button>
+                                    </div>
+                                })}
+                            </Flex>
                         </Flex>
-                        <Flex direction={"column"}>
-                            {shownFrames.map((frame, index) => {
-                                return <Button onClick = {() => {setChosenFrame(frame)}} fullWidth justify={"flex-start"} key={index} variant='transparent' fw={500} c={"black"}>
-                                    {frame}
-                                </Button>
-                            })}
-                        </Flex>
-                    </Flex>
+                        <Button onClick = {() => showAllFrames()} variant="filled" size={"xs"} style={{marginTop: "10px", borderRadius: "10px"}} color="blue.5">Show All</Button>
+                    </div>
                 </div>
             </Flex>
         </div>
