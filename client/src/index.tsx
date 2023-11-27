@@ -4,15 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
+import 'mantine-datatable/styles.css';
 import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <MantineProvider>
+    <Notifications />
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </MantineProvider>
 

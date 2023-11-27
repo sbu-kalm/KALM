@@ -1,4 +1,4 @@
-import { Title, Text, Button, Paper, Image, Flex } from '@mantine/core';
+import { Title, Text, Button, Image, Flex } from '@mantine/core';
 import Card from "../global/Card";
 
 const Dashboard = () => {

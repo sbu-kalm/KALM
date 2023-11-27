@@ -1,9 +1,9 @@
-import { Button, Flex, Grid, Text, Title, Textarea } from '@mantine/core';
+import { Button, Flex, Text, Title, Textarea } from '@mantine/core';
 import { useEffect, useState, useRef } from 'react';
 
 const Training = () => {
     let alphabet: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-    const framesFile = require("../../frames/frame_ont.txt");
+    const framesFile = require("../../data/frame_ont.txt");
     const frames = useRef<string[]>([]);
     const [shownFrames, setShownFrames] = useState<string[]>([]);
     const [chosenFrame, setChosenFrame] = useState<string>("N/A");
