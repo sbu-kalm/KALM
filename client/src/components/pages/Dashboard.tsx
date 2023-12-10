@@ -3,7 +3,7 @@ import Card from "../global/Card";
 
 const Dashboard = () => {
     return (
-        <div style={{padding: "0 0 0 25px"}}>
+        <div style={{padding: "0 0 0 15px"}}>
             <Flex align="center">
                 <div style={{width: "700px"}}>
                     <Title style={{padding: "0 0 12px 0"}} order={4} c="blue.4">Welcome to KALM</Title>
@@ -14,7 +14,7 @@ const Dashboard = () => {
                 <div style={{width: "100%"}}>
                     <Image
                         src={require("../../images/dashboardImg.png")}
-                        style={{height: "410px", objectFit: "contain"}}
+                        style={{height: "380px", objectFit: "contain"}}
                     />
                 </div>
             </Flex>

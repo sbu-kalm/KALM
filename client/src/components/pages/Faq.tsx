@@ -1,7 +1,9 @@
+import { Title } from "@mantine/core";
+
 const FAQ = () => {
     return (
         <>
-        <h1>FAQ</h1>
+        <Title order={2} c="blue">FAQ</Title>
         </>
     )
 }
