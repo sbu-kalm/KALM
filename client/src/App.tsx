@@ -6,7 +6,7 @@ import { Home, Plus, Database, MessageSquare, HelpCircle, Disc, HardDrive } from
 import Dashboard from './components/pages/Dashboard';
 import ManageFrame from './components/pages/FrameManagement/FrameManagement';
 import ParseFrame from './components/pages/ParseFrame';
-import Training from './components/pages/Training';
+import Training from './components/pages/Training/Training';
 import CleanFrame from './components/pages/CleanFrame/CleanFrame';
 import QuestionAnswer from './components/pages/QuestionAnswer';
 import FAQ from './components/pages/FAQ';

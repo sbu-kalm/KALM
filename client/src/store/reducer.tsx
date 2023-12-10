@@ -8,6 +8,11 @@ export const reducer = (state: GlobalStateInterface, action: Action):GlobalState
                 ...state,
                 selectedFrame: action.payload
             }
+        case actionTypes.SET_INPUT_TEXT:
+            return {
+                ...state,
+                inputText: action.payload
+            }
         default:
             return state;
     }

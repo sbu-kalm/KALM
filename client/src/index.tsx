@@ -9,6 +9,7 @@ import 'mantine-datatable/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 import { BrowserRouter } from 'react-router-dom';
+import { GlobalStoreContextProvider } from './store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,12 +17,14 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <MantineProvider>
-    <Notifications />
-    <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>
+    <GlobalStoreContextProvider>
+      <Notifications />
+      <React.StrictMode>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </React.StrictMode>
+    </GlobalStoreContextProvider>
   </MantineProvider>
 
 );
