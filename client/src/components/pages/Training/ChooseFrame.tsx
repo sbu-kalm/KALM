@@ -3,41 +3,27 @@ import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import GlobalStoreContext from "../../../store";
 import { setFrame, setInputText } from '../../../store/actionCreator';
+import frames from '../../../data/frames.json';
 
 const ChooseFrame = () => {
     const { state, dispatch } = useContext(GlobalStoreContext);
     let alphabet: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-    const framesFile = require("../../../data/frame_ont.txt");
-    const frames = useRef<string[]>([]);
     const [shownFrames, setShownFrames] = useState<string[]>([]);
     const [chosenFrame, setChosenFrame] = useState<string | null>(null);
     const [text, setText] = useState<string>("");
 
     useEffect(() => {
-        fetch(framesFile)
-            .then(r => r.text())
-            .then(text => {
-                frames.current = [];
-                const parseOne: string[] = text.split("fp('");
-                for (let i = 1; i < parseOne.length; i++) {
-                    frames.current.push(parseOne[i].split("'")[0])
-                }
-                getFrames("A");
-            })
-    }, []);
+        getFrames("A");
+    }, []); // display all the frames that start with A
 
     const getFrames = (letter: string) => {
-        const framesSubset: string[] = [];
-        for (let i = 0; i < frames.current.length; i++) {
-            if (frames.current[i].startsWith(letter)) {
-                framesSubset.push(frames.current[i]);
-            }
-        }
-        setShownFrames(framesSubset);
+        const frameNames = frames.map(f => f.name); // get the names
+        const frameSubset = frameNames.filter(name => name.startsWith(letter)); // only return the names that start with the specifed letter
+        setShownFrames(frameSubset);
     }
 
     const showAllFrames = () => {
-        setShownFrames(frames.current);
+        setShownFrames(frames.map(f => f.name)); // show all the frames
     }
 
     // when the user clicks match roles button

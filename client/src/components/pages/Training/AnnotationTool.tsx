@@ -26,7 +26,7 @@ const AnnotationTool = () => {
                         </Button>
                     })}
                 </div>
-                <Button variant="filled" size={"xs"} style={{margin: "30px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
+                <Button variant="filled" size={"xs"} style={{margin: "20px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
             </Flex>
             <Flex gap={"sm"} direction={"column"} style={{minWidth: "230px"}}>
                 <Title order={4} c="blue">Lexical Unit</Title>
