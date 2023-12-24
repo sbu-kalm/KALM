@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import GlobalStoreContext from "../../../store";
@@ -60,7 +60,7 @@ const ChooseFrame = () => {
                     size="sm"
                     required
                     label="Enter your training sentence"
-                    description="Example:Mary buys a car for her daughter."
+                    description="Example: Mary buys a car for her daughter."
                     placeholder="Start typing here"
                     autosize
                     minRows={18}
@@ -87,15 +87,15 @@ const ChooseFrame = () => {
                         <Flex direction={"column"} style={{height: "568px", overflowY: "scroll", flexShrink: 0, marginLeft: "8px", width: "90%"}}>
                             {shownFrames.map((frame, index) => {
                                 return <div>
-                                        <Button style={{height: "35px", backgroundColor: 'white'}} onClick = {() => {setChosenFrame(frame)}} fullWidth justify={"flex-start"} key={index} fw={500} c={"black"}>
+                                        <Button style={{height: "35px", backgroundColor: `${frame === chosenFrame ? '#D0EBFF' : 'white'}`}} onClick = {() => {setChosenFrame(frame)}} fullWidth justify={"flex-start"} key={index} fw={500} c={"black"}>
                                             {frame}
                                         </Button>
                                     </div>
                             })}
                         </Flex>
                     </Flex>
-                    <Flex>
-                        <Button onClick = {() => showAllFrames()} variant="filled" size={"xs"} style={{marginTop: "11px", borderRadius: "10px", margin: "auto"}} color="blue.5">Show All</Button>
+                    <Flex style = {{paddingTop: "8px"}}>
+                        <Button onClick = {() => showAllFrames()} variant="filled" size={"xs"} style={{borderRadius: "10px", margin: "auto"}} color="blue.5">Show All</Button>
                     </Flex>
                 </div>
             </div>

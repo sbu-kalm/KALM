@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/tinycolor2": "^1.4.6",
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.9.0",
     "postcss-simple-vars": "^7.0.1"

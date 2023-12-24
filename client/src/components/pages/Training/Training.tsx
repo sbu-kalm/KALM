@@ -1,11 +1,19 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Text, Title } from '@mantine/core';
 import ChooseFrame from './ChooseFrame';
 import GlobalStoreContext from "../../../store";
 import AnnotationTool from './AnnotationTool';
+import { setFrame, setInputText } from '../../../store/actionCreator';
 
 const Training = () => {
     const { state, dispatch } = useContext(GlobalStoreContext);
+
+    useEffect(() => {
+        if (dispatch) {
+            dispatch(setFrame(""));
+            dispatch(setInputText(""));
+        }
+    }, [])
 
     return (
         <>
