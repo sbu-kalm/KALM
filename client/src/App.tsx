@@ -6,7 +6,7 @@ import { Home, Plus, Database, MessageSquare, HelpCircle, Disc, HardDrive } from
 import Dashboard from './components/pages/Dashboard';
 import ManageFrame from './components/pages/FrameManagement/FrameManagement';
 import ParseFrame from './components/pages/ParseFrame';
-import Training from './components/pages/Training';
+import Training from './components/pages/Training/Training';
 import CleanFrame from './components/pages/CleanFrame/CleanFrame';
 import QuestionAnswer from './components/pages/QuestionAnswer';
 import FAQ from './components/pages/FAQ';
@@ -47,7 +47,7 @@ function App() {
       <AppShell
         header={{ height: 60 }}
         navbar={{ width: 245, breakpoint: 'sm', collapsed: { mobile: !opened } }}
-        padding="md"
+        padding="xl"
       >
         <AppShell.Header>
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />

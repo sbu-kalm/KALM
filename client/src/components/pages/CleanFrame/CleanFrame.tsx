@@ -1,5 +1,5 @@
 import { FrameTable } from "./FrameTable"
-import { Button, Breadcrumbs, Anchor, Group, Stack } from "@mantine/core"
+import { Button, Breadcrumbs, Anchor, Group, Stack, Title } from "@mantine/core"
 import { notifications } from '@mantine/notifications';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -28,7 +28,7 @@ const CleanFrame = () => {
 
     return (
         <>
-            <h1>Clean Frame</h1>
+            <Title order={2} c="blue">Clean Frame</Title>
             <Stack>
                 {renderTable()}
             </Stack>
