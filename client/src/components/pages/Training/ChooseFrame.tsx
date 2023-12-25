@@ -71,7 +71,7 @@ const ChooseFrame = () => {
             </div>
             <div style={{minWidth: "230px"}}>
                 <Flex gap={3} align={"flex-end"}>
-                    <Text size="sm" fw={500}>Training</Text>
+                    <Text size="sm" fw={500}>Frames</Text>
                     <Text c="red">*</Text>
                 </Flex>
                 <Text size="xs" c="blue" style={{marginBottom: 4}}>Chosen Frame: {chosenFrame ? chosenFrame : "N/A"}</Text>
