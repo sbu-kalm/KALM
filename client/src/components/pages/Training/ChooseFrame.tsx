@@ -3,27 +3,29 @@ import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import GlobalStoreContext from "../../../store";
 import { setFrame, setInputText } from '../../../store/actionCreator';
-import frames from '../../../data/frames.json';
+import fr from '../../../data/frames.json';
 
 const ChooseFrame = () => {
     const { state, dispatch } = useContext(GlobalStoreContext);
     let alphabet: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    const [frames, setFrames] = useState<string[]>([]);
     const [shownFrames, setShownFrames] = useState<string[]>([]);
     const [chosenFrame, setChosenFrame] = useState<string | null>(null);
     const [text, setText] = useState<string>("");
 
     useEffect(() => {
-        getFrames("A");
+        const names = fr.map(f => f.name).sort(); // get the names in order
+        setFrames(names); 
+        setShownFrames(names); // show all the names initially
     }, []); // display all the frames that start with A
 
     const getFrames = (letter: string) => {
-        const frameNames = frames.map(f => f.name); // get the names
-        const frameSubset = frameNames.filter(name => name.startsWith(letter)).sort(); // only return the names that start with the specifed letter
+        const frameSubset = frames.filter(name => name.startsWith(letter)); // only return the names that start with the specifed letter
         setShownFrames(frameSubset);
     }
 
     const showAllFrames = () => {
-        setShownFrames(frames.map(f => f.name).sort()); // show all the frames
+        setShownFrames(frames); // show all the frames
     }
 
     // when the user clicks match roles button
