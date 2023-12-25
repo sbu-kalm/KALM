@@ -22,8 +22,8 @@ function App() {
     { icon: HardDrive, label: 'Training', color: "grape", route: '/training' },
     { icon: Disc, label: 'Clean Frame', color: "green", route: '/cleanFrame' },
     { icon: Database, label: 'Parse Frame', color: "orange", route: '/parseFrame' },
-    { icon: MessageSquare, label: 'Question Answer', color: "yellow", route: '/questionAnswer' },
-    { icon: HelpCircle, label: 'FAQ', color: "red", route: '/faq' },
+    { icon: MessageSquare, label: 'Question Answer', color: "pink", route: '/questionAnswer' },
+    { icon: HelpCircle, label: 'FAQ', color: "yellow", route: '/faq' },
   ];
 
   const navItems = navData.map((item, index) => (
