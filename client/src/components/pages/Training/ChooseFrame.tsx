@@ -56,7 +56,7 @@ const ChooseFrame = () => {
 
     return (
         <Flex gap={"xl"}>
-            <div style={{width: "500px"}}>
+            <div style={{width: "540px"}}>
                 <Textarea
                     variant="filled"
                     size="sm"
@@ -71,7 +71,7 @@ const ChooseFrame = () => {
                 />
                 <Button onClick={clickMatchRoles} variant="filled" size={"xs"} style={{margin: "30px 0", borderRadius: "10px"}} color="blue.5">Match Roles</Button>
             </div>
-            <div style={{minWidth: "230px"}}>
+            <div style={{minWidth: "240px"}}>
                 <Flex gap={3} align={"flex-end"}>
                     <Text size="sm" fw={500}>Frames</Text>
                     <Text c="red">*</Text>
