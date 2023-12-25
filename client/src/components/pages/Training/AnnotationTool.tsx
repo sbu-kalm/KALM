@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
-import { Button, Flex, Title } from '@mantine/core';
+import { Button, Flex, Title, Text } from '@mantine/core';
 import GlobalStoreContext from "../../../store";
+import tinycolor from 'tinycolor2';
 
 import frames from '../../../data/frames.json';
 
@@ -77,7 +78,7 @@ const AnnotationTool = () => {
                 </div>
                 <Title order={4} c="blue">Roles</Title>
                 <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px", width: "100%"}}>
-                    <Flex direction={"column"} style={{height: "200px", overflowY: "scroll", flexShrink: 0, width: "100%"}}>
+                    <Flex direction={"column"} style={{height: "300px", overflowY: "scroll", flexShrink: 0, width: "100%"}}>
                         {roles.slice(1).map((role, index) => {
                             return <div>
                                     <Button onClick={() => clickRole(index + 1)} style={{height: "35px", backgroundColor: `${activeItemIdx !== null && roles[activeItemIdx].name === role.name ? role.color : 'white'}`}} fullWidth justify={"flex-start"} key={index} fw={500} c={"black"}>
@@ -86,21 +87,23 @@ const AnnotationTool = () => {
                                 </div>
                         })}
                     </Flex>
-                    <Flex style = {{paddingTop: "10px"}}>
-                        <Button variant="filled" size={"xs"} style={{borderRadius: "10px", margin: "auto"}} color="blue.5">All Colors</Button>
-                    </Flex>
                 </div>
             </Flex>
-            <Flex gap={"sm"} direction={"column"} style={{width: "500px"}}>
+            <Flex gap={"sm"} direction={"column"} style={{width: "550px"}}>
                 <Title order={4} c="blue">Sentence</Title>
-                <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "15px", width: "100%", height: "435px"}}>
-                    {words.map((word, index) => {
-                        return <Button 
-                                onClick = {() => clickText(word)} key = {index} style={{height: "22px", backgroundColor: `${word.role ? word.role.color : "white"}`, padding: "2px"}} justify={"flex-start"} fw={400} c={"black"}>
-                            {word.text}
-                        </Button>
-                    })}
-                </div>
+                <Flex style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "15px", width: "100%", height: "435px"}}>
+                    <Flex wrap="wrap" style={{alignSelf:"start", columnGap: "2px", rowGap:"5px"}}>
+                        {words.map((word, index) => {
+                            return <div style={{textAlign: "center"}}>
+                                {word.role ? <Text size="xs" fw={500} style={{color: tinycolor(word.role.color).darken(25).toString()}}>{word.role.name === "Lexical Units" ? "LU" : word.role.name}</Text> : <Text size="xs" c="white">N/A</Text>}
+                                <Button 
+                                    onClick = {() => clickText(word)} key = {index} style={{height: "23px", backgroundColor: `${word.role ? word.role.color : "white"}`, padding: "3px", width: "100%"}} fw={400} c={"black"}>
+                                    {word.text}
+                                </Button>
+                            </div>
+                        })}
+                    </Flex>
+                </Flex>
                 <Button variant="filled" size={"xs"} style={{margin: "15px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
             </Flex>
         </Flex>
