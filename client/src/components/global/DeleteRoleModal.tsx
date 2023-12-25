@@ -3,12 +3,12 @@ import { Modal, Button, Group } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 
-interface EditFrameModalProps {
+interface DeleteRoleModalProps {
   opened: boolean;
   onClose: () => void;
 }
 
-const EditFrameModal: React.FC<EditFrameModalProps> = ({ opened, onClose }) => {
+const DeleteRoleModal: React.FC<DeleteRoleModalProps> = ({ opened, onClose }) => {
   const handleConfirm = () => {
     onClose();
     notifications.show({
@@ -34,4 +34,4 @@ const EditFrameModal: React.FC<EditFrameModalProps> = ({ opened, onClose }) => {
   );
 }
 
-export default EditFrameModal;
+export default DeleteRoleModal;

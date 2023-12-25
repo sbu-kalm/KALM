@@ -14,6 +14,8 @@ const ManageFrame = () => {
     useEffect(() => {
         if (selectedFrame) {
             setTable("roles");
+        }else{
+            setTable("frames");
         }
     }, [selectedFrame]);
 

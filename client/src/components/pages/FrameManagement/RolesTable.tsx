@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 import { Frame } from '../../../utils/Hooks';
 import frames from '../../../data/frames.json';
 import { Anchor, Button, Breadcrumbs, Group } from '@mantine/core';
-import DeleteFrameModal from "../../global/DeleteFrameModal";
-import EditFrameModal from "../../global/EditFrameModal";
+import DeleteRoleModal from "../../global/DeleteRoleModal";
+import EditRoleModal from "../../global/EditRoleModal";
 import AddRoleModal from '../../global/AddRoleModal';
 import { useDisclosure } from '@mantine/hooks';
 
@@ -61,7 +61,7 @@ export function RolesTable() {
                     Delete
                 </Button>
                 <Button variant="outline" color="orange"
-                    onClick={() => setEditModal.open}
+                    onClick={setEditModal.open}
                     disabled={selectedRecords.length !== 1}>
                     Edit
                 </Button>
@@ -92,17 +92,18 @@ export function RolesTable() {
             )}
             {/* Show edit modal when needed */}
             {editModalOpened && (
-                <EditFrameModal
+                <EditRoleModal
                     opened={editModalOpened}
                     onClose={setEditModal.close}
-                ></EditFrameModal>
+                    role={selectedRecords[0].name}
+                ></EditRoleModal>
             )}
             {/* Show delete modal when needed */}
             {deleteModalOpened && (
-                <DeleteFrameModal
+                <DeleteRoleModal
                     opened={deleteModalOpened}
                     onClose={setDeleteModal.close}
-                ></DeleteFrameModal>
+                ></DeleteRoleModal>
             )}
         </>
     );
