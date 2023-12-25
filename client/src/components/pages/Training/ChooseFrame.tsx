@@ -18,12 +18,12 @@ const ChooseFrame = () => {
 
     const getFrames = (letter: string) => {
         const frameNames = frames.map(f => f.name); // get the names
-        const frameSubset = frameNames.filter(name => name.startsWith(letter)); // only return the names that start with the specifed letter
+        const frameSubset = frameNames.filter(name => name.startsWith(letter)).sort(); // only return the names that start with the specifed letter
         setShownFrames(frameSubset);
     }
 
     const showAllFrames = () => {
-        setShownFrames(frames.map(f => f.name)); // show all the frames
+        setShownFrames(frames.map(f => f.name).sort()); // show all the frames
     }
 
     // when the user clicks match roles button
