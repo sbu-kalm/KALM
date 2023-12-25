@@ -9,7 +9,7 @@ import ParseFrame from './components/pages/ParseFrame';
 import Training from './components/pages/Training/Training';
 import CleanFrame from './components/pages/CleanFrame/CleanFrame';
 import QuestionAnswer from './components/pages/QuestionAnswer';
-import FAQ from './components/pages/FAQ';
+import FAQ from './components/pages/Faq';
 import "../src/css/NavbarStyle.css";
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
     { icon: HardDrive, label: 'Training', color: "grape", route: '/training' },
     { icon: Disc, label: 'Clean Frame', color: "green", route: '/cleanFrame' },
     { icon: Database, label: 'Parse Frame', color: "orange", route: '/parseFrame' },
-    { icon: MessageSquare, label: 'Question Answer', color: "yellow", route: '/questionAnswer' },
-    { icon: HelpCircle, label: 'FAQ', color: "red", route: '/faq' },
+    { icon: MessageSquare, label: 'Question Answer', color: "pink", route: '/questionAnswer' },
+    { icon: HelpCircle, label: 'FAQ', color: "yellow", route: '/faq' },
   ];
 
   const navItems = navData.map((item, index) => (
