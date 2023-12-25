@@ -66,18 +66,6 @@ const AnnotationTool = () => {
 
     return (
         <Flex gap={"xl"}>
-            <Flex gap={"sm"} direction={"column"} style={{width: "500px"}}>
-                <Title order={4} c="blue">Sentence</Title>
-                <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "15px", width: "100%", height: "425px"}}>
-                    {words.map((word, index) => {
-                        return <Button 
-                                onClick = {() => clickText(word)} key = {index} style={{height: "22px", backgroundColor: `${word.role ? word.role.color : "white"}`, padding: "2px"}} justify={"flex-start"} fw={400} c={"black"}>
-                            {word.text}
-                        </Button>
-                    })}
-                </div>
-                <Button variant="filled" size={"xs"} style={{margin: "20px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
-            </Flex>
             <Flex gap={"sm"} direction={"column"} style={{minWidth: "230px"}}>
                 <Title order={4} c="blue">Lexical Unit</Title>
                 <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px", width: "100%"}}>
@@ -102,6 +90,18 @@ const AnnotationTool = () => {
                         <Button variant="filled" size={"xs"} style={{borderRadius: "10px", margin: "auto"}} color="blue.5">All Colors</Button>
                     </Flex>
                 </div>
+            </Flex>
+            <Flex gap={"sm"} direction={"column"} style={{width: "500px"}}>
+                <Title order={4} c="blue">Sentence</Title>
+                <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "15px", width: "100%", height: "435px"}}>
+                    {words.map((word, index) => {
+                        return <Button 
+                                onClick = {() => clickText(word)} key = {index} style={{height: "22px", backgroundColor: `${word.role ? word.role.color : "white"}`, padding: "2px"}} justify={"flex-start"} fw={400} c={"black"}>
+                            {word.text}
+                        </Button>
+                    })}
+                </div>
+                <Button variant="filled" size={"xs"} style={{margin: "15px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
             </Flex>
         </Flex>
     );
