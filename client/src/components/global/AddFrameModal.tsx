@@ -5,12 +5,8 @@ import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
-import frames from '../../data/frames.json';
-
-interface AddFrameModalProps {
-  opened: boolean;
-  onClose: () => void;
-}
+// import frames from '../../data/frames.json';
+import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
 
 interface FormValues {
   frameName: string;
@@ -18,7 +14,10 @@ interface FormValues {
   [key: string]: string;
 }
 
-const AddFrameModal: React.FC<AddFrameModalProps> = ({ opened, onClose }) => {
+function AddFrameModalBase() {
+  const managePageState = useManageContext();
+  const setManagePageState = useManageDispatchContext();
+
   const [inputs, setInputs] = useState([{ placeholder: 'Input placeholder' }]);
 
   const handleAddInput = () => {
@@ -50,41 +49,60 @@ const AddFrameModal: React.FC<AddFrameModalProps> = ({ opened, onClose }) => {
     },
   });
 
-  const handleConfirm = () => {
-    onClose();
-    notifications.show({
-      icon: <IconCheck />,
-      title: 'Your frames has been add!',
-      message: 'Wooohoo! :)',
-    })
-  }
+  // const handleConfirm = () => {
+  //   onClose();
+  //   notifications.show({
+  //     icon: <IconCheck />,
+  //     title: 'Your frames has been add!',
+  //     message: 'Wooohoo! :)',
+  //   })
+  // }
 
   const handleFormSubmit = () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
 
-    const maxId = Math.max(...frames.map(frame => frame.id));
+    // Get the max id of the frames array
+    const maxId = managePageState.frameList.length
+
+    console.log(form.values, "FORM VALUES")
 
     // Create a new object with the id being 1 more than the maxId
     const newFrame = {
       id: maxId + 1,
       name: (form.values as FormValues).frameName,
+      roles: Object.entries(form.values as FormValues)
+        .filter(([key]) => key.startsWith('role'))
+        .map(([key, value]) => ({
+          name: value,
+          values: []
+        })),
       description: (form.values as FormValues).description,
-      roles: inputs.map((input, index) => ({
-        name: (form.values as FormValues)[`role${index}`],
-        values: []
-      }))
     };
 
     console.log(newFrame, "NEW FRAME");
 
-    handleConfirm();
+    const updatedFrameList = managePageState.frameList.concat(newFrame);
+
+    // Add the new frame to the frameList
+    setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFrameList });
+
+    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" });
+
+    // handleConfirm();
   };
 
   return (
     <>
-      <Modal id="add-frame-modal" opened={opened} onClose={onClose} title="Add Frame" centered size="xl">
+      <Modal id="add-frame-modal"
+        opened={managePageState.modal === "ADD_FRAME"}
+        onClose={() => 
+          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+        }
+        title="Add Frame"
+        centered size="xl"
+      >
         <form onSubmit={form.onSubmit((values) => handleFormSubmit())}>
           <SimpleGrid cols={2} spacing="xl">
             <Box>
@@ -151,4 +169,12 @@ const AddFrameModal: React.FC<AddFrameModalProps> = ({ opened, onClose }) => {
   );
 }
 
-export default AddFrameModal;
+// wrap it in a conditional loading 
+export function AddFrameModal() {
+  const managePageState = useManageContext();
+  return (
+    <>
+      {managePageState.modal === "ADD_FRAME" && <AddFrameModalBase />}
+    </>
+  )
+}

@@ -4,11 +4,11 @@ import { DataTable, DataTableColumn } from 'mantine-datatable';
 import { notifications } from '@mantine/notifications';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import { Frame } from '../../../utils/Hooks';
-import frames from '../../../data/frames.json';
+import { Frame } from '../../../utils/models/Frame';
 import { Button, Group, Breadcrumbs, Anchor } from '@mantine/core';
-import AddFrameModal from "../../global/AddFrameModal";
+import { AddFrameModal } from '../../global/AddFrameModal';
 import { useDisclosure } from "@mantine/hooks";
+import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
 const columns: DataTableColumn<Frame>[] = [
     { accessor: 'name', width: '25%' },
@@ -18,12 +18,15 @@ const columns: DataTableColumn<Frame>[] = [
 const PAGE_SIZE = 100;
 
 export function FrameTable() {
+    const manageState = useManageContext();
+    const setManagePageState = useManageDispatchContext();
+
     // This is the hook that allows us to navigate to different pages
     const navigate = useNavigate();
     const { selectedFrame } = useParams();
     const [page, setPage] = useState(1);
     // const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
-    const [records, setRecords] = useState(frames.slice(0, PAGE_SIZE));
+    const [records, setRecords] = useState(manageState.frameList.slice(0, PAGE_SIZE));
     const [addModalOpened, setAddModal] = useDisclosure(false);
 
     const items = [
@@ -40,8 +43,8 @@ export function FrameTable() {
     useEffect(() => {
         const from = (page - 1) * PAGE_SIZE;
         const to = from + PAGE_SIZE;
-        setRecords(frames.slice(from, to));
-    }, [page]);
+        setRecords(manageState.frameList.slice(from, to));
+    }, [page, manageState.frameList]);
 
     // This function is called when the user clicks on a row
     // It will navigate to the page with the name of the frame
@@ -58,6 +61,7 @@ export function FrameTable() {
 
     return (
         <>
+            <AddFrameModal />
             <Group >
                 <Breadcrumbs>{items}</Breadcrumbs>
                 {/* <Button
@@ -71,7 +75,7 @@ export function FrameTable() {
                 </Button> */}
                 <Button variant="outline" color="green"
                     style={{ marginLeft: "auto" }}
-                    onClick={setAddModal.open}>
+                    onClick={() => setManagePageState({ type: "CHANGE_MODAL", modal: "ADD_FRAME" })}>
                     Add
                 </Button>
             </Group>
@@ -87,19 +91,11 @@ export function FrameTable() {
                 // selectedRecords={selectedRecords}
                 // onSelectedRecordsChange={setSelectedRecords}
                 onRowClick={({ record, index }) => handleRowClick(record, index)}
-                totalRecords={frames.length}
+                totalRecords={manageState.frameList.length}
                 recordsPerPage={PAGE_SIZE}
                 page={page}
                 onPageChange={(p) => setPage(p)}
             />
-
-            {/* Show delete modal when needed */}
-            {addModalOpened && (
-                <AddFrameModal
-                    opened={addModalOpened}
-                    onClose={setAddModal.close}
-                ></AddFrameModal>
-            )}
         </>
     );
 

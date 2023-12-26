@@ -2,16 +2,14 @@ import React from "react";
 import { Modal, Button, Group, TextInput } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
+import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
 
-interface EditRoleModalProps {
-  opened: boolean;
-  onClose: () => void;
-  role: string;
-}
+function EditRoleModalBase() {
+  const managePageState = useManageContext();
+  const setManagePageState = useManageDispatchContext();
 
-const EditRoleModal: React.FC<EditRoleModalProps> = ({ opened, onClose, role}) => {
   const handleConfirm = () => {
-    onClose();
+    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,
       title: 'Your frame has been updated!',
@@ -21,20 +19,32 @@ const EditRoleModal: React.FC<EditRoleModalProps> = ({ opened, onClose, role}) =
 
   return (
     <>
-      <Modal id="delete-modal" opened={opened} onClose={onClose} title="Edit Role?" centered size="sm">
+      <Modal id="edit-role-modal"
+        opened={managePageState.modal === "EDIT_ROLE"}
+        onClose={() =>
+          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+        }
+        title="Edit Role?"
+        centered size="sm">
         <TextInput
           label="Role Name"
           description="Update the name of this role"
-          defaultValue={role}
           style={{ marginBottom: "10px" }}
           data-autofocus
           withAsterisk
         />
-        <Group justify="space-between" style={{marginTop: '20px'}}>
-          <Button variant="light" onClick={onClose} id="edit-role-modal-cancel-button">
+        <Group justify="space-between" style={{ marginTop: '20px' }}>
+          <Button variant="light"
+            id="edit-role-modal-cancel-button"
+            onClick={() =>
+              setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+            }
+          >
             Cancel
           </Button>
-          <Button variant="filled" onClick={handleConfirm} id="edit-role-modal-confirm-button">
+          <Button variant="filled"
+            id="edit-role-modal-confirm-button"
+            onClick={handleConfirm} >
             Confirm
           </Button>
         </Group>
@@ -43,4 +53,12 @@ const EditRoleModal: React.FC<EditRoleModalProps> = ({ opened, onClose, role}) =
   );
 }
 
-export default EditRoleModal;
+// wrap it in a conditional loading 
+export function EditRoleModal() {
+  const managePageState = useManageContext();
+  return (
+    <>
+      {managePageState.modal === "EDIT_ROLE" && <EditRoleModalBase />}
+    </>
+  )
+}
