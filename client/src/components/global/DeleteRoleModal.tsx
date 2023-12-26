@@ -40,7 +40,6 @@ function DeleteRoleModalBase() {
       setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
     }
 
-
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,

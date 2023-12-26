@@ -27,28 +27,25 @@ function EditRoleModalBase() {
       return role;
     }) || [];
 
-    if (updatedRoles) {
-      // create new frame with new roles
-      const updatedFrame: Frame = {
-        ...selectedFrameInfo,
-        name: selectedFrameInfo?.name || 'Default Name',
-        roles: updatedRoles
-      }
-
-      // find selected frame in framesList and replace it with new frame
-      const updatedFramesList = managePageState.frameList?.map((frame) => {
-        if (frame.id === selectedFrameInfo?.id) {
-          return updatedFrame;
-        }
-        return frame;
-      })
-
-      console.log(updatedFramesList, "new frames list")
-
-      // set new framesList in manage state
-      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+    // create new frame with new roles
+    const updatedFrame: Frame = {
+      ...selectedFrameInfo,
+      name: selectedFrameInfo?.name || 'Default Name',
+      roles: updatedRoles
     }
 
+    // find selected frame in framesList and replace it with new frame
+    const updatedFramesList = managePageState.frameList?.map((frame) => {
+      if (frame.id === selectedFrameInfo?.id) {
+        return updatedFrame;
+      }
+      return frame;
+    })
+
+    console.log(updatedFramesList, "new frames list")
+
+    // set new framesList in manage state
+    setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
 
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({

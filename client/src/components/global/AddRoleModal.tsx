@@ -1,4 +1,4 @@
-import React from "react";
+import { useParams } from "react-router-dom";
 import { Modal, Button, Group, TextInput, Textarea, SimpleGrid, Box, ActionIcon, CloseButton } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
@@ -6,8 +6,10 @@ import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+import { Frame, Role } from "../../utils/models/Frame";
 
 function AddRoleModalBase() {
+  const { selectedFrame } = useParams();
   const managePageState = useManageContext();
   const setManagePageState = useManageDispatchContext();
 
@@ -32,7 +34,48 @@ function AddRoleModalBase() {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
+
+    const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
+
+    const currentRoles = selectedFrameInfo?.roles || [];
+
+    // update selectedFrameInfo.roles[] by adding new roles
+    const updatedRoles: Role[] = currentRoles.concat(
+      Object.values(form.values)
+        .filter((value) => value !== "")
+        .map((value) => ({
+          name: value as string,
+          values: []
+        }))
+    ) || [];
+
+    // create updated frame with updated roles
+    const updatedFrame: Frame = {
+      ...selectedFrameInfo,
+      name: selectedFrameInfo?.name || 'Default Name',
+      roles: updatedRoles
+    }
+
+    // find selected frame in framesList and replace it with new frame
+    const updatedFramesList = managePageState.frameList?.map((frame) => {
+      if (frame.id === selectedFrameInfo?.id) {
+        return updatedFrame;
+      }
+      return frame;
+    })
+
+    console.log(updatedFramesList, "new frames list")
+
+    // set new framesList in manage state
+    setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+
+    notifications.show({
+      icon: <IconCheck />,
+      title: 'Your new roles have been added!',
+      message: 'Woohoo! :D',
+    })
   };
 
   return (

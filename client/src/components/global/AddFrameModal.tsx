@@ -49,15 +49,6 @@ function AddFrameModalBase() {
     },
   });
 
-  // const handleConfirm = () => {
-  //   onClose();
-  //   notifications.show({
-  //     icon: <IconCheck />,
-  //     title: 'Your frames has been add!',
-  //     message: 'Wooohoo! :)',
-  //   })
-  // }
-
   const handleFormSubmit = () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
@@ -90,7 +81,11 @@ function AddFrameModalBase() {
 
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" });
 
-    // handleConfirm();
+    notifications.show({
+      icon: <IconCheck />,
+      title: 'Your new frame has been added!',
+      message: 'Woohoo! :D',
+    })
   };
 
   return (
