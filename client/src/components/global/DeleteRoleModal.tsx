@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
-import { Frame } from "../../utils/models/Frame";
+import { Frame, Role } from "../../utils/models/Frame";
 
 function DeleteRoleModalBase() {
   const { selectedFrame } = useParams();
@@ -13,30 +13,31 @@ function DeleteRoleModalBase() {
 
   const handleConfirm = () => {
     const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
-    // remove selected records from frame
-    const newRoles = selectedFrameInfo?.roles?.
-      filter((role) => !managePageState.selectedRecords?.includes(role));
+    
+    // update roles[] by removing selected records from frame
+    const updatedRoles: Role[] = selectedFrameInfo?.roles?.
+      filter((role) => !managePageState.selectedRecords?.includes(role)) || [];
 
-    if (newRoles) {
+    if (updatedRoles) {
       // create new frame with new roles
-      const newFrame: Frame = {
+      const updatedFrame: Frame = {
         ...selectedFrameInfo,
         name: selectedFrameInfo?.name || 'Default Name',
-        roles: newRoles
+        roles: updatedRoles
       }
 
       // find selected frame in framesList and replace it with new frame
-      const newFramesList = managePageState.frameList?.map((frame) => {
+      const updatedFramesList = managePageState.frameList?.map((frame) => {
         if (frame.id === selectedFrameInfo?.id) {
-          return newFrame;
+          return updatedFrame;
         }
         return frame;
       })
 
-      console.log(newFramesList, "new frames list")
+      console.log(updatedFramesList, "new frames list")
 
       // set new framesList in manage state
-      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: newFramesList });
+      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
     }
 
 

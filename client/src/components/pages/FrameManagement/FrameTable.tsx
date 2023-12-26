@@ -7,7 +7,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Frame } from '../../../utils/models/Frame';
 import { Button, Group, Breadcrumbs, Anchor } from '@mantine/core';
 import { AddFrameModal } from '../../global/AddFrameModal';
-import { useDisclosure } from "@mantine/hooks";
 import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
 const columns: DataTableColumn<Frame>[] = [

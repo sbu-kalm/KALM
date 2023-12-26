@@ -9,7 +9,6 @@ import { Anchor, Button, Breadcrumbs, Group } from '@mantine/core';
 import { DeleteRoleModal } from '../../global/DeleteRoleModal';
 import { EditRoleModal } from '../../global/EditRoleModal';
 import { AddRoleModal } from '../../global/AddRoleModal';
-import { useDisclosure } from '@mantine/hooks';
 import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
 const columns: DataTableColumn<Role>[] = [
@@ -25,15 +24,15 @@ export function RolesTable() {
     const [records, setRecords] = useState<Role[]>(managePageState.selectedFrame?.roles || []);
     const [selectedRecords, setSelectedRecords] = useState<Role[]>([]);
 
+    // set records in table when frameList changes
     useEffect(() => {
-        // set records in table when frameList changes
         const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
-        setRecords(selectedFrameInfo?.roles || []);
-        setSelectedRecords([]);
+        setRecords(selectedFrameInfo?.roles || []); // set records in table
+        setSelectedRecords([]); // clear selected records
     }, [managePageState.frameList]);
 
+    // set selected records in manage state when the selected records change
     useEffect(() => {
-        // set selected records in manage state when the selected records change
         setManagePageState({ type: "SET_SELECTED_ROLES", selectedRecords: selectedRecords });
     }, [selectedRecords]);
 

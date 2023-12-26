@@ -3,16 +3,57 @@ import { Modal, Button, Group, TextInput } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { Frame, Role } from "../../utils/models/Frame";
 
 function EditRoleModalBase() {
+  const { selectedFrame } = useParams();
   const managePageState = useManageContext();
   const setManagePageState = useManageDispatchContext();
+  const initialRoleName = managePageState.selectedRecords?.[0].name;
+  const [roleName, setRoleName] = useState(managePageState.selectedRecords?.[0].name);
+
+  console.log(managePageState.selectedRecords, "selected records")
 
   const handleConfirm = () => {
+    const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
+    // To-do: Update role name using individual ID instead of name
+    // Current will find initial role name in selectedFrame and then update it to new role name
+    const updatedRoles: Role[] = selectedFrameInfo?.roles?.map((role) => {
+      if (role.name === initialRoleName) {
+        return { ...role, name: roleName || 'Default Name' }
+      }
+      return role;
+    }) || [];
+
+    if (updatedRoles) {
+      // create new frame with new roles
+      const updatedFrame: Frame = {
+        ...selectedFrameInfo,
+        name: selectedFrameInfo?.name || 'Default Name',
+        roles: updatedRoles
+      }
+
+      // find selected frame in framesList and replace it with new frame
+      const updatedFramesList = managePageState.frameList?.map((frame) => {
+        if (frame.id === selectedFrameInfo?.id) {
+          return updatedFrame;
+        }
+        return frame;
+      })
+
+      console.log(updatedFramesList, "new frames list")
+
+      // set new framesList in manage state
+      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+    }
+
+
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,
-      title: 'Your frame has been updated!',
+      title: 'Your role has been updated!',
       message: 'Woohoo! :D',
     })
   }
@@ -29,6 +70,8 @@ function EditRoleModalBase() {
         <TextInput
           label="Role Name"
           description="Update the name of this role"
+          value={roleName}
+          onChange={(event) => setRoleName(event.currentTarget.value)}
           style={{ marginBottom: "10px" }}
           data-autofocus
           withAsterisk
