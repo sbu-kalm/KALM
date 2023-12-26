@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Modal, Button, Group, TextInput, Textarea, SimpleGrid, Box, ActionIcon, CloseButton } from "@mantine/core";
+import { Modal, Button, Group, TextInput, Box, ActionIcon, CloseButton } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "@mantine/form";
@@ -10,8 +10,8 @@ import { Frame, Role } from "../../utils/models/Frame";
 
 function AddRoleModalBase() {
   const { selectedFrame } = useParams();
-  const managePageState = useManageContext();
-  const setManagePageState = useManageDispatchContext();
+  const manageState = useManageContext();
+  const setManageState = useManageDispatchContext();
 
   const [inputs, setInputs] = useState([{ placeholder: 'Input placeholder' }]);
 
@@ -21,21 +21,12 @@ function AddRoleModalBase() {
 
   const form = useForm({});
 
-  const handleConfirm = () => {
-    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
-    notifications.show({
-      icon: <IconCheck />,
-      title: 'Your roles has been add!',
-      message: 'Wooohoo! :)',
-    })
-  }
-
   const handleFormSubmit = () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
 
-    const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
+    const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
 
     const currentRoles = selectedFrameInfo?.roles || [];
 
@@ -57,7 +48,7 @@ function AddRoleModalBase() {
     }
 
     // find selected frame in framesList and replace it with new frame
-    const updatedFramesList = managePageState.frameList?.map((frame) => {
+    const updatedFramesList = manageState.frameList?.map((frame) => {
       if (frame.id === selectedFrameInfo?.id) {
         return updatedFrame;
       }
@@ -67,9 +58,9 @@ function AddRoleModalBase() {
     console.log(updatedFramesList, "new frames list")
 
     // set new framesList in manage state
-    setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+    setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
 
-    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+    setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
 
     notifications.show({
       icon: <IconCheck />,
@@ -81,9 +72,9 @@ function AddRoleModalBase() {
   return (
     <>
       <Modal id="add-role-modal"
-        opened={managePageState.modal === "ADD_ROLE"}
+        opened={manageState.modal === "ADD_ROLE"}
         onClose={() =>
-          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+          setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
         }
         title="Add Role"
         centered size="xl">
@@ -131,10 +122,10 @@ function AddRoleModalBase() {
 
 // wrap it in a conditional loading 
 export function AddRoleModal() {
-  const managePageState = useManageContext();
+  const manageState = useManageContext();
   return (
     <>
-      {managePageState.modal === "ADD_ROLE" && <AddRoleModalBase />}
+      {manageState.modal === "ADD_ROLE" && <AddRoleModalBase />}
     </>
   )
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { Modal, Button, Group, TextInput, Textarea, SimpleGrid, Box, ActionIcon, CloseButton } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
@@ -15,8 +14,8 @@ interface FormValues {
 }
 
 function AddFrameModalBase() {
-  const managePageState = useManageContext();
-  const setManagePageState = useManageDispatchContext();
+  const manageState = useManageContext();
+  const setManageState = useManageDispatchContext();
 
   const [inputs, setInputs] = useState([{ placeholder: 'Input placeholder' }]);
 
@@ -55,7 +54,7 @@ function AddFrameModalBase() {
     console.log(form.values);
 
     // Get the max id of the frames array
-    const maxId = managePageState.frameList.length
+    const maxId = manageState.frameList.length
 
     console.log(form.values, "FORM VALUES")
 
@@ -74,12 +73,12 @@ function AddFrameModalBase() {
 
     console.log(newFrame, "NEW FRAME");
 
-    const updatedFrameList = managePageState.frameList.concat(newFrame);
+    const updatedFrameList = manageState.frameList.concat(newFrame);
 
     // Add the new frame to the frameList
-    setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFrameList });
+    setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFrameList });
 
-    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" });
+    setManageState({ type: "CHANGE_MODAL", modal: "NONE" });
 
     notifications.show({
       icon: <IconCheck />,
@@ -91,9 +90,9 @@ function AddFrameModalBase() {
   return (
     <>
       <Modal id="add-frame-modal"
-        opened={managePageState.modal === "ADD_FRAME"}
+        opened={manageState.modal === "ADD_FRAME"}
         onClose={() => 
-          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+          setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
         }
         title="Add Frame"
         centered size="xl"
@@ -166,10 +165,10 @@ function AddFrameModalBase() {
 
 // wrap it in a conditional loading 
 export function AddFrameModal() {
-  const managePageState = useManageContext();
+  const manageState = useManageContext();
   return (
     <>
-      {managePageState.modal === "ADD_FRAME" && <AddFrameModalBase />}
+      {manageState.modal === "ADD_FRAME" && <AddFrameModalBase />}
     </>
   )
 }

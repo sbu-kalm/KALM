@@ -1,4 +1,3 @@
-import React from "react";
 import { Modal, Button, Group } from "@mantine/core";
 import { useParams } from "react-router-dom";
 import { notifications } from "@mantine/notifications";
@@ -8,15 +7,14 @@ import { Frame, Role } from "../../utils/models/Frame";
 
 function DeleteRoleModalBase() {
   const { selectedFrame } = useParams();
-  const managePageState = useManageContext();
-  const setManagePageState = useManageDispatchContext();
+  const manageState = useManageContext();
+  const setManageState = useManageDispatchContext();
 
   const handleConfirm = () => {
-    const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
-    
+    const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
+
     // update roles[] by removing selected records from frame
-    const updatedRoles: Role[] = selectedFrameInfo?.roles?.
-      filter((role) => !managePageState.selectedRecords?.includes(role)) || [];
+    const updatedRoles: Role[] = selectedFrameInfo?.roles?.filter((role) => !manageState.selectedRecords?.includes(role)) || [];
 
     if (updatedRoles) {
       // create new frame with new roles
@@ -27,7 +25,7 @@ function DeleteRoleModalBase() {
       }
 
       // find selected frame in framesList and replace it with new frame
-      const updatedFramesList = managePageState.frameList?.map((frame) => {
+      const updatedFramesList = manageState.frameList?.map((frame) => {
         if (frame.id === selectedFrameInfo?.id) {
           return updatedFrame;
         }
@@ -37,10 +35,10 @@ function DeleteRoleModalBase() {
       console.log(updatedFramesList, "new frames list")
 
       // set new framesList in manage state
-      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+      setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
     }
 
-    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+    setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,
       title: 'Your frames has been deleted!',
@@ -51,9 +49,9 @@ function DeleteRoleModalBase() {
   return (
     <>
       <Modal id="delete-role-modal"
-        opened={managePageState.modal === "DELETE_ROLE"}
+        opened={manageState.modal === "DELETE_ROLE"}
         onClose={() =>
-          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+          setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
         }
         title="Delete Frames?"
         centered size="auto">
@@ -61,7 +59,7 @@ function DeleteRoleModalBase() {
           <Button variant="light"
             id="delete-modal-cancel-button"
             onClick={() =>
-              setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+              setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
             }
           >
             Cancel
@@ -77,10 +75,10 @@ function DeleteRoleModalBase() {
 
 // wrap it in a conditional loading 
 export function DeleteRoleModal() {
-  const managePageState = useManageContext();
+  const manageState = useManageContext();
   return (
     <>
-      {managePageState.modal === "DELETE_ROLE" && <DeleteRoleModalBase />}
+      {manageState.modal === "DELETE_ROLE" && <DeleteRoleModalBase />}
     </>
   )
 }

@@ -7,38 +7,26 @@ interface ManageContextProviderProps {
     children?: React.ReactNode;
 }
 
-export interface ManagePageState {
+export interface ManageState {
     frameList: Frame[];
     modal?: string;
-    selectedFrame?: Frame;
     selectedRecords?: Role[];
-    selectedRole?: {
-        i: number; // index of the role in the frame's roles array
-        name: string; // does not change when being edited. Only changes when user edits and locks it in by pressing enter.
-    };
 }
 
 // Constant initialization
-const initialState: ManagePageState = {
+const initialState: ManageState = {
     frameList: frames,
     modal: ManageModalEnum.NONE,
-    selectedFrame: undefined,
-    selectedRole: undefined,
 };
 
 export interface ManagePageActions {
     type: string;
     frameList?: Frame[];
     modal?: string;
-    selectedFrame?: Frame;
     selectedRecords?: Role[];
-    selectedRole?: {
-        name: string;
-        i: number;
-    };
 }
 
-export const ManageContext = createContext<ManagePageState>(initialState);
+export const ManageContext = createContext<ManageState>(initialState);
 export const ManageDispatchContext = createContext<
     React.Dispatch<ManagePageActions>
 >(() => { });
@@ -46,15 +34,15 @@ export const ManageDispatchContext = createContext<
 /*
  * ManageContextProvider component.
  * Children will attempt to access the state of the edit page by calling:
- *    const manageState = useContext(ManageState)
+ *    const ManageState = useContext(ManageState)
  * Children will attempt to change state through the reducer through methods:
- *    const dispatch = useContext(ManageDispatchContext)
- *    dispatch({
+ *    const setManageState = useContext(ManageDispatchContext)
+ *    setManageState({
  *         
  *    })
  */
 export const ManageContextProvider = (props: ManageContextProviderProps) => {
-    const [managePageState, dispatch] = useReducer(manageReducer, initialState);
+    const [ManageState, dispatch] = useReducer(manageReducer, initialState);
 
     //initialize the frame list
     useEffect(() => {
@@ -75,7 +63,7 @@ export const ManageContextProvider = (props: ManageContextProviderProps) => {
     }
 
     return (
-        <ManageContext.Provider value={managePageState}>
+        <ManageContext.Provider value={ManageState}>
             <ManageDispatchContext.Provider value={dispatch}>
                 {props.children}
             </ManageDispatchContext.Provider>
@@ -84,8 +72,8 @@ export const ManageContextProvider = (props: ManageContextProviderProps) => {
 };
 
 
-// This function handles all of the changes to the edit page state
-const manageReducer = (state: ManagePageState, action: any): ManagePageState => {
+// This function handles all of the changes to the manage page state
+const manageReducer = (state: ManageState, action: any): ManageState => {
     switch (action.type) {
         case "INITIALIZE":
             return {

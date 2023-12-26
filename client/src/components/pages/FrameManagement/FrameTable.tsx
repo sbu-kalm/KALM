@@ -18,7 +18,7 @@ const PAGE_SIZE = 100;
 
 export function FrameTable() {
     const manageState = useManageContext();
-    const setManagePageState = useManageDispatchContext();
+    const setManageState = useManageDispatchContext();
 
     // This is the hook that allows us to navigate to different pages
     const navigate = useNavigate();
@@ -73,7 +73,7 @@ export function FrameTable() {
                 </Button> */}
                 <Button variant="outline" color="green"
                     style={{ marginLeft: "auto" }}
-                    onClick={() => setManagePageState({ type: "CHANGE_MODAL", modal: "ADD_FRAME" })}>
+                    onClick={() => setManageState({ type: "CHANGE_MODAL", modal: "ADD_FRAME" })}>
                     Add
                 </Button>
             </Group>

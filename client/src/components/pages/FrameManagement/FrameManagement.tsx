@@ -3,14 +3,11 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
-import { useManageContext, useManageDispatchContext } from "../../../context/ManageContextProvider";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
     const [table, setTable] = useState("frames");
-    const manageState = useManageContext();
-    const setManagePageState = useManageDispatchContext();
 
     useEffect(() => {
         if (selectedFrame) {

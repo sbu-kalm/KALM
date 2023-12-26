@@ -1,7 +1,4 @@
-'use client';
-
 import { DataTable, DataTableColumn } from 'mantine-datatable';
-import { notifications } from '@mantine/notifications';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { Role } from '../../../utils/models/Frame';
@@ -16,24 +13,24 @@ const columns: DataTableColumn<Role>[] = [
 ];
 
 export function RolesTable() {
-    const managePageState = useManageContext();
-    const setManagePageState = useManageDispatchContext();
+    const manageState = useManageContext();
+    const setManageState = useManageDispatchContext();
 
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
-    const [records, setRecords] = useState<Role[]>(managePageState.selectedFrame?.roles || []);
+    const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
+    const [records, setRecords] = useState<Role[]>(selectedFrameInfo?.roles || []);
     const [selectedRecords, setSelectedRecords] = useState<Role[]>([]);
 
     // set records in table when frameList changes
     useEffect(() => {
-        const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
         setRecords(selectedFrameInfo?.roles || []); // set records in table
         setSelectedRecords([]); // clear selected records
-    }, [managePageState.frameList]);
+    }, [manageState.frameList]);
 
     // set selected records in manage state when the selected records change
     useEffect(() => {
-        setManagePageState({ type: "SET_SELECTED_ROLES", selectedRecords: selectedRecords });
+        setManageState({ type: "SET_SELECTED_ROLES", selectedRecords: selectedRecords });
     }, [selectedRecords]);
 
     // This handles the breadcrumbs
@@ -73,7 +70,7 @@ export function RolesTable() {
                 <Button
                     variant="outline" color="red"
                     onClick={() =>
-                        setManagePageState({ type: "CHANGE_MODAL", modal: "DELETE_ROLE" })
+                        setManageState({ type: "CHANGE_MODAL", modal: "DELETE_ROLE" })
                     }
                     style={{ marginLeft: "auto" }}
                     disabled={selectedRecords.length === 0}>
@@ -81,14 +78,14 @@ export function RolesTable() {
                 </Button>
                 <Button variant="outline" color="orange"
                     onClick={() =>
-                        setManagePageState({ type: "CHANGE_MODAL", modal: "EDIT_ROLE" })
+                        setManageState({ type: "CHANGE_MODAL", modal: "EDIT_ROLE" })
                     }
                     disabled={selectedRecords.length !== 1}>
                     Edit
                 </Button>
                 <Button variant="outline" color="green"
                     onClick={() =>
-                        setManagePageState({ type: "CHANGE_MODAL", modal: "ADD_ROLE" })
+                        setManageState({ type: "CHANGE_MODAL", modal: "ADD_ROLE" })
                     }>
                     Add
                 </Button>
