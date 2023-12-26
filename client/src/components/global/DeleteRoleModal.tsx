@@ -1,14 +1,45 @@
 import React from "react";
 import { Modal, Button, Group } from "@mantine/core";
+import { useParams } from "react-router-dom";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+import { Frame } from "../../utils/models/Frame";
 
 function DeleteRoleModalBase() {
+  const { selectedFrame } = useParams();
   const managePageState = useManageContext();
   const setManagePageState = useManageDispatchContext();
 
   const handleConfirm = () => {
+    const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
+    // remove selected records from frame
+    const newRoles = selectedFrameInfo?.roles?.
+      filter((role) => !managePageState.selectedRecords?.includes(role));
+
+    if (newRoles) {
+      // create new frame with new roles
+      const newFrame: Frame = {
+        ...selectedFrameInfo,
+        name: selectedFrameInfo?.name || 'Default Name',
+        roles: newRoles
+      }
+
+      // find selected frame in framesList and replace it with new frame
+      const newFramesList = managePageState.frameList?.map((frame) => {
+        if (frame.id === selectedFrameInfo?.id) {
+          return newFrame;
+        }
+        return frame;
+      })
+
+      console.log(newFramesList, "new frames list")
+
+      // set new framesList in manage state
+      setManagePageState({ type: "UPDATE_FRAME_LIST", frameList: newFramesList });
+    }
+
+
     setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,

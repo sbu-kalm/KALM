@@ -2,9 +2,9 @@
 
 import { DataTable, DataTableColumn } from 'mantine-datatable';
 import { notifications } from '@mantine/notifications';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-import { Frame } from '../../../utils/models/Frame';
+import { Role } from '../../../utils/models/Frame';
 import { Anchor, Button, Breadcrumbs, Group } from '@mantine/core';
 import { DeleteRoleModal } from '../../global/DeleteRoleModal';
 import { EditRoleModal } from '../../global/EditRoleModal';
@@ -12,20 +12,32 @@ import { AddRoleModal } from '../../global/AddRoleModal';
 import { useDisclosure } from '@mantine/hooks';
 import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
-const columns: DataTableColumn<Frame>[] = [
+const columns: DataTableColumn<Role>[] = [
     { title: 'Role', accessor: 'name', width: '100%' },
 ];
 
 export function RolesTable() {
-    const manageState = useManageContext();
+    const managePageState = useManageContext();
     const setManagePageState = useManageDispatchContext();
 
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
-    const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
+    const [records, setRecords] = useState<Role[]>(managePageState.selectedFrame?.roles || []);
+    const [selectedRecords, setSelectedRecords] = useState<Role[]>([]);
 
-    const roles = manageState.selectedFrame?.roles;
+    useEffect(() => {
+        // set records in table when frameList changes
+        const selectedFrameInfo = managePageState.frameList.find((frame) => frame.name === selectedFrame);
+        setRecords(selectedFrameInfo?.roles || []);
+        setSelectedRecords([]);
+    }, [managePageState.frameList]);
 
+    useEffect(() => {
+        // set selected records in manage state when the selected records change
+        setManagePageState({ type: "SET_SELECTED_ROLES", selectedRecords: selectedRecords });
+    }, [selectedRecords]);
+
+    // This handles the breadcrumbs
     const items = [
         { title: 'Frames', href: '/manageFrame' },
         { title: `${selectedFrame}`, href: '' },
@@ -38,8 +50,7 @@ export function RolesTable() {
         ));
 
     // This function is called when the user clicks on a row
-    // It will navigate to the page with the name of the frame
-    const handleRowClick = (record: Frame, index: number) => {
+    const handleRowClick = (record: Role, index: number) => {
         // add row to selected records if in not selected records
         // remove row from selected records if in selected records
         const newSelectedRecords = selectedRecords.includes(record)
@@ -88,7 +99,7 @@ export function RolesTable() {
                 highlightOnHover
                 withTableBorder
                 withColumnBorders
-                records={roles}
+                records={records}
                 columns={columns}
                 idAccessor={({ name, id }) => `${name}:${id}`}
                 selectedRecords={selectedRecords}

@@ -15,12 +15,6 @@ const ManageFrame = () => {
     useEffect(() => {
         if (selectedFrame) {
             setTable("roles");
-            // find the frame in the frameList
-            const frame = manageState.frameList.find(frame => frame.name === selectedFrame);
-            console.log(frame, "frame")
-            // set the selected frame in the context
-            console.log("setting selected frame")
-            setManagePageState({ type: "SELECT_FRAME", selectedFrame: frame });
         } else {
             setTable("frames");
         }

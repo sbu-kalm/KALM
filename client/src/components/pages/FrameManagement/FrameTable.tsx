@@ -27,7 +27,6 @@ export function FrameTable() {
     const [page, setPage] = useState(1);
     // const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
     const [records, setRecords] = useState(manageState.frameList.slice(0, PAGE_SIZE));
-    const [addModalOpened, setAddModal] = useDisclosure(false);
 
     const items = [
         { title: 'Frames', href: '/manageFrame' },

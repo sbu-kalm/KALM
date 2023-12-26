@@ -86,8 +86,6 @@ export const ManageContextProvider = (props: ManageContextProviderProps) => {
 
 // This function handles all of the changes to the edit page state
 const manageReducer = (state: ManagePageState, action: any): ManagePageState => {
-    console.log("MANAGE REDUCER")
-    console.log(action)
     switch (action.type) {
         case "INITIALIZE":
             return {
@@ -95,6 +93,7 @@ const manageReducer = (state: ManagePageState, action: any): ManagePageState => 
                 frameList: action.frameList ?? frames,
             };
         case "UPDATE_FRAME_LIST":
+            console.log(action.frameList, "FRAME LIST")
             return {
                 ...state,
                 frameList: action.frameList ?? frames,
@@ -103,21 +102,6 @@ const manageReducer = (state: ManagePageState, action: any): ManagePageState => 
             return {
                 ...state,
                 selectedRecords: action.selectedRecords,
-            };
-        case "SELECT_ROLE":
-            const selectedRole = {
-                i: action.i,
-                name: action.name,
-            };
-            return {
-                ...state,
-                selectedRole: selectedRole,
-            };
-        case "SELECT_FRAME":
-            console.log(action.selectedFrame, "SELECTED FRAME")
-            return {
-                ...state,
-                selectedFrame: action.selectedFrame,
             };
         case "CHANGE_MODAL":
             // Check if 'action.modal' exists and is a valid 'ManageModalEnum' value.

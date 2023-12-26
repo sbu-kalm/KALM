@@ -7,12 +7,6 @@ import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
 
-
-interface AddRoleModalProps {
-  opened: boolean;
-  onClose: () => void;
-}
-
 function AddRoleModalBase() {
   const managePageState = useManageContext();
   const setManagePageState = useManageDispatchContext();
