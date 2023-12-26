@@ -5,23 +5,28 @@ import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
+import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+
 
 interface AddRoleModalProps {
   opened: boolean;
   onClose: () => void;
 }
 
-const AddRoleModal: React.FC<AddRoleModalProps> = ({ opened, onClose }) => {
+function AddRoleModalBase() {
+  const managePageState = useManageContext();
+  const setManagePageState = useManageDispatchContext();
+
   const [inputs, setInputs] = useState([{ placeholder: 'Input placeholder' }]);
 
   const handleAddInput = () => {
-    setInputs(inputs => [...inputs, { placeholder: 'Input placeholder'}]);
+    setInputs(inputs => [...inputs, { placeholder: 'Input placeholder' }]);
   };
 
   const form = useForm({});
 
   const handleConfirm = () => {
-    onClose();
+    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
     notifications.show({
       icon: <IconCheck />,
       title: 'Your roles has been add!',
@@ -33,12 +38,18 @@ const AddRoleModal: React.FC<AddRoleModalProps> = ({ opened, onClose }) => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
-    onClose();
+    setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
   };
 
   return (
     <>
-      <Modal id="add-role-modal" opened={opened} onClose={onClose} title="Add Role" centered size="xl">
+      <Modal id="add-role-modal"
+        opened={managePageState.modal === "ADD_ROLE"}
+        onClose={() =>
+          setManagePageState({ type: "CHANGE_MODAL", modal: "NONE" })
+        }
+        title="Add Role"
+        centered size="xl">
         <form onSubmit={form.onSubmit((values) => handleFormSubmit())}>
           <Box>
             <TextInput
@@ -81,4 +92,12 @@ const AddRoleModal: React.FC<AddRoleModalProps> = ({ opened, onClose }) => {
   );
 }
 
-export default AddRoleModal;
+// wrap it in a conditional loading 
+export function AddRoleModal() {
+  const managePageState = useManageContext();
+  return (
+    <>
+      {managePageState.modal === "ADD_ROLE" && <AddRoleModalBase />}
+    </>
+  )
+}

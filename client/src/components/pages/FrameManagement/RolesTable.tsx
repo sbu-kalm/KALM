@@ -8,7 +8,7 @@ import { Frame } from '../../../utils/models/Frame';
 import { Anchor, Button, Breadcrumbs, Group } from '@mantine/core';
 import { DeleteRoleModal } from '../../global/DeleteRoleModal';
 import { EditRoleModal } from '../../global/EditRoleModal';
-import AddRoleModal from '../../global/AddRoleModal';
+import { AddRoleModal } from '../../global/AddRoleModal';
 import { useDisclosure } from '@mantine/hooks';
 import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
@@ -23,7 +23,6 @@ export function RolesTable() {
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
     const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
-    const [addModalOpened, setAddModal] = useDisclosure(false);
 
     const roles = manageState.selectedFrame?.roles;
 
@@ -58,6 +57,7 @@ export function RolesTable() {
         <>
             <DeleteRoleModal />
             <EditRoleModal />
+            <AddRoleModal />
             <Group >
                 <Breadcrumbs>{items}</Breadcrumbs>
                 <Button
@@ -77,7 +77,9 @@ export function RolesTable() {
                     Edit
                 </Button>
                 <Button variant="outline" color="green"
-                    onClick={setAddModal.open}>
+                    onClick={() =>
+                        setManagePageState({ type: "CHANGE_MODAL", modal: "ADD_ROLE" })
+                    }>
                     Add
                 </Button>
             </Group>
@@ -93,14 +95,6 @@ export function RolesTable() {
                 onSelectedRecordsChange={setSelectedRecords}
                 onRowClick={({ record, index }) => handleRowClick(record, index)}
             />
-
-            {/* Show delete modal when needed */}
-            {addModalOpened && (
-                <AddRoleModal
-                    opened={addModalOpened}
-                    onClose={setAddModal.close}
-                ></AddRoleModal>
-            )}
         </>
     );
 
