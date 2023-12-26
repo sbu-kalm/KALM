@@ -1,17 +1,6 @@
 // useFrames.ts
 import { useEffect, useRef, useState } from 'react';
-
-export interface Role {
-  name: string;
-  values: string[];
-}
-
-export interface Frame {
-  id?: number;
-  name: string;
-  roles?: Role[];
-  description?: string;
-}
+import { Frame, Role} from './models/Frame';
 
 export interface FrameExamples {
   frame: string;

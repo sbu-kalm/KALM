@@ -4,7 +4,7 @@ import { DataTable, DataTableColumn } from 'mantine-datatable';
 import { notifications } from '@mantine/notifications';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import { Frame } from '../../../utils/Hooks';
+import { Frame } from '../../../utils/models/Frame';
 import frames from '../../../data/frames.json';
 import { Button, Group, Breadcrumbs, Anchor } from '@mantine/core';
 import { ShowNotification } from '../../../utils/Global';

@@ -3,7 +3,7 @@ import { Text, Stack, Title } from "@mantine/core"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RolesTable } from "./RolesTable";
-import { Frame } from '../../../utils/Hooks';
+import { Frame } from "../../../utils/models/Frame";
 
 const CleanFrame = () => {
     // This is the hook that allows us to navigate to different pages
