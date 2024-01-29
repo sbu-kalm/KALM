@@ -1,44 +1,83 @@
-import React from "react";
-import { Modal, Button, Group, TextInput, Textarea, SimpleGrid, Box, ActionIcon, CloseButton } from "@mantine/core";
+import { useParams } from "react-router-dom";
+import { Modal, Button, Group, TextInput, Box, ActionIcon, CloseButton } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
+import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+import { Frame, Role } from "../../utils/models/Frame";
 
-interface AddRoleModalProps {
-  opened: boolean;
-  onClose: () => void;
-}
+function AddRoleModalBase() {
+  const { selectedFrame } = useParams();
+  const manageState = useManageContext();
+  const setManageState = useManageDispatchContext();
 
-const AddRoleModal: React.FC<AddRoleModalProps> = ({ opened, onClose }) => {
   const [inputs, setInputs] = useState([{ placeholder: 'Input placeholder' }]);
 
   const handleAddInput = () => {
-    setInputs(inputs => [...inputs, { placeholder: 'Input placeholder'}]);
+    setInputs(inputs => [...inputs, { placeholder: 'Input placeholder' }]);
   };
 
   const form = useForm({});
-
-  const handleConfirm = () => {
-    onClose();
-    notifications.show({
-      icon: <IconCheck />,
-      title: 'Your roles has been add!',
-      message: 'Wooohoo! :)',
-    })
-  }
 
   const handleFormSubmit = () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
-    onClose();
+
+    const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
+
+    const currentRoles = selectedFrameInfo?.roles || [];
+
+    // update selectedFrameInfo.roles[] by adding new roles
+    const updatedRoles: Role[] = currentRoles.concat(
+      Object.values(form.values)
+        .filter((value) => value !== "")
+        .map((value) => ({
+          name: value as string,
+          values: []
+        }))
+    ) || [];
+
+    // create updated frame with updated roles
+    const updatedFrame: Frame = {
+      ...selectedFrameInfo,
+      name: selectedFrameInfo?.name || 'Default Name',
+      roles: updatedRoles
+    }
+
+    // find selected frame in framesList and replace it with new frame
+    const updatedFramesList = manageState.frameList?.map((frame) => {
+      if (frame.id === selectedFrameInfo?.id) {
+        return updatedFrame;
+      }
+      return frame;
+    })
+
+    console.log(updatedFramesList, "new frames list")
+
+    // set new framesList in manage state
+    setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
+
+    setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
+
+    notifications.show({
+      icon: <IconCheck />,
+      title: 'Your new roles have been added!',
+      message: 'Woohoo! :D',
+    })
   };
 
   return (
     <>
-      <Modal id="add-role-modal" opened={opened} onClose={onClose} title="Add Role" centered size="xl">
+      <Modal id="add-role-modal"
+        opened={manageState.modal === "ADD_ROLE"}
+        onClose={() =>
+          setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
+        }
+        title="Add Role"
+        centered size="xl">
         <form onSubmit={form.onSubmit((values) => handleFormSubmit())}>
           <Box>
             <TextInput
@@ -81,4 +120,12 @@ const AddRoleModal: React.FC<AddRoleModalProps> = ({ opened, onClose }) => {
   );
 }
 
-export default AddRoleModal;
+// wrap it in a conditional loading 
+export function AddRoleModal() {
+  const manageState = useManageContext();
+  return (
+    <>
+      {manageState.modal === "ADD_ROLE" && <AddRoleModalBase />}
+    </>
+  )
+}

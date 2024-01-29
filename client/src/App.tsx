@@ -9,8 +9,9 @@ import ParseFrame from './components/pages/ParseFrame';
 import Training from './components/pages/Training/Training';
 import CleanFrame from './components/pages/CleanFrame/CleanFrame';
 import QuestionAnswer from './components/pages/QuestionAnswer';
-import FAQ from './components/pages/Faq';
+import FAQ from './components/pages/FAQ';
 import "../src/css/NavbarStyle.css";
+import { ManageContextProvider } from './context/ManageContextProvider';
 
 function App() {
   const [opened, { toggle }] = useDisclosure();
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <>
+
       <AppShell
         header={{ height: 60 }}
         navbar={{ width: 245, breakpoint: 'sm', collapsed: { mobile: !opened } }}
@@ -63,7 +65,11 @@ function App() {
         <AppShell.Main>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/manageFrame/:selectedFrame?" element={<ManageFrame />} />
+            <Route path="/manageFrame/:selectedFrame?"
+              element={
+                <ManageContextProvider>
+                  <ManageFrame />
+                </ManageContextProvider>} />
             <Route path="/parseFrame" element={<ParseFrame />} />
             <Route path="/training" element={<Training />} />
             <Route path="/cleanFrame/:selectedFrame?" element={<CleanFrame />} />

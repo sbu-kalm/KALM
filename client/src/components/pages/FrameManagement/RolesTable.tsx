@@ -1,33 +1,39 @@
-'use client';
-
 import { DataTable, DataTableColumn } from 'mantine-datatable';
-import { notifications } from '@mantine/notifications';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-import { Frame } from '../../../utils/Hooks';
-import frames from '../../../data/frames.json';
+import { Role } from '../../../utils/models/Frame';
 import { Anchor, Button, Breadcrumbs, Group } from '@mantine/core';
-import DeleteFrameModal from "../../global/DeleteFrameModal";
-import EditFrameModal from "../../global/EditFrameModal";
-import AddRoleModal from '../../global/AddRoleModal';
-import { useDisclosure } from '@mantine/hooks';
+import { DeleteRoleModal } from '../../global/DeleteRoleModal';
+import { EditRoleModal } from '../../global/EditRoleModal';
+import { AddRoleModal } from '../../global/AddRoleModal';
+import { useManageContext, useManageDispatchContext } from '../../../context/ManageContextProvider';
 
-const columns: DataTableColumn<Frame>[] = [
+const columns: DataTableColumn<Role>[] = [
     { title: 'Role', accessor: 'name', width: '100%' },
 ];
 
 export function RolesTable() {
+    const manageState = useManageContext();
+    const setManageState = useManageDispatchContext();
+
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
-    const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
-    const [addModalOpened, setAddModal] = useDisclosure(false);
-    const [editModalOpened, setEditModal] = useDisclosure(false);
-    const [deleteModalOpened, setDeleteModal] = useDisclosure(false);
+    const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
+    const [records, setRecords] = useState<Role[]>(selectedFrameInfo?.roles || []);
+    const [selectedRecords, setSelectedRecords] = useState<Role[]>([]);
 
-    const frame = frames.find(frame => frame.name === selectedFrame);
-    console.log(frame);
-    const roles = frame?.roles;
+    // set records in table when frameList changes
+    useEffect(() => {
+        setRecords(selectedFrameInfo?.roles || []); // set records in table
+        setSelectedRecords([]); // clear selected records
+    }, [manageState.frameList]);
 
+    // set selected records in manage state when the selected records change
+    useEffect(() => {
+        setManageState({ type: "SET_SELECTED_ROLES", selectedRecords: selectedRecords });
+    }, [selectedRecords]);
+
+    // This handles the breadcrumbs
     const items = [
         { title: 'Frames', href: '/manageFrame' },
         { title: `${selectedFrame}`, href: '' },
@@ -40,33 +46,47 @@ export function RolesTable() {
         ));
 
     // This function is called when the user clicks on a row
-    // It will navigate to the page with the name of the frame
-    const handleRowClick = (record: Frame, index: number) => {
-        notifications.show({
-            title: `Row Clicked`,
-            message: `You clicked on ${record.name}: ${index}!`,
-            withBorder: true,
-        });
+    const handleRowClick = (record: Role, index: number) => {
+        // add row to selected records if in not selected records
+        // remove row from selected records if in selected records
+        const newSelectedRecords = selectedRecords.includes(record)
+            ? selectedRecords.filter((r) => r !== record)
+            : [...selectedRecords, record];
+        setSelectedRecords(newSelectedRecords);
+        // notifications.show({
+        //     title: `Row Clicked`,
+        //     message: `You clicked on ${record.name}: ${index}!`,
+        //     withBorder: true,
+        // });
     };
 
     return (
         <>
+            <DeleteRoleModal />
+            <EditRoleModal />
+            <AddRoleModal />
             <Group >
                 <Breadcrumbs>{items}</Breadcrumbs>
                 <Button
                     variant="outline" color="red"
-                    onClick={setDeleteModal.open}
+                    onClick={() =>
+                        setManageState({ type: "CHANGE_MODAL", modal: "DELETE_ROLE" })
+                    }
                     style={{ marginLeft: "auto" }}
                     disabled={selectedRecords.length === 0}>
                     Delete
                 </Button>
                 <Button variant="outline" color="orange"
-                    onClick={() => setEditModal.open}
+                    onClick={() =>
+                        setManageState({ type: "CHANGE_MODAL", modal: "EDIT_ROLE" })
+                    }
                     disabled={selectedRecords.length !== 1}>
                     Edit
                 </Button>
                 <Button variant="outline" color="green"
-                    onClick={setAddModal.open}>
+                    onClick={() =>
+                        setManageState({ type: "CHANGE_MODAL", modal: "ADD_ROLE" })
+                    }>
                     Add
                 </Button>
             </Group>
@@ -75,35 +95,13 @@ export function RolesTable() {
                 highlightOnHover
                 withTableBorder
                 withColumnBorders
-                records={roles}
+                records={records}
                 columns={columns}
                 idAccessor={({ name, id }) => `${name}:${id}`}
                 selectedRecords={selectedRecords}
                 onSelectedRecordsChange={setSelectedRecords}
                 onRowClick={({ record, index }) => handleRowClick(record, index)}
             />
-
-            {/* Show delete modal when needed */}
-            {addModalOpened && (
-                <AddRoleModal
-                    opened={addModalOpened}
-                    onClose={setAddModal.close}
-                ></AddRoleModal>
-            )}
-            {/* Show edit modal when needed */}
-            {editModalOpened && (
-                <EditFrameModal
-                    opened={editModalOpened}
-                    onClose={setEditModal.close}
-                ></EditFrameModal>
-            )}
-            {/* Show delete modal when needed */}
-            {deleteModalOpened && (
-                <DeleteFrameModal
-                    opened={deleteModalOpened}
-                    onClose={setDeleteModal.close}
-                ></DeleteFrameModal>
-            )}
         </>
     );
 
