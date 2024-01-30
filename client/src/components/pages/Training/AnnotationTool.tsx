@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Flex, Title, Text } from '@mantine/core';
-import GlobalStoreContext from "../../../store";
 import tinycolor from 'tinycolor2';
+import { useTrainingContext } from '../../../context/TrainingContextProvider';
 
 import frames from '../../../data/frames.json';
 
@@ -17,14 +17,14 @@ interface Word {
 }
 
 const AnnotationTool = () => {
-    const { state } = useContext(GlobalStoreContext);
+    const trainingState = useTrainingContext();
     const [roles, setRoles] = useState<Role[]>([]); // keeps track of the roles for the selected frame and their associated colors
     const [words, setWords] = useState<Word[]>([]); // keeps track of the words in your input sentence and their annotations
 
     const [activeItemIdx, setActiveItemIdx] = useState<number | null >(null); // user chosen role or lexical unit
 
     useEffect(() => {
-        const frame = frames.find(f => f.name === state.selectedFrame); // fetch the selected frame
+        const frame = frames.find(f => f.name === trainingState.selectedFrame); // fetch the selected frame
         if (frame) {
             const r = frame.roles.map((r) => {
                 return ({
@@ -38,7 +38,7 @@ const AnnotationTool = () => {
             })
             setRoles(r); 
 
-            setWords(state.inputText.split(" ").map((text, index) => { // split the input sentence into words
+            setWords(trainingState.inputText!.split(" ").map((text, index) => { // split the input sentence into words
                 return ({
                     "idx": index,
                     "text": text

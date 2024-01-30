@@ -1,18 +1,17 @@
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Text, Title } from '@mantine/core';
 import ChooseFrame from './ChooseFrame';
-import GlobalStoreContext from "../../../store";
 import AnnotationTool from './AnnotationTool';
-import { setFrame, setInputText } from '../../../store/actionCreator';
+import { useTrainingContext, useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
 
 const Training = () => {
-    const { state, dispatch } = useContext(GlobalStoreContext);
+    const trainingState = useTrainingContext();
+    const setTrainingState = useTrainingDispatchContext();
 
     useEffect(() => {
-        if (dispatch) {
-            dispatch(setFrame(""));
-            dispatch(setInputText(""));
-        }
+        setTrainingState({
+            type: "SET_USER_INPUT", selectedFrame: "", inputText: ""
+        });
     }, [])
 
     return (
@@ -29,7 +28,7 @@ const Training = () => {
             >
                 Provide KALM with example sentences and train it based on select frames in to improve its parsing capabilities
             </Text>
-            {state.selectedFrame === "" ? <ChooseFrame /> : <AnnotationTool />}
+            {trainingState.selectedFrame === "" ? <ChooseFrame /> : <AnnotationTool />}
         </>
     )
 }
