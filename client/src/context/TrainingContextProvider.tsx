@@ -1,6 +1,4 @@
-import React, { createContext, useEffect, useReducer, useContext } from "react";
-import { Frame, Role } from "../utils/models/Frame";
-import frames from "../data/frames.json";
+import React, { createContext, useReducer, useContext } from "react";
 
 interface TrainingContextProviderProps {
     children?: React.ReactNode;

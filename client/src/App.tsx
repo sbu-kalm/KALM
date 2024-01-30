@@ -9,7 +9,7 @@ import ParseFrame from './components/pages/ParseFrame';
 import Training from './components/pages/Training/Training';
 import CleanFrame from './components/pages/CleanFrame/CleanFrame';
 import QuestionAnswer from './components/pages/QuestionAnswer';
-import FAQ from './components/pages/Faq';
+import FAQ from './components/pages/FAQ';
 import "../src/css/NavbarStyle.css";
 import { ManageContextProvider } from './context/ManageContextProvider';
 import { TrainingContextProvider } from './context/TrainingContextProvider';
