@@ -1,9 +1,8 @@
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
-import { setFrame, setInputText } from '../../../store/actionCreator';
 import fr from '../../../data/frames.json';
-import { useTrainingContext, useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
+import { useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
 
 
 const ChooseFrame = () => {
