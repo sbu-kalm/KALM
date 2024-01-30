@@ -1,12 +1,13 @@
 import { useEffect, useState, useContext } from 'react';
 import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
-import GlobalStoreContext from "../../../store";
 import { setFrame, setInputText } from '../../../store/actionCreator';
 import fr from '../../../data/frames.json';
+import { useTrainingContext, useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
+
 
 const ChooseFrame = () => {
-    const { state, dispatch } = useContext(GlobalStoreContext);
+    const setTrainingState = useTrainingDispatchContext();
     let alphabet: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const [frames, setFrames] = useState<string[]>([]);
     const [shownFrames, setShownFrames] = useState<string[]>([]);
@@ -47,10 +48,9 @@ const ChooseFrame = () => {
             });
         }
         if (chosenFrame && text !== "") { // update the store if both are provided
-            if (dispatch) {
-                dispatch(setFrame(chosenFrame));
-                dispatch(setInputText(text));
-            }
+            setTrainingState({
+                type: "SET_USER_INPUT", selectedFrame: chosenFrame, inputText: text
+            });
         }
     }
 
