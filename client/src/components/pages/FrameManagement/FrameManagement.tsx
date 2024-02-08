@@ -1,8 +1,9 @@
-import { Text, Stack, Title } from "@mantine/core"
+import { Text, Stack, Title, Button} from "@mantine/core"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
+import { getFrames } from "../../../api/ManageFrameApiAccessor";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
@@ -25,6 +26,12 @@ const ManageFrame = () => {
         }
     }
 
+    const handleGettingFrames = async () => {
+        console.log("Getting frames...")
+        const frames = await getFrames();
+        console.log(frames);
+    }
+
     return (
         <>
                 <Title order={2} c="blue">Frame Management</Title>
@@ -39,6 +46,7 @@ const ManageFrame = () => {
                 >
                     Easily view, add, edit, and delete frames/roles within the KALM system
                 </Text>
+                <Button onClick={handleGettingFrames}>Testing Api</Button>
                 <Stack>
                     {renderTable()}
                 </Stack>
