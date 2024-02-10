@@ -6,6 +6,7 @@ import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
 // import frames from '../../data/frames.json';
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
+import { addFrame } from "../../api/ManageFrameApiAccessor";
 
 interface FormValues {
   frameName: string;
@@ -48,7 +49,7 @@ function AddFrameModalBase() {
     },
   });
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = async () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
@@ -73,6 +74,12 @@ function AddFrameModalBase() {
 
     console.log(newFrame, "NEW FRAME");
 
+    // Add the new frame to the database
+    const frame = await addFrame({
+      new_frame: newFrame
+    });
+    console.log(frame);
+
     const updatedFrameList = manageState.frameList.concat(newFrame);
 
     // Add the new frame to the frameList
@@ -91,7 +98,7 @@ function AddFrameModalBase() {
     <>
       <Modal id="add-frame-modal"
         opened={manageState.modal === "ADD_FRAME"}
-        onClose={() => 
+        onClose={() =>
           setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
         }
         title="Add Frame"
