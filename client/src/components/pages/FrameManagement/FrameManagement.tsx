@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
-import { getFrames, addFrame } from "../../../api/ManageFrameApiAccessor";
+import { getFrames, addFrame, getRoles } from "../../../api/ManageFrameApiAccessor";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
@@ -41,6 +41,12 @@ const ManageFrame = () => {
         console.log(frame);
     }
 
+    const handleTesting = async () => {
+        console.log("Testing...")
+        const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
+        console.log(test);
+    }
+
     return (
         <>
                 <Title order={2} c="blue">Frame Management</Title>
@@ -55,7 +61,7 @@ const ManageFrame = () => {
                 >
                     Easily view, add, edit, and delete frames/roles within the KALM system
                 </Text>
-                <Button onClick={handleGettingFrames}>Testing Api</Button>
+                <Button onClick={handleTesting}>Testing Api</Button>
                 <Stack>
                     {renderTable()}
                 </Stack>
