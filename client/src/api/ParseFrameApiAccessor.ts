@@ -13,7 +13,7 @@ export const getParses = async (text: string) => {
         if (res.ok) {
             return res.json();
         } else {
-            throw new Error("Error fetching frames");
+            throw new Error("Error fetching parsed frames");
         }
     }
     catch (error) {

@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Button, Box, Stack, Title, Textarea, Text } from '@mantine/core';
 import { getParses } from "../../api/ParseFrameApiAccessor";
 
 const ParseFrame = () => {
+    const [text, setText] = useState<string>("");
+    
     const parseFrames = async () => {
-        const parses = await getParses("wee");
+        const parses = await getParses(text);
         console.log(parses);
     }
 
@@ -29,6 +32,7 @@ const ParseFrame = () => {
                     label="Enter your input sentences"
                     description="Example: Mary buys a car for her daughter"
                     placeholder="Start typing here"
+                    onChange={(e) => setText(e.target.value)}
                 />
             </Stack>
             <Button onClick={parseFrames} variant="filled" size={"xs"} style={{ margin: "30px 0", borderRadius: "10px" }} color="blue.5">Find Frames</Button>
