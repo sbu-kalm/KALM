@@ -51,8 +51,8 @@ def add_frame(new_frame):
 # print("After adding a role")
 # print(frames.find_one())
 
-print("Before updating a role")
-print(frames.find_one())
-update_role("65ca65da8f5aee53e7d95241", "new_role", {'name': 'new_roley', 'values': []})
-print("After updating a role")
-print(frames.find_one())
+# print("Before updating a role")
+# print(frames.find_one())
+# update_role("65ca65da8f5aee53e7d95241", "new_role", {'name': 'new_roley', 'values': []})
+# print("After updating a role")
+# print(frames.find_one())

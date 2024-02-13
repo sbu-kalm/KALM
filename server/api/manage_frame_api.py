@@ -1,63 +1,27 @@
+import json
 from flask import Blueprint
 from flask_restful import Api, Resource, reqparse
+from bson import json_util
 from bson.objectid import ObjectId
 from utils.db import create_mongo_client
-import json
-
-
+from pymongo import ReturnDocument
 
 manage_frame_api_bp = Blueprint('manage_frame_api', __name__)
 api = Api(manage_frame_api_bp)
 
 class ManageFrameApiHandler(Resource):
     def get(self):
-        """
-            Handles GET requests to retrieve the list of frames.
-
-            This method reads the 'frames.json' file and returns its content as a list of frames.
-
-            Returns:
-                list: A list of frames. Each frame is a dictionary with the following keys:
-                    id (int): The ID of the frame.
-                    name (str): The name of the frame.
-                    roles (list): A list of roles, where each role is a dictionary with the following keys:
-                        name (str): The name of the role.
-                        values (list): A list of values for the role, where each value is a string.
-                    description (str): The description of the frame.
-
-            Raises:
-                FileNotFoundError: If the 'frames.json' file does not exist.
-        """
         try:
-            with open('../client/src/data/frames.json') as f:
-                data = json.load(f)
-            return data
-        except FileNotFoundError:
-            return {"error": "frames.json file not found"}, 500
+            client = create_mongo_client()
+            db = client['Frames']
+            frames = db['Frames']
+            all_frames = list(frames.find())
+            return json.loads(json_util.dumps(all_frames)), 200
+        except Exception as e:
+            print(e)
+            return {'error': 'Error retrieving frames'}, 500
         
     def post(self):
-        """
-            Handles POST requests to add a new frame to the list of frames.
-
-            The request should have a JSON body containing a 'new_frame' object. 
-
-            Args:
-                new_frame (dict): A dictionary representing the new frame with the following keys:
-                    id (int): The ID of the frame.
-                    name (str): The name of the frame.
-                    roles (list): A list of roles, where each role is a dictionary with the following keys:
-                        name (str): The name of the role.
-                        values (list): A list of values for the role, where each value is a string.
-                    description (str): The description of the frame.
-
-            Returns:
-                list: The updated list of frames.
-
-            Raises:
-                JSONDecodeError: If the 'new_frame' object is not a valid JSON string.
-                FileNotFoundError: If the 'frames.json' file does not exist.
-                IOError: If there is an error writing to the 'frames.json' file.
-        """
         parser = reqparse.RequestParser()
         parser.add_argument('new_frame', type=dict, location='json')
         args = parser.parse_args()
@@ -66,20 +30,21 @@ class ManageFrameApiHandler(Resource):
             new_frame = args['new_frame'] # Get the new frame from the request
             print(new_frame)
             print(type(new_frame))
-            # Open the frames.json file in read/write mode
-            with open('../client/src/data/frames.json', 'r+') as f: 
-                frames = json.load(f)     # Load the existing frames from the file
-                frames.append(new_frame)  # Add the new frame to the list of frames
-                f.seek(0)                 # Move the file cursor to the beginning of the file
-                f.truncate()              # Delete the entire content of the file
-                json.dump(frames, f)      # Write the updated list of frames back to the file
-            return frames, 200            # If everything is successful, return the updated list of frames
-        except json.JSONDecodeError:
-            return {"error": "Invalid JSON format"}, 400  # If 'new_frame' is not a valid JSON string, return an error message
-        except FileNotFoundError:
-            return {"error": "frames.json file not found"}, 500 # If the frames.json file is not found, return an error message
-        except IOError:
-            return {"error": "Error writing to frames.json file"}, 500  # If there's an error writing to the frames.json file, return an error message
+
+            client = create_mongo_client()  # Connect to the MongoDB client
+            db = client['Frames']   # Select the 'Frames' database
+            frames = db['Frames']   # Select the 'Frames' collection
+
+            result = frames.insert_one(new_frame)  # Add the new frame to the collection
+
+            if result.acknowledged:  # If the insert operation was successful
+                return {"message": "Frame added successfully", "id": str(result.inserted_id)}, 200
+            else:
+                return {"error": "Error adding frame to database"}, 500
+
+        except Exception as e:
+            print(e)
+            return {"error": "Error processing request"}, 500
 
 api.add_resource(ManageFrameApiHandler, '/manageFrame')
 
@@ -92,6 +57,29 @@ class ManageRoleApiHandler(Resource):
         frame = frames.find_one({'_id': ObjectId(frame_id)})
         if frame is not None:
             return frame['roles'], 200
+        else:
+            return {'error': 'Frame not found'}, 404
+        
+    def post(self, frame_id):
+        parser = reqparse.RequestParser()
+        parser.add_argument('old_role_name', type=str, location='json')
+        parser.add_argument('new_role_name', type=str, location='json')
+        args = parser.parse_args()
+        
+        old_role_name = args['old_role_name']
+        new_role_name = args['new_role_name']
+        
+        client = create_mongo_client()
+        db = client['Frames']
+        frames = db['Frames']
+
+        updated_frame = frames.find_one_and_update(
+            {'_id': ObjectId(frame_id), 'roles.name': old_role_name}, 
+            {'$set': {'roles.$.name': new_role_name}},
+            return_document=ReturnDocument.AFTER
+        )
+        if updated_frame is not None:
+            return json.loads(json_util.dumps(updated_frame)), 200
         else:
             return {'error': 'Frame not found'}, 404
         

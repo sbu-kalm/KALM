@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
-import { getFrames, addFrame, getRoles } from "../../../api/ManageFrameApiAccessor";
+import { getFrames, addFrame, getRoles, updateRole } from "../../../api/ManageFrameApiAccessor";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
@@ -43,7 +43,12 @@ const ManageFrame = () => {
 
     const handleTesting = async () => {
         console.log("Testing...")
-        const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
+        // const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
+        const test = await updateRole({
+            frameId: "65ca65da8f5aee53e7d95241",
+            oldRoleName: "MAN",
+            newRoleName: "YUHHH"
+        });
         console.log(test);
     }
 

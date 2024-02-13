@@ -25,6 +25,34 @@ export const getRoles = async ({frameId}: FrameQueryParams): Promise<Role[]> => 
     return Promise.reject("Error fetching roles");
 }
 
+interface UpdateRoleParams {
+    frameId: string;
+    oldRoleName: string;
+    newRoleName: string;
+}
+export const updateRole = async ({frameId, oldRoleName, newRoleName}: UpdateRoleParams) => {
+    try {
+        const res = await fetch(`${baseUrl}/flask/frames/${frameId}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                old_role_name: oldRoleName,
+                new_role_name: newRoleName
+            }),
+        });
+        console.log(res);
+        if (res.ok) {
+            const resData = await res.json();
+            console.log("Role updated successfully:", resData);
+            return resData;
+        } else {
+            console.error("Error updating role:", res.status, res.statusText);
+        }
+    }catch (error) {
+        console.error(error);
+    }
+}
+
 // Get a list of frames
 export const getFrames = async () => {
     try {
