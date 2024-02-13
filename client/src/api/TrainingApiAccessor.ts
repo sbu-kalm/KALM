@@ -1,12 +1,14 @@
 const baseUrl = "http://127.0.0.1:5000";
 
-export const sendAnnotation = async (text: string) => {
+// send annotated sentence to KALM
+export const sendAnnotation = async ({text, frame}: {text: string, frame: string}) => {
     try {
         const res = await fetch(`${baseUrl}/training/annotate`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                input_text: text
+                input_text: text,
+                frame: frame
             }),
         });
         console.log(res);

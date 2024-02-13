@@ -1,6 +1,6 @@
 const baseUrl = "http://127.0.0.1:5000";
 
-// Get a list of parsed frames based on input text
+// Get a list of parsed frames based on user input text
 export const getParses = async (text: string) => {
     try {
         const res = await fetch(`${baseUrl}/parse/?` + new URLSearchParams({

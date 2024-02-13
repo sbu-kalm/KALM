@@ -71,7 +71,9 @@ const AnnotationTool = () => {
     }
 
     const handleSubmit = async () => {
-        const lvp = await sendAnnotation(trainingState.inputText!);
+        const lvp = await sendAnnotation({
+            text: trainingState.inputText!, 
+            frame: trainingState.selectedFrame!});
         console.log(lvp);
     }
 
