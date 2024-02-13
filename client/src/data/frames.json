@@ -1,1412 +1,1412 @@
 [
-  {
-    "id": 1,
-    "name": "Being_employed",
-    "roles": [
-      {
-        "name": "Employee",
-        "values": [
-          "bn:00030618n"
-        ]
-      },
-      {
-        "name": "Employer",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n"
-        ]
-      },
-      {
-        "name": "Field",
-        "values": [
-          "bn:00007985n"
-        ]
-      },
-      {
-        "name": "Position",
-        "values": [
-          "bn:00010073n"
-        ]
-      },
-      {
-        "name": "Task",
-        "values": [
-          "bn:00049573n"
-        ]
-      }
-    ],
-    "description": "Describes a person being employed in a job"
-  },
-  {
-    "id": 2,
-    "name": "Age",
-    "roles": [
-      {
+    {
+        "id": 1,
+        "name": "Being_employed",
+        "roles": [
+            {
+                "name": "Employee",
+                "values": [
+                    "bn:00030618n"
+                ]
+            },
+            {
+                "name": "Employer",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ]
+            },
+            {
+                "name": "Field",
+                "values": [
+                    "bn:00007985n"
+                ]
+            },
+            {
+                "name": "Position",
+                "values": [
+                    "bn:00010073n"
+                ]
+            },
+            {
+                "name": "Task",
+                "values": [
+                    "bn:00049573n"
+                ]
+            }
+        ],
+        "description": "Describes a person being employed in a job"
+    },
+    {
+        "id": 2,
         "name": "Age",
-        "values": [
-          "bn:00001938n"
-        ]
-      },
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      }
-    ],
-    "description": "Describes a person's age"
-  },
-  {
-    "id": 3,
-    "name": "Human_gender",
-    "roles": [
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Gender",
-        "values": [
-          "bn:00037634n"
-        ]
-      }
-    ],
-    "description": "Describes a person's gender"
-  },
-  {
-    "id": 4,
-    "name": "Residence",
-    "roles": [
-      {
-        "name": "Resident",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Co_resident",
-        "values": [
-          "bn:00058564n"
-        ]
-      },
-      {
-        "name": "Location",
-        "values": [
-          "bn:00051760n"
-        ]
-      }
-    ],
-    "description": "Describes where someone lives"
-  },
-  {
-    "id": 5,
-    "name": "Being_born",
-    "roles": [
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n"
-        ]
-      },
-      {
-        "name": "Time",
-        "values": [
-          "bn:00077268n"
-        ]
-      }
-    ],
-    "description": "Describes details around a person being born"
-  },
-  {
-    "id": 6,
-    "name": "Renting",
-    "roles": [
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00054416n"
-        ]
-      },
-      {
-        "name": "Lessee",
-        "values": [
-          "bn:00050448n"
-        ]
-      },
-      {
-        "name": "Lessor",
-        "values": [
-          "bn:00050446n"
-        ]
-      },
-      {
-        "name": "Money",
-        "values": [
-          "bn:00017803n"
-        ]
-      },
-      {
-        "name": "Duration",
-        "values": [
-          "bn:00022191n"
-        ]
-      }
-    ],
-    "description": "Describes renting goods/property"
-  },
-  {
-    "id": 7,
-    "name": "Commerce_buy",
-    "roles": [
-      {
-        "name": "Buyer",
-        "values": [
-          "bn:00014332n"
-        ]
-      },
-      {
-        "name": "Seller",
-        "values": [
-          "bn:00053479n"
-        ]
-      },
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00014157n",
-          "bn:00046038n",
-          "bn:00022071n",
-          "bn:00054416n"
-        ]
-      },
-      {
-        "name": "Money",
-        "values": [
-          "bn:00017803n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n"
-        ]
-      },
-      {
-        "name": "Recipient",
-        "values": [
-          "bn:00066495n"
-        ]
-      }
-    ],
-    "description": "Describes buying goods in a commercial transaction"
-  },
-  {
-    "id": 8,
-    "name": "Possession",
-    "roles": [
-      {
-        "name": "Owner",
-        "values": [
-          "bn:00059954n"
-        ]
-      },
-      {
+        "roles": [
+            {
+                "name": "Age",
+                "values": [
+                    "bn:00001938n"
+                ]
+            },
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            }
+        ],
+        "description": "Describes a person's age"
+    },
+    {
+        "id": 3,
+        "name": "Human_gender",
+        "roles": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Gender",
+                "values": [
+                    "bn:00037634n"
+                ]
+            }
+        ],
+        "description": "Describes a person's gender"
+    },
+    {
+        "id": 4,
+        "name": "Residence",
+        "roles": [
+            {
+                "name": "Resident",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Co_resident",
+                "values": [
+                    "bn:00058564n"
+                ]
+            },
+            {
+                "name": "Location",
+                "values": [
+                    "bn:00051760n"
+                ]
+            }
+        ],
+        "description": "Describes where someone lives"
+    },
+    {
+        "id": 5,
+        "name": "Being_born",
+        "roles": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ]
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ]
+            }
+        ],
+        "description": "Describes details around a person being born"
+    },
+    {
+        "id": 6,
+        "name": "Renting",
+        "roles": [
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00054416n"
+                ]
+            },
+            {
+                "name": "Lessee",
+                "values": [
+                    "bn:00050448n"
+                ]
+            },
+            {
+                "name": "Lessor",
+                "values": [
+                    "bn:00050446n"
+                ]
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ]
+            },
+            {
+                "name": "Duration",
+                "values": [
+                    "bn:00022191n"
+                ]
+            }
+        ],
+        "description": "Describes renting goods/property"
+    },
+    {
+        "id": 7,
+        "name": "Commerce_buy",
+        "roles": [
+            {
+                "name": "Buyer",
+                "values": [
+                    "bn:00014332n"
+                ]
+            },
+            {
+                "name": "Seller",
+                "values": [
+                    "bn:00053479n"
+                ]
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00014157n",
+                    "bn:00046038n",
+                    "bn:00022071n",
+                    "bn:00054416n"
+                ]
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ]
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00066495n"
+                ]
+            }
+        ],
+        "description": "Describes buying goods in a commercial transaction"
+    },
+    {
+        "id": 8,
         "name": "Possession",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n"
-        ]
-      }
-    ],
-    "description": "Describes someone owning something"
-  },
-  {
-    "id": 9,
-    "name": "Cooking",
-    "roles": [
-      {
-        "name": "Cook",
-        "values": [
-          "bn:00022407n",
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Food",
-        "values": [
-          "bn:00035650n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n",
-          "bn:15769800n"
-        ]
-      },
-      {
-        "name": "Recipient",
-        "values": [
-          "bn:00066495n"
-        ]
-      }
-    ],
-    "description": "Describes cooking food"
-  },
-  {
-    "id": 10,
-    "name": "Dressing",
-    "roles": [
-      {
-        "name": "Wearer",
-        "values": [
-          "bn:00080753n"
-        ]
-      },
-      {
-        "name": "Clothing",
-        "values": [
-          "bn:00006125n"
-        ]
-      }
-    ],
-    "description": "Describes someone putting on clothes"
-  },
-  {
-    "id": 11,
-    "name": "Create_organization",
-    "roles": [
-      {
-        "name": "Creator",
-        "values": [
-          "bn:00023660n",
-          "bn:00009631n"
-        ]
-      },
-      {
-        "name": "Organization",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n"
-        ]
-      },
-      {
-        "name": "Time",
-        "values": [
-          "bn:00077268n"
-        ]
-      }
-    ],
-    "description": "Describes creating an organization"
-  },
-  {
-    "id": 12,
-    "name": "Travel",
-    "roles": [
-      {
-        "name": "Traveler",
-        "values": [
-          "bn:00078093n",
-          "bn:00041942n"
-        ]
-      },
-      {
-        "name": "Source",
-        "values": [
-          "bn:00066884n"
-        ]
-      },
-      {
-        "name": "Goal",
-        "values": [
-          "bn:00066884n"
-        ]
-      }
-    ],
-    "description": "Describes someone traveling from one place to another"
-  },
-  {
-    "id": 13,
-    "name": "Education",
-    "roles": [
-      {
-        "name": "Student",
-        "values": [
-          "bn:00029806n"
-        ]
-      },
-      {
-        "name": "Institution",
-        "values": [
-          "bn:00029812n"
-        ]
-      },
-      {
-        "name": "Degree",
-        "values": [
-          "bn:00000554n"
-        ]
-      },
-      {
-        "name": "Subject",
-        "values": [
-          "bn:00007985n",
-          "bn:16324994n"
-        ]
-      }
-    ],
-    "description": "Describes someone's education"
-  },
-  {
-    "id": 14,
-    "name": "Giving",
-    "roles": [
-      {
-        "name": "Donor",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Recipient",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Theme",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00005956n",
-          "bn:00055644n"
-        ]
-      }
-    ],
-    "description": "Describes giving something to someone"
-  },
-  {
-    "id": 15,
-    "name": "Personal_relationship",
-    "roles": [
-      {
-        "name": "Mother",
-        "values": [
-          "bn:00034027n"
-        ]
-      },
-      {
-        "name": "Father",
-        "values": [
-          "bn:00009616n"
-        ]
-      },
-      {
-        "name": "Son",
-        "values": [
-          "bn:00012571n"
-        ]
-      },
-      {
-        "name": "Daughter",
-        "values": [
-          "bn:00025364n"
-        ]
-      },
-      {
-        "name": "Husband",
-        "values": [
-          "bn:00045106n"
-        ]
-      },
-      {
-        "name": "Wife",
-        "values": [
-          "bn:00045106n"
-        ]
-      },
-      {
-        "name": "Marriage_partner_1",
-        "values": [
-          "bn:00010161n"
-        ]
-      },
-      {
-        "name": "Marriage_partner_2",
-        "values": [
-          "bn:00010161n"
-        ]
-      },
-      {
-        "name": "Child",
-        "values": [
-          "bn:00018346n"
-        ]
-      },
-      {
-        "name": "Parent",
-        "values": [
-          "bn:00060643n"
-        ]
-      }
-    ],
-    "description": "Describes personal/family relationships between people"
-  },
-  {
-    "id": 16,
-    "name": "People_by_origin",
-    "roles": [
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Origin",
-        "values": [
-          "bn:00058564n"
-        ]
-      }
-    ],
-    "description": "Describes a person's origin/ancestry"
-  },
-  {
-    "id": 17,
-    "name": "People_by_religion",
-    "roles": [
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Religion",
-        "values": [
-          "bn:00032768n"
-        ]
-      }
-    ],
-    "description": "Describes a person's religion"
-  },
-  {
-    "id": 18,
-    "name": "Collaboration",
-    "roles": [
-      {
-        "name": "Partner1",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Partner2",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Undertaking",
-        "values": [
-          "bn:00049573n"
-        ]
-      }
-    ],
-    "description": "Describes two parties collaborating"
-  },
-  {
-    "id": 19,
-    "name": "Quitting",
-    "roles": [
-      {
-        "name": "Employee",
-        "values": [
-          "bn:00030618n"
-        ]
-      },
-      {
-        "name": "Employer",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Field",
-        "values": [
-          "bn:00007985n"
-        ]
-      },
-      {
-        "name": "Position",
-        "values": [
-          "bn:00010073n"
-        ]
-      }
-    ],
-    "description": "Describes someone quitting a job"
-  },
-  {
-    "id": 20,
-    "name": "Medical_conditions",
-    "roles": [
-      {
-        "name": "Patient",
-        "values": [
-          "bn:00061017n"
-        ]
-      },
-      {
-        "name": "Ailment",
-        "values": [
-          "bn:00045952n"
-        ]
-      }
-    ],
-    "description": "Describes someone's medical/health conditions"
-  },
-  {
-    "id": 21,
-    "name": "Award",
-    "roles": [
-      {
-        "name": "Person",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
+        "roles": [
+            {
+                "name": "Owner",
+                "values": [
+                    "bn:00059954n"
+                ]
+            },
+            {
+                "name": "Possession",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n"
+                ]
+            }
+        ],
+        "description": "Describes someone owning something"
+    },
+    {
+        "id": 9,
+        "name": "Cooking",
+        "roles": [
+            {
+                "name": "Cook",
+                "values": [
+                    "bn:00022407n",
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Food",
+                "values": [
+                    "bn:00035650n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ]
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00066495n"
+                ]
+            }
+        ],
+        "description": "Describes cooking food"
+    },
+    {
+        "id": 10,
+        "name": "Dressing",
+        "roles": [
+            {
+                "name": "Wearer",
+                "values": [
+                    "bn:00080753n"
+                ]
+            },
+            {
+                "name": "Clothing",
+                "values": [
+                    "bn:00006125n"
+                ]
+            }
+        ],
+        "description": "Describes someone putting on clothes"
+    },
+    {
+        "id": 11,
+        "name": "Create_organization",
+        "roles": [
+            {
+                "name": "Creator",
+                "values": [
+                    "bn:00023660n",
+                    "bn:00009631n"
+                ]
+            },
+            {
+                "name": "Organization",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ]
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ]
+            }
+        ],
+        "description": "Describes creating an organization"
+    },
+    {
+        "id": 12,
+        "name": "Travel",
+        "roles": [
+            {
+                "name": "Traveler",
+                "values": [
+                    "bn:00078093n",
+                    "bn:00041942n"
+                ]
+            },
+            {
+                "name": "Source",
+                "values": [
+                    "bn:00066884n"
+                ]
+            },
+            {
+                "name": "Goal",
+                "values": [
+                    "bn:00066884n"
+                ]
+            }
+        ],
+        "description": "Describes someone traveling from one place to another"
+    },
+    {
+        "id": 13,
+        "name": "Education",
+        "roles": [
+            {
+                "name": "Student",
+                "values": [
+                    "bn:00029806n"
+                ]
+            },
+            {
+                "name": "Institution",
+                "values": [
+                    "bn:00029812n"
+                ]
+            },
+            {
+                "name": "Degree",
+                "values": [
+                    "bn:00000554n"
+                ]
+            },
+            {
+                "name": "Subject",
+                "values": [
+                    "bn:00007985n",
+                    "bn:16324994n"
+                ]
+            }
+        ],
+        "description": "Describes someone's education"
+    },
+    {
+        "id": 14,
+        "name": "Giving",
+        "roles": [
+            {
+                "name": "Donor",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Theme",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n",
+                    "bn:00055644n"
+                ]
+            }
+        ],
+        "description": "Describes giving something to someone"
+    },
+    {
+        "id": 15,
+        "name": "Personal_relationship",
+        "roles": [
+            {
+                "name": "Mother",
+                "values": [
+                    "bn:00034027n"
+                ]
+            },
+            {
+                "name": "Father",
+                "values": [
+                    "bn:00009616n"
+                ]
+            },
+            {
+                "name": "Son",
+                "values": [
+                    "bn:00012571n"
+                ]
+            },
+            {
+                "name": "Daughter",
+                "values": [
+                    "bn:00025364n"
+                ]
+            },
+            {
+                "name": "Husband",
+                "values": [
+                    "bn:00045106n"
+                ]
+            },
+            {
+                "name": "Wife",
+                "values": [
+                    "bn:00045106n"
+                ]
+            },
+            {
+                "name": "Marriage_partner_1",
+                "values": [
+                    "bn:00010161n"
+                ]
+            },
+            {
+                "name": "Marriage_partner_2",
+                "values": [
+                    "bn:00010161n"
+                ]
+            },
+            {
+                "name": "Child",
+                "values": [
+                    "bn:00018346n"
+                ]
+            },
+            {
+                "name": "Parent",
+                "values": [
+                    "bn:00060643n"
+                ]
+            }
+        ],
+        "description": "Describes personal/family relationships between people"
+    },
+    {
+        "id": 16,
+        "name": "People_by_origin",
+        "roles": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Origin",
+                "values": [
+                    "bn:00058564n"
+                ]
+            }
+        ],
+        "description": "Describes a person's origin/ancestry"
+    },
+    {
+        "id": 17,
+        "name": "People_by_religion",
+        "roles": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Religion",
+                "values": [
+                    "bn:00032768n"
+                ]
+            }
+        ],
+        "description": "Describes a person's religion"
+    },
+    {
+        "id": 18,
+        "name": "Collaboration",
+        "roles": [
+            {
+                "name": "Partner1",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Partner2",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Undertaking",
+                "values": [
+                    "bn:00049573n"
+                ]
+            }
+        ],
+        "description": "Describes two parties collaborating"
+    },
+    {
+        "id": 19,
+        "name": "Quitting",
+        "roles": [
+            {
+                "name": "Employee",
+                "values": [
+                    "bn:00030618n"
+                ]
+            },
+            {
+                "name": "Employer",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Field",
+                "values": [
+                    "bn:00007985n"
+                ]
+            },
+            {
+                "name": "Position",
+                "values": [
+                    "bn:00010073n"
+                ]
+            }
+        ],
+        "description": "Describes someone quitting a job"
+    },
+    {
+        "id": 20,
+        "name": "Medical_conditions",
+        "roles": [
+            {
+                "name": "Patient",
+                "values": [
+                    "bn:00061017n"
+                ]
+            },
+            {
+                "name": "Ailment",
+                "values": [
+                    "bn:00045952n"
+                ]
+            }
+        ],
+        "description": "Describes someone's medical/health conditions"
+    },
+    {
+        "id": 21,
         "name": "Award",
-        "values": [
-          "bn:00000704n"
-        ]
-      },
-      {
-        "name": "Organization",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Time",
-        "values": [
-          "bn:00077268n"
-        ]
-      }
-    ],
-    "description": "Describes someone receiving an award"
-  },
-  {
-    "id": 22,
-    "name": "Death",
-    "roles": [
-      {
-        "name": "Protagonist",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Cause",
-        "values": [
-          "bn:00045952n",
-          "bn:02131709n"
-        ]
-      },
-      {
-        "name": "Time",
-        "values": [
-          "bn:00077268n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n"
-        ]
-      }
-    ],
-    "description": "Describes someone dying"
-  },
-  {
-    "id": 23,
-    "name": "Using",
-    "roles": [
-      {
-        "name": "Agent",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Instrument",
-        "values": [
-          "bn:00026716n"
-        ]
-      }
-    ],
-    "description": "Describes using/operating something"
-  },
-  {
-    "id": 24,
-    "name": "Building",
-    "roles": [
-      {
-        "name": "Agent",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Created_entity",
-        "values": [
-          "bn:00005956n",
-          "bn:00021551n"
-        ]
-      },
-      {
-        "name": "Instrument",
-        "values": [
-          "bn:00026716n"
-        ]
-      }
-    ],
-    "description": "Describes constructing/building something"
-  },
-  {
-    "id": 25,
-    "name": "Killing",
-    "roles": [
-      {
-        "name": "Killer",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Victim",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Instrument",
-        "values": [
-          "bn:00026716n"
-        ]
-      }
-    ],
-    "description": "Describes killing someone"
-  },
-  {
-    "id": 26,
-    "name": "Arrest",
-    "roles": [
-      {
-        "name": "Authorities",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Suspect",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Charges",
-        "values": [
-          "bn:00023807n"
-        ]
-      }
-    ],
-    "description": "Describes authorities arresting a suspect"
-  },
-  {
-    "id": 27,
-    "name": "Attack",
-    "roles": [
-      {
-        "name": "Assailant",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Victim",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      }
-    ],
-    "description": "Describes someone physically attacking someone"
-  },
-  {
-    "id": 28,
-    "name": "Leadership",
-    "roles": [
-      {
-        "name": "Leader",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00041942n"
-        ]
-      },
-      {
-        "name": "Governed",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Role",
-        "values": [
-          "bn:00010073n"
-        ]
-      }
-    ],
-    "description": "Describes a leadership position"
-  },
-  {
-    "id": 29,
-    "name": "Manufacturing",
-    "roles": [
-      {
-        "name": "Producer",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Product",
-        "values": [
-          "bn:00005956n",
-          "bn:00006126n",
-          "bn:00021045n"
-        ]
-      }
-    ],
-    "description": "Describes manufacturing a product"
-  },
-  {
-    "id": 30,
-    "name": "Earnings",
-    "roles": [
-      {
-        "name": "Earner",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Money",
-        "values": [
-          "bn:00017803n"
-        ]
-      },
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00054416n"
-        ]
-      }
-    ],
-    "description": "Describes someone earning money or goods"
-  },
-  {
-    "id": 31,
-    "name": "Beat_opponent",
-    "roles": [
-      {
-        "name": "Winner",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00073699n"
-        ]
-      },
-      {
-        "name": "Loser",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00073699n"
-        ]
-      },
-      {
-        "name": "Competition",
-        "values": [
-          "bn:00021338n",
-          "bn:00021339n",
-          "bn:00021337n"
-        ]
-      }
-    ],
-    "description": "Describes defeating an opponent in a competition"
-  },
-  {
-    "id": 32,
-    "name": "Cure",
-    "roles": [
-      {
-        "name": "Healer",
-        "values": [
-          "bn:00046516n",
-          "bn:00027976n"
-        ]
-      },
-      {
-        "name": "Patient",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Disease",
-        "values": [
-          "bn:00045952n",
-          "bn:00027546n"
-        ]
-      },
-      {
-        "name": "Medication",
-        "values": [
-          "bn:00054128n"
-        ]
-      }
-    ],
-    "description": "Describes healing or curing someone"
-  },
-  {
-    "id": 33,
-    "name": "Contacting",
-    "roles": [
-      {
-        "name": "Communicator",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Addressee",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      }
-    ],
-    "description": "Describes communicating with someone"
-  },
-  {
-    "id": 34,
-    "name": "Protest",
-    "roles": [
-      {
-        "name": "Protester",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00041942n"
-        ]
-      },
-      {
-        "name": "Side",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      }
-    ],
-    "description": "Describes protesting something/someone"
-  },
-  {
-    "id": 35,
-    "name": "Submitting_documents",
-    "roles": [
-      {
-        "name": "Submitter",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Authority",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Documents",
-        "values": [
-          "bn:00028015n"
-        ]
-      }
-    ],
-    "description": "Describes submitting documents to an authority"
-  },
-  {
-    "id": 36,
-    "name": "Performing",
-    "roles": [
-      {
-        "name": "Performer",
-        "values": [
-          "bn:00046516n",
-          "bn:00001176n"
-        ]
-      },
-      {
-        "name": "Costar",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Role",
-        "values": [
-          "bn:00046516n",
-          "bn:00017749n"
-        ]
-      },
-      {
-        "name": "Performance",
-        "values": [
-          "bn:00071316n",
-          "bn:00028604n"
-        ]
-      }
-    ],
-    "description": "Describes performing in an event"
-  },
-  {
-    "id": 37,
-    "name": "Releasing_from_custody",
-    "roles": [
-      {
-        "name": "Suspect",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Authorities",
-        "values": [
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n",
-          "bn:15769800n"
-        ]
-      }
-    ],
-    "description": "Describes releasing a suspect from custody"
-  },
-  {
-    "id": 38,
-    "name": "Sign_agreement",
-    "roles": [
-      {
-        "name": "Signatory",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Agreement",
-        "values": [
-          "bn:15519080n",
-          "bn:00022227n",
-          "bn:00000728n"
-        ]
-      }
-    ],
-    "description": "Describes signing an agreement "
-  },
-  {
-    "id": 39,
-    "name": "Publishing",
-    "roles": [
-      {
-        "name": "Author",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Work",
-        "values": [
-          "bn:15338434n",
-          "bn:00065106n"
-        ]
-      },
-      {
-        "name": "Publisher",
-        "values": [
-          "bn:00059480n",
-          "bn:00065111n"
-        ]
-      },
-      {
-        "name": "Venue",
-        "values": [
-          "bn:00052671n",
-          "bn:00050563n",
-          "bn:00022333n"
-        ]
-      },
-      {
-        "name": "Topic",
-        "values": [
-          "bn:00074900n",
-          "bn:00045803n"
-        ]
-      }
-    ],
-    "description": "Describes publishing written content"
-  },
-  {
-    "id": 40,
-    "name": "Losing",
-    "roles": [
-      {
-        "name": "Owner",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Money",
-        "values": [
-          "bn:00017803n"
-        ]
-      },
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00054416n",
-          "bn:15840810n",
-          "bn:02131709n"
-        ]
-      }
-    ],
-    "description": "Describes losing possession of something"
-  },
-  {
-    "id": 41,
-    "name": "Surrendering",
-    "roles": [
-      {
-        "name": "Authorities",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Fugitive",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Charges",
-        "values": [
-          "bn:00023807n"
-        ]
-      }
-    ],
-    "description": "Describes a fugitive surrendering to authorities"
-  },
-  {
-    "id": 42,
-    "name": "Text_creation",
-    "roles": [
-      {
-        "name": "Author",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Text",
-        "values": [
-          "bn:00054523n",
-          "bn:00076732n"
-        ]
-      }
-    ],
-    "description": "Describes creating a written work"
-  },
-  {
-    "id": 43,
-    "name": "Theft",
-    "roles": [
-      {
-        "name": "Perpetrator",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00005956n"
-        ]
-      },
-      {
-        "name": "Victim",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      }
-    ],
-    "description": "Describes stealing goods from someone"
-  },
-  {
-    "id": 44,
-    "name": "Undressing",
-    "roles": [
-      {
-        "name": "Wearer",
-        "values": [
-          "bn:00080753n"
-        ]
-      },
-      {
-        "name": "Clothing",
-        "values": [
-          "bn:00006125n"
-        ]
-      }
-    ],
-    "description": "Describes taking clothes off"
-  },
-  {
-    "id": 45,
-    "name": "Growing_food",
-    "roles": [
-      {
-        "name": "Grower",
-        "values": [
-          "bn:00046516n"
-        ]
-      },
-      {
-        "name": "Food",
-        "values": [
-          "bn:00035650n",
-          "bn:00035649n"
-        ]
-      }
-    ],
-    "description": "Describes growing food"
-  },
-  {
-    "id": 46,
-    "name": "Participation",
-    "roles": [
-      {
-        "name": "Participant",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "CoParticipant",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Event",
-        "values": [
-          "bn:00032021n",
-          "bn:02131709n"
-        ]
-      }
-    ],
-    "description": "Describes participating in an event with others"
-  },
-  {
-    "id": 47,
-    "name": "Borrow_lend",
-    "roles": [
-      {
-        "name": "Borrower",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Lender",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Theme",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00005956n"
-        ]
-      }
-    ],
-    "description": "Describes borrowing and lending something"
-  },
-  {
-    "id": 48,
-    "name": "Restaurant",
-    "roles": [
-      {
-        "name": "Restaurant_name",
-        "values": [
-          "bn:00029545n"
-        ]
-      },
-      {
-        "name": "Price",
-        "values": [
-          "bn:00025083n"
-        ]
-      },
-      {
-        "name": "Cuisine",
-        "values": [
-          "bn:00024323n",
-          "bn:00066884n",
-          "bn:00035650n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n",
-          "bn:15769800n"
-        ]
-      }
-    ],
-    "description": "Describes a restaurant's offerings and location"
-  },
-  {
-    "id": 49,
-    "name": "Import_export",
-    "roles": [
-      {
-        "name": "Importer",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00023235n"
-        ]
-      },
-      {
-        "name": "Exporter",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n",
-          "bn:00023235n"
-        ]
-      },
-      {
-        "name": "Goods",
-        "values": [
-          "bn:00006126n",
-          "bn:00021045n",
-          "bn:00005956n",
-          "bn:15358232n",
-          "bn:00012321n",
-          "bn:00004222n",
-          "bn:00035650n",
-          "bn:00035649n",
-          "bn:00054416n"
-        ]
-      }
-    ],
-    "description": "Describes importing/exporting goods between countries"
-  },
-  {
-    "id": 50,
-    "name": "Scheduling",
-    "roles": [
-      {
-        "name": "Agent",
-        "values": [
-          "bn:00046516n",
-          "bn:00059480n"
-        ]
-      },
-      {
-        "name": "Place",
-        "values": [
-          "bn:00066884n",
-          "bn:15769800n"
-        ]
-      },
-      {
-        "name": "Event",
-        "values": [
-          "bn:00032021n",
-          "bn:02131709n",
-          "bn:15840810n"
-        ]
-      }
-    ],
-    "description": "Describes scheduling an event"
-  }
+        "roles": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Award",
+                "values": [
+                    "bn:00000704n"
+                ]
+            },
+            {
+                "name": "Organization",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ]
+            }
+        ],
+        "description": "Describes someone receiving an award"
+    },
+    {
+        "id": 22,
+        "name": "Death",
+        "roles": [
+            {
+                "name": "Protagonist",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Cause",
+                "values": [
+                    "bn:00045952n",
+                    "bn:02131709n"
+                ]
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ]
+            }
+        ],
+        "description": "Describes someone dying"
+    },
+    {
+        "id": 23,
+        "name": "Using",
+        "roles": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ]
+            }
+        ],
+        "description": "Describes using/operating something"
+    },
+    {
+        "id": 24,
+        "name": "Building",
+        "roles": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Created_entity",
+                "values": [
+                    "bn:00005956n",
+                    "bn:00021551n"
+                ]
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ]
+            }
+        ],
+        "description": "Describes constructing/building something"
+    },
+    {
+        "id": 25,
+        "name": "Killing",
+        "roles": [
+            {
+                "name": "Killer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ]
+            }
+        ],
+        "description": "Describes killing someone"
+    },
+    {
+        "id": 26,
+        "name": "Arrest",
+        "roles": [
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Suspect",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Charges",
+                "values": [
+                    "bn:00023807n"
+                ]
+            }
+        ],
+        "description": "Describes authorities arresting a suspect"
+    },
+    {
+        "id": 27,
+        "name": "Attack",
+        "roles": [
+            {
+                "name": "Assailant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            }
+        ],
+        "description": "Describes someone physically attacking someone"
+    },
+    {
+        "id": 28,
+        "name": "Leadership",
+        "roles": [
+            {
+                "name": "Leader",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00041942n"
+                ]
+            },
+            {
+                "name": "Governed",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Role",
+                "values": [
+                    "bn:00010073n"
+                ]
+            }
+        ],
+        "description": "Describes a leadership position"
+    },
+    {
+        "id": 29,
+        "name": "Manufacturing",
+        "roles": [
+            {
+                "name": "Producer",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Product",
+                "values": [
+                    "bn:00005956n",
+                    "bn:00006126n",
+                    "bn:00021045n"
+                ]
+            }
+        ],
+        "description": "Describes manufacturing a product"
+    },
+    {
+        "id": 30,
+        "name": "Earnings",
+        "roles": [
+            {
+                "name": "Earner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ]
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00054416n"
+                ]
+            }
+        ],
+        "description": "Describes someone earning money or goods"
+    },
+    {
+        "id": 31,
+        "name": "Beat_opponent",
+        "roles": [
+            {
+                "name": "Winner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00073699n"
+                ]
+            },
+            {
+                "name": "Loser",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00073699n"
+                ]
+            },
+            {
+                "name": "Competition",
+                "values": [
+                    "bn:00021338n",
+                    "bn:00021339n",
+                    "bn:00021337n"
+                ]
+            }
+        ],
+        "description": "Describes defeating an opponent in a competition"
+    },
+    {
+        "id": 32,
+        "name": "Cure",
+        "roles": [
+            {
+                "name": "Healer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00027976n"
+                ]
+            },
+            {
+                "name": "Patient",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Disease",
+                "values": [
+                    "bn:00045952n",
+                    "bn:00027546n"
+                ]
+            },
+            {
+                "name": "Medication",
+                "values": [
+                    "bn:00054128n"
+                ]
+            }
+        ],
+        "description": "Describes healing or curing someone"
+    },
+    {
+        "id": 33,
+        "name": "Contacting",
+        "roles": [
+            {
+                "name": "Communicator",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Addressee",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            }
+        ],
+        "description": "Describes communicating with someone"
+    },
+    {
+        "id": 34,
+        "name": "Protest",
+        "roles": [
+            {
+                "name": "Protester",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00041942n"
+                ]
+            },
+            {
+                "name": "Side",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            }
+        ],
+        "description": "Describes protesting something/someone"
+    },
+    {
+        "id": 35,
+        "name": "Submitting_documents",
+        "roles": [
+            {
+                "name": "Submitter",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Authority",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Documents",
+                "values": [
+                    "bn:00028015n"
+                ]
+            }
+        ],
+        "description": "Describes submitting documents to an authority"
+    },
+    {
+        "id": 36,
+        "name": "Performing",
+        "roles": [
+            {
+                "name": "Performer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00001176n"
+                ]
+            },
+            {
+                "name": "Costar",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Role",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00017749n"
+                ]
+            },
+            {
+                "name": "Performance",
+                "values": [
+                    "bn:00071316n",
+                    "bn:00028604n"
+                ]
+            }
+        ],
+        "description": "Describes performing in an event"
+    },
+    {
+        "id": 37,
+        "name": "Releasing_from_custody",
+        "roles": [
+            {
+                "name": "Suspect",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ]
+            }
+        ],
+        "description": "Describes releasing a suspect from custody"
+    },
+    {
+        "id": 38,
+        "name": "Sign_agreement",
+        "roles": [
+            {
+                "name": "Signatory",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Agreement",
+                "values": [
+                    "bn:15519080n",
+                    "bn:00022227n",
+                    "bn:00000728n"
+                ]
+            }
+        ],
+        "description": "Describes signing an agreement "
+    },
+    {
+        "id": 39,
+        "name": "Publishing",
+        "roles": [
+            {
+                "name": "Author",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Work",
+                "values": [
+                    "bn:15338434n",
+                    "bn:00065106n"
+                ]
+            },
+            {
+                "name": "Publisher",
+                "values": [
+                    "bn:00059480n",
+                    "bn:00065111n"
+                ]
+            },
+            {
+                "name": "Venue",
+                "values": [
+                    "bn:00052671n",
+                    "bn:00050563n",
+                    "bn:00022333n"
+                ]
+            },
+            {
+                "name": "Topic",
+                "values": [
+                    "bn:00074900n",
+                    "bn:00045803n"
+                ]
+            }
+        ],
+        "description": "Describes publishing written content"
+    },
+    {
+        "id": 40,
+        "name": "Losing",
+        "roles": [
+            {
+                "name": "Owner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ]
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00054416n",
+                    "bn:15840810n",
+                    "bn:02131709n"
+                ]
+            }
+        ],
+        "description": "Describes losing possession of something"
+    },
+    {
+        "id": 41,
+        "name": "Surrendering",
+        "roles": [
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Fugitive",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Charges",
+                "values": [
+                    "bn:00023807n"
+                ]
+            }
+        ],
+        "description": "Describes a fugitive surrendering to authorities"
+    },
+    {
+        "id": 42,
+        "name": "Text_creation",
+        "roles": [
+            {
+                "name": "Author",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Text",
+                "values": [
+                    "bn:00054523n",
+                    "bn:00076732n"
+                ]
+            }
+        ],
+        "description": "Describes creating a written work"
+    },
+    {
+        "id": 43,
+        "name": "Theft",
+        "roles": [
+            {
+                "name": "Perpetrator",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n"
+                ]
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            }
+        ],
+        "description": "Describes stealing goods from someone"
+    },
+    {
+        "id": 44,
+        "name": "Undressing",
+        "roles": [
+            {
+                "name": "Wearer",
+                "values": [
+                    "bn:00080753n"
+                ]
+            },
+            {
+                "name": "Clothing",
+                "values": [
+                    "bn:00006125n"
+                ]
+            }
+        ],
+        "description": "Describes taking clothes off"
+    },
+    {
+        "id": 45,
+        "name": "Growing_food",
+        "roles": [
+            {
+                "name": "Grower",
+                "values": [
+                    "bn:00046516n"
+                ]
+            },
+            {
+                "name": "Food",
+                "values": [
+                    "bn:00035650n",
+                    "bn:00035649n"
+                ]
+            }
+        ],
+        "description": "Describes growing food"
+    },
+    {
+        "id": 46,
+        "name": "Participation",
+        "roles": [
+            {
+                "name": "Participant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "CoParticipant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Event",
+                "values": [
+                    "bn:00032021n",
+                    "bn:02131709n"
+                ]
+            }
+        ],
+        "description": "Describes participating in an event with others"
+    },
+    {
+        "id": 47,
+        "name": "Borrow_lend",
+        "roles": [
+            {
+                "name": "Borrower",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Lender",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Theme",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n"
+                ]
+            }
+        ],
+        "description": "Describes borrowing and lending something"
+    },
+    {
+        "id": 48,
+        "name": "Restaurant",
+        "roles": [
+            {
+                "name": "Restaurant_name",
+                "values": [
+                    "bn:00029545n"
+                ]
+            },
+            {
+                "name": "Price",
+                "values": [
+                    "bn:00025083n"
+                ]
+            },
+            {
+                "name": "Cuisine",
+                "values": [
+                    "bn:00024323n",
+                    "bn:00066884n",
+                    "bn:00035650n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ]
+            }
+        ],
+        "description": "Describes a restaurant's offerings and location"
+    },
+    {
+        "id": 49,
+        "name": "Import_export",
+        "roles": [
+            {
+                "name": "Importer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00023235n"
+                ]
+            },
+            {
+                "name": "Exporter",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00023235n"
+                ]
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n",
+                    "bn:15358232n",
+                    "bn:00012321n",
+                    "bn:00004222n",
+                    "bn:00035650n",
+                    "bn:00035649n",
+                    "bn:00054416n"
+                ]
+            }
+        ],
+        "description": "Describes importing/exporting goods between countries"
+    },
+    {
+        "id": 50,
+        "name": "Scheduling",
+        "roles": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ]
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ]
+            },
+            {
+                "name": "Event",
+                "values": [
+                    "bn:00032021n",
+                    "bn:02131709n",
+                    "bn:15840810n"
+                ]
+            }
+        ],
+        "description": "Describes scheduling an event"
+    }
 ]

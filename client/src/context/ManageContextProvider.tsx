@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useReducer, useContext } from "react";
 import { ManageModalEnum } from "../utils/enums";
 import { Frame, Role } from "../utils/models/Frame";
 import frames from "../data/frames.json";
+import { getFrames } from "../api/ManageFrameApiAccessor";
 
 interface ManageContextProviderProps {
     children?: React.ReactNode;
@@ -49,9 +50,10 @@ export const ManageContextProvider = (props: ManageContextProviderProps) => {
         fetchFrameList();
     }, []);
 
-    const fetchFrameList = () => {
+    const fetchFrameList = async () => {
         try {
-            const frameList = frames;
+            const frameList = await getFrames();
+            console.log(frameList, "FRAME LIST")
             dispatch({
                 type: "INITIALIZE",
                 frameList: frameList,
