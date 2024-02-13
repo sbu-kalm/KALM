@@ -1,15 +1,19 @@
+import os
 from flask import Flask, send_from_directory
-from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS #comment this on deployment
-from api.HelloApiHandler import HelloApiHandler
+from pymongo import MongoClient
+from bson.objectid import ObjectId
+from dotenv import load_dotenv
+
+from api.manage_frame_api import manage_frame_api_bp
+
+load_dotenv()
 
 app = Flask(__name__, static_url_path='', static_folder='../client/public')
-CORS(app) #comment this on deployment
-api = Api(app)
+CORS(app)
 
-@app.route("/", defaults={'path':''})
-def serve(path):
-    return send_from_directory(app.static_folder,'index.html')
-    # return "hello"
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
 
-api.add_resource(HelloApiHandler, '/flask/hello')
+app.register_blueprint(manage_frame_api_bp, url_prefix='/flask')
