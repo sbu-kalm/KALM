@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 // import fr from '../../../data/frames.json';
-import { getFrames } from "../../../api/ManageFrameApiAccessor";
+import { getFrames } from "../../../api/GeneralApiAccessor";
 import { useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
 
 

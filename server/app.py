@@ -6,6 +6,7 @@ from bson.objectid import ObjectId
 from dotenv import load_dotenv
 
 from api.manage_frame_api import manage_frame_api_bp
+from api.parse_frame_api import parse_frame_api_bp
 
 load_dotenv()
 
@@ -17,3 +18,4 @@ def index():
     return send_from_directory(app.static_folder, 'index.html')
 
 app.register_blueprint(manage_frame_api_bp, url_prefix='/flask')
+app.register_blueprint(parse_frame_api_bp, url_prefix='/parse')

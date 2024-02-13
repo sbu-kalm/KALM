@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
-import { getFrames, addFrame, getRoles, updateRole, deleteRoles, addRole} from "../../../api/ManageFrameApiAccessor";
+import { addFrame, getRoles, updateRole, deleteRoles, addRole} from "../../../api/ManageFrameApiAccessor";
+import { getFrames } from "../../../api/GeneralApiAccessor";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
