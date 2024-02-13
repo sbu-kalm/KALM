@@ -1408,35 +1408,5 @@
             }
         ],
         "description": "Describes scheduling an event"
-    },
-    {
-        "id": 51,
-        "name": "test",
-        "roles": [
-            {
-                "name": "2",
-                "values": []
-            }
-        ],
-        "description": "1"
-    },
-    {
-        "id": 52,
-        "name": "Understand",
-        "roles": [
-            {
-                "name": "teacher",
-                "values": []
-            },
-            {
-                "name": "student",
-                "values": []
-            },
-            {
-                "name": "dog",
-                "values": []
-            }
-        ],
-        "description": "I understand what im doing yay"
     }
 ]

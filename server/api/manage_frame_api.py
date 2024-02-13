@@ -11,6 +11,16 @@ api = Api(manage_frame_api_bp)
 
 class ManageFrameApiHandler(Resource):
     def get(self):
+        """
+        Fetches all frames from the Frames database.
+
+        This method connects to the MongoDB client, selects the 'Frames' database and the 'Frames' collection,
+        and retrieves all frames. If the frames are successfully retrieved, it returns a list of all frames and a 
+        200 HTTP status code. If an error occurs during the retrieval, it returns an error message and a 500 HTTP status code.
+
+        Returns:
+            tuple: A tuple containing a list of all frames or an error message, and an HTTP status code.
+        """
         try:
             client = create_mongo_client()
             db = client['Frames']
@@ -20,8 +30,20 @@ class ManageFrameApiHandler(Resource):
         except Exception as e:
             print(e)
             return {'error': 'Error retrieving frames'}, 500
-        
+
     def post(self):
+        """
+        Adds a new frame to the Frames database.
+
+        This method receives a new frame from the request, connects to the MongoDB client, selects the 'Frames' database 
+        and the 'Frames' collection, and adds the new frame to the collection. If the frame is successfully added, it 
+        returns a success message and a 200 HTTP status code. If an error occurs during the addition, it returns an error 
+        message and a 500 HTTP status code.
+
+        Returns:
+            tuple: A tuple containing a success message and the ID of the new frame (if successful) or an error message (if not successful), 
+        and an HTTP status code.
+        """
         parser = reqparse.RequestParser()
         parser.add_argument('new_frame', type=dict, location='json')
         args = parser.parse_args()
@@ -50,6 +72,19 @@ api.add_resource(ManageFrameApiHandler, '/manageFrame')
 
 class ManageRoleApiHandler(Resource):
     def get(self, frame_id):
+        """
+        Fetches the roles of a specific frame from the Frames database.
+
+        This method connects to the MongoDB client, selects the 'Frames' database and the 'Frames' collection.
+        It then performs a search for a frame with the provided frame_id. If a frame is found, it returns the roles
+        associated with that frame and a 200 HTTP status code. If no frame is found, it returns an error message and a 404 HTTP status code.
+
+        Parameters:
+            frame_id (str): The Object ID of the frame to fetch roles from.
+
+        Returns:
+            tuple: A tuple containing the roles of the frame (if found) or an error message (if not found), and an HTTP status code.
+        """
         client = create_mongo_client()
         db = client['Frames']
         frames = db['Frames']
@@ -60,7 +95,62 @@ class ManageRoleApiHandler(Resource):
         else:
             return {'error': 'Frame not found'}, 404
         
+    def put(self, frame_id):
+        """
+        Handles adding new role to a specific frame in the Frames database.
+
+        This method receives a list of new roles from the request, prepares them with empty values lists, 
+        and adds them to the specified frame in the database. If the frame is successfully updated, 
+        it returns the updated frame and a 200 HTTP status code. If no frame is found with the provided frame_id, 
+        it returns an error message and a 404 HTTP status code.
+
+        Parameters:
+            frame_id (str): The ID of the frame to update.
+
+        Returns:
+            tuple: A tuple containing the updated frame (if found) or an error message (if not found), and an HTTP status code.
+        """
+        parser = reqparse.RequestParser()
+        parser.add_argument('new_roles', type=list, location='json')
+        args = parser.parse_args()
+
+        new_roles = args['new_roles']  # Get the new roles from the request
+        print(new_roles)
+        
+        client = create_mongo_client()
+        db = client['Frames']
+        frames = db['Frames']
+
+        # Prepare new roles with empty values list
+        new_roles_with_values = [{'name': role_name, 'values': []} for role_name in new_roles]
+
+        updated_frame = frames.find_one_and_update(
+            {'_id': ObjectId(frame_id)}, 
+            {'$push': {'roles': {'$each': new_roles_with_values}}},
+            return_document=ReturnDocument.AFTER
+        )
+        if updated_frame is not None:
+            return json.loads(json_util.dumps(updated_frame)), 200
+        else:
+            return {'error': 'Frame not found'}, 404
+        
     def post(self, frame_id):
+        """
+        Updates the name of a role in a specific frame in the Frames database.
+
+        This method receives the old and new role names from the request. It then finds the frame with the provided frame_id 
+        in the database and updates the name of the role from the old name to the new name. If the frame and role are found 
+        and the role name is successfully updated, it returns the updated frame and a 200 HTTP status code. If no frame is 
+        found with the provided frame_id, or if the role with the old name is not found, it returns an error message and a 
+        404 HTTP status code.
+
+        Parameters:
+            frame_id (str): The ID of the frame in which to update the role name.
+
+        Returns:
+            tuple: A tuple containing the updated frame (if found) or an error message (if not found), and an HTTP status code.
+        """
+    
         parser = reqparse.RequestParser()
         parser.add_argument('old_role_name', type=str, location='json')
         parser.add_argument('new_role_name', type=str, location='json')
@@ -81,7 +171,43 @@ class ManageRoleApiHandler(Resource):
         if updated_frame is not None:
             return json.loads(json_util.dumps(updated_frame)), 200
         else:
-            return {'error': 'Frame not found'}, 404
+            return {'error': 'Frame with specified role not found'}, 404
         
+    def delete(self, frame_id):
+        """
+        Deletes specific roles from a frame in the Frames database.
+
+        This method receives a list of role names from the request. It then finds the frame with the provided frame_id 
+        in the database and removes the roles with the specified names. If the frame and roles are found and the roles 
+        are successfully deleted, it returns the updated frame and a 200 HTTP status code. If no frame is found with the 
+        provided frame_id, or if the roles with the specified names are not found, it returns an error message and a 
+        404 HTTP status code.
+
+        Parameters:
+            frame_id (str): The ID of the frame from which to delete roles.
+
+        Returns:
+            tuple: A tuple containing the updated frame (if found) or an error message (if not found), and an HTTP status code.
+        """
+        parser = reqparse.RequestParser()
+        parser.add_argument('role_names', type=list, location='json')
+        args = parser.parse_args()
+        
+        role_names = args['role_names']
+        print(role_names)
+        
+        client = create_mongo_client()
+        db = client['Frames']
+        frames = db['Frames']
+
+        updated_frame = frames.find_one_and_update(
+            {'_id': ObjectId(frame_id)}, 
+            {'$pull': {'roles': {'name': {'$in': role_names}}}},
+            return_document=ReturnDocument.AFTER
+        )
+        if updated_frame is not None:
+            return json.loads(json_util.dumps(updated_frame)), 200
+        else:
+            return {'error': 'Frame not found'}, 404
 
 api.add_resource(ManageRoleApiHandler, '/frames/<frame_id>')

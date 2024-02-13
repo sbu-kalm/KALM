@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FrameTable } from "./FrameTable"
 import { RolesTable } from "./RolesTable";
-import { getFrames, addFrame, getRoles, updateRole } from "../../../api/ManageFrameApiAccessor";
+import { getFrames, addFrame, getRoles, updateRole, deleteRoles, addRole} from "../../../api/ManageFrameApiAccessor";
 
 const ManageFrame = () => {
     // This is the hook that allows us to navigate to different pages
@@ -43,12 +43,27 @@ const ManageFrame = () => {
 
     const handleTesting = async () => {
         console.log("Testing...")
+        // Testing for getting roles based off a frame
         // const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
-        const test = await updateRole({
-            frameId: "65ca65da8f5aee53e7d95241",
-            oldRoleName: "MAN",
-            newRoleName: "YUHHH"
-        });
+
+        // Testing for updating a role
+        // const test = await updateRole({
+        //     frameId: "65ca65da8f5aee53e7d95241",
+        //     oldRoleName: "MAN",     //make sure the role you want to update exists
+        //     newRoleName: "YUHHH"    
+        // });
+
+        // Testing for deleting a role
+        // const test = await deleteRoles({
+        //     frameId: "65ca65da8f5aee53e7d95241",
+        //     roleNames: ["YUHHH"]    //make sure the role you want to delete exists
+        // });
+
+        // Testing for adding a role
+        // const test = await addRole({
+        //     frameId: "65ca65da8f5aee53e7d95241",
+        //     newRoles: ["YUHHH", "JASON IS A BUNNY"]
+        // });
         console.log(test);
     }
 
@@ -70,8 +85,6 @@ const ManageFrame = () => {
                 <Stack>
                     {renderTable()}
                 </Stack>
-
-
         </>
     )
 }

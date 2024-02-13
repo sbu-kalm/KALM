@@ -1,11 +1,7 @@
 import { Role } from "../utils/models/Frame";
 const baseUrl = "http://127.0.0.1:5000";
 
-interface FrameQueryParams {
-    frameId: string;
-}
-
-export const getRoles = async ({frameId}: FrameQueryParams): Promise<Role[]> => {
+export const getRoles = async ({frameId}: {frameId: string}): Promise<Role[]> => {
     try {
         const res = await fetch(`http://127.0.0.1:5000/flask/frames/${frameId}`, {
             method: "GET",
@@ -23,6 +19,28 @@ export const getRoles = async ({frameId}: FrameQueryParams): Promise<Role[]> => 
         console.error(error);
     }
     return Promise.reject("Error fetching roles");
+}
+
+export const addRole = async ({frameId, newRoles}: {frameId: string, newRoles: string[]}) => {
+    try {
+        const res = await fetch(`${baseUrl}/flask/frames/${frameId}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                new_roles: newRoles
+            }),
+        });
+        console.log(res);
+        if (res.ok) {
+            const resData = await res.json();
+            console.log("Roles added successfully:", resData);
+            return resData;
+        } else {
+            console.error("Error adding roles:", res.status, res.statusText);
+        }
+    }catch (error) {
+        console.error(error);
+    }
 }
 
 interface UpdateRoleParams {
@@ -47,6 +65,28 @@ export const updateRole = async ({frameId, oldRoleName, newRoleName}: UpdateRole
             return resData;
         } else {
             console.error("Error updating role:", res.status, res.statusText);
+        }
+    }catch (error) {
+        console.error(error);
+    }
+}
+
+export const deleteRoles = async ({frameId, roleNames}: {frameId: string, roleNames: string[]}) => {
+    try {
+        const res = await fetch(`${baseUrl}/flask/frames/${frameId}`, {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                role_names: roleNames
+            }),
+        });
+        console.log(res);
+        if (res.ok) {
+            const resData = await res.json();
+            console.log("Role deleted successfully:", resData);
+            return resData;
+        } else {
+            console.error("Error deleting role:", res.status, res.statusText);
         }
     }catch (error) {
         console.error(error);
