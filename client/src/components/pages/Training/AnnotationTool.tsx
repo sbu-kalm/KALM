@@ -3,8 +3,7 @@ import { Button, Flex, Title, Text } from '@mantine/core';
 import tinycolor from 'tinycolor2';
 import { useTrainingContext } from '../../../context/TrainingContextProvider';
 import { sendAnnotation } from "../../../api/TrainingApiAccessor";
-
-import frames from '../../../data/frames.json';
+import { getFrames } from "../../../api/GeneralApiAccessor";
 
 interface Role {
     name: string,
@@ -25,27 +24,32 @@ const AnnotationTool = () => {
     const [activeItemIdx, setActiveItemIdx] = useState<number | null >(null); // user chosen role or lexical unit
 
     useEffect(() => {
-        const frame = frames.find(f => f.name === trainingState.selectedFrame); // fetch the selected frame
-        if (frame) {
-            const r = frame.roles.map((r) => {
-                return ({
-                    "name": r.name, // get the role names
+        async function findFrame() {
+            const frames = await getFrames();
+        
+            const frame = frames.find((f:any) => f.name === trainingState.selectedFrame); // fetch the selected frame
+            if (frame) {
+                const r = frame.roles.map((r:any) => {
+                    return ({
+                        "name": r.name, // get the role names
+                        "color": `hsl(${Math.floor(Math.random() * 360)}, ${Math.floor(Math.random() * 81 + 20)}%, ${Math.floor(Math.random() * 24 + 72)}%` // random lighter color
+                    })
+                })
+                r.unshift({ // first element in roles array would be the lexical units
+                    "name": "Lexical Units",
                     "color": `hsl(${Math.floor(Math.random() * 360)}, ${Math.floor(Math.random() * 81 + 20)}%, ${Math.floor(Math.random() * 24 + 72)}%` // random lighter color
                 })
-            })
-            r.unshift({ // first element in roles array would be the lexical units
-                "name": "Lexical Units",
-                "color": `hsl(${Math.floor(Math.random() * 360)}, ${Math.floor(Math.random() * 81 + 20)}%, ${Math.floor(Math.random() * 24 + 72)}%` // random lighter color
-            })
-            setRoles(r); 
+                setRoles(r); 
 
-            setWords(trainingState.inputText!.split(" ").map((text, index) => { // split the input sentence into words
-                return ({
-                    "idx": index,
-                    "text": text
-                })
-            }))
+                setWords(trainingState.inputText!.split(" ").map((text, index) => { // split the input sentence into words
+                    return ({
+                        "idx": index,
+                        "text": text
+                    })
+                }))
+            }
         }
+        findFrame();
     }, []) // get the roles for the selected frame
 
     const clickRole = (i: number) => { // index of role
