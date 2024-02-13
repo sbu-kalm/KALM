@@ -44,7 +44,7 @@ const ManageFrame = () => {
     const handleTesting = async () => {
         console.log("Testing...")
         // Testing for getting roles based off a frame
-        // const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
+        const test = await getRoles({frameId: "65ca65da8f5aee53e7d95241"});
 
         // Testing for updating a role
         // const test = await updateRole({
