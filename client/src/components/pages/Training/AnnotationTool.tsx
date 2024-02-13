@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Flex, Title, Text } from '@mantine/core';
 import tinycolor from 'tinycolor2';
 import { useTrainingContext } from '../../../context/TrainingContextProvider';
+import { sendAnnotation } from "../../../api/TrainingApiAccessor";
 
 import frames from '../../../data/frames.json';
 
@@ -65,6 +66,11 @@ const AnnotationTool = () => {
         }
     }
 
+    const handleSubmit = async () => {
+        const lvp = await sendAnnotation(trainingState.inputText!);
+        console.log(lvp);
+    }
+
     return (
         <Flex gap={"xl"}>
             <Flex gap={"sm"} direction={"column"} style={{minWidth: "230px"}}>
@@ -104,7 +110,7 @@ const AnnotationTool = () => {
                         })}
                     </Flex>
                 </Flex>
-                <Button variant="filled" size={"xs"} style={{margin: "15px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
+                <Button onClick={handleSubmit} variant="filled" size={"xs"} style={{margin: "15px 0", borderRadius: "10px"}} color="blue.5">Submit</Button>
             </Flex>
         </Flex>
     );
