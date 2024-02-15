@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Being_employed",
         "roles": [
             {
@@ -43,7 +42,6 @@
         "description": "Describes a person being employed in a job"
     },
     {
-        "id": 2,
         "name": "Age",
         "roles": [
             {
@@ -62,7 +60,6 @@
         "description": "Describes a person's age"
     },
     {
-        "id": 3,
         "name": "Human_gender",
         "roles": [
             {
@@ -81,7 +78,6 @@
         "description": "Describes a person's gender"
     },
     {
-        "id": 4,
         "name": "Residence",
         "roles": [
             {
@@ -106,7 +102,6 @@
         "description": "Describes where someone lives"
     },
     {
-        "id": 5,
         "name": "Being_born",
         "roles": [
             {
@@ -131,7 +126,6 @@
         "description": "Describes details around a person being born"
     },
     {
-        "id": 6,
         "name": "Renting",
         "roles": [
             {
@@ -169,7 +163,6 @@
         "description": "Describes renting goods/property"
     },
     {
-        "id": 7,
         "name": "Commerce_buy",
         "roles": [
             {
@@ -217,7 +210,6 @@
         "description": "Describes buying goods in a commercial transaction"
     },
     {
-        "id": 8,
         "name": "Possession",
         "roles": [
             {
@@ -237,7 +229,6 @@
         "description": "Describes someone owning something"
     },
     {
-        "id": 9,
         "name": "Cooking",
         "roles": [
             {
@@ -270,7 +261,6 @@
         "description": "Describes cooking food"
     },
     {
-        "id": 10,
         "name": "Dressing",
         "roles": [
             {
@@ -289,7 +279,6 @@
         "description": "Describes someone putting on clothes"
     },
     {
-        "id": 11,
         "name": "Create_organization",
         "roles": [
             {
@@ -321,7 +310,6 @@
         "description": "Describes creating an organization"
     },
     {
-        "id": 12,
         "name": "Travel",
         "roles": [
             {
@@ -347,7 +335,6 @@
         "description": "Describes someone traveling from one place to another"
     },
     {
-        "id": 13,
         "name": "Education",
         "roles": [
             {
@@ -379,7 +366,6 @@
         "description": "Describes someone's education"
     },
     {
-        "id": 14,
         "name": "Giving",
         "roles": [
             {
@@ -409,7 +395,6 @@
         "description": "Describes giving something to someone"
     },
     {
-        "id": 15,
         "name": "Personal_relationship",
         "roles": [
             {
@@ -476,7 +461,6 @@
         "description": "Describes personal/family relationships between people"
     },
     {
-        "id": 16,
         "name": "People_by_origin",
         "roles": [
             {
@@ -495,7 +479,6 @@
         "description": "Describes a person's origin/ancestry"
     },
     {
-        "id": 17,
         "name": "People_by_religion",
         "roles": [
             {
@@ -514,7 +497,6 @@
         "description": "Describes a person's religion"
     },
     {
-        "id": 18,
         "name": "Collaboration",
         "roles": [
             {
@@ -541,7 +523,6 @@
         "description": "Describes two parties collaborating"
     },
     {
-        "id": 19,
         "name": "Quitting",
         "roles": [
             {
@@ -572,7 +553,6 @@
         "description": "Describes someone quitting a job"
     },
     {
-        "id": 20,
         "name": "Medical_conditions",
         "roles": [
             {
@@ -591,7 +571,6 @@
         "description": "Describes someone's medical/health conditions"
     },
     {
-        "id": 21,
         "name": "Award",
         "roles": [
             {
@@ -622,7 +601,6 @@
         "description": "Describes someone receiving an award"
     },
     {
-        "id": 22,
         "name": "Death",
         "roles": [
             {
@@ -654,7 +632,6 @@
         "description": "Describes someone dying"
     },
     {
-        "id": 23,
         "name": "Using",
         "roles": [
             {
@@ -674,7 +651,6 @@
         "description": "Describes using/operating something"
     },
     {
-        "id": 24,
         "name": "Building",
         "roles": [
             {
@@ -701,7 +677,6 @@
         "description": "Describes constructing/building something"
     },
     {
-        "id": 25,
         "name": "Killing",
         "roles": [
             {
@@ -727,7 +702,6 @@
         "description": "Describes killing someone"
     },
     {
-        "id": 26,
         "name": "Arrest",
         "roles": [
             {
@@ -753,7 +727,6 @@
         "description": "Describes authorities arresting a suspect"
     },
     {
-        "id": 27,
         "name": "Attack",
         "roles": [
             {
@@ -774,7 +747,6 @@
         "description": "Describes someone physically attacking someone"
     },
     {
-        "id": 28,
         "name": "Leadership",
         "roles": [
             {
@@ -801,7 +773,6 @@
         "description": "Describes a leadership position"
     },
     {
-        "id": 29,
         "name": "Manufacturing",
         "roles": [
             {
@@ -822,7 +793,6 @@
         "description": "Describes manufacturing a product"
     },
     {
-        "id": 30,
         "name": "Earnings",
         "roles": [
             {
@@ -850,7 +820,6 @@
         "description": "Describes someone earning money or goods"
     },
     {
-        "id": 31,
         "name": "Beat_opponent",
         "roles": [
             {
@@ -881,7 +850,6 @@
         "description": "Describes defeating an opponent in a competition"
     },
     {
-        "id": 32,
         "name": "Cure",
         "roles": [
             {
@@ -914,7 +882,6 @@
         "description": "Describes healing or curing someone"
     },
     {
-        "id": 33,
         "name": "Contacting",
         "roles": [
             {
@@ -935,7 +902,6 @@
         "description": "Describes communicating with someone"
     },
     {
-        "id": 34,
         "name": "Protest",
         "roles": [
             {
@@ -957,7 +923,6 @@
         "description": "Describes protesting something/someone"
     },
     {
-        "id": 35,
         "name": "Submitting_documents",
         "roles": [
             {
@@ -984,7 +949,6 @@
         "description": "Describes submitting documents to an authority"
     },
     {
-        "id": 36,
         "name": "Performing",
         "roles": [
             {
@@ -1018,7 +982,6 @@
         "description": "Describes performing in an event"
     },
     {
-        "id": 37,
         "name": "Releasing_from_custody",
         "roles": [
             {
@@ -1044,7 +1007,6 @@
         "description": "Describes releasing a suspect from custody"
     },
     {
-        "id": 38,
         "name": "Sign_agreement",
         "roles": [
             {
@@ -1066,7 +1028,6 @@
         "description": "Describes signing an agreement "
     },
     {
-        "id": 39,
         "name": "Publishing",
         "roles": [
             {
@@ -1109,7 +1070,6 @@
         "description": "Describes publishing written content"
     },
     {
-        "id": 40,
         "name": "Losing",
         "roles": [
             {
@@ -1139,7 +1099,6 @@
         "description": "Describes losing possession of something"
     },
     {
-        "id": 41,
         "name": "Surrendering",
         "roles": [
             {
@@ -1166,7 +1125,6 @@
         "description": "Describes a fugitive surrendering to authorities"
     },
     {
-        "id": 42,
         "name": "Text_creation",
         "roles": [
             {
@@ -1186,7 +1144,6 @@
         "description": "Describes creating a written work"
     },
     {
-        "id": 43,
         "name": "Theft",
         "roles": [
             {
@@ -1214,7 +1171,6 @@
         "description": "Describes stealing goods from someone"
     },
     {
-        "id": 44,
         "name": "Undressing",
         "roles": [
             {
@@ -1233,7 +1189,6 @@
         "description": "Describes taking clothes off"
     },
     {
-        "id": 45,
         "name": "Growing_food",
         "roles": [
             {
@@ -1253,7 +1208,6 @@
         "description": "Describes growing food"
     },
     {
-        "id": 46,
         "name": "Participation",
         "roles": [
             {
@@ -1281,7 +1235,6 @@
         "description": "Describes participating in an event with others"
     },
     {
-        "id": 47,
         "name": "Borrow_lend",
         "roles": [
             {
@@ -1310,7 +1263,6 @@
         "description": "Describes borrowing and lending something"
     },
     {
-        "id": 48,
         "name": "Restaurant",
         "roles": [
             {
@@ -1344,7 +1296,6 @@
         "description": "Describes a restaurant's offerings and location"
     },
     {
-        "id": 49,
         "name": "Import_export",
         "roles": [
             {
@@ -1381,7 +1332,6 @@
         "description": "Describes importing/exporting goods between countries"
     },
     {
-        "id": 50,
         "name": "Scheduling",
         "roles": [
             {

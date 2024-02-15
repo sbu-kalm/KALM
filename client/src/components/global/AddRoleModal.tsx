@@ -6,7 +6,8 @@ import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
-import { Frame, Role } from "../../utils/models/Frame";
+import { addRole } from "../../api/ManageFrameApiAccessor";
+import { getFrames } from "../../api/GeneralApiAccessor";
 
 function AddRoleModalBase() {
   const { selectedFrame } = useParams();
@@ -21,46 +22,32 @@ function AddRoleModalBase() {
 
   const form = useForm({});
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = async () => {
     // form.submit();
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
 
     const selectedFrameInfo = manageState.frameList.find((frame) => frame.name === selectedFrame);
+    console.log(selectedFrameInfo, "selected frame info");
+    if (selectedFrameInfo) {
+      const frameId = selectedFrameInfo._id;
+      const newRoles = Object.values(form.values).filter((value) => value !== "");
+      console.log(frameId, "frame id")
+      console.log(newRoles, "new roles");
 
-    const currentRoles = selectedFrameInfo?.roles || [];
+      // add new roles to frame
+      const roleAddedResponse = await addRole({ frameId: frameId as string, newRoles: newRoles as string[] });
+      console.log(roleAddedResponse, "role added response")
 
-    // update selectedFrameInfo.roles[] by adding new roles
-    const updatedRoles: Role[] = currentRoles.concat(
-      Object.values(form.values)
-        .filter((value) => value !== "")
-        .map((value) => ({
-          name: value as string,
-          values: []
-        }))
-    ) || [];
+      // get updated frame list
+      const updatedFrameList = await getFrames();
+      console.log(updatedFrameList, "updated frame list")
 
-    // create updated frame with updated roles
-    const updatedFrame: Frame = {
-      ...selectedFrameInfo,
-      name: selectedFrameInfo?.name || 'Default Name',
-      roles: updatedRoles
+      // set new framesList in manage state
+      setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFrameList });
+
+      setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
     }
-
-    // find selected frame in framesList and replace it with new frame
-    const updatedFramesList = manageState.frameList?.map((frame) => {
-      if (frame.id === selectedFrameInfo?.id) {
-        return updatedFrame;
-      }
-      return frame;
-    })
-
-    console.log(updatedFramesList, "new frames list")
-
-    // set new framesList in manage state
-    setManageState({ type: "UPDATE_FRAME_LIST", frameList: updatedFramesList });
-
-    setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
 
     notifications.show({
       icon: <IconCheck />,

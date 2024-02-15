@@ -1,7 +1,6 @@
 import React, { createContext, useEffect, useReducer, useContext } from "react";
 import { ManageModalEnum } from "../utils/enums";
 import { Frame, Role } from "../utils/models/Frame";
-import frames from "../data/frames.json";
 import { getFrames } from "../api/GeneralApiAccessor";
 
 interface ManageContextProviderProps {
@@ -16,7 +15,7 @@ export interface ManageState {
 
 // Constant initialization
 const initialState: ManageState = {
-    frameList: frames,
+    frameList: [],
     modal: ManageModalEnum.NONE,
 };
 
@@ -80,13 +79,13 @@ const manageReducer = (state: ManageState, action: any): ManageState => {
         case "INITIALIZE":
             return {
                 ...state,
-                frameList: action.frameList ?? frames,
+                frameList: action.frameList ?? [],
             };
         case "UPDATE_FRAME_LIST":
             console.log(action.frameList, "FRAME LIST")
             return {
                 ...state,
-                frameList: action.frameList ?? frames,
+                frameList: action.frameList,
             };
         case "SET_SELECTED_ROLES":
             return {

@@ -26,6 +26,9 @@ class ManageFrameApiHandler(Resource):
             db = client['Frames']
             frames = db['Frames']
             all_frames = list(frames.find())
+            #convert ObjectId into string
+            for frame in all_frames:
+                frame['_id'] = str(frame['_id'])
             return json.loads(json_util.dumps(all_frames)), 200
         except Exception as e:
             print(e)

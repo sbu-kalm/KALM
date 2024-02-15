@@ -4,7 +4,6 @@ import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "@mantine/form";
 import { IconPlus } from "@tabler/icons-react";
 import { useState } from "react";
-// import frames from '../../data/frames.json';
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
 import { addFrame } from "../../api/ManageFrameApiAccessor";
 

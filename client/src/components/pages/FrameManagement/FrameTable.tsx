@@ -86,6 +86,7 @@ export function FrameTable() {
                 withColumnBorders
                 records={sortedRecords}
                 columns={columns}
+                idAccessor={({ name, _id }) => `${name}:${_id}`}
                 // selectedRecords={selectedRecords}
                 // onSelectedRecordsChange={setSelectedRecords}
                 onRowClick={({ record, index }) => handleRowClick(record, index)}
