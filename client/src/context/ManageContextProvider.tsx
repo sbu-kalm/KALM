@@ -1,7 +1,6 @@
 import React, { createContext, useEffect, useReducer, useContext } from "react";
 import { ManageModalEnum } from "../utils/enums";
 import { Frame, Role } from "../utils/models/Frame";
-import frames from "../data/frames.json";
 import { getFrames } from "../api/GeneralApiAccessor";
 
 interface ManageContextProviderProps {
