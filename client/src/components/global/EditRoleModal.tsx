@@ -5,7 +5,6 @@ import { IconCheck } from "@tabler/icons-react";
 import { useManageContext, useManageDispatchContext } from '../../context/ManageContextProvider';
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { Frame, Role } from "../../utils/models/Frame";
 import { updateRole } from "../../api/ManageFrameApiAccessor";
 import { getFrames } from "../../api/GeneralApiAccessor";
 
