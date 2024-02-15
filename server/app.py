@@ -4,7 +4,7 @@ from flask_cors import CORS #comment this on deployment
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from dotenv import load_dotenv
-
+from utils.db import create_mongo_client
 from api.manage_frame_api import manage_frame_api_bp
 
 load_dotenv()

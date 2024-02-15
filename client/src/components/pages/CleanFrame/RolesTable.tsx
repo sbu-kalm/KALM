@@ -74,7 +74,7 @@ export function RolesTable() {
                 withColumnBorders
                 records={roles}
                 columns={columns}
-                idAccessor={({ name, id }) => `${name}:${id}`}
+                idAccessor={({ name, _id }) => `${name}:${_id}`}
                 selectedRecords={selectedRecords}
                 onSelectedRecordsChange={setSelectedRecords}
                 onRowClick={({ record, index }) => handleRowClick(record, index)}

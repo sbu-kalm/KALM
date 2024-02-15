@@ -60,7 +60,7 @@ export const useFrames = () => {
 
           // Add frame
           frames.current.push({
-            id: frameId++,
+            _id: frameId++,
             name,
             roles
           });

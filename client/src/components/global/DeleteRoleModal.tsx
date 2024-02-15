@@ -26,7 +26,7 @@ function DeleteRoleModalBase() {
 
       // find selected frame in framesList and replace it with new frame
       const updatedFramesList = manageState.frameList?.map((frame) => {
-        if (frame.id === selectedFrameInfo?.id) {
+        if (frame._id === selectedFrameInfo?._id) {
           return updatedFrame;
         }
         return frame;
