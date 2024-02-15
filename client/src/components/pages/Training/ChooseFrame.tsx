@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Button, Flex, Text, Textarea } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
-import fr from '../../../data/frames.json';
+// import fr from '../../../data/frames.json';
+import { getFrames } from "../../../api/GeneralApiAccessor";
 import { useTrainingDispatchContext } from '../../../context/TrainingContextProvider';
 
 
@@ -14,12 +15,16 @@ const ChooseFrame = () => {
     const [text, setText] = useState<string>("");
 
     useEffect(() => {
-        const names = fr.map(f => f.name).sort(); // get the names in order
-        setFrames(names); 
-        setShownFrames(names); // show all the names initially
+        async function grabFrames() {
+            const fr = await getFrames();
+            const names = fr.map((f:any) => f.name).sort(); // get the names in order
+            setFrames(names); 
+            setShownFrames(names); // show all the names initially
+        }
+        grabFrames();
     }, []); // display all the frames that start with A
 
-    const getFrames = (letter: string) => {
+    const getFramesSubset = (letter: string) => {
         const frameSubset = frames.filter(name => name.startsWith(letter)); // only return the names that start with the specifed letter
         setShownFrames(frameSubset);
     }
@@ -80,7 +85,7 @@ const ChooseFrame = () => {
                     <Flex>
                         <Flex direction={"column"}>
                             {alphabet.map((letter, key) => {
-                                return <Button key={key} onClick={() => {getFrames(letter)}} style={{padding: "0px"}} variant='transparent' size="compact-xs">
+                                return <Button key={key} onClick={() => {getFramesSubset(letter)}} style={{padding: "0px"}} variant='transparent' size="compact-xs">
                                     {letter}
                                 </Button>
                             })}
