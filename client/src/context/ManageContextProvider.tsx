@@ -16,7 +16,7 @@ export interface ManageState {
 
 // Constant initialization
 const initialState: ManageState = {
-    frameList: frames,
+    frameList: [],
     modal: ManageModalEnum.NONE,
 };
 
@@ -80,13 +80,13 @@ const manageReducer = (state: ManageState, action: any): ManageState => {
         case "INITIALIZE":
             return {
                 ...state,
-                frameList: action.frameList ?? frames,
+                frameList: action.frameList ?? [],
             };
         case "UPDATE_FRAME_LIST":
             console.log(action.frameList, "FRAME LIST")
             return {
                 ...state,
-                frameList: action.frameList ?? frames,
+                frameList: action.frameList,
             };
         case "SET_SELECTED_ROLES":
             return {

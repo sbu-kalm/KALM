@@ -5,7 +5,7 @@ export interface Role {
 }
 
 export interface Frame {
-    _id?: number;
+    _id?: string;
     name: string;
     roles?: Role[];
     description?: string;

@@ -1,10 +1,6 @@
-import os
 from flask import Flask, send_from_directory
 from flask_cors import CORS #comment this on deployment
-from pymongo import MongoClient
-from bson.objectid import ObjectId
 from dotenv import load_dotenv
-from utils.db import create_mongo_client
 from api.manage_frame_api import manage_frame_api_bp
 from api.parse_frame_api import parse_frame_api_bp
 from api.training_api import training_api_bp
