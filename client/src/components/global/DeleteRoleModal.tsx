@@ -48,7 +48,7 @@ function DeleteRoleModalBase() {
         onClose={() =>
           setManageState({ type: "CHANGE_MODAL", modal: "NONE" })
         }
-        title="Delete Frames?"
+        title="Delete Roles?"
         centered size="auto">
         <Group justify="space-between">
           <Button variant="light"
