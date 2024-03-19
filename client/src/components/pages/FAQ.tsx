@@ -1,4 +1,4 @@
-import { Button, Paper, Accordion, Box, Stack, Title, Textarea, Text, Flex } from '@mantine/core';
+import { Paper, Accordion, Title, Text } from '@mantine/core';
 
 const customStyles = {
   paper: {
