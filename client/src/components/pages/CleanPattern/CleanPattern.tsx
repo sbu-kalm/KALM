@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { RolesTable } from "./RolesTable";
 import { Frame } from "../../../utils/models/Frame";
 
-const CleanFrame = () => {
+const CleanPattern = () => {
     // This is the hook that allows us to navigate to different pages
     const { selectedFrame } = useParams();
     const [table, setTable] = useState("frames");
@@ -27,7 +27,7 @@ const CleanFrame = () => {
 
     return (
         <>
-            <Title order={2} c="blue">Clean Frame</Title>
+            <Title order={2} c="blue">Clean Pattern</Title>
             <Text size="sm" c="blue"
                 style={{
                     padding: "8px 20px",
@@ -47,4 +47,4 @@ const CleanFrame = () => {
     )
 }
 
-export default CleanFrame
+export default CleanPattern
