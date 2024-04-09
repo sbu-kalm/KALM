@@ -1,9 +1,10 @@
 import { FrameTable } from "./FrameTable"
-import { Text, Stack, Title } from "@mantine/core"
+import { Text, Stack, Title, Button } from "@mantine/core"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RolesTable } from "./RolesTable";
 import { Frame } from "../../../utils/models/Frame";
+import { getPatterns } from "../../../api/CleanPatternApiAccessor";
 
 const CleanPattern = () => {
     // This is the hook that allows us to navigate to different pages
@@ -25,9 +26,22 @@ const CleanPattern = () => {
         }
     }
 
+    const fetchPatternList = async () => {
+        try {
+            const patternList = await getPatterns();
+            console.log(patternList, "Pattern LIST")
+        }
+        catch (error) {
+            console.error("Error fetching patternList:", error);
+        }
+    }
+
+    
+
     return (
         <>
             <Title order={2} c="blue">Clean Pattern</Title>
+            <Button onClick={fetchPatternList}> Grab patterns </Button>
             <Text size="sm" c="blue"
                 style={{
                     padding: "8px 20px",

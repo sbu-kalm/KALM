@@ -13,6 +13,7 @@ import FAQ from './components/pages/FAQ';
 import "../src/css/NavbarStyle.css";
 import { ManageContextProvider } from './context/ManageContextProvider';
 import { TrainingContextProvider } from './context/TrainingContextProvider';
+import { CleanContext, CleanContextProvider } from './context/CleanContextProvider';
 
 function App() {
   const [opened, { toggle }] = useDisclosure();
@@ -77,7 +78,10 @@ function App() {
                 <TrainingContextProvider>
                   <Training />
                 </TrainingContextProvider>} />
-            <Route path="/CleanPattern/:selectedFrame?" element={<CleanPattern />} />
+            <Route path="/CleanPattern/:selectedFrame?" element={
+              <CleanContextProvider>
+                <CleanPattern />
+              </CleanContextProvider>} />
             <Route path="/questionAnswer" element={<QuestionAnswer />} />
             <Route path="/faq" element={<FAQ />} />
           </Routes>

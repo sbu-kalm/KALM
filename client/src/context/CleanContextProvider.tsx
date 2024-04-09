@@ -1,34 +1,32 @@
 import React, { createContext, useEffect, useReducer, useContext } from "react";
 import { ManageModalEnum } from "../utils/enums";
-import { Frame, Role } from "../utils/models/Frame";
-import { getFrames } from "../api/GeneralApiAccessor";
+import { Pattern, Role } from "../utils/models/Frame";
+import { getPatterns } from "../api/CleanPatternApiAccessor";
 
 interface CleanContextProviderProps {
     children?: React.ReactNode;
 }
 
 export interface CleanState {
-    frameList: Frame[];
+    patternList: Pattern[];
     modal?: string;
-    selectedRecords?: Role[];
 }
 
 // Constant initialization
 const initialState: CleanState = {
-    frameList: [],
+    patternList: [],
     modal: ManageModalEnum.NONE,
 };
 
-export interface ManagePageActions {
+export interface CleanPageActions {
     type: string;
-    frameList?: Frame[];
+    patternList?: Pattern[];
     modal?: string;
-    selectedRecords?: Role[];
 }
 
 export const CleanContext = createContext<CleanState>(initialState);
-export const ManageDispatchContext = createContext<
-    React.Dispatch<ManagePageActions>
+export const CleanDispatchContext = createContext<
+    React.Dispatch<CleanPageActions>
 >(() => { });
 
 /*
@@ -36,26 +34,27 @@ export const ManageDispatchContext = createContext<
  * Children will attempt to access the state of the edit page by calling:
  *    const CleanState = useContext(CleanState)
  * Children will attempt to change state through the reducer through methods:
- *    const setCleanState = useContext(ManageDispatchContext)
+ *    const setCleanState = useContext(CleanDispatchContext)
  *    setCleanState({
  *         
  *    })
  */
 export const CleanContextProvider = (props: CleanContextProviderProps) => {
-    const [CleanState, dispatch] = useReducer(manageReducer, initialState);
+    const [CleanState, dispatch] = useReducer(cleanReducer, initialState);
 
     //initialize the frame list
     useEffect(() => {
-        fetchFrameList();
+        fetchPatternList();
     }, []);
 
-    const fetchFrameList = async () => {
+    const fetchPatternList = async () => {
         try {
-            const frameList = await getFrames();
-            console.log(frameList, "FRAME LIST")
+            console.log("Fetching pattern list")
+            const patternList = await getPatterns();
+            console.log(patternList, "Pattern LIST")
             dispatch({
                 type: "INITIALIZE",
-                frameList: frameList,
+                patternList: patternList,
             });
         }
         catch (error) {
@@ -65,41 +64,21 @@ export const CleanContextProvider = (props: CleanContextProviderProps) => {
 
     return (
         <CleanContext.Provider value={CleanState}>
-            <ManageDispatchContext.Provider value={dispatch}>
+            <CleanDispatchContext.Provider value={dispatch}>
                 {props.children}
-            </ManageDispatchContext.Provider>
+            </CleanDispatchContext.Provider>
         </CleanContext.Provider>
     );
 };
 
-
-// This function handles all of the changes to the manage page state
-const manageReducer = (state: CleanState, action: any): CleanState => {
+// This function handles all of the changes to the clean page state
+const cleanReducer = (state: CleanState, action: any): CleanState => {
+    console.log("Action: ", action)
     switch (action.type) {
         case "INITIALIZE":
             return {
                 ...state,
-                frameList: action.frameList ?? [],
-            };
-        case "UPDATE_FRAME_LIST":
-            console.log(action.frameList, "FRAME LIST")
-            return {
-                ...state,
-                frameList: action.frameList,
-            };
-        case "SET_SELECTED_ROLES":
-            return {
-                ...state,
-                selectedRecords: action.selectedRecords,
-            };
-        case "CHANGE_MODAL":
-            // Check if 'action.modal' exists and is a valid 'ManageModalEnum' value.
-            // If true, assign 'action.modal' to 'modal'. If false, assign 'ManageModalEnum.NONE' to 'modal'.
-            return {
-                ...state,
-                modal: action.modal && Object.values(ManageModalEnum).includes(action.modal as ManageModalEnum)
-                    ? action.modal as ManageModalEnum
-                    : ManageModalEnum.NONE,
+                patternList: action.patternList ?? [],
             };
         default:
             return state;
@@ -110,6 +89,6 @@ export function useCleanContext() {
     return useContext(CleanContext);
 }
 
-export function useManageDispatchContext() {
-    return useContext(ManageDispatchContext);
+export function useCleanDispatchContext() {
+    return useContext(CleanDispatchContext);
 }

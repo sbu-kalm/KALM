@@ -10,3 +10,8 @@ export interface Frame {
     roles?: Role[];
     description?: string;
 }
+
+export interface Pattern {
+    id: number;
+    lvp: string;
+}
