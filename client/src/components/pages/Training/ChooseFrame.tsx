@@ -16,9 +16,12 @@ const ChooseFrame = () => {
     useEffect(() => {
         async function grabFrames() {
             const fr = await getFrames();
-            const names = fr.map((f:any) => f.name).sort(); // get the names in order
-            setFrames(names); 
-            setShownFrames(names); // show all the names initially
+            if (fr) {
+                const names = fr.map((f:any) => f.name).sort(); // get the names in order
+                setFrames(names); 
+                setShownFrames(names); // show all the names initially
+            }
+            
         }
         grabFrames();
     }, []); // display all the frames that start with A
