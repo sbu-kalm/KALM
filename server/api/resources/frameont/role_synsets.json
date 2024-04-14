@@ -1,0 +1,212 @@
+[
+    {"frame": "Being_employed", "roles": [
+        {"role": "Employee", "synset": ["bn:00030618n", "bn:00046516n"], "gloss": ["A worker who is hired to perform a job", "A human being; a person"]},
+        {"role": "Employer", "synset": [ "bn:00031641n"], "gloss": ["An organization founded and united for a specific purpose"]},
+        {"role": "Place", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]},
+        {"role": "Field", "synset": ["bn:00007985n"], "gloss": ["A branch of knowledge"]},
+        {"role": "Position", "synset": ["bn:00010073n", "bn:00064610n"], "gloss": ["A job title in an organization", "A person engaged in one of the learned professions"]},
+        {"role": "Task", "synset": ["bn:00049573n", "bn:00029239n"], "gloss": ["Any piece of work that is undertaken or attempted", "The social force that binds you to the courses of action"]}]},
+    {"frame": "Age", "roles": [
+        {"role": "Age", "synset": ["bn:00001938n"], "gloss": ["A time of life (usually defined in years) at which some particular qualification or power arises"]},
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]}]},
+    {"frame": "Human_gender", "roles": [
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Gender", "synset": ["bn:00037634n", "exogenous"], "gloss": ["The properties that distinguish organisms on the basis of their reproductive roles", "the male sex or the female sex, especially when considered with reference to social and cultural differences rather than biological ones, or one of a range of other identities that do not correspond to established ideas of male and female."]}]},
+    {"frame": "Residence", "roles": [
+        {"role": "Resident", "synset": ["bn:00046516n", "bn:00058564n"], "gloss": ["A human being", "Someone who lives at a particular place for a prolonged period or who was born there"]},
+        {"role": "Co_resident", "synset": ["bn:00046516n", "bn:00058564n"], "gloss": ["A human being", "Someone who lives at a particular place for a prolonged period or who was born there"]},
+        {"role": "Location", "synset": ["bn:00066884n", "bn:00000356n"], "gloss": ["A large indefinite location on the surface of the Earth", "Housing that someone is living in"]}]},
+    {"frame": "Being_born", "roles": [
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Place", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]},
+        {"role": "Time", "synset": ["bn:00077268n"], "gloss": ["An indefinite period (usually marked by specific attributes or activities)"]}]},
+    {"frame": "Renting", "roles": [
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00050442n", "bn:00000356n", "bn:00013722n", "bn:00079675n"], "gloss": ["An article that is offered for sale", "Property that is leased or rented out or let", "Housing that someone is living in", "A structure that has a roof and walls and stands more or less permanently in one place", "A conveyance that transports people or objects"]},
+        {"role": "Lessee", "synset": ["bn:00046516n", "bn:00050448n"], "gloss": ["A human being", "A tenant who holds a lease"]},
+        {"role": "Lessor", "synset": ["bn:00046516n", "bn:00050446n"], "gloss": ["A human being", "Someone who grants a lease"]},
+        {"role": "Money", "synset": ["bn:00017803n", "bn:00055644n"], "gloss": ["Amount of a charge or payment relative to some basis", "The most common medium of exchange; functions as legal tender"]},
+        {"role": "Duration", "synset": ["bn:00022191n"], "gloss": ["The period of time during which something continues"]}]},
+    {"frame": "Commerce_buy", "roles": [
+        {"role": "Buyer", "synset": ["bn:00014332n", "bn:00046516n", "bn:00059480n"], "gloss": ["A person who buys", "A human being", "A group of people who work together"]},
+        {"role": "Seller", "synset": ["bn:00053479n", "bn:00046516n", "bn:00031641n", "bn:00066884n"], "gloss": ["Someone who promotes or exchanges goods or services for money", "A human being; a person", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00021045n", "bn:00014157n", "bn:00046038n", "bn:00022071n", "bn:00054416n", "bn:00613601n"], "gloss": ["An article that is offered for sale", "Articles of commerce", "An establishment (a factory or an assembly plant or retail store or warehouse etc.) where business is conducted, goods are made or stored or processed or where services are rendered", "Property consisting of houses and land", "A thing constructed; a complex entity constructed of many parts", "Commodities offered for sale", "Goods that are intended to be consumed"]},
+        {"role": "Money", "synset": ["bn:00017803n", "bn:00055644n"], "gloss": ["Amount of a charge or payment relative to some basis", "The most common medium of exchange; functions as legal tender"]},
+        {"role": "Place", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]},
+        {"role": "Recipient", "synset": ["bn:00046516n", "bn:00066495n"], "gloss": ["A human being", "A person who receives something"]}]},
+    {"frame": "Possession", "roles": [
+        {"role": "Owner", "synset": ["bn:00059954n"], "gloss": ["A person who owns something"]},
+        {"role": "Possession", "synset": ["bn:00006126n", "bn:00021045n", "bn:00014136n"], "gloss": ["An article that is offered for sale", "Articles of commerce", "A commercial or industrial enterprise and the people who constitute it"]}]},
+    {"frame": "Cooking", "roles": [
+        {"role": "Cook", "synset": ["bn:00022407n", "bn:00046516n"], "gloss": ["Someone who cooks food", "A human being; a person"]},
+        {"role": "Food", "synset": ["bn:00035650n", "bn:00053993n"], "gloss": ["Any solid substance (as opposed to liquid) that is used as a source of nourishment", "The food served and eaten at one time"]},
+        {"role": "Place", "synset": ["bn:00066884n", "bn:15769800n"], "gloss": ["A large indefinite location on the surface of the Earth", "Space inside"]},
+        {"role": "Recipient", "synset": ["bn:00046516n", "bn:00066495n"], "gloss": ["A human being", "A person who receives something"]}]},
+    {"frame": "Dressing", "roles": [
+        {"role": "Wearer", "synset": ["bn:00046516n", "bn:00080753n"], "gloss": ["A human being", "A person who wears or carries or displays something as a body covering or accessory"]},
+        {"role": "Clothing", "synset": ["bn:00006125n"], "gloss": ["A covering designed to be worn on a person's body"]}]},
+    {"frame": "Create_organization", "roles": [
+        {"role": "Creator", "synset": ["bn:00023660n", "bn:00009631n"], "gloss": ["A person who grows or makes or invents things", "A person who founds or establishes some institution"]},
+        {"role": "Organization", "synset": ["bn:00059480n"], "gloss": ["A group of people who work together"]},
+        {"role": "Place", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]},
+        {"role": "Time", "synset": ["bn:00077268n"], "gloss": ["An indefinite period (usually marked by specific attributes or activities)"]}]},
+    {"frame": "Travel", "roles": [
+        {"role": "Traveler", "synset": ["bn:00046516n", "bn:00078093n", "bn:00041942n"], "gloss": ["A human being", "A person who changes location", "Any number of entities (members) considered as a unit"]},
+        {"role": "Source", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]},
+        {"role": "Goal", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]}]},
+    {"frame": "Education", "roles": [
+        {"role": "Student", "synset": ["bn:00046516n", "bn:00029806n"], "gloss": ["A human being", "A learner who is enrolled in an educational institution"]},
+        {"role": "Institution", "synset": ["bn:00029812n"], "gloss": ["An institution dedicated to education"]},
+        {"role": "Degree", "synset": ["bn:00000554n"], "gloss": ["An award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study"]},
+        {"role": "Subject", "synset": ["bn:00007985n", "bn:16324994n"], "gloss": ["A branch of knowledge", "An academic discipline or academic field is a subdivision of knowledge that is taught and researched at the college or university level"]}]},
+    {"frame": "Giving", "roles": [
+        {"role": "Donor", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Recipient", "synset": ["bn:00046516n", "bn:00059480n", "bn:00031641n"], "gloss": ["A human being", "A group of people who work together", "An organization founded and united for a specific purpose"]},
+        {"role": "Theme", "synset": ["bn:00006126n", "bn:00021045n", "bn:00005956n", "exogenous"], "gloss": ["An article that is offered for sale", "Articles of commerce", "A man-made object taken as a whole", "some currency"]}]},
+    {"frame": "Personal_relationship", "roles": [
+        {"role": "Mother", "synset": ["bn:00034027n"], "gloss": ["A woman who has given birth to a child (also used as a term of address to your mother)"]},
+        {"role": "Father", "synset": ["bn:00009616n"], "gloss": ["A male parent (also used as a term of address to your father)"]},
+        {"role": "Son", "synset": ["bn:00012571n"], "gloss": ["A male human offspring"]},
+        {"role": "Daughter", "synset": ["bn:00025364n"], "gloss": ["A female human offspring"]},
+        {"role": "Husband", "synset": ["bn:00045106n"], "gloss": ["A married man; a woman's partner in marriage"]},
+        {"role": "Wife", "synset": ["bn:00053531n"], "gloss": ["A married woman; a man's partner in marriage"]},
+        {"role": "Marriage_partner_1", "synset": ["bn:00046516n", "bn:00010161n"], "gloss": ["A human being", "A person's partner in marriage"]},
+        {"role": "Marriage_partner_2", "synset": ["bn:00046516n", "bn:00010161n"], "gloss": ["A human being", "A person's partner in marriage"]},
+        {"role": "Child", "synset": ["bn:00018346n"], "gloss": ["A human offspring (son or daughter) of any age"]},
+        {"role": "Parent", "synset": ["bn:00060643n"], "gloss": ["A father or mother; one who begets or one who gives birth to or nurtures and raises a child; a relative who plays the role of guardian"]}]},
+    {"frame": "People_by_origin", "roles": [
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Origin", "synset": ["bn:00058564n", "bn:00026239n"], "gloss": ["Someone who lives at a particular place for a prolonged period or who was born there", "A person who inhabits a particular place"]}]},
+    {"frame": "People_by_religion", "roles": [
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Religion", "synset": ["bn:00032768n", "bn:00009720n"], "gloss": ["A strong belief in a supernatural power or powers that control human destiny", "A person who has religious faith"]}]},
+    {"frame": "Collaboration", "roles": [
+        {"role": "Partner1", "synset": ["bn:00046516n", "bn:00059480n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being", "A group of people who work together", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Partner2", "synset": ["bn:00046516n", "bn:00059480n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being", "A group of people who work together", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Undertaking", "synset": ["bn:00049573n"], "gloss": ["Any piece of work that is undertaken or attempted"]}]},
+    {"frame": "Quitting", "roles": [
+        {"role": "Employee", "synset": ["bn:00030618n"], "gloss": ["A worker who is hired to perform a job"]},
+        {"role": "Employer", "synset": ["bn:00059480n"], "gloss": ["A group of people who work together"]},
+        {"role": "Field", "synset": ["bn:00007985n"], "gloss": ["A branch of knowledge"]},
+        {"role": "Position", "synset": ["bn:00010073n"], "gloss": ["A job in an organization"]}]},
+    {"frame": "Medical_conditions", "roles": [
+        {"role": "Patient", "synset": ["bn:00046516n", "bn:00061017n"], "gloss": ["A human being", "A person who requires medical care"]},
+        {"role": "Ailment", "synset": ["bn:00027546n", "bn:00045952n", "bn:00075683n"], "gloss": ["An impairment of health or a condition of abnormal functioning", "Impairment of normal physiological function affecting part or all of an organism", "(medicine) any change in bodily function that is experienced by a patient and is associated with a particular disease"]}]},
+    {"frame": "Award", "roles": [
+        {"role": "Person", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Award", "synset": ["bn:00000704n", "exogenous"], "gloss": ["A tangible symbol signifying approval or distinction", "An award or prize is awarded by an organization or a person for achievements"]},
+        {"role": "Organization", "synset": ["bn:00059480n"], "gloss": ["A group of people who work together"]},
+        {"role": "Time", "synset": ["bn:00077268n"], "gloss": ["An indefinite period (usually marked by specific attributes or activities)"]}]},
+    {"frame": "Death", "roles": [
+        {"role": "Protagonist", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Cause", "synset": ["bn:00045952n", "bn:02131709n", "bn:00001728n"], "gloss": ["Impairment of normal physiological function affecting part or all of an organism", "In philosophy, events are objects in time or instantiations of properties in objects", "The cause of a disease"]},
+        {"role": "Time", "synset": ["bn:00077268n"], "gloss": ["An indefinite period (usually marked by specific attributes or activities)"]},
+        {"role": "Place", "synset": ["bn:00066884n"], "gloss": ["A large indefinite location on the surface of the Earth"]}]},
+    {"frame": "Using", "roles": [
+        {"role": "Agent", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Instrument", "synset": ["bn:00046961n", "exogenous"], "gloss": ["A device that requires skill for proper use", "An object used for some purpose"]}]},
+    {"frame": "Building", "roles": [
+        {"role": "Agent", "synset": ["bn:00046516n", "bn:00031641n"], "gloss": ["A human being", "An organization founded and united for a specific purpose"]},
+        {"role": "Created_entity", "synset": ["bn:00005956n", "bn:00021551n", "bn:00022071n"], "gloss": ["A man-made object taken as a whole", "The creation of something in the mind", "A thing constructed; a complex entity constructed of many parts"]},
+        {"role": "Instrument", "synset": ["bn:00026716n"], "gloss": ["An instrumentality invented for a particular purpose"]}]},
+    {"frame": "Killing", "roles": [
+        {"role": "Killer", "synset": ["bn:00046516n", "bn:00031641n", "bn:00027546n"], "gloss": ["A human being", "An organization founded and united for a specific purpose", "An impairment of health or a condition of abnormal functioning"]},
+        {"role": "Victim", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Instrument", "synset": ["bn:00026716n"], "gloss": ["An instrumentality invented for a particular purpose"]}]},
+    {"frame": "Arrest", "roles": [
+        {"role": "Authorities", "synset": ["bn:00046516n", "bn:00031641n"], "gloss": ["A human being", "An organization founded and united for a specific purpose"]},
+        {"role": "Suspect", "synset": ["bn:00046516n"], "gloss": ["A human being; a person"]},
+        {"role": "Charges", "synset": ["bn:00023807n", "bn:00017790n"], "gloss": ["(criminal law) an act punishable by law; usually considered an evil act", "(criminal law) a pleading describing some wrong or offense"]}]},
+    {"frame": "Attack", "roles": [
+        {"role": "Assailant", "synset": ["bn:00046516n", "bn:00059480n", "bn:00066884n"], "gloss": ["A human being", "A group of people who work together", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Victim", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]}]},
+    {"frame": "Leadership", "roles": [
+        {"role": "Leader", "synset": ["bn:00046516n", "bn:00059480n", "bn:00041942n"], "gloss": ["A human being", "A group of people who work together", "Any number of entities (members) considered as a unit"]},
+        {"role": "Governed", "synset": ["bn:00066884n", "bn:00059480n"], "gloss": ["A group of people who work together", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Role", "synset": ["bn:00010073n", "bn:00001434n", "bn:00001436n"], "gloss": ["A job in an organization", "Someone who administers a business", "Someone who manages a government agency or department"]}]},
+    {"frame": "Manufacturing", "roles": [
+        {"role": "Producer", "synset": ["bn:00059480n", "bn:00066884n"], "gloss": ["A group of people who work together", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Product", "synset": ["bn:00005956n", "bn:00006126n", "bn:00021045n"], "gloss": ["A man-made object taken as a whole", "An article that is offered for sale", "Articles of commerce"]}]},
+    {"frame": "Earnings", "roles": [
+        {"role": "Earner", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Money", "synset": ["bn:00017803n", "bn:00055644n"], "gloss": ["Amount of a charge or payment relative to some basis", "The most common medium of exchange; functions as legal tender"]},
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00021045n", "bn:00054416n", "exogenous"], "gloss": ["An article that is offered for sale", "Articles of commerce", "Commodities offered for sale", "The act of doing something to earn money"]}]},
+    {"frame": "Beat_opponent", "roles": [
+        {"role": "Winner", "synset": ["bn:00046516n", "bn:00059480n", "bn:00066884n", "bn:00073699n"], "gloss": ["A human being", "A group of people who work together", "A large indefinite location on the surface of the Earth", "A cooperative unit (especially in sports)"]},
+        {"role": "Loser", "synset": ["bn:00046516n", "bn:00059480n", "bn:00066884n", "bn:00073699n"], "gloss": ["A human being", "A group of people who work together", "A large indefinite location on the surface of the Earth", "A cooperative unit (especially in sports)"]},
+        {"role": "Competition", "synset": ["bn:00021338n", "bn:00021339n", "bn:00021337n"], "gloss": ["An occasion on which a winner is selected from among two or more contestants", "The act of competing as for profit or a prize", "A business relation in which two parties compete to gain customers"]}]},
+    {"frame": "Cure", "roles": [
+        {"role": "Healer", "synset": ["bn:00046516n", "bn:00027976n"], "gloss": ["A human being", "A licensed medical practitioner"]},
+        {"role": "Patient", "synset": ["bn:00046516n", "bn:00061017n"], "gloss": ["A human being", "A person who requires medical care"]},
+        {"role": "Disease", "synset": ["bn:00045952n", "bn:00027546n", "bn:00075683n"], "gloss": ["Impairment of normal physiological function affecting part or all of an organism", "An impairment of health or a condition of abnormal functioning", "(medicine) any sensation or change in bodily function that is experienced by a patient and is associated with a particular disease"]},
+        {"role": "Medication", "synset": ["bn:00054128n"], "gloss": ["(medicine) something that treats or prevents or alleviates the symptoms of disease"]}]},
+    {"frame": "Contacting", "roles": [
+        {"role": "Communicator", "synset": ["bn:00046516n", "bn:00031641n"], "gloss": ["A human being; a person", "An organization founded and united for a specific purpose"]},
+        {"role": "Addressee", "synset": ["bn:00046516n", "bn:00031641n"], "gloss": ["A human being; a person; a man or woman", "An organization founded and united for a specific purpose"]}]},
+    {"frame": "Protest", "roles": [
+        {"role": "Protester", "synset": ["bn:00046516n", "bn:00059480n", "bn:00041942n"], "gloss": ["A human being", "A group of people who work together", "Any number of entities (members) considered as a unit"]},
+        {"role": "Side", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]}]},
+    {"frame": "Submitting_documents", "roles": [
+        {"role": "Submitter", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Authority", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Documents", "synset": ["bn:00028015n"], "gloss": ["Writing that provides information (especially information of an official nature)"]}]},
+    {"frame": "Performing", "roles": [
+        {"role": "Performer", "synset": ["bn:00046516n", "bn:00001176n"], "gloss": ["A human being", "A theatrical performer"]},
+        {"role": "Costar", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Role", "synset": ["bn:00046516n", "bn:00017749n", "exogenous"], "gloss": ["A human being; a person", "An actor's portrayal of someone in a play", "[MASK] is a character in a artwork"]},
+        {"role": "Performance", "synset": ["bn:00071316n", "bn:00028604n", "exogenous"], "gloss": ["A social event involving a public performance or entertainment", "A dramatic work intended for performance by actors on a stage", "[MASK] is a film (movie) directed by..."]}]},
+    {"frame": "Releasing_from_custody", "roles": [
+        {"role": "Suspect", "synset": ["bn:00046516n"], "gloss": ["A human being; a person"]},
+        {"role": "Authorities", "synset": ["bn:00059480n"], "gloss": ["A group of people who work together"]},
+        {"role": "Place", "synset": ["bn:00066884n", "bn:15084925n"], "gloss": ["A large indefinite location on the surface of the Earth", "Any location used for detention"]}]},
+    {"frame": "Sign_agreement", "roles": [
+        {"role": "Signatory", "synset": ["bn:00046516n", "bn:00059480n", "bn:00066884n"], "gloss": ["A human being", "A group of people who work together", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Agreement", "synset": ["bn:15519080n", "bn:00022227n", "bn:00000728n"], "gloss": ["A convention, or promise of two or more parties, by deed in writing, signed, and delivered, by which either of the parties pledges himself to the other that something is either done, or shall be done, or shall not be done, or stipulates for the truth of certain facts", "A binding agreement between two or more persons that is enforceable by law", "A written agreement between two states or sovereigns"]}]},
+    {"frame": "Publishing", "roles": [
+        {"role": "Author", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Work", "synset": ["bn:15338434n", "bn:00065106n", "bn:00000738n"], "gloss": ["A creative work is a manifestation of creative effort including fine artwork, dance, writing, filmmaking, and composition", "A copy of a printed work offered for distribution", "A record or narrative description of past events"]},
+        {"role": "Publisher", "synset": ["bn:00059480n", "bn:00065111n"], "gloss": ["A group of people who work together", "A firm in the publishing business"]},
+        {"role": "Venue", "synset": ["bn:00052671n", "bn:27269711n", "bn:00022333n"], "gloss": ["A periodic publication containing pictures and stories and articles of interest to those who purchase it or subscribe to it", "In academia and librarianship, conference proceedings is a collection of academic papers published in the context of an academic conference or workshop", "A large formal written assembly"]},
+        {"role": "Topic", "synset": ["bn:00074900n", "bn:00045803n"], "gloss": ["The subject matter of a conversation or discussion", "(music) melodic subject of a musical composition"]}]},
+    {"frame": "Losing", "roles": [
+        {"role": "Owner", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Money", "synset": ["bn:00017803n", "bn:00055644n", "exogenous"], "gloss": ["Amount of a charge or payment relative to some basis", "The most common medium of exchange; functions as legal tender", "some currency"]},
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00021045n", "bn:00054416n", "bn:15840810n", "exogenous"], "gloss": ["An article that is offered for sale", "Articles of commerce", "Commodities offered for sale", "Event; actions that result in changes of state", "The act of doing something"]}]},
+    {"frame": "Surrendering", "roles": [
+        {"role": "Authorities", "synset": ["bn:00046516n", "bn:00059480n", "bn:00005732n", "bn:00031641n"], "gloss": ["A human being", "A group of people who work together", "The military forces of a nation", "An organization founded and united for a specific purpose"]},
+        {"role": "Fugitive", "synset": ["bn:00046516n", "bn:00059480n", "bn:00005732n", "bn:00066884n"], "gloss": ["A human being", "A group of people who work together", "The military forces of a nation", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Charges", "synset": ["bn:00023807n"], "gloss": ["(criminal law) an act punishable by law; usually considered an evil act"]}]},
+    {"frame": "Text_creation", "roles": [
+        {"role": "Author", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Text", "synset": ["bn:00054523n", "bn:00076732n"], "gloss": ["A communication (usually brief) that is written or spoken or signaled", "The words of something written"]}]},
+    {"frame": "Theft", "roles": [
+        {"role": "Perpetrator", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00021045n", "bn:00005956n"], "gloss": ["An article that is offered for sale", "Articles of commerce", "A man-made object taken as a whole"]},
+        {"role": "Victim", "synset": ["bn:00046516n", "bn:00031641n"], "gloss": ["A human being", "An organization founded and united for a specific purpose"]}]},
+    {"frame": "Undressing", "roles": [
+        {"role": "Wearer", "synset": ["bn:00080753n"], "gloss": ["A person who wears or carries or displays something as a body covering or accessory"]},
+        {"role": "Clothing", "synset": ["bn:00006125n"], "gloss": ["A covering designed to be worn on a person's body"]}]},
+    {"frame": "Growing_food", "roles": [
+        {"role": "Grower", "synset": ["bn:00046516n"], "gloss": ["A human being"]},
+        {"role": "Food", "synset": ["bn:00035650n", "bn:00035649n", "exogenous"], "gloss": ["Any solid substance (as opposed to liquid) that is used as a source of nourishment", "Any substance that can be metabolized by an animal to give energy and build tissue", "Edible cultivated plants or meat"]}]},
+    {"frame": "Participation", "roles": [
+        {"role": "Participant", "synset": ["bn:00046516n", "bn:00059480n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being; a person", "A group of people who work together", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "CoParticipant", "synset": ["bn:00046516n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being; a person", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Event", "synset": ["bn:00032021n", "bn:02131709n", "bn:00064536n", "exogenous"], "gloss": ["Something that happens at a given place and time", "Events are objects in time or instantiations of properties in objects", "A particular course of actions intended to achieve a result", "A public event or activity"]}]},
+    {"frame": "Borrow_lend", "roles": [
+        {"role": "Borrower", "synset": ["bn:00046516n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being; a person", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Lender", "synset": ["bn:00046516n", "bn:00031641n", "bn:00066884n"], "gloss": ["A human being; a person", "An organization founded and united for a specific purpose", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Theme", "synset": ["bn:00006126n", "bn:00021045n", "bn:00005956n", "bn:00009815n", "exogenous"], "gloss": ["An article that is offered for sale", "Articles of commerce", "A man-made object taken as a whole", "Something owned; any tangible or intangible possession that is owned by someone", "some currency"]}]},
+    {"frame": "Restaurant", "roles": [
+        {"role": "Restaurant", "synset": ["bn:00029545n"], "gloss": ["A building where people go to eat"]},
+        {"role":  "Price", "synset": ["bn:00025083n"], "gloss": ["The amount of money needed to purchase something"]},
+        {"role": "Cuisine", "synset": ["bn:00024323n", "bn:00066884n", "bn:00035650n", "exogenous"], "gloss": ["The practice or manner of preparing food or the food so prepared", "A large indefinite location on the surface of the Earth", "Any solid substance (as opposed to liquid) that is used as a source of nourishment", "Food characteriscs about some specific place"]},
+        {"role": "Place", "synset": ["bn:00066884n", "bn:15769800n"], "gloss": ["A large indefinite location on the surface of the Earth", "Space inside"]}]},
+    {"frame": "Import_export", "roles": [
+        {"role": "Importer", "synset": ["bn:00046516n", "bn:00031641n", "bn:00023235n", "bn:00066884n"], "gloss": ["A human being", "An organization founded and united for a specific purpose", "The territory occupied by a nation", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Exporter", "synset": ["bn:00046516n", "bn:00031641n", "bn:00023235n", "bn:00066884n"], "gloss": ["A human being", "An organization founded and united for a specific purpose", "The territory occupied by a nation", "A large indefinite location on the surface of the Earth"]},
+        {"role": "Goods", "synset": ["bn:00006126n", "bn:00021045n", "bn:00005956n", "bn:15358232n", "bn:00012321n", "bn:00004222n", "bn:00035650n", "bn:00035649n", "exogenous"], "gloss": ["An article that is offered for sale", "Articles of commerce", "A man-made object taken as a whole", "The substance of which a product is made or composed", "All the plant life in a particular region or period", "A living organism characterized by voluntary movement", "Any solid substance (as opposed to liquid) that is used as a source of nourishment", "Any substance that can be metabolized by an animal to give energy and build tissue", "Device; energy; material"]}]},
+    {"frame": "Scheduling", "roles": [
+        {"role": "Agent", "synset": ["bn:00046516n", "bn:00059480n"], "gloss": ["A human being", "A group of people who work together"]},
+        {"role": "Place", "synset": ["bn:00066884n", "bn:15769800n"], "gloss": ["A large indefinite location on the surface of the Earth", "Space inside"]},
+        {"role": "Event", "synset": ["bn:00032021n", "bn:02131709n", "bn:15840810n", "bn:00006479n"], "gloss": ["Something that happens at a given place and time", "In philosophy, events are objects in time or instantiations of properties in objects", "Event; actions that result in changes of state", "A group of persons together in one place"]}]}
+]

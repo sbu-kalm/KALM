@@ -1,0 +1,4432 @@
+============================1============================
+The films directed by the director of [MASK] starred who?
+Movie = index(1,11)
+Movie_name - film - index(1,2) - noun - null - null
+Actor - who - index(1,12) - pron - null - null
+
+Movie = index(1,6)
+Movie_name - movie_mask - index(1,9) - propn - null - null
+Director - director - index(1,6) - noun - null - null
+
+Movie = index(1,3)
+Movie_name - film - index(1,2) - noun - null - null
+Director - director - index(1,6) - noun - null - null
+
+============================2============================
+The films that share actors with the film [MASK] are directed by who?
+Movie = index(2,13)
+Movie_name - film - index(2,2) - noun - null - null
+Director - who - index(2,15) - pron - null - null
+
+Movie = index(2,5)
+Movie_name - film - index(2,2) - noun - null - null
+Actor - actor - index(2,5) - noun - null - null
+
+Movie = index(2,5)
+Movie_name - film_mask - index(2,10) - noun - null - null
+Actor - actor - index(2,5) - noun - null - null
+
+Inequality = index(2,4)
+Entity_1 - film - index(2,2) - noun - null - null
+Entity_2 - film_mask - index(2,10) - noun - null - null
+
+============================3============================
+The films that share actors with the film [MASK] are written by who?
+Movie = index(3,13)
+Movie_name - film - index(3,2) - noun - null - null
+Writer - who - index(3,15) - pron - null - null
+
+Movie = index(3,5)
+Movie_name - film - index(3,2) - noun - null - null
+Actor - actor - index(3,5) - noun - null - null
+
+Movie = index(3,5)
+Movie_name - film_mask - index(3,10) - noun - null - null
+Actor - actor - index(3,5) - noun - null - null
+
+Inequality = index(3,4)
+Entity_1 - film - index(3,2) - noun - null - null
+Entity_2 - film_mask - index(3,10) - noun - null - null
+
+============================4============================
+The films that share actors with the film [MASK] were in which genres?
+Movie = index(4,15)
+Movie_name - film - index(4,2) - noun - null - null
+Genre - which - index(4,14) - det - null - null
+
+Movie = index(4,5)
+Movie_name - film - index(4,2) - noun - null - null
+Actor - actor - index(4,5) - noun - null - null
+
+Movie = index(4,5)
+Movie_name - film_mask - index(4,10) - noun - null - null
+Actor - actor - index(4,5) - noun - null - null
+
+Inequality = index(4,4)
+Entity_1 - film - index(4,2) - noun - null - null
+Entity_2 - film_mask - index(4,10) - noun - null - null
+
+============================5============================
+The films that share actors with the film [MASK] were in which languages?
+Movie = index(5,15)
+Movie_name - film - index(5,2) - noun - null - null
+Language - which - index(5,14) - det - null - null
+
+Movie = index(5,5)
+Movie_name - film - index(5,2) - noun - null - null
+Actor - actor - index(5,5) - noun - null - null
+
+Movie = index(5,5)
+Movie_name - film_mask - index(5,10) - noun - null - null
+Actor - actor - index(5,5) - noun - null - null
+
+Inequality = index(5,4)
+Entity_1 - film - index(5,2) - noun - null - null
+Entity_2 - film_mask - index(5,10) - noun - null - null
+
+============================6============================
+The films that share actors with the film [MASK] were released in which years?
+Movie = index(6,13)
+Movie_name - film - index(6,2) - noun - null - null
+Release_year - which - index(6,15) - det - null - null
+
+Movie = index(6,5)
+Movie_name - film - index(6,2) - noun - null - null
+Actor - actor - index(6,5) - noun - null - null
+
+Movie = index(6,5)
+Movie_name - film_mask - index(6,10) - noun - null - null
+Actor - actor - index(6,5) - noun - null - null
+
+Inequality = index(6,4)
+Entity_1 - film - index(6,2) - noun - null - null
+Entity_2 - film_mask - index(6,10) - noun - null - null
+
+============================7============================
+The films that share directors with the film [MASK] were in which genres?
+Movie = index(7,15)
+Movie_name - film - index(7,2) - noun - null - null
+Genre - which - index(7,14) - det - null - null
+
+Movie = index(7,5)
+Movie_name - film - index(7,2) - noun - null - null
+Director - director - index(7,5) - noun - null - null
+
+Movie = index(7,5)
+Movie_name - film_mask - index(7,10) - noun - null - null
+Director - director - index(7,5) - noun - null - null
+
+Inequality = index(7,4)
+Entity_1 - film - index(7,2) - noun - null - null
+Entity_2 - film_mask - index(7,10) - noun - null - null
+
+============================8============================
+The films that share directors with the film [MASK] were in which languages?
+Movie = index(8,15)
+Movie_name - film - index(8,2) - noun - null - null
+Language - which - index(8,14) - det - null - null
+
+Movie = index(8,5)
+Movie_name - film - index(8,2) - noun - null - null
+Director - director - index(8,5) - noun - null - null
+
+Movie = index(8,5)
+Movie_name - film_mask - index(8,10) - propn - null - null
+Director - director - index(8,5) - noun - null - null
+
+Inequality = index(8,4)
+Entity_1 - film - index(8,2) - noun - null - null
+Entity_2 - film_mask - index(8,10) - propn - null - null
+
+============================9============================
+The films that share directors with the film [MASK] were released in which years?
+Movie = index(9,13)
+Movie_name - film - index(9,2) - noun - null - null
+Release_year - which - index(9,15) - det - null - null
+
+Movie = index(9,5)
+Movie_name - film - index(9,2) - noun - null - null
+Director - director - index(9,5) - noun - null - null
+
+Movie = index(9,5)
+Movie_name - film_mask - index(9,10) - noun - null - null
+Director - director - index(9,5) - noun - null - null
+
+Inequality = index(9,4)
+Entity_1 - film - index(9,2) - noun - null - null
+Entity_2 - film_mask - index(9,10) - noun - null - null
+
+============================10============================
+The films that share directors with the films [MASK] are written by who?
+Movie = index(10,13)
+Movie_name - film - index(10,2) - noun - null - null
+Writer - who - index(10,15) - pron - null - null
+
+Movie = index(10,5)
+Movie_name - film - index(10,2) - noun - null - null
+Director - director - index(10,5) - noun - null - null
+
+Movie = index(10,5)
+Movie_name - film_mask - index(10,10) - noun - null - null
+Director - director - index(10,5) - noun - null - null
+
+Inequality = index(10,4)
+Entity_1 - film - index(10,2) - noun - null - null
+Entity_2 - film_mask - index(10,10) - noun - null - null
+
+============================11============================
+The films that share screenwriters with [MASK] were released in which years?
+Movie = index(11,11)
+Movie_name - film - index(11,2) - noun - null - null
+Release_year - which - index(11,13) - det - null - null
+
+Movie = index(11,5)
+Movie_name - film - index(11,2) - noun - null - null
+Writer - screenwriter - index(11,5) - noun - null - null
+
+Movie = index(11,5)
+Movie_name - movie_mask - index(11,8) - noun - null - null
+Writer - screenwriter - index(11,5) - noun - null - null
+
+Inequality = index(11,4)
+Entity_1 - film - index(11,2) - noun - null - null
+Entity_2 - movie_mask - index(11,8) - noun - null - null
+
+============================12============================
+The films that share writers with the film [MASK] were in which genres?
+Movie = index(12,15)
+Movie_name - film - index(12,2) - noun - null - null
+Genre - which - index(12,14) - det - null - null
+
+Movie = index(12,5)
+Movie_name - film - index(12,2) - noun - null - null
+Writer - writer - index(12,5) - noun - null - null
+
+Movie = index(12,5)
+Movie_name - film_mask - index(12,10) - noun - null - null
+Writer - writer - index(12,5) - noun - null - null
+
+Inequality = index(12,4)
+Entity_1 - film - index(12,2) - noun - null - null
+Entity_2 - film_mask - index(12,10) - noun - null - null
+
+============================13============================
+The films written by the screenwriter of [MASK] were directed by who?
+Movie = index(13,12)
+Movie_name - film - index(13,2) - noun - null - null
+Director - who - index(13,14) - pron - null - null
+
+Movie = index(13,6)
+Movie_name - movie_mask - index(13,9) - propn - null - null
+Writer - screenwriter - index(13,6) - noun - null - null
+
+Movie = index(13,3)
+Movie_name - film - index(13,2) - noun - null - null
+Writer - screenwriter - index(13,6) - noun - null - null
+
+============================14============================
+The films written by the writer of [MASK] starred who?
+Movie = index(14,11)
+Movie_name - film - index(14,2) - noun - null - null
+Actor - who - index(14,12) - pron - null - null
+
+Movie = index(14,6)
+Movie_name - movie_mask - index(14,9) - propn - null - null
+Writer - writer - index(14,6) - noun - null - null
+
+Movie = index(14,3)
+Movie_name - film - index(14,2) - noun - null - null
+Writer - writer - index(14,6) - noun - null - null
+
+============================15============================
+The movies directed by the director of [MASK] starred who?
+Movie = index(15,11)
+Movie_name - movie - index(15,2) - noun - null - null
+Actor - who - index(15,12) - pron - null - null
+
+Movie = index(15,6)
+Movie_name - movie_mask - index(15,9) - propn - null - null
+Director - director - index(15,6) - noun - null - null
+
+Movie = index(15,3)
+Movie_name - movie - index(15,2) - noun - null - null
+Director - director - index(15,6) - noun - null - null
+
+============================16============================
+The movies that share actors with the movie [MASK] are directed by who?
+Movie = index(16,13)
+Movie_name - movie - index(16,2) - noun - null - null
+Director - who - index(16,15) - pron - null - null
+
+Movie = index(16,5)
+Movie_name - movie - index(16,2) - noun - null - null
+Actor - actor - index(16,5) - noun - null - null
+
+Movie = index(16,5)
+Movie_name - movie_mask - index(16,10) - noun - null - null
+Actor - actor - index(16,5) - noun - null - null
+
+Inequality = index(16,4)
+Entity_1 - movie - index(16,2) - noun - null - null
+Entity_2 - movie_mask - index(16,10) - noun - null - null
+
+============================17============================
+The movies that share actors with the movie [MASK] are written by who?
+Movie = index(17,13)
+Movie_name - movie - index(17,2) - noun - null - null
+Writer - who - index(17,15) - pron - null - null
+
+Movie = index(17,5)
+Movie_name - movie - index(17,2) - noun - null - null
+Actor - actor - index(17,5) - noun - null - null
+
+Movie = index(17,5)
+Movie_name - movie_mask - index(17,10) - propn - null - null
+Actor - actor - index(17,5) - noun - null - null
+
+Inequality = index(17,4)
+Entity_1 - movie - index(17,2) - noun - null - null
+Entity_2 - movie_mask - index(17,10) - propn - null - null
+
+============================18============================
+The movies that share actors with the movie [MASK] were in which genres?
+Movie = index(18,15)
+Movie_name - movie - index(18,2) - noun - null - null
+Genre - which - index(18,14) - det - null - null
+
+Movie = index(18,5)
+Movie_name - movie - index(18,2) - noun - null - null
+Actor - actor - index(18,5) - noun - null - null
+
+Movie = index(18,5)
+Movie_name - movie_mask - index(18,10) - propn - null - null
+Actor - actor - index(18,5) - noun - null - null
+
+Inequality = index(18,4)
+Entity_1 - movie - index(18,2) - noun - null - null
+Entity_2 - movie_mask - index(18,10) - propn - null - null
+
+============================19============================
+The movies that share actors with the movie [MASK] were in which languages?
+Movie = index(19,15)
+Movie_name - movie - index(19,2) - noun - null - null
+Language - which - index(19,14) - det - null - null
+
+Movie = index(19,5)
+Movie_name - movie - index(19,2) - noun - null - null
+Actor - actor - index(19,5) - noun - null - null
+
+Movie = index(19,5)
+Movie_name - movie_mask - index(19,10) - propn - null - null
+Actor - actor - index(19,5) - noun - null - null
+
+Inequality = index(19,4)
+Entity_1 - movie - index(19,2) - noun - null - null
+Entity_2 - movie_mask - index(19,10) - propn - null - null
+
+============================20============================
+The movies that share actors with the movie [MASK] were released in which years?
+Movie = index(20,13)
+Movie_name - movie - index(20,2) - noun - null - null
+Release_year - which - index(20,15) - det - null - null
+
+Movie = index(20,5)
+Movie_name - movie - index(20,2) - noun - null - null
+Actor - actor - index(20,5) - noun - null - null
+
+Movie = index(20,5)
+Movie_name - movie_mask - index(20,10) - propn - null - null
+Actor - actor - index(20,5) - noun - null - null
+
+Inequality = index(20,4)
+Entity_1 - movie - index(20,2) - noun - null - null
+Entity_2 - movie_mask - index(20,10) - propn - null - null
+
+============================21============================
+The movies that share directors with the movie [MASK] are written by who?
+Movie = index(21,13)
+Movie_name - movie - index(21,2) - noun - null - null
+Writer - who - index(21,15) - pron - null - null
+
+Movie = index(21,5)
+Movie_name - movie - index(21,2) - noun - null - null
+Director - director - index(21,5) - noun - null - null
+
+Movie = index(21,5)
+Movie_name - movie_mask - index(21,10) - propn - null - null
+Director - director - index(21,5) - noun - null - null
+
+Inequality = index(21,4)
+Entity_1 - movie - index(21,2) - noun - null - null
+Entity_2 - movie_mask - index(21,10) - propn - null - null
+
+============================22============================
+The movies that share directors with the movie [MASK] were in which genres?
+Movie = index(22,15)
+Movie_name - movie - index(22,2) - noun - null - null
+Genre - which - index(22,14) - det - null - null
+
+Movie = index(22,5)
+Movie_name - movie - index(22,2) - noun - null - null
+Director - director - index(22,5) - noun - null - null
+
+Movie = index(22,5)
+Movie_name - movie_mask - index(22,10) - propn - null - null
+Director - director - index(22,5) - noun - null - null
+
+Inequality = index(22,4)
+Entity_1 - movie - index(22,2) - noun - null - null
+Entity_2 - movie_mask - index(22,10) - propn - null - null
+
+============================23============================
+The movies that share directors with the movie [MASK] were in which languages?
+Movie = index(23,15)
+Movie_name - movie - index(23,2) - noun - null - null
+Language - which - index(23,14) - det - null - null
+
+Movie = index(23,5)
+Movie_name - movie - index(23,2) - noun - null - null
+Director - director - index(23,5) - noun - null - null
+
+Movie = index(23,5)
+Movie_name - movie_mask - index(23,10) - propn - null - null
+Director - director - index(23,5) - noun - null - null
+
+Inequality = index(23,4)
+Entity_1 - movie - index(23,2) - noun - null - null
+Entity_2 - movie_mask - index(23,10) - propn - null - null
+
+============================24============================
+The movies that share directors with the movie [MASK] were released in which years?
+Movie = index(24,13)
+Movie_name - movie - index(24,2) - noun - null - null
+Release_year - which - index(24,15) - det - null - null
+
+Movie = index(24,5)
+Movie_name - movie - index(24,2) - noun - null - null
+Director - director - index(24,5) - noun - null - null
+
+Movie = index(24,5)
+Movie_name - movie_mask - index(24,10) - propn - null - null
+Director - director - index(24,5) - noun - null - null
+
+Inequality = index(24,4)
+Entity_1 - movie - index(24,2) - noun - null - null
+Entity_2 - movie_mask - index(24,10) - propn - null - null
+
+============================25============================
+The movies that share screenwriters with the movie [MASK] were in which languages?
+Movie = index(25,15)
+Movie_name - movie - index(25,2) - noun - null - null
+Language - which - index(25,14) - det - null - null
+
+Movie = index(25,5)
+Movie_name - movie - index(25,2) - noun - null - null
+Writer - screenwriter - index(25,5) - noun - null - null
+
+Movie = index(25,5)
+Movie_name - movie_mask - index(25,10) - propn - null - null
+Writer - screenwriter - index(25,5) - noun - null - null
+
+Inequality = index(25,4)
+Entity_1 - movie - index(25,2) - noun - null - null
+Entity_2 - movie_mask - index(25,10) - propn - null - null
+
+============================26============================
+The movies that share writers with the movie [MASK] were in which genres?
+Movie = index(26,15)
+Movie_name - movie - index(26,2) - noun - null - null
+Genre - which - index(26,14) - det - null - null
+
+Movie = index(26,5)
+Movie_name - movie - index(26,2) - noun - null - null
+Writer - writer - index(26,5) - noun - null - null
+
+Movie = index(26,5)
+Movie_name - movie_mask - index(26,10) - propn - null - null
+Writer - writer - index(26,5) - noun - null - null
+
+Inequality = index(26,4)
+Entity_1 - movie - index(26,2) - noun - null - null
+Entity_2 - movie_mask - index(26,10) - propn - null - null
+
+============================27============================
+The movies that share writers with the movie [MASK] were in which languages?
+Movie = index(27,15)
+Movie_name - movie - index(27,2) - noun - null - null
+Language - which - index(27,14) - det - null - null
+
+Movie = index(27,5)
+Movie_name - movie - index(27,2) - noun - null - null
+Writer - writer - index(27,5) - noun - null - null
+
+Movie = index(27,5)
+Movie_name - movie_mask - index(27,10) - propn - null - null
+Writer - writer - index(27,5) - noun - null - null
+
+Inequality = index(27,4)
+Entity_1 - movie - index(27,2) - noun - null - null
+Entity_2 - movie_mask - index(27,10) - propn - null - null
+
+============================28============================
+The movies that share writers with the movie [MASK] were released in which years?
+Movie = index(28,13)
+Movie_name - movie - index(28,2) - noun - null - null
+Release_year - which - index(28,15) - det - null - null
+
+Movie = index(28,5)
+Movie_name - movie - index(28,2) - noun - null - null
+Writer - writer - index(28,5) - noun - null - null
+
+Movie = index(28,5)
+Movie_name - movie_mask - index(28,10) - propn - null - null
+Writer - writer - index(28,5) - noun - null - null
+
+Inequality = index(28,4)
+Entity_1 - movie - index(28,2) - noun - null - null
+Entity_2 - movie_mask - index(28,10) - propn - null - null
+
+============================29============================
+The movies written by the screenwriter of [MASK] starred who?
+Movie = index(29,11)
+Movie_name - movie - index(29,2) - noun - null - null
+Actor - who - index(29,12) - pron - null - null
+
+Movie = index(29,6)
+Movie_name - movie_mask - index(29,9) - propn - null - null
+Writer - screenwriter - index(29,6) - noun - null - null
+
+Movie = index(29,3)
+Movie_name - movie - index(29,2) - noun - null - null
+Writer - screenwriter - index(29,6) - noun - null - null
+
+============================30============================
+The movies written by the screenwriter of [MASK] were directed by who?
+Movie = index(30,12)
+Movie_name - movie - index(30,2) - noun - null - null
+Director - who - index(30,14) - pron - null - null
+
+Movie = index(30,6)
+Movie_name - movie_mask - index(30,9) - propn - null - null
+Writer - screenwriter - index(30,6) - noun - null - null
+
+Movie = index(30,3)
+Movie_name - movie - index(30,2) - noun - null - null
+Writer - screenwriter - index(30,6) - noun - null - null
+
+============================31============================
+What are the genres of the films whose actors also appear in [MASK]?
+Inequality = index(31,10)
+Entity_1 - film - index(31,7) - noun - null - null
+Entity_2 - movie_mask - index(31,14) - noun - null - null
+
+Movie = index(31,9)
+Movie_name - film - index(31,7) - noun - null - null
+Actor - actor - index(31,9) - noun - null - null
+
+Movie = index(31,9)
+Movie_name - movie_mask - index(31,14) - noun - null - null
+Actor - actor - index(31,9) - noun - null - null
+
+Movie = index(31,4)
+Movie_name - film - index(31,7) - noun - null - null
+Genre - what - index(31,1) - pron - null - null
+
+============================32============================
+What are the genres of the films whose directors also directed [MASK]?
+Movie = index(32,11)
+Movie_name - movie_mask - index(32,13) - noun - null - null
+Director - director - index(32,9) - noun - null - null
+
+Inequality = index(32,10)
+Entity_1 - film - index(32,7) - noun - null - null
+Entity_2 - movie_mask - index(32,13) - noun - null - null
+
+Movie = index(32,9)
+Movie_name - film - index(32,7) - noun - null - null
+Director - director - index(32,9) - noun - null - null
+
+Movie = index(32,4)
+Movie_name - film - index(32,7) - noun - null - null
+Genre - what - index(32,1) - pron - null - null
+
+============================33============================
+What are the genres of the films whose screenwriters also wrote [MASK]?
+Movie = index(33,11)
+Movie_name - movie_mask - index(33,13) - noun - null - null
+Writer - screenwriter - index(33,9) - noun - null - null
+
+Inequality = index(33,10)
+Entity_1 - film - index(33,7) - noun - null - null
+Entity_2 - movie_mask - index(33,13) - noun - null - null
+
+Movie = index(33,9)
+Movie_name - film - index(33,7) - noun - null - null
+Writer - screenwriter - index(33,9) - noun - null - null
+
+Movie = index(33,4)
+Movie_name - film - index(33,7) - noun - null - null
+Genre - what - index(33,1) - pron - null - null
+
+============================34============================
+What are the genres of the movies whose actors also appear in [MASK]?
+Inequality = index(34,10)
+Entity_1 - movie - index(34,7) - noun - null - null
+Entity_2 - movie_mask - index(34,14) - noun - null - null
+
+Movie = index(34,9)
+Movie_name - movie - index(34,7) - noun - null - null
+Actor - actor - index(34,9) - noun - null - null
+
+Movie = index(34,9)
+Movie_name - movie_mask - index(34,14) - noun - null - null
+Actor - actor - index(34,9) - noun - null - null
+
+Movie = index(34,4)
+Movie_name - movie - index(34,7) - noun - null - null
+Genre - what - index(34,1) - pron - null - null
+
+============================35============================
+What are the genres of the movies whose directors also directed [MASK]?
+Movie = index(35,11)
+Movie_name - movie_mask - index(35,13) - noun - null - null
+Director - director - index(35,9) - noun - null - null
+
+Inequality = index(35,10)
+Entity_1 - movie - index(35,7) - noun - null - null
+Entity_2 - movie_mask - index(35,13) - noun - null - null
+
+Movie = index(35,9)
+Movie_name - movie - index(35,7) - noun - null - null
+Director - director - index(35,9) - noun - null - null
+
+Movie = index(35,4)
+Movie_name - movie - index(35,7) - noun - null - null
+Genre - what - index(35,1) - pron - null - null
+
+============================36============================
+What are the genres of the movies whose writers also wrote [MASK]?
+Movie = index(36,11)
+Movie_name - movie_mask - index(36,13) - noun - null - null
+Writer - writer - index(36,9) - noun - null - null
+
+Inequality = index(36,10)
+Entity_1 - movie - index(36,7) - noun - null - null
+Entity_2 - movie_mask - index(36,13) - noun - null - null
+
+Movie = index(36,9)
+Movie_name - movie - index(36,7) - noun - null - null
+Writer - writer - index(36,9) - noun - null - null
+
+Movie = index(36,4)
+Movie_name - movie - index(36,7) - noun - null - null
+Genre - what - index(36,1) - pron - null - null
+
+============================37============================
+What are the languages spoken in the films directed by the [MASK] director?
+Movie = index(37,15)
+Movie_name - movie_mask - index(37,13) - noun - null - null
+Director - director - index(37,15) - noun - null - null
+
+Movie = index(37,9)
+Movie_name - film - index(37,8) - noun - null - null
+Director - director - index(37,15) - noun - null - null
+
+Movie = index(37,5)
+Movie_name - film - index(37,8) - noun - null - null
+Language - what - index(37,1) - pron - null - null
+
+============================38============================
+What are the languages spoken in the films starred by [MASK] actors?
+Movie = index(38,14)
+Movie_name - movie_mask - index(38,12) - noun - null - null
+Actor - actor - index(38,14) - noun - null - null
+
+Movie = index(38,9)
+Movie_name - film - index(38,8) - noun - null - null
+Actor - actor - index(38,14) - noun - null - null
+
+Movie = index(38,5)
+Movie_name - film - index(38,8) - noun - null - null
+Language - what - index(38,1) - pron - null - null
+
+============================39============================
+What are the languages spoken in the films whose actors also appear in [MASK]?
+Inequality = index(39,11)
+Entity_1 - film - index(39,8) - noun - null - null
+Entity_2 - movie_mask - index(39,15) - noun - null - null
+
+Movie = index(39,10)
+Movie_name - film - index(39,8) - noun - null - null
+Actor - actor - index(39,10) - noun - null - null
+
+Movie = index(39,10)
+Movie_name - movie_mask - index(39,15) - noun - null - null
+Actor - actor - index(39,10) - noun - null - null
+
+Movie = index(39,5)
+Movie_name - film - index(39,8) - noun - null - null
+Language - what - index(39,1) - pron - null - null
+
+============================40============================
+What are the languages spoken in the films whose directors also directed [MASK]?
+Movie = index(40,12)
+Movie_name - movie_mask - index(40,14) - noun - null - null
+Director - director - index(40,10) - noun - null - null
+
+Inequality = index(40,11)
+Entity_1 - film - index(40,8) - noun - null - null
+Entity_2 - movie_mask - index(40,14) - noun - null - null
+
+Movie = index(40,10)
+Movie_name - film - index(40,8) - noun - null - null
+Director - director - index(40,10) - noun - null - null
+
+Movie = index(40,5)
+Movie_name - film - index(40,8) - noun - null - null
+Language - what - index(40,1) - pron - null - null
+
+============================41============================
+What are the languages spoken in the films whose writers also wrote [MASK]?
+Movie = index(41,12)
+Movie_name - movie_mask - index(41,14) - propn - null - null
+Writer - writer - index(41,10) - noun - null - null
+
+Inequality = index(41,11)
+Entity_1 - film - index(41,8) - noun - null - null
+Entity_2 - movie_mask - index(41,14) - propn - null - null
+
+Movie = index(41,10)
+Movie_name - film - index(41,8) - noun - null - null
+Writer - writer - index(41,10) - noun - null - null
+
+Movie = index(41,5)
+Movie_name - film - index(41,8) - noun - null - null
+Language - what - index(41,1) - pron - null - null
+
+============================42============================
+What are the languages spoken in the films written by [MASK] screenwriters?
+Movie = index(42,14)
+Movie_name - movie_mask - index(42,12) - noun - null - null
+Writer - screenwriter - index(42,14) - noun - null - null
+
+Movie = index(42,9)
+Movie_name - film - index(42,8) - noun - null - null
+Writer - screenwriter - index(42,14) - noun - null - null
+
+Movie = index(42,5)
+Movie_name - film - index(42,8) - noun - null - null
+Language - what - index(42,1) - pron - null - null
+
+============================43============================
+What are the languages spoken in the movies directed by the [MASK] director?
+Movie = index(43,15)
+Movie_name - movie_mask - index(43,13) - noun - null - null
+Director - director - index(43,15) - noun - null - null
+
+Movie = index(43,9)
+Movie_name - movie - index(43,8) - noun - null - null
+Director - director - index(43,15) - noun - null - null
+
+Movie = index(43,5)
+Movie_name - movie - index(43,8) - noun - null - null
+Language - what - index(43,1) - pron - null - null
+
+============================44============================
+What are the languages spoken in the movies starred by [MASK] actors?
+Movie = index(44,14)
+Movie_name - movie_mask - index(44,12) - noun - null - null
+Actor - actor - index(44,14) - noun - null - null
+
+Movie = index(44,9)
+Movie_name - movie - index(44,8) - noun - null - null
+Actor - actor - index(44,14) - noun - null - null
+
+Movie = index(44,5)
+Movie_name - movie - index(44,8) - noun - null - null
+Language - what - index(44,1) - pron - null - null
+
+============================45============================
+What are the languages spoken in the movies whose actors also appear in [MASK]?
+Inequality = index(45,11)
+Entity_1 - movie - index(45,8) - noun - null - null
+Entity_2 - movie_mask - index(45,15) - noun - null - null
+
+Movie = index(45,10)
+Movie_name - movie - index(45,8) - noun - null - null
+Actor - actor - index(45,10) - noun - null - null
+
+Movie = index(45,10)
+Movie_name - movie_mask - index(45,15) - noun - null - null
+Actor - actor - index(45,10) - noun - null - null
+
+Movie = index(45,5)
+Movie_name - movie - index(45,8) - noun - null - null
+Language - what - index(45,1) - pron - null - null
+
+============================46============================
+What are the languages spoken in the movies whose directors also directed [MASK]?
+Movie = index(46,12)
+Movie_name - movie_mask - index(46,14) - noun - null - null
+Director - director - index(46,10) - noun - null - null
+
+Inequality = index(46,11)
+Entity_1 - movie - index(46,8) - noun - null - null
+Entity_2 - movie_mask - index(46,14) - noun - null - null
+
+Movie = index(46,10)
+Movie_name - movie - index(46,8) - noun - null - null
+Director - director - index(46,10) - noun - null - null
+
+Movie = index(46,5)
+Movie_name - movie - index(46,8) - noun - null - null
+Language - what - index(46,1) - pron - null - null
+
+============================47============================
+What are the languages spoken in the movies whose writers also wrote [MASK]?
+Movie = index(47,12)
+Movie_name - movie_mask - index(47,14) - noun - null - null
+Writer - writer - index(47,10) - noun - null - null
+
+Inequality = index(47,11)
+Entity_1 - movie - index(47,8) - noun - null - null
+Entity_2 - movie_mask - index(47,14) - noun - null - null
+
+Movie = index(47,10)
+Movie_name - movie - index(47,8) - noun - null - null
+Writer - writer - index(47,10) - noun - null - null
+
+Movie = index(47,5)
+Movie_name - movie - index(47,8) - noun - null - null
+Language - what - index(47,1) - pron - null - null
+
+============================48============================
+What are the languages spoken in the movies written by [MASK] writers?
+Movie = index(48,14)
+Movie_name - movie_mask - index(48,12) - noun - null - null
+Writer - writer - index(48,14) - noun - null - null
+
+Movie = index(48,9)
+Movie_name - movie - index(48,8) - noun - null - null
+Writer - writer - index(48,14) - noun - null - null
+
+Movie = index(48,5)
+Movie_name - movie - index(48,8) - noun - null - null
+Language - what - index(48,1) - pron - null - null
+
+============================49============================
+What are the primary languages in the films directed by the director of [MASK]?
+Movie = index(49,12)
+Movie_name - movie_mask - index(49,15) - propn - null - null
+Director - director - index(49,12) - noun - null - null
+
+Movie = index(49,9)
+Movie_name - film - index(49,8) - noun - null - null
+Director - director - index(49,12) - noun - null - null
+
+Movie = index(49,5)
+Movie_name - film - index(49,8) - noun - null - null
+Language - what - index(49,1) - pron - null - null
+
+============================50============================
+What are the primary languages in the films starred by actors in [MASK]?
+Movie = index(50,11)
+Movie_name - movie_mask - index(50,14) - propn - null - null
+Actor - actor - index(50,11) - noun - null - null
+
+Movie = index(50,9)
+Movie_name - film - index(50,8) - noun - null - null
+Actor - actor - index(50,11) - noun - null - null
+
+Movie = index(50,5)
+Movie_name - film - index(50,8) - noun - null - null
+Language - what - index(50,1) - pron - null - null
+
+============================51============================
+What are the primary languages in the films written by the screenwriter of [MASK]?
+Movie = index(51,12)
+Movie_name - movie_mask - index(51,15) - propn - null - null
+Writer - screenwriter - index(51,12) - noun - null - null
+
+Movie = index(51,9)
+Movie_name - film - index(51,8) - noun - null - null
+Writer - screenwriter - index(51,12) - noun - null - null
+
+Movie = index(51,5)
+Movie_name - film - index(51,8) - noun - null - null
+Language - what - index(51,1) - pron - null - null
+
+============================52============================
+What are the primary languages in the movies directed by the director of [MASK]?
+Movie = index(52,12)
+Movie_name - movie_mask - index(52,15) - noun - null - null
+Director - director - index(52,12) - noun - null - null
+
+Movie = index(52,9)
+Movie_name - movie - index(52,8) - noun - null - null
+Director - director - index(52,12) - noun - null - null
+
+Movie = index(52,5)
+Movie_name - movie - index(52,8) - noun - null - null
+Language - what - index(52,1) - pron - null - null
+
+============================53============================
+What are the primary languages in the movies starred by actors in [MASK]?
+Movie = index(53,11)
+Movie_name - movie_mask - index(53,14) - propn - null - null
+Actor - actor - index(53,11) - noun - null - null
+
+Movie = index(53,9)
+Movie_name - movie - index(53,8) - noun - null - null
+Actor - actor - index(53,11) - noun - null - null
+
+Movie = index(53,5)
+Movie_name - movie - index(53,8) - noun - null - null
+Language - what - index(53,1) - pron - null - null
+
+============================54============================
+What are the primary languages in the movies written by the writer of [MASK]?
+Movie = index(54,12)
+Movie_name - movie_mask - index(54,15) - noun - null - null
+Writer - writer - index(54,12) - noun - null - null
+
+Movie = index(54,9)
+Movie_name - movie - index(54,8) - noun - null - null
+Writer - writer - index(54,12) - noun - null - null
+
+Movie = index(54,5)
+Movie_name - movie - index(54,8) - noun - null - null
+Language - what - index(54,1) - pron - null - null
+
+============================55============================
+What genres are the films directed by the [MASK] director?
+Movie = index(55,12)
+Movie_name - movie_mask - index(55,10) - noun - null - null
+Director - director - index(55,12) - noun - null - null
+
+Movie = index(55,6)
+Movie_name - film - index(55,5) - noun - null - null
+Director - director - index(55,12) - noun - null - null
+
+Movie = index(55,2)
+Movie_name - film - index(55,5) - noun - null - null
+Genre - what - index(55,1) - det - null - null
+
+============================56============================
+What genres are the films starred by [MASK] actors?
+Movie = index(56,11)
+Movie_name - movie_mask - index(56,9) - noun - null - null
+Actor - actor - index(56,11) - noun - null - null
+
+Movie = index(56,6)
+Movie_name - film - index(56,5) - noun - null - null
+Actor - actor - index(56,11) - noun - null - null
+
+Movie = index(56,2)
+Movie_name - film - index(56,5) - noun - null - null
+Genre - what - index(56,1) - det - null - null
+
+============================57============================
+What genres are the films written by [MASK] screenwriters?
+Movie = index(57,11)
+Movie_name - movie_mask - index(57,9) - noun - null - null
+Writer - screenwriter - index(57,11) - noun - null - null
+
+Movie = index(57,6)
+Movie_name - film - index(57,5) - noun - null - null
+Writer - screenwriter - index(57,11) - noun - null - null
+
+Movie = index(57,2)
+Movie_name - film - index(57,5) - noun - null - null
+Genre - what - index(57,1) - det - null - null
+
+============================58============================
+What genres are the movies directed by the [MASK] director?
+Movie = index(58,12)
+Movie_name - movie_mask - index(58,10) - noun - null - null
+Director - director - index(58,12) - noun - null - null
+
+Movie = index(58,6)
+Movie_name - movie - index(58,5) - noun - null - null
+Director - director - index(58,12) - noun - null - null
+
+Movie = index(58,2)
+Movie_name - movie - index(58,5) - noun - null - null
+Genre - what - index(58,1) - det - null - null
+
+============================59============================
+What genres are the movies starred by [MASK] actors?
+Movie = index(59,11)
+Movie_name - movie_mask - index(59,9) - noun - null - null
+Actor - actor - index(59,11) - noun - null - null
+
+Movie = index(59,6)
+Movie_name - movie - index(59,5) - noun - null - null
+Actor - actor - index(59,11) - noun - null - null
+
+Movie = index(59,2)
+Movie_name - movie - index(59,5) - noun - null - null
+Genre - what - index(59,1) - det - null - null
+
+============================60============================
+What genres are the movies written by [MASK] writers?
+Movie = index(60,11)
+Movie_name - movie_mask - index(60,9) - noun - null - null
+Writer - writer - index(60,11) - noun - null - null
+
+Movie = index(60,6)
+Movie_name - movie - index(60,5) - noun - null - null
+Writer - writer - index(60,11) - noun - null - null
+
+Movie = index(60,2)
+Movie_name - movie - index(60,5) - noun - null - null
+Genre - what - index(60,1) - det - null - null
+
+============================61============================
+What genres do the films that share actors with [MASK] fall under?
+Movie = index(61,8)
+Movie_name - film - index(61,5) - noun - null - null
+Actor - actor - index(61,8) - noun - null - null
+
+Movie = index(61,8)
+Movie_name - movie_mask - index(61,11) - noun - null - null
+Actor - actor - index(61,8) - noun - null - null
+
+Inequality = index(61,7)
+Entity_1 - film - index(61,5) - noun - null - null
+Entity_2 - movie_mask - index(61,11) - noun - null - null
+
+============================62============================
+What genres do the films that share directors with [MASK] fall under?
+Movie = index(62,8)
+Movie_name - film - index(62,5) - noun - null - null
+Director - director - index(62,8) - noun - null - null
+
+Movie = index(62,8)
+Movie_name - movie_mask - index(62,11) - noun - null - null
+Director - director - index(62,8) - noun - null - null
+
+Inequality = index(62,7)
+Entity_1 - film - index(62,5) - noun - null - null
+Entity_2 - movie_mask - index(62,11) - noun - null - null
+
+============================63============================
+What genres do the films that share writers with [MASK] fall under?
+Movie = index(63,8)
+Movie_name - film - index(63,5) - noun - null - null
+Writer - writer - index(63,8) - noun - null - null
+
+Movie = index(63,8)
+Movie_name - movie_mask - index(63,11) - noun - null - null
+Writer - writer - index(63,8) - noun - null - null
+
+Inequality = index(63,7)
+Entity_1 - film - index(63,5) - noun - null - null
+Entity_2 - movie_mask - index(63,11) - noun - null - null
+
+============================64============================
+What genres do the movies that share actors with [MASK] fall under?
+Movie = index(64,8)
+Movie_name - movie - index(64,5) - noun - null - null
+Actor - actor - index(64,8) - noun - null - null
+
+Movie = index(64,8)
+Movie_name - movie_mask - index(64,11) - noun - null - null
+Actor - actor - index(64,8) - noun - null - null
+
+Inequality = index(64,7)
+Entity_1 - movie - index(64,5) - noun - null - null
+Entity_2 - movie_mask - index(64,11) - noun - null - null
+
+============================65============================
+What genres do the movies that share directors with [MASK] fall under?
+Movie = index(65,8)
+Movie_name - movie - index(65,5) - noun - null - null
+Director - director - index(65,8) - noun - null - null
+
+Movie = index(65,8)
+Movie_name - movie_mask - index(65,11) - noun - null - null
+Director - director - index(65,8) - noun - null - null
+
+Inequality = index(65,7)
+Entity_1 - movie - index(65,5) - noun - null - null
+Entity_2 - movie_mask - index(65,11) - noun - null - null
+
+============================66============================
+What genres do the movies that share screenwriters with [MASK] fall under?
+Movie = index(66,8)
+Movie_name - movie - index(66,5) - noun - null - null
+Writer - screenwriter - index(66,8) - noun - null - null
+
+Movie = index(66,8)
+Movie_name - movie_mask - index(66,11) - noun - null - null
+Writer - screenwriter - index(66,8) - noun - null - null
+
+Inequality = index(66,7)
+Entity_1 - movie - index(66,5) - noun - null - null
+Entity_2 - movie_mask - index(66,11) - noun - null - null
+
+============================67============================
+What languages are the films that share actors with [MASK] in?
+Movie = index(67,8)
+Movie_name - film - index(67,5) - noun - null - null
+Actor - actor - index(67,8) - noun - null - null
+
+Movie = index(67,8)
+Movie_name - movie_mask - index(67,11) - noun - null - null
+Actor - actor - index(67,8) - noun - null - null
+
+Inequality = index(67,7)
+Entity_1 - film - index(67,5) - noun - null - null
+Entity_2 - movie_mask - index(67,11) - noun - null - null
+
+Movie = index(67,2)
+Movie_name - film - index(67,5) - noun - null - null
+Language - what - index(67,1) - det - null - null
+
+============================68============================
+What languages are the films that share directors with [MASK] in?
+Movie = index(68,8)
+Movie_name - film - index(68,5) - noun - null - null
+Director - director - index(68,8) - noun - null - null
+
+Movie = index(68,8)
+Movie_name - movie_mask - index(68,11) - noun - null - null
+Director - director - index(68,8) - noun - null - null
+
+Inequality = index(68,7)
+Entity_1 - film - index(68,5) - noun - null - null
+Entity_2 - movie_mask - index(68,11) - noun - null - null
+
+Movie = index(68,2)
+Movie_name - film - index(68,5) - noun - null - null
+Language - what - index(68,1) - det - null - null
+
+============================69============================
+What languages are the films that share writers with [MASK] in?
+Movie = index(69,8)
+Movie_name - film - index(69,5) - noun - null - null
+Writer - writer - index(69,8) - noun - null - null
+
+Movie = index(69,8)
+Movie_name - movie_mask - index(69,11) - noun - null - null
+Writer - writer - index(69,8) - noun - null - null
+
+Inequality = index(69,7)
+Entity_1 - film - index(69,5) - noun - null - null
+Entity_2 - movie_mask - index(69,11) - noun - null - null
+
+Movie = index(69,2)
+Movie_name - film - index(69,5) - noun - null - null
+Language - what - index(69,1) - det - null - null
+
+============================70============================
+What languages are the movies that share actors with [MASK] in?
+Movie = index(70,8)
+Movie_name - movie - index(70,5) - noun - null - null
+Actor - actor - index(70,8) - noun - null - null
+
+Movie = index(70,8)
+Movie_name - movie_mask - index(70,11) - noun - null - null
+Actor - actor - index(70,8) - noun - null - null
+
+Inequality = index(70,7)
+Entity_1 - movie - index(70,5) - noun - null - null
+Entity_2 - movie_mask - index(70,11) - noun - null - null
+
+Movie = index(70,2)
+Movie_name - movie - index(70,5) - noun - null - null
+Language - what - index(70,1) - det - null - null
+
+============================71============================
+What languages are the movies that share directors with [MASK] in?
+Movie = index(71,8)
+Movie_name - movie - index(71,5) - noun - null - null
+Director - director - index(71,8) - noun - null - null
+
+Movie = index(71,8)
+Movie_name - movie_mask - index(71,11) - noun - null - null
+Director - director - index(71,8) - noun - null - null
+
+Inequality = index(71,7)
+Entity_1 - movie - index(71,5) - noun - null - null
+Entity_2 - movie_mask - index(71,11) - noun - null - null
+
+Movie = index(71,2)
+Movie_name - movie - index(71,5) - noun - null - null
+Language - what - index(71,1) - det - null - null
+
+============================72============================
+What languages are the movies that share screenwriters with [MASK] in?
+Movie = index(72,8)
+Movie_name - movie - index(72,5) - noun - null - null
+Writer - screenwriter - index(72,8) - noun - null - null
+
+Movie = index(72,8)
+Movie_name - movie_mask - index(72,11) - noun - null - null
+Writer - screenwriter - index(72,8) - noun - null - null
+
+Inequality = index(72,7)
+Entity_1 - movie - index(72,5) - noun - null - null
+Entity_2 - movie_mask - index(72,11) - noun - null - null
+
+Movie = index(72,2)
+Movie_name - movie - index(72,5) - noun - null - null
+Language - what - index(72,1) - det - null - null
+
+============================73============================
+What types are the films directed by the director of [MASK]?
+Movie = index(73,9)
+Movie_name - movie_mask - index(73,12) - noun - null - null
+Director - director - index(73,9) - noun - null - null
+
+Movie = index(73,6)
+Movie_name - film - index(73,5) - noun - null - null
+Director - director - index(73,9) - noun - null - null
+
+Movie = index(73,2)
+Movie_name - film - index(73,5) - noun - null - null
+Genre - what - index(73,1) - det - null - null
+
+============================74============================
+What types are the films starred by actors in [MASK]?
+Movie = index(74,8)
+Movie_name - movie_mask - index(74,11) - noun - null - null
+Actor - actor - index(74,8) - noun - null - null
+
+Movie = index(74,6)
+Movie_name - film - index(74,5) - noun - null - null
+Actor - actor - index(74,8) - noun - null - null
+
+Movie = index(74,2)
+Movie_name - film - index(74,5) - noun - null - null
+Genre - what - index(74,1) - det - null - null
+
+============================75============================
+What types are the movies directed by the director of [MASK]?
+Movie = index(75,9)
+Movie_name - movie_mask - index(75,12) - noun - null - null
+Director - director - index(75,9) - noun - null - null
+
+Movie = index(75,6)
+Movie_name - movie - index(75,5) - noun - null - null
+Director - director - index(75,9) - noun - null - null
+
+Movie = index(75,2)
+Movie_name - movie - index(75,5) - noun - null - null
+Genre - what - index(75,1) - det - null - null
+
+============================76============================
+What types are the movies starred by actors in [MASK]?
+Movie = index(76,8)
+Movie_name - movie_mask - index(76,11) - noun - null - null
+Actor - actor - index(76,8) - noun - null - null
+
+Movie = index(76,6)
+Movie_name - movie - index(76,5) - noun - null - null
+Actor - actor - index(76,8) - noun - null - null
+
+Movie = index(76,2)
+Movie_name - movie - index(76,5) - noun - null - null
+Genre - what - index(76,1) - det - null - null
+
+============================77============================
+What types are the movies written by the screenwriter of [MASK]?
+Movie = index(77,9)
+Movie_name - movie_mask - index(77,12) - noun - null - null
+Writer - screenwriter - index(77,9) - noun - null - null
+
+Movie = index(77,6)
+Movie_name - movie - index(77,5) - noun - null - null
+Writer - screenwriter - index(77,9) - noun - null - null
+
+Movie = index(77,2)
+Movie_name - movie - index(77,5) - noun - null - null
+Genre - what - index(77,1) - det - null - null
+
+============================78============================
+What types are the movies written by the writer of [MASK]?
+Movie = index(78,9)
+Movie_name - movie_mask - index(78,12) - noun - null - null
+Writer - writer - index(78,9) - noun - null - null
+
+Movie = index(78,6)
+Movie_name - movie - index(78,5) - noun - null - null
+Writer - writer - index(78,9) - noun - null - null
+
+Movie = index(78,2)
+Movie_name - movie - index(78,5) - noun - null - null
+Genre - what - index(78,1) - det - null - null
+
+============================79============================
+What were the release dates of films directed by the director of [MASK]?
+Movie = index(79,11)
+Movie_name - movie_mask - index(79,14) - propn - null - null
+Director - director - index(79,11) - noun - null - null
+
+Movie = index(79,8)
+Movie_name - film - index(79,7) - noun - null - null
+Director - director - index(79,11) - noun - null - null
+
+Movie = index(79,5)
+Movie_name - film - index(79,7) - noun - null - null
+Release_year - what - index(79,1) - pron - null - null
+
+============================80============================
+What were the release dates of films starred by actors in [MASK]?
+Movie = index(80,10)
+Movie_name - movie_mask - index(80,13) - propn - null - null
+Actor - actor - index(80,10) - noun - null - null
+
+Movie = index(80,8)
+Movie_name - film - index(80,7) - noun - null - null
+Actor - actor - index(80,10) - noun - null - null
+
+Movie = index(80,5)
+Movie_name - film - index(80,7) - noun - null - null
+Release_year - what - index(80,1) - pron - null - null
+
+============================81============================
+What were the release dates of films written by the screenwriter of [MASK]?
+Movie = index(81,11)
+Movie_name - movie_mask - index(81,14) - propn - null - null
+Writer - screenwriter - index(81,11) - noun - null - null
+
+Movie = index(81,8)
+Movie_name - film - index(81,7) - noun - null - null
+Writer - screenwriter - index(81,11) - noun - null - null
+
+Movie = index(81,5)
+Movie_name - film - index(81,7) - noun - null - null
+Release_year - what - index(81,1) - pron - null - null
+
+============================82============================
+What were the release dates of movies directed by the director of [MASK]?
+Movie = index(82,11)
+Movie_name - movie_mask - index(82,14) - noun - null - null
+Director - director - index(82,11) - noun - null - null
+
+Movie = index(82,8)
+Movie_name - movie - index(82,7) - noun - null - null
+Director - director - index(82,11) - noun - null - null
+
+Movie = index(82,5)
+Movie_name - movie - index(82,7) - noun - null - null
+Release_year - what - index(82,1) - pron - null - null
+
+============================83============================
+What were the release dates of movies starred by actors in [MASK]?
+Movie = index(83,10)
+Movie_name - movie_mask - index(83,13) - propn - null - null
+Actor - actor - index(83,10) - noun - null - null
+
+Movie = index(83,8)
+Movie_name - movie - index(83,7) - noun - null - null
+Actor - actor - index(83,10) - noun - null - null
+
+Movie = index(83,5)
+Movie_name - movie - index(83,7) - noun - null - null
+Release_year - what - index(83,1) - pron - null - null
+
+============================84============================
+What were the release dates of movies written by the writer of [MASK]?
+Movie = index(84,11)
+Movie_name - movie_mask - index(84,14) - noun - null - null
+Writer - writer - index(84,11) - noun - null - null
+
+Movie = index(84,8)
+Movie_name - movie - index(84,7) - noun - null - null
+Writer - writer - index(84,11) - noun - null - null
+
+Movie = index(84,5)
+Movie_name - movie - index(84,7) - noun - null - null
+Release_year - what - index(84,1) - pron - null - null
+
+============================85============================
+What were the release years of the films that share actors with the film [MASK]?
+Movie = index(85,11)
+Movie_name - film - index(85,8) - noun - null - null
+Actor - actor - index(85,11) - noun - null - null
+
+Movie = index(85,11)
+Movie_name - film_mask - index(85,16) - noun - null - null
+Actor - actor - index(85,11) - noun - null - null
+
+Inequality = index(85,10)
+Entity_1 - film - index(85,8) - noun - null - null
+Entity_2 - film_mask - index(85,16) - noun - null - null
+
+Movie = index(85,5)
+Movie_name - film - index(85,8) - noun - null - null
+Release_year - what - index(85,1) - pron - null - null
+
+============================86============================
+What were the release years of the films that share directors with the film [MASK]?
+Movie = index(86,11)
+Movie_name - film - index(86,8) - noun - null - null
+Director - director - index(86,11) - noun - null - null
+
+Movie = index(86,11)
+Movie_name - film_mask - index(86,16) - noun - null - null
+Director - director - index(86,11) - noun - null - null
+
+Inequality = index(86,10)
+Entity_1 - film - index(86,8) - noun - null - null
+Entity_2 - film_mask - index(86,16) - noun - null - null
+
+Movie = index(86,5)
+Movie_name - film - index(86,8) - noun - null - null
+Release_year - what - index(86,1) - pron - null - null
+
+============================87============================
+What were the release years of the films that share writers with the film [MASK]?
+Movie = index(87,11)
+Movie_name - film - index(87,8) - noun - null - null
+Writer - writer - index(87,11) - noun - null - null
+
+Movie = index(87,11)
+Movie_name - film_mask - index(87,16) - propn - null - null
+Writer - writer - index(87,11) - noun - null - null
+
+Inequality = index(87,10)
+Entity_1 - film - index(87,8) - noun - null - null
+Entity_2 - film_mask - index(87,16) - propn - null - null
+
+Movie = index(87,5)
+Movie_name - film - index(87,8) - noun - null - null
+Release_year - what - index(87,1) - pron - null - null
+
+============================88============================
+What were the release years of the movies that share actors with the movie [MASK]?
+Movie = index(88,11)
+Movie_name - movie - index(88,8) - noun - null - null
+Actor - actor - index(88,11) - noun - null - null
+
+Movie = index(88,11)
+Movie_name - movie_mask - index(88,16) - propn - null - null
+Actor - actor - index(88,11) - noun - null - null
+
+Inequality = index(88,10)
+Entity_1 - movie - index(88,8) - noun - null - null
+Entity_2 - movie_mask - index(88,16) - propn - null - null
+
+Movie = index(88,5)
+Movie_name - movie - index(88,8) - noun - null - null
+Release_year - what - index(88,1) - pron - null - null
+
+============================89============================
+What were the release years of the movies that share directors with the movie [MASK]?
+Movie = index(89,11)
+Movie_name - movie - index(89,8) - noun - null - null
+Director - director - index(89,11) - noun - null - null
+
+Movie = index(89,11)
+Movie_name - movie_mask - index(89,16) - propn - null - null
+Director - director - index(89,11) - noun - null - null
+
+Inequality = index(89,10)
+Entity_1 - movie - index(89,8) - noun - null - null
+Entity_2 - movie_mask - index(89,16) - propn - null - null
+
+Movie = index(89,5)
+Movie_name - movie - index(89,8) - noun - null - null
+Release_year - what - index(89,1) - pron - null - null
+
+============================90============================
+What were the release years of the movies that share screenwriters with the movie [MASK]?
+Movie = index(90,11)
+Movie_name - movie - index(90,8) - noun - null - null
+Writer - screenwriter - index(90,11) - noun - null - null
+
+Movie = index(90,11)
+Movie_name - movie_mask - index(90,16) - propn - null - null
+Writer - screenwriter - index(90,11) - noun - null - null
+
+Inequality = index(90,10)
+Entity_1 - movie - index(90,8) - noun - null - null
+Entity_2 - movie_mask - index(90,16) - propn - null - null
+
+Movie = index(90,5)
+Movie_name - movie - index(90,8) - noun - null - null
+Release_year - what - index(90,1) - pron - null - null
+
+============================91============================
+When did the films directed by the [MASK] director release?
+============================92============================
+When did the films release whose actors also appear in the film [MASK]?
+Inequality = index(92,8)
+Entity_1 - film - index(92,4) - noun - null - null
+Entity_2 - film_mask - index(92,14) - noun - null - null
+
+Movie = index(92,7)
+Movie_name - film - index(92,4) - noun - null - null
+Actor - actor - index(92,7) - noun - null - null
+
+Movie = index(92,7)
+Movie_name - film_mask - index(92,14) - noun - null - null
+Actor - actor - index(92,7) - noun - null - null
+
+Movie = index(92,5)
+Movie_name - film - index(92,4) - noun - null - null
+Release_year - when - index(92,1) - adv - null - null
+
+============================93============================
+When did the films release whose directors also directed [MASK]?
+Movie = index(93,9)
+Movie_name - movie_mask - index(93,11) - noun - null - null
+Director - director - index(93,7) - noun - null - null
+
+Inequality = index(93,8)
+Entity_1 - film - index(93,4) - noun - null - null
+Entity_2 - movie_mask - index(93,11) - noun - null - null
+
+Movie = index(93,7)
+Movie_name - film - index(93,4) - noun - null - null
+Director - director - index(93,7) - noun - null - null
+
+Movie = index(93,5)
+Movie_name - film - index(93,4) - noun - null - null
+Release_year - when - index(93,1) - adv - null - null
+
+============================94============================
+When did the films release whose screenwriters also wrote [MASK]?
+Movie = index(94,9)
+Movie_name - movie_mask - index(94,11) - noun - null - null
+Writer - screenwriter - index(94,7) - noun - null - null
+
+Inequality = index(94,8)
+Entity_1 - film - index(94,4) - noun - null - null
+Entity_2 - movie_mask - index(94,11) - noun - null - null
+
+Movie = index(94,7)
+Movie_name - film - index(94,4) - noun - null - null
+Writer - screenwriter - index(94,7) - noun - null - null
+
+Movie = index(94,5)
+Movie_name - film - index(94,4) - noun - null - null
+Release_year - when - index(94,1) - adv - null - null
+
+============================95============================
+When did the films starred by [MASK] actors release?
+Movie = index(95,11)
+Movie_name - film - index(95,4) - noun - null - null
+Release_year - when - index(95,1) - adv - null - null
+
+Movie = index(95,10)
+Movie_name - movie_mask - index(95,8) - noun - null - null
+Actor - actor - index(95,10) - noun - null - null
+
+Movie = index(95,5)
+Movie_name - film - index(95,4) - noun - null - null
+Actor - actor - index(95,10) - noun - null - null
+
+============================96============================
+When did the films written by [MASK] writers release?
+Movie = index(96,11)
+Movie_name - film - index(96,4) - noun - null - null
+Release_year - when - index(96,1) - adv - null - null
+
+Movie = index(96,10)
+Movie_name - movie_mask - index(96,8) - noun - null - null
+Writer - writer - index(96,10) - noun - null - null
+
+Movie = index(96,5)
+Movie_name - film - index(96,4) - noun - null - null
+Writer - writer - index(96,10) - noun - null - null
+
+============================97============================
+When did the movies directed by the [MASK] director release?
+============================98============================
+When did the movies release whose actors also appear in the movie [MASK]?
+Inequality = index(98,8)
+Entity_1 - movie - index(98,4) - noun - null - null
+Entity_2 - movie_mask - index(98,14) - propn - null - null
+
+Movie = index(98,7)
+Movie_name - movie - index(98,4) - noun - null - null
+Actor - actor - index(98,7) - noun - null - null
+
+Movie = index(98,7)
+Movie_name - movie_mask - index(98,14) - propn - null - null
+Actor - actor - index(98,7) - noun - null - null
+
+Movie = index(98,5)
+Movie_name - movie - index(98,4) - noun - null - null
+Release_year - when - index(98,1) - adv - null - null
+
+============================99============================
+When did the movies release whose directors also directed [MASK]?
+Movie = index(99,9)
+Movie_name - movie_mask - index(99,11) - noun - null - null
+Director - director - index(99,7) - noun - null - null
+
+Inequality = index(99,8)
+Entity_1 - movie - index(99,4) - noun - null - null
+Entity_2 - movie_mask - index(99,11) - noun - null - null
+
+Movie = index(99,7)
+Movie_name - movie - index(99,4) - noun - null - null
+Director - director - index(99,7) - noun - null - null
+
+Movie = index(99,5)
+Movie_name - movie - index(99,4) - noun - null - null
+Release_year - when - index(99,1) - adv - null - null
+
+============================100============================
+When did the movies release whose writers also wrote [MASK]?
+Movie = index(100,9)
+Movie_name - movie_mask - index(100,11) - noun - null - null
+Writer - writer - index(100,7) - noun - null - null
+
+Inequality = index(100,8)
+Entity_1 - movie - index(100,4) - noun - null - null
+Entity_2 - movie_mask - index(100,11) - noun - null - null
+
+Movie = index(100,7)
+Movie_name - movie - index(100,4) - noun - null - null
+Writer - writer - index(100,7) - noun - null - null
+
+Movie = index(100,5)
+Movie_name - movie - index(100,4) - noun - null - null
+Release_year - when - index(100,1) - adv - null - null
+
+============================101============================
+When did the movies starred by [MASK] actors release?
+Movie = index(101,10)
+Movie_name - movie_mask - index(101,8) - noun - null - null
+Actor - actor - index(101,10) - noun - null - null
+
+============================102============================
+When did the movies written by [MASK] writers release?
+Movie = index(102,11)
+Movie_name - movie - index(102,4) - noun - null - null
+Release_year - when - index(102,1) - adv - null - null
+
+Movie = index(102,10)
+Movie_name - movie_mask - index(102,8) - noun - null - null
+Writer - writer - index(102,10) - noun - null - null
+
+Movie = index(102,5)
+Movie_name - movie - index(102,4) - noun - null - null
+Writer - writer - index(102,10) - noun - null - null
+
+============================103============================
+Which person directed the films acted by the actors in [MASK]?
+Movie = index(103,9)
+Movie_name - movie_mask - index(103,12) - propn - null - null
+Actor - actor - index(103,9) - noun - null - null
+
+Movie = index(103,6)
+Movie_name - film - index(103,5) - noun - null - null
+Actor - actor - index(103,9) - noun - null - null
+
+Movie = index(103,3)
+Movie_name - film - index(103,5) - noun - null - null
+Director - which - index(103,1) - det - null - null
+
+============================104============================
+Which person directed the movies starred by the actors in [MASK]?
+Movie = index(104,9)
+Movie_name - movie_mask - index(104,12) - propn - null - null
+Actor - actor - index(104,9) - noun - null - null
+
+Movie = index(104,6)
+Movie_name - movie - index(104,5) - noun - null - null
+Actor - actor - index(104,9) - noun - null - null
+
+Movie = index(104,3)
+Movie_name - movie - index(104,5) - noun - null - null
+Director - which - index(104,1) - det - null - null
+
+============================105============================
+Which person wrote the films acted by the actors in [MASK]?
+Movie = index(105,9)
+Movie_name - movie_mask - index(105,12) - propn - null - null
+Actor - actor - index(105,9) - noun - null - null
+
+Movie = index(105,6)
+Movie_name - film - index(105,5) - noun - null - null
+Actor - actor - index(105,9) - noun - null - null
+
+Movie = index(105,3)
+Movie_name - film - index(105,5) - noun - null - null
+Writer - which - index(105,1) - det - null - null
+
+============================106============================
+Which person wrote the films directed by the director of [MASK]?
+Movie = index(106,9)
+Movie_name - movie_mask - index(106,12) - propn - null - null
+Director - director - index(106,9) - noun - null - null
+
+Movie = index(106,6)
+Movie_name - film - index(106,5) - noun - null - null
+Director - director - index(106,9) - noun - null - null
+
+Movie = index(106,3)
+Movie_name - film - index(106,5) - noun - null - null
+Writer - which - index(106,1) - det - null - null
+
+============================107============================
+Which person wrote the movies directed by the director of [MASK]?
+Movie = index(107,9)
+Movie_name - movie_mask - index(107,12) - propn - null - null
+Director - director - index(107,9) - noun - null - null
+
+Movie = index(107,6)
+Movie_name - movie - index(107,5) - noun - null - null
+Director - director - index(107,9) - noun - null - null
+
+Movie = index(107,3)
+Movie_name - movie - index(107,5) - noun - null - null
+Writer - which - index(107,1) - det - null - null
+
+============================108============================
+Which person wrote the movies starred by the actors in [MASK]?
+Movie = index(108,9)
+Movie_name - movie_mask - index(108,12) - propn - null - null
+Actor - actor - index(108,9) - noun - null - null
+
+Movie = index(108,6)
+Movie_name - movie - index(108,5) - noun - null - null
+Actor - actor - index(108,9) - noun - null - null
+
+Movie = index(108,3)
+Movie_name - movie - index(108,5) - noun - null - null
+Writer - which - index(108,1) - det - null - null
+
+============================109============================
+Who acted in the films directed by the director of [MASK]?
+Movie = index(109,9)
+Movie_name - movie_mask - index(109,12) - propn - null - null
+Director - director - index(109,9) - noun - null - null
+
+Movie = index(109,6)
+Movie_name - film - index(109,5) - noun - null - null
+Director - director - index(109,9) - noun - null - null
+
+Movie = index(109,2)
+Movie_name - film - index(109,5) - noun - null - null
+Actor - who - index(109,1) - pron - null - null
+
+============================110============================
+Who acted in the films written by the screenwriter of [MASK]?
+Movie = index(110,9)
+Movie_name - movie_mask - index(110,12) - propn - null - null
+Writer - screenwriter - index(110,9) - noun - null - null
+
+Movie = index(110,6)
+Movie_name - film - index(110,5) - noun - null - null
+Writer - screenwriter - index(110,9) - noun - null - null
+
+Movie = index(110,2)
+Movie_name - film - index(110,5) - noun - null - null
+Actor - who - index(110,1) - pron - null - null
+
+============================111============================
+Who acted in the movies directed by the director of [MASK]?
+Movie = index(111,9)
+Movie_name - movie_mask - index(111,12) - propn - null - null
+Director - director - index(111,9) - noun - null - null
+
+Movie = index(111,6)
+Movie_name - movie - index(111,5) - noun - null - null
+Director - director - index(111,9) - noun - null - null
+
+Movie = index(111,2)
+Movie_name - movie - index(111,5) - noun - null - null
+Actor - who - index(111,1) - pron - null - null
+
+============================112============================
+Who acted in the movies written by the writer of [MASK]?
+Movie = index(112,9)
+Movie_name - movie_mask - index(112,12) - propn - null - null
+Writer - writer - index(112,9) - noun - null - null
+
+Movie = index(112,6)
+Movie_name - movie - index(112,5) - noun - null - null
+Writer - writer - index(112,9) - noun - null - null
+
+Movie = index(112,2)
+Movie_name - movie - index(112,5) - noun - null - null
+Actor - who - index(112,1) - pron - null - null
+
+============================113============================
+Who are the actors in the films directed by the director of [MASK]?
+Movie = index(113,11)
+Movie_name - movie_mask - index(113,14) - propn - null - null
+Director - director - index(113,11) - noun - null - null
+
+Movie = index(113,8)
+Movie_name - film - index(113,7) - noun - null - null
+Director - director - index(113,11) - noun - null - null
+
+Movie = index(113,4)
+Movie_name - film - index(113,7) - noun - null - null
+Actor - who - index(113,1) - pron - null - null
+
+============================114============================
+Who are the actors in the films written by the screenwriter of [MASK]?
+Movie = index(114,11)
+Movie_name - movie_mask - index(114,14) - propn - null - null
+Writer - screenwriter - index(114,11) - noun - null - null
+
+Movie = index(114,8)
+Movie_name - film - index(114,7) - noun - null - null
+Writer - screenwriter - index(114,11) - noun - null - null
+
+Movie = index(114,4)
+Movie_name - film - index(114,7) - noun - null - null
+Actor - who - index(114,1) - pron - null - null
+
+============================115============================
+Who are the actors in the movies directed by the director of [MASK]?
+Movie = index(115,11)
+Movie_name - movie_mask - index(115,14) - noun - null - null
+Director - director - index(115,11) - noun - null - null
+
+Movie = index(115,8)
+Movie_name - movie - index(115,7) - noun - null - null
+Director - director - index(115,11) - noun - null - null
+
+Movie = index(115,4)
+Movie_name - movie - index(115,7) - noun - null - null
+Actor - who - index(115,1) - pron - null - null
+
+============================116============================
+Who are the actors in the movies written by the writer of [MASK]?
+Movie = index(116,11)
+Movie_name - movie_mask - index(116,14) - propn - null - null
+Writer - writer - index(116,11) - noun - null - null
+
+Movie = index(116,8)
+Movie_name - movie - index(116,7) - noun - null - null
+Writer - writer - index(116,11) - noun - null - null
+
+Movie = index(116,4)
+Movie_name - movie - index(116,7) - noun - null - null
+Actor - who - index(116,1) - pron - null - null
+
+============================117============================
+Who are the directors of films whose writers also wrote [MASK]?
+Movie = index(117,10)
+Movie_name - movie_mask - index(117,12) - noun - null - null
+Writer - writer - index(117,8) - noun - null - null
+
+Inequality = index(117,9)
+Entity_1 - film - index(117,6) - noun - null - null
+Entity_2 - movie_mask - index(117,12) - noun - null - null
+
+Movie = index(117,8)
+Movie_name - film - index(117,6) - noun - null - null
+Writer - writer - index(117,8) - noun - null - null
+
+Movie = index(117,4)
+Movie_name - film - index(117,6) - noun - null - null
+Director - who - index(117,1) - pron - null - null
+
+============================118============================
+Who are the directors of movies whose writers also wrote [MASK]?
+Movie = index(118,10)
+Movie_name - movie_mask - index(118,12) - noun - null - null
+Writer - writer - index(118,8) - noun - null - null
+
+Inequality = index(118,9)
+Entity_1 - movie - index(118,6) - noun - null - null
+Entity_2 - movie_mask - index(118,12) - noun - null - null
+
+Movie = index(118,8)
+Movie_name - movie - index(118,6) - noun - null - null
+Writer - writer - index(118,8) - noun - null - null
+
+Movie = index(118,4)
+Movie_name - movie - index(118,6) - noun - null - null
+Director - who - index(118,1) - pron - null - null
+
+============================119============================
+Who are the directors of the films written by the writer of [MASK]?
+Movie = index(119,11)
+Movie_name - movie_mask - index(119,14) - propn - null - null
+Writer - writer - index(119,11) - noun - null - null
+
+Movie = index(119,8)
+Movie_name - film - index(119,7) - noun - null - null
+Writer - writer - index(119,11) - noun - null - null
+
+Movie = index(119,4)
+Movie_name - film - index(119,7) - noun - null - null
+Director - who - index(119,1) - pron - null - null
+
+============================120============================
+Who are the directors of the movies written by the writer of [MASK]?
+Movie = index(120,11)
+Movie_name - movie_mask - index(120,14) - propn - null - null
+Writer - writer - index(120,11) - noun - null - null
+
+Movie = index(120,8)
+Movie_name - movie - index(120,7) - noun - null - null
+Writer - writer - index(120,11) - noun - null - null
+
+Movie = index(120,4)
+Movie_name - movie - index(120,7) - noun - null - null
+Director - who - index(120,1) - pron - null - null
+
+============================121============================
+Who are the directors of the films whose actors also appear in the film [MASK]?
+Inequality = index(121,10)
+Entity_1 - film - index(121,7) - noun - null - null
+Entity_2 - film_mask - index(121,16) - propn - null - null
+
+Movie = index(121,9)
+Movie_name - film - index(121,7) - noun - null - null
+Actor - actor - index(121,9) - noun - null - null
+
+Movie = index(121,9)
+Movie_name - film_mask - index(121,16) - propn - null - null
+Actor - actor - index(121,9) - noun - null - null
+
+Movie = index(121,4)
+Movie_name - film - index(121,7) - noun - null - null
+Director - who - index(121,1) - pron - null - null
+
+============================122============================
+Who are the directors of the movies whose actors also appear in the movie [MASK]?
+Inequality = index(122,10)
+Entity_1 - movie - index(122,7) - noun - null - null
+Entity_2 - movie_mask - index(122,16) - propn - null - null
+
+Movie = index(122,9)
+Movie_name - movie - index(122,7) - noun - null - null
+Actor - actor - index(122,9) - noun - null - null
+
+Movie = index(122,9)
+Movie_name - movie_mask - index(122,16) - propn - null - null
+Actor - actor - index(122,9) - noun - null - null
+
+Movie = index(122,4)
+Movie_name - movie - index(122,7) - noun - null - null
+Director - who - index(122,1) - pron - null - null
+
+============================123============================
+Who are the screenwriters of the movies whose actors also appear in the movie [MASK]?
+Inequality = index(123,10)
+Entity_1 - movie - index(123,7) - noun - null - null
+Entity_2 - movie_mask - index(123,16) - propn - null - null
+
+Movie = index(123,9)
+Movie_name - movie - index(123,7) - noun - null - null
+Actor - actor - index(123,9) - noun - null - null
+
+Movie = index(123,9)
+Movie_name - movie_mask - index(123,16) - propn - null - null
+Actor - actor - index(123,9) - noun - null - null
+
+Movie = index(123,4)
+Movie_name - movie - index(123,7) - noun - null - null
+Writer - who - index(123,1) - pron - null - null
+
+============================124============================
+Who are the screenwriters of the movies whose directors also directed [MASK]?
+Movie = index(124,11)
+Movie_name - movie_mask - index(124,13) - noun - null - null
+Director - director - index(124,9) - noun - null - null
+
+Inequality = index(124,10)
+Entity_1 - movie - index(124,7) - noun - null - null
+Entity_2 - movie_mask - index(124,13) - noun - null - null
+
+Movie = index(124,9)
+Movie_name - movie - index(124,7) - noun - null - null
+Director - director - index(124,9) - noun - null - null
+
+Movie = index(124,4)
+Movie_name - movie - index(124,7) - noun - null - null
+Writer - who - index(124,1) - pron - null - null
+
+============================125============================
+Who are the writers of the films whose actors also appear in the film [MASK]?
+Inequality = index(125,10)
+Entity_1 - film - index(125,7) - noun - null - null
+Entity_2 - film_mask - index(125,16) - propn - null - null
+
+Movie = index(125,9)
+Movie_name - film - index(125,7) - noun - null - null
+Actor - actor - index(125,9) - noun - null - null
+
+Movie = index(125,9)
+Movie_name - film_mask - index(125,16) - propn - null - null
+Actor - actor - index(125,9) - noun - null - null
+
+Movie = index(125,4)
+Movie_name - film - index(125,7) - noun - null - null
+Writer - who - index(125,1) - pron - null - null
+
+============================126============================
+Who are the writers of the films whose directors also directed [MASK]?
+Movie = index(126,11)
+Movie_name - movie_mask - index(126,13) - noun - null - null
+Director - director - index(126,9) - noun - null - null
+
+Inequality = index(126,10)
+Entity_1 - film - index(126,7) - noun - null - null
+Entity_2 - movie_mask - index(126,13) - noun - null - null
+
+Movie = index(126,9)
+Movie_name - film - index(126,7) - noun - null - null
+Director - director - index(126,9) - noun - null - null
+
+Movie = index(126,4)
+Movie_name - film - index(126,7) - noun - null - null
+Writer - who - index(126,1) - pron - null - null
+
+============================127============================
+Who directed films for the writer of [MASK]?
+Movie = index(127,6)
+Movie_name - movie_mask - index(127,9) - noun - null - null
+Writer - writer - index(127,6) - noun - null - null
+
+Movie = index(127,2)
+Movie_name - film - index(127,3) - noun - null - null
+Writer - writer - index(127,6) - noun - null - null
+
+Movie = index(127,2)
+Movie_name - film - index(127,3) - noun - null - null
+Director - who - index(127,1) - pron - null - null
+
+============================128============================
+Who directed films that share actors with the film [MASK]?
+Movie = index(128,6)
+Movie_name - film - index(128,3) - noun - null - null
+Actor - actor - index(128,6) - noun - null - null
+
+Movie = index(128,6)
+Movie_name - film_mask - index(128,11) - noun - null - null
+Actor - actor - index(128,6) - noun - null - null
+
+Inequality = index(128,5)
+Entity_1 - film - index(128,3) - noun - null - null
+Entity_2 - film_mask - index(128,11) - noun - null - null
+
+Movie = index(128,2)
+Movie_name - film - index(128,3) - noun - null - null
+Director - who - index(128,1) - pron - null - null
+
+============================129============================
+Who directed movies for the writer of [MASK]?
+Movie = index(129,6)
+Movie_name - movie_mask - index(129,9) - noun - null - null
+Writer - writer - index(129,6) - noun - null - null
+
+Movie = index(129,2)
+Movie_name - movie - index(129,3) - noun - null - null
+Writer - writer - index(129,6) - noun - null - null
+
+Movie = index(129,2)
+Movie_name - movie - index(129,3) - noun - null - null
+Director - who - index(129,1) - pron - null - null
+
+============================130============================
+Who directed movies that share actors with the movie [MASK]?
+Movie = index(130,6)
+Movie_name - movie - index(130,3) - noun - null - null
+Actor - actor - index(130,6) - noun - null - null
+
+Movie = index(130,6)
+Movie_name - movie_mask - index(130,11) - noun - null - null
+Actor - actor - index(130,6) - noun - null - null
+
+Inequality = index(130,5)
+Entity_1 - movie - index(130,3) - noun - null - null
+Entity_2 - movie_mask - index(130,11) - noun - null - null
+
+Movie = index(130,2)
+Movie_name - movie - index(130,3) - noun - null - null
+Director - who - index(130,1) - pron - null - null
+
+============================131============================
+Who directed the films written by the writer of [MASK]?
+Movie = index(131,8)
+Movie_name - movie_mask - index(131,11) - propn - null - null
+Writer - writer - index(131,8) - noun - null - null
+
+Movie = index(131,5)
+Movie_name - film - index(131,4) - noun - null - null
+Writer - writer - index(131,8) - noun - null - null
+
+Movie = index(131,2)
+Movie_name - film - index(131,4) - noun - null - null
+Director - who - index(131,1) - pron - null - null
+
+============================132============================
+Who directed the movies written by the writer of [MASK]?
+Movie = index(132,8)
+Movie_name - movie_mask - index(132,11) - propn - null - null
+Writer - writer - index(132,8) - noun - null - null
+
+Movie = index(132,5)
+Movie_name - movie - index(132,4) - noun - null - null
+Writer - writer - index(132,8) - noun - null - null
+
+Movie = index(132,2)
+Movie_name - movie - index(132,4) - noun - null - null
+Director - who - index(132,1) - pron - null - null
+
+============================133============================
+Who is listed as director of the films starred by [MASK] actors?
+Movie = index(133,14)
+Movie_name - movie_mask - index(133,12) - noun - null - null
+Actor - actor - index(133,14) - noun - null - null
+
+Movie = index(133,9)
+Movie_name - film - index(133,8) - noun - null - null
+Actor - actor - index(133,14) - noun - null - null
+
+Movie = index(133,5)
+Movie_name - film - index(133,8) - noun - null - null
+Director - who - index(133,1) - pron - null - null
+
+============================134============================
+Who is listed as director of the movies starred by [MASK] actors?
+Movie = index(134,14)
+Movie_name - movie_mask - index(134,12) - noun - null - null
+Actor - actor - index(134,14) - noun - null - null
+
+Movie = index(134,9)
+Movie_name - movie - index(134,8) - noun - null - null
+Actor - actor - index(134,14) - noun - null - null
+
+Movie = index(134,5)
+Movie_name - movie - index(134,8) - noun - null - null
+Director - who - index(134,1) - pron - null - null
+
+============================135============================
+Who is listed as screenwriter of the films directed by the [MASK] director?
+Movie = index(135,15)
+Movie_name - movie_mask - index(135,13) - propn - null - null
+Director - director - index(135,15) - noun - null - null
+
+Movie = index(135,9)
+Movie_name - film - index(135,8) - noun - null - null
+Director - director - index(135,15) - noun - null - null
+
+Movie = index(135,5)
+Movie_name - film - index(135,8) - noun - null - null
+Writer - who - index(135,1) - pron - null - null
+
+============================136============================
+Who is listed as screenwriter of the films starred by [MASK] actors?
+Movie = index(136,14)
+Movie_name - movie_mask - index(136,12) - noun - null - null
+Actor - actor - index(136,14) - noun - null - null
+
+Movie = index(136,9)
+Movie_name - film - index(136,8) - noun - null - null
+Actor - actor - index(136,14) - noun - null - null
+
+Movie = index(136,5)
+Movie_name - film - index(136,8) - noun - null - null
+Writer - who - index(136,1) - pron - null - null
+
+============================137============================
+Who is listed as screenwriter of the movies directed by the [MASK] director?
+Movie = index(137,15)
+Movie_name - movie_mask - index(137,13) - noun - null - null
+Director - director - index(137,15) - noun - null - null
+
+Movie = index(137,9)
+Movie_name - movie - index(137,8) - noun - null - null
+Director - director - index(137,15) - noun - null - null
+
+Movie = index(137,5)
+Movie_name - movie - index(137,8) - noun - null - null
+Writer - who - index(137,1) - pron - null - null
+
+============================138============================
+Who is listed as screenwriter of the movies starred by [MASK] actors?
+Movie = index(138,14)
+Movie_name - movie_mask - index(138,12) - noun - null - null
+Actor - actor - index(138,14) - noun - null - null
+
+Movie = index(138,9)
+Movie_name - movie - index(138,8) - noun - null - null
+Actor - actor - index(138,14) - noun - null - null
+
+Movie = index(138,5)
+Movie_name - movie - index(138,8) - noun - null - null
+Writer - who - index(138,1) - pron - null - null
+
+============================139============================
+Who starred films for the director of [MASK]?
+Movie = index(139,6)
+Movie_name - movie_mask - index(139,9) - propn - null - null
+Director - director - index(139,6) - noun - null - null
+
+Movie = index(139,2)
+Movie_name - film - index(139,3) - noun - null - null
+Director - director - index(139,6) - noun - null - null
+
+Movie = index(139,2)
+Movie_name - film - index(139,3) - noun - null - null
+Actor - who - index(139,1) - pron - null - null
+
+============================140============================
+Who starred films for the screenwriter of [MASK]?
+Movie = index(140,6)
+Movie_name - movie_mask - index(140,9) - propn - null - null
+Writer - screenwriter - index(140,6) - noun - null - null
+
+Movie = index(140,2)
+Movie_name - film - index(140,3) - noun - null - null
+Writer - screenwriter - index(140,6) - noun - null - null
+
+Movie = index(140,2)
+Movie_name - film - index(140,3) - noun - null - null
+Actor - who - index(140,1) - pron - null - null
+
+============================141============================
+Who starred in the films whose directors also directed [MASK]?
+Movie = index(141,9)
+Movie_name - movie_mask - index(141,11) - noun - null - null
+Director - director - index(141,7) - noun - null - null
+
+Inequality = index(141,8)
+Entity_1 - film - index(141,5) - noun - null - null
+Entity_2 - movie_mask - index(141,11) - noun - null - null
+
+Movie = index(141,7)
+Movie_name - film - index(141,5) - noun - null - null
+Director - director - index(141,7) - noun - null - null
+
+Movie = index(141,2)
+Movie_name - film - index(141,5) - noun - null - null
+Actor - who - index(141,1) - pron - null - null
+
+============================142============================
+Who starred in the films whose screenwriters also wrote [MASK]?
+Movie = index(142,9)
+Movie_name - movie_mask - index(142,11) - propn - null - null
+Writer - screenwriter - index(142,7) - noun - null - null
+
+Inequality = index(142,8)
+Entity_1 - film - index(142,5) - noun - null - null
+Entity_2 - movie_mask - index(142,11) - propn - null - null
+
+Movie = index(142,7)
+Movie_name - film - index(142,5) - noun - null - null
+Writer - screenwriter - index(142,7) - noun - null - null
+
+Movie = index(142,2)
+Movie_name - film - index(142,5) - noun - null - null
+Actor - who - index(142,1) - pron - null - null
+
+============================143============================
+Who starred in the movies whose director also directed [MASK]?
+Movie = index(143,9)
+Movie_name - movie_mask - index(143,11) - propn - null - null
+Director - director - index(143,7) - noun - null - null
+
+Inequality = index(143,8)
+Entity_1 - movie - index(143,5) - noun - null - null
+Entity_2 - movie_mask - index(143,11) - propn - null - null
+
+Movie = index(143,7)
+Movie_name - movie - index(143,5) - noun - null - null
+Director - director - index(143,7) - noun - null - null
+
+Movie = index(143,2)
+Movie_name - movie - index(143,5) - noun - null - null
+Actor - who - index(143,1) - pron - null - null
+
+============================144============================
+Who starred in the movies whose writers also wrote [MASK]?
+Movie = index(144,9)
+Movie_name - movie_mask - index(144,11) - propn - null - null
+Writer - writer - index(144,7) - noun - null - null
+
+Inequality = index(144,8)
+Entity_1 - movie - index(144,5) - noun - null - null
+Entity_2 - movie_mask - index(144,11) - propn - null - null
+
+Movie = index(144,7)
+Movie_name - movie - index(144,5) - noun - null - null
+Writer - writer - index(144,7) - noun - null - null
+
+Movie = index(144,2)
+Movie_name - movie - index(144,5) - noun - null - null
+Actor - who - index(144,1) - pron - null - null
+
+============================145============================
+Who starred movies for the director of [MASK]?
+Movie = index(145,6)
+Movie_name - movie_mask - index(145,9) - noun - null - null
+Director - director - index(145,6) - noun - null - null
+
+Movie = index(145,2)
+Movie_name - movie - index(145,3) - noun - null - null
+Director - director - index(145,6) - noun - null - null
+
+Movie = index(145,2)
+Movie_name - movie - index(145,3) - noun - null - null
+Actor - who - index(145,1) - pron - null - null
+
+============================146============================
+Who starred movies for the writer of [MASK]?
+Movie = index(146,6)
+Movie_name - movie_mask - index(146,9) - noun - null - null
+Writer - writer - index(146,6) - noun - null - null
+
+Movie = index(146,2)
+Movie_name - movie - index(146,3) - noun - null - null
+Writer - writer - index(146,6) - noun - null - null
+
+Movie = index(146,2)
+Movie_name - movie - index(146,3) - noun - null - null
+Actor - who - index(146,1) - pron - null - null
+
+============================147============================
+Who wrote films that share actors with the film [MASK]?
+Movie = index(147,6)
+Movie_name - film - index(147,3) - noun - null - null
+Actor - actor - index(147,6) - noun - null - null
+
+Movie = index(147,6)
+Movie_name - film_mask - index(147,11) - noun - null - null
+Actor - actor - index(147,6) - noun - null - null
+
+Inequality = index(147,5)
+Entity_1 - film - index(147,3) - noun - null - null
+Entity_2 - film_mask - index(147,11) - noun - null - null
+
+Movie = index(147,2)
+Movie_name - film - index(147,3) - noun - null - null
+Writer - who - index(147,1) - pron - null - null
+
+============================148============================
+Who wrote films that share directors with the film [MASK]?
+Movie = index(148,6)
+Movie_name - film - index(148,3) - noun - null - null
+Director - director - index(148,6) - noun - null - null
+
+Movie = index(148,6)
+Movie_name - film_mask - index(148,11) - noun - null - null
+Director - director - index(148,6) - noun - null - null
+
+Inequality = index(148,5)
+Entity_1 - film - index(148,3) - noun - null - null
+Entity_2 - film_mask - index(148,11) - noun - null - null
+
+Movie = index(148,2)
+Movie_name - film - index(148,3) - noun - null - null
+Writer - who - index(148,1) - pron - null - null
+
+============================149============================
+Who wrote movies that share actors with the movie [MASK]?
+Movie = index(149,6)
+Movie_name - movie - index(149,3) - noun - null - null
+Actor - actor - index(149,6) - noun - null - null
+
+Movie = index(149,6)
+Movie_name - movie_mask - index(149,11) - noun - null - null
+Actor - actor - index(149,6) - noun - null - null
+
+Inequality = index(149,5)
+Entity_1 - movie - index(149,3) - noun - null - null
+Entity_2 - movie_mask - index(149,11) - noun - null - null
+
+Movie = index(149,2)
+Movie_name - movie - index(149,3) - noun - null - null
+Writer - who - index(149,1) - pron - null - null
+
+============================150============================
+Who wrote movies that share directors with the movie [MASK]?
+Movie = index(150,6)
+Movie_name - movie - index(150,3) - noun - null - null
+Director - director - index(150,6) - noun - null - null
+
+Movie = index(150,6)
+Movie_name - movie_mask - index(150,11) - propn - null - null
+Director - director - index(150,6) - noun - null - null
+
+Inequality = index(150,5)
+Entity_1 - movie - index(150,3) - noun - null - null
+Entity_2 - movie_mask - index(150,11) - propn - null - null
+
+Movie = index(150,2)
+Movie_name - movie - index(150,3) - noun - null - null
+Writer - who - index(150,1) - pron - null - null
+
+============================151============================
+The actor [MASK] acted together with who?
+Coop = index(151,6)
+Actor - who - index(151,9) - pron - null - null
+Actor - actor_mask - index(151,4) - propn - null - null
+
+============================152============================
+The actor [MASK] appeared in the same movie with who?
+Inequality = index(152,9)
+Entity_1 - actor_mask - index(152,4) - propn - null - null
+Entity_2 - who - index(152,12) - pron - null - null
+
+Movie = index(152,6)
+Movie_name - movie - index(152,10) - noun - null - null
+Actor - who - index(152,12) - pron - null - null
+
+Movie = index(152,6)
+Movie_name - movie - index(152,10) - noun - null - null
+Actor - actor_mask - index(152,4) - propn - null - null
+
+============================153============================
+The actor [MASK] co-starred with who?
+Coop = index(153,6)
+Actor - who - index(153,8) - pron - null - null
+Actor - actor_mask - index(153,4) - propn - null - null
+
+============================154============================
+The actor [MASK] is a co-star of who?
+Coop = index(154,8)
+Actor - who - index(154,10) - pron - null - null
+Actor - actor_mask - index(154,4) - propn - null - null
+
+============================155============================
+The actor [MASK] starred together with who?
+Coop = index(155,6)
+Actor - who - index(155,9) - pron - null - null
+Actor - actor_mask - index(155,4) - propn - null - null
+
+============================156============================
+The actor in [MASK] also appears in which films?
+Inequality = index(156,7)
+Entity_1 - movie_mask - index(156,5) - propn - null - null
+Entity_2 - which - index(156,10) - det - null - null
+
+Movie = index(156,2)
+Movie_name - which - index(156,10) - det - null - null
+Actor - actor - index(156,2) - noun - null - null
+
+Movie = index(156,2)
+Movie_name - movie_mask - index(156,5) - propn - null - null
+Actor - actor - index(156,2) - noun - null - null
+
+============================157============================
+The actor in [MASK] also appears in which movies?
+Inequality = index(157,7)
+Entity_1 - movie_mask - index(157,5) - propn - null - null
+Entity_2 - which - index(157,10) - det - null - null
+
+Movie = index(157,2)
+Movie_name - which - index(157,10) - det - null - null
+Actor - actor - index(157,2) - noun - null - null
+
+Movie = index(157,2)
+Movie_name - movie_mask - index(157,5) - propn - null - null
+Actor - actor - index(157,2) - noun - null - null
+
+============================158============================
+The actor of [MASK] also starred in which films?
+Inequality = index(158,7)
+Entity_1 - movie_mask - index(158,5) - propn - null - null
+Entity_2 - which - index(158,10) - det - null - null
+
+Movie = index(158,2)
+Movie_name - movie_mask - index(158,5) - propn - null - null
+Actor - actor - index(158,2) - noun - null - null
+
+Movie = index(158,2)
+Movie_name - which - index(158,10) - det - null - null
+Actor - actor - index(158,2) - noun - null - null
+
+============================159============================
+The actor of [MASK] also starred in which movies?
+Inequality = index(159,7)
+Entity_1 - movie_mask - index(159,5) - propn - null - null
+Entity_2 - which - index(159,10) - det - null - null
+
+Movie = index(159,2)
+Movie_name - movie_mask - index(159,5) - propn - null - null
+Actor - actor - index(159,2) - noun - null - null
+
+Movie = index(159,2)
+Movie_name - which - index(159,10) - det - null - null
+Actor - actor - index(159,2) - noun - null - null
+
+============================160============================
+The director [MASK] co-directed films with who?
+Inequality = index(160,6)
+Entity_1 - director_mask - index(160,4) - propn - null - null
+Entity_2 - who - index(160,9) - pron - null - null
+
+Movie = index(160,6)
+Movie_name - film - index(160,7) - noun - null - null
+Director - who - index(160,9) - pron - null - null
+
+Movie = index(160,6)
+Movie_name - film - index(160,7) - noun - null - null
+Director - director_mask - index(160,4) - propn - null - null
+
+============================161============================
+The director [MASK] co-directed movies with who?
+Inequality = index(161,6)
+Entity_1 - director_mask - index(161,4) - propn - null - null
+Entity_2 - who - index(161,9) - pron - null - null
+
+Movie = index(161,6)
+Movie_name - movie - index(161,7) - noun - null - null
+Director - who - index(161,9) - pron - null - null
+
+Movie = index(161,6)
+Movie_name - movie - index(161,7) - noun - null - null
+Director - director_mask - index(161,4) - propn - null - null
+
+============================162============================
+The director of [MASK] also directed which films?
+Movie = index(162,8)
+Movie_name - which - index(162,9) - det - null - null
+Director - director - index(162,2) - noun - null - null
+
+Inequality = index(162,7)
+Entity_1 - movie_mask - index(162,5) - noun - null - null
+Entity_2 - which - index(162,9) - det - null - null
+
+Movie = index(162,2)
+Movie_name - movie_mask - index(162,5) - noun - null - null
+Director - director - index(162,2) - noun - null - null
+
+============================163============================
+The director of [MASK] also directed which movies?
+Movie = index(163,8)
+Movie_name - which - index(163,9) - det - null - null
+Director - director - index(163,2) - noun - null - null
+
+Inequality = index(163,7)
+Entity_1 - movie_mask - index(163,5) - noun - null - null
+Entity_2 - which - index(163,9) - det - null - null
+
+Movie = index(163,2)
+Movie_name - movie_mask - index(163,5) - noun - null - null
+Director - director - index(163,2) - noun - null - null
+
+============================164============================
+The director of [MASK] is also the director of which films?
+Movie = index(164,10)
+Movie_name - which - index(164,12) - det - null - null
+Director - director - index(164,10) - noun - null - null
+
+Inequality = index(164,8)
+Entity_1 - movie_mask - index(164,5) - propn - null - null
+Entity_2 - which - index(164,12) - det - null - null
+
+Movie = index(164,2)
+Movie_name - movie_mask - index(164,5) - propn - null - null
+Director - director - index(164,2) - noun - null - null
+
+============================165============================
+The director of [MASK] is also the director of which movies?
+Movie = index(165,10)
+Movie_name - which - index(165,12) - det - null - null
+Director - director - index(165,10) - noun - null - null
+
+Inequality = index(165,8)
+Entity_1 - movie_mask - index(165,5) - propn - null - null
+Entity_2 - which - index(165,12) - det - null - null
+
+Movie = index(165,2)
+Movie_name - movie_mask - index(165,5) - propn - null - null
+Director - director - index(165,2) - noun - null - null
+
+============================166============================
+The films acted by [MASK] were directed by who?
+Movie = index(166,9)
+Movie_name - film - index(166,2) - noun - null - null
+Director - who - index(166,11) - pron - null - null
+
+Movie = index(166,3)
+Movie_name - film - index(166,2) - noun - null - null
+Actor - actor_mask - index(166,6) - propn - null - null
+
+============================167============================
+The films acted by [MASK] were in which genres?
+Movie = index(167,3)
+Movie_name - film - index(167,2) - noun - null - null
+Actor - actor_mask - index(167,6) - propn - null - null
+
+============================168============================
+The films acted by [MASK] were in which languages?
+Movie = index(168,11)
+Movie_name - film - index(168,2) - noun - null - null
+Language - which - index(168,10) - det - null - null
+
+Movie = index(168,3)
+Movie_name - film - index(168,2) - noun - null - null
+Actor - actor_mask - index(168,6) - propn - null - null
+
+============================169============================
+The films acted by [MASK] were released in which years?
+Movie = index(169,9)
+Movie_name - film - index(169,2) - noun - null - null
+Release_year - which - index(169,11) - det - null - null
+
+Movie = index(169,3)
+Movie_name - film - index(169,2) - noun - null - null
+Actor - actor_mask - index(169,6) - propn - null - null
+
+============================170============================
+The films acted by [MASK] were written by who?
+Movie = index(170,9)
+Movie_name - film - index(170,2) - noun - null - null
+Writer - who - index(170,11) - pron - null - null
+
+Movie = index(170,3)
+Movie_name - film - index(170,2) - noun - null - null
+Actor - actor_mask - index(170,6) - propn - null - null
+
+============================171============================
+The films directed by [MASK] starred which actors?
+Movie = index(171,8)
+Movie_name - film - index(171,2) - noun - null - null
+Actor - which - index(171,9) - det - null - null
+
+Movie = index(171,3)
+Movie_name - film - index(171,2) - noun - null - null
+Director - director_mask - index(171,6) - propn - null - null
+
+============================172============================
+The films directed by [MASK] were in which genres?
+Movie = index(172,11)
+Movie_name - film - index(172,2) - noun - null - null
+Genre - which - index(172,10) - det - null - null
+
+Movie = index(172,3)
+Movie_name - film - index(172,2) - noun - null - null
+Director - director_mask - index(172,6) - propn - null - null
+
+============================173============================
+The films directed by [MASK] were in which languages?
+Movie = index(173,11)
+Movie_name - film - index(173,2) - noun - null - null
+Language - which - index(173,10) - det - null - null
+
+Movie = index(173,3)
+Movie_name - film - index(173,2) - noun - null - null
+Director - director_mask - index(173,6) - propn - null - null
+
+============================174============================
+The films directed by [MASK] were released in which years?
+Movie = index(174,9)
+Movie_name - film - index(174,2) - noun - null - null
+Release_year - which - index(174,11) - det - null - null
+
+Movie = index(174,3)
+Movie_name - film - index(174,2) - noun - null - null
+Director - director_mask - index(174,6) - propn - null - null
+
+============================175============================
+The films directed by [MASK] were written by who?
+Movie = index(175,9)
+Movie_name - film - index(175,2) - noun - null - null
+Writer - who - index(175,11) - pron - null - null
+
+Movie = index(175,3)
+Movie_name - film - index(175,2) - noun - null - null
+Director - director_mask - index(175,6) - propn - null - null
+
+============================176============================
+The films written by [MASK] starred which actors?
+Movie = index(176,8)
+Movie_name - film - index(176,2) - noun - null - null
+Actor - which - index(176,9) - det - null - null
+
+Movie = index(176,3)
+Movie_name - film - index(176,2) - noun - null - null
+Writer - writer_mask - index(176,6) - propn - null - null
+
+============================177============================
+The films written by [MASK] were directed by who?
+Movie = index(177,9)
+Movie_name - film - index(177,2) - noun - null - null
+Director - who - index(177,11) - pron - null - null
+
+Movie = index(177,3)
+Movie_name - film - index(177,2) - noun - null - null
+Writer - writer_mask - index(177,6) - propn - null - null
+
+============================178============================
+The films written by [MASK] were in which genres?
+Movie = index(178,11)
+Movie_name - film - index(178,2) - noun - null - null
+Genre - which - index(178,10) - det - null - null
+
+Movie = index(178,3)
+Movie_name - film - index(178,2) - noun - null - null
+Writer - writer_mask - index(178,6) - propn - null - null
+
+============================179============================
+The films written by [MASK] were in which languages?
+Movie = index(179,11)
+Movie_name - film - index(179,2) - noun - null - null
+Language - which - index(179,10) - det - null - null
+
+Movie = index(179,3)
+Movie_name - film - index(179,2) - noun - null - null
+Writer - writer_mask - index(179,6) - propn - null - null
+
+============================180============================
+The movies directed by [MASK] starred who?
+Movie = index(180,8)
+Movie_name - movie - index(180,2) - noun - null - null
+Actor - who - index(180,9) - pron - null - null
+
+Movie = index(180,3)
+Movie_name - movie - index(180,2) - noun - null - null
+Director - director_mask - index(180,6) - propn - null - null
+
+============================181============================
+The movies directed by [MASK] were in which genres?
+Movie = index(181,11)
+Movie_name - movie - index(181,2) - noun - null - null
+Genre - which - index(181,10) - det - null - null
+
+Movie = index(181,3)
+Movie_name - movie - index(181,2) - noun - null - null
+Director - director_mask - index(181,6) - noun - null - null
+
+============================182============================
+The movies directed by [MASK] were in which languages?
+Movie = index(182,11)
+Movie_name - movie - index(182,2) - noun - null - null
+Language - which - index(182,10) - det - null - null
+
+Movie = index(182,3)
+Movie_name - movie - index(182,2) - noun - null - null
+Director - director_mask - index(182,6) - noun - null - null
+
+============================183============================
+The movies directed by [MASK] were released in which years?
+Movie = index(183,9)
+Movie_name - movie - index(183,2) - noun - null - null
+Release_year - which - index(183,11) - det - null - null
+
+Movie = index(183,3)
+Movie_name - movie - index(183,2) - noun - null - null
+Director - director_mask - index(183,6) - noun - null - null
+
+============================184============================
+The movies directed by [MASK] were written by who?
+Movie = index(184,9)
+Movie_name - movie - index(184,2) - noun - null - null
+Writer - who - index(184,11) - pron - null - null
+
+Movie = index(184,3)
+Movie_name - movie - index(184,2) - noun - null - null
+Director - director_mask - index(184,6) - noun - null - null
+
+============================185============================
+The movies starred by [MASK] were directed by who?
+Movie = index(185,9)
+Movie_name - movie - index(185,2) - noun - null - null
+Director - who - index(185,11) - pron - null - null
+
+Movie = index(185,3)
+Movie_name - movie - index(185,2) - noun - null - null
+Actor - actor_mask - index(185,6) - propn - null - null
+
+============================186============================
+The movies starred by [MASK] were in which genres?
+Movie = index(186,11)
+Movie_name - movie - index(186,2) - noun - null - null
+Genre - which - index(186,10) - det - null - null
+
+Movie = index(186,3)
+Movie_name - movie - index(186,2) - noun - null - null
+Actor - actor_mask - index(186,6) - propn - null - null
+
+============================187============================
+The movies starred by [MASK] were in which languages?
+Movie = index(187,11)
+Movie_name - movie - index(187,2) - noun - null - null
+Language - which - index(187,10) - det - null - null
+
+Movie = index(187,3)
+Movie_name - movie - index(187,2) - noun - null - null
+Actor - actor_mask - index(187,6) - propn - null - null
+
+============================188============================
+The movies starred by [MASK] were released in which years?
+Movie = index(188,9)
+Movie_name - movie - index(188,2) - noun - null - null
+Release_year - which - index(188,11) - det - null - null
+
+Movie = index(188,3)
+Movie_name - movie - index(188,2) - noun - null - null
+Actor - actor_mask - index(188,6) - propn - null - null
+
+============================189============================
+The movies starred by [MASK] were written by who?
+Movie = index(189,9)
+Movie_name - movie - index(189,2) - noun - null - null
+Writer - who - index(189,11) - pron - null - null
+
+Movie = index(189,3)
+Movie_name - movie - index(189,2) - noun - null - null
+Actor - actor_mask - index(189,6) - propn - null - null
+
+============================190============================
+The movies written by [MASK] starred who?
+Movie = index(190,8)
+Movie_name - movie - index(190,2) - noun - null - null
+Actor - who - index(190,9) - pron - null - null
+
+Movie = index(190,3)
+Movie_name - movie - index(190,2) - noun - null - null
+Writer - writer_mask - index(190,6) - propn - null - null
+
+============================191============================
+The movies written by [MASK] were directed by who?
+Movie = index(191,9)
+Movie_name - movie - index(191,2) - noun - null - null
+Director - who - index(191,11) - pron - null - null
+
+Movie = index(191,3)
+Movie_name - movie - index(191,2) - noun - null - null
+Writer - writer_mask - index(191,6) - propn - null - null
+
+============================192============================
+The movies written by [MASK] were in which genres?
+Movie = index(192,11)
+Movie_name - movie - index(192,2) - noun - null - null
+Genre - which - index(192,10) - det - null - null
+
+Movie = index(192,3)
+Movie_name - movie - index(192,2) - noun - null - null
+Writer - writer_mask - index(192,6) - propn - null - null
+
+============================193============================
+The movies written by [MASK] were in which languages?
+Movie = index(193,11)
+Movie_name - movie - index(193,2) - noun - null - null
+Language - which - index(193,10) - det - null - null
+
+Movie = index(193,3)
+Movie_name - movie - index(193,2) - noun - null - null
+Writer - writer_mask - index(193,6) - propn - null - null
+
+============================194============================
+The screenwriter [MASK] co-wrote films with who?
+Movie = index(194,6)
+Movie_name - film - index(194,7) - noun - null - null
+Writer - who - index(194,9) - pron - null - null
+
+Inequality = index(194,6)
+Entity_1 - screenwriter_mask - index(194,4) - propn - null - null
+Entity_2 - who - index(194,9) - pron - null - null
+
+Movie = index(194,6)
+Movie_name - film - index(194,7) - noun - null - null
+Writer - screenwriter_mask - index(194,4) - propn - null - null
+
+============================195============================
+The screenwriter [MASK] co-wrote movies with who?
+Movie = index(195,6)
+Movie_name - movie - index(195,7) - noun - null - null
+Writer - who - index(195,9) - pron - null - null
+
+Inequality = index(195,6)
+Entity_1 - screenwriter_mask - index(195,4) - noun - null - null
+Entity_2 - who - index(195,9) - pron - null - null
+
+Movie = index(195,6)
+Movie_name - movie - index(195,7) - noun - null - null
+Writer - screenwriter_mask - index(195,4) - noun - null - null
+
+============================196============================
+The screenwriter [MASK] wrote films together with who?
+Movie = index(196,6)
+Movie_name - film - index(196,7) - noun - null - null
+Writer - who - index(196,10) - pron - null - null
+
+Inequality = index(196,6)
+Entity_1 - screenwriter_mask - index(196,4) - propn - null - null
+Entity_2 - who - index(196,10) - pron - null - null
+
+Movie = index(196,6)
+Movie_name - film - index(196,7) - noun - null - null
+Writer - screenwriter_mask - index(196,4) - propn - null - null
+
+============================197============================
+The screenwriter of [MASK] also wrote which films?
+Movie = index(197,8)
+Movie_name - which - index(197,9) - det - null - null
+Writer - screenwriter - index(197,2) - noun - null - null
+
+Inequality = index(197,7)
+Entity_1 - movie_mask - index(197,5) - propn - null - null
+Entity_2 - which - index(197,9) - det - null - null
+
+Movie = index(197,2)
+Movie_name - movie_mask - index(197,5) - propn - null - null
+Writer - screenwriter - index(197,2) - noun - null - null
+
+============================198============================
+The screenwriter of [MASK] also wrote which movies?
+Movie = index(198,8)
+Movie_name - which - index(198,9) - det - null - null
+Writer - screenwriter - index(198,2) - noun - null - null
+
+Inequality = index(198,7)
+Entity_1 - movie_mask - index(198,5) - propn - null - null
+Entity_2 - which - index(198,9) - det - null - null
+
+Movie = index(198,2)
+Movie_name - movie_mask - index(198,5) - propn - null - null
+Writer - screenwriter - index(198,2) - noun - null - null
+
+============================199============================
+The scriptwriter of [MASK] also wrote which movies?
+Movie = index(199,8)
+Movie_name - which - index(199,9) - det - null - null
+Writer - scriptwriter - index(199,2) - noun - null - null
+
+Inequality = index(199,7)
+Entity_1 - movie_mask - index(199,5) - propn - null - null
+Entity_2 - which - index(199,9) - det - null - null
+
+Movie = index(199,2)
+Movie_name - movie_mask - index(199,5) - propn - null - null
+Writer - scriptwriter - index(199,2) - noun - null - null
+
+============================200============================
+The scriptwriter of [MASK] also wrote which films?
+Movie = index(200,8)
+Movie_name - which - index(200,9) - det - null - null
+Writer - scriptwriter - index(200,2) - noun - null - null
+
+Inequality = index(200,7)
+Entity_1 - movie_mask - index(200,5) - propn - null - null
+Entity_2 - which - index(200,9) - det - null - null
+
+Movie = index(200,2)
+Movie_name - movie_mask - index(200,5) - propn - null - null
+Writer - scriptwriter - index(200,2) - noun - null - null
+
+============================201============================
+What are the films that are directed by the same director of [MASK]?
+Movie = index(201,11)
+Movie_name - movie_mask - index(201,14) - noun - null - null
+Director - director - index(201,11) - noun - null - null
+
+Inequality = index(201,10)
+Entity_1 - what - index(201,1) - pron - null - null
+Entity_2 - movie_mask - index(201,14) - noun - null - null
+
+Movie = index(201,7)
+Movie_name - what - index(201,1) - pron - null - null
+Director - director - index(201,11) - noun - null - null
+
+============================202============================
+What are the films that have the same actor of [MASK]?
+Movie = index(202,9)
+Movie_name - movie_mask - index(202,12) - noun - null - null
+Actor - actor - index(202,9) - noun - null - null
+
+Movie = index(202,9)
+Movie_name - what - index(202,1) - pron - null - null
+Actor - actor - index(202,9) - noun - null - null
+
+Inequality = index(202,8)
+Entity_1 - what - index(202,1) - pron - null - null
+Entity_2 - movie_mask - index(202,12) - noun - null - null
+
+============================203============================
+What are the films that have the same screenwriter of [MASK]?
+Movie = index(203,9)
+Movie_name - movie_mask - index(203,12) - noun - null - null
+Writer - screenwriter - index(203,9) - noun - null - null
+
+Movie = index(203,9)
+Movie_name - what - index(203,1) - pron - null - null
+Writer - screenwriter - index(203,9) - noun - null - null
+
+Inequality = index(203,8)
+Entity_1 - what - index(203,1) - pron - null - null
+Entity_2 - movie_mask - index(203,12) - noun - null - null
+
+============================204============================
+What are the genres of the films directed by [MASK]?
+Movie = index(204,8)
+Movie_name - film - index(204,7) - noun - null - null
+Director - director_mask - index(204,11) - noun - null - null
+
+Movie = index(204,4)
+Movie_name - film - index(204,7) - noun - null - null
+Genre - what - index(204,1) - pron - null - null
+
+============================205============================
+What are the genres of the films starred by [MASK]?
+Movie = index(205,8)
+Movie_name - film - index(205,7) - noun - null - null
+Actor - actor_mask - index(205,11) - noun - null - null
+
+Movie = index(205,4)
+Movie_name - film - index(205,7) - noun - null - null
+Genre - what - index(205,1) - pron - null - null
+
+============================206============================
+What are the genres of the films written by [MASK]?
+Movie = index(206,8)
+Movie_name - film - index(206,7) - noun - null - null
+Writer - writer_mask - index(206,11) - noun - null - null
+
+Movie = index(206,4)
+Movie_name - film - index(206,7) - noun - null - null
+Genre - what - index(206,1) - pron - null - null
+
+============================207============================
+What are the genres of the movies acted by [MASK]?
+Movie = index(207,8)
+Movie_name - movie - index(207,7) - noun - null - null
+Actor - actor_mask - index(207,11) - noun - null - null
+
+Movie = index(207,4)
+Movie_name - movie - index(207,7) - noun - null - null
+Genre - what - index(207,1) - pron - null - null
+
+============================208============================
+What are the genres of the movies directed by [MASK]?
+Movie = index(208,8)
+Movie_name - movie - index(208,7) - noun - null - null
+Director - director_mask - index(208,11) - noun - null - null
+
+Movie = index(208,4)
+Movie_name - movie - index(208,7) - noun - null - null
+Genre - what - index(208,1) - pron - null - null
+
+============================209============================
+What are the genres of the movies written by [MASK]?
+Movie = index(209,8)
+Movie_name - movie - index(209,7) - noun - null - null
+Writer - writer_mask - index(209,11) - noun - null - null
+
+Movie = index(209,4)
+Movie_name - movie - index(209,7) - noun - null - null
+Genre - what - index(209,1) - pron - null - null
+
+============================210============================
+What are the languages spoken in the films directed by [MASK]?
+Movie = index(210,9)
+Movie_name - film - index(210,8) - noun - null - null
+Director - director_mask - index(210,12) - propn - null - null
+
+Movie = index(210,5)
+Movie_name - film - index(210,8) - noun - null - null
+Language - what - index(210,1) - pron - null - null
+
+============================211============================
+What are the languages spoken in the films starred by [MASK]?
+Movie = index(211,9)
+Movie_name - film - index(211,8) - noun - null - null
+Actor - actor_mask - index(211,12) - propn - null - null
+
+Movie = index(211,5)
+Movie_name - film - index(211,8) - noun - null - null
+Language - what - index(211,1) - pron - null - null
+
+============================212============================
+What are the languages spoken in the films written by [MASK]?
+Movie = index(212,9)
+Movie_name - film - index(212,8) - noun - null - null
+Writer - writer_mask - index(212,12) - noun - null - null
+
+Movie = index(212,5)
+Movie_name - film - index(212,8) - noun - null - null
+Language - what - index(212,1) - pron - null - null
+
+============================213============================
+What are the languages spoken in the movies acted by [MASK]?
+Movie = index(213,9)
+Movie_name - movie - index(213,8) - noun - null - null
+Actor - actor_mask - index(213,12) - noun - null - null
+
+Movie = index(213,5)
+Movie_name - movie - index(213,8) - noun - null - null
+Language - what - index(213,1) - pron - null - null
+
+============================214============================
+What are the languages spoken in the movies directed by [MASK]?
+Movie = index(214,9)
+Movie_name - movie - index(214,8) - noun - null - null
+Director - director_mask - index(214,12) - noun - null - null
+
+Movie = index(214,5)
+Movie_name - movie - index(214,8) - noun - null - null
+Language - what - index(214,1) - pron - null - null
+
+============================215============================
+What are the languages spoken in the movies written by [MASK]?
+Movie = index(215,9)
+Movie_name - movie - index(215,8) - noun - null - null
+Writer - writer_mask - index(215,12) - noun - null - null
+
+Movie = index(215,5)
+Movie_name - movie - index(215,8) - noun - null - null
+Language - what - index(215,1) - pron - null - null
+
+============================216============================
+What are the main languages in [MASK] acted films?
+Movie = index(216,10)
+Movie_name - film - index(216,11) - noun - null - null
+Actor - actor_mask - index(216,8) - noun - null - null
+
+Movie = index(216,5)
+Movie_name - film - index(216,11) - noun - null - null
+Language - what - index(216,1) - pron - null - null
+
+============================217============================
+What are the main languages in [MASK] directed films?
+Movie = index(217,10)
+Movie_name - film - index(217,11) - noun - null - null
+Director - director_mask - index(217,8) - noun - null - null
+
+Movie = index(217,5)
+Movie_name - film - index(217,11) - noun - null - null
+Language - what - index(217,1) - pron - null - null
+
+============================218============================
+What are the main languages in [MASK] directed movies?
+Movie = index(218,10)
+Movie_name - movie - index(218,11) - noun - null - null
+Director - director_mask - index(218,8) - noun - null - null
+
+Movie = index(218,5)
+Movie_name - movie - index(218,11) - noun - null - null
+Language - what - index(218,1) - pron - null - null
+
+============================219============================
+What are the main languages in [MASK] starred movies?
+Movie = index(219,10)
+Movie_name - movie - index(219,11) - noun - null - null
+Actor - actor_mask - index(219,8) - noun - null - null
+
+Movie = index(219,5)
+Movie_name - movie - index(219,11) - noun - null - null
+Language - what - index(219,1) - pron - null - null
+
+============================220============================
+What are the main languages in [MASK] written films?
+Movie = index(220,10)
+Movie_name - film - index(220,11) - noun - null - null
+Writer - writer_mask - index(220,8) - noun - null - null
+
+Movie = index(220,5)
+Movie_name - film - index(220,11) - noun - null - null
+Language - what - index(220,1) - pron - null - null
+
+============================221============================
+What are the main languages in [MASK] written movies?
+Movie = index(221,10)
+Movie_name - movie - index(221,11) - noun - null - null
+Writer - writer_mask - index(221,8) - noun - null - null
+
+Movie = index(221,5)
+Movie_name - movie - index(221,11) - noun - null - null
+Language - what - index(221,1) - pron - null - null
+
+============================222============================
+What are the movies that are directed by the same director of [MASK]?
+Movie = index(222,11)
+Movie_name - movie_mask - index(222,14) - noun - null - null
+Director - director - index(222,11) - noun - null - null
+
+Inequality = index(222,10)
+Entity_1 - what - index(222,1) - pron - null - null
+Entity_2 - movie_mask - index(222,14) - noun - null - null
+
+Movie = index(222,7)
+Movie_name - what - index(222,1) - pron - null - null
+Director - director - index(222,11) - noun - null - null
+
+============================223============================
+What are the movies that have the same actor of [MASK]?
+Movie = index(223,9)
+Movie_name - movie_mask - index(223,12) - noun - null - null
+Actor - actor - index(223,9) - noun - null - null
+
+Movie = index(223,9)
+Movie_name - what - index(223,1) - pron - null - null
+Actor - actor - index(223,9) - noun - null - null
+
+Inequality = index(223,8)
+Entity_1 - what - index(223,1) - pron - null - null
+Entity_2 - movie_mask - index(223,12) - noun - null - null
+
+============================224============================
+What are the movies that have the same screenwriter of [MASK]?
+Movie = index(224,9)
+Movie_name - movie_mask - index(224,12) - noun - null - null
+Writer - screenwriter - index(224,9) - noun - null - null
+
+Movie = index(224,9)
+Movie_name - what - index(224,1) - pron - null - null
+Writer - screenwriter - index(224,9) - noun - null - null
+
+Inequality = index(224,8)
+Entity_1 - what - index(224,1) - pron - null - null
+Entity_2 - movie_mask - index(224,12) - noun - null - null
+
+============================225============================
+What are the primary languages in the films acted by [MASK]?
+Movie = index(225,9)
+Movie_name - film - index(225,8) - noun - null - null
+Actor - actor_mask - index(225,12) - noun - null - null
+
+Movie = index(225,5)
+Movie_name - film - index(225,8) - noun - null - null
+Language - what - index(225,1) - pron - null - null
+
+============================226============================
+What are the primary languages in the films directed by [MASK]?
+Movie = index(226,9)
+Movie_name - film - index(226,8) - noun - null - null
+Director - director_mask - index(226,12) - noun - null - null
+
+Movie = index(226,5)
+Movie_name - film - index(226,8) - noun - null - null
+Language - what - index(226,1) - pron - null - null
+
+============================227============================
+What are the primary languages in the films written by [MASK]?
+Movie = index(227,9)
+Movie_name - film - index(227,8) - noun - null - null
+Writer - writer_mask - index(227,12) - noun - null - null
+
+Movie = index(227,5)
+Movie_name - film - index(227,8) - noun - null - null
+Language - what - index(227,1) - pron - null - null
+
+============================228============================
+What are the primary languages in the movies acted by [MASK]?
+Movie = index(228,9)
+Movie_name - movie - index(228,8) - noun - null - null
+Actor - actor_mask - index(228,12) - noun - null - null
+
+Movie = index(228,5)
+Movie_name - movie - index(228,8) - noun - null - null
+Language - what - index(228,1) - pron - null - null
+
+============================229============================
+What are the primary languages in the movies directed by [MASK]?
+Movie = index(229,9)
+Movie_name - movie - index(229,8) - noun - null - null
+Director - director_mask - index(229,12) - noun - null - null
+
+Movie = index(229,5)
+Movie_name - movie - index(229,8) - noun - null - null
+Language - what - index(229,1) - pron - null - null
+
+============================230============================
+What are the primary languages in the movies written by [MASK]?
+Movie = index(230,9)
+Movie_name - movie - index(230,8) - noun - null - null
+Writer - writer_mask - index(230,12) - noun - null - null
+
+Movie = index(230,5)
+Movie_name - movie - index(230,8) - noun - null - null
+Language - what - index(230,1) - pron - null - null
+
+============================231============================
+What genres are the films acted by [MASK] in?
+Movie = index(231,6)
+Movie_name - what - index(231,1) - det - null - null
+Actor - actor_mask - index(231,9) - noun - null - null
+
+Movie = index(231,2)
+Movie_name - what - index(231,1) - det - null - null
+Genre - genre - index(231,2) - noun - null - null
+
+============================232============================
+What genres are the films directed by [MASK] in?
+Movie = index(232,6)
+Movie_name - film - index(232,5) - noun - null - null
+Director - director_mask - index(232,9) - noun - null - null
+
+Movie = index(232,2)
+Movie_name - film - index(232,5) - noun - null - null
+Genre - what - index(232,1) - det - null - null
+
+============================233============================
+What genres are the films written by [MASK] in?
+Movie = index(233,6)
+Movie_name - film - index(233,5) - noun - null - null
+Writer - writer_mask - index(233,9) - noun - null - null
+
+Movie = index(233,2)
+Movie_name - film - index(233,5) - noun - null - null
+Genre - what - index(233,1) - det - null - null
+
+============================234============================
+What genres are the movies acted by [MASK] in?
+Movie = index(234,6)
+Movie_name - movie - index(234,5) - noun - null - null
+Actor - actor_mask - index(234,9) - noun - null - null
+
+Movie = index(234,2)
+Movie_name - movie - index(234,5) - noun - null - null
+Genre - what - index(234,1) - det - null - null
+
+============================235============================
+What genres are the movies directed by [MASK] in?
+Movie = index(235,6)
+Movie_name - movie - index(235,5) - noun - null - null
+Director - director_mask - index(235,9) - noun - null - null
+
+Movie = index(235,2)
+Movie_name - movie - index(235,5) - noun - null - null
+Genre - what - index(235,1) - det - null - null
+
+============================236============================
+What genres are the movies written by [MASK] in?
+Movie = index(236,6)
+Movie_name - movie - index(236,5) - noun - null - null
+Writer - writer_mask - index(236,9) - noun - null - null
+
+Movie = index(236,2)
+Movie_name - movie - index(236,5) - noun - null - null
+Genre - what - index(236,1) - det - null - null
+
+============================237============================
+What genres do the films directed by [MASK] fall under?
+Movie = index(237,6)
+Movie_name - film - index(237,5) - noun - null - null
+Director - director_mask - index(237,9) - noun - null - null
+
+============================238============================
+What genres do the films starred by [MASK] fall under?
+Movie = index(238,6)
+Movie_name - film - index(238,5) - noun - null - null
+Actor - actor_mask - index(238,9) - noun - null - null
+
+Movie = index(238,2)
+Movie_name - film - index(238,5) - noun - null - null
+Genre - what - index(238,1) - det - null - null
+
+============================239============================
+What genres do the films written by [MASK] fall under?
+Movie = index(239,6)
+Movie_name - film - index(239,5) - noun - null - null
+Writer - writer_mask - index(239,9) - noun - null - null
+
+Movie = index(239,2)
+Movie_name - film - index(239,5) - noun - null - null
+Genre - what - index(239,1) - det - null - null
+
+============================240============================
+What genres do the movies acted by [MASK] fall under?
+============================241============================
+What genres do the movies directed by [MASK] fall under?
+Movie = index(241,6)
+Movie_name - movie - index(241,5) - noun - null - null
+Director - director_mask - index(241,9) - noun - null - null
+
+Movie = index(241,2)
+Movie_name - movie - index(241,5) - noun - null - null
+Genre - what - index(241,1) - det - null - null
+
+============================242============================
+What genres do the movies written by [MASK] fall under?
+Movie = index(242,6)
+Movie_name - movie - index(242,5) - noun - null - null
+Writer - writer_mask - index(242,9) - noun - null - null
+
+Movie = index(242,2)
+Movie_name - movie - index(242,5) - noun - null - null
+Genre - what - index(242,1) - det - null - null
+
+============================243============================
+What languages are the films directed by [MASK] in?
+Movie = index(243,6)
+Movie_name - film - index(243,5) - noun - null - null
+Director - director_mask - index(243,9) - noun - null - null
+
+Movie = index(243,2)
+Movie_name - film - index(243,5) - noun - null - null
+Language - what - index(243,1) - det - null - null
+
+============================244============================
+What languages are the films starred by [MASK] in?
+Movie = index(244,6)
+Movie_name - what - index(244,1) - det - null - null
+Actor - actor_mask - index(244,9) - noun - null - null
+
+============================245============================
+What languages are the films written by [MASK] in?
+Movie = index(245,6)
+Movie_name - film - index(245,5) - noun - null - null
+Writer - writer_mask - index(245,9) - noun - null - null
+
+Movie = index(245,2)
+Movie_name - film - index(245,5) - noun - null - null
+Language - what - index(245,1) - det - null - null
+
+============================246============================
+What languages are the movies acted by [MASK] in?
+Movie = index(246,6)
+Movie_name - movie - index(246,5) - noun - null - null
+Actor - actor_mask - index(246,9) - noun - null - null
+
+Movie = index(246,2)
+Movie_name - movie - index(246,5) - noun - null - null
+Language - what - index(246,1) - det - null - null
+
+============================247============================
+What languages are the movies directed by [MASK] in?
+Movie = index(247,6)
+Movie_name - movie - index(247,5) - noun - null - null
+Director - director_mask - index(247,9) - noun - null - null
+
+Movie = index(247,2)
+Movie_name - movie - index(247,5) - noun - null - null
+Language - what - index(247,1) - det - null - null
+
+============================248============================
+What languages are the movies written by [MASK] in?
+Movie = index(248,6)
+Movie_name - movie - index(248,5) - noun - null - null
+Writer - writer_mask - index(248,9) - noun - null - null
+
+Movie = index(248,2)
+Movie_name - movie - index(248,5) - noun - null - null
+Language - what - index(248,1) - det - null - null
+
+============================249============================
+What types are the films directed by [MASK]?
+Movie = index(249,6)
+Movie_name - film - index(249,5) - noun - null - null
+Director - director_mask - index(249,9) - noun - null - null
+
+Movie = index(249,2)
+Movie_name - film - index(249,5) - noun - null - null
+Genre - what - index(249,1) - det - null - null
+
+============================250============================
+What types are the films starred by [MASK]?
+Movie = index(250,6)
+Movie_name - film - index(250,5) - noun - null - null
+Actor - actor_mask - index(250,9) - noun - null - null
+
+Movie = index(250,2)
+Movie_name - film - index(250,5) - noun - null - null
+Genre - what - index(250,1) - det - null - null
+
+============================251============================
+What types are the films written by [MASK]?
+Movie = index(251,6)
+Movie_name - film - index(251,5) - noun - null - null
+Writer - writer_mask - index(251,9) - noun - null - null
+
+Movie = index(251,2)
+Movie_name - film - index(251,5) - noun - null - null
+Genre - what - index(251,1) - det - null - null
+
+============================252============================
+What types are the movies directed by [MASK]?
+Movie = index(252,6)
+Movie_name - movie - index(252,5) - noun - null - null
+Director - director_mask - index(252,9) - noun - null - null
+
+Movie = index(252,2)
+Movie_name - movie - index(252,5) - noun - null - null
+Genre - what - index(252,1) - det - null - null
+
+============================253============================
+What types are the movies starred by [MASK]?
+Movie = index(253,6)
+Movie_name - movie - index(253,5) - noun - null - null
+Actor - actor_mask - index(253,9) - noun - null - null
+
+Movie = index(253,2)
+Movie_name - movie - index(253,5) - noun - null - null
+Genre - what - index(253,1) - det - null - null
+
+============================254============================
+What types are the movies written by [MASK]?
+Movie = index(254,6)
+Movie_name - movie - index(254,5) - noun - null - null
+Writer - writer_mask - index(254,9) - noun - null - null
+
+Movie = index(254,2)
+Movie_name - movie - index(254,5) - noun - null - null
+Genre - what - index(254,1) - det - null - null
+
+============================255============================
+What were the release dates of [MASK] acted films?
+Movie = index(255,10)
+Movie_name - film - index(255,11) - noun - null - null
+Actor - actor_mask - index(255,8) - noun - null - null
+
+Movie = index(255,5)
+Movie_name - film - index(255,11) - noun - null - null
+Release_year - what - index(255,1) - pron - null - null
+
+============================256============================
+What were the release dates of [MASK] directed films?
+Movie = index(256,10)
+Movie_name - film - index(256,11) - noun - null - null
+Director - director_mask - index(256,8) - noun - null - null
+
+Movie = index(256,5)
+Movie_name - film - index(256,11) - noun - null - null
+Release_year - what - index(256,1) - pron - null - null
+
+============================257============================
+What were the release dates of [MASK] directed movies?
+Movie = index(257,10)
+Movie_name - movie - index(257,11) - noun - null - null
+Director - director_mask - index(257,8) - noun - null - null
+
+Movie = index(257,5)
+Movie_name - movie - index(257,11) - noun - null - null
+Release_year - what - index(257,1) - pron - null - null
+
+============================258============================
+What were the release dates of [MASK] starred movies?
+Movie = index(258,10)
+Movie_name - movie - index(258,11) - noun - null - null
+Actor - actor_mask - index(258,8) - noun - null - null
+
+Movie = index(258,5)
+Movie_name - movie - index(258,11) - noun - null - null
+Release_year - what - index(258,1) - pron - null - null
+
+============================259============================
+What were the release years of the movies acted by [MASK]?
+Movie = index(259,9)
+Movie_name - movie - index(259,8) - noun - null - null
+Actor - actor_mask - index(259,12) - noun - null - null
+
+Movie = index(259,5)
+Movie_name - movie - index(259,8) - noun - null - null
+Release_year - what - index(259,1) - pron - null - null
+
+============================260============================
+What were the release years of the movies directed by [MASK]?
+Movie = index(260,9)
+Movie_name - movie - index(260,8) - noun - null - null
+Director - director_mask - index(260,12) - noun - null - null
+
+Movie = index(260,5)
+Movie_name - movie - index(260,8) - noun - null - null
+Release_year - what - index(260,1) - pron - null - null
+
+============================261============================
+What were the release years of the films directed by [MASK]?
+Movie = index(261,9)
+Movie_name - film - index(261,8) - noun - null - null
+Director - director_mask - index(261,12) - propn - null - null
+
+Movie = index(261,5)
+Movie_name - film - index(261,8) - noun - null - null
+Release_year - what - index(261,1) - pron - null - null
+
+============================262============================
+What were the release years of the films starred by [MASK]?
+Movie = index(262,9)
+Movie_name - film - index(262,8) - noun - null - null
+Actor - actor_mask - index(262,12) - propn - null - null
+
+Movie = index(262,5)
+Movie_name - film - index(262,8) - noun - null - null
+Release_year - what - index(262,1) - pron - null - null
+
+============================263============================
+When did the films directed by [MASK] release?
+Movie = index(263,10)
+Movie_name - film - index(263,4) - noun - null - null
+Release_year - when - index(263,1) - adv - null - null
+
+Movie = index(263,5)
+Movie_name - film - index(263,4) - noun - null - null
+Director - director_mask - index(263,8) - noun - null - null
+
+============================264============================
+When did the films starred by [MASK] release?
+============================265============================
+When did the movies acted by [MASK] release?
+============================266============================
+When did the movies directed by [MASK] release?
+Movie = index(266,10)
+Movie_name - movie - index(266,4) - noun - null - null
+Release_year - when - index(266,1) - adv - null - null
+
+Movie = index(266,5)
+Movie_name - movie - index(266,4) - noun - null - null
+Director - director_mask - index(266,8) - noun - null - null
+
+============================267============================
+When were the films acted by [MASK] released?
+Movie = index(267,5)
+Movie_name - film - index(267,4) - noun - null - null
+Actor - actor_mask - index(267,8) - noun - null - null
+
+Movie = index(267,1)
+Movie_name - film - index(267,4) - noun - null - null
+Release_year - when - index(267,1) - adv - null - null
+
+============================268============================
+When were the films directed by [MASK] released?
+Movie = index(268,5)
+Movie_name - film - index(268,4) - noun - null - null
+Director - director_mask - index(268,8) - noun - null - null
+
+Movie = index(268,1)
+Movie_name - film - index(268,4) - noun - null - null
+Release_year - when - index(268,1) - adv - null - null
+
+============================269============================
+When were the movies directed by [MASK] released?
+Movie = index(269,5)
+Movie_name - movie - index(269,4) - noun - null - null
+Director - director_mask - index(269,8) - noun - null - null
+
+Movie = index(269,1)
+Movie_name - movie - index(269,4) - noun - null - null
+Release_year - when - index(269,1) - adv - null - null
+
+============================270============================
+When were the movies starred by [MASK] released?
+Movie = index(270,5)
+Movie_name - movie - index(270,4) - noun - null - null
+Actor - actor_mask - index(270,8) - noun - null - null
+
+Movie = index(270,1)
+Movie_name - movie - index(270,4) - noun - null - null
+Release_year - when - index(270,1) - adv - null - null
+
+============================271============================
+Which directors co-directed films with [MASK]?
+Movie = index(271,3)
+Movie_name - film - index(271,4) - noun - null - null
+Director - director_mask - index(271,7) - noun - null - null
+
+Movie = index(271,3)
+Movie_name - film - index(271,4) - noun - null - null
+Director - which - index(271,1) - det - null - null
+
+============================272============================
+Which directors co-directed movies with [MASK]?
+Movie = index(272,3)
+Movie_name - movie - index(272,4) - noun - null - null
+Director - director_mask - index(272,7) - noun - null - null
+
+Movie = index(272,3)
+Movie_name - movie - index(272,4) - noun - null - null
+Director - which - index(272,1) - det - null - null
+
+============================273============================
+Which films have the same actor of [MASK]?
+Movie = index(273,6)
+Movie_name - movie_mask - index(273,9) - noun - null - null
+Actor - actor - index(273,6) - noun - null - null
+
+Movie = index(273,6)
+Movie_name - which - index(273,1) - det - null - null
+Actor - actor - index(273,6) - noun - null - null
+
+Inequality = index(273,5)
+Entity_1 - which - index(273,1) - det - null - null
+Entity_2 - movie_mask - index(273,9) - noun - null - null
+
+============================274============================
+Which films have the same director of [MASK]?
+Movie = index(274,6)
+Movie_name - movie_mask - index(274,9) - noun - null - null
+Director - director - index(274,6) - noun - null - null
+
+Movie = index(274,6)
+Movie_name - which - index(274,1) - det - null - null
+Director - director - index(274,6) - noun - null - null
+
+Inequality = index(274,5)
+Entity_1 - which - index(274,1) - det - null - null
+Entity_2 - movie_mask - index(274,9) - noun - null - null
+
+============================275============================
+Which films have the same screenwriter of [MASK]?
+Movie = index(275,6)
+Movie_name - movie_mask - index(275,9) - noun - null - null
+Writer - screenwriter - index(275,6) - noun - null - null
+
+Movie = index(275,6)
+Movie_name - which - index(275,1) - det - null - null
+Writer - screenwriter - index(275,6) - noun - null - null
+
+Inequality = index(275,5)
+Entity_1 - which - index(275,1) - det - null - null
+Entity_2 - movie_mask - index(275,9) - noun - null - null
+
+============================276============================
+Which films share the same actor of [MASK]?
+Movie = index(276,6)
+Movie_name - movie_mask - index(276,9) - noun - null - null
+Actor - actor - index(276,6) - noun - null - null
+
+Movie = index(276,6)
+Movie_name - which - index(276,1) - det - null - null
+Actor - actor - index(276,6) - noun - null - null
+
+Inequality = index(276,5)
+Entity_1 - which - index(276,1) - det - null - null
+Entity_2 - movie_mask - index(276,9) - noun - null - null
+
+============================277============================
+Which films share the same director of [MASK]?
+Movie = index(277,6)
+Movie_name - movie_mask - index(277,9) - noun - null - null
+Director - director - index(277,6) - noun - null - null
+
+Movie = index(277,6)
+Movie_name - which - index(277,1) - det - null - null
+Director - director - index(277,6) - noun - null - null
+
+Inequality = index(277,5)
+Entity_1 - which - index(277,1) - det - null - null
+Entity_2 - movie_mask - index(277,9) - noun - null - null
+
+============================278============================
+Which films share the screenwriter with [MASK]?
+Movie = index(278,5)
+Movie_name - which - index(278,1) - det - null - null
+Writer - screenwriter - index(278,5) - noun - null - null
+
+Movie = index(278,5)
+Movie_name - movie_mask - index(278,8) - noun - null - null
+Writer - screenwriter - index(278,5) - noun - null - null
+
+Inequality = index(278,3)
+Entity_1 - which - index(278,1) - det - null - null
+Entity_2 - movie_mask - index(278,8) - noun - null - null
+
+============================279============================
+Which movies have the same actor of [MASK]?
+Movie = index(279,6)
+Movie_name - movie_mask - index(279,9) - noun - null - null
+Actor - actor - index(279,6) - noun - null - null
+
+Movie = index(279,6)
+Movie_name - which - index(279,1) - det - null - null
+Actor - actor - index(279,6) - noun - null - null
+
+Inequality = index(279,5)
+Entity_1 - which - index(279,1) - det - null - null
+Entity_2 - movie_mask - index(279,9) - noun - null - null
+
+============================280============================
+Which movies have the same director of [MASK]?
+Movie = index(280,6)
+Movie_name - movie_mask - index(280,9) - noun - null - null
+Director - director - index(280,6) - noun - null - null
+
+Movie = index(280,6)
+Movie_name - which - index(280,1) - det - null - null
+Director - director - index(280,6) - noun - null - null
+
+Inequality = index(280,5)
+Entity_1 - which - index(280,1) - det - null - null
+Entity_2 - movie_mask - index(280,9) - noun - null - null
+
+============================281============================
+Which movies have the same screenwriter of [MASK]?
+Movie = index(281,6)
+Movie_name - movie_mask - index(281,9) - noun - null - null
+Writer - screenwriter - index(281,6) - noun - null - null
+
+Movie = index(281,6)
+Movie_name - which - index(281,1) - det - null - null
+Writer - screenwriter - index(281,6) - noun - null - null
+
+Inequality = index(281,5)
+Entity_1 - which - index(281,1) - det - null - null
+Entity_2 - movie_mask - index(281,9) - noun - null - null
+
+============================282============================
+Which movies share the same actor of [MASK]?
+Movie = index(282,6)
+Movie_name - movie_mask - index(282,9) - noun - null - null
+Actor - actor - index(282,6) - noun - null - null
+
+Movie = index(282,6)
+Movie_name - which - index(282,1) - det - null - null
+Actor - actor - index(282,6) - noun - null - null
+
+Inequality = index(282,5)
+Entity_1 - which - index(282,1) - det - null - null
+Entity_2 - movie_mask - index(282,9) - noun - null - null
+
+============================283============================
+Which movies share the same director of [MASK]?
+Movie = index(283,6)
+Movie_name - movie_mask - index(283,9) - noun - null - null
+Director - director - index(283,6) - noun - null - null
+
+Movie = index(283,6)
+Movie_name - which - index(283,1) - det - null - null
+Director - director - index(283,6) - noun - null - null
+
+Inequality = index(283,5)
+Entity_1 - which - index(283,1) - det - null - null
+Entity_2 - movie_mask - index(283,9) - noun - null - null
+
+============================284============================
+Which movies share the screenwriter with [MASK]?
+Movie = index(284,5)
+Movie_name - which - index(284,1) - det - null - null
+Writer - screenwriter - index(284,5) - noun - null - null
+
+Movie = index(284,5)
+Movie_name - movie_mask - index(284,8) - noun - null - null
+Writer - screenwriter - index(284,5) - noun - null - null
+
+Inequality = index(284,3)
+Entity_1 - which - index(284,1) - det - null - null
+Entity_2 - movie_mask - index(284,8) - noun - null - null
+
+============================285============================
+Which person directed the films acted by [MASK]?
+Movie = index(285,6)
+Movie_name - film - index(285,5) - noun - null - null
+Actor - actor_mask - index(285,9) - propn - null - null
+
+Movie = index(285,3)
+Movie_name - film - index(285,5) - noun - null - null
+Director - which - index(285,1) - det - null - null
+
+============================286============================
+Which person directed the films written by [MASK]?
+Movie = index(286,6)
+Movie_name - film - index(286,5) - noun - null - null
+Writer - writer_mask - index(286,9) - propn - null - null
+
+Movie = index(286,3)
+Movie_name - film - index(286,5) - noun - null - null
+Director - which - index(286,1) - det - null - null
+
+============================287============================
+Which person directed the movies starred by [MASK]?
+Movie = index(287,6)
+Movie_name - movie - index(287,5) - noun - null - null
+Actor - actor_mask - index(287,9) - noun - null - null
+
+Movie = index(287,3)
+Movie_name - movie - index(287,5) - noun - null - null
+Director - which - index(287,1) - det - null - null
+
+============================288============================
+Which person directed the movies written by [MASK]?
+Movie = index(288,6)
+Movie_name - movie - index(288,5) - noun - null - null
+Writer - writer_mask - index(288,9) - noun - null - null
+
+Movie = index(288,3)
+Movie_name - movie - index(288,5) - noun - null - null
+Director - which - index(288,1) - det - null - null
+
+============================289============================
+Which person wrote the films acted by [MASK]?
+Movie = index(289,6)
+Movie_name - film - index(289,5) - noun - null - null
+Actor - actor_mask - index(289,9) - propn - null - null
+
+Movie = index(289,3)
+Movie_name - film - index(289,5) - noun - null - null
+Writer - which - index(289,1) - det - null - null
+
+============================290============================
+Which person wrote the films directed by [MASK]?
+Movie = index(290,6)
+Movie_name - film - index(290,5) - noun - null - null
+Director - director_mask - index(290,9) - propn - null - null
+
+Movie = index(290,3)
+Movie_name - film - index(290,5) - noun - null - null
+Writer - which - index(290,1) - det - null - null
+
+============================291============================
+Which person wrote the movies directed by [MASK]?
+Movie = index(291,6)
+Movie_name - movie - index(291,5) - noun - null - null
+Director - director_mask - index(291,9) - noun - null - null
+
+Movie = index(291,3)
+Movie_name - movie - index(291,5) - noun - null - null
+Writer - which - index(291,1) - det - null - null
+
+============================292============================
+Which person wrote the movies starred by [MASK]?
+Movie = index(292,6)
+Movie_name - movie - index(292,5) - noun - null - null
+Actor - actor_mask - index(292,9) - propn - null - null
+
+Movie = index(292,3)
+Movie_name - movie - index(292,5) - noun - null - null
+Writer - which - index(292,1) - det - null - null
+
+============================293============================
+Which screenwriters co-wrote films with [MASK]?
+Movie = index(293,3)
+Movie_name - film - index(293,4) - noun - null - null
+Writer - writer_mask - index(293,7) - noun - null - null
+
+Movie = index(293,3)
+Movie_name - film - index(293,4) - noun - null - null
+Writer - which - index(293,1) - det - null - null
+
+============================294============================
+Which screenwriters co-wrote movies with [MASK]?
+Movie = index(294,3)
+Movie_name - movie - index(294,4) - noun - null - null
+Writer - writer_mask - index(294,7) - noun - null - null
+
+Movie = index(294,3)
+Movie_name - movie - index(294,4) - noun - null - null
+Writer - which - index(294,1) - det - null - null
+
+============================295============================
+Who acted in the films directed by [MASK]?
+Movie = index(295,6)
+Movie_name - film - index(295,5) - noun - null - null
+Director - director_mask - index(295,9) - propn - null - null
+
+Movie = index(295,2)
+Movie_name - film - index(295,5) - noun - null - null
+Actor - who - index(295,1) - pron - null - null
+
+============================296============================
+Who acted in the films written by [MASK]?
+Movie = index(296,6)
+Movie_name - film - index(296,5) - noun - null - null
+Writer - writer_mask - index(296,9) - propn - null - null
+
+Movie = index(296,2)
+Movie_name - film - index(296,5) - noun - null - null
+Actor - who - index(296,1) - pron - null - null
+
+============================297============================
+Who acted in the movies directed by [MASK]?
+Movie = index(297,6)
+Movie_name - movie - index(297,5) - noun - null - null
+Director - director_mask - index(297,9) - noun - null - null
+
+Movie = index(297,2)
+Movie_name - movie - index(297,5) - noun - null - null
+Actor - who - index(297,1) - pron - null - null
+
+============================298============================
+Who acted in the movies written by [MASK]?
+Movie = index(298,6)
+Movie_name - movie - index(298,5) - noun - null - null
+Writer - writer_mask - index(298,9) - noun - null - null
+
+Movie = index(298,2)
+Movie_name - movie - index(298,5) - noun - null - null
+Actor - who - index(298,1) - pron - null - null
+
+============================299============================
+Who acted together with [MASK]?
+Coop = index(299,2)
+Actor - actor_mask - index(299,6) - noun - null - null
+Actor - who - index(299,1) - pron - null - null
+
+============================300============================
+Who appeared in the same movie with [MASK]?
+Inequality = index(300,5)
+Entity_1 - who - index(300,1) - pron - null - null
+Entity_2 - actor_mask - index(300,9) - propn - null - null
+
+Movie = index(300,2)
+Movie_name - movie - index(300,6) - noun - null - null
+Actor - actor_mask - index(300,9) - propn - null - null
+
+Movie = index(300,2)
+Movie_name - movie - index(300,6) - noun - null - null
+Actor - who - index(300,1) - pron - null - null
+
+============================301============================
+Who are co-stars of [MASK]?
+Coop = index(301,3)
+Actor - actor_mask - index(301,6) - noun - null - null
+Actor - who - index(301,1) - pron - null - null
+
+============================302============================
+Who are film co-directors of [MASK]?
+Coop = index(302,4)
+Director - director_mask - index(302,7) - noun - null - null
+Director - who - index(302,1) - pron - null - null
+
+============================303============================
+Who are film co-writers of [MASK]?
+Coop = index(303,4)
+Writer - writer_mask - index(303,7) - noun - null - null
+Writer - who - index(303,1) - pron - null - null
+
+============================304============================
+Who are movie co-directors of [MASK]?
+Coop = index(304,4)
+Director - director_mask - index(304,7) - propn - null - null
+Director - who - index(304,1) - pron - null - null
+
+============================305============================
+Who are movie co-writers of [MASK]?
+Coop = index(305,4)
+Writer - writer_mask - index(305,7) - propn - null - null
+Writer - who - index(305,1) - pron - null - null
+
+============================306============================
+Who are the actors in the films directed by [MASK]?
+Movie = index(306,8)
+Movie_name - film - index(306,7) - noun - null - null
+Director - director_mask - index(306,11) - propn - null - null
+
+Movie = index(306,4)
+Movie_name - film - index(306,7) - noun - null - null
+Actor - who - index(306,1) - pron - null - null
+
+============================307============================
+Who are the actors in the films written by [MASK]?
+Movie = index(307,8)
+Movie_name - film - index(307,7) - noun - null - null
+Writer - writer_mask - index(307,11) - noun - null - null
+
+Movie = index(307,4)
+Movie_name - film - index(307,7) - noun - null - null
+Actor - who - index(307,1) - pron - null - null
+
+============================308============================
+Who are the actors in the movies directed by [MASK]?
+Movie = index(308,8)
+Movie_name - movie - index(308,7) - noun - null - null
+Director - director_mask - index(308,11) - noun - null - null
+
+Movie = index(308,4)
+Movie_name - movie - index(308,7) - noun - null - null
+Actor - who - index(308,1) - pron - null - null
+
+============================309============================
+Who are the actors in the movies written by [MASK]?
+Movie = index(309,8)
+Movie_name - movie - index(309,7) - noun - null - null
+Writer - writer_mask - index(309,11) - noun - null - null
+
+Movie = index(309,4)
+Movie_name - movie - index(309,7) - noun - null - null
+Actor - who - index(309,1) - pron - null - null
+
+============================310============================
+Who are the actors of the director [MASK]?
+Coop = index(310,7)
+Director - director_mask - index(310,7) - noun - null - null
+Actor - who - index(310,1) - pron - null - null
+
+============================311============================
+Who are the actors of the screenwriter [MASK]?
+Coop = index(311,7)
+Writer - screenwriter_mask - index(311,7) - noun - null - null
+Actor - who - index(311,1) - pron - null - null
+
+============================312============================
+Who are the directors of the films starred by [MASK]?
+Movie = index(312,8)
+Movie_name - film - index(312,7) - noun - null - null
+Actor - actor_mask - index(312,11) - propn - null - null
+
+Movie = index(312,4)
+Movie_name - film - index(312,7) - noun - null - null
+Director - who - index(312,1) - pron - null - null
+
+============================313============================
+Who are the directors of the films written by [MASK]?
+Movie = index(313,8)
+Movie_name - film - index(313,7) - noun - null - null
+Writer - writer_mask - index(313,11) - propn - null - null
+
+Movie = index(313,4)
+Movie_name - film - index(313,7) - noun - null - null
+Director - who - index(313,1) - pron - null - null
+
+============================314============================
+Who are the directors of the movies acted by [MASK]?
+Movie = index(314,8)
+Movie_name - movie - index(314,7) - noun - null - null
+Actor - actor_mask - index(314,11) - noun - null - null
+
+Movie = index(314,4)
+Movie_name - movie - index(314,7) - noun - null - null
+Director - who - index(314,1) - pron - null - null
+
+============================315============================
+Who are the directors of the movies written by [MASK]?
+Movie = index(315,8)
+Movie_name - movie - index(315,7) - noun - null - null
+Writer - writer_mask - index(315,11) - noun - null - null
+
+Movie = index(315,4)
+Movie_name - movie - index(315,7) - noun - null - null
+Director - who - index(315,1) - pron - null - null
+
+============================316============================
+Who are the writers of the films directed by [MASK]?
+Movie = index(316,8)
+Movie_name - film - index(316,7) - noun - null - null
+Director - director_mask - index(316,11) - propn - null - null
+
+Movie = index(316,4)
+Movie_name - film - index(316,7) - noun - null - null
+Writer - who - index(316,1) - pron - null - null
+
+============================317============================
+Who are the writers of the films starred by [MASK]?
+Movie = index(317,8)
+Movie_name - film - index(317,7) - noun - null - null
+Actor - actor_mask - index(317,11) - propn - null - null
+
+Movie = index(317,4)
+Movie_name - film - index(317,7) - noun - null - null
+Writer - who - index(317,1) - pron - null - null
+
+============================318============================
+Who are the writers of the movies acted by [MASK]?
+Movie = index(318,8)
+Movie_name - movie - index(318,7) - noun - null - null
+Actor - actor_mask - index(318,11) - noun - null - null
+
+Movie = index(318,4)
+Movie_name - movie - index(318,7) - noun - null - null
+Writer - who - index(318,1) - pron - null - null
+
+============================319============================
+Who are the writers of the movies directed by [MASK]?
+Movie = index(319,8)
+Movie_name - movie - index(319,7) - noun - null - null
+Director - director_mask - index(319,11) - noun - null - null
+
+Movie = index(319,4)
+Movie_name - movie - index(319,7) - noun - null - null
+Writer - who - index(319,1) - pron - null - null
+
+============================320============================
+Who co-directed films with [MASK]?
+Inequality = index(320,2)
+Entity_1 - who - index(320,1) - pron - null - null
+Entity_2 - director_mask - index(320,6) - noun - null - null
+
+Movie = index(320,2)
+Movie_name - film - index(320,3) - noun - null - null
+Director - director_mask - index(320,6) - noun - null - null
+
+Movie = index(320,2)
+Movie_name - film - index(320,3) - noun - null - null
+Director - who - index(320,1) - pron - null - null
+
+============================321============================
+Who co-starred with [MASK]?
+Coop = index(321,2)
+Actor - actor_mask - index(321,5) - noun - null - null
+Actor - who - index(321,1) - pron - null - null
+
+============================322============================
+Who co-wrote films with [MASK]?
+Movie = index(322,2)
+Movie_name - film - index(322,3) - noun - null - null
+Writer - writer_mask - index(322,6) - noun - null - null
+
+Inequality = index(322,2)
+Entity_1 - who - index(322,1) - pron - null - null
+Entity_2 - writer_mask - index(322,6) - noun - null - null
+
+Movie = index(322,2)
+Movie_name - film - index(322,3) - noun - null - null
+Writer - who - index(322,1) - pron - null - null
+
+============================323============================
+Who directed films together with [MASK]?
+Inequality = index(323,2)
+Entity_1 - who - index(323,1) - pron - null - null
+Entity_2 - director_mask - index(323,7) - noun - null - null
+
+Movie = index(323,2)
+Movie_name - film - index(323,3) - noun - null - null
+Director - director_mask - index(323,7) - noun - null - null
+
+Movie = index(323,2)
+Movie_name - film - index(323,3) - noun - null - null
+Director - who - index(323,1) - pron - null - null
+
+============================324============================
+Who directed movies together with [MASK]?
+Inequality = index(324,2)
+Entity_1 - who - index(324,1) - pron - null - null
+Entity_2 - director_mask - index(324,7) - noun - null - null
+
+Movie = index(324,2)
+Movie_name - movie - index(324,3) - noun - null - null
+Director - director_mask - index(324,7) - noun - null - null
+
+Movie = index(324,2)
+Movie_name - movie - index(324,3) - noun - null - null
+Director - who - index(324,1) - pron - null - null
+
+============================325============================
+Who directed the films starred by [MASK]?
+Movie = index(325,5)
+Movie_name - film - index(325,4) - noun - null - null
+Actor - actor_mask - index(325,8) - noun - null - null
+
+Movie = index(325,2)
+Movie_name - film - index(325,4) - noun - null - null
+Director - who - index(325,1) - pron - null - null
+
+============================326============================
+Who directed the films written by [MASK]?
+Movie = index(326,5)
+Movie_name - film - index(326,4) - noun - null - null
+Writer - writer_mask - index(326,8) - noun - null - null
+
+Movie = index(326,2)
+Movie_name - film - index(326,4) - noun - null - null
+Director - who - index(326,1) - pron - null - null
+
+============================327============================
+Who directed the movies acted by [MASK]?
+Movie = index(327,5)
+Movie_name - movie - index(327,4) - noun - null - null
+Actor - actor_mask - index(327,8) - noun - null - null
+
+Movie = index(327,2)
+Movie_name - movie - index(327,4) - noun - null - null
+Director - who - index(327,1) - pron - null - null
+
+============================328============================
+Who directed the movies written by [MASK]?
+Movie = index(328,5)
+Movie_name - movie - index(328,4) - noun - null - null
+Writer - writer_mask - index(328,8) - noun - null - null
+
+Movie = index(328,2)
+Movie_name - movie - index(328,4) - noun - null - null
+Director - who - index(328,1) - pron - null - null
+
+============================329============================
+Who is listed as director of [MASK] acted films?
+Movie = index(329,10)
+Movie_name - film - index(329,11) - noun - null - null
+Actor - actor_mask - index(329,8) - noun - null - null
+
+Movie = index(329,5)
+Movie_name - film - index(329,11) - noun - null - null
+Director - who - index(329,1) - pron - null - null
+
+============================330============================
+Who is listed as director of [MASK] starred movies?
+Movie = index(330,10)
+Movie_name - movie - index(330,11) - noun - null - null
+Actor - actor_mask - index(330,8) - noun - null - null
+
+Movie = index(330,5)
+Movie_name - movie - index(330,11) - noun - null - null
+Director - who - index(330,1) - pron - null - null
+
+============================331============================
+Who is listed as director of [MASK] written films?
+Movie = index(331,10)
+Movie_name - film - index(331,11) - noun - null - null
+Writer - writer_mask - index(331,8) - noun - null - null
+
+Movie = index(331,5)
+Movie_name - film - index(331,11) - noun - null - null
+Director - who - index(331,1) - pron - null - null
+
+============================332============================
+Who is listed as director of [MASK] written movies?
+Movie = index(332,10)
+Movie_name - movie - index(332,11) - noun - null - null
+Writer - writer_mask - index(332,8) - noun - null - null
+
+Movie = index(332,5)
+Movie_name - movie - index(332,11) - noun - null - null
+Director - who - index(332,1) - pron - null - null
+
+============================333============================
+Who is listed as screenwriter of [MASK] acted films?
+Movie = index(333,10)
+Movie_name - film - index(333,11) - noun - null - null
+Actor - actor_mask - index(333,8) - noun - null - null
+
+Movie = index(333,5)
+Movie_name - film - index(333,11) - noun - null - null
+Writer - who - index(333,1) - pron - null - null
+
+============================334============================
+Who is listed as screenwriter of [MASK] directed films?
+Movie = index(334,10)
+Movie_name - film - index(334,11) - noun - null - null
+Director - director_mask - index(334,8) - noun - null - null
+
+Movie = index(334,5)
+Movie_name - film - index(334,11) - noun - null - null
+Writer - who - index(334,1) - pron - null - null
+
+============================335============================
+Who is listed as screenwriter of [MASK] directed movies?
+Movie = index(335,10)
+Movie_name - movie - index(335,11) - noun - null - null
+Director - director_mask - index(335,8) - noun - null - null
+
+Movie = index(335,5)
+Movie_name - movie - index(335,11) - noun - null - null
+Writer - who - index(335,1) - pron - null - null
+
+============================336============================
+Who is listed as screenwriter of [MASK] starred movies?
+Movie = index(336,10)
+Movie_name - movie - index(336,11) - noun - null - null
+Actor - actor_mask - index(336,8) - noun - null - null
+
+Movie = index(336,5)
+Movie_name - movie - index(336,11) - noun - null - null
+Writer - who - index(336,1) - pron - null - null
+
+============================337============================
+Who starred in the films directed by [MASK]?
+Movie = index(337,6)
+Movie_name - film - index(337,5) - noun - null - null
+Director - director_mask - index(337,9) - propn - null - null
+
+Movie = index(337,2)
+Movie_name - film - index(337,5) - noun - null - null
+Actor - who - index(337,1) - pron - null - null
+
+============================338============================
+Who starred in the films written by [MASK]?
+Movie = index(338,6)
+Movie_name - film - index(338,5) - noun - null - null
+Writer - writer_mask - index(338,9) - propn - null - null
+
+Movie = index(338,2)
+Movie_name - film - index(338,5) - noun - null - null
+Actor - who - index(338,1) - pron - null - null
+
+============================339============================
+Who starred in the movies directed by [MASK]?
+Movie = index(339,6)
+Movie_name - movie - index(339,5) - noun - null - null
+Director - director_mask - index(339,9) - noun - null - null
+
+Movie = index(339,2)
+Movie_name - movie - index(339,5) - noun - null - null
+Actor - who - index(339,1) - pron - null - null
+
+============================340============================
+Who starred in the movies written by [MASK]?
+Movie = index(340,6)
+Movie_name - movie - index(340,5) - noun - null - null
+Writer - writer_mask - index(340,9) - noun - null - null
+
+Movie = index(340,2)
+Movie_name - movie - index(340,5) - noun - null - null
+Actor - who - index(340,1) - pron - null - null
+
+============================341============================
+Who starred movies for the director [MASK]?
+Movie = index(341,2)
+Movie_name - movie - index(341,3) - noun - null - null
+Director - director_mask - index(341,8) - propn - null - null
+
+Movie = index(341,2)
+Movie_name - movie - index(341,3) - noun - null - null
+Actor - who - index(341,1) - pron - null - null
+
+============================342============================
+Who starred movies for the writer [MASK]?
+Movie = index(342,2)
+Movie_name - movie - index(342,3) - noun - null - null
+Writer - writer_mask - index(342,8) - noun - null - null
+
+Movie = index(342,2)
+Movie_name - movie - index(342,3) - noun - null - null
+Actor - who - index(342,1) - pron - null - null
+
+============================343============================
+Who starred together with [MASK]?
+Coop = index(343,2)
+Actor - actor_mask - index(343,6) - noun - null - null
+Actor - who - index(343,1) - pron - null - null
+
+============================344============================
+Who wrote films together with [MASK]?
+Movie = index(344,2)
+Movie_name - film - index(344,3) - noun - null - null
+Writer - writer_mask - index(344,7) - noun - null - null
+
+Inequality = index(344,2)
+Entity_1 - who - index(344,1) - pron - null - null
+Entity_2 - writer_mask - index(344,7) - noun - null - null
+
+Movie = index(344,2)
+Movie_name - film - index(344,3) - noun - null - null
+Writer - who - index(344,1) - pron - null - null
+
+============================345============================
+Who wrote movies together with [MASK]?
+Movie = index(345,2)
+Movie_name - movie - index(345,3) - noun - null - null
+Writer - writer_mask - index(345,7) - noun - null - null
+
+Inequality = index(345,2)
+Entity_1 - who - index(345,1) - pron - null - null
+Entity_2 - writer_mask - index(345,7) - noun - null - null
+
+Movie = index(345,2)
+Movie_name - movie - index(345,3) - noun - null - null
+Writer - who - index(345,1) - pron - null - null
+
+============================346============================
+Who wrote the movies acted by [MASK]?
+Movie = index(346,5)
+Movie_name - movie - index(346,4) - noun - null - null
+Actor - actor_mask - index(346,8) - noun - null - null
+
+Movie = index(346,2)
+Movie_name - movie - index(346,4) - noun - null - null
+Writer - who - index(346,1) - pron - null - null
+
+============================347============================
+Who wrote the movies directed by [MASK]?
+Movie = index(347,5)
+Movie_name - movie - index(347,4) - noun - null - null
+Director - director_mask - index(347,8) - noun - null - null
+
+Movie = index(347,2)
+Movie_name - movie - index(347,4) - noun - null - null
+Writer - who - index(347,1) - pron - null - null
+
+============================348============================
+Who wrote the screenplay for the movies directed by [MASK]?
+Movie = index(348,8)
+Movie_name - movie - index(348,7) - noun - null - null
+Director - director_mask - index(348,11) - propn - null - null
+
+Movie = index(348,2)
+Movie_name - movie - index(348,7) - noun - null - null
+Writer - who - index(348,1) - pron - null - null
+
+============================349============================
+Who wrote the screenplay for the movies starred by [MASK]?
+Movie = index(349,8)
+Movie_name - movie - index(349,7) - noun - null - null
+Actor - actor_mask - index(349,11) - propn - null - null
+
+Movie = index(349,2)
+Movie_name - movie - index(349,7) - noun - null - null
+Writer - who - index(349,1) - pron - null - null
+
+============================350============================
+[MASK] directed films together with who?
+Movie = index(350,4)
+Movie_name - film - index(350,5) - noun - null - null
+Director - director_mask - index(350,2) - noun - null - null
+

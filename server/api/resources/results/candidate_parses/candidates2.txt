@@ -1,0 +1,1942 @@
+============================1============================
+Mary is a female.
+Human_gender = index(1,2)
+Person - Mary - index(1,1) - propn - person - null
+Gender - female - index(1,4) - noun - null - null
+
+============================2============================
+A female gender is held by Kate.
+Human_gender = index(2,3)
+Person - Kate - index(2,7) - propn - person - null
+Gender - female - index(2,2) - adj - null - null
+
+============================3============================
+Susan has the gender of a female.
+Human_gender = index(3,4)
+Person - Susan - index(3,1) - propn - person - null
+Gender - female - index(3,7) - noun - null - null
+
+Possession = index(3,2)
+Owner - Susan - index(3,1) - propn - person - null
+Possession - gender - index(3,4) - noun - null - null
+
+============================4============================
+John is a male.
+Human_gender = index(4,2)
+Person - John - index(4,1) - propn - person - null
+Gender - male - index(4,4) - noun - null - null
+
+============================5============================
+Mary lives in a village.
+Residence = index(5,2)
+Resident - Mary - index(5,1) - propn - person - null
+Location - village - index(5,5) - noun - null - null
+
+============================6============================
+Kate lives in a town with John.
+Residence = index(6,2)
+Resident - Kate - index(6,1) - propn - person - null
+Location - town - index(6,5) - noun - null - null
+Co_resident - John - index(6,7) - propn - person - null
+
+============================7============================
+Susan is a resident of New York City.
+Residence = index(7,4)
+Resident - Susan - index(7,1) - propn - person - null
+Location - New_York_City - index(7,8) - propn - gpe - null
+
+============================8============================
+Taylor Swift lives in Nashville.
+Residence = index(8,3)
+Resident - Taylor_Swift - index(8,1) - propn - person - null
+Location - Nashville - index(8,5) - propn - gpe - null
+
+============================9============================
+Warren Buffett stays in Omaha.
+Residence = index(9,3)
+Resident - Warren_Buffett - index(9,1) - propn - person - null
+Location - Omaha - index(9,5) - propn - gpe - null
+
+============================10============================
+John is inhabited in Tennessee.
+Residence = index(10,3)
+Resident - John - index(10,1) - propn - person - null
+Location - Tennessee - index(10,5) - propn - gpe - null
+
+============================11============================
+A house was rented by Mary from John.
+Renting = index(11,4)
+Lessee - Mary - index(11,6) - propn - person - null
+Goods - house - index(11,2) - noun - null - null
+Lessor - John - index(11,8) - propn - person - null
+
+============================12============================
+An apartment will be leased from John by Mary.
+Renting = index(12,5)
+Lessee - Mary - index(12,9) - propn - person - null
+Goods - apartment - index(12,2) - noun - null - null
+Lessor - John - index(12,7) - propn - person - null
+
+============================13============================
+A car was chartered by Kate.
+Renting = index(13,4)
+Lessee - Kate - index(13,6) - propn - person - null
+Goods - car - index(13,2) - noun - null - null
+
+============================14============================
+A textbook is rented by a student from a library.
+Renting = index(14,4)
+Lessee - student - index(14,7) - noun - null - null
+Goods - textbook - index(14,2) - noun - null - null
+Lessor - library - index(14,10) - noun - null - null
+
+============================15============================
+A truck was rented by John.
+Renting = index(15,4)
+Lessee - John - index(15,6) - propn - person - null
+Goods - truck - index(15,2) - noun - null - null
+
+============================16============================
+A laptop is bought by Mary.
+Commerce_buy = index(16,4)
+Buyer - Mary - index(16,6) - propn - person - null
+Goods - laptop - index(16,2) - noun - null - null
+
+============================17============================
+A house was purchased by Kate.
+Commerce_buy = index(17,4)
+Buyer - Kate - index(17,6) - propn - person - null
+Goods - house - index(17,2) - noun - null - null
+
+============================18============================
+A phone is being bought by Susan.
+Commerce_buy = index(18,5)
+Buyer - Susan - index(18,7) - propn - person - null
+Goods - phone - index(18,2) - noun - null - null
+
+============================19============================
+George is a buyer of a store.
+Commerce_buy = index(19,4)
+Buyer - George - index(19,1) - propn - person - null
+Goods - store - index(19,7) - noun - null - null
+
+============================20============================
+A purchase of a company was made by Kate.
+Building = index(20,7)
+Agent - Kate - index(20,9) - propn - person - null
+Created_entity - purchase - index(20,2) - noun - null - null
+
+Create_organization = index(20,7)
+Creator - Kate - index(20,9) - propn - person - null
+Organization - purchase - index(20,2) - noun - null - null
+
+Cooking = index(20,7)
+Cook - Kate - index(20,9) - propn - person - null
+Food - purchase - index(20,2) - noun - null - null
+
+Commerce_buy = index(20,2)
+Buyer - Kate - index(20,9) - propn - person - null
+Goods - company - index(20,5) - noun - null - null
+
+============================21============================
+A meal was bought for John by Mary.
+Commerce_buy = index(21,4)
+Buyer - Mary - index(21,8) - propn - person - null
+Goods - meal - index(21,2) - noun - null - null
+Recipient - John - index(21,6) - propn - person - null
+
+============================22============================
+A motorcycle is purchased by Mary from John.
+Commerce_buy = index(22,4)
+Buyer - Mary - index(22,6) - propn - person - null
+Goods - motorcycle - index(22,2) - noun - null - null
+Seller - John - index(22,8) - propn - person - null
+
+============================23============================
+A motorcycle was bought by Mary for the daughter for 300 dollars from Bob.
+Commerce_buy = index(23,4)
+Buyer - Mary - index(23,6) - propn - person - null
+Goods - motorcycle - index(23,2) - noun - null - null
+Seller - Bob - index(23,14) - propn - person - null
+Recipient - daughter - index(23,9) - noun - null - null
+Money - dollar - index(23,12) - noun - null - 300
+
+Commerce_buy = index(23,4)
+Buyer - Mary - index(23,6) - propn - person - null
+Goods - motorcycle - index(23,2) - noun - null - null
+Seller - Bob - index(23,14) - propn - person - null
+Recipient - dollar - index(23,12) - noun - null - 300
+
+============================24============================
+A house was bought for John by Jane at a price of 300000 dollars from a friend.
+Commerce_buy = index(24,4)
+Buyer - Jane - index(24,8) - propn - person - null
+Goods - house - index(24,2) - noun - null - null
+Seller - friend - index(24,17) - noun - null - null
+Recipient - John - index(24,6) - propn - person - null
+Money - dollar - index(24,14) - noun - null - 300000
+
+============================25============================
+A car is owned by Mary.
+Possession = index(25,4)
+Owner - Mary - index(25,6) - propn - person - null
+Possession - car - index(25,2) - noun - null - null
+
+============================26============================
+John is the owner of a farm.
+Possession = index(26,4)
+Owner - John - index(26,1) - propn - person - null
+Possession - farm - index(26,7) - noun - null - null
+
+============================27============================
+Kate is the owner of a shop.
+Possession = index(27,4)
+Owner - Kate - index(27,1) - propn - person - null
+Possession - shop - index(27,7) - noun - null - null
+
+============================28============================
+Susan has a house.
+Possession = index(28,2)
+Owner - Susan - index(28,1) - propn - person - null
+Possession - house - index(28,4) - noun - null - null
+
+============================29============================
+A painting is possessed by Mary.
+Possession = index(29,4)
+Owner - Mary - index(29,6) - propn - person - null
+Possession - painting - index(29,2) - noun - null - null
+
+============================30============================
+John is a possessor of a factory.
+Possession = index(30,4)
+Owner - John - index(30,1) - propn - person - null
+Possession - factory - index(30,7) - noun - null - null
+
+============================31============================
+Michael Jordan is born in 1963 in Brooklyn.
+Being_born = index(31,4)
+Person - Michael_Jordan - index(31,1) - propn - person - null
+Place - Brooklyn - index(31,8) - propn - gpe - null
+Time - 1963 - index(31,6) - num - date - null
+
+Being_born = index(31,4)
+Person - Michael_Jordan - index(31,1) - propn - person - null
+Place - 1963 - index(31,6) - num - date - null
+
+============================32============================
+Abraham Lincoln is born in 1809 in Kentucky.
+Being_born = index(32,4)
+Person - Abraham_Lincoln - index(32,1) - propn - person - null
+Place - Kentucky - index(32,8) - propn - gpe - null
+Time - 1809 - index(32,6) - num - date - null
+
+Being_born = index(32,4)
+Person - Abraham_Lincoln - index(32,1) - propn - person - null
+Place - 1809 - index(32,6) - num - date - null
+
+============================33============================
+Mozart is born in 1756 in Austria.
+Being_born = index(33,3)
+Person - Mozart - index(33,1) - propn - person - null
+Place - Austria - index(33,7) - propn - gpe - null
+Time - 1756 - index(33,5) - num - date - null
+
+Being_born = index(33,3)
+Person - Mozart - index(33,1) - propn - person - null
+Place - 1756 - index(33,5) - num - date - null
+
+============================34============================
+The bread is baked by Mary.
+Cooking = index(34,4)
+Cook - Mary - index(34,6) - propn - person - null
+Food - bread - index(34,2) - noun - null - null
+
+============================35============================
+A burger was made by Kate in the kitchen.
+Building = index(35,4)
+Agent - Kate - index(35,6) - propn - person - null
+Created_entity - burger - index(35,2) - noun - null - null
+
+Create_organization = index(35,4)
+Creator - Kate - index(35,6) - propn - person - null
+Organization - burger - index(35,2) - noun - null - null
+Place - kitchen - index(35,9) - noun - null - null
+
+Cooking = index(35,4)
+Cook - Kate - index(35,6) - propn - person - null
+Food - burger - index(35,2) - noun - null - null
+Place - kitchen - index(35,9) - noun - null - null
+
+============================36============================
+A burger is made by Susan in a restaurant.
+Building = index(36,4)
+Agent - Susan - index(36,6) - propn - person - null
+Created_entity - burger - index(36,2) - noun - null - null
+
+Create_organization = index(36,4)
+Creator - Susan - index(36,6) - propn - person - null
+Organization - burger - index(36,2) - noun - null - null
+Place - restaurant - index(36,9) - noun - null - null
+
+Cooking = index(36,4)
+Cook - Susan - index(36,6) - propn - person - null
+Food - burger - index(36,2) - noun - null - null
+Place - restaurant - index(36,9) - noun - null - null
+
+============================37============================
+A fish is fried by John.
+Cooking = index(37,4)
+Cook - John - index(37,6) - propn - person - null
+Food - fish - index(37,2) - noun - null - null
+
+============================38============================
+A duck is roasted by Tom.
+Cooking = index(38,4)
+Cook - Tom - index(38,6) - propn - person - null
+Food - duck - index(38,2) - noun - null - null
+
+============================39============================
+An egg is being boiled by Mary.
+Cooking = index(39,5)
+Cook - Mary - index(39,7) - propn - person - null
+Food - egg - index(39,2) - noun - null - null
+
+============================40============================
+An omelet is being made by John.
+Building = index(40,5)
+Agent - John - index(40,7) - propn - person - null
+Created_entity - omelet - index(40,2) - noun - null - null
+
+Create_organization = index(40,5)
+Creator - John - index(40,7) - propn - person - null
+Organization - omelet - index(40,2) - noun - null - null
+
+Cooking = index(40,5)
+Cook - John - index(40,7) - propn - person - null
+Food - omelet - index(40,2) - noun - null - null
+
+============================41============================
+An omelet was made by a cook.
+Building = index(41,4)
+Agent - cook - index(41,7) - noun - null - null
+Created_entity - omelet - index(41,2) - noun - null - null
+
+Create_organization = index(41,4)
+Creator - cook - index(41,7) - noun - null - null
+Organization - omelet - index(41,2) - noun - null - null
+
+Cooking = index(41,4)
+Cook - cook - index(41,7) - noun - null - null
+Food - omelet - index(41,2) - noun - null - null
+
+============================42============================
+A burger is made by a chef.
+Building = index(42,4)
+Agent - chef - index(42,7) - noun - null - null
+Created_entity - burger - index(42,2) - noun - null - null
+
+Create_organization = index(42,4)
+Creator - chef - index(42,7) - noun - null - null
+Organization - burger - index(42,2) - noun - null - null
+
+Cooking = index(42,4)
+Cook - chef - index(42,7) - noun - null - null
+Food - burger - index(42,2) - noun - null - null
+
+============================43============================
+A suit is dressed in by John.
+Dressing = index(43,4)
+Wearer - John - index(43,7) - propn - person - null
+Clothing - suit - index(43,2) - noun - null - null
+
+============================44============================
+A jacket is worn by Tom.
+Dressing = index(44,4)
+Wearer - Tom - index(44,6) - propn - person - null
+Clothing - jacket - index(44,2) - noun - null - null
+
+============================45============================
+A T-shirt is put on by Jack.
+Dressing = index(45,4)
+Wearer - Jack - index(45,7) - propn - person - null
+Clothing - T_shirt - index(45,2) - noun - null - null
+
+============================46============================
+A skirt will be put on by Mary.
+Dressing = index(46,5)
+Wearer - Mary - index(46,8) - propn - person - null
+Clothing - skirt - index(46,2) - noun - null - null
+
+============================47============================
+A blouse was worn by Susan.
+Dressing = index(47,4)
+Wearer - Susan - index(47,6) - propn - person - null
+Clothing - blouse - index(47,2) - noun - null - null
+
+============================48============================
+Mary travels to New York City.
+Travel = index(48,2)
+Traveler - Mary - index(48,1) - propn - person - null
+Goal - New_York_City - index(48,6) - propn - gpe - null
+
+============================49============================
+A trip to China was made by John.
+Building = index(49,6)
+Agent - John - index(49,8) - propn - person - null
+Created_entity - trip - index(49,2) - noun - null - null
+
+Create_organization = index(49,6)
+Creator - John - index(49,8) - propn - person - null
+Organization - trip - index(49,2) - noun - null - null
+
+Cooking = index(49,6)
+Cook - John - index(49,8) - propn - person - null
+Food - trip - index(49,2) - noun - null - null
+
+Travel = index(49,2)
+Traveler - John - index(49,8) - propn - person - null
+Goal - China - index(49,4) - propn - gpe - null
+
+============================50============================
+A trip from Beijing to Shanghai will be made by Kate.
+Building = index(50,9)
+Agent - Kate - index(50,11) - propn - person - null
+Created_entity - trip - index(50,2) - noun - null - null
+
+Create_organization = index(50,9)
+Creator - Kate - index(50,11) - propn - person - null
+Organization - trip - index(50,2) - noun - null - null
+
+Cooking = index(50,9)
+Cook - Kate - index(50,11) - propn - person - null
+Food - trip - index(50,2) - noun - null - null
+
+Travel = index(50,2)
+Traveler - Kate - index(50,11) - propn - person - null
+Source - Beijing - index(50,4) - propn - gpe - null
+Goal - Shanghai - index(50,6) - propn - gpe - null
+
+============================51============================
+Susan commutes to Sydney.
+Travel = index(51,2)
+Traveler - Susan - index(51,1) - propn - person - null
+Goal - Sydney - index(51,4) - propn - gpe - null
+
+============================52============================
+A journey from Brazil to Chile has been made by George.
+Building = index(52,9)
+Agent - George - index(52,11) - propn - person - null
+Created_entity - journey - index(52,2) - noun - null - null
+
+Create_organization = index(52,9)
+Creator - George - index(52,11) - propn - person - null
+Organization - journey - index(52,2) - noun - null - null
+
+Cooking = index(52,9)
+Cook - George - index(52,11) - propn - person - null
+Food - journey - index(52,2) - noun - null - null
+
+Travel = index(52,2)
+Traveler - George - index(52,11) - propn - person - null
+Source - Brazil - index(52,4) - propn - gpe - null
+Goal - Chile - index(52,6) - propn - gpe - null
+
+============================53============================
+Google was founded by Larry Page.
+Create_organization = index(53,3)
+Creator - Larry_Page - index(53,5) - propn - person - null
+Organization - Google - index(53,1) - propn - org - null
+
+============================54============================
+Microsoft is founded by Bill Gates.
+Create_organization = index(54,3)
+Creator - Bill_Gates - index(54,5) - propn - person - null
+Organization - Microsoft - index(54,1) - propn - org - null
+
+============================55============================
+Mark Zuckerberg is a founder of Facebook.
+Create_organization = index(55,5)
+Creator - Mark_Zuckerberg - index(55,1) - propn - person - null
+Organization - Facebook - index(55,7) - propn - org - null
+
+============================56============================
+Robin Li is a founder of Baidu.
+Create_organization = index(56,5)
+Creator - Robin_Li - index(56,1) - propn - person - null
+Organization - Baidu - index(56,7) - propn - org - null
+
+============================57============================
+A foundation is being founded by John.
+Create_organization = index(57,5)
+Creator - John - index(57,7) - propn - person - null
+Organization - foundation - index(57,2) - noun - null - null
+
+============================58============================
+Mary studies at Cambridge University.
+Education = index(58,2)
+Student - Mary - index(58,1) - propn - person - null
+Institution - Cambridge_University - index(58,5) - propn - org - null
+
+============================59============================
+A bachelor's degree was received by John from Cambridge University.
+Education = index(59,6)
+Student - John - index(59,8) - propn - person - null
+Institution - Cambridge_University - index(59,11) - propn - org - null
+Degree - degree - index(59,4) - noun - null - null
+
+============================60============================
+A master's degree in Biology has been received by Kate from Harvard University.
+Education = index(60,9)
+Student - Kate - index(60,11) - propn - person - null
+Institution - Harvard_University - index(60,14) - propn - org - null
+Degree - degree - index(60,4) - noun - null - null
+Subject - Biology - index(60,6) - propn - null - null
+
+============================61============================
+Peking University was entered by Susan.
+Travel = index(61,4)
+Traveler - Susan - index(61,6) - propn - person - null
+Goal - Peking_University - index(61,2) - propn - org - null
+
+Education = index(61,4)
+Student - Susan - index(61,6) - propn - person - null
+Institution - Peking_University - index(61,2) - propn - org - null
+
+============================62============================
+Tom graduates from MIT.
+Education = index(62,2)
+Student - Tom - index(62,1) - propn - person - null
+Institution - MIT - index(62,4) - propn - org - null
+
+============================63============================
+Bill Gates is a donor to Stanford University.
+Giving = index(63,5)
+Donor - Bill_Gates - index(63,1) - propn - person - null
+Recipient - Stanford_University - index(63,8) - propn - org - null
+
+============================64============================
+Harvard University was endowed with some money by Bill Gates.
+Giving = index(64,4)
+Donor - Bill_Gates - index(64,9) - propn - person - null
+Recipient - Harvard_University - index(64,2) - propn - org - null
+Theme - money - index(64,7) - noun - null - null
+
+============================65============================
+A donation of a piano was made by Billy Joel to Stony Brook University.
+Building = index(65,7)
+Agent - Billy_Joel - index(65,9) - propn - person - null
+Created_entity - donation - index(65,2) - noun - null - null
+
+Create_organization = index(65,7)
+Creator - Billy_Joel - index(65,9) - propn - person - null
+Organization - donation - index(65,2) - noun - null - null
+
+Cooking = index(65,7)
+Cook - Billy_Joel - index(65,9) - propn - person - null
+Food - donation - index(65,2) - noun - null - null
+
+Giving = index(65,2)
+Donor - Billy_Joel - index(65,9) - propn - person - null
+Recipient - Stony_Brook_University - index(65,14) - propn - org - null
+Theme - piano - index(65,5) - noun - null - null
+
+============================66============================
+Some money will be donated by Steve Jobs to a school.
+Giving = index(66,5)
+Donor - Steve_Jobs - index(66,7) - propn - person - null
+Recipient - school - index(66,11) - noun - null - null
+Theme - money - index(66,2) - noun - null - null
+
+============================67============================
+Mary is the daughter of John.
+Personal_relationship = index(67,4)
+Daughter - Mary - index(67,1) - propn - person - null
+Parent - John - index(67,6) - propn - person - null
+
+============================68============================
+Mary is married to John.
+Personal_relationship = index(68,3)
+Marriage_partner_1 - Mary - index(68,1) - propn - person - null
+Marriage_partner_2 - John - index(68,5) - propn - person - null
+
+============================69============================
+Mary and John are married.
+Personal_relationship = index(69,5)
+Marriage_partner_1 - John - index(69,3) - propn - person - null
+Marriage_partner_2 - Mary - index(69,1) - propn - person - null
+
+Personal_relationship = index(69,5)
+Marriage_partner_1 - Mary - index(69,1) - propn - person - null
+Marriage_partner_2 - John - index(69,3) - propn - person - null
+
+============================70============================
+Kate is at the age of 20.
+Age = index(70,5)
+Person - Kate - index(70,1) - propn - person - null
+Age - 20 - index(70,7) - num - null - null
+
+============================71============================
+Kate is 20.
+Age = index(71,2)
+Person - Kate - index(71,1) - propn - person - null
+Age - 20 - index(71,3) - num - date - null
+
+============================72============================
+Kate is under the age of 20.
+Age = index(72,5)
+Person - Kate - index(72,1) - propn - person - null
+Age - 20 - index(72,7) - num - date - null
+
+============================73============================
+Albert Einstein was awarded the Nobel Prize in Physics.
+Award = index(73,4)
+Person - Albert_Einstein - index(73,1) - propn - person - null
+Award - the_Nobel_Prize_in_Physics - index(73,7) - propn - work_of_art - null
+
+============================74============================
+Swedish Academy granted the Nobel Prize in Physics to Albert Einstein.
+Award = index(74,3)
+Person - Albert_Einstein - index(74,10) - propn - person - null
+Award - the_Nobel_Prize_in_Physics - index(74,6) - propn - work_of_art - null
+Organization - Swedish_Academy - index(74,2) - propn - org - null
+
+============================75============================
+Swedish Academy gives the Nobel Prize in Physics to Albert Einstein.
+Award = index(75,3)
+Person - Albert_Einstein - index(75,10) - propn - person - null
+Award - the_Nobel_Prize_in_Physics - index(75,6) - propn - work_of_art - null
+Organization - Swedish_Academy - index(75,2) - propn - org - null
+
+============================76============================
+The Association for Computing Machinery gives Turing Award to Donald Knuth.
+Award = index(76,6)
+Person - Donald_Knuth - index(76,10) - propn - person - null
+Award - Turing_Award - index(76,8) - propn - work_of_art - null
+Organization - The_Association_for_Computing_Machinery - index(76,2) - propn - org - null
+
+============================77============================
+The Academy of Motion Picture Arts and Sciences gives Emma Stone an Oscar Award.
+Award = index(77,9)
+Person - Emma_Stone - index(77,10) - propn - person - null
+Award - Oscar_Award - index(77,14) - propn - work_of_art - null
+Organization - The_Academy_of_Motion_Picture_Arts_and_Sciences - index(77,2) - propn - org - null
+
+============================78============================
+A cold is got by Mary.
+Medical_conditions = index(78,4)
+Patient - Mary - index(78,6) - propn - person - null
+Ailment - cold - index(78,2) - noun - null - null
+
+Education = index(78,4)
+Student - Mary - index(78,6) - propn - person - null
+Degree - cold - index(78,2) - noun - null - null
+
+Possession = index(78,4)
+Owner - Mary - index(78,6) - propn - person - null
+Possession - cold - index(78,2) - noun - null - null
+
+============================79============================
+Kate is diagnosed with cancer.
+Medical_conditions = index(79,3)
+Patient - Kate - index(79,1) - propn - person - null
+Ailment - cancer - index(79,5) - noun - null - null
+
+============================80============================
+John suffers from a headache.
+Medical_conditions = index(80,2)
+Patient - John - index(80,1) - propn - person - null
+Ailment - headache - index(80,5) - noun - null - null
+
+============================81============================
+Susan is infected with a virus.
+Medical_conditions = index(81,3)
+Patient - Susan - index(81,1) - propn - person - null
+Ailment - virus - index(81,6) - noun - null - null
+
+============================82============================
+Kate is diagnosed with diabetes.
+Medical_conditions = index(82,3)
+Patient - Kate - index(82,1) - propn - person - null
+Ailment - diabetes - index(82,5) - noun - null - null
+
+============================83============================
+Bill Gates resigns as a chairman from Microsoft.
+Quitting = index(83,3)
+Employee - Bill_Gates - index(83,1) - propn - person - null
+Position - Microsoft - index(83,8) - propn - org - null
+
+Quitting = index(83,3)
+Employee - Bill_Gates - index(83,1) - propn - person - null
+Position - chairman - index(83,6) - noun - null - null
+Employer - Microsoft - index(83,8) - propn - org - null
+
+============================84============================
+Jeff Immelt retires from GE.
+Quitting = index(84,3)
+Employee - Jeff_Immelt - index(84,1) - propn - person - null
+Position - GE - index(84,5) - propn - org - null
+
+Quitting = index(84,3)
+Employee - Jeff_Immelt - index(84,1) - propn - person - null
+Employer - GE - index(84,5) - propn - org - null
+
+============================85============================
+Steve Ballmer steps down as a CEO from Microsoft.
+Quitting = index(85,3)
+Employee - Steve_Ballmer - index(85,1) - propn - person - null
+Position - Microsoft - index(85,9) - propn - org - null
+
+Quitting = index(85,3)
+Employee - Steve_Ballmer - index(85,1) - propn - person - null
+Position - ceo - index(85,7) - noun - null - null
+Employer - Microsoft - index(85,9) - propn - org - null
+
+============================86============================
+Mary is an Italian.
+People_by_origin = index(86,2)
+Person - Mary - index(86,1) - propn - person - null
+Origin - Italian - index(86,4) - propn - norp - null
+
+============================87============================
+John has a British nationality.
+People_by_origin = index(87,5)
+Person - John - index(87,1) - propn - person - null
+Origin - British - index(87,4) - adj - norp - null
+
+Possession = index(87,2)
+Owner - John - index(87,1) - propn - person - null
+Possession - nationality - index(87,5) - noun - null - null
+
+============================88============================
+Susan is a New Yorker.
+People_by_origin = index(88,2)
+Person - Susan - index(88,1) - propn - person - null
+Origin - New_Yorker - index(88,5) - propn - gpe - null
+
+============================89============================
+Denise is a Parisian.
+People_by_origin = index(89,2)
+Person - Denise - index(89,1) - propn - person - null
+Origin - Parisian - index(89,4) - propn - norp - null
+
+============================90============================
+Mary is a Christian.
+People_by_religion = index(90,2)
+Person - Mary - index(90,1) - propn - person - null
+Religion - Christian - index(90,4) - propn - norp - null
+
+People_by_origin = index(90,2)
+Person - Mary - index(90,1) - propn - person - null
+Origin - Christian - index(90,4) - propn - norp - null
+
+============================91============================
+Steve is a Buddhist.
+People_by_religion = index(91,2)
+Person - Steve - index(91,1) - propn - person - null
+Religion - Buddhist - index(91,4) - propn - norp - null
+
+People_by_origin = index(91,2)
+Person - Steve - index(91,1) - propn - person - null
+Origin - Buddhist - index(91,4) - propn - norp - null
+
+============================92============================
+Mary has a job of a nurse.
+Being_employed = index(92,4)
+Employee - Mary - index(92,1) - propn - person - null
+Task - nurse - index(92,7) - noun - null - null
+
+Being_employed = index(92,4)
+Employee - Mary - index(92,1) - propn - person - null
+Position - nurse - index(92,7) - noun - null - null
+
+Possession = index(92,2)
+Owner - Mary - index(92,1) - propn - person - null
+Possession - job - index(92,4) - noun - null - null
+
+============================93============================
+Kate is a teacher.
+Being_employed = index(93,4)
+Employee - Kate - index(93,1) - propn - person - null
+Position - teacher - index(93,4) - noun - null - null
+
+============================94============================
+John works at IBM.
+Being_employed = index(94,2)
+Employee - John - index(94,1) - propn - person - null
+Place - IBM - index(94,4) - propn - org - null
+
+Being_employed = index(94,2)
+Employee - John - index(94,1) - propn - person - null
+Employer - IBM - index(94,4) - propn - org - null
+
+============================95============================
+Susan works as a singer.
+Being_employed = index(95,2)
+Employee - Susan - index(95,1) - propn - person - null
+Position - singer - index(95,5) - noun - null - null
+
+============================96============================
+Tom works in Berlin.
+Being_employed = index(96,2)
+Employee - Tom - index(96,1) - propn - person - null
+Employer - Berlin - index(96,4) - propn - gpe - null
+
+Being_employed = index(96,2)
+Employee - Tom - index(96,1) - propn - person - null
+Field - Berlin - index(96,4) - propn - gpe - null
+
+Being_employed = index(96,2)
+Employee - Tom - index(96,1) - propn - person - null
+Place - Berlin - index(96,4) - propn - gpe - null
+
+============================97============================
+Mary works with John.
+Collaboration = index(97,2)
+Partner1 - Mary - index(97,1) - propn - person - null
+Partner2 - John - index(97,4) - propn - person - null
+
+============================98============================
+Mary teams up with John on a project.
+Collaboration = index(98,2)
+Partner1 - Mary - index(98,1) - propn - person - null
+Partner2 - John - index(98,5) - propn - person - null
+Undertaking - project - index(98,8) - noun - null - null
+
+============================99============================
+Mary is a partner of John.
+Collaboration = index(99,4)
+Partner1 - Mary - index(99,1) - propn - person - null
+Partner2 - John - index(99,6) - propn - person - null
+
+============================100============================
+Mary dies in Italy.
+Death = index(100,2)
+Protagonist - Mary - index(100,1) - propn - person - null
+Place - Italy - index(100,4) - propn - gpe - null
+
+============================101============================
+Kate dies in 1876.
+Death = index(101,2)
+Protagonist - Kate - index(101,1) - propn - person - null
+Time - 1876 - index(101,4) - num - date - null
+
+Death = index(101,2)
+Protagonist - Kate - index(101,1) - propn - person - null
+Place - 1876 - index(101,4) - num - date - null
+
+============================102============================
+John dies of cancer.
+Death = index(102,2)
+Protagonist - John - index(102,1) - propn - person - null
+Cause - cancer - index(102,4) - noun - null - null
+
+============================103============================
+An orphan dies from some hunger.
+Death = index(103,3)
+Protagonist - orphan - index(103,2) - noun - null - null
+Cause - hunger - index(103,6) - noun - null - null
+
+============================104============================
+A gun is used by a soldier.
+Using = index(104,4)
+Agent - soldier - index(104,7) - noun - null - null
+Instrument - gun - index(104,2) - noun - null - null
+
+============================105============================
+A machine is operated by a laborer.
+Using = index(105,4)
+Agent - laborer - index(105,7) - noun - null - null
+Instrument - machine - index(105,2) - noun - null - null
+
+============================106============================
+A tool will be utilized by a technician.
+Using = index(106,5)
+Agent - technician - index(106,8) - noun - null - null
+Instrument - tool - index(106,2) - noun - null - null
+
+============================107============================
+A phone is being used by Mary.
+Using = index(107,5)
+Agent - Mary - index(107,7) - propn - person - null
+Instrument - phone - index(107,2) - noun - null - null
+
+============================108============================
+A chemical weapon was applied by Syria.
+Using = index(108,5)
+Agent - Syria - index(108,7) - propn - gpe - null
+Instrument - weapon - index(108,3) - noun - null - null
+
+============================109============================
+A military's use of a nuclear weapon is against a law.
+Using = index(109,4)
+Agent - military - index(109,2) - noun - null - null
+Instrument - weapon - index(109,8) - noun - null - null
+
+============================110============================
+A house was built by Jack.
+Building = index(110,4)
+Agent - Jack - index(110,6) - propn - person - null
+Created_entity - house - index(110,2) - noun - null - null
+
+============================111============================
+An airport is being constructed by a company of Hong Kong.
+Building = index(111,5)
+Agent - company - index(111,8) - noun - null - null
+Created_entity - airport - index(111,2) - noun - null - null
+
+============================112============================
+A nuclear plant was constructed by the government.
+Building = index(112,5)
+Agent - government - index(112,8) - noun - null - null
+Created_entity - plant - index(112,3) - noun - null - null
+
+============================113============================
+A dresser is assembled by John.
+Building = index(113,4)
+Agent - John - index(113,6) - propn - person - null
+Created_entity - dresser - index(113,2) - noun - null - null
+
+============================114============================
+The construction of a new road is made by a laborer.
+Building = index(114,8)
+Agent - laborer - index(114,11) - noun - null - null
+Created_entity - construction - index(114,2) - noun - null - null
+
+Create_organization = index(114,8)
+Creator - laborer - index(114,11) - noun - null - null
+Organization - construction - index(114,2) - noun - null - null
+
+Cooking = index(114,8)
+Cook - laborer - index(114,11) - noun - null - null
+Food - construction - index(114,2) - noun - null - null
+
+Building = index(114,2)
+Agent - laborer - index(114,11) - noun - null - null
+Created_entity - road - index(114,6) - noun - null - null
+
+============================115============================
+Gerald Ford was assassinated by Squeaky Fromme.
+Killing = index(115,4)
+Killer - Squeaky_Fromme - index(115,6) - propn - person - null
+Victim - Gerald_Ford - index(115,1) - propn - person - null
+
+============================116============================
+50 children were killed by a gunman.
+Killing = index(116,4)
+Killer - gunman - index(116,7) - noun - null - null
+Victim - child - index(116,2) - noun - null - 50
+
+============================117============================
+Some young women are massacred by the army.
+Killing = index(117,5)
+Killer - army - index(117,8) - noun - null - null
+Victim - woman - index(117,3) - noun - null - null
+
+============================118============================
+Rachel is a killer of a policeman.
+Killing = index(118,4)
+Killer - Rachel - index(118,1) - propn - person - null
+Victim - policeman - index(118,7) - noun - null - null
+
+============================119============================
+Jack is arrested by the police for murder.
+Arrest = index(119,3)
+Authorities - police - index(119,6) - noun - null - null
+Suspect - Jack - index(119,1) - propn - person - null
+Charges - murder - index(119,8) - noun - null - null
+
+============================120============================
+The police arrested Harry for shoplifting.
+Arrest = index(120,3)
+Authorities - police - index(120,2) - noun - null - null
+Suspect - Harry - index(120,4) - propn - person - null
+Charges - shoplifting - index(120,6) - noun - null - null
+
+============================121============================
+A citizen is apprehended by FBI for treason.
+Arrest = index(121,4)
+Authorities - FBI - index(121,6) - propn - org - null
+Suspect - citizen - index(121,2) - noun - null - null
+Charges - treason - index(121,8) - noun - null - null
+
+============================122============================
+Madoff is under arrest by police for fraud.
+Arrest = index(122,4)
+Authorities - police - index(122,6) - noun - null - null
+Suspect - Madoff - index(122,1) - propn - person - null
+Charges - fraud - index(122,8) - noun - null - null
+
+============================123============================
+A governor was arrested by EFCC on a charge of corruption.
+Arrest = index(123,4)
+Authorities - EFCC - index(123,6) - propn - org - null
+Suspect - governor - index(123,2) - noun - null - null
+Charges - corruption - index(123,11) - noun - null - null
+
+============================124============================
+A strike against Libya is launched by the US.
+Attack = index(124,2)
+Assailant - US - index(124,9) - propn - gpe - null
+Victim - Libya - index(124,4) - propn - gpe - null
+
+============================125============================
+An assault on Benghazi was launched by US troops.
+Attack = index(125,2)
+Assailant - US_troop - index(125,9) - noun - null - null
+Victim - Benghazi - index(125,4) - propn - gpe - null
+
+============================126============================
+A soldier was ambushed by a rebel.
+Attack = index(126,4)
+Assailant - rebel - index(126,7) - noun - null - null
+Victim - soldier - index(126,2) - noun - null - null
+
+============================127============================
+A guardsman is attacked by a mysterious fighter.
+Attack = index(127,4)
+Assailant - fighter - index(127,8) - noun - null - null
+Victim - guardsman - index(127,2) - noun - null - null
+
+============================128============================
+A young girl is assaulted by a gang.
+Attack = index(128,5)
+Assailant - gang - index(128,8) - noun - null - null
+Victim - girl - index(128,3) - noun - null - null
+
+============================129============================
+Bill Gates is a chairman of the Gates Foundation.
+Leadership = index(129,5)
+Leader - Bill_Gates - index(129,1) - propn - person - null
+Governed - the_Gates_Foundation - index(129,9) - propn - org - null
+Role - chairman - index(129,5) - noun - null - null
+
+============================130============================
+Jordan is ruled by King Hussein.
+Leadership = index(130,3)
+Leader - King_Hussein - index(130,5) - propn - person - null
+Governed - Jordan - index(130,1) - propn - person - null
+
+============================131============================
+Xi Jinping is the chief of the Communist Party of China.
+Leadership = index(131,5)
+Leader - Xi_Jinping - index(131,1) - propn - person - null
+Governed - the_Communist_Party_of_China - index(131,9) - propn - org - null
+Role - chief - index(131,5) - noun - null - null
+
+============================132============================
+Google is led by Larry Page.
+Leadership = index(132,3)
+Leader - Larry_Page - index(132,5) - propn - person - null
+Governed - Google - index(132,1) - propn - org - null
+
+============================133============================
+Bill de Blasio is a governor of New York City.
+Leadership = index(133,6)
+Leader - Bill_de_Blasio - index(133,1) - propn - person - null
+Governed - New_York_City - index(133,10) - propn - gpe - null
+Role - governor - index(133,6) - noun - null - null
+
+============================134============================
+General Motors is a manufacturer of some vehicles.
+Manufacturing = index(134,5)
+Producer - General_Motors - index(134,2) - propn - org - null
+Product - vehicle - index(134,8) - noun - null - null
+
+============================135============================
+Microsoft is a maker of some software.
+Manufacturing = index(135,4)
+Producer - Microsoft - index(135,1) - propn - org - null
+Product - software - index(135,7) - noun - null - null
+
+============================136============================
+Some shoes are produced by Nike.
+Manufacturing = index(136,4)
+Producer - Nike - index(136,6) - propn - org - null
+Product - shoe - index(136,2) - noun - null - null
+
+============================137============================
+Pfizer is a producer of some drugs.
+Manufacturing = index(137,4)
+Producer - Pfizer - index(137,1) - propn - org - null
+Product - drug - index(137,7) - noun - null - null
+
+============================138============================
+Some smartphones are manufactured by Foxconn.
+Manufacturing = index(138,4)
+Producer - Foxconn - index(138,6) - propn - org - null
+Product - smartphone - index(138,2) - noun - null - null
+
+============================139============================
+1000000 dollars is earned by Puerto Rico on tourism.
+Earnings = index(139,4)
+Earner - Puerto_Rico - index(139,7) - propn - gpe - null
+Money - dollar - index(139,2) - noun - null - 1000000
+Goods - tourism - index(139,9) - noun - null - null
+
+Education = index(139,4)
+Student - Puerto_Rico - index(139,7) - propn - gpe - null
+Degree - dollar - index(139,2) - noun - null - 1000000
+
+============================140============================
+1000000 dollars was made by Warren Buffett on investment.
+Earnings = index(140,4)
+Earner - Warren_Buffett - index(140,6) - propn - person - null
+Money - dollar - index(140,2) - noun - null - 1000000
+Goods - investment - index(140,9) - noun - null - null
+
+Building = index(140,4)
+Agent - Warren_Buffett - index(140,6) - propn - person - null
+Created_entity - dollar - index(140,2) - noun - null - 1000000
+
+Create_organization = index(140,4)
+Creator - Warren_Buffett - index(140,6) - propn - person - null
+Organization - dollar - index(140,2) - noun - null - 1000000
+
+Cooking = index(140,4)
+Cook - Warren_Buffett - index(140,6) - propn - person - null
+Food - dollar - index(140,2) - noun - null - 1000000
+
+============================141============================
+A revenue of 1000000 dollars on healthcare is generated by Pfizer.
+Earnings = index(141,2)
+Earner - Pfizer - index(141,11) - propn - org - null
+Money - dollar - index(141,5) - noun - null - 1000000
+Goods - healthcare - index(141,7) - noun - null - null
+
+============================142============================
+John has a monthly income of 3000 dollars.
+Earnings = index(142,5)
+Earner - John - index(142,1) - propn - person - null
+Money - dollar - index(142,8) - noun - null - 3000
+
+Possession = index(142,2)
+Owner - John - index(142,1) - propn - person - null
+Possession - income - index(142,5) - noun - null - null
+
+============================143============================
+A revenue of 300000000 dollars on Ecommerce is made by Amazon.
+Building = index(143,9)
+Agent - Amazon - index(143,11) - propn - org - null
+Created_entity - revenue - index(143,2) - noun - null - null
+
+Create_organization = index(143,9)
+Creator - Amazon - index(143,11) - propn - org - null
+Organization - revenue - index(143,2) - noun - null - null
+
+Cooking = index(143,9)
+Cook - Amazon - index(143,11) - propn - org - null
+Food - revenue - index(143,2) - noun - null - null
+
+Earnings = index(143,2)
+Earner - Amazon - index(143,11) - propn - org - null
+Money - dollar - index(143,5) - noun - null - 300000000
+Goods - Ecommerce - index(143,7) - propn - null - null
+
+============================144============================
+Rafael Nadal was beat by Roger Federer in US Open.
+Beat_opponent = index(144,4)
+Winner - Roger_Federer - index(144,6) - propn - person - null
+Loser - Rafael_Nadal - index(144,1) - propn - person - null
+Competition - US_Open - index(144,10) - propn - org - null
+
+============================145============================
+Hillary Clinton was defeated by Donald Trump in the US election.
+Beat_opponent = index(145,4)
+Winner - Donald_Trump - index(145,6) - propn - person - null
+Loser - Hillary_Clinton - index(145,1) - propn - person - null
+Competition - US_election - index(145,11) - noun - null - null
+
+============================146============================
+Walmart was beat by Amazon in online shopping.
+Beat_opponent = index(146,3)
+Winner - Amazon - index(146,5) - propn - org - null
+Loser - Walmart - index(146,1) - propn - org - null
+Competition - shopping - index(146,8) - noun - null - null
+
+============================147============================
+Brazil's defeat in the World Cup is unexpected.
+Beat_opponent = index(147,3)
+Loser - Brazil - index(147,1) - propn - gpe - null
+Competition - the_World_Cup - index(147,7) - propn - event - null
+
+============================148============================
+Jack's pain is alleviated by a doctor with a painkiller.
+Cure = index(148,5)
+Healer - doctor - index(148,8) - noun - null - null
+Patient - pain - index(148,3) - noun - null - null
+Medication - painkiller - index(148,11) - noun - null - null
+
+Cure = index(148,5)
+Healer - doctor - index(148,8) - noun - null - null
+Patient - Jack - index(148,1) - propn - person - null
+Disease - pain - index(148,3) - noun - null - null
+Medication - painkiller - index(148,11) - noun - null - null
+
+============================149============================
+Jack was healed with some antibiotics by a physician.
+Cure = index(149,3)
+Healer - physician - index(149,9) - noun - null - null
+Disease - Jack - index(149,1) - propn - person - null
+Medication - antibiotic - index(149,6) - noun - null - null
+
+Cure = index(149,3)
+Healer - physician - index(149,9) - noun - null - null
+Patient - Jack - index(149,1) - propn - person - null
+Medication - antibiotic - index(149,6) - noun - null - null
+
+============================150============================
+A soldier was treated by a doctor with Chinese medicine.
+Cure = index(150,4)
+Healer - doctor - index(150,7) - noun - null - null
+Disease - soldier - index(150,2) - noun - null - null
+Medication - medicine - index(150,10) - noun - null - null
+
+Cure = index(150,4)
+Healer - doctor - index(150,7) - noun - null - null
+Patient - soldier - index(150,2) - noun - null - null
+Medication - medicine - index(150,10) - noun - null - null
+
+============================151============================
+Jack's stomachache was cured by a doctor with Aspirin.
+Cure = index(151,5)
+Healer - doctor - index(151,8) - noun - null - null
+Patient - stomachache - index(151,3) - noun - null - null
+Medication - Aspirin - index(151,10) - propn - product - null
+
+Cure = index(151,5)
+Healer - doctor - index(151,8) - noun - null - null
+Patient - Jack - index(151,1) - propn - person - null
+Disease - stomachache - index(151,3) - noun - null - null
+Medication - Aspirin - index(151,10) - propn - product - null
+
+============================152============================
+A hostage returns to the US.
+Travel = index(152,3)
+Traveler - hostage - index(152,2) - noun - null - null
+Goal - US - index(152,6) - propn - gpe - null
+
+============================153============================
+China has been visited by Shinzo Abe.
+Travel = index(153,4)
+Traveler - Shinzo_Abe - index(153,6) - propn - person - null
+Goal - China - index(153,1) - propn - gpe - null
+
+============================154============================
+George approaches to a hospital.
+Travel = index(154,2)
+Traveler - George - index(154,1) - propn - person - null
+Goal - hospital - index(154,5) - noun - null - null
+
+============================155============================
+Donald Trump comes to Texas after a hurricane.
+Travel = index(155,3)
+Traveler - Donald_Trump - index(155,1) - propn - person - null
+Goal - Texas - index(155,5) - propn - gpe - null
+
+============================156============================
+The victory of the war was marked by the arrival of the British army in Normandy.
+Travel = index(156,10)
+Traveler - army - index(156,14) - noun - null - null
+Goal - Normandy - index(156,16) - propn - gpe - null
+
+============================157============================
+Los Angeles is exited by John.
+Travel = index(157,4)
+Traveler - John - index(157,6) - propn - person - null
+Source - Los_Angeles - index(157,1) - propn - gpe - null
+
+============================158============================
+A park is left by John.
+Travel = index(158,4)
+Traveler - John - index(158,6) - propn - person - null
+Source - park - index(158,2) - noun - null - null
+
+Quitting = index(158,4)
+Employee - John - index(158,6) - propn - person - null
+Employer - park - index(158,2) - noun - null - null
+
+============================159============================
+A military departs from Pearl Harbor.
+Travel = index(159,3)
+Traveler - military - index(159,2) - noun - null - null
+Source - Pearl_Harbor - index(159,6) - propn - gpe - null
+
+============================160============================
+An opponent escapes from Zimbabwe.
+Travel = index(160,3)
+Traveler - opponent - index(160,2) - noun - null - null
+Source - Zimbabwe - index(160,5) - propn - gpe - null
+
+============================161============================
+The police is called by Mary.
+Contacting = index(161,4)
+Communicator - Mary - index(161,6) - propn - person - null
+Addressee - police - index(161,2) - noun - null - null
+
+============================162============================
+A senator will be phoned by John.
+Contacting = index(162,5)
+Communicator - John - index(162,7) - propn - person - null
+Addressee - senator - index(162,2) - noun - null - null
+
+============================163============================
+A potential customer was reached by a company.
+Contacting = index(163,5)
+Communicator - company - index(163,8) - noun - null - null
+Addressee - customer - index(163,3) - noun - null - null
+
+============================164============================
+An employer is contacted by Mary.
+Contacting = index(164,4)
+Communicator - Mary - index(164,6) - propn - person - null
+Addressee - employer - index(164,2) - noun - null - null
+
+============================165============================
+John makes a call to his own girlfriend.
+Contacting = index(165,4)
+Communicator - John - index(165,1) - propn - person - null
+Addressee - girlfriend - index(165,8) - noun - null - null
+
+Building = index(165,2)
+Agent - John - index(165,1) - propn - person - null
+Created_entity - call - index(165,4) - noun - null - null
+
+Create_organization = index(165,2)
+Creator - John - index(165,1) - propn - person - null
+Organization - call - index(165,4) - noun - null - null
+
+Cooking = index(165,2)
+Cook - John - index(165,1) - propn - person - null
+Food - call - index(165,4) - noun - null - null
+
+============================166============================
+A student protests against the government.
+Protest = index(166,3)
+Protester - student - index(166,2) - noun - null - null
+Side - government - index(166,6) - noun - null - null
+
+============================167============================
+A civilian demonstrates against Saddam Hussein.
+Protest = index(167,3)
+Protester - civilian - index(167,2) - noun - null - null
+Side - Saddam_Hussein - index(167,5) - propn - person - null
+
+============================168============================
+A union makes a demonstration against the management of a company.
+Protest = index(168,5)
+Protester - union - index(168,2) - noun - null - null
+Side - management - index(168,8) - noun - null - null
+
+Building = index(168,3)
+Agent - union - index(168,2) - noun - null - null
+Created_entity - demonstration - index(168,5) - noun - null - null
+
+Create_organization = index(168,3)
+Creator - union - index(168,2) - noun - null - null
+Organization - demonstration - index(168,5) - noun - null - null
+
+Cooking = index(168,3)
+Cook - union - index(168,2) - noun - null - null
+Food - demonstration - index(168,5) - noun - null - null
+
+============================169============================
+A form is submitted by Mary to IRS.
+Submitting_documents = index(169,4)
+Submitter - Mary - index(169,6) - propn - person - null
+Documents - form - index(169,2) - noun - null - null
+Authority - IRS - index(169,8) - propn - org - null
+
+============================170============================
+A ballot is handed in by a voter.
+Submitting_documents = index(170,4)
+Submitter - voter - index(170,8) - noun - null - null
+Documents - ballot - index(170,2) - noun - null - null
+
+============================171============================
+Some paperwork is filed by a new employee.
+Submitting_documents = index(171,4)
+Submitter - employee - index(171,8) - noun - null - null
+Documents - paperwork - index(171,2) - noun - null - null
+
+============================172============================
+A report will be turned in to CNN by a correspondent.
+Submitting_documents = index(172,5)
+Submitter - correspondent - index(172,11) - noun - null - null
+Documents - report - index(172,2) - noun - null - null
+Authority - CNN - index(172,8) - propn - org - null
+
+============================173============================
+A patent was filed to USPTO by IBM.
+Submitting_documents = index(173,4)
+Submitter - IBM - index(173,8) - propn - org - null
+Documents - patent - index(173,2) - noun - null - null
+Authority - USPTO - index(173,6) - propn - org - null
+
+============================174============================
+Kate Winslet co-stars with Leonardo DiCaprio in Titanic.
+Performing = index(174,3)
+Performer - Kate_Winslet - index(174,1) - propn - person - null
+Performance - Titanic - index(174,8) - propn - work_of_art - null
+Costar - Leonardo_DiCaprio - index(174,5) - propn - person - null
+
+============================175============================
+Kate co-stars with Leonardo in Titanic.
+Performing = index(175,2)
+Performer - Kate - index(175,1) - propn - person - null
+Performance - Titanic - index(175,6) - propn - null - null
+Costar - Leonardo - index(175,4) - propn - person - null
+
+============================176============================
+John Mills acts as a soldier in Dunkirk.
+Performing = index(176,3)
+Performer - John_Mills - index(176,1) - propn - person - null
+Role - soldier - index(176,6) - noun - null - null
+Performance - Dunkirk - index(176,8) - propn - gpe - null
+
+============================177============================
+The role of Hamlet is featured by John in a new film.
+Performing = index(177,6)
+Performer - John - index(177,8) - propn - person - null
+Role - Hamlet - index(177,4) - propn - work_of_art - null
+Performance - film - index(177,12) - noun - null - null
+
+Performing = index(177,6)
+Performer - John - index(177,8) - propn - person - null
+Role - role - index(177,2) - noun - null - null
+Performance - film - index(177,12) - noun - null - null
+
+============================178============================
+Vito Corleone was played by Marlon Brando in The Godfather.
+Performing = index(178,4)
+Performer - Marlon_Brando - index(178,6) - propn - person - null
+Role - Vito_Corleone - index(178,1) - propn - person - null
+Performance - The_Godfather - index(178,10) - propn - work_of_art - null
+
+============================179============================
+Zoe Saldana appears in Avatar.
+Performing = index(179,3)
+Performer - Zoe_Saldana - index(179,1) - propn - person - null
+Performance - Avatar - index(179,5) - propn - org - null
+
+============================180============================
+Captain Jack Sparrow is starred by Johnny Depp in Pirates of the Caribbean.
+Performing = index(180,5)
+Performer - Johnny_Depp - index(180,7) - propn - person - null
+Role - Captain_Jack_Sparrow - index(180,1) - propn - person - null
+Performance - Pirates_of_the_Caribbean - index(180,10) - propn - work_of_art - null
+
+============================181============================
+A protestor is released by the police.
+Publishing = index(181,4)
+Author - police - index(181,7) - noun - null - null
+Work - protestor - index(181,2) - noun - null - null
+
+Releasing_from_custody = index(181,4)
+Authorities - police - index(181,7) - noun - null - null
+Suspect - protestor - index(181,2) - noun - null - null
+
+============================182============================
+Nelson Mandela is released from prison.
+Releasing_from_custody = index(182,4)
+Suspect - Nelson_Mandela - index(182,1) - propn - person - null
+Place - prison - index(182,6) - noun - null - null
+
+============================183============================
+A prisoner is released from Iran.
+Releasing_from_custody = index(183,4)
+Suspect - prisoner - index(183,2) - noun - null - null
+Place - Iran - index(183,6) - propn - gpe - null
+
+============================184============================
+A criminal is released by FBI.
+Publishing = index(184,4)
+Author - FBI - index(184,6) - propn - org - null
+Work - criminal - index(184,2) - noun - null - null
+
+Releasing_from_custody = index(184,4)
+Authorities - FBI - index(184,6) - propn - org - null
+Suspect - criminal - index(184,2) - noun - null - null
+
+============================185============================
+A treaty was signed by Eisenhower.
+Sign_agreement = index(185,4)
+Signatory - Eisenhower - index(185,6) - propn - person - null
+Agreement - treaty - index(185,2) - noun - null - null
+
+============================186============================
+John accedes to a contract.
+Sign_agreement = index(186,2)
+Signatory - John - index(186,1) - propn - person - null
+Agreement - contract - index(186,5) - noun - null - null
+
+============================187============================
+The Kyoto protocol was signed by The United States.
+Sign_agreement = index(187,5)
+Signatory - The_United_States - index(187,9) - propn - gpe - null
+Agreement - Kyoto_protocol - index(187,3) - noun - null - null
+
+============================188============================
+A monarch accedes to a bill.
+Sign_agreement = index(188,3)
+Signatory - monarch - index(188,2) - noun - null - null
+Agreement - bill - index(188,6) - noun - null - null
+
+============================189============================
+The UK accedes to a convention.
+Sign_agreement = index(189,3)
+Signatory - UK - index(189,2) - propn - gpe - null
+Agreement - convention - index(189,6) - noun - null - null
+
+============================190============================
+A paper is published in Nature by John.
+Publishing = index(190,4)
+Author - John - index(190,8) - propn - person - null
+Work - paper - index(190,2) - noun - null - null
+Publisher - Nature - index(190,6) - propn - work_of_art - null
+
+============================191============================
+A article on waltz is released by John.
+Publishing = index(191,6)
+Author - John - index(191,8) - propn - person - null
+Work - article - index(191,2) - noun - null - null
+Topic - waltz - index(191,4) - noun - null - null
+
+Releasing_from_custody = index(191,6)
+Authorities - John - index(191,8) - propn - person - null
+Suspect - article - index(191,2) - noun - null - null
+
+============================192============================
+A new book is published by Donald Knuth with MIT Press.
+Publishing = index(192,5)
+Author - Donald_Knuth - index(192,7) - propn - person - null
+Work - book - index(192,3) - noun - null - null
+Publisher - MIT_Press - index(192,11) - propn - org - null
+
+============================193============================
+A memoir of Winston Churchill is released by Cambridge Press.
+Publishing = index(193,7)
+Author - Winston_Churchill - index(193,4) - propn - person - null
+Work - memoir - index(193,2) - noun - null - null
+Publisher - Cambridge_Press - index(193,10) - propn - org - null
+
+Publishing = index(193,7)
+Author - Cambridge_Press - index(193,10) - propn - org - null
+Work - memoir - index(193,2) - noun - null - null
+
+Releasing_from_custody = index(193,7)
+Authorities - Cambridge_Press - index(193,10) - propn - org - null
+Suspect - memoir - index(193,2) - noun - null - null
+
+============================194============================
+A new film is released in Netflix by Angelina Jolie.
+Publishing = index(194,5)
+Author - Angelina_Jolie - index(194,9) - propn - person - null
+Work - film - index(194,3) - noun - null - null
+Publisher - Netflix - index(194,7) - propn - org - null
+
+Releasing_from_custody = index(194,5)
+Authorities - Angelina_Jolie - index(194,9) - propn - person - null
+Suspect - film - index(194,3) - noun - null - null
+
+============================195============================
+A new novel is published by Ernest Hemingway.
+Publishing = index(195,5)
+Author - Ernest_Hemingway - index(195,7) - propn - person - null
+Work - novel - index(195,3) - noun - null - null
+
+============================196============================
+4000 dollars was lost by John on gambling.
+Losing = index(196,4)
+Owner - John - index(196,6) - propn - person - null
+Goods - dollar - index(196,2) - noun - null - 4000
+
+Losing = index(196,4)
+Owner - John - index(196,6) - propn - person - null
+Money - dollar - index(196,2) - noun - null - 4000
+Goods - gambling - index(196,8) - noun - null - null
+
+============================197============================
+Some money is lost by a private investor.
+Losing = index(197,4)
+Owner - investor - index(197,8) - noun - null - null
+Goods - money - index(197,2) - noun - null - null
+
+Losing = index(197,4)
+Owner - investor - index(197,8) - noun - null - null
+Money - money - index(197,2) - noun - null - null
+
+============================198============================
+A hedge fund has a loss of 3000000 dollars on trading.
+Losing = index(198,6)
+Owner - hedge_fund - index(198,3) - noun - null - null
+Money - dollar - index(198,9) - noun - null - 3000000
+Goods - trading - index(198,11) - noun - null - null
+
+Possession = index(198,4)
+Owner - hedge_fund - index(198,3) - noun - null - null
+Possession - loss - index(198,6) - noun - null - null
+
+============================199============================
+3000000 dollars is lost by an airline on international service.
+Losing = index(199,4)
+Owner - airline - index(199,7) - noun - null - null
+Goods - dollar - index(199,2) - noun - null - 3000000
+
+Losing = index(199,4)
+Owner - airline - index(199,7) - noun - null - null
+Money - dollar - index(199,2) - noun - null - 3000000
+Goods - service - index(199,10) - noun - null - null
+
+============================200============================
+A wallet is lost by Mary.
+Losing = index(200,4)
+Owner - Mary - index(200,6) - propn - person - null
+Goods - wallet - index(200,2) - noun - null - null
+
+============================201============================
+A robber surrenders to police.
+Surrendering = index(201,3)
+Authorities - police - index(201,5) - noun - null - null
+Fugitive - robber - index(201,2) - noun - null - null
+
+============================202============================
+Japan surrenders to the Allies.
+Surrendering = index(202,2)
+Authorities - Allies - index(202,5) - propn - org - null
+Fugitive - Japan - index(202,1) - propn - gpe - null
+
+============================203============================
+A protester gives up to authority.
+Surrendering = index(203,3)
+Authorities - authority - index(203,6) - noun - null - null
+Fugitive - protester - index(203,2) - noun - null - null
+
+============================204============================
+Chapo Guzman surrenders to prison on a charge of smuggling.
+Surrendering = index(204,3)
+Authorities - prison - index(204,5) - noun - null - null
+Fugitive - Chapo_Guzman - index(204,1) - propn - person - null
+Charges - smuggling - index(204,10) - noun - null - null
+
+============================205============================
+Mukhtar Robow surrenders to the government.
+Surrendering = index(205,3)
+Authorities - government - index(205,6) - noun - null - null
+Fugitive - Mukhtar_Robow - index(205,1) - propn - person - null
+
+============================206============================
+A description of a frame is written by Mary.
+Text_creation = index(206,7)
+Author - Mary - index(206,9) - propn - person - null
+Text - description - index(206,2) - noun - null - null
+
+============================207============================
+A letter is drafted by a senator.
+Text_creation = index(207,4)
+Author - senator - index(207,7) - noun - null - null
+Text - letter - index(207,2) - noun - null - null
+
+============================208============================
+An essay is composed by a student.
+Text_creation = index(208,4)
+Author - student - index(208,7) - noun - null - null
+Text - essay - index(208,2) - noun - null - null
+
+============================209============================
+A manuscript was typed by John.
+Text_creation = index(209,4)
+Author - John - index(209,6) - propn - person - null
+Text - manuscript - index(209,2) - noun - null - null
+
+============================210============================
+An autobiography was authored by Malala Yousafzai.
+Text_creation = index(210,4)
+Author - Malala_Yousafzai - index(210,7) - propn - person - null
+Text - autobiography - index(210,2) - noun - null - null
+
+============================211============================
+A watch from Mary is snatched by John.
+Theft = index(211,6)
+Perpetrator - John - index(211,8) - propn - person - null
+Goods - watch - index(211,2) - noun - null - null
+Victim - Mary - index(211,4) - propn - person - null
+
+============================212============================
+A painting was stolen by a thief from a museum.
+Theft = index(212,4)
+Perpetrator - thief - index(212,7) - noun - null - null
+Goods - painting - index(212,2) - noun - null - null
+Victim - museum - index(212,10) - noun - null - null
+
+============================213============================
+Some money is swiped from a passenger by John.
+Theft = index(213,4)
+Perpetrator - John - index(213,9) - propn - person - null
+Goods - money - index(213,2) - noun - null - null
+Victim - passenger - index(213,7) - noun - null - null
+
+============================214============================
+A jewel is shoplifted from a shop by a gang.
+Theft = index(214,4)
+Perpetrator - gang - index(214,10) - noun - null - null
+Goods - jewel - index(214,2) - noun - null - null
+Victim - shop - index(214,7) - noun - null - null
+
+============================215============================
+Some documents is embezzled from the governor by a spy.
+Theft = index(215,4)
+Perpetrator - spy - index(215,10) - noun - null - null
+Goods - document - index(215,2) - noun - null - null
+Victim - governor - index(215,7) - noun - null - null
+
+============================216============================
+some slippers is kicked off by John.
+Undressing = index(216,4)
+Wearer - John - index(216,7) - propn - person - null
+Clothing - slipper - index(216,2) - noun - null - null
+
+============================217============================
+A swimsuit is peeled off by Mary.
+Undressing = index(217,4)
+Wearer - Mary - index(217,7) - propn - person - null
+Clothing - swimsuit - index(217,2) - noun - null - null
+
+============================218============================
+A raincoat was removed by John.
+Undressing = index(218,4)
+Wearer - John - index(218,6) - propn - person - null
+Clothing - raincoat - index(218,2) - noun - null - null
+
+============================219============================
+A blouse was slipped by Mary.
+Undressing = index(219,4)
+Wearer - Mary - index(219,6) - propn - person - null
+Clothing - blouse - index(219,2) - noun - null - null
+
+============================220============================
+A scarf is being taken off by John.
+Undressing = index(220,5)
+Wearer - John - index(220,8) - propn - person - null
+Clothing - scarf - index(220,2) - noun - null - null
+
+============================221============================
+Spain participates in the World Cup.
+Participation = index(221,2)
+Participant - Spain - index(221,1) - propn - gpe - null
+Event - the_World_Cup - index(221,6) - propn - event - null
+
+============================222============================
+A student engages in a workshop.
+Participation = index(222,3)
+Participant - student - index(222,2) - noun - null - null
+Event - workshop - index(222,6) - noun - null - null
+
+============================223============================
+A policeman is involved in a shooting.
+Participation = index(223,4)
+Participant - policeman - index(223,2) - noun - null - null
+Event - shooting - index(223,7) - noun - null - null
+
+============================224============================
+A buyer is engaged in an auction.
+Participation = index(224,4)
+Participant - buyer - index(224,2) - noun - null - null
+Event - auction - index(224,7) - noun - null - null
+
+============================225============================
+A terrorist is involved in an explosion.
+Participation = index(225,4)
+Participant - terrorist - index(225,2) - noun - null - null
+Event - explosion - index(225,7) - noun - null - null
+
+============================226============================
+Some wheat is grown by a planter.
+Growing_food = index(226,4)
+Grower - planter - index(226,7) - noun - null - null
+Food - wheat - index(226,2) - noun - null - null
+
+============================227============================
+Some corns are raised by Tom's grandfather.
+Growing_food = index(227,4)
+Grower - grandfather - index(227,8) - noun - null - null
+Food - corn - index(227,2) - noun - null - null
+
+============================228============================
+Some vegetables are grown by Mary.
+Growing_food = index(228,4)
+Grower - Mary - index(228,6) - propn - person - null
+Food - vegetable - index(228,2) - noun - null - null
+
+============================229============================
+Some potatoes are grown by John.
+Growing_food = index(229,4)
+Grower - John - index(229,6) - propn - person - null
+Food - potato - index(229,2) - noun - null - null
+
+============================230============================
+Some carrots are grown by a chef.
+Growing_food = index(230,4)
+Grower - chef - index(230,7) - noun - null - null
+Food - carrot - index(230,2) - noun - null - null
+
+============================231============================
+A book was borrowed from John by Mary.
+Borrow_lend = index(231,4)
+Borrower - Mary - index(231,8) - propn - person - null
+Theme - book - index(231,2) - noun - null - null
+Lender - John - index(231,6) - propn - person - null
+
+============================232============================
+Some money is lent to Venezuela by China.
+Borrow_lend = index(232,4)
+Borrower - Venezuela - index(232,6) - propn - gpe - null
+Theme - money - index(232,2) - noun - null - null
+Lender - China - index(232,8) - propn - gpe - null
+
+============================233============================
+Some equipment was lent to an officer by an army.
+Borrow_lend = index(233,4)
+Borrower - officer - index(233,7) - noun - null - null
+Theme - equipment - index(233,2) - noun - null - null
+Lender - army - index(233,10) - noun - null - null
+
+============================234============================
+A violin was lent to a Syrian refugee by Oxford University.
+Borrow_lend = index(234,4)
+Borrower - refugee - index(234,8) - noun - null - null
+Theme - violin - index(234,2) - noun - null - null
+Lender - Oxford_University - index(234,11) - propn - org - null
+
+============================235============================
+Some shares are borrowed from a company by a seller.
+Borrow_lend = index(235,4)
+Borrower - seller - index(235,10) - noun - null - null
+Theme - share - index(235,2) - noun - null - null
+Lender - company - index(235,7) - noun - null - null
+
+============================236============================
+Red Lobster is a seafood restaurant.
+Restaurant = index(236,6)
+Restaurant - Red_Lobster - index(236,2) - propn - org - null
+Cuisine - seafood - index(236,5) - noun - null - null
+
+Restaurant = index(236,6)
+Restaurant - Red_Lobster - index(236,2) - propn - org - null
+Price - seafood - index(236,5) - noun - null - null
+
+============================237============================
+McDonalds is a burger restaurant.
+Restaurant = index(237,5)
+Restaurant - McDonalds - index(237,1) - propn - org - null
+Cuisine - burger - index(237,4) - noun - null - null
+
+Restaurant = index(237,5)
+Restaurant - McDonalds - index(237,1) - propn - org - null
+Price - burger - index(237,4) - noun - null - null
+
+============================238============================
+Curry Club is an Indian restaurant.
+Restaurant = index(238,6)
+Restaurant - Curry_Club - index(238,2) - propn - org - null
+Cuisine - Indian - index(238,5) - adj - norp - null
+
+Restaurant = index(238,6)
+Restaurant - Curry_Club - index(238,2) - propn - org - null
+Price - Indian - index(238,5) - adj - norp - null
+
+============================239============================
+Ippudo is a cheap and Asian restaurant in New York City.
+Restaurant = index(239,7)
+Restaurant - Ippudo - index(239,1) - propn - org - null
+Price - Asian - index(239,6) - adj - norp - null
+Cuisine - cheap - index(239,4) - adj - null - null
+Place - New_York_City - index(239,11) - propn - gpe - null
+
+Restaurant = index(239,7)
+Restaurant - Ippudo - index(239,1) - propn - org - null
+Price - cheap - index(239,4) - adj - null - null
+Cuisine - Asian - index(239,6) - adj - norp - null
+Place - New_York_City - index(239,11) - propn - gpe - null
+
+============================240============================
+Panda Express is a cheap and Chinese restaurant.
+Restaurant = index(240,8)
+Restaurant - Panda_Express - index(240,2) - propn - org - null
+Price - Chinese - index(240,7) - adj - norp - null
+Cuisine - cheap - index(240,5) - adj - null - null
+
+Restaurant = index(240,8)
+Restaurant - Panda_Express - index(240,2) - propn - org - null
+Price - cheap - index(240,5) - adj - null - null
+Cuisine - Chinese - index(240,7) - adj - norp - null
+
+============================241============================
+Some coal is exported to Japan by China.
+Import_export = index(241,4)
+Importer - Japan - index(241,6) - propn - gpe - null
+Exporter - China - index(241,8) - propn - gpe - null
+Goods - coal - index(241,2) - noun - null - null
+
+============================242============================
+Some oil is imported from Saudi Arabia by the US.
+Import_export = index(242,4)
+Importer - US - index(242,10) - propn - gpe - null
+Exporter - Saudi_Arabia - index(242,7) - propn - gpe - null
+Goods - oil - index(242,2) - noun - null - null
+
+============================243============================
+Some automobiles are exported to Korea by Germany.
+Import_export = index(243,4)
+Importer - Korea - index(243,6) - propn - gpe - null
+Exporter - Germany - index(243,8) - propn - gpe - null
+Goods - automobile - index(243,2) - noun - null - null
+
+============================244============================
+Some fighters are exported to Iran by Russia.
+Import_export = index(244,4)
+Importer - Iran - index(244,6) - propn - gpe - null
+Exporter - Russia - index(244,8) - propn - gpe - null
+Goods - fighter - index(244,2) - noun - null - null
+
+============================245============================
+Some lambs are imported from Australia by the US.
+Import_export = index(245,4)
+Importer - US - index(245,9) - propn - gpe - null
+Exporter - Australia - index(245,6) - propn - gpe - null
+Goods - lamb - index(245,2) - noun - null - null
+
+============================246============================
+A meeting was scheduled by Mary.
+Scheduling = index(246,4)
+Agent - Mary - index(246,6) - propn - person - null
+Event - meeting - index(246,2) - noun - null - null
+
+============================247============================
+A dental appointment is set up by John.
+Scheduling = index(247,5)
+Agent - John - index(247,8) - propn - person - null
+Event - appointment - index(247,3) - noun - null - null
+
+============================248============================
+A trip to Japan is arranged by John.
+Scheduling = index(248,6)
+Agent - John - index(248,8) - propn - person - null
+Event - trip - index(248,2) - noun - null - null
+Place - Japan - index(248,4) - propn - gpe - null
+
+Travel = index(248,2)
+Traveler - John - index(248,8) - propn - person - null
+Goal - Japan - index(248,4) - propn - gpe - null
+
+============================249============================
+An interview was scheduled by Mary.
+Scheduling = index(249,4)
+Agent - Mary - index(249,6) - propn - person - null
+Event - interview - index(249,2) - noun - null - null
+
+============================250============================
+A forum is arranged by some students.
+Scheduling = index(250,4)
+Agent - student - index(250,7) - noun - null - null
+Event - forum - index(250,2) - noun - null - null
+
