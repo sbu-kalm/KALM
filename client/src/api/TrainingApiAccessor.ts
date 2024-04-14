@@ -1,14 +1,27 @@
 const baseUrl = "http://127.0.0.1:5000";
 
+// TO DO: make this not as repetiive by placing in different file
+interface Role {
+    name: string,
+    color: string
+}
+
+interface Word {
+    idx: number,
+    text: string,
+    role?: Role
+}
+
 // send annotated sentence to KALM
-export const sendAnnotation = async ({text, frame}: {text: string, frame: string}) => {
+export const sendAnnotation = async ({text, frame, words}: {text: string, frame: string, words: Word[]}) => {
     try {
         const res = await fetch(`${baseUrl}/training/annotate`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 input_text: text,
-                frame: frame
+                frame: frame,
+                words: words
             }),
         });
         console.log(res);
