@@ -1,0 +1,6 @@
+============================1============================
+Mary has a little lamb.
+Possession = index(1,2)
+Owner - Mary - index(1,1) - propn - person - null
+Possession - lamb - index(1,5) - noun - null - null
+

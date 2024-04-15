@@ -1,0 +1,306 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KALM for factual language</title>
+    <link rel="shortcut icon" href="#">
+    <style>
+    .button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    }
+    </style>
+</head>
+
+<body>
+<h1>KALM for factual language</h1>
+<textarea name="message" rows="6" cols="60" id="msg" style="font-size:15pt"></textarea>
+<select name="ont" id="ont" onchange="switch_ontology(this.options[this.options.selectedIndex].value)">
+    <option value="kalm">CNLD</option>
+    <option value="kalm2">CNLDM</option>
+    <option value="framenet">NLD</option>
+</select>
+<input class="button" type="button" value="parse" onclick="stanza_parse_input()"/>
+<input class="button" type="button" value="batch" onclick="stanza_parse_batch()"/>
+<!--<input class="button" type="button" value="disambiguate" onclick="disambiguate()"/>-->
+<p id="display1">{{ temp }}</p>
+</body>
+
+<script type="text/javascript" src = "{{url_for('static', filename='jquery.min.js')}}"></script>
+<script type="text/javascript">
+   function switch_ontology(ontText)
+   {
+       $.ajax(
+       {
+         type: "POST",
+         url: "/switch-ontology",
+         contentType: "application/json; charset=utf-8",
+         data: ontText,
+         dataType: "text",
+         success: function(msg)
+         {
+            console.log(msg);
+         },
+         error: function (xhr, status, error) {
+            console.log(error);
+         }
+       });
+   }
+   function stanza_parse_input()
+   {
+       $("#display1").html("parsing by Stanza...");
+       $.ajax(
+       {
+         type: "POST",
+         url: "/stanza-parse-input",
+         contentType: "application/json; charset=utf-8",
+         data: $("#msg").val(),
+         dataType: "text",
+         success: function(msg)
+         {
+            get_sentence_level_rejected_sentences();
+         },
+         error: function (xhr, status, error) {
+            console.log(error);
+         }
+       });
+   }
+   function stanza_parse_batch()
+   {
+       $("#display1").html("parsing by Stanza...");
+       $.ajax(
+       {
+         type: "POST",
+         url: "/stanza-parse-batch",
+         dataType: "html",
+         success: function(msg)
+         {
+            get_sentence_level_rejected_sentences();
+         },
+         error: function (xhr, status, error) {
+            console.log(error);
+         }
+       });
+   }
+   function get_sentence_level_rejected_sentences()
+   {
+       $("#display1").html("sentence-level verb-centric check...");
+       $.ajax(
+       {
+         type: "POST",
+         url: "/get-sentence-level-rejected-sentences",
+         dataType: "html",
+         success: function(msg)
+         {
+            paraparse_and_serialize();
+         },
+         error: function (xhr, status, error) {
+            console.log(error);
+         }
+       });
+   }
+//   function get_clause_level_rejected_sentences()
+//   {
+//       $("#display1").html("clause-level verb-centric check...");
+//       $.ajax(
+//       {
+//         type: "POST",
+//         url: "/get-clause-level-rejected-sentences",
+//         dataType: "html",
+//         success: function(msg)
+//         {
+//            paraparse_and_serialize();
+//         },
+//         error: function (xhr, status, error) {
+//            console.log(error);
+//         }
+//       });
+//   }
+//    function get_coref_sentences()
+//    {
+//        $("#display1").html("checking coref...");
+//        $.ajax(
+//        {
+//          type: "POST",
+//          url: "/get-coref-sentences",
+//          dataType: "html",
+//          success: function(corefSentences)
+//          {
+//              var corefSents = JSON.parse(corefSentences);
+//              var corefs = {};
+//              var i = 0;
+//              for (var key in corefSents)
+//              {
+//                 var coref = corefSents[key][1];
+//                  if (!coref) {
+//                     i = i + 1;
+//                     coref = prompt(`${i}. Please specify the coref in \"${corefSents[key][0]}\": `, "");
+//                  }
+//                  corefs[parseInt(key)] = [corefSents[key][0], coref];
+//                  console.log(coref);
+//              }
+//              console.log(corefs);
+//              get_paraphrasable_sentences(corefs);
+//          },
+//          error: function (xhr, status, error) {
+//             console.log(error);
+//          }
+//        });
+//    }
+//    function get_paraphrasable_sentences(corefs)
+//    {
+//        $("#display1").html("resolving corefs...");
+//        $.ajax(
+//        {
+//          type: "POST",
+//          url: "/get-paraphrasable-sentences",
+//          contentType: "application/json; charset=utf-8",
+//          data: JSON.stringify(corefs),
+//          dataType: "html",
+//          success: function(paraphrasableSentences)
+//          {
+//              var paraphrasableSents = JSON.parse(paraphrasableSentences);
+//              var paraphrasedSents = {};
+//              var i = 0;
+//              for (var key in paraphrasableSents)
+//              {
+//                  i = i + 1;
+//                  var paraphrased = prompt(`${i}. By \"${paraphrasableSents[key][0]}\", do you mean \"${paraphrasableSents[key][1]}\" (y/n)`, "");
+//                  while (paraphrased != 'y' && paraphrased != 'n') {
+//                     paraphrased = prompt(`${i}. Invalid! By \"${paraphrasableSents[key][0]}\", do you mean \"${paraphrasableSents[key][1]}\" (y/n)`, "");
+//                  }
+//                  if (paraphrased == 'y') {
+//                     paraphrasedSents[parseInt(key)] = [true, paraphrasableSents[key][1]];
+//                  } else {
+//                     paraphrasedSents[parseInt(key)] = [false, null];
+//                  }
+//              }
+//              console.log(paraphrasedSents);
+//              get_user_assisted_sententeces(paraphrasedSents);
+//          },
+//          error: function (xhr, status, error) {
+//             console.log(error);
+//          }
+//        });
+//    }
+//    function get_user_assisted_sententeces(paraphrasedSents)
+//    {
+//        $("#display1").html("paraphrasing...");
+//        $.ajax(
+//            {
+//                type: "POST",
+//                url: "/get-user-assisted-sentences",
+//                contentType: "application/json; charset=utf-8",
+//                data: JSON.stringify(paraphrasedSents),
+//                dataType: "text",
+//                success: function(userAssistedSentences)
+//                {
+//                     console.log(userAssistedSentences);
+//                     var userAssistedSents = JSON.parse(userAssistedSentences);
+//                     var specifiedIndices = {};
+//                     var validInput = function(split_sent, split_input) {
+//                         if (split_input.length == 0) {
+//                             return false
+//                         } 
+//                         for (var i in split_input) {
+//                             var index = split_input[i];
+//                             if (isNaN(parseInt(index)) || parseInt(index) < 0 || parseInt(index) > split_sent.length) {
+//                                 return false
+//                             }
+//                         }
+//                         return true
+//                     }
+//                     for (var key in userAssistedSents)
+//                     {
+//                         var anchorVerbIdx = prompt(`${key}. Please specify the main verbs of \"${userAssistedSents[key]}\"`, "");
+//                         var split_sent = userAssistedSents[key].split(" ");
+//                         var split_input = anchorVerbIdx.split(" ");
+//                         while (!validInput(split_sent, split_input))
+//                         {
+//                             anchorVerbIdx = prompt(`${key}. Invalid! Please re-specify the main verbs of \"${userAssistedSents[key]}\"`, "");
+//                             split_input = anchorVerbIdx.split(" ")
+//                         }
+//                         var indices = [];
+//                         for (var i in split_input)
+//                         {
+//                             indices.push(parseInt(split_input[i]));
+//                         }
+//                         console.log(indices);
+//                         specifiedIndices[parseInt(key)] = indices;
+//                     }
+//                     console.log(specifiedIndices);
+//                     specify_anchor_verbs(specifiedIndices);
+//                },
+//                error: function (xhr, status, error) {
+//                    console.log(error);
+//                }
+//            });
+//    }
+//    function specify_anchor_verbs(specifiedIndices)
+//    {
+//        $("#display1").html("specifying anchor verbs...");
+//        $.ajax(
+//            {
+//                type: "POST",
+//                url: "/specify-anchor-verbs",
+//                contentType: "application/json; charset=utf-8",
+//                data: JSON.stringify(specifiedIndices),
+//                dataType: "text",
+//                success: function(msg)
+//                {
+//                    paraparse_and_serialize();
+//                    console.log(msg);
+//                },
+//                error: function (xhr, status, error) {
+//                    console.log(error);
+//                }
+//            });
+//    }
+   function paraparse_and_serialize()
+   {
+       $("#display1").html("paraparsing...");
+       $.ajax(
+           {
+               type: "POST",
+               url: "/paraparse-and-serialize",
+               contentType: "application/json; charset=utf-8",
+               dataType: "text",
+               success: function(msg)
+               {
+                   console.log(msg);
+                   $("#display1").html(msg);
+                   disambiguate();
+               },
+               error: function (xhr, status, error) {
+                   console.log(error);
+               }
+           });
+   }
+   function disambiguate()
+   {
+       $("#display1").html("disambiguating...");
+       $.ajax(
+           {
+               type: "POST",
+               url: "/disambiguate",
+               contentType: "application/json; charset=utf-8",
+               dataType: "text",
+               success: function(msg)
+               {
+                   console.log(msg);
+                   $("#display1").html(msg);
+               },
+               error: function (xhr, status, error) {
+                   console.log(error);
+               }
+           });
+   }
+</script>
+</html>
