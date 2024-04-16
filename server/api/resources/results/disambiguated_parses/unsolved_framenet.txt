@@ -1,0 +1,322 @@
+21-6 out of 250 that are wrongly disambiguated (90.4%)->(94.0%)
+
+2 scores P, R, F1 for all comparison systems, one is frame level (frame is not identified or misidentified), one is for frame elements (frame element are not identified or misidentified)
+
+********** FrC (prat) using metaphor, highgly unlikely to be used in a factual sentence
+============================18============================
+Four years ago I bought an old Harmony Sovereign acoustic guitar for 20 dollars from an absolute prat.
+[Commerce_buy] 0.6455610349179718
+Buyer = i = 1.2 = pronoun
+Seller = prat = 0.08486665299799342 = The fleshy part of the human body that you sit on
+	bn:00053479n - Derivationally related form - bn:00090670v - Derivationally related form - bn:00053458n - hyponym - bn:15125301n - hypernym - bn:00005913n
+Goods = harmony sovereign acoustic guitar = 1.4211819069603104 = A stringed instrument usually having six strings; played by strumming or plucking
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00046965n - hypernym - bn:00074695n - hypernym - bn:00042150n
+Money = dollar = 1.2 = some currency
+
+[Commerce_buy] 0.38799348387419663
+Buyer = i = 1.2 = pronoun
+Seller = prat = 0.08486665299799342 = The fleshy part of the human body that you sit on
+	bn:00053479n - Derivationally related form - bn:00090670v - Derivationally related form - bn:00053458n - hyponym - bn:15125301n - hypernym - bn:00005913n
+Goods = harmony sovereign acoustic guitar = 1.4211819069603104 = A stringed instrument usually having six strings; played by strumming or plucking
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00046965n - hypernym - bn:00074695n - hypernym - bn:00042150n
+Recipient = dollar = 0.15657763792659737 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00028114n - hypernym - bn:00055644n - Gloss related form (disambiguated) - bn:00061116n - hyponym - bn:00066495n
+
+
+Wrong (rank) babelnet problem (weight problem)
+============================20============================
+The Lebanese newspaper Al Hayat of March 26 reported that the Syrian People's assembly had made the purchase of two small nuclear reactors from China.
+[Building] 0.9921033077428321
+Agent = the syrian people s assembly = 1.1308724118235003 = A group of people who work together
+Created_entity = purchase = 0.8703625297987085 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00005956n - hypernym - bn:00021045n - Gloss related form (monosemous) - bn:00020982n - hypernym - bn:00077860n
+
+[Create_organization] 0.7801811611385963
+Creator = the syrian people s assembly = 1.1179817244532895 = A group of people who work together
+	bn:00059480n - Derivationally related form - bn:00085671v - Derivationally related form - bn:00009631n
+Organization = purchase = 0.5444477587441992 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00059480n - hypernym - bn:00021286n - hypernym - bn:00053479n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n
+
+[Cooking] 0.3845055788252502
+Cook = the syrian people s assembly = 0.7273453361708047 = A group of people who work together
+	bn:00059480n - hypernym - bn:00013379n - hypernym - bn:00053107n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Food = purchase = 0.20326594919283558 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00077860n - hypernym - bn:00029545n - hyponym - bn:00035650n
+
+[Commerce_buy] 0.3209583678488699
+Buyer = the syrian people s assembly = 0.15523956384567147 = A group of people who work together
+	bn:00059480n - hypernym - bn:00034537n - hypernym - bn:00008364n - hypernym - bn:00001003n - Derivationally related form - bn:00082276v - hypernym - bn:00084331v - Derivationally related form - bn:00014332n
+Seller = china = 0.49405805241176953 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:15840810n - hypernym - bn:00053480n - hypernym - bn:00081143n - hypernym - bn:00053479n
+Goods = reactor = 0.4310877804900604 = (physics) any of several kinds of apparatus that maintain and control a nuclear reaction for the production of energy or artificial elements
+	bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00063961n - hypernym - bn:01898201n - hypernym - bn:01344687n - hypernym - bn:00058245n
+
+
+FrC (material) try to find a longer sub-phrase which has meanings in BabelNet, context
+============================24============================
+Iran recently bought weapons-grade fissile material.
+[Commerce_buy] 0.3899229471859841
+Buyer = iran = 0.08810338958232891 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00014334n - Derivationally related form - bn:00084331v - Derivationally related form - bn:00014332n
+Goods = weapon grade fissile material = 1.7256986985742337 = Artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers
+	bn:00021045n - hypernym - bn:00022099n - hypernym - bn:00006125n - hypernym - bn:00019980n
+
+
+Wrong (region) awkward phrase which is unlikely to appear in the factual sentences used for authoring
+============================94============================
+Eighty thousand employees work for foreign-owned companies in the region such as Hewlett Packard, Caterpillar, ICI and Unilever.
+[Being_employed] 1.9786944466045515
+Employee = employee = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = company = 2.5187298386289867 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00059480n
+Place = region = 3.6848010727305547 = A large indefinite location on the surface of the Earth
+
+[Being_employed] 1.3863608008681882
+Employee = employee = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = company = 2.5187298386289867 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00059480n
+Field = region = 1.2673794274253136 = A large indefinite location on the surface of the Earth
+	bn:00007985n - hypernym - bn:00005105n - hypernym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+[Being_employed] 1.0567303384517586
+Employee = employee = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = region = 3.0100263664723697 = Geographical division in Norway
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00049178n - hypernym - bn:14326780n
+
+
+FrC (wound) miner problem in BabelNet
+============================103============================
+They died from shotgun wounds.
+[Death] 1.0632885181519807
+Protagonist = they = 1.2 = pronoun
+Cause = shotgun wound = 0.9421520606948622 = The act of inflicting a wound
+	bn:02131709n - hypernym - bn:00000690n - hypernym - bn:00000694n - hypernym - bn:00081668n
+
+
+FrC (troop) BabelNet problem
+============================117============================
+Balcha entered Harar and his troops massacred such Muslims as they could find within the walls.
+[Killing] 1.7405491263801376
+Killer = troop = 1.7142009081435103 = A cavalry unit corresponding to an infantry company
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n - hypernym - bn:00078394n
+Victim = muslims = 1.7673023313373686 = A believer in or follower of Islam
+	bn:00046516n - hypernym - bn:00067048n - hypernym - bn:00055975n
+
+[Travel] 1.6922996778748496
+Traveler = balcha = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = harar = 1.3003007337401284 = A human being
+	bn:00046516n - Gloss related form (disambiguated) - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+[Education] 0.7668027081892901
+Student = balcha = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = harar = 0.3878754245215512 = A human being
+	bn:00046516n - hypernym - bn:00069680n - Derivationally related form - bn:00069670n - hypernym - bn:00061229n - hypernym - bn:00026980n - hypernym - bn:00029812n
+
+
+********** FrC (us intelligence) BabelNet synset problem
+============================124============================
+Clinton's quick retaliation seems less bold because US intelligence launched a strike against Bin Laden.
+[Attack] 1.420299774618489
+Assailant = us intelligence = 0.5144174008882918 = The Director of National Intelligence is the United States government official -- subject to the authority, direction, and control of the President -- required by the Intelligence Reform and Terrorism Prevention Act of 2004 to: Serve as principal advisor to the President, the National Security Council, and the Homeland Security Council about intelligence matters related to national security; Serve as head of the sixteen-member Intelligence Community; and Direct and oversee the National Intelligence Program.
+	bn:00046516n - hypernym - bn:00036837n - hypernym - bn:03217692n
+Victim = bin laden = 3.921429264052805 = A human being
+
+
+FrC (chief) BabelNet problem, context, problem of out own
+============================131============================
+Jerry Rawlings is chief of defence staff.
+[Leadership] 2.301216391392867
+Leader = jerry rawlings = 2.3417989067814857 = A human being
+Governed = defence staff = 3.739231823658579 = Personnel who assist their superior in carrying out an assigned task
+	bn:00073801n - hypernym - bn:00035770n - hyponym - bn:00059480n
+Role = chief = 1.3916832053989674 = The head of a tribe or clan
+	bn:00010073n - hypernym - bn:00018331n - Derivationally related form - bn:00018320n
+
+[Being_employed] 1.4698363577435964
+Employee = jerry rawlings = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = chief = 1.3916832053989674 = The head of a tribe or clan
+	bn:00010073n - hypernym - bn:00018331n - Derivationally related form - bn:00018320n
+
+
+FrC (material) BabelNet problem, context
+============================132============================
+Britain will also lead a project dealing with the acceptance of new technologies, and will team up with the US on new materials.
+[Leadership] 2.06183062807661
+Leader = britain = 6.6991536419440765 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Governed = project = 0.6345794955735806 = Any piece of work that is undertaken or attempted
+	bn:00059480n - Derivationally related form - bn:00088488v - Derivationally related form - bn:00001423n - hypernym - bn:00053116n - hypernym - bn:00049573n
+
+[Collaboration] 1.9549335970257065
+Partner1 = britain = 6.6991536419440765 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Partner2 = us = 6.80663105195507 = North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00003341n
+Undertaking = material = 0.16384903283315821 = Artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers
+	bn:00049573n - hypernym - bn:00074977n - hyponym - bn:00014137n - hypernym - bn:00046576n - hypernym - bn:00019980n
+
+============================133============================
+Kowloon's main street was created by Sir Matthew Nathan when he was governor of Hong Kong at the turn of the nineteenth century.
+[Being_employed] 1.4250013693861763
+Employee = he = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = governor = 1.3080760014181214 = The head of a state government
+	bn:00010073n - hypernym - bn:00041207n - Derivationally related form - bn:00041204n
+
+[Leadership] 1.4036522942384129
+Leader = he = 2.0 = A human being
+Governed = hong kong = 1.0570989608807182 = Formerly a Crown Colony on the coast of southern China in Guangdong province; leased by China to Britain in 1842 and returned in 1997; one of the world's leading commercial centers
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - Gloss related form (disambiguated) - bn:00044647n
+Role = governor = 1.3080760014181214 = The head of a state government
+	bn:00010073n - hypernym - bn:00041207n - Derivationally related form - bn:00041204n
+
+[Create_organization] 1.225160644734381
+Creator = sir matthew nathan = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = street = 0.7617887076641661 = A thoroughfare (usually including sidewalks) that is lined with buildings
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:03659145n - hypernym - bn:00032402n - hypernym - bn:00074595n
+
+
+Wrong
+============================147============================
+The German press disappeared after Germany's defeat in the First World War, while the missionary press, though of some historical interest, did not give rise to publications of any major importance.
+[Award] 0.17762450615144593
+Person = publication = 0.49636221781692563 = A copy of a printed work offered for distribution
+	bn:00046516n - hypernym - bn:00007287n - Derivationally related form - bn:00092123v - Derivationally related form - bn:00065106n
+Award = rise = 0.04002769128769014 = The property possessed by a slope or surface that rises
+	bn:00000704n - hypernym - bn:01386604n - hyponym - bn:00069670n - hypernym - bn:00063704n - hypernym - bn:00041249n - hypernym - bn:00041240n - hypernym - bn:00067924n
+Organization = press = 0.28206512486969987 = A tall piece of furniture that provides storage space for clothes; has a door and rails or hooks for hanging clothes
+	bn:00059480n - hypernym - bn:00014137n - hypernym - bn:00046576n - hypernym - bn:00032594n - hypernym - bn:00036900n - hypernym - bn:00006129n - hypernym - bn:00019957n
+
+
+FrC (delegation) BabelNet problem
+============================153============================
+Western delegations had visited the Soviet Union during September to research the economic situation.
+[Travel] 3.1934721720925414
+Traveler = delegation = 1.3312985528179186 = Authorizing subordinates to make certain decisions
+	bn:00041942n - hypernym - bn:00000777n - hypernym - bn:00048655n - hypernym - bn:00026026n
+Goal = the soviet union = 7.660388792839219 = A large indefinite location on the surface of the Earth
+
+
+*********** FrC (school) has a wrong babelnet which is corrected in the later versions, we consider this sentence right
+============================155============================
+Some students came to school by car.
+[Travel] 0.6597822500048656
+Traveler = student = 0.5650400791072833 = A learner who is enrolled in an educational institution
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00029806n
+Goal = school = 0.7704101594160204 = The activities of educating or instructing; activities that impart knowledge or skill
+	bn:00026980n - hypernym - bn:00000725n - hypernym - bn:00005105n - hypernym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+
+FrC (family) babelnet
+============================160============================
+The family escaped to Chester and then settled, much impoverished, on their mother's jointure estates in Yorkshire.
+[Travel] 3.074578797782
+Traveler = family = 3.810610993326661 = A loose affiliation of gangsters in charge of organized criminal activities
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00037247n - hypernym - bn:00023810n
+Goal = chester = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+
+*********** FrC (office) ambiguous sentence (office), using "office" as reference to some prior info, we don't know what office it is referring to
+============================158============================
+The two men left the office.
+[Travel] 1.562539663650457
+Traveler = man = 1.1654081636979743 = An adult person who is male (as opposed to a woman)
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00033359n - hypernym - bn:00009616n - hypernym - bn:00052968n - hypernym - bn:00001533n
+Source = office = 2.09500008369053 = An administrative unit of government
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:00001961n
+
+[Quitting] 0.832244295373902
+Employee = man = 0.42971655023645483 = A manservant who acts as a personal attendant to his employer
+	bn:00030618n - hypernym - bn:00081605n - hypernym - bn:00047795n - hypernym - bn:00067423n - hypernym - bn:00011772n - hypernym - bn:00037770n
+Employer = office = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+
+
+********** FrC (father) ambiguous
+============================165============================
+The office has just had a call from the father.
+[Contacting] 2.0986504071281957
+Communicator = father = 2.7325028678375802 = (Christianity) any of about 70 theologians in the period from the 2nd to the 7th century whose writing established and confirmed official church doctrine; in the Roman Catholic Church some were later declared saints and became Doctor of the Church; the best known Latin Church Fathers are Ambrose, Augustine, Gregory the Great, and Jerome; those who wrote in Greek include Athanasius, Basil, Gregory Nazianzen, and John Chrysostom
+	bn:00046516n - Gloss related form (disambiguated) - bn:00076825n - hypernym - bn:00019003n
+Addressee = office = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+
+[Possession] 0.6618811446137407
+Owner = office = 0.451302601098274 = The actions and activities assigned to or required or expected of a person or group
+	bn:00036823n - Gloss related form (disambiguated) - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00059954n
+Possession = call = 0.9707159864115195 = The option to buy a given stock (or stock index or commodity future) at a given price before a given date
+	bn:00021045n - hypernym - bn:00036943n - Gloss related form (disambiguated) - bn:00014802n
+
+
+FrC (official) Babelnet problem
+============================166============================
+Sadr loyalists protest new provincial official.
+[Protest] 1.34559369640794
+Protester = sadr loyalist = 0.7646755272013978 = A person who is loyal to their allegiance (especially in times of revolt)
+	bn:00046516n - hypernym - bn:00001603n - hypernym - bn:00001456n - hypernym - bn:00052216n
+Side = official = 2.367830970659412 = Official (in tennis, soccer, football, etc.) who assists the referee in some way (especially by watching for out of bounds or offside)
+	bn:00046516n - hypernym - bn:00001401n - hypernym - bn:00058701n - hypernym - bn:14866890n
+
+
+FrC (friendship and cooperation treaty) Bebelnet problem
+============================187============================
+The USSR had signed a Friendship and Cooperation Treaty with Iraq in 1972.
+[Sign_agreement] 1.8210995805507075
+Signatory = ussr = 6.7695806688983575 = A former communist country in eastern Europe and northern Asia; established in 1922; included Russia and 14 other soviet socialist republics (Ukraine and Byelorussia and others); officially dissolved 31 December 1991
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00068619n
+Agreement = a friendship and cooperation treaty = 0.48989794855663565 = The Treaty of Good-Neighborliness and Friendly Cooperation Between the People's Republic of China and the Russian Federation is a twenty-year strategic treaty that was signed by the leaders of the two international powers, Jiang Zemin and Vladimir Putin, on July 16, 2001.
+	bn:00000728n - hypernym - bn:03191106n
+
+
+Wrong (rank) Bebelnet problem weights/edges
+============================191============================
+John releases an article on waltz.
+[Releasing_from_custody] 1.126270879416456
+Suspect = article = 0.6599235760123053 = A separate section of a legal document (as a statute or contract or will)
+	bn:00046516n - hypernym - bn:00046975n - Derivationally related form - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Authorities = john = 1.922171202742216 = (New Testament) disciple of Jesus; traditionally said to be the author of the 4th Gospel and three epistles and the book of Revelation
+	bn:00059480n - hypernym - bn:00001961n - hypernym - bn:00024459n - hypernym - bn:00004982n - hypernym - bn:00048291n
+
+[Publishing] 0.9410432883090751
+Author = john = 4.948730758794846 = A human being
+Work = article = 0.8287002866809123 = A separate section of a legal document (as a statute or contract or will)
+	bn:15338434n - hypernym - bn:00005927n - hypernym - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Topic = waltz = 0.2032064503053514 = Music composed in triple time for waltzing
+	bn:00045803n - hypernym - bn:00056024n - hypernym - bn:00070190n - hyponym - bn:00056443n - hypernym - bn:00080426n
+
+
+FrC (grade) Babelnet problem weights/edges
+============================199============================
+Grade had overstretched himself and lost money heavily on box office flops such as Raise the Titanic and biblical epics.
+[Losing] 1.4114726379836438
+Owner = grade = 1.992072415262152 = Grade is a Canadian hardcore/emo group.
+	bn:00059480n - hypernym - bn:00056461n - hypernym - bn:00008280n - hypernym - bn:03797712n
+Goods = money = 2.250206234047593 = The most common medium of exchange; functions as legal tender
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00055644n
+
+[Losing] 1.0215044587002968
+Owner = grade = 1.992072415262152 = Grade is a Canadian hardcore/emo group.
+	bn:00059480n - hypernym - bn:00056461n - hypernym - bn:00008280n - hypernym - bn:03797712n
+Money = money = 1.2 = some currency
+Goods = box office flop = 0.44589687843249687 = In the motion picture industry, a box office bomb or flop is a film that is viewed as highly unsuccessful or unprofitable during its theatrical run, sometimes preceding hype regarding its cost, production, or marketing efforts.
+	bn:00054416n - Derivationally related form - bn:00086013v - Derivationally related form - bn:00064584n - hypernym - bn:00034471n - hypernym - bn:03315803n
+
+
+********** FrC (learning process) BabelNet problem synset problem, can be knocked off
+============================224============================
+They are actively engaged in the learning process and receive direct feedback as to the progress they are making.
+[Participation] 1.1116731625676
+Participant = they = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Event = learning process = 0.5912835634861043 = Profound scholarly knowledge
+	bn:00032021n - hypernym - bn:00001077n - hypernym - bn:00001172n - hypernym - bn:00009657n - hypernym - bn:00030716n
+
+[Education] 0.17724914776482095
+Student = they = 1.2378856764150257 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n - hypernym - bn:00029806n
+Degree = feedback = 0.025379775355621834 =
+	bn:00000554n - hypernym - bn:00015205n - hyponym - bn:00046516n - hypernym - bn:00046975n - Derivationally related form - bn:00056443n - hypernym - bn:15089924n - hypernym - bn:11085261n

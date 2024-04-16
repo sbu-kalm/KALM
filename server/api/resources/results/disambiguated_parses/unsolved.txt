@@ -1,0 +1,112 @@
+8 / 250 (yuheng's)   96.8%
+11 / 250 (tiantian's) 95.6%
+
+============================20============================
+Kate makes a purchase of a company.
+[Building] 1.3201464872595976
+Agent = kate = 2.0023687695136814 = A human being
+Created_entity = purchase = 0.8703625297987085 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00005956n - hypernym - bn:00021045n - Gloss related form (monosemous) - bn:00020982n - hypernym - bn:00077860n
+
+[Create_organization] 1.0357474662954271
+Creator = kate = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = purchase = 0.5444477587441992 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00059480n - hypernym - bn:00021286n - hypernym - bn:00053479n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n
+
+[Commerce_buy] 0.889548544852484
+Buyer = kate = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Goods = company = 0.6688166578550432 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00036346n - hyponym - bn:00029678n - hypernym - bn:00021045n
+
+[Cooking] 0.6379760093994825
+Cook = kate = 2.0023687695136814 = A human being
+Food = purchase = 0.20326594919283558 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00077860n - hypernym - bn:00029545n - hyponym - bn:00035650n
+
+============================22============================
+Mary purchases a motorcycle from John.
+[Commerce_buy] 1.4508523139948364
+Buyer = mary = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Seller = john = 2.456837251307463 = Offering sexual intercourse for pay
+	bn:00053479n - Derivationally related form - bn:00093472v - hypernym - bn:00092100v - Derivationally related form - bn:00043009n
+Goods = motorcycle = 1.0506571151215072 = A motor vehicle with two wheels and a strong frame
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00010360n
+
+============================52============================
+George makes a journey from Brazil to Chile.
+[Travel] 3.840254807983417
+Traveler = george = 2.3259199421764625 = Christian martyr; patron saint of England; hero of the legend of Saint George and the Dragon in which he slew a dragon and saved a princess (?-303)
+	bn:00041942n - Gloss related form (disambiguated) - bn:00061048n - hypernym - bn:00040200n
+Source = brazil = 5.914994920795009 = A large indefinite location on the surface of the Earth
+Goal = chile = 4.116527171496145 = A large indefinite location on the surface of the Earth
+
+[Building] 0.6786513592626946
+Agent = george = 4.2021840599915805 = A human being
+Created_entity = journey = 0.10960197384357927 = The act of traveling from one place to another
+	bn:00021551n - Derivationally related form - bn:00085514v - Derivationally related form - bn:00021547n - hypernym - bn:11198518n - hypernym - bn:15840810n - hypernym - bn:00078085n - hypernym - bn:00048463n
+
+[Create_organization] 0.6575880792210268
+Creator = george = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = journey = 0.21946047688899353 = The act of traveling from one place to another
+	bn:00059480n - hypernym - bn:00014137n - hypernym - bn:00077747n - hyponym - bn:00078085n - hypernym - bn:00048463n
+
+[Cooking] 0.4668897559241034
+Cook = george = 4.2021840599915805 = A human being
+Food = journey = 0.05187446363006422 = An act of traveling by water
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00035666n - hypernym - bn:00034946n - hypernym - bn:00042379n - Gloss related form (disambiguated) - bn:00011766n - Gloss related form (disambiguated) - bn:00058579n
+
+============================125============================
+US troops launch an assault on Benghazi.
+[Attack] 1.6985702285147737
+Assailant = us troop = 1.7142009081435103 = A cavalry unit corresponding to an infantry company
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n - hypernym - bn:00078394n
+Victim = benghazi = 1.6830820748551316 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00023235n - hypernym - bn:00016756n - hypernym - bn:00023236n - hyponym - bn:00059480n
+
+
+============================188============================
+The monarch accedes to a bill.
+[Sign_agreement] 1.4527887920716087
+Signatory = monarch = 3.6903245099263415 = A nation's ruler or head of state usually by hereditary right
+	bn:00046516n - hypernym - bn:00068528n - hypernym - bn:00024097n
+Agreement = bill = 0.5719267421311443 = Feature of Arthropodes
+	bn:00000728n - hypernym - bn:00002861n - hypernym - bn:00073210n - hypernym - bn:00047349n - hypernym - bn:00006081n - hypernym - bn:15349970n
+
+
+============================191============================
+John releases an article on waltz.
+[Releasing_from_custody] 1.4047486700103782
+Suspect = article = 0.6599235760123053 = A separate section of a legal document (as a statute or contract or will)
+	bn:00046516n - hypernym - bn:00046975n - Derivationally related form - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Authorities = john = 2.9902232586082524 = John, also known as John Lackland, was King of England from 6 April 1199 until his death in 1216.
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - hypernym - bn:00023236n - hypernym - bn:00055624n - hypernym - bn:00894591n
+
+[Publishing] 0.9410432883090751
+Author = john = 4.948730758794846 = A human being
+Work = article = 0.8287002866809123 = A separate section of a legal document (as a statute or contract or will)
+	bn:15338434n - hypernym - bn:00005927n - hypernym - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Topic = waltz = 0.2032064503053514 = Music composed in triple time for waltzing
+	bn:00045803n - hypernym - bn:00056024n - hypernym - bn:00070190n - hyponym - bn:00056443n - hypernym - bn:00080426n
+
+
+============================215============================
+A spy embezzles documents from the governor.
+[Theft] 1.328815093772239
+Perpetrator = spy = 1.6213531104478986 = (military) a secret agent hired by a state to obtain information about its enemies or by a business to obtain industrial secrets from competitors
+	bn:00046516n - Gloss related form (disambiguated) - bn:00047030n - hypernym - bn:00073685n
+Goods = document = 0.9440902210553719 = (computer science) a computer file that contains text (and possibly formatting instructions) using seven-bit ASCII characters
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00054149n - hypernym - bn:00028018n
+Victim = governor = 1.5328602044253479 = The head of a state government
+	bn:00046516n - hypernym - bn:00050371n - hypernym - bn:00063354n - hypernym - bn:00041204n
+
+
+============================247============================
+John sets up a dental appointment.
+[Scheduling] 1.4397749131049886
+Agent = john = 4.948730758794846 = A human being
+Event = appointment = 0.4188855489303886 = (law) the act of disposing of property by virtue of the power of appointment
+	bn:00032021n - hypernym - bn:00001077n - hypernym - bn:00027682n - hypernym - bn:00005114n

@@ -1,0 +1,2606 @@
+============================1============================
+Mary is a female.
+[Human_gender] 2 2.953536546728191
+Person = Mary = 1 = 4.0298005902834175 = A human being
+Gender = female = 4 = 2.164717071582335 = An adult female person (as opposed to a man)
+	bn:00037634n - hypernym - bn:00001530n
+
+============================2============================
+Kate holds a female gender.
+[Human_gender] 5 2.4630536159034775
+Person = Kate = 1 = 2.0023687695136814 = A human being
+Gender = female = 4 = 3.029728193517824 = Being the sex (of plant or animal) that produces fertilizable gametes (ova) from which offspring develop
+	bn:00037634n - hypernym - bn:00034030n - Derivationally related form - bn:00102884a
+
+============================3============================
+Susan has the gender of a female.
+[Human_gender] 4 2.1894027773725275
+Person = Susan = 1 = 2.214369990653172 = A human being
+Gender = female = 7 = 2.164717071582335 = An adult female person (as opposed to a man)
+	bn:00037634n - hypernym - bn:00001530n
+
+[Possession] 2 0.6864878758351988
+Owner = Susan = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = gender = 4 = 0.24463214574853384 = A gendèr is a type of metallophone used in Balinese and Javanese gamelan music.
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00046965n - hypernym - bn:02874483n - hypernym - bn:01527184n
+
+============================4============================
+John is a male.
+[Human_gender] 2 3.664167200894595
+Person = John = 1 = 4.948730758794846 = A human being
+Gender = male = 4 = 2.7130433904190348 = An adult person who is male (as opposed to a woman)
+	bn:00037634n - hypernym - bn:00052968n - hypernym - bn:00001533n
+
+============================5============================
+More than 500 Chinese people live in Westminster, London's biggest community.
+[Residence] 6 3.2505104243674494
+Resident = people = 5 = 1.3878325349792084 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Location = Westminster = 8 = 7.613179366111161 = A point or extent in space
+
+============================6============================
+The son of a drunken soldier lived for six years with his grandmother in one room.
+[Residence] 7 0.34080218945967655
+Resident = son = 2 = 2.4130072972102004 = A human offspring (son or daughter) of any age
+	bn:00046516n - hypernym - bn:00066996n - hypernym - bn:00047692n - hypernym - bn:00018346n
+Co_resident = grandmother = 13 = 0.01240992776974345 = Female grandparent
+	bn:00058564n - hyponym - bn:00026239n - Gloss related form (monosemous) - bn:00045153n - hyponym - bn:00044576n - hypernym - bn:00060643n - hypernym - bn:15410143n
+Location = room = 16 = 1.321841064421 = An area within a building enclosed by walls and floor and ceiling
+	bn:00068233n - hypernym - bn:00069362n - hyponym - bn:00044994n - hypernym - bn:00051760n
+
+============================7============================
+Stephen was the second resident at Hallerton House to die.
+[Residence] 5 2.821861388131162
+Resident = Stephen = 1 = 2.3495532366095437 = A human being
+Location = Hallerton House = 8 = 3.389113117230818 = A building in which something is sheltered or located
+	bn:00045003n - Derivationally related form - bn:00087150v - Derivationally related form - bn:00044994n - hypernym - bn:00051760n
+
+============================8============================
+Clare Devenish lived in these two rooms.
+[Residence] 3 1.6259403829298293
+Resident = Clare Devenish = 1 = 2.0 = A human being
+Location = room = 7 = 1.321841064421 = An area within a building enclosed by walls and floor and ceiling
+	bn:00068233n - hypernym - bn:00069362n - hyponym - bn:00044994n - hypernym - bn:00051760n
+
+============================9============================
+Antoinette is staying with friends in Paris at present.
+[Residence] 3 3.186192551264646
+Resident = Antoinette = 1 = 2.062047151715799 = A human being
+Co_resident = friend = 5 = 2.0603993313036386 = A person you know well and regard with affection and trust
+	bn:00036538n - hypernym - bn:00046516n - hypernym - bn:00026239n - hypernym - bn:00058564n
+Location = Paris = 7 = 7.613179366111161 = A point or extent in space
+
+[Residence] 3 0.9987025586062851
+Resident = Antoinette = 1 = 2.062047151715799 = A human being
+Co_resident = friend = 5 = 2.0603993313036386 = A person you know well and regard with affection and trust
+	bn:00036538n - hypernym - bn:00046516n - hypernym - bn:00026239n - hypernym - bn:00058564n
+Location = present = 9 = 0.23445445824295946 = The period of time that is happening now; any continuous stretch of time including the moment of speech
+	bn:00051760n - Gloss related form (disambiguated) - bn:00019376n - hyponym - bn:00077270n - hypernym - bn:00058218n
+
+============================10============================
+And now they inhabited their house.
+[Residence] 4 8.095528512811546
+Resident = they = 3 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Location = house = 6 = 31.35681744055031 = A dwelling that serves as living quarters for one or more families
+	bn:00044994n - hypernym - bn:00051760n
+
+============================11============================
+Maidstone rented a tiny apartment at the top of a very dilapidated building in the Vomero.
+[Renting] 2 0.7301046084192987
+Goods = apartment = 5 = 0.7423993061947977 = A suite of rooms usually on one floor of an apartment house
+	bn:00054416n - hypernym - bn:00005442n - hypernym - bn:00013722n - hypernym - bn:00045052n - hypernym - bn:00004836n
+Lessee = Maidstone = 1 = 0.7180135202001793 = A group of people who work together
+	bn:00059480n - hypernym - bn:15460720n - hypernym - bn:00059958n - hypernym - bn:00050448n
+
+============================12============================
+The film crew had leased a large hangar at Ford Island and used it as their headquarters during the filming.
+[Using] 13 0.920713403465238
+Agent = crew = 22 = 1.9949478632075088 = The team of men manning a racing shell
+	bn:00059480n - hypernym - bn:00073699n - hypernym - bn:00023776n
+Instrument = it = 14 = 0.4249299878732547 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:15125301n - hypernym - bn:00049910n - hypernym - bn:15154456n - hypernym - bn:00026716n
+
+[Renting] 5 0.0903734361116644
+Goods = hangar = 8 = 0.9831853752102186 = A large structure at an airport where aircraft can be stored and maintained
+	bn:00054416n - hypernym - bn:00005442n - hypernym - bn:00013722n - hypernym - bn:00002281n
+Lessee = film crew = 3 = 0.008307037676270147 = A film crew is a group of people hired by a production company for the purpose of producing a film or motion picture.
+	bn:00050448n - hyponym - bn:00067134n - Derivationally related form - bn:00058562n - hypernym - bn:00042411n - Derivationally related form - bn:00087441v - hypernym - bn:00091535v - Derivationally related form - bn:00061450n - hypernym - bn:00201646n
+
+============================13============================
+She chartered her own jet for the trip.
+[Renting] 2 0.6213685166174269
+Goods = jet = 5 = 0.32381431791310983 = An airplane powered by one or more jet engines
+	bn:00054416n - hypernym - bn:03502261n - hypernym - bn:00079675n - hypernym - bn:00023497n - hypernym - bn:00002275n - hypernym - bn:00048165n
+Lessee = she = 1 = 1.1923463913876244 = A human being
+	bn:00046516n - Gloss related form (disambiguated) - bn:00067134n - hypernym - bn:00050448n
+
+============================14============================
+This young man rented the old lady's room.
+[Renting] 4 0.23623184176448148
+Goods = room = 9 = 0.5181613135014242 = An area within a building enclosed by walls and floor and ceiling
+	bn:00054416n - hypernym - bn:00005442n - hypernym - bn:00013722n - Gloss related form (disambiguated) - bn:00068233n
+Lessee = man = 3 = 0.10769905357530252 = The generic use of the word to refer to any human being
+	bn:00053097n - hyponym - bn:00046516n - Gloss related form (disambiguated) - bn:00067134n - hypernym - bn:00050448n
+
+============================15============================
+She had flown to Bordeaux the previous day, and rented a car at the airport.
+[Renting] 11 1.2643119486185774
+Goods = car = 13 = 1.3406210770340201 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+Lessee = she = 18 = 1.1923463913876244 = A human being
+	bn:00046516n - Gloss related form (disambiguated) - bn:00067134n - hypernym - bn:00050448n
+
+============================16============================
+Now I can buy a soda and spend money.
+[Commerce_buy] 4 0.19077616270058656
+Buyer = I = 2 = 0.01 = not found
+Goods = soda = 6 = 3.6395544254760672 = A sweet drink containing carbonated water and flavoring
+	bn:00054416n - hypernym - bn:00072620n - hypernym - bn:00063555n
+
+============================17============================
+GDA has purchased the site from Laing Homes and plans are being prepared for an 80 million dollar mixed development for business, media and leisure activities.
+[Commerce_buy] 3 0.7002787958560195
+Buyer = GDA = 1 = 0.15523956384567147 = A group of people who work together
+	bn:00059480n - hypernym - bn:00034537n - hypernym - bn:00008364n - hypernym - bn:00001003n - Derivationally related form - bn:00082276v - hypernym - bn:00084331v - Derivationally related form - bn:00014332n
+Seller = Laing Homes = 8 = 1.0485915575936129 = A group of people who work together
+	bn:00059480n - hypernym - bn:00021286n - hypernym - bn:00053479n
+Goods = site = 5 = 2.1096196313217055 = The piece of land on which something is located (or is to be located)
+	bn:00049847n - hypernym - bn:00049836n - hypernym - bn:00021045n
+
+============================18============================
+Four years ago I bought an old Harmony Sovereign acoustic guitar for 20 dollars from an absolute prat.
+[Commerce_buy] 5 0.19504822283933335
+Buyer = I = 4 = 0.01 = not found
+Seller = prat = 18 = 0.08486665299799342 = The fleshy part of the human body that you sit on
+	bn:00053479n - Derivationally related form - bn:00090670v - Derivationally related form - bn:00053458n - hyponym - bn:15125301n - hypernym - bn:00005913n
+Goods = Harmony Sovereign acoustic guitar = 11 = 1.4211819069603104 = A stringed instrument usually having six strings; played by strumming or plucking
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00046965n - hypernym - bn:00074695n - hypernym - bn:00042150n
+Money = dollar = 14 = 1.2 = some currency
+
+[Commerce_buy] 5 0.11722739665122377
+Buyer = I = 4 = 0.01 = not found
+Seller = prat = 18 = 0.08486665299799342 = The fleshy part of the human body that you sit on
+	bn:00053479n - Derivationally related form - bn:00090670v - Derivationally related form - bn:00053458n - hyponym - bn:15125301n - hypernym - bn:00005913n
+Goods = Harmony Sovereign acoustic guitar = 11 = 1.4211819069603104 = A stringed instrument usually having six strings; played by strumming or plucking
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00046965n - hypernym - bn:00074695n - hypernym - bn:00042150n
+Recipient = dollar = 14 = 0.15657763792659737 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00028114n - hypernym - bn:00055644n - Gloss related form (disambiguated) - bn:00061116n - hyponym - bn:00066495n
+
+============================19============================
+Reeves Smith was an inveterate buyer of books, and he bought a hotel in Seaford, Sussex.
+[Commerce_buy] 12 2.1560551692984604
+Buyer = he = 11 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Goods = hotel = 14 = 3.414843007951449 = A building where travelers can pay for lodging and meals and other services
+	bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00044967n
+Place = Seaford = 16 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+[Commerce_buy] 6 0.6738139625558165
+Buyer = Reeves Smith = 1 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Goods = book = 8 = 0.8634363026361369 = A written work or composition that has been published (printed on pages bound together)
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054149n - hypernym - bn:00065106n - hypernym - bn:00012059n
+
+============================20============================
+The Syrian People's assembly had made the purchase of two small nuclear reactors from China.
+[Building] 7 0.9921033077428321
+Agent = The Syrian People s assembly = 5 = 1.1308724118235003 = A group of people who work together
+Created_entity = purchase = 9 = 0.8703625297987085 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00005956n - hypernym - bn:00021045n - Gloss related form (monosemous) - bn:00020982n - hypernym - bn:00077860n
+
+[Create_organization] 7 0.7801811611385963
+Creator = The Syrian People s assembly = 5 = 1.1179817244532895 = A group of people who work together
+	bn:00059480n - Derivationally related form - bn:00085671v - Derivationally related form - bn:00009631n
+Organization = purchase = 9 = 0.5444477587441992 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00059480n - hypernym - bn:00021286n - hypernym - bn:00053479n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n
+
+[Cooking] 7 0.3845055788252502
+Cook = The Syrian People s assembly = 5 = 0.7273453361708047 = A group of people who work together
+	bn:00059480n - hypernym - bn:00013379n - hypernym - bn:00053107n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Food = purchase = 9 = 0.20326594919283558 = The commercial exchange (buying and selling on domestic or international markets) of goods and services
+	bn:00077860n - hypernym - bn:00029545n - hyponym - bn:00035650n
+
+[Commerce_buy] 9 0.3209583678488699
+Buyer = The Syrian People s assembly = 5 = 0.15523956384567147 = A group of people who work together
+	bn:00059480n - hypernym - bn:00034537n - hypernym - bn:00008364n - hypernym - bn:00001003n - Derivationally related form - bn:00082276v - hypernym - bn:00084331v - Derivationally related form - bn:00014332n
+Seller = China = 16 = 0.49405805241176953 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:15840810n - hypernym - bn:00053480n - hypernym - bn:00081143n - hypernym - bn:00053479n
+Goods = reactor = 14 = 0.4310877804900604 = (physics) any of several kinds of apparatus that maintain and control a nuclear reaction for the production of energy or artificial elements
+	bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00063961n - hypernym - bn:01898201n - hypernym - bn:01344687n - hypernym - bn:00058245n
+
+============================21============================
+We bought our cottage from him.
+[Commerce_buy] 2 1.7794809138013443
+Buyer = we = 1 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Seller = he = 6 = 1.9563052466880453 = A human being
+	bn:00046516n - hypernym - bn:00012439n - hypernym - bn:00054417n - hypernym - bn:00053479n
+Goods = cottage = 4 = 2.4345077263562667 = A small house with a single story
+	bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00013888n
+
+============================22============================
+Karen Wilson purchased a porcupine puffer from the local shop.
+[Commerce_buy] 3 0.4284598714925672
+Buyer = Karen Wilson = 1 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Seller = shop = 10 = 1.0062612444190697 = Place where items are sold
+	bn:00053479n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n - hypernym - bn:15385545n
+Goods = porcupine puffer = 6 = 0.06606744127215278 = Similar to but smaller than porcupinefish
+	bn:00054416n - Derivationally related form - bn:00086013v - Derivationally related form - bn:00064584n - hypernym - bn:00034471n - hypernym - bn:00004222n - Gloss related form (monosemous) - bn:00076248n - hypernym - bn:00008194n
+
+============================23============================
+Abby bought a car from Robin for 5000 dollars.
+[Commerce_buy] 2 1.3891176634325975
+Buyer = Abby = 1 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Seller = Robin = 6 = 1.9563052466880453 = A human being
+	bn:00046516n - hypernym - bn:00012439n - hypernym - bn:00054417n - hypernym - bn:00053479n
+Goods = car = 4 = 1.3406210770340201 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+Money = dollar = 9 = 1.2 = some currency
+
+[Commerce_buy] 2 0.8348840351166505
+Buyer = Abby = 1 = 1.1831293439773662 = A human being
+	bn:00046516n - hypernym - bn:00022095n - hypernym - bn:00019763n - hypernym - bn:00014332n
+Seller = Robin = 6 = 1.9563052466880453 = A human being
+	bn:00046516n - hypernym - bn:00012439n - hypernym - bn:00054417n - hypernym - bn:00053479n
+Goods = car = 4 = 1.3406210770340201 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+Recipient = dollar = 9 = 0.15657763792659737 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00028114n - hypernym - bn:00055644n - Gloss related form (disambiguated) - bn:00061116n - hyponym - bn:00066495n
+
+============================24============================
+Iran recently bought weapons-grade fissile material.
+[Commerce_buy] 3 0.3899229471859841
+Buyer = Iran = 1 = 0.08810338958232891 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00014334n - Derivationally related form - bn:00084331v - Derivationally related form - bn:00014332n
+Goods = weapon grade fissile material = 8 = 1.7256986985742337 = Artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers
+	bn:00021045n - hypernym - bn:00022099n - hypernym - bn:00006125n - hypernym - bn:00019980n
+
+============================25============================
+The appellants owned a colliery near Swansea.
+[Possession] 3 0.2314274128646427
+Owner = appellant = 2 = 0.22015433737432322 = The party who appeals a decision of a lower court
+	bn:00059954n - hyponym - bn:00046516n - hypernym - bn:00060837n - hypernym - bn:00051562n - hypernym - bn:00005031n
+Possession = colliery = 5 = 0.24327772990525862 = A workplace consisting of a coal mine plus all the buildings and equipment connected with it
+	bn:00021045n - Gloss related form (monosemous) - bn:00020982n - hypernym - bn:00014137n - hypernym - bn:00046576n - hypernym - bn:00032111n - hypernym - bn:00020656n
+
+============================26============================
+Mr Sugden was the owner of the car and he had insured it.
+[Possession] 5 1.5356168414689326
+Owner = Mr Sugden = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = car = 8 = 1.2240904638710115 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00021045n - hypernym - bn:03502261n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+
+============================27============================
+Kevin Tatman is the owner of Merit Awnings in Dayton.
+[Possession] 5 0.8630799292379081
+Owner = Kevin Tatman = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = Merit Awnings = 8 = 0.38667831394801244 = A group of people who work together
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00072545n - hypernym - bn:00029676n - hypernym - bn:00021045n
+
+============================28============================
+I also have a key to the security cupboard.
+[Possession] 3 0.08404606336519659
+Owner = I = 1 = 0.01 = not found
+Possession = key = 5 = 0.7063740767186639 = Metal device shaped in such a way that when it is inserted into the appropriate lock the lock's mechanism can be rotated
+	bn:00021045n - hypernym - bn:03502261n - hypernym - bn:00026716n - hypernym - bn:00048985n
+
+============================29============================
+Kubla Khan possesses a great deal of the confidence of Frost at Midnight.
+[Possession] 3 0.8282003512085617
+Owner = Kubla Khan = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = deal = 6 = 0.3560562408317916 = A particular instance of buying or selling
+	bn:00014152n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n - hypernym - bn:00021045n
+
+============================30============================
+I am the owner of a cooking school.
+[Possession] 4 0.05721570995353415
+Owner = I = 1 = 0.01 = not found
+Possession = cooking school = 8 = 0.3273637465486947 = A cooking school is an institution devoted to education in the art and science of cooking and food preparation.
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00005442n - hypernym - bn:00013722n - hypernym - bn:00069619n - hypernym - bn:02412294n
+
+============================31============================
+James Cook was born here in 1728.
+[Being_born] 4 1.7475104569534181
+Person = James Cook = 1 = 3.053792797161544 = A human being
+Time = 1728 = 7 = 1.0 = a time value
+
+[Being_born] 4 0.1747510456953418
+Person = James Cook = 1 = 3.053792797161544 = A human being
+Place = 1728 = 7 = 0.01 = not found
+
+============================32============================
+He was born in London in 1555, eldest son of a Master of Trinity House.
+[Being_born] 3 1.939498920554245
+Person = he = 1 = 2.0 = A human being
+Place = London = 5 = 3.6478639366786068 = A large indefinite location on the surface of the Earth
+Time = 1555 = 7 = 1.0 = a time value
+
+[Being_born] 3 0.09428090415820634
+Person = he = 1 = 2.0 = A human being
+Place = 1555 = 7 = 0.01 = not found
+
+============================33============================
+Goldstein was born on Sept 23, 1922, in Denver and died in Chicago on June 20, 1944.
+[Death] 13 1.6601115971994962
+Protagonist = Goldstein = 22 = 1.1109587325721875 = A human being
+Place = Chicago = 15 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+[Being_born] 3 1.6601115971994962
+Person = Goldstein = 1 = 1.1109587325721875 = A human being
+Place = Denver = 11 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================34============================
+Rosalind bakes her own bread and croissants and will prepare an evening meal with advance notice.
+[Cooking] 2 3.375920824178301
+Cook = Rosalind = 1 = 2.3023504931818426 = A human being
+Food = bread = 5 = 4.950089677862337 = Food made from dough of flour or meal and usually raised with yeast or baking powder and then baked
+	bn:00035650n - hypernym - bn:00008008n - hypernym - bn:00012873n
+
+[Cooking] 2 1.9493693614479202
+Cook = Rosalind = 1 = 2.3023504931818426 = A human being
+Food = croissant = 7 = 1.6505049594339674 = Very rich flaky crescent-shaped roll
+	bn:00035650n - hypernym - bn:00028432n - hypernym - bn:00060957n - hypernym - bn:00023751n
+
+============================35============================
+Caitlin made some cookies from the pre-packaged dough.
+[Cooking] 2 1.4055114996938656
+Cook = Caitlin = 1 = 0.8465344185777856 = A human being
+Food = cookie = 4 = 2.333588017709382 = Any of various small flat sweet cakes (`biscuit' is the British term)
+	bn:00035650n - hypernym - bn:00014609n - hypernym - bn:00010697n
+
+[Create_organization] 2 0.7870407383120386
+Creator = Caitlin = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = cookie = 4 = 0.3143712923584888 = Any of various small flat sweet cakes (`biscuit' is the British term)
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00002745n - hypernym - bn:00027574n - hypernym - bn:00010697n
+
+[Building] 2 0.7840876665505545
+Agent = Caitlin = 1 = 0.8465344185777856 = A human being
+Created_entity = cookie = 4 = 0.7262474570963969 = A cookie that is stored temporarily and is destroyed when you close the link
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00054149n - hypernym - bn:00076732n - hypernym - bn:00022416n - hypernym - bn:00070691n
+
+============================36============================
+Nina had made a meal of bread and cheese.
+[Cooking] 3 3.4859989297897456
+Cook = Nina = 1 = 2.452775481220436 = A human being
+Food = meal = 5 = 4.95446429220201 = The food served and eaten at one time
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hypernym - bn:00053993n
+
+[Create_organization] 3 1.2266875068350287
+Creator = Nina = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = meal = 5 = 0.7636886562132138 = The food served and eaten at one time
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00002745n - hypernym - bn:00053993n
+
+[Building] 3 0.8840883126387686
+Agent = Nina = 1 = 2.4842648585185882 = A human being
+Created_entity = meal = 5 = 0.31462512616732596 = The food served and eaten at one time
+	bn:00021551n - Derivationally related form - bn:00085514v - Derivationally related form - bn:00021547n - hypernym - bn:00009677n - hypernym - bn:00002745n - hypernym - bn:00053993n
+
+============================37============================
+Elke has laid the table for the evening meal and fried the eggs.
+[Cooking] 11 2.2925071231423866
+Cook = Elke = 15 = 1.4387154835120979 = A human being
+Food = egg = 13 = 3.6529730651323664 = Oval reproductive body of a fowl (especially a hen) used as food
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00035666n - hypernym - bn:00029914n
+
+============================38============================
+That evening, I roasted the chestnuts I had picked.
+[Cooking] 5 0.06083144867937092
+Cook = I = 4 = 0.01 = not found
+Food = chestnut = 7 = 0.37004651484309375 = Edible nut of any of various chestnut trees of the genus Castanea
+	bn:00018220n - hyponym - bn:00029760n - hypernym - bn:00035650n
+
+============================39============================
+Betty wrought all those peeled potatoes into rosti, and boiled some sausages.
+[Cooking] 11 3.3647194786206085
+Cook = Betty = 15 = 2.0694402985340368 = A human being
+Food = sausage = 13 = 5.470724223273713 = Highly seasoned minced meat stuffed in casings
+	bn:00035650n - hypernym - bn:00054026n - hypernym - bn:00069369n
+
+============================40============================
+My mother makes excellent fruit cake.
+[Cooking] 3 3.6972408451379586
+Cook = mother = 2 = 7.787810988975014 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n
+Food = fruit cake = 6 = 1.7552544465072537 = A rich cake containing dried fruit and nuts and citrus peel and so on
+	bn:00035650n - hypernym - bn:00008008n - hypernym - bn:00014609n - hypernym - bn:00036702n
+
+[Building] 3 0.913958742674061
+Agent = mother = 2 = 7.787810988975014 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n
+Created_entity = fruit cake = 6 = 0.10725999699952789 = A rich cake containing dried fruit and nuts and citrus peel and so on
+	bn:00005956n - hypernym - bn:00021045n - hypernym - bn:00037326n - hyponym - bn:00035650n - hypernym - bn:00014609n - hypernym - bn:00036702n
+
+[Create_organization] 3 0.6725118702222322
+Creator = mother = 2 = 4.363998831190818 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00023660n
+Organization = fruit cake = 6 = 0.10363710740646362 = A rich cake containing dried fruit and nuts and citrus peel and so on
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00059034n - hypernym - bn:00053867n - hypernym - bn:00072719n - hypernym - bn:00035650n - hypernym - bn:00014609n - hypernym - bn:00036702n
+
+============================41============================
+Nana could make a chocolate drink with cocoa beans and goat's milk, and that was the only thing Martha could think of.
+[Cooking] 3 3.444143121854438
+Cook = Nana = 1 = 2.8053188659389785 = A human being
+Food = chocolate drink = 6 = 4.228439764135982 = Any liquid suitable for drinking
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00010183n
+
+[Create_organization] 3 0.7480127067337752
+Creator = Nana = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = chocolate drink = 6 = 0.28396604061461145 = Any large deep body of water
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00045395n - hypernym - bn:00011766n - hypernym - bn:00028750n
+
+[Building] 3 0.6627792756922819
+Agent = Nana = 1 = 2.8053188659389785 = A human being
+Created_entity = chocolate drink = 6 = 0.3443754269033056 = The act of drinking alcoholic beverages to excess
+	bn:00005956n - hypernym - bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00002519n - Gloss related form (disambiguated) - bn:00012196n
+Instrument = milk = 13 = 0.30136469510982244 = A white nutritious liquid secreted by mammals and used as food by human beings
+	bn:00026716n - hypernym - bn:00044496n - hypernym - bn:00011203n - Derivationally related form - bn:00090391v - Derivationally related form - bn:00051472n - hypernym - bn:00054996n
+
+[Building] 3 0.39739058802568794
+Agent = Nana = 1 = 2.8053188659389785 = A human being
+Created_entity = chocolate drink = 6 = 0.3443754269033056 = The act of drinking alcoholic beverages to excess
+	bn:00005956n - hypernym - bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00002519n - Gloss related form (disambiguated) - bn:00012196n
+Instrument = cocoa bean = 9 = 0.06495885237933634 = Seed of the cacao tree; ground roasted beans are source of chocolate
+	bn:00026716n - hypernym - bn:00044496n - hypernym - bn:00049249n - hypernym - bn:00059829n - Gloss related form (disambiguated) - bn:00109896a - Gloss related form (monosemous) - bn:00014478n
+
+============================42============================
+Her mother was making breakfast in the kitchen, and her father was turning off the lantern.
+[Cooking] 4 3.068322005576939
+Cook = mother = 2 = 7.787810988975014 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n
+Food = breakfast = 5 = 2.6914200348151938 = The first meal of the day (usually in the morning)
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hypernym - bn:00053993n - hypernym - bn:00012930n
+Place = kitchen = 8 = 1.3781799288720402 = A room equipped for preparing meals
+	bn:15769800n - hypernym - bn:00068233n - hypernym - bn:00049248n
+
+[Building] 4 1.218609971566342
+Agent = mother = 2 = 7.787810988975014 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n
+Created_entity = breakfast = 5 = 0.19068391167983 = The first meal of the day (usually in the morning)
+	bn:00021551n - Derivationally related form - bn:00085514v - Derivationally related form - bn:00021547n - hypernym - bn:00009677n - hypernym - bn:00002745n - hypernym - bn:00053993n - hypernym - bn:00012930n
+
+[Create_organization] 4 0.841852773092318
+Creator = mother = 2 = 4.363998831190818 = A woman who has given birth to a child (also used as a term of address to your mother)
+	bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00023660n
+Organization = breakfast = 5 = 0.4366751987723184 = The first meal of the day (usually in the morning)
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00002745n - hypernym - bn:00053993n - hypernym - bn:00012930n
+Place = kitchen = 8 = 0.31308718240771954 = A room equipped for preparing meals
+	bn:00049248n - meronym - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================43============================
+Students dress in colourful garb for the display.
+[Dressing] 2 0.6025013554266876
+Wearer = student = 1 = 0.07537738841256873 = A learner who is enrolled in an educational institution
+	bn:00029806n - Derivationally related form - bn:00094501v - Derivationally related form - bn:00007985n - hypernym - bn:00053867n - hypernym - bn:00006125n - hypernym - bn:00000677n - Gloss related form (disambiguated) - bn:00080753n
+Clothing = garb = 5 = 4.815872384754396 = Clothing of a distinctive style or for a particular occasion
+	bn:00006125n - hypernym - bn:00007046n
+
+============================44============================
+He is wearing white shorts, and laughter lines run in deep creases by the sides of his eyes.
+[Dressing] 3 2.5916319622699953
+Wearer = he = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = shorts = 5 = 2.80649185899849 = Underpants worn by men
+	bn:00006125n - hypernym - bn:00079003n - hypernym - bn:00079008n - hypernym - bn:00012558n
+
+============================45============================
+She put on a straight yellow skirt, and a matching vest-top.
+[Dressing] 2 2.0227042475856347
+Wearer = she = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = skirt = 7 = 1.7095503840000006 = A garment hanging from the waist; worn mainly by girls and women
+	bn:00006125n - hypernym - bn:00037352n - hypernym - bn:00072004n
+
+[Dressing] 2 1.646651332242664
+Wearer = she = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = matching vest top = 12 = 1.1329752733000582 = A garment (especially for women) that extends from the shoulders to the waist or hips
+	bn:00077612n - hypernym - bn:00011732n - Gloss related form (monosemous) - bn:00028682n - hypernym - bn:00006125n
+
+============================46============================
+He put on his shirt and shorts and took my hand.
+[Dressing] 2 2.5916319622699953
+Wearer = he = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = shorts = 7 = 2.80649185899849 = Underpants worn by men
+	bn:00006125n - hypernym - bn:00079003n - hypernym - bn:00079008n - hypernym - bn:00012558n
+
+[Dressing] 2 1.9077000413422345
+Wearer = he = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = shirt = 5 = 1.520678165397322 = A garment worn on the upper half of the body
+	bn:00006125n - hypernym - bn:00037352n - hypernym - bn:00071142n
+
+============================47============================
+Laura wore a long, grey satin dress with a big bow which was especially made for her in a more girlish style.
+[Dressing] 2 4.74087582564861
+Wearer = Laura = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = satin dress = 8 = 9.391485505499116 = A one-piece garment for a woman; has skirt and bodice
+	bn:00028682n - hypernym - bn:00006125n
+
+============================48============================
+He'll read extracts from the works of American writers who travelled to Paris after the first world war.
+[Travel] 12 1.3318896723815556
+Traveler = writer = 10 = 0.715088613633304 = Writes (books or stories or articles or the like) professionally (for pay)
+	bn:00007287n - hypernym - bn:00053375n - hyponym - bn:00078093n
+Goal = Paris = 14 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================49============================
+She did make the trip to Brighton.
+[Travel] 5 2.337457310105724
+Traveler = she = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = Brighton = 7 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+[Create_organization] 3 1.0692814616461397
+Creator = she = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = trip = 5 = 0.5802732226987213 = Village in Satu Mare County, Romania
+	bn:00059480n - hypernym - bn:00021248n - hypernym - bn:00070724n - hypernym - bn:00042729n - hypernym - bn:16633255n
+
+[Building] 3 0.6911390536732307
+Agent = she = 1 = 2.0 = A human being
+Created_entity = trip = 5 = 0.23883659575616445 = A hallucinatory experience induced by drugs
+	bn:00005956n - hypernym - bn:00025765n - hypernym - bn:00026537n - hypernym - bn:00027818n - hypernym - bn:00026094n - hypernym - bn:00042680n - hypernym - bn:00078319n
+
+[Cooking] 3 0.43702562230237596
+Cook = she = 1 = 2.0 = A human being
+Food = trip = 5 = 0.09549569727438947 = Family of Dutch merchants
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hyponym - bn:00009677n - hypernym - bn:00046516n - hypernym - bn:00032893n - hypernym - bn:16569165n
+
+============================50============================
+We should take a trip to Hadrian's wall.
+[Travel] 5 1.1715370936709015
+Traveler = we = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = wall = 9 = 0.623162558858867 = An architectural partition with a height and length greater than its thickness; used to divide or enclose an area or to support another structure
+	bn:00080386n - hyponym - bn:03830506n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================51============================
+In particular, many people have moved to the Wirral peninsula and they commute to Liverpool.
+[Travel] 14 2.7520522916204624
+Traveler = they = 13 = 3.053069729951238 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00000492n - hypernym - bn:00041942n
+Goal = Liverpool = 16 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================52============================
+We had a journey in convoy from Liverpool through the Atlantic to West Africa.
+[Travel] 4 2.8346795754718666
+Traveler = we = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Source = Liverpool = 8 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+Goal = West Africa = 14 = 4.1689294694019505 = A large indefinite location on the surface of the Earth
+
+[Possession] 2 0.3741875385713816
+Owner = we = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = journey = 4 = 0.07268192516572232 = The act of traveling from one place to another
+	bn:00021045n - hypernym - bn:00070651n - Gloss related form (disambiguated) - bn:00077747n - hyponym - bn:00078085n - hypernym - bn:00048463n
+
+============================53============================
+Hamas was founded in 1988 by a blind paraplegic cleric who was influenced by the Islamic muslim brotherhood, and he set up charities in the impoverished strip in the 1970s.
+[Scheduling] 22 1.0714794071939275
+Agent = he = 21 = 2.0 = A human being
+Place = strip = 28 = 0.36680919654382366 = An airfield without normal airport facilities
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:00068594n - meronym - bn:00002315n
+Event = charity = 24 = 1.6768000370083909 = A charity that is deemed to receive the major part of its support from the public (rather than from a small group of individuals)
+	bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00017818n - hypernym - bn:00065084n
+
+[Create_organization] 3 0.7823679158677498
+Creator = cleric = 10 = 0.14875462224605848 = A clergyman or other person in religious orders
+	bn:00009631n - Gloss related form (disambiguated) - bn:00048358n - hyponym - bn:00019727n - hypernym - bn:00019026n
+Organization = Hamas = 1 = 3.2193087282117943 = A group of people who work together
+Time = 1988 = 5 = 1.0 = a time value
+
+[Scheduling] 22 0.6357274399328147
+Agent = he = 21 = 2.0 = A human being
+Place = 1970 = 31 = 0.07661284699478176 = Natural number
+	bn:00066884n - hypernym - bn:00023235n - Gloss related form (disambiguated) - bn:00063598n - hyponym - bn:00047009n - hypernym - bn:15087609n
+Event = charity = 24 = 1.6768000370083909 = A charity that is deemed to receive the major part of its support from the public (rather than from a small group of individuals)
+	bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00017818n - hypernym - bn:00065084n
+
+[Create_organization] 3 0.16855605783134264
+Creator = cleric = 10 = 0.14875462224605848 = A clergyman or other person in religious orders
+	bn:00009631n - Gloss related form (disambiguated) - bn:00048358n - hyponym - bn:00019727n - hypernym - bn:00019026n
+Organization = Hamas = 1 = 3.2193087282117943 = A group of people who work together
+Place = 1988 = 5 = 0.01 = not found
+
+============================54============================
+In 1576 Pope Gregory XIII founded the Macau diocese covering all of China and Japan.
+[Create_organization] 6 1.782622722469997
+Creator = Pope Gregory XIII = 3 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = Macau diocese = 9 = 2.8749266536479325 = The territorial jurisdiction of a bishop
+	bn:00059480n - hypernym - bn:00001961n - hypernym - bn:00048653n - hypernym - bn:00010714n
+Time = 1576 = 2 = 1.0 = a time value
+
+[Create_organization] 6 0.3840544232528441
+Creator = Pope Gregory XIII = 3 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = Macau diocese = 9 = 2.8749266536479325 = The territorial jurisdiction of a bishop
+	bn:00059480n - hypernym - bn:00001961n - hypernym - bn:00048653n - hypernym - bn:00010714n
+Place = 1576 = 2 = 0.01 = not found
+
+============================55============================
+Mark Zuckerberg is a founder of Facebook.
+[Create_organization] 5 1.641146307517814
+Creator = Mark Zuckerberg = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = Facebook = 7 = 1.3669198652650878 = A group of people who work together
+
+============================56============================
+Robin Li is a founder of Baidu.
+[Create_organization] 5 1.7014156957461988
+Creator = Robin Li = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = Baidu = 7 = 1.4691607762168377 = A group of people who work together
+
+============================57============================
+We've founded an institute for people with disabilities.
+[Create_organization] 3 1.5524933492311308
+Creator = we = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = institute = 5 = 1.2232295161602993 = An association organized to promote art or science or education
+	bn:00059480n - hypernym - bn:00006539n - hypernym - bn:00046952n
+
+============================58============================
+She's been studying photography at Aylesbury College since then.
+[Education] 4 3.0331294888344735
+Student = she = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = Aylesbury College = 8 = 3.4363351369305866 = Aylesbury College is a general further education college in Aylesbury, Buckinghamshire, England.
+	bn:00029812n - hypernym - bn:00020642n - hypernym - bn:03182925n
+Subject = photography = 5 = 5.356761728195643 = The act of taking and printing photographs
+	bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00062084n
+
+============================59============================
+John receives a bachelor's degree from Cambridge University.
+[Education] 2 1.275735438951246
+Student = John = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = Cambridge University = 9 = 1.9574275235663174 = A university in England
+	bn:00029812n - hypernym - bn:03242854n - hypernym - bn:00079152n - hypernym - bn:00014988n
+Degree = degree = 6 = 0.6997149568482333 = An award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study
+
+============================60============================
+Kate obtains a master's degree in Biology from Harvard University.
+[Education] 2 1.3462302902623542
+Student = Kate = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = Harvard University = 11 = 2.1298368154695866 = A university in Massachusetts
+	bn:00029812n - hypernym - bn:03242854n - hypernym - bn:00079152n - hypernym - bn:00043087n
+Degree = degree = 6 = 0.6997149568482333 = An award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study
+Subject = Biology = 8 = 1.4539013259613478 = All the plant and animal life of a particular region
+	bn:00007985n - hypernym - bn:00005105n - hypernym - bn:00021494n - hypernym - bn:00000777n - hypernym - bn:00010550n
+
+============================61============================
+Susan enters Peking University.
+[Education] 2 1.1901791754649247
+Student = Susan = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = Peking University = 4 = 0.9344362591691354 = Peking University, is a major Chinese research university located in Beijing, and a member of the C9 League.
+	bn:00029812n - hypernym - bn:03242854n - hypernym - bn:00079152n - hypernym - bn:03589258n
+
+[Travel] 2 0.6931576943096445
+Traveler = Susan = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = Peking University = 4 = 0.21814906751540825 = Peking University, is a major Chinese research university located in Beijing, and a member of the C9 League.
+	bn:00066884n - hyponym - bn:00051760n - hypernym - bn:00079152n - hypernym - bn:03589258n
+
+============================62============================
+Tom graduates from MIT.
+[Education] 2 1.8035628913499018
+Student = Tom = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = MIT = 4 = 2.1457917434883838 = An engineering university in Cambridge
+	bn:00029812n - hypernym - bn:03242854n - hypernym - bn:00079152n - hypernym - bn:00053691n
+
+============================63============================
+Lord Anglesey is the donor to the National Trust of Plas Newydd on the Isle of Anglesey.
+[Giving] 5 1.5686101693089278
+Donor = Lord Anglesey = 1 = 1.2302689316296918 = A human being
+Recipient = the National Trust of Plas Newydd = 9 = 2.0 = A group of people who work together
+
+============================64============================
+Prominent amongst them is named Peter Nevill who built Riston Grange and endowed Riston Grange with many charities.
+[Building] 9 1.1875534590184542
+Agent = Peter Nevill = 6 = 2.0740302038916427 = A human being
+Created_entity = Riston Grange = 10 = 0.6799723626881063 = An outlying farm
+	bn:00005956n - hypernym - bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00033676n - hypernym - bn:00041368n
+
+[Giving] 13 1.106200042336802
+Donor = Peter Nevill = 6 = 2.0740302038916427 = A human being
+Recipient = Riston Grange = 14 = 1.5509199805987588 = Grange was an English professional cricketer who made 9 known appearances in major cricket matches from 1789 to 1792.
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:01088796n
+Theme = charity = 18 = 0.4208201671423949 = A foundation created to promote the public good (not for assistance to any particular individuals)
+	bn:00021045n - hypernym - bn:00070651n - Gloss related form (disambiguated) - bn:00029676n - hypernym - bn:00017818n
+
+============================65============================
+We made a cash donation of 200000 dollars, fitted 16 pledging sites with nearly 2000 lines at our expense, and installed 2000 miles of computer circuits.
+[Giving] 5 3.601276755471423
+Donor = we = 1 = 2.0 = A human being
+Theme = dollar = 8 = 6.484597134749389 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00028114n - hypernym - bn:00055644n
+
+[Create_organization] 2 1.445422996324548
+Creator = we = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = cash donation = 5 = 1.0603234714358758 = Something acquired without compensation
+	bn:00059480n - hypernym - bn:00046954n - hypernym - bn:00054159n - hypernym - bn:00055644n - hypernym - bn:00040436n
+
+[Building] 2 1.0570452306740177
+Agent = we = 1 = 2.0 = A human being
+Created_entity = cash donation = 5 = 0.5586723098453437 = Something acquired without compensation
+	bn:00021551n - Derivationally related form - bn:00085514v - Derivationally related form - bn:00021547n - hypernym - bn:00045632n - hypernym - bn:00040436n
+
+[Cooking] 2 0.5013692965505171
+Cook = we = 1 = 2.0 = A human being
+Food = cash donation = 5 = 0.12568558576178016 = Something acquired without compensation
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hyponym - bn:00069670n - hypernym - bn:00072545n - hypernym - bn:00072574n - hypernym - bn:00040436n
+
+============================66============================
+I will now donate the money to charity.
+[Giving] 4 0.2662682499740748
+Donor = I = 1 = 0.01 = not found
+Recipient = charity = 8 = 1.2578784942544734 = A foundation created to promote the public good (not for assistance to any particular individuals)
+	bn:00059480n - hypernym - bn:00034537n - hypernym - bn:00036064n - hypernym - bn:00017818n
+Theme = money = 6 = 1.5007883840570144 = The most common medium of exchange; functions as legal tender
+
+============================67============================
+Juliana was the daughter of William Horne of London.
+[Personal_relationship] 4 2.9015884694838237
+Daughter = Juliana = 1 = 1.3591959606927053 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00018346n - hypernym - bn:00034026n - hypernym - bn:00025364n
+Parent = William Horne = 6 = 6.194261820753704 = A human being
+	bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n
+
+============================68============================
+Their mother, Joy, is married to an American airman who she met.
+[Personal_relationship] 7 0.6612906232540332
+Marriage_partner_1 = mother Joy = 4 = 3.108317583733233 = A human being
+	bn:00046516n - hypernym - bn:00028157n - hypernym - bn:00010161n
+Marriage_partner_2 = airman = 11 = 0.14068874129601774 = Someone who operates an aircraft
+	bn:00010161n - hypernym - bn:00053531n - hypernym - bn:03831747n - hyponym - bn:00001688n
+
+============================69============================
+Jack and me got married very quietly yesterday afternoon.
+[Personal_relationship] 5 0.17630421389556272
+Marriage_partner_1 = I = 3 = 0.01 = not found
+Marriage_partner_2 = Jack = 1 = 3.108317583733233 = A human being
+	bn:00046516n - hypernym - bn:00028157n - hypernym - bn:00010161n
+
+[Personal_relationship] 5 0.17630421389556272
+Marriage_partner_1 = Jack = 1 = 3.108317583733233 = A human being
+	bn:00046516n - hypernym - bn:00028157n - hypernym - bn:00010161n
+Marriage_partner_2 = I = 3 = 0.01 = not found
+
+============================70============================
+Brian Close recalled to the colors in 1976 at the age of 45.
+[Age] 11 1.629784506357884
+Age = 45 = 13 = 1.2 = an integer
+Person = Brian Close = 1 = 2.213497947636843 = A human being
+
+============================71============================
+Kate is 20.
+[Age] 2 1.5501104874867524
+Age = 20 = 3 = 1.2 = an integer
+Person = Kate = 1 = 2.0023687695136814 = A human being
+
+============================72============================
+Kate is under the age of 20.
+[Age] 5 1.5501104874867524
+Age = 20 = 7 = 1.2 = an integer
+Person = Kate = 1 = 2.0023687695136814 = A human being
+
+============================73============================
+The Nobel Prize in Physics is awarded to Albert Einstein.
+[Award] 7 0.8789906165627199
+Person = Albert Einstein = 9 = 3.656113733463804 = A human being
+Award = The Nobel Prize in Physics = 3 = 0.21132397959440002 = The physical properties, phenomena, and laws of something
+	bn:00000704n - hypernym - bn:01386604n - hyponym - bn:00069670n - hypernym - bn:00056999n - hypernym - bn:00062170n
+
+============================74============================
+Albert Einstein is granted the Nobel Prize in Physics by Swedish Academy.
+[Award] 4 2.7244259354185325
+Person = Albert Einstein = 1 = 3.656113733463804 = A human being
+Award = the Nobel Prize in Physics = 7 = 2.567592565945163 = The Nobel Prize in Physics is awarded once a year by the Royal Swedish Academy of Sciences.
+	bn:00000704n - hypernym - bn:00064497n - hypernym - bn:03316444n
+Organization = Swedish Academy = 12 = 2.154166218497986 = A group of people who work together
+
+============================75============================
+Albert Einstein is given the Nobel Prize in Physics by Swedish Academy.
+[Award] 4 2.7244259354185325
+Person = Albert Einstein = 1 = 3.656113733463804 = A human being
+Award = the Nobel Prize in Physics = 7 = 2.567592565945163 = The Nobel Prize in Physics is awarded once a year by the Royal Swedish Academy of Sciences.
+	bn:00000704n - hypernym - bn:00064497n - hypernym - bn:03316444n
+Organization = Swedish Academy = 12 = 2.154166218497986 = A group of people who work together
+
+============================76============================
+Turing Award is given to Donald Knuth by the Association for Computing Machinery.
+[Award] 4 1.9580066731408943
+Person = Donald Knuth = 6 = 2.5765334282696006 = A human being
+Award = Turing Award = 2 = 2.024422226024882 = The ACM A.M. Turing Award is an annual prize given by the Association for Computing Machinery to "an individual selected for contributions of a technical nature made to the computing community".
+	bn:00000704n - hypernym - bn:00064497n - hypernym - bn:02461252n
+Organization = the Association for Computing Machinery = 10 = 1.4391485505499118 = A group of people who work together
+
+============================77============================
+Emma Stone is given an Oscar Award by the Academy of Motion Picture Arts and Sciences.
+[Award] 4 4.154732156527492
+Person = Emma Stone = 1 = 2.554850581966981 = A human being
+Award = Oscar Award = 7 = 10.956654783366137 = An annual award by the Academy of Motion Picture Arts and Sciences for achievements in motion picture production and performance
+	bn:00000704n - hypernym - bn:00000571n
+Organization = the Academy of Motion Picture Arts and Sciences = 10 = 2.5620382526982874 = A group of people who work together
+
+============================78============================
+By the way, you are catching a cold.
+[Medical_conditions] 7 1.9714388231625748
+Patient = you = 5 = 1.2713475698110113 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00027976n - hypernym - bn:00061017n
+Ailment = cold = 9 = 3.0570483837479516 = A mild viral infection involving the nose and respiratory passages (but not the lungs)
+	bn:00045952n - hypernym - bn:00027546n - hypernym - bn:00021219n - hypernym - bn:00020534n
+
+============================79============================
+Kate is diagnosed with cancer.
+[Medical_conditions] 3 2.049906780177122
+Patient = Kate = 1 = 1.2713475698110113 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00027976n - hypernym - bn:00061017n
+Ailment = cancer = 5 = 3.3052470521816395 = Any malignant growth or tumor caused by abnormal and uncontrolled cell division; it may spread to other parts of the body through the lymphatic system or the blood stream
+	bn:00045952n - hypernym - bn:00027546n - hypernym - bn:00015180n
+
+============================80============================
+John suffers from a headache.
+[Medical_conditions] 2 1.3686363100682692
+Patient = John = 1 = 1.2713475698110113 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00027976n - hypernym - bn:00061017n
+Ailment = headache = 5 = 1.473369984508436 = Pain in the head caused by dilation of cerebral arteries or muscle contractions or a reaction to drugs
+	bn:00045952n - hypernym - bn:00027546n - hypernym - bn:00057339n - hypernym - bn:00017236n
+
+============================81============================
+Susan is infected with a virus.
+[Medical_conditions] 3 0.5710391827664743
+Patient = Susan = 1 = 1.2713475698110113 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00027976n - hypernym - bn:00061017n
+Ailment = virus = 6 = 0.25648827747637587 = (virology) ultramicroscopic infectious agent that replicates itself only within cells of living hosts; many are pathogenic; a piece of nucleic acid (DNA or RNA) wrapped in a thin coat of protein
+	bn:00045952n - hypernym - bn:00027546n - Gloss related form (monosemous) - bn:00046626n - Gloss related form (disambiguated) - bn:00046629n - hypernym - bn:00080085n
+
+============================82============================
+Kate is diagnosed with diabetes.
+[Medical_conditions] 3 2.2028621270441593
+Patient = Kate = 1 = 1.2713475698110113 = A human being
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00027976n - hypernym - bn:00061017n
+Ailment = diabetes = 5 = 3.8168960762530646 = A polygenic disease characterized by abnormally high glucose levels in the blood; any of several metabolic disorders marked by excessive urination and persistent thirst
+	bn:00045952n - hypernym - bn:00021810n - hypernym - bn:00063422n - hypernym - bn:00026788n
+
+============================83============================
+A year ago he resigned as chairman.
+[Quitting] 5 1.4586878512917083
+Employee = he = 4 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = chairman = 7 = 1.3706518180261469 = The officer who presides at the meetings of an organization
+	bn:00010073n - hypernym - bn:00064232n - Derivationally related form - bn:00017517n
+
+============================84============================
+Peter Bibby has retired as deputy director of social services in Brent.
+[Quitting] 4 1.8993160256887738
+Employee = Peter Bibby = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = deputy director = 7 = 2.32379000772445 = Someone who controls resources and expenditures
+	bn:00027366n - hypernym - bn:00010073n
+
+============================85============================
+Steve Ballmer steps down as a CEO from Microsoft.
+[Quitting] 3 1.1593129743579973
+Employee = Steve Ballmer = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Employer = Microsoft = 9 = 1.53813668069962 = A group of people who work together
+Position = ceo = 7 = 0.6525436596387729 = The corporate executive responsible for the operations of the firm; reports to a board of directors; may appoint other managers (including a president)
+	bn:00010073n - hypernym - bn:00064232n - Derivationally related form - bn:00064233n - Gloss related form (disambiguated) - bn:00017235n
+
+[Quitting] 3 0.35994132881390867
+Employee = Steve Ballmer = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = Microsoft = 9 = 0.18777958026095032 = A group of people who work together
+	bn:00059480n - hypernym - bn:00021019n - Derivationally related form - bn:00082857v - hypernym - bn:00091877v - Derivationally related form - bn:00010073n
+
+============================86============================
+Mary is an Italian.
+[People_by_origin] 2 0.5310773337629284
+Person = Mary = 1 = 4.0298005902834175 = A human being
+Origin = Italian = 4 = 0.06998935260389762 = A native or inhabitant of Italy
+	bn:00058564n - Derivationally related form - bn:00058562n - hypernym - bn:00042411n - Derivationally related form - bn:00087441v - Derivationally related form - bn:00026239n - hypernym - bn:00031898n - hypernym - bn:00047706n
+
+============================87============================
+He's a Brit investigating some occurrences here.
+[People_by_origin] 2 0.3420147876792838
+Person = he = 1 = 2.0 = A human being
+Origin = Brit = 4 = 0.05848705749565279 = A native or inhabitant of Great Britain
+	bn:00058564n - Derivationally related form - bn:00058562n - hypernym - bn:00042411n - Derivationally related form - bn:00087441v - Derivationally related form - bn:00026239n - hypernym - bn:00031898n - hypernym - bn:00013170n
+
+============================88============================
+Frances was a New Yorker, totally lost in Nebraska.
+[People_by_origin] 2 0.7194704060794068
+Person = Frances = 1 = 2.0594206325271296 = A human being
+Origin = a New Yorker = 5 = 0.25135111159339496 = A native or resident of New York (especially of New York City)
+	bn:00058564n - Gloss related form (disambiguated) - bn:00057516n
+
+============================89============================
+Denise is a Parisian.
+[People_by_origin] 2 2.6149190685466395
+Person = Denise = 1 = 2.153110480255178 = A human being
+Origin = Parisian = 4 = 3.1757783902656196 = A native or resident of Paris
+	bn:00058564n - Gloss related form (disambiguated) - bn:00060683n
+
+============================90============================
+Paul was a contented Christian.
+[People_by_religion] 2 6.930297903425132
+Person = Paul = 1 = 4.438076392195676 = A human being
+Religion = Christian = 5 = 10.822037474316007 = A monotheistic system of beliefs and practices based on the Old Testament and the teachings of Jesus as embodied in the New Testament and emphasizing the role of Jesus as savior
+	bn:00032768n - hypernym - bn:00018828n
+
+[People_by_origin] 2 0.41692716598826624
+Person = Paul = 1 = 4.438076392195676 = A human being
+Origin = Christian = 5 = 0.039167478514944676 = 
+	bn:00058564n - Derivationally related form - bn:00090437v - Gloss related form (disambiguated) - bn:00058572n - hypernym - bn:00014839n - hypernym - bn:00064607n - hypernym - bn:00007287n - hypernym - bn:16878673n
+
+============================91============================
+Steve is a Buddhist.
+[People_by_religion] 2 3.9353821300023353
+Person = Steve = 1 = 2.0411560272865747 = A human being
+Religion = Buddhist = 4 = 7.587480967699358 = The teaching of Buddha that life is permeated with suffering caused by desire, that suffering ceases when desire ceases, and that enlightenment obtained through right conduct and wisdom and meditation releases one from desire and suffering and rebirth
+	bn:00032768n - hypernym - bn:00013631n
+
+[People_by_origin] 2 0.15692613938854874
+Person = Steve = 1 = 2.0411560272865747 = A human being
+Origin = Buddhist = 4 = 0.012064640279425736 = The status of belonging to a particular nation by birth or naturalization
+	bn:00058564n - hypernym - bn:00020708n - Derivationally related form - bn:00100024a - Derivationally related form - bn:00020722n - Derivationally related form - bn:00101195a - Derivationally related form - bn:00056915n - Derivationally related form - bn:00107136a - Derivationally related form - bn:00056964n
+
+============================92============================
+Usually the suggesters get the job of the news groups management and would only impose their own standards of control.
+[Being_employed] 6 0.2890293507149913
+Employee = suggester = 3 = 0.057701653089473594 = Someone who advances a suggestion or proposal
+	bn:00030618n - Gloss related form (disambiguated) - bn:00013379n - hypernym - bn:00053107n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n - Gloss related form (monosemous) - bn:00064778n
+Task = news group management = 11 = 1.4477568856683087 = Those in charge of running a business
+	bn:00053116n - hypernym - bn:00049573n
+
+[Possession] 4 0.16255232528479568
+Owner = suggester = 3 = 0.08471394546844103 = Someone who advances a suggestion or proposal
+	bn:00059954n - hyponym - bn:00046516n - hypernym - bn:00036538n - hypernym - bn:00046516n - Gloss related form (monosemous) - bn:00064778n
+Possession = job = 6 = 0.31191155493209355 = The principal activity in your life that you do to earn money
+	bn:00014138n - hypernym - bn:00000752n - hypernym - bn:00053479n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n - hypernym - bn:00021045n
+
+[Being_employed] 6 0.1500206070438109
+Employee = suggester = 3 = 0.057701653089473594 = Someone who advances a suggestion or proposal
+	bn:00030618n - Gloss related form (disambiguated) - bn:00013379n - hypernym - bn:00053107n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n - Gloss related form (monosemous) - bn:00064778n
+Position = news group management = 11 = 0.3900439819790759 = The act of managing something
+	bn:00027355n - Derivationally related form - bn:00090616v - Derivationally related form - bn:00027366n - hypernym - bn:00010073n
+
+[Education] 4 0.11841896645583122
+Student = suggester = 3 = 0.027949405206503353 = Someone who advances a suggestion or proposal
+	bn:00029806n - Derivationally related form - bn:00094501v - Derivationally related form - bn:00007985n - hypernym - bn:00005105n - Derivationally related form - bn:00005106n - Derivationally related form - bn:00086870v - Derivationally related form - bn:00021533n - hypernym - bn:00064778n
+Degree = job = 6 = 0.5017298762838914 = The state of being employed or having a job
+	bn:00030616n - hypernym - bn:16842851n - hypernym - bn:00000554n
+
+[Medical_conditions] 4 0.06513423389791183
+Patient = suggester = 3 = 0.02780465059203966 = Someone who advances a suggestion or proposal
+	bn:00061017n - hyponym - bn:00054133n - hypernym - bn:00003893n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n - Gloss related form (monosemous) - bn:00064778n
+Ailment = job = 6 = 0.1525812529607002 = The state of being employed or having a job
+	bn:00030616n - hyponym - bn:00074009n - Gloss related form (disambiguated) - bn:00043369n - hypernym - bn:00045952n
+
+============================93============================
+She applied for a teaching job under a false identity.
+[Being_employed] 6 2.051828655984712
+Employee = she = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Field = teaching = 5 = 2.711968222659102 = The activities of educating or instructing; activities that impart knowledge or skill
+	bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00061229n - hypernym - bn:00026980n
+
+============================94============================
+Eighty thousand employees work for foreign-owned companies in the region.
+[Being_employed] 4 1.5721312938223093
+Employee = employee = 3 = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = company = 7 = 2.5187298386289867 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00059480n
+Place = region = 10 = 1.8481800590461934 = A large indefinite location on the surface of the Earth
+
+[Being_employed] 4 1.3863608008681882
+Employee = employee = 3 = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = company = 7 = 2.5187298386289867 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00059480n
+Field = region = 10 = 1.2673794274253136 = A large indefinite location on the surface of the Earth
+	bn:00007985n - hypernym - bn:00005105n - hypernym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+[Being_employed] 4 0.7650152288110413
+Employee = employee = 3 = 0.8347195215450589 = A worker who is hired to perform a job
+Employer = region = 10 = 1.5775462795771455 = Geographical division in Norway
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00049178n - hypernym - bn:14326780n
+
+============================95============================
+He worked as an assistant to George Porter.
+[Being_employed] 2 0.26878971738173174
+Employee = he = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Position = assistant = 5 = 0.04654014327001766 = A person who contributes to the fulfillment of a need or furtherance of an effort or purpose
+	bn:00006523n - Gloss related form (monosemous) - bn:00079922n - hyponym - bn:00001434n - hypernym - bn:00027366n - hypernym - bn:00010073n
+
+============================96============================
+He works for Ace Airways.
+[Being_employed] 2 1.0740661681293107
+Employee = he = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Employer = Ace Airways = 5 = 0.7431294773815174 = A group of people who work together
+
+============================97============================
+He works as a driver for an electric animal vet.
+[Being_employed] 2 1.7053506314768365
+Employee = he = 1 = 1.55237837904756 = A human being
+	bn:00046516n - hypernym - bn:00081593n - hypernym - bn:00030618n
+Employer = animal vet = 10 = 0.8050135576074752 = A doctor who practices veterinary medicine
+	bn:00059480n - hypernym - bn:00046954n - hypernym - bn:00054116n - hypernym - bn:00027976n - hypernym - bn:00079883n
+Position = driver = 5 = 3.968626966596886 = The operator of a motor vehicle
+	bn:00028795n - hypernym - bn:00010073n
+
+============================98============================
+The school has teamed up with Assumption Grammar School from Ballynahinch.
+[Collaboration] 4 1.921208147040379
+Partner1 = school = 2 = 2.6077477222408207 = An institution for the advancement of art or science or literature
+	bn:00059480n - hypernym - bn:00031641n - hypernym - bn:00000568n
+Partner2 = Assumption Grammar School = 9 = 1.4154132751317827 = A group of people who work together
+
+============================99============================
+Chorus had a similar deal with Thomson CSF for the Inmos transputer, and partnered with other chip manufacturers.
+[Collaboration] 15 3.710532216554302
+Partner1 = Chorus = 21 = 3.989891379847355 = A group of people who work together
+Partner2 = chip manufacturer = 19 = 3.450732869478297 = Someone who manufactures something
+	bn:00053285n - hypernym - bn:00052910n - Derivationally related form - bn:00088480v - Derivationally related form - bn:00059480n
+
+[Possession] 2 0.5760622765495667
+Owner = Chorus = 1 = 0.9320093524782261 = A group of people who work together
+	bn:00059480n - hypernym - bn:15460720n - hypernym - bn:00059958n - Derivationally related form - bn:00059954n
+Possession = deal = 5 = 0.3560562408317916 = A particular instance of buying or selling
+	bn:00014152n - Derivationally related form - bn:00086333v - Derivationally related form - bn:00077860n - hypernym - bn:00021045n
+
+============================100============================
+Half a million civilians died in the Galilee and Judea as a result of this first revolt against Rome, a number unequaled in ancient warfare.
+[Death] 5 2.713624234688951
+Protagonist = civilian = 4 = 1.5859881794038562 = A nonmilitary citizen
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00019380n
+Place = Judea = 10 = 4.64300843015053 = A large indefinite location on the surface of the Earth
+
+[Death] 5 2.5142730726774043
+Protagonist = civilian = 4 = 1.5859881794038562 = A nonmilitary citizen
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00019380n
+Place = Galilee = 8 = 3.985886632753364 = A large indefinite location on the surface of the Earth
+
+[Death] 5 1.0573316804047417
+Protagonist = civilian = 4 = 1.5859881794038562 = A nonmilitary citizen
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00019380n
+Place = warfare = 26 = 0.7048919386068387 = The waging of armed conflict against an enemy
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:01231563n - hypernym - bn:00041944n - hypernym - bn:00001129n - hypernym - bn:00080439n
+
+============================101============================
+Goldstein was born on Sept 23, 1922, in Denver and died in Chicago on June 20, 1944.
+[Death] 13 1.6601115971994962
+Protagonist = Goldstein = 22 = 1.1109587325721875 = A human being
+Place = Chicago = 15 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+[Being_born] 3 1.6601115971994962
+Person = Goldstein = 1 = 1.1109587325721875 = A human being
+Place = Denver = 11 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================102============================
+Two sisters who know their mother had genetic testing find out her test results.
+[Possession] 7 0.17524572554604448
+Owner = sister = 2 = 0.22556488708845587 = A woman religious
+	bn:00059954n - hyponym - bn:00046516n - hypernym - bn:00067048n - hypernym - bn:00067042n - hypernym - bn:00058313n
+Possession = testing = 9 = 0.13615179524868212 = Optical fabrication and testing spans an enormous range of manufacturing procedures and optical test configurations.
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00005442n - hyponym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:03220046n
+
+============================103============================
+They died from shotgun wounds.
+[Death] 2 0.9938622609561345
+Protagonist = they = 1 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Cause = shotgun wound = 5 = 0.4726002682036812 = A casualty to military personnel resulting from combat
+	bn:02131709n - hypernym - bn:00009078n - hypernym - bn:00005731n - Gloss related form (disambiguated) - bn:00020861n
+
+============================104============================
+The South African authorities used unequal education as a tool of oppression too.
+[Using] 5 0.9232284184013185
+Agent = South African authority = 4 = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+Instrument = education = 7 = 0.5288088992027548 = The activities of educating or instructing; activities that impart knowledge or skill
+	bn:00026980n - hypernym - bn:00006195n - hypernym - bn:00061984n - hypernym - bn:00049910n - hypernym - bn:15154456n - hypernym - bn:00026716n
+
+============================105============================
+Foreign officers could operate radar and other navigational equipment.
+[Using] 4 1.6589024464812954
+Agent = officer = 2 = 1.7672146889967628 = A person authorized to serve in a position of authority on a vessel
+	bn:00046516n - hypernym - bn:00023782n - hypernym - bn:00040864n - hypernym - bn:00058699n
+Instrument = radar = 5 = 1.5572286401172326 = Measuring instrument in which the echo of a pulse of microwave radiation is used to detect and locate distant objects
+	bn:00026716n - hypernym - bn:00046961n - hypernym - bn:00054025n - hypernym - bn:00054808n
+
+[Using] 4 0.5980103660659101
+Agent = officer = 2 = 1.7672146889967628 = A person authorized to serve in a position of authority on a vessel
+	bn:00046516n - hypernym - bn:00023782n - hypernym - bn:00040864n - hypernym - bn:00058699n
+Instrument = equipment = 9 = 0.20236160334616757 = An instrumentality needed for an undertaking or to perform a service
+	bn:00031322n - Gloss related form (disambiguated) - bn:00046127n - hypernym - bn:00077585n - hypernym - bn:00026716n
+
+============================106============================
+The Anasazi utilized such formal agricultural techniques as irrigation.
+[Using] 3 0.707991671722468
+Agent = Anasazi = 2 = 4.035189771943921 = A group of people who work together
+Instrument = technique = 7 = 0.12422023140361514 = A practical method or art applied to some particular task
+	bn:00026716n - hypernym - bn:00054304n - hypernym - bn:00021483n - hypernym - bn:00054149n - hypernym - bn:00012059n - hypernym - bn:00069638n - hypernym - bn:00054625n - hypernym - bn:00076341n
+
+============================107============================
+They use imported raw materials.
+[Using] 2 0.7014656034460106
+Agent = they = 1 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Instrument = material = 5 = 0.2354259460902269 = Substance or substances out of which a thing can be made
+	bn:15358232n - hypernym - bn:00022379n - hyponym - bn:00046978n - hypernym - bn:00026716n
+
+============================108============================
+Carter had applied television in a somewhat haphazard fashion.
+[Using] 3 1.4391550801976092
+Agent = Carter = 1 = 3.029384115720369 = A human being
+Instrument = television = 4 = 0.6836925479706214 = Broadcasting visual images of stationary or moving objects - Ernie Kovacs
+	bn:00026716n - hypernym - bn:00070465n - Derivationally related form - bn:00082493v - hypernym - bn:00094855v - Derivationally related form - bn:00076373n
+
+============================109============================
+As a result Iran has been making numerous vitriolic comments against Iraq's use of such weapons in international forums.
+[Using] 14 2.5619460113021044
+Agent = Iraq = 12 = 2.7899736458468043 = A republic in the Middle East in western Asia; the ancient civilization of Mesopotamia was in the area now known as Iraq
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00002362n
+Instrument = weapon = 17 = 2.3525553277527855 = Any instrument or instrumentality used in fighting or hunting
+	bn:00026716n - hypernym - bn:00046961n - hypernym - bn:00005704n
+
+[Building] 7 0.854180790309159
+Agent = Iran = 4 = 3.267387149404834 = A theocratic Islamic republic in the Middle East in western Asia; Iran was the core of the ancient empire that was known as Persia until 1935; rich in oil
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00047447n
+Created_entity = comment = 10 = 0.22330528620279455 = A written explanation or criticism or illustration that is added to a book or other textual material
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00054149n - hypernym - bn:00012059n - Gloss related form (disambiguated) - bn:00020978n
+
+[Create_organization] 7 0.6664190313367807
+Creator = Iran = 4 = 0.5668716727171924 = A theocratic Islamic republic in the Middle East in western Asia; Iran was the core of the ancient empire that was known as Persia until 1935; rich in oil
+	bn:00009631n - Derivationally related form - bn:00085671v - Derivationally related form - bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00047447n
+Organization = comment = 10 = 0.5129309378384547 = 
+	bn:00059480n - hypernym - bn:00021286n - hypernym - bn:01426657n - hypernym - bn:01165400n - hypernym - bn:03483744n
+Place = forum = 20 = 1.0178845512614205 = A forum was a public square in a Roman municipium, or any civitas, reserved primarily for the vending of goods; i.e., a marketplace, along with the buildings used for shops and the stoas used for open stalls.
+	bn:00066884n - hypernym - bn:00040160n - hypernym - bn:00060634n - hypernym - bn:00065099n - hypernym - bn:03148644n
+
+[Cooking] 7 0.5771081484717131
+Cook = Iran = 4 = 1.4854585420373043 = A point or extent in space
+	bn:00046516n - Gloss related form (disambiguated) - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n
+Food = comment = 10 = 0.12711961257976054 = A report (often malicious) about the behavior of other people
+	bn:00035650n - hypernym - bn:00056135n - Derivationally related form - bn:00090943v - Gloss related form (disambiguated) - bn:00086964v - Derivationally related form - bn:00020979n
+Place = forum = 20 = 1.0178845512614205 = A forum was a public square in a Roman municipium, or any civitas, reserved primarily for the vending of goods; i.e., a marketplace, along with the buildings used for shops and the stoas used for open stalls.
+	bn:00066884n - hypernym - bn:00040160n - hypernym - bn:00060634n - hypernym - bn:00065099n - hypernym - bn:03148644n
+
+============================110============================
+We build rockets from nothing.
+[Building] 2 1.4653988497947448
+Agent = we = 1 = 2.0 = A human being
+Created_entity = rocket = 3 = 1.0736968944898804 = A jet engine containing its own propellant and driven by reaction propulsion
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00022379n - hypernym - bn:00079675n - hypernym - bn:00068085n
+
+============================111============================
+Iran is rapidly constructing nuclear facilities.
+[Building] 4 2.856149125448876
+Agent = Iran = 1 = 3.267387149404834 = A theocratic Islamic republic in the Middle East in western Asia; Iran was the core of the ancient empire that was known as Persia until 1935; rich in oil
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00047447n
+Created_entity = facility = 6 = 2.496670107883699 = A building or place that provides a particular service or is used for a particular industry
+	bn:00005956n - hypernym - bn:00032645n
+
+============================112============================
+The launch sites would be constructed by the United Kingdom, and the missile systems would be fully manned by the RAF crews.
+[Building] 6 1.5955277697033103
+Agent = the United Kingdom = 10 = 3.3701510810122075 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Created_entity = launch site = 3 = 0.7553693596222486 = A platform from which rockets or space craft are launched
+	bn:00005956n - hypernym - bn:00022071n - hypernym - bn:00047172n - hypernym - bn:00050209n
+
+============================113============================
+In 1980, for example, Kalmar assembled 22800 cars.
+[Building] 8 1.3585467130005822
+Agent = Kalmar = 7 = 1.3427153704101156 = A group of people who work together
+Created_entity = car = 10 = 1.374564715708107 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+
+============================114============================
+UCB has started construction of a new factory in the US.
+[Building] 4 1.4246534434787084
+Agent = UCB = 1 = 1.301153721205675 = A group of people who work together
+Created_entity = factory = 8 = 1.5598752099291073 = A plant consisting of one or more buildings with facilities for manufacturing
+	bn:00005956n - hypernym - bn:00022071n - hypernym - bn:00013722n - hypernym - bn:00032675n
+
+============================115============================
+In July 1914, Serbian nationalists had assassinated the Habsburg heir.
+[Killing] 8 1.8228117864462519
+Killer = nationalist = 6 = 4.07554322458215 = One who loves and defends his or her country
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00056960n
+Victim = heir = 11 = 0.8152637883378194 = A person who is entitled by law or by the terms of a will to inherit the estate of another
+	bn:00046516n - hypernym - bn:00001000n - hypernym - bn:00066495n - hypernym - bn:00043555n
+
+============================116============================
+The Zairian security forces have killed more than 50 unarmed opposition party supporters.
+[Killing] 6 1.9527790078586122
+Killer = Zairian security force = 4 = 3.5610403475260535 = A unit that is part of some military service
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n
+Victim = opposition party supporter = 13 = 1.070851628003175 = Someone who supports or champions something
+	bn:00046516n - hypernym - bn:00041078n - hypernym - bn:00009897n - hypernym - bn:00061047n
+
+============================117============================
+Balcha entered Harar and his troops massacred such Muslims.
+[Killing] 7 1.7405491263801376
+Killer = troop = 6 = 1.7142009081435103 = A cavalry unit corresponding to an infantry company
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n - hypernym - bn:00078394n
+Victim = Muslims = 9 = 1.7673023313373686 = A believer in or follower of Islam
+	bn:00046516n - hypernym - bn:00067048n - hypernym - bn:00055975n
+
+[Travel] 2 1.6922996778748496
+Traveler = Balcha = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = Harar = 3 = 1.3003007337401284 = A human being
+	bn:00046516n - Gloss related form (disambiguated) - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+[Education] 2 0.7668027081892901
+Student = Balcha = 1 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = Harar = 3 = 0.3878754245215512 = A human being
+	bn:00046516n - hypernym - bn:00069680n - Derivationally related form - bn:00069670n - hypernym - bn:00061229n - hypernym - bn:00026980n - hypernym - bn:00029812n
+
+============================118============================
+Apart from road accidents, cancer is still the major killer of children.
+[Killing] 11 1.1502321216514428
+Killer = cancer = 6 = 0.5366739715907678 = Any malignant growth or tumor caused by abnormal and uncontrolled cell division; it may spread to other parts of the body through the lymphatic system or the blood stream
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00005105n - hypernym - bn:00054133n - hypernym - bn:00053003n - hypernym - bn:00053009n - hypernym - bn:00015180n
+Victim = child = 13 = 2.4652470656572816 = A young person of either sex
+	bn:00046516n - hypernym - bn:00048684n - hypernym - bn:00018345n
+
+============================119============================
+Police arrested two men in Dungannon last night.
+[Arrest] 2 2.845044122964268
+Authorities = police = 1 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+Suspect = man = 4 = 2.856548941531178 = An adult person who is male (as opposed to a woman)
+	bn:00046516n - hypernym - bn:00052968n - hypernym - bn:00001533n
+
+============================120============================
+Mr Brown was arrested by Saudi religious police two weeks.
+[Arrest] 4 2.4229166035914225
+Authorities = police = 8 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+Suspect = Mr Brown = 1 = 2.0717654636624645 = A human being
+
+============================121============================
+Similarly the shops have apprehended the culprit.
+[Arrest] 5 0.9333796530157464
+Authorities = shop = 3 = 1.31032449957006 = Place where items are sold
+	bn:00046516n - hypernym - bn:00069680n - hypernym - bn:00062176n - hypernym - bn:15385545n
+Suspect = culprit = 7 = 0.6648716229832 = Someone who perpetrates wrongdoing
+	bn:00046516n - hypernym - bn:00007888n - hypernym - bn:00058677n - hypernym - bn:00024341n
+
+============================122============================
+On his arrest for burglary, he admitted to all his previous offences with the sole aim.
+[Arrest] 3 2.154837831733347
+Suspect = he = 7 = 2.0 = A human being
+Charges = burglary = 5 = 2.321663040534636 = Entering a building unlawfully with intent to commit a felony or to steal valuable property
+	bn:00023807n - hypernym - bn:00034010n - hypernym - bn:00013967n
+
+============================123============================
+Pc Elsegood told Wing he was an off-duty policeman and he was arresting him for assault.
+[Arrest] 13 2.8879618288546895
+Authorities = he = 11 = 2.0 = A human being
+Suspect = he = 14 = 2.0 = A human being
+Charges = assault = 16 = 6.021633995068184 = The crime of forcing a woman to submit to sexual intercourse against her will
+	bn:00023807n - hypernym - bn:00070782n - hypernym - bn:00006469n
+
+============================124============================
+US intelligence launched a strike against Bin Laden.
+[Attack] 5 0.19802598981075198
+Assailant = US intelligence = 2 = 0.01 = not found
+Victim = Bin Laden = 7 = 3.921429264052805 = A human being
+
+============================125============================
+Libya's regime launches military assault in Tripoli.
+[Attack] 6 1.8253602238182538
+Assailant = regime = 3 = 2.2430379929204047 = The organization that is the governing authority of a political unit
+	bn:00059480n - hypernym - bn:00063358n - hypernym - bn:00007299n
+Victim = Tripoli = 8 = 1.4854585420373043 = A point or extent in space
+	bn:00046516n - Gloss related form (disambiguated) - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n
+
+============================126============================
+In Baqubah, northeast of Baghdad, gunmen ambushed a minibus carrying recent police recruits.
+[Attack] 9 1.4157737809623965
+Assailant = gunman = 8 = 2.4792530248367726 = A professional killer who uses a gun
+	bn:00046516n - hypernym - bn:00049103n - hypernym - bn:00051488n - hypernym - bn:00042223n
+Victim = minibus = 11 = 0.8084755282258957 = A light bus (4 to 10 passengers)
+	bn:00046516n - hypernym - bn:00078093n - hypernym - bn:00060894n - Gloss related form (disambiguated) - bn:00007329n - hypernym - bn:00055155n
+
+============================127============================
+Their sordid dormitory was attacked by hooligans.
+[Attack] 5 0.7396434905007737
+Assailant = hooligan = 7 = 0.6790656698410649 = A cruel and brutal fellow
+	bn:00046516n - Gloss related form (disambiguated) - bn:00002021n - hypernym - bn:00013838n
+Victim = dormitory = 3 = 0.8056253133341439 = A college or university building containing living quarters for students
+	bn:00046516n - hypernym - bn:00005106n - Derivationally related form - bn:00005105n - hypernym - bn:00013722n - hypernym - bn:00028288n
+
+============================128============================
+The gang assaulted him during the drive to Rickmansworth in Hertfordshire.
+[Attack] 3 1.957220117238215
+Assailant = gang = 2 = 1.9153552936609863 = An association of criminals
+	bn:00059480n - hypernym - bn:00037247n - Derivationally related form - bn:00037243n
+Victim = he = 4 = 2.0 = A human being
+
+============================129============================
+Coun Pearson, who is chairman of the Conservatives on Cleveland County Council, was speaking on proposals.
+[Leadership] 6 1.859352649382511
+Leader = Coun Pearson = 1 = 1.222374992935117 = A human being
+Governed = Conservatives = 9 = 3.8366633875766993 = A political party (especially in Great Britain or Australia) that believes in the importance of a capitalist economy with private ownership rather than state control
+	bn:00059480n - hypernym - bn:00060834n - hypernym - bn:00021980n
+Role = chairman = 6 = 1.3706518180261469 = The officer who presides at the meetings of an organization
+	bn:00010073n - hypernym - bn:00064232n - Derivationally related form - bn:00017517n
+
+============================130============================
+The militants ruled the towns by decrees announced on wall-posters.
+[Leadership] 3 1.5747571580951631
+Leader = militant = 2 = 2.1222629431811697 = The military forces of a nation
+	bn:00059480n - hypernym - bn:00005732n
+Governed = town = 5 = 1.1684980482459746 = An urban area with a fixed boundary that is smaller than a city
+	bn:00059480n - hypernym - bn:00021248n - hypernym - bn:00070724n - hypernym - bn:00077773n
+
+============================131============================
+Jerry Rawlings is chief of defence staff.
+[Leadership] 4 2.301216391392867
+Leader = Jerry Rawlings = 1 = 2.3417989067814857 = A human being
+Governed = defence staff = 7 = 3.739231823658579 = Personnel who assist their superior in carrying out an assigned task
+	bn:00073801n - hypernym - bn:00035770n - hyponym - bn:00059480n
+Role = chief = 4 = 1.3916832053989674 = The head of a tribe or clan
+	bn:00010073n - hypernym - bn:00018331n - Derivationally related form - bn:00018320n
+
+============================132============================
+Britain will also lead a project dealing with the acceptance of new technologies, and will team up with the US on new materials.
+[Leadership] 4 1.4624051329899947
+Leader = Britain = 1 = 3.3701510810122075 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Governed = project = 6 = 0.6345794955735806 = Any piece of work that is undertaken or attempted
+	bn:00059480n - Derivationally related form - bn:00088488v - Derivationally related form - bn:00001423n - hypernym - bn:00053116n - hypernym - bn:00049573n
+
+[Collaboration] 17 1.2922072075578457
+Partner1 = Britain = 26 = 3.3701510810122075 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Partner2 = US = 21 = 3.9075381310671715 = North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00003341n
+Undertaking = material = 24 = 0.16384903283315821 = Artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers
+	bn:00049573n - hypernym - bn:00074977n - hyponym - bn:00014137n - hypernym - bn:00046576n - hypernym - bn:00019980n
+
+============================133============================
+Kowloon's main street was created by Sir Matthew Nathan and he was governor of Hong Kong at the turn of the nineteenth century.
+[Leadership] 14 1.4036522942384129
+Leader = he = 12 = 2.0 = A human being
+Governed = Hong Kong = 17 = 1.0570989608807182 = Formerly a Crown Colony on the coast of southern China in Guangdong province; leased by China to Britain in 1842 and returned in 1997; one of the world's leading commercial centers
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00016756n - Gloss related form (disambiguated) - bn:00044647n
+Role = governor = 14 = 1.3080760014181214 = The head of a state government
+	bn:00010073n - hypernym - bn:00041207n - Derivationally related form - bn:00041204n
+
+[Create_organization] 6 1.225160644734381
+Creator = Sir Matthew Nathan = 8 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = street = 4 = 0.7617887076641661 = A thoroughfare (usually including sidewalks) that is lined with buildings
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:03659145n - hypernym - bn:00032402n - hypernym - bn:00074595n
+
+============================134============================
+Sparky Ltd are the manufacturers of the product and therefore the defendants.
+[Manufacturing] 5 1.126344905157203
+Producer = Sparky Ltd = 1 = 0.6017882457100158 = A group of people who work together
+Product = product = 8 = 2.1081382935234583 = Commodities offered for sale
+	bn:00021045n - hypernym - bn:00054416n
+
+============================135============================
+Fujitsu is Japan's biggest maker of mainframe computers and is a leader in office automation equipment.
+[Manufacturing] 6 1.0438236293772152
+Producer = Fujitsu = 1 = 1.5687741000037305 = A group of people who work together
+Product = mainframe computer = 9 = 0.6945345217285464 = Mainframe computers are computers used primarily by corporate and governmental organizations for critical applications, bulk data processing such as census, industry and consumer statistics, enterprise resource planning and transaction processing.
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00021464n - hypernym - bn:14494102n
+
+============================136============================
+The manufacturers produce identical products.
+[Manufacturing] 3 2.697150737883829
+Producer = manufacturer = 2 = 3.450732869478297 = Someone who manufactures something
+	bn:00053285n - hypernym - bn:00052910n - Derivationally related form - bn:00088480v - Derivationally related form - bn:00059480n
+Product = product = 5 = 2.1081382935234583 = Commodities offered for sale
+	bn:00021045n - hypernym - bn:00054416n
+
+============================137============================
+ICI was the only UK-based producer of carbon tetrachloride up until this month.
+[Manufacturing] 8 0.5172170644866632
+Producer = ICI = 1 = 1.0208826899458563 = A group of people who work together
+Product = carbon tetrachloride = 11 = 0.2620413632543705 = A colorless nonflammable liquid used as a solvent for fats and oils; because of its toxicity its use as a cleaning fluid or fire extinguisher has declined
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00006418n - Gloss related form (monosemous) - bn:00015875n
+
+============================138============================
+Iran manufactures weapons for blister, blood, and choking agents.
+[Manufacturing] 2 1.9590259816268332
+Producer = Iran = 1 = 3.267387149404834 = A theocratic Islamic republic in the Middle East in western Asia; Iran was the core of the ancient empire that was known as Persia until 1935; rich in oil
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00047447n
+Product = weapon = 3 = 1.174572409452012 = Any instrument or instrumentality used in fighting or hunting
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00005704n
+
+============================139============================
+The 3666 people we helped find jobs in 1998, earned approximately 49 million dollars.
+[Earnings] 11 1.2905034064174532
+Earner = people = 3 = 1.3878325349792084 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Money = dollar = 15 = 1.2 = some currency
+
+[Education] 11 0.5863741795787244
+Student = people = 3 = 0.6646057688524514 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00029806n
+Degree = dollar = 15 = 0.5173513300528643 = A symbol of commercialism or greed
+	bn:00028116n - hyponym - bn:00075652n - hypernym - bn:00000704n - hypernym - bn:00000554n
+
+============================140============================
+Warren Buffett makes 1000000 dollars on investment.
+[Earnings] 3 1.635285345294602
+Earner = Warren Buffett = 1 = 2.582584140300693 = A human being
+Money = dollar = 5 = 1.2 = some currency
+Goods = investment = 7 = 1.4110581409150682 = The act of investing; laying out money or capital in an enterprise with the expectation of profit
+	bn:00021045n - hypernym - bn:00015496n - hypernym - bn:00034524n - hypernym - bn:00047358n
+
+[Create_organization] 3 1.5859923363496333
+Creator = Warren Buffett = 1 = 1.9703870512972828 = A human being
+	bn:00046516n - hypernym - bn:00023660n
+Organization = dollar = 5 = 1.276587607142299 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00059480n - hypernym - bn:00046954n - hypernym - bn:00054159n - hypernym - bn:00024507n - hypernym - bn:00028114n
+
+[Building] 3 1.0816245984860788
+Agent = Warren Buffett = 1 = 2.582584140300693 = A human being
+Created_entity = dollar = 5 = 0.4530004478049482 = A symbol of commercialism or greed
+	bn:00021551n - Derivationally related form - bn:00085514v - Derivationally related form - bn:00021547n - hypernym - bn:00075652n - hypernym - bn:00028116n
+
+[Cooking] 3 0.5984146664235065
+Cook = Warren Buffett = 1 = 2.582584140300693 = A human being
+Food = dollar = 5 = 0.13865961127952356 = A United States coin worth one dollar
+	bn:00035650n - hypernym - bn:00060957n - hypernym - bn:00072872n - hyponym - bn:00020497n - hypernym - bn:00028115n
+
+============================141============================
+Pfizer generates revenue of 1000000 dollars on healthcare.
+[Earnings] 3 1.056483091211724
+Earner = Pfizer = 1 = 1.6473283882735583 = A group of people who work together
+Money = dollar = 6 = 1.2 = some currency
+Goods = healthcare = 8 = 0.5965216675729714 = The preservation of mental and physical health by preventing or treating illness through services offered by the health profession
+	bn:00021045n - hypernym - bn:00070651n - Gloss related form (disambiguated) - bn:00043361n
+
+============================142============================
+John has a monthly income of 3000 dollars.
+[Earnings] 5 2.4368990357735
+Earner = John = 1 = 4.948730758794846 = A human being
+Money = dollar = 8 = 1.2 = some currency
+
+[Possession] 2 1.160464202429846
+Owner = John = 1 = 1.9264254999142842 = A human being
+	bn:00046516n - hypernym - bn:00059954n
+Possession = income = 5 = 0.6990548895771252 = Income is the consumption and savings opportunity gained by an entity within a specified timeframe, which is generally expressed in monetary terms.
+	bn:00021045n - hypernym - bn:00015496n - hypernym - bn:00080746n - hypernym - bn:14505599n
+
+============================143============================
+Amazon makes revenue of 300000000 dollars on Ecommerce.
+[Earnings] 3 1.4378913642405151
+Earner = Amazon = 1 = 2.649538931707812 = A group of people who work together
+Money = dollar = 6 = 1.2 = some currency
+Goods = Ecommerce = 8 = 0.9350324320971678 = Commerce conducted electronically (as on the internet)
+	bn:00021045n - Gloss related form (monosemous) - bn:00020982n - hypernym - bn:00029344n
+
+[Building] 2 0.9576530135295269
+Agent = Amazon = 1 = 2.649538931707812 = A group of people who work together
+Created_entity = revenue = 3 = 0.34613542882763004 = Income (at invoice values) received for goods and services over some given period of time
+	bn:00005956n - hypernym - bn:00021045n - hypernym - bn:00070651n - Gloss related form (disambiguated) - bn:00041873n
+
+[Create_organization] 2 0.6795790108874646
+Creator = Amazon = 1 = 1.1179817244532895 = A group of people who work together
+	bn:00059480n - Derivationally related form - bn:00085671v - Derivationally related form - bn:00009631n
+Organization = revenue = 3 = 0.4130905022303703 = The entire amount of income before any deductions are made
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00069670n - hypernym - bn:00072545n - hypernym - bn:00029676n - hypernym - bn:00041868n
+
+[Cooking] 2 0.47167806887940145
+Cook = Amazon = 1 = 1.828098765538004 = Arthur Lowe was an English actor.
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:01861134n
+Food = revenue = 3 = 0.12170031775954188 = The entire amount of income before any deductions are made
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hyponym - bn:00069670n - hypernym - bn:00072545n - hypernym - bn:00029676n - hypernym - bn:00041868n
+
+============================144============================
+The senior team won the Division One championship and beat Lisnagarvey in the NIBA Senior Cup final.
+[Beat_opponent] 10 0.5468059214807091
+Winner = team = 19 = 2.3718087871480495 = A cooperative unit (especially in sports)
+Loser = Lisnagarvey = 11 = 0.540966366341228 = A human being
+Competition = NIBA Senior Cup = 16 = 0.12742354663665836 = A large metal vessel with two handles that is awarded as a trophy to the winner of a competition
+	bn:00021338n - Gloss related form (disambiguated) - bn:00025404n - hyponym - bn:00024417n
+
+============================145============================
+Arkansas Governor Bill Clinton, the candidate of the Democratic Party, defeated the incumbent President George Bush, his Republican Party rival, in the presidential elections on Nov 3.
+[Beat_opponent] 13 1.4763749868819585
+Winner = Bill Clinton = 3 = 3.0653279716801545 = A human being
+Loser = President George Bush = 16 = 3.438960201807478 = A human being
+Competition = election = 28 = 0.30527127309553237 = A vote to select the winner of a position or political office
+	bn:00021339n - hyponym - bn:00041944n - hypernym - bn:00080251n - hypernym - bn:00030113n
+
+============================146============================
+Tonight England will play the world champions Sweden, who beat Germany 4-1 in the other semi-final.
+[Beat_opponent] 11 2.77155176981101
+Winner = champion = 7 = 1.5226054277069025 = Someone who is dazzlingly skilled in any field
+	bn:00046516n - hypernym - bn:00032322n - hypernym - bn:00000790n
+Loser = Germany = 12 = 3.8465042576819015 = A republic in central Europe; split into East Germany and West Germany after World War II and reunited in 1990
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00026684n
+Competition = semi final = 19 = 3.6350918965295826 = One of four competitors remaining in a tournament by elimination
+	bn:00021338n - hypernym - bn:00077750n - hypernym - bn:00070427n
+
+[Performing] 4 1.668904760067145
+Performer = England = 2 = 1.8292612435839328 = Justin David Hawkins is an English musician and singer-songwriter, best known for being the lead singer and lead guitarist of The Darkness, alongside his brother, guitarist Dan Hawkins.
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:03312147n
+Role = champion = 7 = 1.5226054277069025 = Someone who is dazzlingly skilled in any field
+	bn:00046516n - hypernym - bn:00032322n - hypernym - bn:00000790n
+
+============================147============================
+The German press disappeared after Germany's defeat in the First World War.
+
+============================148============================
+A doctor alleviates Jack's pain with a painkiller.
+[Cure] 3 2.490355654585525
+Healer = doctor = 2 = 2.3945016929777045 = A licensed medical practitioner
+Patient = Jack = 4 = 3.7262005382061574 = A human being
+Disease = pain = 6 = 1.7548210293809718 = A somatic sensation of acute discomfort
+	bn:00060182n - Gloss related form (disambiguated) - bn:00043369n - hypernym - bn:00045952n
+Medication = painkiller = 9 = 2.456582164227364 = A medicine used to relieve pain
+	bn:00054128n - hypernym - bn:00003779n
+
+[Cure] 3 1.019143117954483
+Healer = doctor = 2 = 2.3945016929777045 = A licensed medical practitioner
+Patient = pain = 6 = 0.4265552537588283 = A somatic sensation of acute discomfort
+	bn:00046516n - hypernym - bn:00005106n - Derivationally related form - bn:00005105n - hypernym - bn:00054133n - hypernym - bn:00075683n - hypernym - bn:00060182n
+Medication = painkiller = 9 = 2.456582164227364 = A medicine used to relieve pain
+	bn:00054128n - hypernym - bn:00003779n
+
+============================149============================
+We healed them with our doctor's hands and placed them about our person.
+[Cure] 2 1.436888033232043
+Healer = we = 1 = 2.0 = A human being
+Patient = they = 3 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Medication = hand = 8 = 0.709709064387992 = The (prehensile) extremity of the superior limb
+	bn:00054128n - Derivationally related form - bn:00090724v - Derivationally related form - bn:00054133n - hypernym - bn:15086226n - hypernym - bn:00042759n
+
+[Cure] 2 0.9851849967404533
+Healer = we = 1 = 2.0 = A human being
+Disease = they = 3 = 0.6736635048826214 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - Gloss related form (disambiguated) - bn:00045952n - hypernym - bn:00027546n
+Medication = hand = 8 = 0.709709064387992 = The (prehensile) extremity of the superior limb
+	bn:00054128n - Derivationally related form - bn:00090724v - Derivationally related form - bn:00054133n - hypernym - bn:15086226n - hypernym - bn:00042759n
+
+============================150============================
+Around a third of haemophiliacs are treated by health specialists in the Oxford Region.
+[Cure] 7 1.6564701073303467
+Healer = health specialist = 10 = 2.1999740728926787 = Practices one branch of medicine
+	bn:00027976n - hypernym - bn:00054125n
+Patient = haemophiliac = 5 = 1.2472388880797805 = Someone who has hemophilia and is subject to uncontrollable bleeding
+	bn:00046516n - hypernym - bn:00079059n - hypernym - bn:00027549n - hypernym - bn:00011191n
+
+[Cure] 7 1.4486482720854512
+Healer = health specialist = 10 = 2.1999740728926787 = Practices one branch of medicine
+	bn:00027976n - hypernym - bn:00054125n
+Disease = haemophiliac = 5 = 0.9539120674530508 = Someone who has hemophilia and is subject to uncontrollable bleeding
+	bn:00045952n - Gloss related form (disambiguated) - bn:00027549n - hypernym - bn:00011191n
+
+============================151============================
+Surgeons test a technique which could cure short-sightedness in just 15 minutes.
+[Cure] 7 0.687608732104165
+Healer = technique = 4 = 0.5038856517287189 = Skillfulness in the command of fundamentals deriving from practice and familiarity
+	bn:00046516n - hypernym - bn:00032322n - hypernym - bn:00076339n - Derivationally related form - bn:00064626n
+Disease = short sightedness = 8 = 0.9383195708070007 = (ophthalmology) eyesight abnormality resulting from the eye's faulty refractive ability; distant objects appear blurred
+	bn:00027546n - hypernym - bn:00006619n - Gloss related form (disambiguated) - bn:00003506n - hypernym - bn:00056622n
+
+[Cure] 7 0.48473968903950315
+Healer = technique = 4 = 0.5038856517287189 = Skillfulness in the command of fundamentals deriving from practice and familiarity
+	bn:00046516n - hypernym - bn:00032322n - hypernym - bn:00076339n - Derivationally related form - bn:00064626n
+Patient = short sightedness = 8 = 0.4663212086392536 = (ophthalmology) eyesight abnormality resulting from the eye's faulty refractive ability; distant objects appear blurred
+	bn:00046516n - hypernym - bn:00004977n - hypernym - bn:00006619n - Gloss related form (disambiguated) - bn:00003506n - hypernym - bn:00056622n
+
+============================152============================
+George Kennan returned from his visit to Japan in a critical spirit as regards significant aspects of the occupation.
+[Travel] 3 2.7802952596275023
+Traveler = George Kennan = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = Japan = 8 = 3.509708944748169 = A large indefinite location on the surface of the Earth
+
+============================153============================
+Western delegations had visited the Soviet Union during September.
+[Travel] 4 3.078276834917042
+Traveler = delegation = 2 = 1.3312985528179186 = Authorizing subordinates to make certain decisions
+	bn:00041942n - hypernym - bn:00000777n - hypernym - bn:00048655n - hypernym - bn:00026026n
+Goal = the Soviet Union = 7 = 7.117703427476708 = A large indefinite location on the surface of the Earth
+
+============================154============================
+She approached Hilda's house.
+[Travel] 2 5.730329352268242
+Traveler = she = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = house = 5 = 14.908997153225503 = A dwelling that serves as living quarters for one or more families
+	bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================155============================
+Some students came to school by car.
+[Travel] 3 0.6597822500048656
+Traveler = student = 2 = 0.5650400791072833 = A learner who is enrolled in an educational institution
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00029806n
+Goal = school = 5 = 0.7704101594160204 = The activities of educating or instructing; activities that impart knowledge or skill
+	bn:00026980n - hypernym - bn:00000725n - hypernym - bn:00005105n - hypernym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================156============================
+The arrival of around 20000 ship-borne Albanians in southern Italian ports (mainly Brindisi, Otranto and Bari) from March 1 to 7 caused the Italian authorities severe embarrassment.
+[Travel] 2 1.678359239106903
+Traveler = Albanians = 7 = 2.830357106489194 = A republic in southeastern Europe on the Adriatic coast of the Balkan Peninsula
+	bn:00041942n - hypernym - bn:00061450n - hypernym - bn:00023236n - hypernym - bn:00002439n
+Goal = port = 11 = 0.9952418120798909 = A place (seaport or airport) where people and merchandise can enter or leave a country
+	bn:00066884n - hypernym - bn:00023235n - Gloss related form (disambiguated) - bn:00063640n
+
+============================157============================
+He was exiting the Commons Chamber at the end of Prime Minister's Question Time and I was walking along the corridor which he was entering.
+[Travel] 3 0.9226657319749775
+Traveler = he = 1 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Source = the Commons Chamber = 6 = 0.3865254071242298 = A natural or artificial enclosed space
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:03219144n - hypernym - bn:03520464n - hypernym - bn:00017581n
+
+[Travel] 26 0.5499828904551568
+Traveler = he = 24 = 2.202473724288215 = A human being
+	bn:00046516n - hypernym - bn:00078093n
+Goal = corridor = 22 = 0.1373370208496646 = An interior passage or corridor onto which rooms open
+	bn:00042663n - hypernym - bn:00004493n - meronym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+[Education] 26 0.31257456742711137
+Student = he = 24 = 1.5159155649309761 = A human being
+	bn:00046516n - hypernym - bn:00029806n
+Institution = corridor = 22 = 0.06445138664876396 = 
+	bn:00029812n - hypernym - bn:00069619n - hypernym - bn:00527973n - hypernym - bn:00132026n - hyponym - bn:00034471n - hypernym - bn:17087169n
+
+============================158============================
+The two men left the office.
+[Travel] 4 1.562539663650457
+Traveler = man = 3 = 1.1654081636979743 = An adult person who is male (as opposed to a woman)
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00033359n - hypernym - bn:00009616n - hypernym - bn:00052968n - hypernym - bn:00001533n
+Source = office = 6 = 2.09500008369053 = An administrative unit of government
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:00001961n
+
+[Quitting] 4 0.832244295373902
+Employee = man = 3 = 0.42971655023645483 = A manservant who acts as a personal attendant to his employer
+	bn:00030618n - hypernym - bn:00081605n - hypernym - bn:00047795n - hypernym - bn:00067423n - hypernym - bn:00011772n - hypernym - bn:00037770n
+Employer = office = 6 = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+
+============================159============================
+Flights by Air Europe depart Gatwick on Tuesday or Wednesday.
+[Travel] 5 1.6070241971197534
+Traveler = flight = 1 = 1.0410418586110681 = Travel via aircraft
+	bn:00078093n - Derivationally related form - bn:00089994v - Derivationally related form - bn:00078085n - hypernym - bn:00002193n
+Source = Gatwick = 6 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================160============================
+The family escaped to Chester and then settled on their mother's jointure estates in Yorkshire.
+[Travel] 3 3.074578797782
+Traveler = family = 2 = 3.810610993326661 = A loose affiliation of gangsters in charge of organized criminal activities
+	bn:00041942n - hypernym - bn:00072536n - hypernym - bn:00037247n - hypernym - bn:00023810n
+Goal = Chester = 5 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================161============================
+He called the police.
+[Contacting] 2 2.3805821306255406
+Communicator = he = 1 = 2.0 = A human being
+Addressee = police = 4 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+
+============================162============================
+Teena had phoned her husband.
+[Contacting] 3 1.4834796058735058
+Communicator = Teena = 1 = 1.1700644375348466 = A human being
+Addressee = husband = 5 = 1.8808466187376716 = A person's partner in marriage
+	bn:00046516n - hypernym - bn:00028157n - hypernym - bn:00010161n
+
+============================163============================
+Charlotte had telephoned Derek from Boston late on Friday night.
+[Contacting] 3 2.151188578077912
+Communicator = Charlotte = 1 = 2.492072415262152 = A group of people who work together
+Addressee = Derek = 4 = 1.8569333178731366 = A human being
+
+============================164============================
+She immediately contacted a friend to recommend a lawyer.
+[Contacting] 3 3.531851200660942
+Communicator = she = 1 = 2.0 = A human being
+Addressee = friend = 5 = 6.23698645180507 = A person you know well and regard with affection and trust
+	bn:00036538n - hypernym - bn:00046516n
+
+============================165============================
+The office has just had a call from the father.
+[Contacting] 7 2.0986504071281957
+Communicator = father = 10 = 2.7325028678375802 = (Christianity) any of about 70 theologians in the period from the 2nd to the 7th century whose writing established and confirmed official church doctrine; in the Roman Catholic Church some were later declared saints and became Doctor of the Church; the best known Latin Church Fathers are Ambrose, Augustine, Gregory the Great, and Jerome; those who wrote in Greek include Athanasius, Basil, Gregory Nazianzen, and John Chrysostom
+	bn:00046516n - Gloss related form (disambiguated) - bn:00076825n - hypernym - bn:00019003n
+Addressee = office = 2 = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+
+[Possession] 5 0.6618811446137407
+Owner = office = 2 = 0.451302601098274 = The actions and activities assigned to or required or expected of a person or group
+	bn:00036823n - Gloss related form (disambiguated) - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00059954n
+Possession = call = 7 = 0.9707159864115195 = The option to buy a given stock (or stock index or commodity future) at a given price before a given date
+	bn:00021045n - hypernym - bn:00036943n - Gloss related form (disambiguated) - bn:00014802n
+
+============================166============================
+Sadr loyalists protest new provincial official.
+[Protest] 3 1.34559369640794
+Protester = Sadr loyalist = 2 = 0.7646755272013978 = A person who is loyal to their allegiance (especially in times of revolt)
+	bn:00046516n - hypernym - bn:00001603n - hypernym - bn:00001456n - hypernym - bn:00052216n
+Side = official = 6 = 2.367830970659412 = Official (in tennis, soccer, football, etc.) who assists the referee in some way (especially by watching for out of bounds or offside)
+	bn:00046516n - hypernym - bn:00001401n - hypernym - bn:00058701n - hypernym - bn:14866890n
+
+============================167============================
+A civilian demonstrates against Saddam Hussein.
+[Protest] 3 2.5720505797548587
+Protester = civilian = 2 = 1.5859881794038562 = A nonmilitary citizen
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00019380n
+Side = Saddam Hussein = 5 = 4.171181267759467 = A human being
+
+============================168============================
+More than 2200 people make demonstrations against Assad's regime.
+[Protest] 6 3.187430384244503
+Protester = people = 4 = 4.529442874561948 = (plural) any group of human beings (men or women or children) collectively
+	bn:00041942n - hypernym - bn:00061450n
+Side = regime = 10 = 2.2430379929204047 = The organization that is the governing authority of a political unit
+	bn:00059480n - hypernym - bn:00063358n - hypernym - bn:00007299n
+
+[Create_organization] 5 0.8342415039846386
+Creator = people = 4 = 0.6777814364940383 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n - hypernym - bn:00023660n
+Organization = demonstration = 6 = 1.0268190444555991 = Demonstration involves showing by reason or proof, explaining or making clear by use of examples or experiments.
+	bn:00059480n - hypernym - bn:14265130n - hypernym - bn:00007985n - hypernym - bn:00005105n - hypernym - bn:03707796n
+
+[Building] 5 0.5811899009336792
+Agent = people = 4 = 1.3878325349792084 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Created_entity = demonstration = 6 = 0.24338793941904543 = A visual presentation showing how something works
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00052556n - hypernym - bn:00021464n - hypernym - bn:00021497n - hypernym - bn:00026144n
+
+[Cooking] 5 0.4217596959032102
+Cook = people = 4 = 1.3878325349792084 = (plural) any group of human beings (men or women or children) collectively
+	bn:00061450n - hypernym - bn:00019429n - Derivationally related form - bn:00033359n - hypernym - bn:00034027n - hypernym - bn:00046516n
+Food = demonstration = 6 = 0.12817197796204804 = Demonstration involves showing by reason or proof, explaining or making clear by use of examples or experiments.
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hyponym - bn:00069670n - hypernym - bn:00007985n - hypernym - bn:00005105n - hypernym - bn:03707796n
+
+============================169============================
+They submitted their evidence to the Short committee separately despite the protests of the other craft committees and council.
+[Submitting_documents] 2 0.764016034366293
+Submitter = they = 1 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Authority = committee = 8 = 1.3219301449661685 = A self-constituted organization to promote something
+	bn:00059480n - hypernym - bn:00057592n - hypernym - bn:00019284n
+Documents = evidence = 4 = 0.16141373147294463 = An indication that makes something evident
+	bn:00032046n - hypernym - bn:00066574n - hypernym - bn:00025320n - hypernym - bn:00021475n - hypernym - bn:00028018n - Derivationally related form - bn:00101659a - Derivationally related form - bn:00028015n
+
+============================170============================
+Applicants should hand in a short research proposal on their chosen topic.
+[Submitting_documents] 3 0.9639996255564529
+Submitter = applicant = 1 = 0.9292952780729814 = Someone who is considered for something (for an office or prize or honor etc.)
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:02965949n - hypernym - bn:00015205n
+Documents = research proposal = 8 = 1.0 = A research proposal is a document written by a researcher that provides a detailed description of the proposed program.
+	bn:01860195n - hypernym - bn:00028015n
+
+============================171============================
+The Federal Republic of Germany filed an amicus brief.
+[Submitting_documents] 6 1.6006019148009398
+Submitter = The Federal Republic of Germany = 3 = 3.8465042576819015 = A republic in central Europe; split into East Germany and West Germany after World War II and reunited in 1990
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00026684n
+Documents = amicus brief = 9 = 0.6660402063894717 = An adviser to the court on some matter of law who is not a party to the case; usually someone who wants to influence the outcome of a lawsuit involving matters of wide public interest
+	bn:00028015n - hypernym - bn:15634449n - hypernym - bn:00048655n - hypernym - bn:00003516n
+
+============================172============================
+Putin turns in nuclear terrorism convention for ratification.
+[Submitting_documents] 2 1.6051442679720855
+Submitter = Putin = 1 = 3.352797994910617 = A human being
+Documents = terrorism convention = 6 = 0.768459097420908 = (diplomacy) an international agreement
+	bn:00028015n - hypernym - bn:00046963n - hypernym - bn:00081724n - hypernym - bn:00000728n - hypernym - bn:00022335n
+
+============================173============================
+Armstrong filed the master patent on FM at the US Patent Office on 24 January 1933.
+[Submitting_documents] 2 3.034488184120543
+Submitter = Armstrong = 1 = 4.16169981260885 = A human being
+Documents = master patent = 5 = 2.2125859514588306 = An official document granting a right or privilege
+	bn:00028015n - hypernym - bn:00046963n - hypernym - bn:00050828n
+
+============================174============================
+Daughter Alison, 20, who co-starred with Clint in the thriller Tightrope, went off the rails earlier this year and checked into a drink dependency clinic in Arizona.
+[Performing] 7 1.321492125404956
+Performer = Daughter Alison = 1 = 1.4542129078061437 = A human being
+Costar = Clint = 9 = 0.8401077809247233 = A human being
+Performance = thriller = 12 = 1.8889946871066094 = A suspenseful adventure story or play or movie
+	bn:00071316n - hypernym - bn:00034471n - Gloss related form (monosemous) - bn:00077064n
+
+============================175============================
+Last year Demi, who co-starred in Ghost, hired an amusement park for thirty-seven-year-old Bruce's big day.
+[Performing] 6 2.834792044615989
+Performer = Demi = 3 = 2.084587484791651 = A human being
+Performance = Ghost = 8 = 3.854981378736081 = Ghost is a 1990 American romantic fantasy/crime thriller film starring Patrick Swayze, Demi Moore, Tony Goldwyn, and Whoopi Goldberg.
+	bn:00071316n - hypernym - bn:00034471n - hypernym - bn:00484981n
+
+============================176============================
+Margaret Thatcher played Juliet in a school play.
+[Performing] 3 3.0362459256660435
+Performer = Margaret Thatcher = 1 = 3.3181541310452234 = A human being
+Role = Juliet = 4 = 2.115736255277691 = A human being
+Performance = school play = 8 = 3.987059817648658 = A dramatic work intended for performance by actors on a stage
+
+============================177============================
+William was acting four small parts in two different plays.
+[Performing] 3 3.2508741217075476
+Performer = William = 1 = 2.6506205170055197 = A human being
+Performance = play = 10 = 3.987059817648658 = A dramatic work intended for performance by actors on a stage
+
+============================178============================
+The first time I met them, a few months ago in a London photo studio, they were having confetti dumped over their heads by a girl who plays Gemma in Neighbours.
+[Performing] 30 1.8096681608936
+Performer = girl = 28 = 2.2239089234860083 = A young woman
+	bn:00046516n - hypernym - bn:00001530n - hypernym - bn:00034453n
+Role = Gemma = 31 = 0.7406480088205484 = A human being
+Performance = Neighbours = 33 = 3.598056506354073 = Neighbours is a 1952 anti-war film by Scottish-Canadian filmmaker Norman McLaren.
+	bn:00071316n - hypernym - bn:00034471n - hypernym - bn:16055919n
+
+[Possession] 20 0.45544235042580955
+Owner = they = 18 = 1.3199876634116872 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n - hypernym - bn:00059954n
+Possession = confetti = 21 = 0.15714369180183155 = Small pieces or streamers of colored paper that are thrown around on festive occasions (as at a wedding)
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00066295n - hypernym - bn:00065181n - Gloss related form (disambiguated) - bn:00060464n - hypernym - bn:00021739n
+
+============================179============================
+Only these actors were appearing in their proper persons in real dramas of a life he did not know.
+[Performing] 5 2.586093937459509
+Performer = actor = 3 = 3.006607016578497 = A theatrical performer
+Performance = drama = 12 = 2.224395079399369 = A dramatic work intended for performance by actors on a stage
+
+[Performing] 5 2.0031823476948487
+Performer = actor = 3 = 3.006607016578497 = A theatrical performer
+Performance = person = 9 = 1.3346405087162747 = A human being
+	bn:00046516n - hypernym - bn:00007287n - hypernym - bn:00028616n - Derivationally related form - bn:00028604n
+
+============================180============================
+And this week Patrick Bergin stars in a new TV series -- as a victim.
+[Performing] 6 3.0027387852225886
+Performer = Patrick Bergin = 4 = 2.3150417176288167 = A human being
+Performance = tv series = 11 = 3.894720403360646 = A program broadcast by television
+	bn:00071316n - hypernym - bn:00034471n - hypernym - bn:00076429n
+
+============================181============================
+The police release a protester.
+[Releasing_from_custody] 3 2.4623260066058625
+Suspect = protester = 5 = 2.139709235013019 = A person who dissents from some established policy
+	bn:00046516n - hypernym - bn:00022165n
+Authorities = police = 2 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+
+[Publishing] 3 1.1702996214714019
+Author = police = 2 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+Work = protester = 5 = 0.4833456185422155 = A person who dissents from some established policy
+	bn:15338434n - hypernym - bn:00023853n - Gloss related form (disambiguated) - bn:00101581a - Derivationally related form - bn:00022165n
+
+============================182============================
+And far too many sex offenders are released from prison.
+[Releasing_from_custody] 8 0.41938923048845267
+Suspect = sex offender = 6 = 0.5411917087616662 = Someone who has been convicted of a sex crime
+	bn:00046516n - hypernym - bn:00007888n - hypernym - bn:00058677n - hypernym - bn:00022385n - hypernym - bn:00070788n
+Place = prison = 10 = 0.3250000393615693 = A correctional institution where persons are confined while on trial or for punishment
+	bn:00064468n - hypernym - bn:00007951n - hyponym - bn:00013722n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================183============================
+A prisoner is released from Iran.
+[Releasing_from_custody] 4 1.7106715097798941
+Suspect = prisoner = 2 = 0.7376959430821642 = A person who is confined; especially a prisoner of war
+	bn:00046516n - hypernym - bn:00079059n - hypernym - bn:00015767n
+Place = Iran = 6 = 3.96694199258553 = A large indefinite location on the surface of the Earth
+
+============================184============================
+FBI releases a criminal.
+[Releasing_from_custody] 2 2.0210149162702624
+Suspect = criminal = 4 = 1.1101263579396081 = Someone who has committed a crime or has been legally convicted of a crime
+	bn:00046516n - hypernym - bn:16300251n - hypernym - bn:00023815n
+Authorities = FBI = 1 = 3.679312055402162 = A group of people who work together
+
+[Publishing] 2 1.5685757102806628
+Author = FBI = 1 = 3.679312055402162 = A group of people who work together
+Work = criminal = 4 = 0.668720054682492 = 
+	bn:15338434n - hypernym - bn:00005927n - hypernym - bn:00056443n - hypernym - bn:00021408n - hypernym - bn:00072794n - hypernym - bn:02675851n
+
+============================185============================
+Belize signed the IMO Convention on Sept 17.
+[Sign_agreement] 2 2.4805306857685876
+Signatory = Belize = 1 = 2.397263589697072 = A country on the northeastern coast of Central America on the Caribbean; formerly under British control
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00009725n
+Agreement = the IMO Convention = 5 = 2.5666900000000004 = (diplomacy) an international agreement
+	bn:00000728n - hypernym - bn:00022335n
+
+============================186============================
+The newspapers were acceding to a request from the US government.
+[Sign_agreement] 4 0.44603328352051275
+Signatory = newspaper = 2 = 0.8589321789744895 = A daily or weekly publication on folded sheets; contains news and articles and advertisements
+	bn:00046516n - hypernym - bn:00005106n - Derivationally related form - bn:00005105n - hypernym - bn:01234035n - hypernym - bn:00057563n
+Agreement = request = 7 = 0.2316197889402847 = A formal message requesting something that is submitted to an authority
+	bn:00000728n - hypernym - bn:00022335n - hypernym - bn:00037709n - hyponym - bn:00045163n - hypernym - bn:00061826n
+
+============================187============================
+The USSR had signed a Friendship and Cooperation Treaty with Iraq in 1972.
+[Sign_agreement] 4 1.3503852713403812
+Signatory = USSR = 2 = 3.7222862157836145 = A former communist country in eastern Europe and northern Asia; established in 1922; included Russia and 14 other soviet socialist republics (Ukraine and Byelorussia and others); officially dissolved 31 December 1991
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00068619n
+Agreement = a Friendship and Cooperation Treaty = 9 = 0.48989794855663565 = The Treaty of Good-Neighborliness and Friendly Cooperation Between the People's Republic of China and the Russian Federation is a twenty-year strategic treaty that was signed by the leaders of the two international powers, Jiang Zemin and Vladimir Putin, on July 16, 2001.
+	bn:00000728n - hypernym - bn:03191106n
+
+============================188============================
+All three states have acceded to the CSCE.
+[Sign_agreement] 5 1.7602026100459671
+Signatory = state = 3 = 3.1518248682311016 = A politically organized body of people under a single government
+	bn:00059480n - hypernym - bn:00023236n
+Agreement = CSCE = 8 = 0.9830220135776455 = A group of people who work together
+	bn:00059480n - hypernym - bn:00023236n - Gloss related form (disambiguated) - bn:00000728n
+
+============================189============================
+In the event, the United Kingdom acceded to the convention.
+[Sign_agreement] 8 2.9411108578432104
+Signatory = the United Kingdom = 7 = 3.3701510810122075 = A monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:00013173n
+Agreement = convention = 11 = 2.5666900000000004 = (diplomacy) an international agreement
+	bn:00000728n - hypernym - bn:00022335n
+
+============================190============================
+We will shortly publish a booklet for every vicar in the country entitled, "The Bells in Your Care".
+[Publishing] 4 3.0392254312651374
+Author = we = 1 = 2.0 = A human being
+Work = booklet = 6 = 4.453450918362053 = A small book usually having a paper cover
+	bn:00065106n - hypernym - bn:00012059n - hypernym - bn:00012133n
+Publisher = country = 12 = 3.1518248682311016 = A politically organized body of people under a single government
+	bn:00059480n - hypernym - bn:00023236n
+
+============================191============================
+John releases an article on waltz.
+[Releasing_from_custody] 2 1.126270879416456
+Suspect = article = 4 = 0.6599235760123053 = A separate section of a legal document (as a statute or contract or will)
+	bn:00046516n - hypernym - bn:00046975n - Derivationally related form - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Authorities = John = 1 = 1.922171202742216 = (New Testament) disciple of Jesus; traditionally said to be the author of the 4th Gospel and three epistles and the book of Revelation
+	bn:00059480n - hypernym - bn:00001961n - hypernym - bn:00024459n - hypernym - bn:00004982n - hypernym - bn:00048291n
+
+[Publishing] 2 0.9410432883090751
+Author = John = 1 = 4.948730758794846 = A human being
+Work = article = 4 = 0.8287002866809123 = A separate section of a legal document (as a statute or contract or will)
+	bn:15338434n - hypernym - bn:00005927n - hypernym - bn:00056443n - hypernym - bn:00070190n - hypernym - bn:00006123n
+Topic = waltz = 6 = 0.2032064503053514 = Music composed in triple time for waltzing
+	bn:00045803n - hypernym - bn:00056024n - hypernym - bn:00070190n - hyponym - bn:00056443n - hypernym - bn:00080426n
+
+============================192============================
+Donald Knuth publishes a new book with MIT Press.
+[Publishing] 3 2.7242114207250845
+Author = Donald Knuth = 1 = 2.5765334282696006 = A human being
+Work = book = 6 = 6.344191858145527 = A written work or composition that has been published (printed on pages bound together)
+	bn:00065106n - hypernym - bn:00012059n
+Publisher = MIT Press = 9 = 1.236830932575691 = A group of people who work together
+
+============================193============================
+Cambridge Press releases a memoir of Winston Churchill.
+[Publishing] 3 2.5032113217121132
+Author = Winston Churchill = 7 = 3.6714781155084144 = A human being
+Work = memoir = 5 = 3.2119595549474838 = An account of the author's personal experiences
+	bn:00065106n - hypernym - bn:00012059n - hypernym - bn:00007328n - hypernym - bn:00054292n
+Publisher = Cambridge Press = 2 = 1.3300915405900495 = A group of people who work together
+
+[Releasing_from_custody] 3 1.8621529676142794
+Suspect = memoir = 5 = 2.6070488902262916 = An account of the author's personal experiences
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:00007328n - hypernym - bn:00054292n
+Authorities = Cambridge Press = 2 = 1.3300915405900495 = A group of people who work together
+
+[Publishing] 3 1.3779534313616502
+Author = Cambridge Press = 2 = 1.3300915405900495 = A group of people who work together
+Work = memoir = 5 = 3.2119595549474838 = An account of the author's personal experiences
+	bn:00065106n - hypernym - bn:00012059n - hypernym - bn:00007328n - hypernym - bn:00054292n
+
+============================194============================
+Angelina Jolie releases a new film in Netflix.
+[Publishing] 3 2.2195182485788227
+Author = Angelina Jolie = 1 = 3.188248566658137 = A human being
+Work = film = 6 = 2.1526727572949866 = A form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement
+	bn:15338434n - hypernym - bn:00034471n
+Publisher = Netflix = 8 = 1.5931107655928198 = A group of people who work together
+
+[Releasing_from_custody] 3 1.073309861688027
+Suspect = film = 6 = 1.332953916909184 = A form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement
+	bn:00046516n - Gloss related form (disambiguated) - bn:00064584n - hypernym - bn:00034471n
+Authorities = Angelina Jolie = 1 = 0.8642414749551005 = A human being
+	bn:00059480n - hypernym - bn:00013379n - hypernym - bn:00053107n - hypernym - bn:00060643n - hypernym - bn:00034027n - hypernym - bn:00046516n
+
+============================195============================
+Ernest Hemingway publishes a new novel.
+[Publishing] 3 2.859923189553506
+Author = Ernest Hemingway = 1 = 3.1877499842072536 = A human being
+Work = novel = 6 = 2.5658099570753934 = An extended fictional work in prose; usually in the form of a story
+	bn:15338434n - hypernym - bn:00081581n - hypernym - bn:00034242n - hypernym - bn:00058201n
+
+============================196============================
+In a year, the world's airlines collectively lost 1.8 billion dollars on their international services alone.
+[Losing] 10 1.6689563087574548
+Owner = airline = 8 = 1.8568578939222693 = A commercial enterprise that provides scheduled flights for passengers
+	bn:00046516n - hypernym - bn:00016254n - hypernym - bn:00051302n - hypernym - bn:00002298n
+Money = dollar = 13 = 1.2 = some currency
+Goods = service = 17 = 2.0862914980866236 = Work done by one person or group that benefits another
+	bn:00070651n - hypernym - bn:00021045n - hypernym - bn:00054416n
+
+[Losing] 10 1.0413729417973903
+Owner = airline = 8 = 1.8568578939222693 = A commercial enterprise that provides scheduled flights for passengers
+	bn:00046516n - hypernym - bn:00016254n - hypernym - bn:00051302n - hypernym - bn:00002298n
+Goods = dollar = 13 = 1.314063729259501 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00024507n - hypernym - bn:00028114n
+
+============================197============================
+He had been deceived by a young man who claimed to be the son of a banker, and he had lost money on gambling.
+[Losing] 22 1.7719981696747424
+Owner = he = 20 = 2.0 = A human being
+Money = money = 23 = 1.2 = some currency
+Goods = gambling = 25 = 2.3183476693507243 = The act of playing for stakes in the hope of winning (including the payment of a price for a chance to win a prize)
+	bn:15840810n - hypernym - bn:00037180n - hypernym - bn:00037172n - hypernym - bn:00037169n
+
+[Losing] 22 1.4142783739962284
+Owner = he = 20 = 2.0 = A human being
+Goods = money = 23 = 2.250206234047593 = The most common medium of exchange; functions as legal tender
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00055644n
+
+============================198============================
+Investors in Stotler Funds lost millions of dollars and filed lawsuits against the NFA which are still pending.
+[Submitting_documents] 10 1.4621397893086177
+Submitter = investor = 20 = 2.3311805720011236 = Someone who commits capital in order to gain financial returns
+	bn:00046516n - hypernym - bn:00015665n - hypernym - bn:00047367n
+Documents = lawsuit = 11 = 0.9170687115173927 = A comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy
+	bn:00028015n - hypernym - bn:15452769n - hypernym - bn:00016403n
+
+[Losing] 5 0.56417935666925
+Owner = investor = 1 = 2.3311805720011236 = Someone who commits capital in order to gain financial returns
+	bn:00046516n - hypernym - bn:00015665n - hypernym - bn:00047367n
+Goods = million = 6 = 0.13653955009521046 = The number that is represented as a one followed by 6 zeros
+	bn:15840810n - hypernym - bn:00005927n - hypernym - bn:00005938n - hypernym - bn:01106249n - hypernym - bn:00021375n - hypernym - bn:00066395n - hypernym - bn:00047009n - hypernym - bn:00000013n
+
+============================199============================
+Grade had overstretched himself and lost money heavily on box office flops.
+[Losing] 6 1.4114726379836438
+Owner = Grade = 14 = 1.992072415262152 = Grade is a Canadian hardcore/emo group.
+	bn:00059480n - hypernym - bn:00056461n - hypernym - bn:00008280n - hypernym - bn:03797712n
+Goods = money = 7 = 2.250206234047593 = The most common medium of exchange; functions as legal tender
+	bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00055644n
+
+[Losing] 6 1.0215044587002968
+Owner = Grade = 14 = 1.992072415262152 = Grade is a Canadian hardcore/emo group.
+	bn:00059480n - hypernym - bn:00056461n - hypernym - bn:00008280n - hypernym - bn:03797712n
+Money = money = 7 = 1.2 = some currency
+Goods = box office flop = 12 = 0.44589687843249687 = In the motion picture industry, a box office bomb or flop is a film that is viewed as highly unsuccessful or unprofitable during its theatrical run, sometimes preceding hype regarding its cost, production, or marketing efforts.
+	bn:00054416n - Derivationally related form - bn:00086013v - Derivationally related form - bn:00064584n - hypernym - bn:00034471n - hypernym - bn:03315803n
+
+============================200============================
+He lost his wedding ring.
+[Losing] 2 1.2470074598069574
+Owner = he = 1 = 2.0 = A human being
+Goods = wedding ring = 5 = 0.7775138024071003 = A ring (usually plain gold) given to the bride (and sometimes one is also given to the groom) at the wedding
+	bn:15840810n - hypernym - bn:00005927n - hypernym - bn:00006196n - hypernym - bn:00048188n - hypernym - bn:00008287n - hypernym - bn:00080794n
+
+============================201============================
+The following day it further reported that Mallam Yahaya had surrendered to police.
+[Surrendering] 11 2.443940772374566
+Authorities = police = 13 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+Fugitive = Mallam Yahaya = 8 = 2.1078757648510305 = A human being
+
+============================202============================
+The protesters eventually surrendered to paramilitary police.
+[Surrendering] 4 2.4623260066058625
+Authorities = police = 7 = 2.8335856403268194 = The force of policemen and officers
+	bn:00059480n - hypernym - bn:00035770n - hypernym - bn:00022026n
+Fugitive = protester = 2 = 2.139709235013019 = A person who dissents from some established policy
+	bn:00046516n - hypernym - bn:00022165n
+
+============================203============================
+By May 1943, the remaining German and Italian forces gave up at Tunis, to the merged Allied forces.
+[Surrendering] 11 3.5610403475260535
+Authorities = force = 20 = 3.5610403475260535 = A unit that is part of some military service
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n
+Fugitive = force = 10 = 3.5610403475260535 = A unit that is part of some military service
+	bn:00059480n - hypernym - bn:00072554n - hypernym - bn:00035771n
+
+============================204============================
+Over 140 activists of the United Liberation Front of Assam (ULFA) surrendered to the authorities on April 11.
+[Surrendering] 14 1.069008740840904
+Authorities = authority = 17 = 1.611831256676703 = An administrative unit of government
+	bn:00059480n - hypernym - bn:00001961n
+Fugitive = activist = 3 = 0.7089946191702811 = A militant reformer
+	bn:00059480n - hypernym - bn:00021248n - hypernym - bn:00001170n - Derivationally related form - bn:00001171n
+
+============================205============================
+These fugitives, more than 30000 in number, formally surrendered to first Guards Brigade under 6 Armoured Division on 12 May.
+[Surrendering] 11 1.140114911932612
+Authorities = first Guards Brigade = 15 = 2.504463992318328 = A group of people who work together
+Fugitive = fugitive = 2 = 0.5190180479328247 = Someone who flees from an uncongenial situation
+	bn:00046516n - hypernym - bn:00035168n
+
+============================206============================
+He then wrote A Handbook of the Trip to Liverpool in which he gave every detail of the excursion.
+[Text_creation] 3 1.548835888420589
+Author = he = 1 = 2.0 = A human being
+Text = A Handbook of the Trip to Liverpool = 5 = 1.1994463046297978 = The name of a work of art or literary composition etc.
+	bn:00076732n - hypernym - bn:00012133n - Derivationally related form - bn:00012059n - hypernym - bn:00077409n
+
+[Contacting] 3 1.4070397766366578
+Communicator = he = 1 = 2.0 = A human being
+Addressee = A Handbook of the Trip to Liverpool = 10 = 0.9898804665188679 = Liverpool is Frankie Goes to Hollywood's second and last studio album, released in October 1986.
+	bn:00059480n - hypernym - bn:00056461n - hypernym - bn:00008280n - hypernym - bn:00247048n - hypernym - bn:00251455n
+
+============================207============================
+The letter was drafted by David Hunt, vice Bevir who was ill.
+[Text_creation] 4 2.9660144831970676
+Author = David Hunt = 6 = 2.1187515634416383 = A human being
+Text = letter = 2 = 4.152087515274696 = A written message addressed to a person or organization
+	bn:00076732n - hypernym - bn:00050802n
+
+============================208============================
+Yggdrasil composed an exquisite sonnet.
+[Text_creation] 2 0.5955432094433186
+Author = Yggdrasil = 1 = 1.182003028661228 = A human being
+Text = sonnet = 5 = 0.3000599031592671 = A verse form consisting of 14 lines with a fixed rhyme scheme
+	bn:00076732n - hypernym - bn:00031622n - hypernym - bn:00021410n - Gloss related form (disambiguated) - bn:00063193n - hypernym - bn:00072807n
+
+============================209============================
+I typed my manuscript in the attic.
+[Text_creation] 2 0.11547554903092411
+Author = I = 1 = 0.01 = not found
+Text = manuscript = 4 = 1.3334602423993358 = Handwritten book or document
+	bn:00076732n - hypernym - bn:00012133n - Derivationally related form - bn:00012059n - hypernym - bn:00044453n
+
+============================210============================
+Alec Clegg once authored a fable.
+[Text_creation] 4 0.9188207744295792
+Author = Alec Clegg = 1 = 2.0740302038916427 = A human being
+Text = fable = 6 = 0.40704885297199767 = A short moral story (often with animal characters)
+	bn:00054523n - Gloss related form (disambiguated) - bn:00060528n - Derivationally related form - bn:00108237a - Derivationally related form - bn:00002822n
+
+============================211============================
+A thief snatched a handbag with 560 dollars from a woman.
+[Theft] 3 1.2642933572033153
+Perpetrator = thief = 2 = 0.9641941338772192 = A criminal who takes property belonging to someone else with the intention of keeping it or selling it
+	bn:00046516n - hypernym - bn:16300251n - hypernym - bn:00023815n - hypernym - bn:00074094n
+Goods = handbag = 5 = 0.7360540530754981 = A container used for carrying money and small personal items or accessories (especially by women)
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00022129n - hypernym - bn:00007925n
+Victim = woman = 11 = 2.8475369934341628 = An adult female person (as opposed to a man)
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n
+
+============================212============================
+A busker who stole 32 credit cards from the son of crooked Robert Maxwell is on the run from police.
+[Theft] 4 1.5657788849552452
+Perpetrator = busker = 2 = 2.519964105006705 = A person who entertains people for money in public places (as by singing or dancing), usually while asking for money
+	bn:00046516n - hypernym - bn:00031012n - hypernym - bn:00014177n
+Goods = credit card = 7 = 0.63130365916931 = A card (usually plastic) that assures a seller that the person using it has a satisfactory credit rating and that the issuer will see to it that the seller receives payment for the merchandise delivered
+	bn:00021045n - hypernym - bn:00054416n - Gloss related form (disambiguated) - bn:00017800n
+Victim = son = 10 = 2.4130072972102004 = A human offspring (son or daughter) of any age
+	bn:00046516n - hypernym - bn:00066996n - hypernym - bn:00047692n - hypernym - bn:00018346n
+
+============================213============================
+He swiped my gold watch.
+[Theft] 2 1.1077475344780165
+Perpetrator = he = 1 = 2.0 = A human being
+Goods = gold watch = 5 = 0.6135523000710623 = A small portable timepiece
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00019887n - hypernym - bn:00077172n
+
+============================214============================
+An armed gang has shoplifted jewels worth more than five million pounds from London's Hatton Garden.
+[Theft] 5 0.8922575754910039
+Perpetrator = gang = 3 = 1.2093546657543126 = An association of criminals
+	bn:00046516n - hypernym - bn:00006539n - hypernym - bn:00037243n
+Goods = jewel = 6 = 1.6142656810217932 = A precious or semiprecious stone incorporated into a piece of jewelry
+	bn:00005956n - hypernym - bn:00025765n - hypernym - bn:00001500n - hypernym - bn:00048188n - hypernym - bn:00037609n
+Victim = Hatton Garden = 17 = 0.3638664665381618 = Hatton Garden is a street and area in the district of Holborn in the London Borough of Camden.
+	bn:00059480n - hypernym - bn:00023236n - hypernym - bn:03659145n - hypernym - bn:00032402n - hypernym - bn:00067975n - hypernym - bn:03134276n
+
+============================215============================
+Burglars have embezzled several thousand dollars.
+[Theft] 3 0.642743307325324
+Perpetrator = Burglars = 1 = 0.6147670370034817 = Burglars is a 1930 German musical comedy film directed by Hanns Schwarz and starring Ralph Arthur Roberts, Lilian Harvey, Willy Fritsch, and Heinz Rühmann.
+	bn:00046516n - Gloss related form (disambiguated) - bn:00064584n - hypernym - bn:00034471n - hypernym - bn:14513308n
+Goods = dollar = 6 = 0.6719926968191632 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00024507n - hypernym - bn:00028114n
+
+============================216============================
+Meh Lindi kicked off her slippers.
+[Undressing] 3 2.3186409160281407
+Wearer = Meh Lindi = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = slipper = 6 = 2.2463846495605777 = Low footwear that can be slipped on and off easily; usually worn indoors
+	bn:00006125n - hypernym - bn:00035729n - hypernym - bn:00016214n
+
+============================217============================
+Suzy peeled off her white pullover.
+[Undressing] 2 2.2536213213611602
+Wearer = Suzy = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = pullover = 6 = 2.1221643647436825 = A close-fitting pullover shirt
+	bn:00006125n - hypernym - bn:00071142n - hypernym - bn:00048144n
+
+============================218============================
+Bernie shrugged and removed his coat.
+[Undressing] 4 1.9662697271234917
+Wearer = Bernie = 8 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = coat = 6 = 1.615486442251924 = A short coat
+	bn:00006125n - hypernym - bn:00020184n - hypernym - bn:00047823n
+
+============================219============================
+He slipped off his white coat and a few minutes later he hurried from the centre.
+[Undressing] 2 1.9662697271234917
+Wearer = he = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = coat = 6 = 1.615486442251924 = A short coat
+	bn:00006125n - hypernym - bn:00020184n - hypernym - bn:00047823n
+
+============================220============================
+Anna had taken off her blouse and was waiting for Liz to notice her shoulder.
+[Undressing] 3 1.9798282010099768
+Wearer = Anna = 1 = 2.3932213472574477 = A human being
+	bn:00046516n - hypernym - bn:00079373n - hypernym - bn:00080753n
+Clothing = blouse = 6 = 1.6378425296959136 = A top worn by women
+	bn:00006125n - hypernym - bn:00077612n - hypernym - bn:00011441n
+
+============================221============================
+More than 100000000 voters participated in the elections, the highest number in US history.
+[Participation] 5 1.6661562647016983
+Participant = voter = 4 = 1.7155204852657089 = A citizen who has a legal right to vote
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00030122n
+Event = election = 8 = 1.6182125029971546 = A vote to select the winner of a position or political office
+	bn:00032021n - hypernym - bn:00041944n - hypernym - bn:00080251n - hypernym - bn:00030113n
+
+[Participation] 5 0.13097787924934914
+Participant = voter = 4 = 1.7155204852657089 = A citizen who has a legal right to vote
+	bn:00046516n - hypernym - bn:00056915n - hypernym - bn:00019281n - hypernym - bn:00030122n
+Event = US history = 15 = 0.01 = not found
+
+============================222============================
+Members themselves will engage in the final selection.
+[Participation] 4 0.7723024907132295
+Participant = member = 1 = 0.8954532823069198 = Constitutive components of a corporate body
+	bn:00046516n - hypernym - bn:00044576n - hypernym - bn:02965949n - hypernym - bn:15845907n
+Event = selection = 8 = 0.6660885039420987 = The act of choosing or selecting
+	bn:00032021n - hypernym - bn:00001077n - hypernym - bn:00001127n - hypernym - bn:00018661n
+
+============================223============================
+It produced CW agents.
+[Manufacturing] 2 1.3536959136863247
+Producer = it = 1 = 1.5644681647966165 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00072536n - hypernym - bn:00059480n
+Product = CW agent = 4 = 1.1713198567829473 = A businessman who buys or sells for another in exchange for a commission
+	bn:00021045n - hypernym - bn:00015496n - Derivationally related form - bn:00015665n - hypernym - bn:00012439n - hypernym - bn:00001975n
+
+============================224============================
+They are actively engaged in the learning process and collect direct feedback as to the progress they are making.
+[Participation] 4 1.4250937047860657
+Participant = they = 1 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Event = learning process = 8 = 0.971691508164765 = The psychological result of perception and learning and reasoning
+	bn:02131709n - hypernym - bn:14481766n - hypernym - bn:00010541n - hypernym - bn:00020457n - hypernym - bn:00020452n
+
+============================225============================
+DSO National Laboratories, the country's primary defence research organisation, is involved in talks with overseas and local companies.
+[Participation] 14 1.4136929888273777
+Participant = DSO National Laboratories = 3 = 1.3153145585001553 = A group of people who work together
+CoParticipant = company = 21 = 2.5187298386289867 = An institution created to conduct business
+	bn:00021286n - hypernym - bn:00059480n
+Event = talk = 16 = 0.8528135619175012 = The act of delivering a formal spoken communication to an audience
+	bn:00032021n - hypernym - bn:00001077n - hypernym - bn:00073248n - hypernym - bn:00001304n
+
+============================226============================
+Farmers grow some wheat and barley for their cows.
+[Growing_food] 2 2.848528917671028
+Grower = farmer = 1 = 1.5710554450921161 = A person who operates a farm
+	bn:00046516n - hypernym - bn:00023660n - hypernym - bn:00033687n
+Food = wheat = 4 = 5.164755337029064 = Annual or biennial grass having erect flower spikes and light brown grains
+	bn:00035650n - hypernym - bn:00017323n - hypernym - bn:00080959n
+
+[Growing_food] 2 2.497309088194305
+Grower = farmer = 1 = 1.5710554450921161 = A person who operates a farm
+	bn:00046516n - hypernym - bn:00023660n - hypernym - bn:00033687n
+Food = barley = 6 = 3.969657914658896 = Cultivated since prehistoric times; grown for forage and grain
+	bn:00035650n - hypernym - bn:00017323n - hypernym - bn:00008606n
+
+============================227============================
+The women grow fruit, vegetables and flowers, and raise flesh to sell in the place Mistral.
+[Growing_food] 11 4.094542989058021
+Grower = woman = 20 = 2.8475369934341628 = An adult female person (as opposed to a man)
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n
+Food = flesh = 12 = 5.887643366144672 = A soft moist part of a fruit
+	bn:00035183n - hypernym - bn:00035650n - hypernym - bn:00035649n
+
+[Growing_food] 3 3.5044011966026263
+Grower = woman = 2 = 2.8475369934341628 = An adult female person (as opposed to a man)
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n
+Food = vegetable = 6 = 4.312789535330706 = Edible seeds or roots or stems or leaves or bulbs or tubers or nonsweet fruits of any of numerous herbaceous plant
+	bn:00035650n - hypernym - bn:00037326n - hypernym - bn:00079663n
+
+[Growing_food] 3 2.374345664928314
+Grower = woman = 2 = 2.8475369934341628 = An adult female person (as opposed to a man)
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n
+Food = fruit = 4 = 1.9797872159563994 = The ripened reproductive body of a seed plant
+	bn:00035649n - hypernym - bn:00035666n - hypernym - bn:00034946n - hypernym - bn:00036686n
+
+[Growing_food] 3 1.1257109790984599
+Grower = woman = 2 = 2.8475369934341628 = An adult female person (as opposed to a man)
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n
+Food = flower = 8 = 0.44502502035435354 = In botany, the plant cuticle is covered by epicuticular wax or bloom consisting mainly of straight-chain aliphatic hydrocarbons with a variety of substituted functional groups, serving to decrease surface wetting and moisture loss.
+	bn:00035649n - hypernym - bn:00002745n - hyponym - bn:00009677n - hypernym - bn:00035324n - hypernym - bn:03416497n
+
+============================228============================
+She had grown some runner beans in the patch of the old vegetable garden he had dug earlier.
+[Growing_food] 3 2.024877340400975
+Grower = she = 1 = 2.0 = A human being
+Food = runner bean = 6 = 2.050064121834663 = Tropical American bean with red flowers and mottled black beans similar to Phaseolus vulgaris but perennial; a preferred food bean in Great Britain
+	bn:00035650n - hypernym - bn:00037326n - hypernym - bn:00079663n - hypernym - bn:00029219n
+
+============================229============================
+Throughout Britain there are 20000 farmers who grow potatoes as part of their farm business.
+[Growing_food] 8 2.8133616294384334
+Grower = farmer = 6 = 1.5710554450921161 = A person who operates a farm
+	bn:00046516n - hypernym - bn:00023660n - hypernym - bn:00033687n
+Food = potato = 9 = 5.038016756647563 = An edible tuber native to South America; a staple food of Ireland
+	bn:00035649n - hypernym - bn:00035666n - hypernym - bn:00073977n - hypernym - bn:00047481n
+
+============================230============================
+Farmers grow their crops in the valleys.
+[Growing_food] 2 1.101366209825771
+Grower = farmer = 1 = 1.5710554450921161 = A person who operates a farm
+	bn:00046516n - hypernym - bn:00023660n - hypernym - bn:00033687n
+Food = crop = 4 = 0.7720972114226444 = A cultivated plant that is grown commercially on a large scale
+	bn:00035650n - hypernym - bn:00037326n - Derivationally related form - bn:00088042v - Derivationally related form - bn:00002096n - hypernym - bn:00023932n
+
+============================231============================
+On his return, he borrowed money from Harriet.
+[Borrow_lend] 6 1.7094739853185548
+Borrower = he = 5 = 2.0 = A human being
+Lender = Harriet = 9 = 2.0904175372342344 = A human being
+Theme = money = 7 = 1.1948804417563983 = The most common medium of exchange; functions as legal tender
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00055644n
+
+============================232============================
+The unions affiliated with his organization would lend the Teamsters ten million dollars a week for "many, many weeks."
+[Borrow_lend] 8 2.111649527657402
+Borrower = Teamsters = 10 = 2.986240778333044 = A group of people who work together
+Lender = union = 2 = 4.692195989563949 = An organization of employees formed to bargain with the employer
+	bn:00059480n - hypernym - bn:00013379n
+Theme = dollar = 13 = 0.6719926968191632 = The basic monetary unit in many countries; equal to 100 cents
+	bn:00021045n - hypernym - bn:00054416n - hypernym - bn:00077585n - hypernym - bn:00054159n - hypernym - bn:00024507n - hypernym - bn:00028114n
+
+============================233============================
+The Army may train law enforcement officials and lend them equipment for use in drug raids.
+[Borrow_lend] 9 1.6770187306011386
+Borrower = they = 10 = 2.0900584705701735 = That which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+	bn:00031027n - hypernym - bn:00009677n - hypernym - bn:00046516n
+Lender = Army = 18 = 4.404534761744139 = A group of people who work together
+Theme = equipment = 11 = 0.5123364585701963 = An instrumentality needed for an undertaking or to perform a service
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00031322n
+
+============================234============================
+I lent my girlfriend my car for the weekend.
+[Borrow_lend] 2 0.2699696682637475
+Borrower = girlfriend = 4 = 1.4314616816225285 = A girl or young woman with whom a man is romantically involved
+	bn:00046516n - hypernym - bn:00001525n - hypernym - bn:00001530n - hypernym - bn:00040536n
+Lender = I = 1 = 0.01 = not found
+Theme = car = 6 = 1.374564715708107 = A motor vehicle with four wheels; usually propelled by an internal combustion engine
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00007385n - hypernym - bn:00007309n
+
+============================235============================
+I am borrowing the book about modal particles from the professor.
+[Borrow_lend] 3 0.21492073084054258
+Borrower = I = 1 = 0.01 = not found
+Lender = professor = 11 = 0.9105300720909829 = Someone who is a member of the faculty at a college or university
+	bn:00059480n - hypernym - bn:00031641n - hypernym - bn:00000568n - Derivationally related form - bn:00000551n - hypernym - bn:00064601n
+Theme = book = 5 = 1.090286494210807 = A written work or composition that has been published (printed on pages bound together)
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00054149n - hypernym - bn:00012059n
+
+============================236============================
+Red Lobster is a seafood restaurant.
+[Restaurant] 6 2.2656526269753545
+Restaurant = Red Lobster = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Cuisine = seafood = 5 = 4.72948663746923 = Edible fish (broadly including freshwater fish) or shellfish or roe etc
+	bn:00035650n - hypernym - bn:00070008n
+
+[Restaurant] 6 0.20814974763313254
+Restaurant = Red Lobster = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = seafood = 5 = 0.039918952089187464 = Edible fish (broadly including freshwater fish) or shellfish or roe etc
+	bn:00025083n - Gloss related form (disambiguated) - bn:00095061v - Derivationally related form - bn:00077860n - hypernym - bn:00029545n - hyponym - bn:00035650n - hypernym - bn:00070008n
+
+============================237============================
+McDonald's is a burger restaurant.
+[Restaurant] 6 1.5194111576571232
+Restaurant = McDonald s = 1 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Cuisine = burger = 5 = 2.1270513638681767 = A sandwich consisting of a fried cake of minced beef served on a bun, often with other ingredients
+	bn:00035650n - hypernym - bn:00035649n - hypernym - bn:00002745n - hypernym - bn:00027574n - hypernym - bn:00009566n
+
+[Restaurant] 6 0.22567981270740503
+Restaurant = McDonald s = 1 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = burger = 5 = 0.04692591830827145 = A sandwich consisting of a fried cake of minced beef served on a bun, often with other ingredients
+	bn:00025083n - Gloss related form (disambiguated) - bn:00095061v - Derivationally related form - bn:00077860n - hypernym - bn:00021045n - hypernym - bn:00054416n - hypernym - bn:15333324n - hypernym - bn:00069164n - hypernym - bn:00009566n
+
+============================238============================
+Curry Club is an Indian restaurant.
+[Restaurant] 6 1.4752800484484587
+Restaurant = Curry Club = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Cuisine = Indian = 5 = 2.005285866964638 = Of or relating to or characteristic of India or the East Indies or their peoples or languages or cultures
+	bn:00066884n - hypernym - bn:00023235n - hypernym - bn:00010203n - Derivationally related form - bn:00104941a
+
+[Restaurant] 6 0.17233300771435855
+Restaurant = Curry Club = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = Indian = 5 = 0.02736303653703078 = Of or relating to or characteristic of India or the East Indies or their peoples or languages or cultures
+	bn:00025083n - hyponym - bn:00065553n - hypernym - bn:00080229n - hypernym - bn:00049910n - Gloss related form (disambiguated) - bn:00104941a
+
+============================239============================
+Ippudo is a cheap Asian restaurant in New York City.
+[Restaurant] 6 0.7380532326599721
+Restaurant = Ippudo = 1 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = cheap = 4 = 0.21303591539725542 = Relatively low in price or charging low prices
+	bn:00025083n - Derivationally related form - bn:00100545a - Derivationally related form - bn:00022996n - hypernym - bn:00046604n - Derivationally related form - bn:00099557a
+Cuisine = Asian = 5 = 0.517307333721014 = Of or relating to or characteristic of Asia or the peoples of Asia or their languages or culture
+	bn:00066884n - hypernym - bn:00005513n - hypernym - bn:00049842n - hypernym - bn:00022173n - hypernym - bn:00006329n - Derivationally related form - bn:00097584a
+Place = New York City = 10 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+[Restaurant] 6 0.34399921743154255
+Restaurant = Ippudo = 1 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = Asian = 5 = 0.04245689559228648 = Of or relating to or characteristic of Asia or the peoples of Asia or their languages or culture
+	bn:00025083n - hyponym - bn:00065553n - hypernym - bn:00005513n - hypernym - bn:00049842n - hypernym - bn:00022173n - hypernym - bn:00006329n - Derivationally related form - bn:00097584a
+Cuisine = cheap = 4 = 0.12249893061368387 = Relatively low in price or charging low prices
+	bn:00099557a - Gloss related form (disambiguated) - bn:00081980n - hyponym - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+Place = New York City = 10 = 2.4807136704127632 = A large indefinite location on the surface of the Earth
+
+============================240============================
+Panda Express is a cheap Chinese restaurant.
+[Restaurant] 7 0.5948035685070818
+Restaurant = Panda Express = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = cheap = 5 = 0.21303591539725542 = Relatively low in price or charging low prices
+	bn:00025083n - Derivationally related form - bn:00100545a - Derivationally related form - bn:00022996n - hypernym - bn:00046604n - Derivationally related form - bn:00099557a
+Cuisine = Chinese = 6 = 0.9101128039800372 = Of or pertaining to China or its peoples or cultures
+	bn:00066884n - hypernym - bn:00023235n - hypernym - bn:00016756n - Gloss related form (disambiguated) - bn:00099614a
+
+[Restaurant] 7 0.15339383393374875
+Restaurant = Panda Express = 2 = 1.0853570840972107 = A group of people who work together
+	bn:00059480n - hypernym - bn:00029545n
+Price = Chinese = 6 = 0.027146807568692807 = Of or relating to or characteristic of the island republic on Taiwan or its residents or their language
+	bn:00025083n - hyponym - bn:00065553n - hypernym - bn:00080229n - hypernym - bn:00049910n - Gloss related form (disambiguated) - bn:00099615a
+Cuisine = cheap = 5 = 0.12249893061368387 = Relatively low in price or charging low prices
+	bn:00099557a - Gloss related form (disambiguated) - bn:00081980n - hyponym - bn:00000356n - hypernym - bn:00044994n - hypernym - bn:00051760n - hypernym - bn:00066884n
+
+============================241============================
+Star Micronics now exports printers to Russia.
+[Import_export] 4 2.648184118188935
+Importer = Russia = 7 = 14.380769578453025 = A federation in northeastern Europe and northern Asia; formerly Soviet Russia; since 1991 an independent state
+	bn:00023235n - hypernym - bn:00068622n
+Exporter = Star Micronics = 2 = 1.277681219508421 = A group of people who work together
+Goods = printer = 5 = 1.010741019094972 = (computer science) an output device that prints the results of data processing
+	bn:00005956n - hypernym - bn:00046978n - hypernym - bn:00026716n - hypernym - bn:00064446n
+
+============================242============================
+The US imported some wheat in the period.
+[Import_export] 3 5.3711035474513285
+Importer = US = 2 = 5.585696017507576 = North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776
+	bn:00023235n - hypernym - bn:00003341n
+Goods = wheat = 5 = 5.164755337029064 = Annual or biennial grass having erect flower spikes and light brown grains
+	bn:00035650n - hypernym - bn:00017323n - hypernym - bn:00080959n
+
+============================243============================
+Early 1990s, the British government exported chemicals to Iran.
+[Import_export] 7 3.6409728334270546
+Importer = Iran = 10 = 6.769693666668192 = A theocratic Islamic republic in the Middle East in western Asia; Iran was the core of the ancient empire that was known as Persia until 1935; rich in oil
+	bn:00023235n - hypernym - bn:00006335n - hypernym - bn:00047447n
+Exporter = government = 6 = 2.2430379929204047 = The organization that is the governing authority of a political unit
+	bn:00059480n - hypernym - bn:00063358n - hypernym - bn:00007299n
+Goods = chemical = 8 = 3.178678970893412 = Material produced by or used in a reaction involving changes in atoms or molecules
+	bn:00018096n - hypernym - bn:15358232n
+
+============================244============================
+Springfield exported large numbers to South America, India, Ceylon and South Africa.
+[Import_export] 2 3.3943937093924954
+Importer = India = 9 = 11.477535072523192 = A republic in the Asian subcontinent in southern Asia; second most populous country in the world; achieved independence from the United Kingdom in 1947
+	bn:00023235n - hypernym - bn:00010203n
+Exporter = Springfield = 1 = 2.3023856840910337 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:00023235n
+Goods = number = 4 = 1.4799939394600208 = A concept of quantity involving zero and units
+	bn:00058285n - hypernym - bn:00047009n - hypernym - bn:00017763n - hypernym - bn:00051054n - hypernym - bn:00012321n
+
+[Import_export] 2 2.7290474706327674
+Importer = South Africa = 14 = 5.964791358094756 = A republic at the southernmost part of Africa; achieved independence from the United Kingdom in 1910; first European settlers were Dutch (known as Boers)
+	bn:00023235n - hypernym - bn:00001824n - hypernym - bn:00067231n
+Exporter = Springfield = 1 = 2.3023856840910337 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:00023235n
+Goods = number = 4 = 1.4799939394600208 = A concept of quantity involving zero and units
+	bn:00058285n - hypernym - bn:00047009n - hypernym - bn:00017763n - hypernym - bn:00051054n - hypernym - bn:00012321n
+
+[Import_export] 2 2.5991463572118403
+Importer = Ceylon = 11 = 5.152929401488049 = A republic on the island of Ceylon; became independent of the United Kingdom in 1948
+	bn:00023235n - hypernym - bn:00017429n
+Exporter = Springfield = 1 = 2.3023856840910337 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:00023235n
+Goods = number = 4 = 1.4799939394600208 = A concept of quantity involving zero and units
+	bn:00058285n - hypernym - bn:00047009n - hypernym - bn:00017763n - hypernym - bn:00051054n - hypernym - bn:00012321n
+
+[Import_export] 2 1.9870342963943537
+Importer = South America = 7 = 2.3023856840910337 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:00023235n
+Exporter = Springfield = 1 = 2.3023856840910337 = A large indefinite location on the surface of the Earth
+	bn:00066884n - hypernym - bn:00027810n - hypernym - bn:00001430n - hypernym - bn:00023235n
+Goods = number = 4 = 1.4799939394600208 = A concept of quantity involving zero and units
+	bn:00058285n - hypernym - bn:00047009n - hypernym - bn:00017763n - hypernym - bn:00051054n - hypernym - bn:00012321n
+
+============================245============================
+Iraq imported calutron magnet cores from Germany.
+[Import_export] 2 3.0216859941303285
+Importer = Iraq = 1 = 5.339206085778243 = A republic in the Middle East in western Asia; the ancient civilization of Mesopotamia was in the area now known as Iraq
+	bn:00023235n - hypernym - bn:00006335n - hypernym - bn:00002362n
+Exporter = Germany = 7 = 7.78331998414468 = A republic in central Europe; split into East Germany and West Germany after World War II and reunited in 1990
+	bn:00023235n - hypernym - bn:00031903n - hypernym - bn:00026684n
+Goods = magnet core = 5 = 0.6639057424272357 = A bar of magnetic material (as soft iron) that passes through a coil and serves to increase the inductance of the coil
+	bn:15358232n - hypernym - bn:00054550n - hypernym - bn:00006856n - Gloss related form (disambiguated) - bn:00022632n
+
+============================246============================
+I've scheduled a monthly satin binge.
+[Scheduling] 3 0.0463789739161736
+Agent = I = 1 = 0.01 = not found
+Event = satin binge = 7 = 0.2151009221517111 = An occasion for excessive eating or drinking
+	bn:00032021n - hypernym - bn:00042904n - hypernym - bn:00048587n - Gloss related form (disambiguated) - bn:00010499n
+
+============================247============================
+Morris set up an interview about his ideas and sent a message.
+[Scheduling] 2 0.9080067257337402
+Agent = Morris = 1 = 2.645495950465983 = A human being
+Event = interview = 5 = 0.3116527975907439 = The questioning of a person (or a conversation in which information is elicited); often conducted by journalists
+	bn:15840810n - hypernym - bn:00021493n - hypernym - bn:00058448n - hypernym - bn:00000777n - hypernym - bn:00048655n - hypernym - bn:00032094n - hypernym - bn:00047238n
+
+============================248============================
+I found out first from the school nurse, who arranged a confidential test.
+[Scheduling] 11 0.3073325911916741
+Agent = school nurse = 8 = 0.05231844475222865 = School nursing is a specialized practice of professional nursing that advances the well being, academic success, and lifelong achievement of students.
+	bn:00678701n - hypernym - bn:00058325n - hypernym - bn:00000737n - hyponym - bn:00001530n - Gloss related form (disambiguated) - bn:00034027n - hypernym - bn:00046516n
+Event = test = 14 = 1.8053541548473722 = Test cricket is the longest form of the sport of cricket.
+	bn:15840810n - hypernym - bn:00006759n - hypernym - bn:02436085n
+
+============================249============================
+LSC has scheduled a meeting with its statewide grantees for February 7-9, 2002.
+[Scheduling] 3 0.74051078032252
+Agent = LSC = 1 = 0.5863477669927208 = A group of people who work together
+Event = meeting = 5 = 0.9352064536483091 = A formally arranged gathering
+	bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00041948n
+
+============================250============================
+Through Atef, KSM arranged a meeting with Bin Ladin in Tora Bora, a mountainous redoubt from the Afghan war days.
+[Scheduling] 5 1.8257505700701877
+Agent = KSM = 4 = 2.5106925759121346 = A group of people who work together
+Place = Tora Bora = 12 = 2.591930195959506 = A large indefinite location on the surface of the Earth
+Event = meeting = 7 = 0.9352064536483091 = A formally arranged gathering
+	bn:15840810n - hypernym - bn:00053116n - hypernym - bn:00041948n
+
