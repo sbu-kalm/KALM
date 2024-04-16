@@ -5,6 +5,7 @@ import { useTrainingContext } from '../../../context/TrainingContextProvider';
 import { sendAnnotation } from "../../../api/TrainingApiAccessor";
 import { getFrames } from "../../../api/GeneralApiAccessor";
 
+// TO DO: make this not as repetitive by placing in different file
 interface Role {
     name: string,
     color: string

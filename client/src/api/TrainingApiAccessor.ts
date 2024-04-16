@@ -1,6 +1,6 @@
 const baseUrl = "http://127.0.0.1:5000";
 
-// TO DO: make this not as repetiive by placing in different file
+// TO DO: make this not as repetitive by placing in different file
 interface Role {
     name: string,
     color: string
