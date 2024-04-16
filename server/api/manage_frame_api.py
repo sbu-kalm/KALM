@@ -6,19 +6,15 @@ from bson.objectid import ObjectId
 from utils.db import create_mongo_client
 from pymongo import ReturnDocument
 
-def json_to_ont(json_path="frames.json", ont_path="frame_ont.txt"):
+def json_to_ont(src, ont_path="resources/frameont/frame_ont.txt"):
     """
     Reads file at json_path and overwrites file at ont_path to update frame ontology with changes in the JSON
 
     Helper function that reads thru the entire JSON and builds up a giant string to be written to the frame ontology.
     It is probably inefficient to read everything and overwrite everything, but not sure if JSON has a feature
     to track the index of entries so that targetted edits can be made in frame_ont.txt
-
-    TO-DO: - figure out where json_path and ont_path can be reliably found
-           - implement transcribing for roles with required data type and hyponyms
     """
-    src = open(json_path)
-    data = json.load(src)
+    data = json.loads(src)
 
     accumulator = "" # final file will be written as this string
 
@@ -43,8 +39,7 @@ def json_to_ont(json_path="frames.json", ont_path="frame_ont.txt"):
         # if has_req or has_hyp:
             # code
         accumulator += ").\n"
-    
-    src.close()
+
     dst = open(ont_path, "w")
     dst.write(accumulator)
     dst.close()
@@ -107,7 +102,7 @@ class ManageFrameApiHandler(Resource):
             result = frames.insert_one(new_frame)  # Add the new frame to the collection
 
             if result.acknowledged:  # If the insert operation was successful
-                #json_to_ont() # update frame_ont.txt to reflect changes
+                json_to_ont(json.dumps(frames)) # update frame_ont.txt to reflect changes
                 return {"message": "Frame added successfully", "id": str(result.inserted_id)}, 200
             else:
                 return {"error": "Error adding frame to database"}, 500
@@ -217,7 +212,7 @@ class ManageRoleApiHandler(Resource):
             return_document=ReturnDocument.AFTER
         )
         if updated_frame is not None:
-            #json_to_ont() # update frame_ont.txt to reflect changes
+            json_to_ont(json.dumps(frames)) # update frame_ont.txt to reflect changes
             return json.loads(json_util.dumps(updated_frame)), 200
         else:
             return {'error': 'Frame with specified role not found'}, 404
