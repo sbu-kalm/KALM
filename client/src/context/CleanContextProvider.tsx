@@ -50,11 +50,11 @@ export const CleanContextProvider = (props: CleanContextProviderProps) => {
     const fetchPatternList = async () => {
         try {
             console.log("Fetching pattern list")
-            const patternList = await getPatterns();
-            console.log(patternList, "Pattern LIST")
+            const response = await getPatterns();
+            console.log(response, "response")
             dispatch({
                 type: "INITIALIZE",
-                patternList: patternList,
+                patternList: response.patternList,
             });
         }
         catch (error) {

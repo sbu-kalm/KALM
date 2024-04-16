@@ -9,14 +9,19 @@ import { Pattern } from '../../../utils/models/Frame';
 import { Button, Group, Breadcrumbs, Anchor } from '@mantine/core';
 import { ShowNotification } from '../../../utils/Global';
 import { useCleanContext, useCleanDispatchContext } from '../../../context/CleanContextProvider';
-
+import { Stack } from '@mantine/core';
 const columns: DataTableColumn<Pattern>[] = [
-    { accessor: 'lvp', width: '100%' },
+    { accessor: 'name', width: '100%' },
 ];
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 50;
+interface Role {
+    role: string;
+    index: number[];
+    type: string;
+}
 
-export function FrameTable() {
+export function PatternTable() {
     const cleanState = useCleanContext();
     const setCleanState = useCleanDispatchContext();
 
@@ -34,19 +39,19 @@ export function FrameTable() {
         console.log(cleanState.patternList, "Pattern LIST")
     }, [page, cleanState.patternList]);
 
-    // // This function is called when the user clicks on a row
-    // // It will navigate to the page with the name of the frame
-    // const handleRowClick = (record: Pattern, index: number) => {
-    //     notifications.show({
-    //         title: `Row Clicked`,
-    //         message: `You clicked on ${record.name}: ${index}!`,
-    //         withBorder: true,
-    //     });
-    //     navigate(`/CleanPattern/${record.name}`);
-    // };
+    // This function is called when the user clicks on a row
+    // It will navigate to the page with the name of the frame
+    const handleRowClick = (record: Pattern, index: number) => {
+        notifications.show({
+            title: `Row Clicked`,
+            message: `You clicked on ${record.name}: ${index}!`,
+            withBorder: true,
+        });
+        navigate(`/CleanPattern/${record.name}`);
+    };
 
     const items = [
-        { title: 'Frames', href: '/CleanPattern' },
+        { title: 'Patterns', href: '/CleanPattern' },
         { title: `${selectedFrame}`, href: '' },
     ]
         .filter(item => item.title !== 'undefined')
@@ -56,6 +61,7 @@ export function FrameTable() {
             </Anchor>
         ));
 
+        
     return (
         <>
             <Group>
@@ -82,10 +88,10 @@ export function FrameTable() {
                 withColumnBorders
                 records={records}
                 columns={columns}
-                idAccessor={({ id }) => `${id}`}
+                idAccessor={({ name }) => `${name}`}
                 selectedRecords={selectedRecords}
                 onSelectedRecordsChange={setSelectedRecords}
-                // onRowClick={({ record, index }) => handleRowClick(record, index)}
+                onRowClick={({ record, index }) => handleRowClick(record, index)}
                 totalRecords={cleanState.patternList.length}
                 recordsPerPage={PAGE_SIZE}
                 page={page}

@@ -78,7 +78,7 @@ function App() {
                 <TrainingContextProvider>
                   <Training />
                 </TrainingContextProvider>} />
-            <Route path="/CleanPattern/:selectedFrame?" element={
+            <Route path="/CleanPattern/:selectedPattern?" element={
               <CleanContextProvider>
                 <CleanPattern />
               </CleanContextProvider>} />

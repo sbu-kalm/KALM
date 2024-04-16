@@ -1,38 +1,43 @@
-import { FrameTable } from "./FrameTable"
+import { PatternTable } from "./PatternTable"
 import { Text, Stack, Title, Button } from "@mantine/core"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { RolesTable } from "./RolesTable";
+import { LvpTable } from "./LvpTable";
 import { Frame } from "../../../utils/models/Frame";
 import { getPatterns } from "../../../api/CleanPatternApiAccessor";
 
 const CleanPattern = () => {
     // This is the hook that allows us to navigate to different pages
-    const { selectedFrame } = useParams();
-    const [table, setTable] = useState("frames");
-    const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
+    const { selectedPattern } = useParams();
+    const [table, setTable] = useState("pattern");
+    // const [selectedRecords, setSelectedRecords] = useState<Frame[]>([]);
 
     useEffect(() => {
-        if (selectedFrame) {
-            setTable("roles");
+        console.log("CHANGING TABLES")
+        console.log(table, "Table")
+        if (selectedPattern) {
+            console.log(selectedPattern, "Selected Pattern")
+            setTable("lvp");
         }
-    }, [selectedFrame]);
+    }, [selectedPattern]);
 
     const renderTable = () => {
-        if (table === "frames") {
-            return <FrameTable />
-        } else if (table === "roles") {
-            return <RolesTable />
+        if (table === "pattern") {
+            return <PatternTable />
+        } else if (table === "lvp") {
+            return <LvpTable />
         }
     }
 
     const fetchPatternList = async () => {
         try {
-            const patternList = await getPatterns();
-            console.log(patternList, "Pattern LIST")
+            console.log(selectedPattern, "Selected Pattern")
+            // const patternList = await getPatterns();
+            // console.log(patternList, "Pattern LIST")
         }
         catch (error) {
-            console.error("Error fetching patternList:", error);
+            console.log(error)
+            // console.error("Error fetching patternList:", error);
         }
     }
 
@@ -41,7 +46,6 @@ const CleanPattern = () => {
     return (
         <>
             <Title order={2} c="blue">Clean Pattern</Title>
-            <Button onClick={fetchPatternList}> Grab patterns </Button>
             <Text size="sm" c="blue"
                 style={{
                     padding: "8px 20px",
@@ -51,7 +55,7 @@ const CleanPattern = () => {
                     width: "fit-content"
                 }}
             >
-                Modify and correct frames that KALM has parsed. Use this tool to activate or deactivate specific parses!
+                Modify and correct patterns that KALM has parsed. Use this tool to activate or deactivate specific parses!
             </Text>
             <Stack>
                 {renderTable()}

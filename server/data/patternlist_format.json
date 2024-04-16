@@ -1,0 +1,35 @@
+{
+    "patternList": [
+        {
+            "name": "Being_employed",
+            "lvps": [
+                {
+                    "value": "lvp(Lexeme,'','Being_employed',verb,[pair('Employee',index(1,1),[nsubj],required),pair('Employer',index(1,10),[obl_at],optional),pair('Place',index(1,14),[obl_in],optional),pair('Field',index(1,12),[obl_in],optional),pair('Position',index(1,5),[obl_as],optional),pair('Task',index(1,8),[obl_on],optional)]) :- fn_synonym('work','Being_employed',Lexeme).",
+                    "frame": "Being_employed",
+                    "roles": [
+                        {"role": "Employee", "index": 1, "type": "required"},
+                        {"role": "Employer", "index": 10, "type": "optional"},
+                        {"role": "Place", "index": 14, "type": "optional"},
+                        {"role": "Field", "index": 12, "type": "optional"},
+                        {"role": "Position", "index": 5, "type": "optional"},
+                        {"role": "Task", "index": 8, "type": "optional"}
+                    ],
+                    "training_sentence": "John works as a salesman on a program at IBM in sales in London."
+                },
+                {
+                    "value": "lvp(Lexeme,'','Being_employed',verb,[pair('Employee',index(2,1),[nsubj],required),pair('Employer',index(2,10),[obl_for],optional),pair('Place',index(2,14),[obl_in],optional),pair('Field',index(2,12),[obl_in],optional),pair('Position',index(2,5),[obl_as],optional),pair('Task',index(2,8),[obl_on],optional)]) :- fn_synonym('work','Being_employed',Lexeme).",
+                    "frame": "Being_employed",
+                    "roles": [
+                        {"role": "Employee", "index": 1, "type": "required"},
+                        {"role": "Employer", "index": 10, "type": "optional"},
+                        {"role": "Place", "index": 14, "type": "optional"},
+                        {"role": "Field", "index": 12, "type": "optional"},
+                        {"role": "Position", "index": 5, "type": "optional"},
+                        {"role": "Task", "index": 8, "type": "optional"}
+                    ],
+                    "training_sentence": "John works as a salesman on a program for IBM in sales in London."
+                }
+            ]
+        }
+    ]
+}

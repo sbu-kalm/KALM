@@ -2,6 +2,8 @@ export interface Role {
     id?: number;
     name: string;
     values: string[];
+    index?: number;
+    type?: string;
 }
 
 export interface Frame {
@@ -11,7 +13,17 @@ export interface Frame {
     description?: string;
 }
 
+export interface Lvp {
+    value: string;
+    frame: string;
+    roles: Role[];
+    line_index: number;
+    training_sentence: string;
+    lvp_identifier: string;
+    example_sentence: string;
+}
+
 export interface Pattern {
-    id: number;
-    lvp: string;
+    name: string;
+    lvps: Lvp[];
 }
