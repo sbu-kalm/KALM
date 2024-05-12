@@ -1,0 +1,14 @@
+(Total time(s): 60)
+[Commerce_buy]0.0
+FE: Buyer
+FE: Seller
+FE: Goods
+	bn:00015786n C - The compartment that is suspended from an airship and that carries personnel and the cargo and the power plant
+		bn:00022071n:1.0126971651877366-hypernym-bn:00005517n:2.079217808725834-hypernym-bn:00068233n:3.522434092873909-hypernym-bn:00021306n:7.250402513440202-hypernym-bn:00015786n:0.0 1.0126971651877366
+	bn:00015785n C - A wheeled vehicle adapted to the rails of railroad
+		bn:00021045n:0.9969732414715721-hypernym-bn:03502261n:2.1873475857519415-hypernym-bn:00079675n:4.178597366939117-hypernym-bn:00080980n:3.6982013729595633-hypernym-bn:00015785n:0.0 0.9969732414715721
+	bn:00014462n C - A conveyance for passengers or freight on a cable railway
+		bn:00022071n:0.5716438960555682-hypernym-bn:00005517n:1.0929927172477958-hypernym-bn:00068233n:1.3171677472130667-hypernym-bn:00021306n:2.31927705605001-hypernym-bn:00014462n:0.0 0.5716438960555682
+FE: Money
+FE: Place
+FE: Recipient

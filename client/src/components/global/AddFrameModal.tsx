@@ -53,14 +53,10 @@ function AddFrameModalBase() {
     console.log("HANDLING FORM SUBMIT")
     console.log(form.values);
 
-    // Get the max id of the frames array
-    const maxId = manageState.frameList.length
-
     console.log(form.values, "FORM VALUES")
 
     // Create a new object with the id being 1 more than the maxId
     const newFrame = {
-      id: maxId + 1,
       name: (form.values as FormValues).frameName,
       roles: Object.entries(form.values as FormValues)
         .filter(([key]) => key.startsWith('role'))
