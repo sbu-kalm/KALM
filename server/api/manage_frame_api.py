@@ -5,6 +5,7 @@ from bson import json_util
 from bson.objectid import ObjectId
 from utils.db import create_mongo_client
 from pymongo import ReturnDocument
+import os
 
 def json_to_ont(src, ont_path="resources/frameont/frame_ont.txt"):
     """
