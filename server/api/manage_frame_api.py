@@ -101,11 +101,12 @@ class ManageFrameApiHandler(Resource):
             client = create_mongo_client()  # Connect to the MongoDB client
             db = client['Frames']   # Select the 'Frames' database
             frames = db['Frames']   # Select the 'Frames' collection
+            all_frames = list(frames.find())
 
             result = frames.insert_one(new_frame)  # Add the new frame to the collection
 
             if result.acknowledged:  # If the insert operation was successful
-                json_to_ont(json.dumps(frames)) # update frame_ont.txt to reflect changes
+                json_to_ont(json.dumps(all_frames)) # update frame_ont.txt to reflect changes
                 return {"message": "Frame added successfully", "id": str(result.inserted_id)}, 200
             else:
                 return {"error": "Error adding frame to database"}, 500
@@ -208,6 +209,7 @@ class ManageRoleApiHandler(Resource):
         client = create_mongo_client()
         db = client['Frames']
         frames = db['Frames']
+        all_frames = list(frames.find())
 
         updated_frame = frames.find_one_and_update(
             {'_id': ObjectId(frame_id), 'roles.name': old_role_name}, 
@@ -215,7 +217,7 @@ class ManageRoleApiHandler(Resource):
             return_document=ReturnDocument.AFTER
         )
         if updated_frame is not None:
-            json_to_ont(json.dumps(frames)) # update frame_ont.txt to reflect changes
+            json_to_ont(json.dumps(all_frames)) # update frame_ont.txt to reflect changes
             return json.loads(json_util.dumps(updated_frame)), 200
         else:
             return {'error': 'Frame with specified role not found'}, 404
