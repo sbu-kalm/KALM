@@ -213,6 +213,9 @@ class ManageRoleApiHandler(Resource):
         db = client['Frames']
         frames = db['Frames']
         all_frames = list(frames.find())
+        #convert ObjectId into string
+        for frame in all_frames:
+            frame['_id'] = str(frame['_id'])
 
         updated_frame = frames.find_one_and_update(
             {'_id': ObjectId(frame_id), 'roles.name': old_role_name}, 
