@@ -88,12 +88,10 @@ export function LvpTable() {
                 rowExpansion={{
                     content: ({ record }) => (
                         <Stack p="xs" gap={6}>
-                        {/* <Group gap={6}>
-                          <div>Frame:</div>
-                          <div>
-                            {record.value}
-                          </div>
-                        </Group> */}
+                        <Group gap={6}>
+                          <div>Original LVP: {record.value}</div>
+                          <div></div>
+                        </Group>
                         {record.roles.map((role: Role, index: number) => {
                             const words = record.example_sentence.split(' ');
                             if(role.index){
