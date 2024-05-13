@@ -102,6 +102,9 @@ class ManageFrameApiHandler(Resource):
             db = client['Frames']   # Select the 'Frames' database
             frames = db['Frames']   # Select the 'Frames' collection
             all_frames = list(frames.find())
+            #convert ObjectId into string
+            for frame in all_frames:
+                frame['_id'] = str(frame['_id'])
 
             result = frames.insert_one(new_frame)  # Add the new frame to the collection
 
