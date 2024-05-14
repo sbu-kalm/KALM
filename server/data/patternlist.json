@@ -41,7 +41,8 @@
                     "line_index": 1,
                     "training_sentence": "train('John works as a salesman on a program at IBM in sales in London.','Being_employed',index(1,2),[pair('Employee',index(1,1),required),pair('Employer',index(1,10),optional),pair('Place',index(1,14),optional),pair('Field',index(1,12),optional),pair('Position',index(1,5),optional),pair('Task',index(1,8),optional)],[],'').",
                     "lvp_identifier": "f89fa61f5964fde7fe50fd69549851879f2d7869d9ad705d3dcd4bb0c48bdecd",
-                    "example_sentence": "John works as a salesman on a program at IBM in sales in London."
+                    "example_sentence": "John works as a salesman on a program at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',verb,[pair('Employee',index(3,1),[nsubj],required),pair('Employer',index(3,11),[obl_in],optional),pair('Place',index(3,15),[obl_in],optional),pair('Field',index(3,13),[obl_in],optional),pair('Position',index(3,5),[obl_as],optional),pair('Task',index(3,8),[obl_on],optional)]) :- fn_synonym('work','Being_employed',Lexeme).",
@@ -81,7 +82,8 @@
                     "line_index": 3,
                     "training_sentence": "train('John works as a salesman on a program in a company in sales in London.','Being_employed',index(3,2),[pair('Employee',index(3,1),required),pair('Employer',index(3,11),optional),pair('Place',index(3,15),optional),pair('Field',index(3,13),optional),pair('Position',index(3,5),optional),pair('Task',index(3,8),optional)],[],'').",
                     "lvp_identifier": "ddde20be4486ebe5698a4f0ebd8c3924b55752a3143c740f8047bc82ca55c0e8",
-                    "example_sentence": "John works as a salesman on a program in a company in sales in London."
+                    "example_sentence": "John works as a salesman on a program in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(5,1),[jbo,nsubj],required),pair('Employer',index(5,8),[jbo,obl_in],optional),pair('Place',index(5,12),[jbo,obl_in],optional),pair('Field',index(5,10),[jbo,obl_in],optional),pair('Position',index(5,4),[compound],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -116,7 +118,8 @@
                     "line_index": 5,
                     "training_sentence": "train('John has a salesman job in a company in sales in London.','Being_employed',index(5,5),[pair('Employee',index(5,1),required),pair('Employer',index(5,8),optional),pair('Place',index(5,12),optional),pair('Field',index(5,10),optional),pair('Position',index(5,4),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "9beee9b073ba52e9c1acca7336ce6e366e8d87731ffe85631529f6765087cc6e",
-                    "example_sentence": "John has a salesman job in a company in sales in London."
+                    "example_sentence": "John has a salesman job in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(7,1),[jbo,nsubj],required),pair('Employer',index(7,7),[jbo,obl_at],optional),pair('Place',index(7,11),[jbo,obl_in],optional),pair('Field',index(7,9),[jbo,obl_in],optional),pair('Position',index(7,4),[compound],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -151,7 +154,8 @@
                     "line_index": 7,
                     "training_sentence": "train('John has a salesman job at IBM in sales in London.','Being_employed',index(7,5),[pair('Employee',index(7,1),required),pair('Employer',index(7,7),optional),pair('Place',index(7,11),optional),pair('Field',index(7,9),optional),pair('Position',index(7,4),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "7de15ac56232116305ee06a6af125ae3970a4c5b5fb1c2ab459d93db6d8dba15",
-                    "example_sentence": "John has a salesman job at IBM in sales in London."
+                    "example_sentence": "John has a salesman job at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(11,1),[jbo,nsubj],required),pair('Employer',index(11,10),[jbo,obl_in],optional),pair('Place',index(11,14),[jbo,obl_in],optional),pair('Field',index(11,12),[jbo,obl_in],optional),pair('Position',index(11,7),[nmod_of],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -186,7 +190,8 @@
                     "line_index": 11,
                     "training_sentence": "train('John has the job of a salesman in a company in sales in London.','Being_employed',index(11,4),[pair('Employee',index(11,1),required),pair('Employer',index(11,10),optional),pair('Place',index(11,14),optional),pair('Field',index(11,12),optional),pair('Position',index(11,7),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "41bf715ee3dce8406aec865e519488cdc1a2b073dcbf0f5eb0fc1d55bc106d98",
-                    "example_sentence": "John has the job of a salesman in a company in sales in London."
+                    "example_sentence": "John has the job of a salesman in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(13,1),[jbo,nsubj],required),pair('Employer',index(13,9),[jbo,obl_at],optional),pair('Place',index(13,13),[jbo,obl_in],optional),pair('Field',index(13,11),[jbo,obl_in],optional),pair('Position',index(13,7),[nmod_of],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -221,7 +226,8 @@
                     "line_index": 13,
                     "training_sentence": "train('John has the job of a salesman at IBM in sales in London.','Being_employed',index(13,4),[pair('Employee',index(13,1),required),pair('Employer',index(13,9),optional),pair('Place',index(13,13),optional),pair('Field',index(13,11),optional),pair('Position',index(13,7),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "fb336e4f20ad37affb510b1d2b4bfa1254aa1932918a057d3b31cc5bc5199353",
-                    "example_sentence": "John has the job of a salesman at IBM in sales in London."
+                    "example_sentence": "John has the job of a salesman at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(23,4),[nmod_of],required),pair('Employer',index(23,10),[jbusn,obl_in],optional),pair('Place',index(23,14),[jbusn,obl_in],optional),pair('Field',index(23,12),[jbusn,obl_in],optional),pair('Position',index(23,7),[jbusn],required)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -256,7 +262,8 @@
                     "line_index": 23,
                     "training_sentence": "train('The job of John is a salesman in a company in sales in London.','Being_employed',index(23,2),[pair('Employee',index(23,4),required),pair('Employer',index(23,10),optional),pair('Place',index(23,14),optional),pair('Field',index(23,12),optional),pair('Position',index(23,7),required)],['stint','position','work'],'').",
                     "lvp_identifier": "726e698d0ed03316c5627349d74eed0b9dd9bc67b9ecafd18de41642774d7511",
-                    "example_sentence": "The job of John is a salesman in a company in sales in London."
+                    "example_sentence": "The job of John is a salesman in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(25,4),[nmod_of],required),pair('Employer',index(25,9),[jbusn,obl_at],optional),pair('Place',index(25,13),[jbusn,obl_in],optional),pair('Field',index(25,11),[jbusn,obl_in],optional),pair('Position',index(25,7),[jbusn],required)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -291,7 +298,8 @@
                     "line_index": 25,
                     "training_sentence": "train('The job of John is a salesman at IBM in sales in London.','Being_employed',index(25,2),[pair('Employee',index(25,4),required),pair('Employer',index(25,9),optional),pair('Place',index(25,13),optional),pair('Field',index(25,11),optional),pair('Position',index(25,7),required)],['stint','position','work'],'').",
                     "lvp_identifier": "2ded7a411652cdb478002aee682d7d2f7880dca87eeb3e469fe8a7a2a3aeceb5",
-                    "example_sentence": "The job of John is a salesman at IBM in sales in London."
+                    "example_sentence": "The job of John is a salesman at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(29,4),[nmod_of],required),pair('Employer',index(29,11),[jbusn,obl_in],optional),pair('Place',index(29,15),[jbusn,obl_in],optional),pair('Field',index(29,13),[jbusn,obl_in],optional),pair('Position',index(29,8),[jbusn],required)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -326,7 +334,8 @@
                     "line_index": 29,
                     "training_sentence": "train('The job of John is as a salesman in a company in sales in London.','Being_employed',index(29,2),[pair('Employee',index(29,4),required),pair('Employer',index(29,11),optional),pair('Place',index(29,15),optional),pair('Field',index(29,13),optional),pair('Position',index(29,8),required)],['stint','position','work'],'').",
                     "lvp_identifier": "6e4f09c6c01b8072bcc97addd517abc4396307fe0fc417d9caaa53abda831c14",
-                    "example_sentence": "The job of John is as a salesman in a company in sales in London."
+                    "example_sentence": "The job of John is as a salesman in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(31,4),[nmod_of],required),pair('Employer',index(31,10),[jbusn,obl_at],optional),pair('Place',index(31,14),[jbusn,obl_in],optional),pair('Field',index(31,12),[jbusn,obl_in],optional),pair('Position',index(31,8),[jbusn],required)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -361,7 +370,8 @@
                     "line_index": 31,
                     "training_sentence": "train('The job of John is as a salesman at IBM in sales in London.','Being_employed',index(31,2),[pair('Employee',index(31,4),required),pair('Employer',index(31,10),optional),pair('Place',index(31,14),optional),pair('Field',index(31,12),optional),pair('Position',index(31,8),required)],['stint','position','work'],'').",
                     "lvp_identifier": "74e9364c08513f58a35eaf39aa091ad4f13f0af8aafcda5745eab75506e22b88",
-                    "example_sentence": "The job of John is as a salesman at IBM in sales in London."
+                    "example_sentence": "The job of John is as a salesman at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(35,1),[jbo,nsubj],required),pair('Employer',index(35,9),[jbo,obl_in],optional),pair('Place',index(35,13),[jbo,obl_in],optional),pair('Field',index(35,11),[jbo,obl_in],optional),pair('Task',index(35,6),[nmod_of],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -396,7 +406,8 @@
                     "line_index": 35,
                     "training_sentence": "train('John has a job of management in a company in sales in London.','Being_employed',index(35,4),[pair('Employee',index(35,1),required),pair('Employer',index(35,9),optional),pair('Place',index(35,13),optional),pair('Field',index(35,11),optional),pair('Task',index(35,6),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "2859e542f1797759aeae976df487105102dd095d59541a561f42baa329fabcb6",
-                    "example_sentence": "John has a job of management in a company in sales in London."
+                    "example_sentence": "John has a job of management in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(37,1),[jbo,nsubj],required),pair('Employer',index(37,8),[jbo,obl_at],optional),pair('Place',index(37,12),[jbo,obl_in],optional),pair('Field',index(37,10),[jbo,obl_in],optional),pair('Task',index(37,6),[nmod_of],optional)]) :- fn_synonym('job','Being_employed',Lexeme).",
@@ -431,7 +442,8 @@
                     "line_index": 37,
                     "training_sentence": "train('John has a job of management at IBM in sales in London.','Being_employed',index(37,4),[pair('Employee',index(37,1),required),pair('Employer',index(37,8),optional),pair('Place',index(37,12),optional),pair('Field',index(37,10),optional),pair('Task',index(37,6),optional)],['stint','position','work'],'').",
                     "lvp_identifier": "c50ef947c4197fd84dc4ad3cc2d7d6dddd79a7027163d2ee43eb9d00f049b9b2",
-                    "example_sentence": "John has a job of management at IBM in sales in London."
+                    "example_sentence": "John has a job of management at IBM in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',verb,[pair('Employee',index(41,1),[obj],required),pair('Employer',index(41,9),[obl_in],optional),pair('Place',index(41,13),[obl_in],optional),pair('Field',index(41,11),[obl_in],optional),pair('Position',index(41,6),[obl_as],required)]) :- fn_synonym('employ','Being_employed',Lexeme).",
@@ -466,7 +478,8 @@
                     "line_index": 41,
                     "training_sentence": "train('John is employed as a salesman in a company in sales in London.','Being_employed',index(41,3),[pair('Employee',index(41,1),required),pair('Employer',index(41,9),optional),pair('Place',index(41,13),optional),pair('Field',index(41,11),optional),pair('Position',index(41,6),required)],[],'').",
                     "lvp_identifier": "84c91f838dc40657d9cb1b710436673211e48d6c72c1687cbc0a068863755589",
-                    "example_sentence": "John is employed as a salesman in a company in sales in London."
+                    "example_sentence": "John is employed as a salesman in a company in sales in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',noun,[pair('Employee',index(42,1),[nsubj],required),pair('Position',index(42,4),[self],required)]) :- fn_synonym('salesman','Being_employed',Lexeme).",
@@ -486,7 +499,8 @@
                     "line_index": 42,
                     "training_sentence": "train('John is a salesman.','Being_employed',index(42,4),[pair('Employee',index(42,1),required),pair('Position',index(42,4),required)],['teacher'],'[Employee:required] is [Position].').",
                     "lvp_identifier": "7953122fee9b7fe517b8407405f5f9d9990423bb71e5794087613bf193e832ac",
-                    "example_sentence": "John is a salesman."
+                    "example_sentence": "John is a salesman.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Being_employed',verb,[pair('Employee',index(208,1),[obj],required),pair('Employer',index(208,5),[obl_by],required),pair('Place',index(208,7),[obl_in],optional)]) :- fn_synonym('employ','Being_employed',Lexeme).",
@@ -511,7 +525,8 @@
                     "line_index": 208,
                     "training_sentence": "train('John is employed by IBM in London.','Being_employed',index(208,3),[pair('Employee',index(208,1),required),pair('Employer',index(208,5),required),pair('Place',index(208,7),optional)],[],'').",
                     "lvp_identifier": "4484c12fd7ff849dffe15964935c39eb95e56d58fe5679af6e7cea880d173c77",
-                    "example_sentence": "John is employed by IBM in London."
+                    "example_sentence": "John is employed by IBM in London.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -536,7 +551,8 @@
                     "line_index": 43,
                     "training_sentence": "train('Mary is a female.','Human_gender',index(43,2),[pair('Person',index(43,1),required),pair('Gender',index(43,4),required)],[],'').",
                     "lvp_identifier": "81859f9f8c921dded4b8aed29a77c2119b8eafc8d2e12eb39f3ef7bd57bc92d0",
-                    "example_sentence": "Mary is a female."
+                    "example_sentence": "Mary is a female.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Human_gender',noun,[pair('Person',index(44,1),[jbo,nsubj],required),pair('Gender',index(44,7),[nmod_of],required)]) :- fn_synonym('gender','Human_gender',Lexeme).",
@@ -556,7 +572,8 @@
                     "line_index": 44,
                     "training_sentence": "train('Mary has the gender of a female.','Human_gender',index(44,4),[pair('Person',index(44,1),required),pair('Gender',index(44,7),required)],[],'').",
                     "lvp_identifier": "f2bf52cf3415f08fa1717dfb548a2ea4b48230c85e0d2d907c6a4128a679432d",
-                    "example_sentence": "Mary has the gender of a female."
+                    "example_sentence": "Mary has the gender of a female.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Human_gender',noun,[pair('Person',index(45,4),[nmod_of],required),pair('Gender',index(45,7),[jbusn],required)]) :- fn_synonym('gender','Human_gender',Lexeme).",
@@ -576,7 +593,8 @@
                     "line_index": 45,
                     "training_sentence": "train('The gender of Mary is a female.','Human_gender',index(45,2),[pair('Person',index(45,4),required),pair('Gender',index(45,7),required)],[],'').",
                     "lvp_identifier": "917cdf9b61feb0a40b6325dd8bd96b7d0fe547578a64d697f603d1a436701b2b",
-                    "example_sentence": "The gender of Mary is a female."
+                    "example_sentence": "The gender of Mary is a female.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Human_gender',noun,[pair('Person',index(46,7),[jbo,obl_by],required),pair('Gender',index(46,2),[amod],required)]) :- fn_synonym('gender','Human_gender',Lexeme).",
@@ -596,7 +614,8 @@
                     "line_index": 46,
                     "training_sentence": "train('A female gender is held by Mary.', 'Human_gender', index(46,3),[pair('Person',index(46,7),required),pair('Gender',index(46,2),required)],[],'').",
                     "lvp_identifier": "77e9f2c6f6ab6e7e366419b6b7294eec75b551be2cbc091bb8afb96d9dea7fe5",
-                    "example_sentence": "A female gender is held by Mary."
+                    "example_sentence": "A female gender is held by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -626,7 +645,8 @@
                     "line_index": 47,
                     "training_sentence": "train('Mary lives in a town with John.','Residence',index(47,2),[pair('Resident',index(47,1),required),pair('Location',index(47,5),required),pair('Co_resident',index(47,7),optional)],['reside','camp','dwell','lodge','occupy','room','stay'],'').",
                     "lvp_identifier": "126567826a34242f8ad24bf512dc5774c15698a1785749125e38a51caebac425",
-                    "example_sentence": "Mary lives in a town with John."
+                    "example_sentence": "Mary lives in a town with John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Residence',noun,[pair('Resident',index(58,1),[nsubj],required),pair('Location',index(58,6),[nmod_of],required)]) :- fn_synonym('resident','Residence',Lexeme).",
@@ -646,7 +666,8 @@
                     "line_index": 58,
                     "training_sentence": "train('Mary is a resident of London.','Residence',index(58,4),[pair('Resident',index(58,1),required),pair('Location',index(58,6),required)],['occupant','dweller','inhabitant'],'').",
                     "lvp_identifier": "7652cdf2b91425c97dc0b8d951ffa6e539e8e02fc30002929c365f12bd38d3c9",
-                    "example_sentence": "Mary is a resident of London."
+                    "example_sentence": "Mary is a resident of London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Residence',verb,[pair('Resident',index(61,1),[obj],required),pair('Location',index(61,6),[obl_in],required),pair('Co_resident',index(61,8),[obl_with],optional)]) :- fn_synonym('inhabit','Residence',Lexeme).",
@@ -671,7 +692,8 @@
                     "line_index": 61,
                     "training_sentence": "train('Mary is inhabited in a town with John.','Residence',index(61,3),[pair('Resident',index(61,1),required),pair('Location',index(61,6),required),pair('Co_resident',index(61,8),optional)],['camped'],'').",
                     "lvp_identifier": "8f3bd4f620211224247966f6835cb54491a7528772fc9b24c3e083c9a51a5fb5",
-                    "example_sentence": "Mary is inhabited in a town with John."
+                    "example_sentence": "Mary is inhabited in a town with John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -701,7 +723,8 @@
                     "line_index": 62,
                     "training_sentence": "train('Mary is born in London in 1986.','Being_born',index(62,3),[pair('Person',index(62,1),required),pair('Place',index(62,5),optional),pair('Time',index(62,7),optional)],[],'').",
                     "lvp_identifier": "bbac0093f9e7fad66aae2235ae48b6ba3402fc4996bbea649beb79f0aa525bbc",
-                    "example_sentence": "Mary is born in London in 1986."
+                    "example_sentence": "Mary is born in London in 1986.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -736,7 +759,8 @@
                     "line_index": 63,
                     "training_sentence": "train('A garage is rented by Moore at a rate of 500 dollars from Dawson.', 'Renting', index(63,4), [pair('Lessee',index(63,6),required),pair('Goods',index(63,2),required),pair('Lessor',index(63,14),optional),pair('Money',index(63,12),optional)],['charter','lease'],'').",
                     "lvp_identifier": "b47900265f1c1adcdc6a432138363ce7dede6a1fbd71959e42b0e09870db8772",
-                    "example_sentence": "A garage is rented by Moore at a rate of 500 dollars from Dawson."
+                    "example_sentence": "A garage is rented by Moore at a rate of 500 dollars from Dawson.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -781,7 +805,8 @@
                     "line_index": 64,
                     "training_sentence": "train('A car is bought in London for John by Mary from George at a price of 300 dollars.', 'Commerce_buy', index(64,4), [pair('Buyer',index(64,10),required), pair('Goods',index(64,2),required), pair('Seller',index(64,12),optional),pair('Recipient',index(64,8),optional),pair('Place',index(64,6),optional),pair('Money',index(64,18),optional)],['purchase'],'').",
                     "lvp_identifier": "cb3e9da346d8fae313b6b6b28dbb34bdee3c64ce15bb1597786bcb38ff07c5ac",
-                    "example_sentence": "A car is bought in London for John by Mary from George at a price of 300 dollars."
+                    "example_sentence": "A car is bought in London for John by Mary from George at a price of 300 dollars.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Buyer',index(65,15),[obl_by],required),pair('Goods',index(65,2),[obj],required),pair('Seller',index(65,10),[obl_from],optional),pair('Recipient',index(65,6),[obl_for],optional),pair('Place',index(65,8),[obl_in],optional),pair('Money',index(65,13),[obl_for],optional)]) :- fn_synonym('buy','Commerce_buy',Lexeme).",
@@ -821,7 +846,8 @@
                     "line_index": 65,
                     "training_sentence": "train('A car is bought for John in London from George for 300 dollars by Mary.', 'Commerce_buy', index(65,4), [pair('Buyer',index(65,15),required),pair('Goods',index(65,2),required),pair('Seller',index(65,10),optional),pair('Recipient',index(65,6),optional),pair('Place',index(65,8),optional),pair('Money',index(65,13),optional)],['purchase'],'').",
                     "lvp_identifier": "fa16c253c7bdd53bdb052edcdb8ef43d99e1fbb7d68e981fab50d7ac3ccd44de",
-                    "example_sentence": "A car is bought for John in London from George for 300 dollars by Mary."
+                    "example_sentence": "A car is bought for John in London from George for 300 dollars by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Buyer',index(67,14),[obl_by],required),pair('Goods',index(67,2),[obj],required),pair('Seller',index(67,6),[obl_from],optional),pair('Recipient',index(67,16),[obl_for],optional),pair('Money',index(67,12),[obl_at,nmod_of],optional)]) :- fn_synonym('buy','Commerce_buy',Lexeme).",
@@ -856,7 +882,8 @@
                     "line_index": 67,
                     "training_sentence": "train('A car is bought from George at a price of 300 dollars by Mary for John.', 'Commerce_buy', index(67,4), [pair('Buyer',index(67,14),required),pair('Goods',index(67,2),required),pair('Seller',index(67,6),optional),pair('Recipient',index(67,16),optional),pair('Money',index(67,12),optional)],['purchase'],'').",
                     "lvp_identifier": "49cf8562a889e29b4586eb99be04e4d9d0d337ed03ad4b048c6023da098aad77",
-                    "example_sentence": "A car is bought from George at a price of 300 dollars by Mary for John."
+                    "example_sentence": "A car is bought from George at a price of 300 dollars by Mary for John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Buyer',index(68,6),[obl_by],required),pair('Goods',index(68,2),[obj],required),pair('Seller',index(68,10),[obl_from],optional),pair('Recipient',index(68,8),[obl_for],optional),pair('Money',index(68,13),[obl_for],optional)]) :- fn_synonym('buy','Commerce_buy',Lexeme).",
@@ -891,7 +918,8 @@
                     "line_index": 68,
                     "training_sentence": "train('A car is bought by Mary for John from George for 300 dollars.', 'Commerce_buy', index(68,4), [pair('Buyer',index(68,6),required),pair('Goods',index(68,2),required),pair('Seller',index(68,10),optional),pair('Recipient',index(68,8),optional),pair('Money',index(68,13),optional)],['purchase'],'').",
                     "lvp_identifier": "9fd21e7e3c734b41a021b496520f5c892d0770493ccec0fe910fa22f31093fce",
-                    "example_sentence": "A car is bought by Mary for John from George for 300 dollars."
+                    "example_sentence": "A car is bought by Mary for John from George for 300 dollars.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Buyer',index(69,11),[obl_by],required),pair('Goods',index(69,2),[obj],required),pair('Money',index(69,7),[obl_with],optional),pair('Place',index(69,9),[obl_in],optional),pair('Seller',index(69,13),[obl_from],optional),pair('Recipient',index(69,15),[obl_for],optional)]) :- fn_synonym('buy','Commerce_buy',Lexeme).",
@@ -931,7 +959,8 @@
                     "line_index": 69,
                     "training_sentence": "train('A car is bought with 300 dollars in London by Mary from George for John.', 'Commerce_buy', index(69,4), [pair('Buyer',index(69,11),required),pair('Goods',index(69,2),required),pair('Money',index(69,7),optional),pair('Place',index(69,9),optional),pair('Seller',index(69,13),optional),pair('Recipient',index(69,15),optional)],['purchase'],'').",
                     "lvp_identifier": "02459f08efa231fc88c19d650a04cf90b723cb34bdde2aec528f35b56a28797b",
-                    "example_sentence": "A car is bought with 300 dollars in London by Mary from George for John."
+                    "example_sentence": "A car is bought with 300 dollars in London by Mary from George for John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',noun,[pair('Goods',index(70,5),[nmod_of],required),pair('Recipient',index(70,9),[jboi,obj],optional),pair('Seller',index(70,11),[jboi,obl_from],optional),pair('Money',index(70,17),[jboi,obl_at,nmod_of],optional),pair('Buyer',index(70,19),[jboi,obl_by],required),pair('Place',index(70,21),[jboi,obl_in],optional)]) :- fn_synonym('purchase','Commerce_buy',Lexeme).",
@@ -971,7 +1000,8 @@
                     "line_index": 70,
                     "training_sentence": "train('A purchase of a car is made for John from George at a price of 300 dollars by Mary in London.', 'Commerce_buy', index(70,2), [pair('Goods',index(70,5),required),pair('Recipient',index(70,9),optional),pair('Seller',index(70,11),optional),pair('Money',index(70,17),optional),pair('Buyer',index(70,19),required),pair('Place',index(70,21),optional)],[],'').",
                     "lvp_identifier": "1011d409512f70b90b08b35fbddb02ee63dc20466f18328cd456df198bb1ab8f",
-                    "example_sentence": "A purchase of a car is made for John from George at a price of 300 dollars by Mary in London."
+                    "example_sentence": "A purchase of a car is made for John from George at a price of 300 dollars by Mary in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',noun,[pair('Goods',index(71,5),[nmod_of],required),pair('Buyer',index(71,16),[jbo,obl_by],required),pair('Seller',index(71,9),[jbo,obl_from],optional),pair('Recipient',index(71,11),[jbo,obl_for],optional),pair('Money',index(71,14),[jbo,obl_for],optional),pair('Place',index(71,18),[jbo,obl_in],optional)]) :- fn_synonym('purchase','Commerce_buy',Lexeme).",
@@ -1011,7 +1041,8 @@
                     "line_index": 71,
                     "training_sentence": "train('A purchase of a car is made from George for John for 300 dollars by Mary in London.', 'Commerce_buy', index(71,2), [pair('Goods',index(71,5),required),pair('Buyer',index(71,16),required),pair('Seller',index(71,9),optional),pair('Recipient',index(71,11),optional),pair('Money',index(71,14),optional),pair('Place',index(71,18),optional)],[],'').",
                     "lvp_identifier": "14690997288de992cf2073c049de2309f0e91869bd05f07f10e832c01b781704",
-                    "example_sentence": "A purchase of a car is made from George for John for 300 dollars by Mary in London."
+                    "example_sentence": "A purchase of a car is made from George for John for 300 dollars by Mary in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',noun,[pair('Goods',index(72,5),[nmod_of],required),pair('Buyer',index(72,9),[jbo,obl_by],required),pair('Place',index(72,11),[jbo,obl_in],optional),pair('Money',index(72,14),[jbo,obl_with],optional),pair('Seller',index(72,16),[jbo,obl_from],optional),pair('Recipient',index(72,18),[jbo,obl_for],optional)]) :- fn_synonym('purchase','Commerce_buy',Lexeme).",
@@ -1051,7 +1082,8 @@
                     "line_index": 72,
                     "training_sentence": "train('A purchase of a car is made by Mary in London with 300 dollars from George for John.', 'Commerce_buy',index(72,2), [pair('Goods',index(72,5),required),pair('Buyer',index(72,9),required),pair('Place',index(72,11),optional),pair('Money',index(72,14),optional),pair('Seller',index(72,16),optional),pair('Recipient',index(72,18),optional)],[],'').",
                     "lvp_identifier": "395fb92dffab11dfbb88563a59b448c2d00030df074a87453bcb0913beee438c",
-                    "example_sentence": "A purchase of a car is made by Mary in London with 300 dollars from George for John."
+                    "example_sentence": "A purchase of a car is made by Mary in London with 300 dollars from George for John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Money',index(73,2),[iobj],optional),pair('Goods',index(73,7),[obj],required),pair('Buyer',index(73,9),[obl_by],required)]) :- fn_synonym('pay_for','Commerce_buy',Lexeme).",
@@ -1076,7 +1108,8 @@
                     "line_index": 73,
                     "training_sentence": "train('400 dollars is paid for a store by Mary.', 'Commerce_buy', index(73,4), [pair('Money',index(73,2),optional),pair('Goods',index(73,7),required),pair('Buyer',index(73,9),required)],[],'').",
                     "lvp_identifier": "38b23b4ab33fdd1f206a73b23cb11b2440e946e0dff7140c94f078ef7e11d67e",
-                    "example_sentence": "400 dollars is paid for a store by Mary."
+                    "example_sentence": "400 dollars is paid for a store by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Money',index(74,2),[obj],optional),pair('Seller',index(74,6),[obl_to],optional),pair('Goods',index(74,9),[obl_for],required),pair('Buyer',index(74,11),[obl_by],required)]) :- fn_synonym('pay','Commerce_buy',Lexeme).",
@@ -1106,7 +1139,8 @@
                     "line_index": 74,
                     "training_sentence": "train('400 dollars is paid to John for a store by Mary.','Commerce_buy', index(74,4), [pair('Money',index(74,2),optional),pair('Seller',index(74,6),optional),pair('Goods',index(74,9),required),pair('Buyer',index(74,11),required)],[],'').",
                     "lvp_identifier": "1b565098513d9b907fa7fce4ea4cbd57dae38b19a8dfeeb893a262b6914f472f",
-                    "example_sentence": "400 dollars is paid to John for a store by Mary."
+                    "example_sentence": "400 dollars is paid to John for a store by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',noun,[pair('Buyer',index(75,1),[nsubj],required),pair('Goods',index(75,7),[nmod_of],required)]) :- fn_synonym('buyer','Commerce_buy',Lexeme).",
@@ -1126,7 +1160,8 @@
                     "line_index": 75,
                     "training_sentence": "train('Mary is a buyer of a store.','Commerce_buy',index(75,4),[pair('Buyer',index(75,1),required),pair('Goods',index(75,7),required)],['purchaser'],'').",
                     "lvp_identifier": "17ebc3317625e3e7fdaf9f27b8083ff2dbb012cfdf035c362fc3fccebf2a088a",
-                    "example_sentence": "Mary is a buyer of a store."
+                    "example_sentence": "Mary is a buyer of a store.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Goods',index(76,2),[obj],required),pair('Buyer',index(76,6),[obl_to],required),pair('Seller',index(76,8),[obl_by],optional),pair('Place',index(76,10),[obl_in],optional),pair('Money',index(76,16),[obl_at,nmod_of],optional)]) :- fn_synonym('sell','Commerce_buy',Lexeme).",
@@ -1161,7 +1196,8 @@
                     "line_index": 76,
                     "training_sentence": "train('A car is sold to John by Mary in London at a price of 300 dollars.', 'Commerce_buy', index(76,4), [pair('Goods', index(76,2),required),pair('Buyer',index(76,6),required),pair('Seller',index(76,8),optional),pair('Place',index(76,10),optional),pair('Money',index(76,16),optional)],[],'').",
                     "lvp_identifier": "bbff52072c101f36827cc38748f902426019b2e354cbe417ba770bdc32264873",
-                    "example_sentence": "A car is sold to John by Mary in London at a price of 300 dollars."
+                    "example_sentence": "A car is sold to John by Mary in London at a price of 300 dollars.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Goods',index(77,2),[obj],optional),pair('Buyer',index(77,6),[obl_to],required),pair('Place',index(77,8),[obl_in],optional),pair('Seller',index(77,10),[obl_by],optional),pair('Money',index(77,13),[obl_for],optional)]) :- fn_synonym('sell','Commerce_buy',Lexeme).",
@@ -1196,7 +1232,8 @@
                     "line_index": 77,
                     "training_sentence": "train('A car was sold to John in London by Mary for 300 dollars.', 'Commerce_buy', index(77,4), [pair('Goods',index(77,2),optional),pair('Buyer',index(77,6),required),pair('Place',index(77,8),optional),pair('Seller',index(77,10),optional),pair('Money',index(77,13),optional)],[],'').",
                     "lvp_identifier": "3fd32783199d3d79646fb20a08ff722bb44a3fccb02c5fac390314719ec6b012",
-                    "example_sentence": "A car was sold to John in London by Mary for 300 dollars."
+                    "example_sentence": "A car was sold to John in London by Mary for 300 dollars.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Goods',index(78,2),[obj],required),pair('Buyer',index(78,7),[obl_to],required),pair('Money',index(78,13),[obl_at,nmod_of],optional),pair('Place',index(78,15),[obl_by],optional)]) :- fn_synonym('sell','Commerce_buy',Lexeme).",
@@ -1226,7 +1263,8 @@
                     "line_index": 78,
                     "training_sentence": "train('A car is being sold to John at a price of 300 dollars by Mary in London.', 'Commerce_buy', index(78,5), [pair('Goods',index(78,2),required),pair('Buyer',index(78,7),required),pair('Money',index(78,13),optional),pair('Place',index(78,15),optional)], [],'').",
                     "lvp_identifier": "517674d0a1e3b7fe78b3381c3acaf2d167c34bcf8171fe5be32f1f04e446dc1c",
-                    "example_sentence": "A car is being sold to John at a price of 300 dollars by Mary in London."
+                    "example_sentence": "A car is being sold to John at a price of 300 dollars by Mary in London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Commerce_buy',verb,[pair('Goods',index(79,2),[obj],required),pair('Place',index(79,7),[obl_in],optional),pair('Buyer',index(79,9),[obl_to],required),pair('Seller',index(79,11),[obl_by],optional),pair('Money',index(79,14),[obl_for],optional)]) :- fn_synonym('sell','Commerce_buy',Lexeme).",
@@ -1261,7 +1299,8 @@
                     "line_index": 79,
                     "training_sentence": "train('A car will be sold in London to John by Mary for 300 dollars.', 'Commerce_buy', index(79,5), [pair('Goods',index(79,2),required),pair('Place',index(79,7),optional),pair('Buyer',index(79,9),required),pair('Seller',index(79,11),optional),pair('Money',index(79,14),optional)],[],'').",
                     "lvp_identifier": "1d2f3c46fc2a51a7c8596d7e627e28e96d222cc115d53a0e8c8f1aa8d6e93093",
-                    "example_sentence": "A car will be sold in London to John by Mary for 300 dollars."
+                    "example_sentence": "A car will be sold in London to John by Mary for 300 dollars.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1286,7 +1325,8 @@
                     "line_index": 80,
                     "training_sentence": "train('A car is owned by Mary.', 'Possession', index(80,4), [pair('Possession',index(80,2),required),pair('Owner',index(80,6),required)],['get','have','possess'],'').",
                     "lvp_identifier": "419cdb6091e09c0a9bb40b7384accd0f1bb168022ee1df91803c46783a51adf8",
-                    "example_sentence": "A car is owned by Mary."
+                    "example_sentence": "A car is owned by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Possession',noun,[pair('Owner',index(81,1),[nsubj],required),pair('Possession',index(81,7),[nmod_of],required)]) :- fn_synonym('owner','Possession',Lexeme).",
@@ -1306,7 +1346,8 @@
                     "line_index": 81,
                     "training_sentence": "train('Mary is the owner of a car.','Possession',index(81,4),[pair('Owner',index(81,1),required),pair('Possession',index(81,7),required)],['possessor'],'').",
                     "lvp_identifier": "829baf0a666d29035a5ff06c83b2ac0f3e463deb9e825c93dbf877b898b2575c",
-                    "example_sentence": "Mary is the owner of a car."
+                    "example_sentence": "Mary is the owner of a car.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Possession',noun,[pair('Owner',index(82,1),[nsubj],required),pair('Possession',index(82,8),[nmod_of],required)]) :- fn_synonym('possession','Possession',Lexeme).",
@@ -1326,7 +1367,8 @@
                     "line_index": 82,
                     "training_sentence": "train('Mary is in a possession of a car.','Possession',index(82,5),[pair('Owner',index(82,1),required),pair('Possession',index(82,8),required)],[],'').",
                     "lvp_identifier": "bd954e09881578da031a56ab9974d78a5c195981926eb764cdf7cb1ef57af04e",
-                    "example_sentence": "Mary is in a possession of a car."
+                    "example_sentence": "Mary is in a possession of a car.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1361,7 +1403,8 @@
                     "line_index": 84,
                     "training_sentence": "train('A meal is cooked in a kitchen by Mary for John.', 'Cooking', index(84,4), [pair('Food',index(84,2),required),pair('Place',index(84,7),optional),pair('Cook',index(84,9),required),pair('Recipient',index(84,11),optional)],['bake','make','fry','grill','boil','roast'],'').",
                     "lvp_identifier": "a35991fb69011e1556ea3672693185aeefe43e018c7ab165c4a138a3d0169aa4",
-                    "example_sentence": "A meal is cooked in a kitchen by Mary for John."
+                    "example_sentence": "A meal is cooked in a kitchen by Mary for John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1386,7 +1429,8 @@
                     "line_index": 85,
                     "training_sentence": "train('A suit is dressed in by John.', 'Dressing', index(85,4), [pair('Wearer',index(85,7),required),pair('Clothing',index(85,2),required)],['dress_up'],'').",
                     "lvp_identifier": "2b6f039ef48d8ab38dae166bdbfe663d2eeadef2d9d35f26fd8e0ac5c8580870",
-                    "example_sentence": "A suit is dressed in by John."
+                    "example_sentence": "A suit is dressed in by John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Dressing',verb,[pair('Clothing',index(86,2),[obj],required),pair('Wearer',index(86,7),[obl_by],required)]) :- fn_synonym('put_on','Dressing',Lexeme).",
@@ -1406,7 +1450,8 @@
                     "line_index": 86,
                     "training_sentence": "train('A suit is put on by John.', 'Dressing', index(86,4), [pair('Clothing',index(86,2),required),pair('Wearer',index(86,7),required)],['pull_on'],'').",
                     "lvp_identifier": "deee8110d38cecb019fd81f64d8b0315f2530dee75e41ac06f7a52364a21a543",
-                    "example_sentence": "A suit is put on by John."
+                    "example_sentence": "A suit is put on by John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Dressing',verb,[pair('Clothing',index(87,2),[obj],required),pair('Wearer',index(87,6),[obl_by],required)]) :- fn_synonym('wear','Dressing',Lexeme).",
@@ -1426,7 +1471,8 @@
                     "line_index": 87,
                     "training_sentence": "train('A suit is worn by John.', 'Dressing', index(87,4), [pair('Clothing',index(87,2),required),pair('Wearer',index(87,6),required)],[],'').",
                     "lvp_identifier": "5d619550275deed2a03ce894dffdabd5bd6bc95973f786b3b134e2768ee4e971",
-                    "example_sentence": "A suit is worn by John."
+                    "example_sentence": "A suit is worn by John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1456,7 +1502,8 @@
                     "line_index": 88,
                     "training_sentence": "train('Mary commutes from Boston to London.','Travel',index(88,2),[pair('Traveler',index(88,1),required),pair('Source',index(88,4),optional),pair('Goal',index(88,6),optional)],['travel','journey'],'').",
                     "lvp_identifier": "b232e89643deaf82cc105bfd793c68b43f6c6611d93147427ca9bb6536d6848a",
-                    "example_sentence": "Mary commutes from Boston to London."
+                    "example_sentence": "Mary commutes from Boston to London.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',noun,[pair('Traveler',index(89,10),[jbo,obl_by],required),pair('Source',index(89,4),[jbo,obl_from],optional),pair('Goal',index(89,6),[jbo,obl_to],optional)]) :- fn_synonym('trip','Travel',Lexeme).",
@@ -1481,7 +1528,8 @@
                     "line_index": 89,
                     "training_sentence": "train('A trip from Boston to London is made by Mary.', 'Travel', index(89,2), [pair('Traveler',index(89,10),required),pair('Source',index(89,4),optional),pair('Goal',index(89,6),optional)],['journey','tour','expedition','getaway','safari','excursion','odyssey','voyage'],'').",
                     "lvp_identifier": "c333c40ecd72bb199fd9bb395814b080ff8d723086b92433f3993e6a127929d2",
-                    "example_sentence": "A trip from Boston to London is made by Mary."
+                    "example_sentence": "A trip from Boston to London is made by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',verb,[pair('Traveler',index(165,5),[obl_by],required),pair('Goal',index(165,1),[obj],required)]) :- fn_synonym('visit','Travel',Lexeme).",
@@ -1501,7 +1549,8 @@
                     "line_index": 165,
                     "training_sentence": "train('Paris is visited by Mary.', 'Travel', index(165,3), [pair('Traveler',index(165,5),required),pair('Goal',index(165,1),required)], ['enter'],'').",
                     "lvp_identifier": "412dda53c820b35b8283921c7973058ba9acbb34d42f2474076781b175a7f6eb",
-                    "example_sentence": "Paris is visited by Mary."
+                    "example_sentence": "Paris is visited by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',verb,[pair('Traveler',index(166,1),[nsubj],required),pair('Goal',index(166,4),[obl_in],required)]) :- fn_synonym('arrive','Travel',Lexeme).",
@@ -1521,7 +1570,8 @@
                     "line_index": 166,
                     "training_sentence": "train('Mary arrives in Paris.','Travel',index(166,2),[pair('Traveler',index(166,1),required),pair('Goal',index(166,4),required)],[],'').",
                     "lvp_identifier": "c9f57c04a42916789a5bb1179b03a1581a76acd16d73dcf32c6e1e196c2d1d0a",
-                    "example_sentence": "Mary arrives in Paris."
+                    "example_sentence": "Mary arrives in Paris.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',noun,[pair('Traveler',index(169,4),[nmod_of],required),pair('Goal',index(169,6),[jbo,obl_in],required)]) :- fn_synonym('arrival','Travel',Lexeme).",
@@ -1541,7 +1591,8 @@
                     "line_index": 169,
                     "training_sentence": "train('The arrival of Mary in Paris is delayed.','Travel',index(169,2),[pair('Traveler',index(169,4),required),pair('Goal',index(169,6),required)],[],'').",
                     "lvp_identifier": "f79705a3dbb304c144a489c73fce26c5e16d2e6f7289a1abc3be6d807967f451",
-                    "example_sentence": "The arrival of Mary in Paris is delayed."
+                    "example_sentence": "The arrival of Mary in Paris is delayed.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',verb,[pair('Traveler',index(172,5),[obl_by],required),pair('Source',index(172,1),[obj],required)]) :- fn_synonym('leave','Travel',Lexeme).",
@@ -1561,7 +1612,8 @@
                     "line_index": 172,
                     "training_sentence": "train('Paris is left by Mary.','Travel',index(172,3),[pair('Traveler',index(172,5),required),pair('Source',index(172,1),required)],['exit','escape'],'').",
                     "lvp_identifier": "519d712cdea4a6e15654b952b66d9bb1fcee7b76366f6bdb7d4a2bc080f5592e",
-                    "example_sentence": "Paris is left by Mary."
+                    "example_sentence": "Paris is left by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Travel',verb,[pair('Traveler',index(173,1),[nsubj],required),pair('Source',index(173,4),[obl_from],required)]) :- fn_synonym('leave','Travel',Lexeme).",
@@ -1581,7 +1633,8 @@
                     "line_index": 173,
                     "training_sentence": "train('Mary leaves from Paris.','Travel',index(173,2),[pair('Traveler',index(173,1),required),pair('Source',index(173,4),required)],['depart','exit','vanish','escape'],'').",
                     "lvp_identifier": "89a3cfec77afb3d046a7ca310c94390e1c30a18a95b5a1d584b5bf6036690ed4",
-                    "example_sentence": "Mary leaves from Paris."
+                    "example_sentence": "Mary leaves from Paris.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1611,7 +1664,8 @@
                     "line_index": 90,
                     "training_sentence": "train('A company is founded in London by Mary.', 'Create_organization', index(90,4), [pair('Creator',index(90,8),required),pair('Organization',index(90,2),required),pair('Place',index(90,6),optional)],['create','make','form','yield'],'').",
                     "lvp_identifier": "556a6a04742c91095fbcf662b3d81cc69df1098488cdfc732d9fa4bd61a41e22",
-                    "example_sentence": "A company is founded in London by Mary."
+                    "example_sentence": "A company is founded in London by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Create_organization',noun,[pair('Creator',index(91,1),[nsubj],required),pair('Organization',index(91,7),[nmod_of],required),pair('Place',index(91,9),[obl_in],optional)]) :- fn_synonym('founder','Create_organization',Lexeme).",
@@ -1636,7 +1690,8 @@
                     "line_index": 91,
                     "training_sentence": "train('Mary is the founder of a company in London.','Create_organization',index(91,4),[pair('Creator',index(91,1),required),pair('Organization',index(91,7),required),pair('Place',index(91,9),optional)],['creator'],'').",
                     "lvp_identifier": "f6e5ed6f544523bc86eee90a2a8044d3bfc29ab78526e9374c6309a371a0cdb9",
-                    "example_sentence": "Mary is the founder of a company in London."
+                    "example_sentence": "Mary is the founder of a company in London.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1671,7 +1726,8 @@
                     "line_index": 92,
                     "training_sentence": "train('A bachelor degree in Biology was obtained by Mary from Cambridge University.', 'Education', index(92,7), [pair('Student',index(92,9),required),pair('Institution',index(92,12),optional),pair('Degree',index(92,3),optional),pair('Subject',index(92,5),optional)],['get','earn','receive'],'').",
                     "lvp_identifier": "8ef4aa9e4130c5d82128f7c9b6c154ab8cb06d0029e67d3ec734a6c250cffacb",
-                    "example_sentence": "A bachelor degree in Biology was obtained by Mary from Cambridge University."
+                    "example_sentence": "A bachelor degree in Biology was obtained by Mary from Cambridge University.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Education',verb,[pair('Student',index(93,1),[nsubj],required),pair('Institution',index(93,5),[obl_in],required)]) :- fn_synonym('enroll','Education',Lexeme).",
@@ -1691,7 +1747,8 @@
                     "line_index": 93,
                     "training_sentence": "train('Mary enrolls in Cambridge University.','Education',index(93,2),[pair('Student',index(93,1),required),pair('Institution',index(93,5),required)],[],'').",
                     "lvp_identifier": "ea6fcdd0cc3f759ecc8eccbff6caad290efb6f5699cc932eb7bbf9102a4c2c21",
-                    "example_sentence": "Mary enrolls in Cambridge University."
+                    "example_sentence": "Mary enrolls in Cambridge University.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Education',verb,[pair('Student',index(95,7),[obl_by],required),pair('Institution',index(95,2),[obj],optional)]) :- fn_synonym('enter','Education',Lexeme).",
@@ -1711,7 +1768,8 @@
                     "line_index": 95,
                     "training_sentence": "train('Cambridge University has been entered by Mary.', 'Education', index(95,5), [pair('Student',index(95,7),required),pair('Institution',index(95,2),optional)], ['enroll_in'],'').",
                     "lvp_identifier": "d6caf1661ed64b800d1773fb7c2bd5e042a35e78089dbdcd5d090edc5364c72c",
-                    "example_sentence": "Cambridge University has been entered by Mary."
+                    "example_sentence": "Cambridge University has been entered by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Education',verb,[pair('Student',index(96,5),[obl_by],required),pair('Subject',index(96,1),[obj],optional),pair('Institution',index(96,8),[obl_at],optional)]) :- fn_synonym('study','Education',Lexeme).",
@@ -1736,7 +1794,8 @@
                     "line_index": 96,
                     "training_sentence": "train('Biology was studied by Mary at Cambridge University.', 'Education', index(96,3), [pair('Student',index(96,5),required),pair('Subject',index(96,1),optional),pair('Institution',index(96,8),optional)],[],'').",
                     "lvp_identifier": "ccfef9d50744b21b24257391eb14250a9a4d1fcd837177cc01f1d0c804072808",
-                    "example_sentence": "Biology was studied by Mary at Cambridge University."
+                    "example_sentence": "Biology was studied by Mary at Cambridge University.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1766,7 +1825,8 @@
                     "line_index": 98,
                     "training_sentence": "train('Some money is donated to a school by Mary.', 'Giving', index(98,4), [pair('Theme',index(98,2),optional),pair('Recipient',index(98,7),required),pair('Donor',index(98,9),required)], ['contribute'],'').",
                     "lvp_identifier": "9aae9fb93e92ac7d9ade9e0353108d8184e9006f7bb6d33bedfb2ae901db7188",
-                    "example_sentence": "Some money is donated to a school by Mary."
+                    "example_sentence": "Some money is donated to a school by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Giving',noun,[pair('Donor',index(99,1),[nsubj],required),pair('Recipient',index(99,7),[obl_to],required)]) :- fn_synonym('donor','Giving',Lexeme).",
@@ -1786,7 +1846,8 @@
                     "line_index": 99,
                     "training_sentence": "train('Mary is a donor to a school.','Giving',index(99,4),[pair('Donor',index(99,1),required),pair('Recipient',index(99,7),required)],['contributor'],'').",
                     "lvp_identifier": "be50641f5d108689d552c91f6265a5df9b866beb1d8e4173ba4e110a9c07acdd",
-                    "example_sentence": "Mary is a donor to a school."
+                    "example_sentence": "Mary is a donor to a school.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Giving',verb,[pair('Theme',index(100,7),[obl_with],optional),pair('Recipient',index(100,2),[obj],required),pair('Donor',index(100,9),[obl_by],required)]) :- fn_synonym('endow','Giving',Lexeme).",
@@ -1811,7 +1872,8 @@
                     "line_index": 100,
                     "training_sentence": "train('A church is endowed with some money by Mary.', 'Giving', index(100,4), [pair('Theme',index(100,7),optional),pair('Recipient',index(100,2),required),pair('Donor',index(100,9),required)],[],'').",
                     "lvp_identifier": "2dac3ae4f8a9711389dd49584ac907eaf11da425dac35a4d1a1b569fc811898d",
-                    "example_sentence": "A church is endowed with some money by Mary."
+                    "example_sentence": "A church is endowed with some money by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Giving',noun,[pair('Theme',index(101,5),[nmod_of],optional),pair('Donor',index(101,9),[jbo,obl_by],required),pair('Recipient',index(101,12),[jbo,obl_to],required)]) :- fn_synonym('donation','Giving',Lexeme).",
@@ -1836,7 +1898,8 @@
                     "line_index": 101,
                     "training_sentence": "train('A donation of some money was made by Mary to a school.', 'Giving', index(101,2), [pair('Theme',index(101,5),optional),pair('Donor',index(101,9),required),pair('Recipient',index(101,12),required)],[],'').",
                     "lvp_identifier": "ac54cc1121961bdc8b7d1a0685428af73b4f6a5146cb7aa582419b3b2f12903d",
-                    "example_sentence": "A donation of some money was made by Mary to a school."
+                    "example_sentence": "A donation of some money was made by Mary to a school.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -1861,7 +1924,8 @@
                     "line_index": 102,
                     "training_sentence": "train('Mary and John are married.','Personal_relationship',index(102,5),[pair('Marriage_partner_1',index(102,1),required),pair('Marriage_partner_2',index(102,3),required)],[],'').",
                     "lvp_identifier": "420678c7fbb4d95375a3b56749c99fa0ce9690d92b7880ee0940dd977fc9917e",
-                    "example_sentence": "Mary and John are married."
+                    "example_sentence": "Mary and John are married.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',verb,[pair('Marriage_partner_1',index(103,1),[obj],required),pair('Marriage_partner_2',index(103,5),[obl_to],required)]) :- fn_synonym('marry','Personal_relationship',Lexeme).",
@@ -1881,7 +1945,8 @@
                     "line_index": 103,
                     "training_sentence": "train('Mary is married to John.','Personal_relationship',index(103,3),[pair('Marriage_partner_1',index(103,1),required),pair('Marriage_partner_2',index(103,5),required)],[],'').",
                     "lvp_identifier": "67e7f0203b325db8e06b296deed6540bdcadfb1c996b8b34ed398f45842927d2",
-                    "example_sentence": "Mary is married to John."
+                    "example_sentence": "Mary is married to John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Mother',index(105,1),[nsubj],required),pair('Child',index(105,6),[nmod_of],required)]) :- fn_synonym('mother','Personal_relationship',Lexeme).",
@@ -1901,7 +1966,8 @@
                     "line_index": 105,
                     "training_sentence": "train('Mary is the mother of John.','Personal_relationship',index(105,4),[pair('Mother',index(105,1),required),pair('Child',index(105,6),required)],[],'').",
                     "lvp_identifier": "b7d823da4b0142cf063b7ca1698d67aa942588fbb9b556d11c405ce068d1e481",
-                    "example_sentence": "Mary is the mother of John."
+                    "example_sentence": "Mary is the mother of John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Daughter',index(106,1),[nsubj],required),pair('Parent',index(106,6),[nmod_of],required)]) :- fn_synonym('daughter','Personal_relationship',Lexeme).",
@@ -1921,7 +1987,8 @@
                     "line_index": 106,
                     "training_sentence": "train('Mary is the daughter of John.','Personal_relationship',index(106,4),[pair('Daughter',index(106,1),required),pair('Parent',index(106,6),required)],[],'').",
                     "lvp_identifier": "f83baadb7e55144ac46441700376eb490d229ec1f0c750b82b72657b44eff460",
-                    "example_sentence": "Mary is the daughter of John."
+                    "example_sentence": "Mary is the daughter of John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Parent',index(107,1),[nsubj],required),pair('Child',index(107,6),[nmod_of],required)]) :- fn_synonym('parent','Personal_relationship',Lexeme).",
@@ -1941,7 +2008,8 @@
                     "line_index": 107,
                     "training_sentence": "train('Mary is a parent of John.','Personal_relationship',index(107,4),[pair('Parent',index(107,1),required),pair('Child',index(107,6),required)],[],'').",
                     "lvp_identifier": "38e60ba4e2299b9e1ee39b11008cb01d573db09294ddf1a9990ae1ab45d532e9",
-                    "example_sentence": "Mary is a parent of John."
+                    "example_sentence": "Mary is a parent of John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Child',index(108,1),[nsubj],required),pair('Parent',index(108,6),[nmod_of],required)]) :- fn_synonym('child','Personal_relationship',Lexeme).",
@@ -1961,7 +2029,8 @@
                     "line_index": 108,
                     "training_sentence": "train('Mary is a child of John.','Personal_relationship',index(108,4),[pair('Child',index(108,1),required),pair('Parent',index(108,6),required)],[],'').",
                     "lvp_identifier": "caa5b6383e8e00853e1ec04d5727a29bbb86b96e2e31bb9005cc9e79b24d1473",
-                    "example_sentence": "Mary is a child of John."
+                    "example_sentence": "Mary is a child of John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Wife',index(109,1),[nsubj],required),pair('Husband',index(109,6),[nmod_of],required)]) :- fn_synonym('wife','Personal_relationship',Lexeme).",
@@ -1981,7 +2050,8 @@
                     "line_index": 109,
                     "training_sentence": "train('Mary is the wife of John.','Personal_relationship',index(109,4),[pair('Wife',index(109,1),required),pair('Husband',index(109,6),required)],[],'').",
                     "lvp_identifier": "470cd89ca45362aa2f38ab20c04d2c8f1b27d2077b3065e4a200090f41664065",
-                    "example_sentence": "Mary is the wife of John."
+                    "example_sentence": "Mary is the wife of John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Wife',index(110,6),[nmod_of],required),pair('Husband',index(110,1),[nsubj],required)]) :- fn_synonym('husband','Personal_relationship',Lexeme).",
@@ -2001,7 +2071,8 @@
                     "line_index": 110,
                     "training_sentence": "train('John is the husband of Mary.','Personal_relationship',index(110,4),[pair('Wife',index(110,6),required),pair('Husband',index(110,1),required)],[],'').",
                     "lvp_identifier": "973332497e2f2efdeacf60972957832695b4aeb42ad9461dfde3b96cb15a97aa",
-                    "example_sentence": "John is the husband of Mary."
+                    "example_sentence": "John is the husband of Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Parent',index(111,6),[nmod_of],required),pair('Son',index(111,1),[nsubj],required)]) :- fn_synonym('son','Personal_relationship',Lexeme).",
@@ -2021,7 +2092,8 @@
                     "line_index": 111,
                     "training_sentence": "train('John is the son of Mary.','Personal_relationship',index(111,4),[pair('Parent',index(111,6),required),pair('Son',index(111,1),required)],[],'').",
                     "lvp_identifier": "6fc799ade000bccc01e6fd99e8c687bc2a871704451f5e40c1bef15e8fe4584a",
-                    "example_sentence": "John is the son of Mary."
+                    "example_sentence": "John is the son of Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Personal_relationship',noun,[pair('Father',index(112,1),[nsubj],required),pair('Child',index(112,6),[nmod_of],required)]) :- fn_synonym('father','Personal_relationship',Lexeme).",
@@ -2041,7 +2113,8 @@
                     "line_index": 112,
                     "training_sentence": "train('John is the father of Mary.','Personal_relationship',index(112,4),[pair('Father',index(112,1),required),pair('Child',index(112,6),required)],[],'').",
                     "lvp_identifier": "76ec2d725290b9189dd9f8412541756c9fd5a596b6984798e8f174c5e3ec3e42",
-                    "example_sentence": "John is the father of Mary."
+                    "example_sentence": "John is the father of Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2066,7 +2139,8 @@
                     "line_index": 113,
                     "training_sentence": "train('Mary is an American.','People_by_origin',index(113,2),[pair('Person',index(113,1),required),pair('Origin',index(113,4),required)],[],'').",
                     "lvp_identifier": "7e125a17c10e5985faa82199867d7f07be66f78aca1f5bbb235514e924ab89cf",
-                    "example_sentence": "Mary is an American."
+                    "example_sentence": "Mary is an American.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','People_by_origin',noun,[pair('Person',index(114,4),[nmod_of],required),pair('Origin',index(114,6),[jbusn],required)]) :- fn_synonym('ancestry','People_by_origin',Lexeme).",
@@ -2086,7 +2160,8 @@
                     "line_index": 114,
                     "training_sentence": "train('The ancestry of Mary is American.','People_by_origin',index(114,2),[pair('Person',index(114,4),required),pair('Origin',index(114,6),required)],['nationality'],'').",
                     "lvp_identifier": "070371a47bc2a7681c400fbde273bfe77d51722c4770eecb4ad46d87ef3f00db",
-                    "example_sentence": "The ancestry of Mary is American."
+                    "example_sentence": "The ancestry of Mary is American.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2111,7 +2186,8 @@
                     "line_index": 116,
                     "training_sentence": "train('Mary is a Christian.','People_by_religion',index(116,2),[pair('Person',index(116,1),required),pair('Religion',index(116,4),required)],[],'').",
                     "lvp_identifier": "9f2fd9ad20eccb0b2a9146afaa51daa90b41335cbc2fdabaac4b4c242dac8e44",
-                    "example_sentence": "Mary is a Christian."
+                    "example_sentence": "Mary is a Christian.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','People_by_religion',noun,[pair('Person',index(117,4),[nmod_of],required),pair('Religion',index(117,7),[jbusn],required)]) :- fn_synonym('religion','People_by_religion',Lexeme).",
@@ -2131,7 +2207,8 @@
                     "line_index": 117,
                     "training_sentence": "train('A religion of Mary is a Christian.','People_by_religion',index(117,2),[pair('Person',index(117,4),required),pair('Religion',index(117,7),required)],[],'').",
                     "lvp_identifier": "bc3c254ad6a868c8776b5b007dec02fa68fe975c95766b2f6aab7179bcf00da8",
-                    "example_sentence": "A religion of Mary is a Christian."
+                    "example_sentence": "A religion of Mary is a Christian.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2161,7 +2238,8 @@
                     "line_index": 118,
                     "training_sentence": "train('Mary works with John on a project.','Collaboration',index(118,2),[pair('Partner1',index(118,1),required),pair('Partner2',index(118,4),required),pair('Undertaking',index(118,7),optional)],['partner','team_up','conspire','cooperate','collaborate'],'').",
                     "lvp_identifier": "cb5dc6ae28ea8a4e457a627ebad76e43c5d65a3e2586f53b675a775c07eab61c",
-                    "example_sentence": "Mary works with John on a project."
+                    "example_sentence": "Mary works with John on a project.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Collaboration',noun,[pair('Partner1',index(120,1),[jbo,nsubj],required),pair('Partner2',index(120,6),[jbo,obl_with],required),pair('Undertaking',index(120,9),[jbo,obl_over],optional)]) :- fn_synonym('cooperation','Collaboration',Lexeme).",
@@ -2186,7 +2264,8 @@
                     "line_index": 120,
                     "training_sentence": "train('Mary has a cooperation with John over a project.','Collaboration',index(120,4),[pair('Partner1',index(120,1),required),pair('Partner2',index(120,6),required),pair('Undertaking',index(120,9),optional)],['collaboration'],'').",
                     "lvp_identifier": "40ddf28aa0ad715df81dd61287aa195c2263be9026a8f9e9c487f907e6445ebe",
-                    "example_sentence": "Mary has a cooperation with John over a project."
+                    "example_sentence": "Mary has a cooperation with John over a project.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Collaboration',noun,[pair('Partner1',index(121,1),[nsubj],required),pair('Partner2',index(121,6),[nmod_of],required)]) :- fn_synonym('partner','Collaboration',Lexeme).",
@@ -2206,7 +2285,8 @@
                     "line_index": 121,
                     "training_sentence": "train('Mary is a partner of John.','Collaboration',index(121,4),[pair('Partner1',index(121,1),required),pair('Partner2',index(121,6),required)],['collaborator'],'').",
                     "lvp_identifier": "90e880f64a61eebdfa24da98cf81b2c7eed804fafc6e87d2f021d6f80d774b58",
-                    "example_sentence": "Mary is a partner of John."
+                    "example_sentence": "Mary is a partner of John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2231,7 +2311,8 @@
                     "line_index": 122,
                     "training_sentence": "train('The company is left by Mary.', 'Quitting', index(122,4), [pair('Employee',index(122,6),required),pair('Employer',index(122,2),required)],[],'').",
                     "lvp_identifier": "f67c4b6c19ab07337c4edb0095e3f1792926ff0d045a3eb5d254c3c1d0dd005d",
-                    "example_sentence": "The company is left by Mary."
+                    "example_sentence": "The company is left by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Quitting',verb,[pair('Employee',index(123,6),[obl_by],required),pair('Position',index(123,2),[obj],required)]) :- fn_synonym('quit','Quitting',Lexeme).",
@@ -2251,7 +2332,8 @@
                     "line_index": 123,
                     "training_sentence": "train('A job is quit by Mary.', 'Quitting', index(123,4), [pair('Employee',index(123,6),required),pair('Position',index(123,2),required)],[],'').",
                     "lvp_identifier": "b30feb5ed3073ccc5054a15877f1892e688a0f2e6a1177c1d94cf752309ef3dc",
-                    "example_sentence": "A job is quit by Mary."
+                    "example_sentence": "A job is quit by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Quitting',verb,[pair('Employee',index(124,1),[nsubj],required),pair('Position',index(124,5),[obl_as],optional),pair('Employer',index(124,8),[obl_from],optional)]) :- fn_synonym('resign','Quitting',Lexeme).",
@@ -2276,7 +2358,8 @@
                     "line_index": 124,
                     "training_sentence": "train('Mary resigns as a chairman from a company.','Quitting',index(124,2),[pair('Employee',index(124,1),required),pair('Position',index(124,5),optional),pair('Employer',index(124,8),optional)],['step_down','retire'],'').",
                     "lvp_identifier": "17cf3b89b5deaa0094c44a9ea68de68241935b154367fe3bffc0243a88f5e9fd",
-                    "example_sentence": "Mary resigns as a chairman from a company."
+                    "example_sentence": "Mary resigns as a chairman from a company.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Quitting',noun,[pair('Employee',index(126,6),[jbo,obl_by],required),pair('Position',index(126,8),[jbo,obl_as],optional),pair('Employer',index(126,11),[jbo,obl_from],optional)]) :- fn_synonym('resignation','Quitting',Lexeme).",
@@ -2301,7 +2384,8 @@
                     "line_index": 126,
                     "training_sentence": "train('A resignation is made by Mary as chairman from a company.', 'Quitting', index(126,2), [pair('Employee',index(126,6),required),pair('Position',index(126,8),optional),pair('Employer',index(126,11),optional)], [],'').",
                     "lvp_identifier": "b9e55f1b607b90e51747115dc62f8ff6079f497cd0670dc83c44bdbf41478c2a",
-                    "example_sentence": "A resignation is made by Mary as chairman from a company."
+                    "example_sentence": "A resignation is made by Mary as chairman from a company.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2326,7 +2410,8 @@
                     "line_index": 127,
                     "training_sentence": "train('A cold is got by Mary.','Medical_conditions',index(127,4),[pair('Patient',index(127,6),required),pair('Ailment',index(127,2),required)],[],'').",
                     "lvp_identifier": "97d945f2772e97098b708b6fb38dd6e0c8cadf116a97a729ee9e06d3ee7bf022",
-                    "example_sentence": "A cold is got by Mary."
+                    "example_sentence": "A cold is got by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Medical_conditions',verb,[pair('Patient',index(128,1),[obj],required),pair('Ailment',index(128,6),[obl_with],required)]) :- fn_synonym('infect','Medical_conditions',Lexeme).",
@@ -2346,7 +2431,8 @@
                     "line_index": 128,
                     "training_sentence": "train('Mary is infected with a cold.','Medical_conditions',index(128,3),[pair('Patient',index(128,1),required),pair('Ailment',index(128,6),required)],['diagnosed','ill'],'').",
                     "lvp_identifier": "9fe2cbde9888c389cd920b9b98ab0c0d2bfcd056040230f5315e5f7ad7a4bd32",
-                    "example_sentence": "Mary is infected with a cold."
+                    "example_sentence": "Mary is infected with a cold.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Medical_conditions',verb,[pair('Patient',index(129,1),[nsubj],required),pair('Ailment',index(129,5),[obl_from],required)]) :- fn_synonym('suffer','Medical_conditions',Lexeme).",
@@ -2366,7 +2452,8 @@
                     "line_index": 129,
                     "training_sentence": "train('Mary suffers from a cold.','Medical_conditions',index(129,2),[pair('Patient',index(129,1),required),pair('Ailment',index(129,5),required)],[],'').",
                     "lvp_identifier": "0ad374201fe7b31790a2fa0ae48e4de9217f6aed88ff7d7f57ef3d3242b5d643",
-                    "example_sentence": "Mary suffers from a cold."
+                    "example_sentence": "Mary suffers from a cold.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2391,7 +2478,8 @@
                     "line_index": 130,
                     "training_sentence": "train('Mary has an age of 20.','Age',index(130,4),[pair('Person',index(130,1),required),pair('Age',index(130,6),required)],[],'').",
                     "lvp_identifier": "cf51a1b5d3f2a648c90ad6326bc24935cc62144eb026bfa42ef4e953ec500c5e",
-                    "example_sentence": "Mary has an age of 20."
+                    "example_sentence": "Mary has an age of 20.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Age',noun,[pair('Person',index(131,1),[nsubj],required),pair('Age',index(131,7),[nmod_of],required)]) :- fn_synonym('age','Age',Lexeme).",
@@ -2411,7 +2499,8 @@
                     "line_index": 131,
                     "training_sentence": "train('Mary is at the age of 20.','Age',index(131,5),[pair('Person',index(131,1),required),pair('Age',index(131,7),required)],[],'').",
                     "lvp_identifier": "9c83c34b76c35e1e2ff31bceecee1a930cfd9db773f646207c745d1e3f4ca09c",
-                    "example_sentence": "Mary is at the age of 20."
+                    "example_sentence": "Mary is at the age of 20.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Age',aux,[pair('Person',index(133,1),[poc_null_num,nsubj],required),pair('Age',index(133,3),[poc_null_num],required)]) :- fn_synonym('be','Age',Lexeme).",
@@ -2431,7 +2520,8 @@
                     "line_index": 133,
                     "training_sentence": "train('Mary is 20.','Age',index(133,2),[pair('Person',index(133,1),required),pair('Age',index(133,3),required)],[],'').",
                     "lvp_identifier": "d2361d05d0e833cabad9a99e5d1cfd83bf38f3ce6a54bc5f47f47372880f9f39",
-                    "example_sentence": "Mary is 20."
+                    "example_sentence": "Mary is 20.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2466,7 +2556,8 @@
                     "line_index": 134,
                     "training_sentence": "train('A Nobel prize was assigned to Mary by Swedish Academy in 1986.','Award',index(134,5),[pair('Person',index(134,7),required),pair('Award',index(134,3),required),pair('Organization',index(134,10),optional),pair('Time',index(134,12),optional)],['give','grant','award'],'').",
                     "lvp_identifier": "2d720ab9b9b2112c1d21bef611f607e48e1d315eb7d2b33da9adcd1aa6ce9292",
-                    "example_sentence": "A Nobel prize was assigned to Mary by Swedish Academy in 1986."
+                    "example_sentence": "A Nobel prize was assigned to Mary by Swedish Academy in 1986.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Award',verb,[pair('Person',index(135,1),[iobj],required),pair('Award',index(135,6),[obj],required),pair('Time',index(135,8),[obl_in],optional)]) :- fn_synonym('award','Award',Lexeme).",
@@ -2491,7 +2582,8 @@
                     "line_index": 135,
                     "training_sentence": "train('Mary was awarded a Nobel Prize in 1986.','Award',index(135,3),[pair('Person',index(135,1),required),pair('Award',index(135,6),required),pair('Time',index(135,8),optional)],['given','granted','assigned'],'').",
                     "lvp_identifier": "3b434040d393c313fb792a6ce2ccba1d0c2370447b4fbcbdd9451ebc36afd63b",
-                    "example_sentence": "Mary was awarded a Nobel Prize in 1986."
+                    "example_sentence": "Mary was awarded a Nobel Prize in 1986.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2516,7 +2608,8 @@
                     "line_index": 136,
                     "training_sentence": "train('A weapon is used by a soldier.', 'Using', index(136,4), [pair('Instrument',index(136,2),required),pair('Agent',index(136,7),required)],['operate','apply','employ','exercise','utilize'],'').",
                     "lvp_identifier": "b54a47415766f38f5ea981217dde705afb2736a6d541f25f66283a0def2b766d",
-                    "example_sentence": "A weapon is used by a soldier."
+                    "example_sentence": "A weapon is used by a soldier.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Using',noun,[pair('Agent',index(137,1),[nmod_poss],required),pair('Instrument',index(137,7),[nmod_of],required)]) :- fn_synonym('use','Using',Lexeme).",
@@ -2536,7 +2629,8 @@
                     "line_index": 137,
                     "training_sentence": "train('Iraq\\\\\\'s use of a nuclear weapon is banned.','Using',index(137,3),[pair('Agent',index(137,1),required),pair('Instrument',index(137,7),required)],['application','operation','utilization'],'').",
                     "lvp_identifier": "de7596e2d129bb3fd1b76ed0fd53319c5e71b8e878cfe1a135e7e141c7c2b689",
-                    "example_sentence": "Iraq\\\\\\'s use of a nuclear weapon is banned."
+                    "example_sentence": "Iraq\\\\\\'s use of a nuclear weapon is banned.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2566,7 +2660,8 @@
                     "line_index": 138,
                     "training_sentence": "train('A new house is built with a hammer by Jack.', 'Building', index(138,5), [pair('Agent',index(138,10),required),pair('Instrument',index(138,8),optional),pair('Created_entity',index(138,3),required)], ['construct','assemble','make','put_together','make','weld','piece_together'],'').",
                     "lvp_identifier": "4a0f494ad59019762346c245a3bbda4241a6e990978b2881e167d986ab737767",
-                    "example_sentence": "A new house is built with a hammer by Jack."
+                    "example_sentence": "A new house is built with a hammer by Jack.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Building',noun,[pair('Agent',index(139,10),[jbo,obl_by],required),pair('Instrument',index(139,13),[jbo,obl_with],optional),pair('Created_entity',index(139,6),[nmod_of],required)]) :- fn_synonym('construction','Building',Lexeme).",
@@ -2591,7 +2686,8 @@
                     "line_index": 139,
                     "training_sentence": "train('The construction of a new house is made by Jack with a hammer.', 'Building', index(139,2), [pair('Agent',index(139,10),required),pair('Instrument',index(139,13),optional),pair('Created_entity',index(139,6),required)], ['assembling'],'').",
                     "lvp_identifier": "2fa5b3354c791c8911ccd41fd71648202fce2b84956bf7f48102fc091be329b9",
-                    "example_sentence": "The construction of a new house is made by Jack with a hammer."
+                    "example_sentence": "The construction of a new house is made by Jack with a hammer.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2621,7 +2717,8 @@
                     "line_index": 140,
                     "training_sentence": "train('Mary is killed by Jack with a knife.', 'Killing', index(140,3), [pair('Killer',index(140,5),required),pair('Victim',index(140,1),required),pair('Instrument',index(140,8),optional)], ['annihilate','assassinate','butcher','destroy','decapitate','destroy','drown','eliminate','exterminate','massacre'],'').",
                     "lvp_identifier": "62f86a57defafd384c550b87294ea60600e50863e02b3bef53a1c6ec24960eb7",
-                    "example_sentence": "Mary is killed by Jack with a knife."
+                    "example_sentence": "Mary is killed by Jack with a knife.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Killing',noun,[pair('Killer',index(141,1),[nsubj],required),pair('Victim',index(141,6),[nmod_of],required)]) :- fn_synonym('killer','Killing',Lexeme).",
@@ -2641,7 +2738,8 @@
                     "line_index": 141,
                     "training_sentence": "train('Jack is a killer of Mary.','Killing',index(141,4),[pair('Killer',index(141,1),required),pair('Victim',index(141,6),required)],['murderer','slaughterer','assassinator'],'').",
                     "lvp_identifier": "0f25a64e8ec4e079fbe1119a26180396e830693cd1deeabf5a8a7f354c120cb6",
-                    "example_sentence": "Jack is a killer of Mary."
+                    "example_sentence": "Jack is a killer of Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2671,7 +2769,8 @@
                     "line_index": 142,
                     "training_sentence": "train('Jack is arrested by the police for a murder.', 'Arrest', index(142,3), [pair('Authorities',index(142,6),required),pair('Suspect',index(142,1),required),pair('Charges',index(142,9),optional)],['apprehend','summon','nab'],'').",
                     "lvp_identifier": "b3d9fbe43257ea42c10b91f970e6cd5cf89398f3e7a40572c0dd51b51c33c36f",
-                    "example_sentence": "Jack is arrested by the police for a murder."
+                    "example_sentence": "Jack is arrested by the police for a murder.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Arrest',noun,[pair('Authorities',index(143,6),[obl_by],required),pair('Suspect',index(143,1),[nsubj],required),pair('Charges',index(143,8),[obl_for],optional)]) :- fn_synonym('arrest','Arrest',Lexeme).",
@@ -2696,7 +2795,8 @@
                     "line_index": 143,
                     "training_sentence": "train('Jack is under arrest by police for murder.','Arrest',index(143,4),[pair('Authorities',index(143,6),required),pair('Suspect',index(143,1),required),pair('Charges',index(143,8),optional)],['apprehension'],'').",
                     "lvp_identifier": "2555b3f614490849471364cf6e236a4ef57e8c01630a949d1e067936a55b8b7d",
-                    "example_sentence": "Jack is under arrest by police for murder."
+                    "example_sentence": "Jack is under arrest by police for murder.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Arrest',noun,[pair('Authorities',index(144,6),[obl_by],required),pair('Suspect',index(144,1),[nsubj],required),pair('Charges',index(144,11),[obl_on,nmod_of],optional)]) :- fn_synonym('arrest','Arrest',Lexeme).",
@@ -2721,7 +2821,8 @@
                     "line_index": 144,
                     "training_sentence": "train('Jack is under arrest by police on a charge of murder.','Arrest',index(144,4),[pair('Authorities',index(144,6),required),pair('Suspect',index(144,1),required),pair('Charges',index(144,11),optional)],['apprehension'],'').",
                     "lvp_identifier": "08dd0a3091e784a746516ef04f2ddd7b01bbd2296054f656e8c8a1879aea7640",
-                    "example_sentence": "Jack is under arrest by police on a charge of murder."
+                    "example_sentence": "Jack is under arrest by police on a charge of murder.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2746,7 +2847,8 @@
                     "line_index": 146,
                     "training_sentence": "train('A guardsman is attacked by a mysterious fighter.', 'Attack', index(146,4), [pair('Assailant',index(146,8),required),pair('Victim',index(146,2),required)], ['ambush','assail','assault','bomb','hit','raid','strike'],'').",
                     "lvp_identifier": "96c1a28ba2f7b9089dc4a976c607914ace8f2ff639ed243e837d886af7999f97",
-                    "example_sentence": "A guardsman is attacked by a mysterious fighter."
+                    "example_sentence": "A guardsman is attacked by a mysterious fighter.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Attack',noun,[pair('Assailant',index(147,9),[jbo,obl_by],required),pair('Victim',index(147,4),[jbo,obl_on],required)]) :- fn_synonym('attack','Attack',Lexeme).",
@@ -2766,7 +2868,8 @@
                     "line_index": 147,
                     "training_sentence": "train('An attack on Iraq was launched by US troops.','Attack',index(147,2),[pair('Assailant',index(147,9),required),pair('Victim',index(147,4),required)],['airstrike','assailant','assault','bombardment','bombing','infiltration','onset','strike'],'').",
                     "lvp_identifier": "be28db1133ca8bac54b4736eef3c0b1e9c4823464d4457e09c00f443e5489bdb",
-                    "example_sentence": "An attack on Iraq was launched by US troops."
+                    "example_sentence": "An attack on Iraq was launched by US troops.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2796,7 +2899,8 @@
                     "line_index": 149,
                     "training_sentence": "train('A company is led by Jack as chairman.', 'Leadership', index(149,4), [pair('Leader',index(149,6),required),pair('Governed',index(149,2),required),pair('Role',index(149,8),optional)], ['administer','chair','command','govern','head','lead','reign','rule'],'').",
                     "lvp_identifier": "f8ec61cb957a4c2429f7856be4cb83f645b414af348d80ae2797dc3c5267e9cb",
-                    "example_sentence": "A company is led by Jack as chairman."
+                    "example_sentence": "A company is led by Jack as chairman.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Leadership',noun,[pair('Leader',index(150,1),[nsubj],required),pair('Governed',index(150,7),[nmod_of],required),pair('Role',index(150,4),[self],optional)]) :- fn_synonym('leader','Leadership',Lexeme).",
@@ -2821,7 +2925,8 @@
                     "line_index": 150,
                     "training_sentence": "train('Jack is the leader of a company.','Leadership',index(150,4),[pair('Leader',index(150,1),required),pair('Governed',index(150,7),required),pair('Role',index(150,4),optional)],['boss','chairman','captain','chief','commander','director','executive','governor','head','president','ruler'],'').",
                     "lvp_identifier": "58aa0e2153d8fc5a709b8f6926310d5da1f4398499a0dcd80f2d429535fba641",
-                    "example_sentence": "Jack is the leader of a company."
+                    "example_sentence": "Jack is the leader of a company.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2851,7 +2956,8 @@
                     "line_index": 151,
                     "training_sentence": "train('Mary perished in Italy in 1979.','Death',index(151,2),[pair('Protagonist',index(151,1),required),pair('Place',index(151,4),optional),pair('Time',index(151,6),optional)],['die'],'').",
                     "lvp_identifier": "8a019e6230de308a7174017dcd5d81d62a4080b586a7a91d3cf2ba6c51dffabe",
-                    "example_sentence": "Mary perished in Italy in 1979."
+                    "example_sentence": "Mary perished in Italy in 1979.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Death',verb,[pair('Protagonist',index(152,1),[nsubj],required),pair('Cause',index(152,4),[obl_of],required),pair('Place',index(152,6),[obl_in],optional),pair('Time',index(152,8),[obl_in],optional)]) :- fn_synonym('die','Death',Lexeme).",
@@ -2881,7 +2987,8 @@
                     "line_index": 152,
                     "training_sentence": "train('Mary dies of cancer in Italy in 1979.','Death',index(152,2),[pair('Protagonist',index(152,1),required),pair('Cause',index(152,4),required),pair('Place',index(152,6),optional),pair('Time',index(152,8),optional)],[],'').",
                     "lvp_identifier": "bdfccf0025cdd78995996a725a201bb67fb702a6a06186c8a68ac008b7210df9",
-                    "example_sentence": "Mary dies of cancer in Italy in 1979."
+                    "example_sentence": "Mary dies of cancer in Italy in 1979.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Death',verb,[pair('Protagonist',index(153,1),[nsubj],required),pair('Cause',index(153,5),[obl_from],required),pair('Place',index(153,7),[obl_in],optional),pair('Time',index(153,9),[obl_in],optional)]) :- fn_synonym('perish','Death',Lexeme).",
@@ -2911,7 +3018,8 @@
                     "line_index": 153,
                     "training_sentence": "train('Mary perishes from some hunger in Italy in 1979.','Death',index(153,2),[pair('Protagonist',index(153,1),required),pair('Cause',index(153,5),required),pair('Place',index(153,7),optional),pair('Time',index(153,9),optional)],['die'],'').",
                     "lvp_identifier": "7f56ee9fad2634c99c3a2b27ae4d10d69fc9854843a4c54ba086baf64cd7c00d",
-                    "example_sentence": "Mary perishes from some hunger in Italy in 1979."
+                    "example_sentence": "Mary perishes from some hunger in Italy in 1979.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -2936,7 +3044,8 @@
                     "line_index": 154,
                     "training_sentence": "train('A car is manufactured by GE.', 'Manufacturing', index(154,4), [pair('Producer', index(154,6),required),pair('Product',index(154,2),required)], ['fabricate','produce'],'').",
                     "lvp_identifier": "4a4453df6bb902d28ab169cf7fd7a5f7a12cbe55d479b7691dc7a6c05b601236",
-                    "example_sentence": "A car is manufactured by GE."
+                    "example_sentence": "A car is manufactured by GE.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Manufacturing',noun,[pair('Producer',index(155,1),[nsubj],required),pair('Product',index(155,6),[nmod_of],required)]) :- fn_synonym('manufacturer','Manufacturing',Lexeme).",
@@ -2956,7 +3065,8 @@
                     "line_index": 155,
                     "training_sentence": "train('GE is a manufacturer of cars.','Manufacturing',index(155,4),[pair('Producer',index(155,1),required),pair('Product',index(155,6),required)],['maker','producer'],'').",
                     "lvp_identifier": "ed00483fd4a94a8286de91b33fc50223a026148a7cea7671da3f8939cc82345b",
-                    "example_sentence": "GE is a manufacturer of cars."
+                    "example_sentence": "GE is a manufacturer of cars.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Manufacturing',noun,[pair('Producer',index(156,8),[jbo,obl_by],required),pair('Product',index(156,4),[nmod_of],required)]) :- fn_synonym('manufacture','Manufacturing',Lexeme).",
@@ -2976,7 +3086,8 @@
                     "line_index": 156,
                     "training_sentence": "train('The manufacture of cars was made by GE.', 'Manufacturing', index(156,2), [pair('Producer',index(156,8),required),pair('Product',index(156,4),required)], ['maker','producer'],'').",
                     "lvp_identifier": "c7825972c87d436dfee4f83adcc44422068d12e0f5b65bc299bbcd88f767806e",
-                    "example_sentence": "The manufacture of cars was made by GE."
+                    "example_sentence": "The manufacture of cars was made by GE.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3006,7 +3117,8 @@
                     "line_index": 157,
                     "training_sentence": "train('3000 dollars on investment was earned by John.', 'Earnings', index(157,6), [pair('Earner',index(157,8),required),pair('Money',index(157,2),required),pair('Goods',index(157,4),optional)],['make','net'],'').",
                     "lvp_identifier": "ce477267ddbb35569635d5ae42cd3ee558bdcf58213cf3ef195fd455e4d561d6",
-                    "example_sentence": "3000 dollars on investment was earned by John."
+                    "example_sentence": "3000 dollars on investment was earned by John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Earnings',noun,[pair('Earner',index(158,1),[jbo,nsubj],required),pair('Money',index(158,7),[nmod_of],required),pair('Goods',index(158,9),[jbo,obl_on],optional)]) :- fn_synonym('income','Earnings',Lexeme).",
@@ -3031,7 +3143,8 @@
                     "line_index": 158,
                     "training_sentence": "train('John has an income of 3000 dollars on investment.','Earnings',index(158,4),[pair('Earner',index(158,1),required),pair('Money',index(158,7),required),pair('Goods',index(158,9),optional)],['earnings','net','profit','revenue'],'').",
                     "lvp_identifier": "8bf390486386aac20f05deea7830c167c353e089f34f8db315de71c0e607e8bd",
-                    "example_sentence": "John has an income of 3000 dollars on investment."
+                    "example_sentence": "John has an income of 3000 dollars on investment.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3061,7 +3174,8 @@
                     "line_index": 159,
                     "training_sentence": "train('Mary is beat by John in a game.', 'Beat_opponent', index(159,3), [pair('Winner',index(159,5),required),pair('Loser',index(159,1),required),pair('Competition',index(159,8),optional)], ['defeat','demolish','prevail','upend'],'').",
                     "lvp_identifier": "19c4250bdfb8027a18f60cc2a323c7d95b83c363a157c5a95e8ac7b693598d51",
-                    "example_sentence": "Mary is beat by John in a game."
+                    "example_sentence": "Mary is beat by John in a game.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Beat_opponent',noun,[pair('Loser',index(161,4),[nmod_of],required),pair('Competition',index(161,7),[jbusn,obl_in],optional)]) :- fn_synonym('defeat','Beat_opponent',Lexeme).",
@@ -3081,7 +3195,8 @@
                     "line_index": 161,
                     "training_sentence": "train('The defeat of Mary in a game is sad.','Beat_opponent',index(161,2),[pair('Loser',index(161,4),required),pair('Competition',index(161,7),optional)],[],'').",
                     "lvp_identifier": "e6b2614a4f0e50f084e1a164969e9eb6ae1b7cc8b87a83fc773750b43adf81de",
-                    "example_sentence": "The defeat of Mary in a game is sad."
+                    "example_sentence": "The defeat of Mary in a game is sad.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3116,7 +3231,8 @@
                     "line_index": 163,
                     "training_sentence": "train('A headache of Jack is cured by Mary with a pill.', 'Cure', index(163,6), [pair('Healer',index(163,8),required),pair('Disease',index(163,2),required),pair('Patient',index(163,4),optional),pair('Medication',index(163,11),optional)],['alleviate','ease','heal','palliate','rehabilitate','remedy','treat'],'').",
                     "lvp_identifier": "171dc6401f82d7bf069cc87bbf3ce077cdde1d2b30c9a0ec09e2eaacc57287b5",
-                    "example_sentence": "A headache of Jack is cured by Mary with a pill."
+                    "example_sentence": "A headache of Jack is cured by Mary with a pill.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Cure',verb,[pair('Healer',index(164,5),[obl_by],required),pair('Patient',index(164,1),[obj],required),pair('Medication',index(164,8),[obl_with],optional)]) :- fn_synonym('cure','Cure',Lexeme).",
@@ -3141,7 +3257,8 @@
                     "line_index": 164,
                     "training_sentence": "train('Jack is cured by Mary with a pill.', 'Cure', index(164,3), [pair('Healer',index(164,5),required),pair('Patient',index(164,1),required),pair('Medication',index(164,8),optional)],['alleviate','ease','heal','palliate','rehabilitate','remedy','treat'],'').",
                     "lvp_identifier": "4c1d1a84fad08765a4d8742224354493f0ce8980a2ef0ea297dc439f0e2487e6",
-                    "example_sentence": "Jack is cured by Mary with a pill."
+                    "example_sentence": "Jack is cured by Mary with a pill.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Cure',verb,[pair('Healer',index(205,9),[obl_by],optional),pair('Disease',index(205,2),[obj],required),pair('Medication',index(205,7),[obl_with],optional)]) :- fn_synonym('cure','Cure',Lexeme).",
@@ -3166,7 +3283,8 @@
                     "line_index": 205,
                     "training_sentence": "train('A headache is cured with a pill by Mary.', 'Cure', index(205,4), [pair('Healer',index(205,9),optional),pair('Disease',index(205,2),required),pair('Medication',index(205,7),optional)],['alleviate','ease','heal','palliate','rehabilitate','remedy','treat'],'').",
                     "lvp_identifier": "a3861244a3fdfc7ec88a0d714e5646c7e216b17de03a37ce30fefc2a41521a86",
-                    "example_sentence": "A headache is cured with a pill by Mary."
+                    "example_sentence": "A headache is cured with a pill by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3191,7 +3309,8 @@
                     "line_index": 174,
                     "training_sentence": "train('John is called by Mary.', 'Contacting', index(174,3), [pair('Communicator',index(174,5),required),pair('Addressee',index(174,1),required)], ['contact','email','call_in','call_up','fax','mail','phone','reach','ring','telephone','cable'],'').",
                     "lvp_identifier": "6477a7f116014ccbc6697d25eb46791bc32cb15e36bce11bf150e523bcffd18d",
-                    "example_sentence": "John is called by Mary."
+                    "example_sentence": "John is called by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Contacting',verb,[pair('Communicator',index(175,1),[nsubj],required),pair('Addressee',index(175,4),[obl_to],required)]) :- fn_synonym('write','Contacting',Lexeme).",
@@ -3211,7 +3330,8 @@
                     "line_index": 175,
                     "training_sentence": "train('Mary writes to John.','Contacting',index(175,2),[pair('Communicator',index(175,1),required),pair('Addressee',index(175,4),required)],[],'').",
                     "lvp_identifier": "b0a56cca11f2ba21e4c747a7f6f0623c4df230d8197872cd9e24dd7f031a8b9d",
-                    "example_sentence": "Mary writes to John."
+                    "example_sentence": "Mary writes to John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Contacting',noun,[pair('Communicator',index(176,8),[jbo,obl_by],required),pair('Addressee',index(176,4),[jbo,obl_to],required)]) :- fn_synonym('call','Contacting',Lexeme).",
@@ -3231,7 +3351,8 @@
                     "line_index": 176,
                     "training_sentence": "train('A call to John is made by Mary.', 'Contacting', index(176,2), [pair('Communicator',index(176,8),required),pair('Addressee',index(176,4),required)],[],'').",
                     "lvp_identifier": "4acfa2c030dbd73026dec7dd00f727eaaf4e322350c9f9d1c6db5220c50130ab",
-                    "example_sentence": "A call to John is made by Mary."
+                    "example_sentence": "A call to John is made by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Contacting',noun,[pair('Communicator',index(177,7),[jbo,obl_by],required),pair('Addressee',index(177,5),[jbo,obl_with],required)]) :- fn_synonym('contact','Contacting',Lexeme).",
@@ -3251,7 +3372,8 @@
                     "line_index": 177,
                     "training_sentence": "train('Contact is made with John by Mary.', 'Contacting', index(177,1), [pair('Communicator',index(177,7),required),pair('Addressee',index(177,5),required)],[],'').",
                     "lvp_identifier": "bf91c9d7d8af06549a1ce906e67f705169d0c461211bdfd45a4f3085fb4dda52",
-                    "example_sentence": "Contact is made with John by Mary."
+                    "example_sentence": "Contact is made with John by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3276,7 +3398,8 @@
                     "line_index": 178,
                     "training_sentence": "train('Mary protests against the government.','Protest',index(178,2),[pair('Protester',index(178,1),required),pair('Side',index(178,5),required)],['demonstrate'],'').",
                     "lvp_identifier": "aeddcf99e3696317212079719e6476089f57fa687dae178e18960a33766752cb",
-                    "example_sentence": "Mary protests against the government."
+                    "example_sentence": "Mary protests against the government.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Protest',noun,[pair('Protester',index(179,9),[jbo,obl_by],required),pair('Side',index(179,5),[jbo,obl_against],required)]) :- fn_synonym('protest','Protest',Lexeme).",
@@ -3296,7 +3419,8 @@
                     "line_index": 179,
                     "training_sentence": "train('A protest against the government was made by Mary.', 'Protest', index(179,2), [pair('Protester',index(179,9),required),pair('Side',index(179,5),required)], ['demonstration'],'').",
                     "lvp_identifier": "87260817f5180192940572bf662138cfcb2a6a0655c12855e2a04c7393975548",
-                    "example_sentence": "A protest against the government was made by Mary."
+                    "example_sentence": "A protest against the government was made by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3326,7 +3450,8 @@
                     "line_index": 180,
                     "training_sentence": "train('A form will be submitted by Mary to a government.','Submitting_documents',index(180,5),[pair('Submitter',index(180,7),required),pair('Documents',index(180,2),required),pair('Authority',index(180,10),optional)],['file','turn_in','hand_in'],'').",
                     "lvp_identifier": "7efa46aeaf363c43985d927f560de4abbcd5974292cf09613aa199d395b492be",
-                    "example_sentence": "A form will be submitted by Mary to a government."
+                    "example_sentence": "A form will be submitted by Mary to a government.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3361,7 +3486,8 @@
                     "line_index": 181,
                     "training_sentence": "train('Hamlet is played by John in a play with Mary.','Performing',index(181,3),[pair('Performer',index(181,5),required),pair('Role',index(181,1),optional),pair('Performance',index(181,8),optional),pair('Costar',index(181,10),optional)],['star','feature','acted'],'').",
                     "lvp_identifier": "364a28e826161e7295fbfea0790c23f7d950f0d7c8a0a6d1ce2751536abf4a9d",
-                    "example_sentence": "Hamlet is played by John in a play with Mary."
+                    "example_sentence": "Hamlet is played by John in a play with Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Performing',verb,[pair('Performer',index(182,8),[obl_by],required),pair('Role',index(182,4),[obj,nmod_of],required),pair('Performance',index(182,11),[obl_in],optional),pair('Costar',index(182,13),[obl_with],optional)]) :- fn_synonym('play','Performing',Lexeme).",
@@ -3391,7 +3517,8 @@
                     "line_index": 182,
                     "training_sentence": "train('The name of Hamlet is played by John in a play with Mary.','Performing',index(182,6),[pair('Performer',index(182,8),required),pair('Role',index(182,4),required),pair('Performance',index(182,11),optional),pair('Costar',index(182,13),optional)],['star','feature'],'').",
                     "lvp_identifier": "02497f8e838fd1728cb4d173cedf89997837e7917b3625a0440111d8418d4710",
-                    "example_sentence": "The name of Hamlet is played by John in a play with Mary."
+                    "example_sentence": "The name of Hamlet is played by John in a play with Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Performing',verb,[pair('Performer',index(183,1),[nsubj],required),pair('Role',index(183,4),[obl_as],optional),pair('Performance',index(183,7),[obl_in],optional),pair('Costar',index(183,9),[obl_with],optional)]) :- fn_synonym('act','Performing',Lexeme).",
@@ -3421,7 +3548,8 @@
                     "line_index": 183,
                     "training_sentence": "train('John acts as Hamlet in a play with Mary.','Performing',index(183,2),[pair('Performer',index(183,1),required),pair('Role',index(183,4),optional),pair('Performance',index(183,7),optional),pair('Costar',index(183,9),optional)],['appear'],'').",
                     "lvp_identifier": "ca517641f1738530776b58a734463b339be0c7f8f450dd60193750e17df18224",
-                    "example_sentence": "John acts as Hamlet in a play with Mary."
+                    "example_sentence": "John acts as Hamlet in a play with Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Performing',verb,[pair('Performer',index(184,1),[nsubj],required),pair('Performance',index(184,7),[obl_in],optional),pair('Costar',index(184,4),[obl_with],optional)]) :- fn_synonym('co_star','Performing',Lexeme).",
@@ -3446,7 +3574,8 @@
                     "line_index": 184,
                     "training_sentence": "train('John co-stars with Mary in a play.','Performing',index(184,2),[pair('Performer',index(184,1),required),pair('Performance',index(184,7),optional),pair('Costar',index(184,4),optional)],[],'').",
                     "lvp_identifier": "6248f10f9fd0e19e40b5ade978888a1725cd30baafa1dd6960e5e2d04f72e2c5",
-                    "example_sentence": "John co-stars with Mary in a play."
+                    "example_sentence": "John co-stars with Mary in a play.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3476,7 +3605,8 @@
                     "line_index": 185,
                     "training_sentence": "train('A suspect will be released by the police from prison.','Releasing_from_custody',index(185,5),[pair('Authorities',index(185,8),required),pair('Suspect',index(185,2),required),pair('Place',index(185,10),optional)],['set_free','let_go'],'').",
                     "lvp_identifier": "28d521acdbe6e64b45c54e3a517c74aecd57b4db9fc58cbf3b9d35a2d05bee9f",
-                    "example_sentence": "A suspect will be released by the police from prison."
+                    "example_sentence": "A suspect will be released by the police from prison.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Releasing_from_custody',verb,[pair('Suspect',index(186,1),[obj],required),pair('Place',index(186,6),[obl_from],optional)]) :- fn_synonym('release','Releasing_from_custody',Lexeme).",
@@ -3496,7 +3626,8 @@
                     "line_index": 186,
                     "training_sentence": "train('Mary is released from a prison.','Releasing_from_custody',index(186,3),[pair('Suspect',index(186,1),required),pair('Place',index(186,6),optional)],['set_free','let_go'],'').",
                     "lvp_identifier": "942587fa4dd609fcaed073a870ed685dd2cfbbfc72f7aa2826201f30418fc943",
-                    "example_sentence": "Mary is released from a prison."
+                    "example_sentence": "Mary is released from a prison.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3521,7 +3652,8 @@
                     "line_index": 187,
                     "training_sentence": "train('A contract is signed by Mary.','Sign_agreement',index(187,4),[pair('Signatory',index(187,6),required),pair('Agreement',index(187,2),required)],[],'').",
                     "lvp_identifier": "e71fe7f0e8601c8b5e69b7e5f638de0aa8f1ebcf7a3d96a84be4bd363142eb14",
-                    "example_sentence": "A contract is signed by Mary."
+                    "example_sentence": "A contract is signed by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Sign_agreement',verb,[pair('Signatory',index(188,1),[nsubj],required),pair('Agreement',index(188,5),[obl_to],required)]) :- fn_synonym('accede','Sign_agreement',Lexeme).",
@@ -3541,7 +3673,8 @@
                     "line_index": 188,
                     "training_sentence": "train('Mary accedes to a contract.','Sign_agreement',index(188,2),[pair('Signatory',index(188,1),required),pair('Agreement',index(188,5),required)],[],'').",
                     "lvp_identifier": "a62dcb725f71462b24d2db6815853e13efe42d858e4ab0acd4fd52b9ee1e86d6",
-                    "example_sentence": "Mary accedes to a contract."
+                    "example_sentence": "Mary accedes to a contract.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3571,7 +3704,8 @@
                     "line_index": 189,
                     "training_sentence": "train('An article is published with Nature by Mary.','Publishing',index(189,4),[pair('Author',index(189,8),required),pair('Work',index(189,2),required),pair('Publisher',index(189,6),optional)],['release'],'').",
                     "lvp_identifier": "2870763825bc9a240355c72fdb6cc9f1f22ab23cf208fc3ae37509e52dc7370c",
-                    "example_sentence": "An article is published with Nature by Mary."
+                    "example_sentence": "An article is published with Nature by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Publishing',verb,[pair('Author',index(190,6),[obl_by],required),pair('Work',index(190,2),[obj],required),pair('Publisher',index(190,8),[obl_in],optional)]) :- fn_synonym('publish','Publishing',Lexeme).",
@@ -3596,7 +3730,8 @@
                     "line_index": 190,
                     "training_sentence": "train('An article is published by Mary in Nature.','Publishing',index(190,4),[pair('Author',index(190,6),required),pair('Work',index(190,2),required),pair('Publisher',index(190,8),optional)],['release'],'').",
                     "lvp_identifier": "839be109558b5065859d98328e5fe27a24d38a12ae85a09b6ad7515749a71c88",
-                    "example_sentence": "An article is published by Mary in Nature."
+                    "example_sentence": "An article is published by Mary in Nature.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Publishing',verb,[pair('Author',index(191,4),[obj,nmod_of],required),pair('Work',index(191,2),[obj],required),pair('Publisher',index(191,8),[obl_by],optional)]) :- fn_synonym('publish','Publishing',Lexeme).",
@@ -3621,7 +3756,8 @@
                     "line_index": 191,
                     "training_sentence": "train('An article of Mary is published by Nature.','Publishing',index(191,6),[pair('Author',index(191,4),required),pair('Work',index(191,2),required),pair('Publisher',index(191,8),optional)],['release'],'').",
                     "lvp_identifier": "871e13ae2feed1781ff00cb76b22f62f63be97b235c93f2cca2c88a830fff437",
-                    "example_sentence": "An article of Mary is published by Nature."
+                    "example_sentence": "An article of Mary is published by Nature.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Publishing',verb,[pair('Author',index(207,8),[obl_by],required),pair('Work',index(207,2),[obj],required),pair('Topic',index(207,4),[obl_on],optional)]) :- fn_synonym('publish','Publishing',Lexeme).",
@@ -3646,7 +3782,8 @@
                     "line_index": 207,
                     "training_sentence": "train('An article on waltz was published by Mary.','Publishing',index(207,6),[pair('Author',index(207,8),required),pair('Work',index(207,2),required),pair('Topic',index(207,4),optional)],['release'],'').",
                     "lvp_identifier": "a7b80939168d81c8dac5986fa61d76d58f073294f68d98f3970b391cb5420d91",
-                    "example_sentence": "An article on waltz was published by Mary."
+                    "example_sentence": "An article on waltz was published by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3676,7 +3813,8 @@
                     "line_index": 192,
                     "training_sentence": "train('3000 dollars on investments are lost by John.','Losing',index(192,6),[pair('Owner',index(192,8),required),pair('Money',index(192,2),required),pair('Goods',index(192,4),optional)],[],'').",
                     "lvp_identifier": "621f8c559641542408e6df6eacdeed40db58145a571e38ee38a0d2c36d12bf4e",
-                    "example_sentence": "3000 dollars on investments are lost by John."
+                    "example_sentence": "3000 dollars on investments are lost by John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Losing',noun,[pair('Owner',index(193,1),[jbo,nsubj],required),pair('Money',index(193,7),[nmod_of],required),pair('Goods',index(193,9),[jbo,obl_on],optional)]) :- fn_synonym('loss','Losing',Lexeme).",
@@ -3701,7 +3839,8 @@
                     "line_index": 193,
                     "training_sentence": "train('John has a loss of 3000 dollars on investment.','Losing',index(193,4),[pair('Owner',index(193,1),required),pair('Money',index(193,7),required),pair('Goods',index(193,9),optional)],[],'').",
                     "lvp_identifier": "7eb4007fb7be8144c0679699e9133923d24736e1d8ef1067972a3e657e25a973",
-                    "example_sentence": "John has a loss of 3000 dollars on investment."
+                    "example_sentence": "John has a loss of 3000 dollars on investment.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Losing',verb,[pair('Owner',index(194,6),[obl_by],required),pair('Goods',index(194,2),[obj],required)]) :- fn_synonym('lose','Losing',Lexeme).",
@@ -3721,7 +3860,8 @@
                     "line_index": 194,
                     "training_sentence": "train('The phone was lost by John.','Losing',index(194,4),[pair('Owner',index(194,6),required),pair('Goods',index(194,2),required)],[],'').",
                     "lvp_identifier": "9e595c3b070ca76e59e51c3aafe16f30eb6715379f9a5f3b3897ed702bc5c10b",
-                    "example_sentence": "The phone was lost by John."
+                    "example_sentence": "The phone was lost by John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3751,7 +3891,8 @@
                     "line_index": 195,
                     "training_sentence": "train('Mary surrenders to the police on a charge of murder.','Surrendering',index(195,2),[pair('Authorities',index(195,5),required),pair('Fugitive',index(195,1),required),pair('Charges',index(195,10),optional)],['give_up'],'').",
                     "lvp_identifier": "41626d1feb55ec1f4e10c7c28b28e7bf3379bad621a78c6f9327f31dfe3cf632",
-                    "example_sentence": "Mary surrenders to the police on a charge of murder."
+                    "example_sentence": "Mary surrenders to the police on a charge of murder.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3776,7 +3917,8 @@
                     "line_index": 196,
                     "training_sentence": "train('A letter is written by Mary.','Text_creation',index(196,4),[pair('Author',index(196,6),required),pair('Text',index(196,2),required)],['author','compose','draft','jot_down','pen','type','type_in','write_up'],'').",
                     "lvp_identifier": "2fc249c5402ac5df1e8316eef2678524333fa4ba595e530ad1033cc5c8a6cbc2",
-                    "example_sentence": "A letter is written by Mary."
+                    "example_sentence": "A letter is written by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3806,7 +3948,8 @@
                     "line_index": 197,
                     "training_sentence": "train('A watch was stolen from John by Mary.','Theft',index(197,4),[pair('Perpetrator',index(197,8),required),pair('Goods',index(197,2),required),pair('Victim',index(197,6),optional)],['thieve','swipe','snitch','snatch','shoplift','pilfer','pickpocket','filch','embezzle'],'').",
                     "lvp_identifier": "5657bda0df96814d46f62b8f98cbb54930e2e9d1002a0bd19ec5c0a43e49379a",
-                    "example_sentence": "A watch was stolen from John by Mary."
+                    "example_sentence": "A watch was stolen from John by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3831,7 +3974,8 @@
                     "line_index": 198,
                     "training_sentence": "train('A hat is taken off by Mary.','Undressing',index(198,4),[pair('Wearer',index(198,7),required),pair('Clothing',index(198,2),required)],['kick_off','remove','slip','strip_off','pull_off','throw_off','peel_off'],'').",
                     "lvp_identifier": "889674ef757e24d24b80c1f9a50a3311d9f30adc3b42a2b53ed820a3ac888232",
-                    "example_sentence": "A hat is taken off by Mary."
+                    "example_sentence": "A hat is taken off by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3856,7 +4000,8 @@
                     "line_index": 199,
                     "training_sentence": "train('Food is grown by Mary.','Growing_food',index(199,3),[pair('Grower',index(199,5),required),pair('Food',index(199,1),required)],['raise'],'').",
                     "lvp_identifier": "220e526a8d8557298ced2e4999e850a2bfaac1aac5b6e251ca9012e9c3810ec0",
-                    "example_sentence": "Food is grown by Mary."
+                    "example_sentence": "Food is grown by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3886,7 +4031,8 @@
                     "line_index": 200,
                     "training_sentence": "train('Mary participates in an event with John.','Participation',index(200,2),[pair('Participant',index(200,1),required),pair('Event',index(200,5),required),pair('CoParticipant',index(200,7),optional)],['engage','involve','take_part'],'').",
                     "lvp_identifier": "bf56267cdcd07dc6caded26e1449e0401c269206c77a00bffad539c5c7feec44",
-                    "example_sentence": "Mary participates in an event with John."
+                    "example_sentence": "Mary participates in an event with John.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Participation',verb,[pair('Participant',index(201,1),[obj],required),pair('Event',index(201,6),[obl_in],required),pair('CoParticipant',index(201,8),[obl_with],optional)]) :- fn_synonym('involve','Participation',Lexeme).",
@@ -3911,7 +4057,8 @@
                     "line_index": 201,
                     "training_sentence": "train('Mary is involved in an event with John.','Participation',index(201,3),[pair('Participant',index(201,1),required),pair('Event',index(201,6),required),pair('CoParticipant',index(201,8),optional)],['engaged'],'').",
                     "lvp_identifier": "7d60fb80104f59aca98dc072267037978bafa8e4bfbdf241d8098ab6ad8449a7",
-                    "example_sentence": "Mary is involved in an event with John."
+                    "example_sentence": "Mary is involved in an event with John.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3941,7 +4088,8 @@
                     "line_index": 202,
                     "training_sentence": "train('A book is borrowed from John by Mary.','Borrow_lend',index(202,4),[pair('Borrower',index(202,8),optional),pair('Theme',index(202,2),required),pair('Lender',index(202,6),required)],[],'').",
                     "lvp_identifier": "5f5f3d85a614b1731539df8aea2af4e0d9b586f9d5a2a16e73c0bad1df13d82f",
-                    "example_sentence": "A book is borrowed from John by Mary."
+                    "example_sentence": "A book is borrowed from John by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -3976,7 +4124,8 @@
                     "line_index": 204,
                     "training_sentence": "train('KFC is a cheap and American restaurant in the US.','Restaurant',index(204,7),[pair('Restaurant_name',index(204,1),required),pair('Price',index(204,4),optional),pair('Cuisine',index(204,6),optional),pair('Place',index(204,10),optional)],['eating_place','food_place','dining_place'],'').",
                     "lvp_identifier": "3c128805817dad9663bedc85f242914d1b8dff180e19ba83a6106274e5a2b68a",
-                    "example_sentence": "KFC is a cheap and American restaurant in the US."
+                    "example_sentence": "KFC is a cheap and American restaurant in the US.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -4006,7 +4155,8 @@
                     "line_index": 209,
                     "training_sentence": "train('Some beef is imported by China from Japan.','Import_export',index(209,4),[pair('Importer',index(209,6),optional),pair('Exporter',index(209,8),optional),pair('Goods',index(209,2),required)],[],'').",
                     "lvp_identifier": "a2147267f6b5ccfc904a7cdbfd21fc3d386d03609c4458dce3d8f1e3360c582d",
-                    "example_sentence": "Some beef is imported by China from Japan."
+                    "example_sentence": "Some beef is imported by China from Japan.",
+                    "status": "ACTIVE"
                 }
             ]
         },
@@ -4036,7 +4186,8 @@
                     "line_index": 211,
                     "training_sentence": "train('A trip is scheduled in an office by Mary.','Scheduling',index(211,4),[pair('Agent',index(211,9),required),pair('Event',index(211,2),required),pair('Place',index(211,7),optional)],['arrange','set_up'],'').",
                     "lvp_identifier": "02d13151e18809af3161dc9fa6cc1700df2804e101e77f333ba19f0ad9944ddc",
-                    "example_sentence": "A trip is scheduled in an office by Mary."
+                    "example_sentence": "A trip is scheduled in an office by Mary.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Scheduling',verb,[pair('Agent',index(212,6),[obl_by],required),pair('Event',index(212,2),[obj],required),pair('Place',index(212,9),[obl_at],optional)]) :- fn_synonym('schedule','Scheduling',Lexeme).",
@@ -4061,7 +4212,8 @@
                     "line_index": 212,
                     "training_sentence": "train('A trip was scheduled by Mary at a school.','Scheduling',index(212,4),[pair('Agent',index(212,6),required),pair('Event',index(212,2),required),pair('Place',index(212,9),optional)],['arrange','set_up'],'').",
                     "lvp_identifier": "8e631fbae8e29a08310f1b4577d8aa2b683a8a9ece53f0f9c3773ec6e1e52cf9",
-                    "example_sentence": "A trip was scheduled by Mary at a school."
+                    "example_sentence": "A trip was scheduled by Mary at a school.",
+                    "status": "ACTIVE"
                 },
                 {
                     "value": "lvp(Lexeme,'','Scheduling',verb,[pair('Agent',index(213,9),[obl_by],required),pair('Event',index(213,2),[obj],required),pair('Place',index(213,4),[obl_to],optional)]) :- fn_synonym('schedule','Scheduling',Lexeme).",
@@ -4086,7 +4238,8 @@
                     "line_index": 213,
                     "training_sentence": "train('A trip to London will be scheduled by Mary.','Scheduling',index(213,7),[pair('Agent',index(213,9),required),pair('Event',index(213,2),required),pair('Place',index(213,4),optional)],['arrange','set_up'],'').",
                     "lvp_identifier": "51ce76e073600d9a70120bed56574406a15db1e36d7939a6202eb0eb347123b7",
-                    "example_sentence": "A trip to London will be scheduled by Mary."
+                    "example_sentence": "A trip to London will be scheduled by Mary.",
+                    "status": "ACTIVE"
                 }
             ]
         }
