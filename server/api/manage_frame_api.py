@@ -5,6 +5,49 @@ from bson import json_util
 from bson.objectid import ObjectId
 from utils.db import create_mongo_client
 from pymongo import ReturnDocument
+import os
+
+def json_to_ont(src, ont_path="api/resources/frameont/frame_ont.txt"):
+    """
+    Reads file at json_path and overwrites file at ont_path to update frame ontology with changes in the JSON
+
+    Helper function that reads thru the entire JSON and builds up a giant string to be written to the frame ontology.
+    It is probably inefficient to read everything and overwrite everything, but not sure if JSON has a feature
+    to track the index of entries so that targetted edits can be made in frame_ont.txt
+    """
+
+    data = json.loads(src)
+
+    print(data)
+
+    accumulator = "" # final file will be written as this string
+
+    for frame in data:
+        accumulator += "fp("
+        # Write name
+        accumulator += "'" + frame['name'] + "',"
+        # Write roles as properties
+        accumulator += "["
+        for role in frame['roles']:
+            accumulator += "property("
+            accumulator += "'" + role['name'] + "',"
+            # Write values
+            accumulator += "["
+            for value in role['values']:
+                accumulator += "'" + value + "'," # will produce extra comma
+            accumulator = accumulator[:-1] # delete final comma (extra comma)
+            accumulator += "]"
+            accumulator += ")," # will produce an extra comma at end
+        accumulator = accumulator[:-1] # delete final comma (extra comma)
+        accumulator += "]"
+        # if has_req or has_hyp:
+            # code
+        accumulator += ").\n"
+
+    dst = open(ont_path, "w")
+    dst.write(accumulator)
+    dst.close()
+
 
 manage_frame_api_bp = Blueprint('manage_frame_api', __name__)
 api = Api(manage_frame_api_bp)
@@ -59,10 +102,15 @@ class ManageFrameApiHandler(Resource):
             client = create_mongo_client()  # Connect to the MongoDB client
             db = client['Frames']   # Select the 'Frames' database
             frames = db['Frames']   # Select the 'Frames' collection
+            all_frames = list(frames.find())
+            #convert ObjectId into string
+            for frame in all_frames:
+                frame['_id'] = str(frame['_id'])
 
             result = frames.insert_one(new_frame)  # Add the new frame to the collection
 
             if result.acknowledged:  # If the insert operation was successful
+                json_to_ont(json.dumps(all_frames)) # update frame_ont.txt to reflect changes
                 return {"message": "Frame added successfully", "id": str(result.inserted_id)}, 200
             else:
                 return {"error": "Error adding frame to database"}, 500
@@ -165,6 +213,10 @@ class ManageRoleApiHandler(Resource):
         client = create_mongo_client()
         db = client['Frames']
         frames = db['Frames']
+        all_frames = list(frames.find())
+        #convert ObjectId into string
+        for frame in all_frames:
+            frame['_id'] = str(frame['_id'])
 
         updated_frame = frames.find_one_and_update(
             {'_id': ObjectId(frame_id), 'roles.name': old_role_name}, 
@@ -172,6 +224,7 @@ class ManageRoleApiHandler(Resource):
             return_document=ReturnDocument.AFTER
         )
         if updated_frame is not None:
+            json_to_ont(json.dumps(all_frames)) # update frame_ont.txt to reflect changes
             return json.loads(json_util.dumps(updated_frame)), 200
         else:
             return {'error': 'Frame with specified role not found'}, 404
