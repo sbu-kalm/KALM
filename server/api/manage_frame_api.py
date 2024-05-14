@@ -36,8 +36,8 @@ def json_to_ont(src, ont_path="api/resources/frameont/frame_ont.txt"):
             for value in role['values']:
                 accumulator += "'" + value + "'," # will produce extra comma
             accumulator = accumulator[:-1] # delete final comma (extra comma)
-            accumulator += ")"
-            accumulator += "]," # will produce an extra comma at end
+            accumulator += "]"
+            accumulator += ")," # will produce an extra comma at end
         accumulator = accumulator[:-1] # delete final comma (extra comma)
         accumulator += "]"
         # if has_req or has_hyp:
