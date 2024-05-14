@@ -15,7 +15,8 @@ def json_to_ont(src, ont_path="resources/frameont/frame_ont.txt"):
     It is probably inefficient to read everything and overwrite everything, but not sure if JSON has a feature
     to track the index of entries so that targetted edits can be made in frame_ont.txt
     """
-    print(os.getcwd)
+    
+    print(os.getcwd())
 
     data = json.loads(src)
 
