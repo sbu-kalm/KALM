@@ -75,6 +75,7 @@ export const ManageContextProvider = (props: ManageContextProviderProps) => {
 
 // This function handles all of the changes to the manage page state
 const manageReducer = (state: ManageState, action: any): ManageState => {
+    console.log(action, "ACTION")
     switch (action.type) {
         case "INITIALIZE":
             return {
