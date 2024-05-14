@@ -37,7 +37,7 @@ class ParseFrameApiHandler(Resource):
         os.chdir('../../../../../../')
 
         with open('api/resources/results/candidate_parses/candidates.txt', 'r') as f:
-            result = f.read()
-        return (result)
+            results = f.readlines()[1:]
+        return (results)
 
 api.add_resource(ParseFrameApiHandler, "/")

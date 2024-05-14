@@ -4,10 +4,11 @@ import { getParses } from "../../api/ParseFrameApiAccessor";
 
 const ParseFrame = () => {
     const [text, setText] = useState<string>("");
+    const [frames, setFrames] = useState<string[]>([]);
     
     const parseFrames = async () => {
         const parses = await getParses(text);
-        console.log(parses);
+        setFrames(parses);
     }
 
     return (
@@ -40,7 +41,9 @@ const ParseFrame = () => {
             <Stack>
                 <Title order={2} c="blue">View Frames</Title>
                 <Box style={{ border: "1px solid #A4ACB3", borderRadius: "5px", width: "60%", height: "300px" }}>
-
+                    {frames.map((frame, index) => (
+                        <Text key={index}>{frame}</Text>
+                    ))}
                 </Box>
             </Stack>
         </>
