@@ -22,7 +22,7 @@ function App() {
     { icon: Home, label: 'Dashboard', color: "blue", route: '/' },
     { icon: Plus, label: 'Frame Management', color: "cyan", route: '/manageFrame' },
     { icon: HardDrive, label: 'Training', color: "grape", route: '/training' },
-    { icon: Disc, label: 'Clean Frame', color: "green", route: '/cleanPattern' },
+    { icon: Disc, label: 'Clean Pattern', color: "green", route: '/cleanFrame' },
     { icon: Database, label: 'Parse Frame', color: "orange", route: '/parseFrame' },
     { icon: MessageSquare, label: 'Question Answer', color: "pink", route: '/questionAnswer' },
     { icon: HelpCircle, label: 'FAQ', color: "yellow", route: '/faq' },
