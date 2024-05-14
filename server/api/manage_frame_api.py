@@ -7,7 +7,7 @@ from utils.db import create_mongo_client
 from pymongo import ReturnDocument
 import os
 
-def json_to_ont(src, ont_path="resources/frameont/frame_ont.txt"):
+def json_to_ont(src, ont_path="api/resources/frameont/frame_ont.txt"):
     """
     Reads file at json_path and overwrites file at ont_path to update frame ontology with changes in the JSON
 
@@ -15,10 +15,10 @@ def json_to_ont(src, ont_path="resources/frameont/frame_ont.txt"):
     It is probably inefficient to read everything and overwrite everything, but not sure if JSON has a feature
     to track the index of entries so that targetted edits can be made in frame_ont.txt
     """
-    
-    print(os.getcwd())
 
     data = json.loads(src)
+
+    print(data)
 
     accumulator = "" # final file will be written as this string
 
