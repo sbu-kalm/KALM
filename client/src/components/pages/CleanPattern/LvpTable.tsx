@@ -6,12 +6,13 @@ import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { Role, Lvp } from '../../../utils/models/Frame';
 import { Button, Group, Breadcrumbs, Anchor, Stack} from '@mantine/core';
-import { ShowNotification } from '../../../utils/Global';
 import { useCleanContext, useCleanDispatchContext } from '../../../context/CleanContextProvider';
+import { deleteLvp, modifyLvpStatus } from '../../../api/CleanPatternApiAccessor';
 
 const columns: DataTableColumn<Lvp>[] = [
-    { accessor: 'value', title: 'lvp', width: '25%', render: (record: Lvp) => <span>{getLvpReadableFormat(record)}</span> },
-    { accessor: 'example_sentence', width: '75%' },
+    { accessor: 'value', title: 'lvp', width: '20%', render: (record: Lvp) => <span>{getLvpReadableFormat(record)}</span> },
+    { accessor: 'example_sentence', width: '70%' },
+    { accessor: 'status', width: '70%' },
 ];
 
 const getLvpReadableFormat = (lvp: Lvp): string => {
@@ -49,6 +50,33 @@ export function LvpTable() {
             </Anchor>
         ));
 
+    //Check that selectedRecords has a lvp that is active
+    const hasActiveRecords = () => {
+        return selectedRecords.some((lvp) => lvp.status === "ACTIVE");
+    }
+
+    //Check that selectedRecords has a lvp that is not active
+    const hasNonActiveRecords = () => {
+        return selectedRecords.some((lvp) => lvp.status === "NON-ACTIVE");
+    }
+
+    const handleDeletePattern = async() => {
+        const lvpsDeletedResponse = await deleteLvp({pattern: selectedPattern as string, lvpIdentifiers: selectedRecords as Lvp[]});
+        if(lvpsDeletedResponse){
+            setCleanState({type: "UPDATE_PATTERN_LIST", patternList: lvpsDeletedResponse['patternList']});
+            setSelectedRecords([]);
+        }
+    }
+
+    const handleModifyStatus = async(type: string) => {
+        const lvpsModifiedResponse = await modifyLvpStatus({pattern: selectedPattern as string, type: type, lvpIdentifiers: selectedRecords as Lvp[] });
+        console.log(lvpsModifiedResponse, "MODIFIED RESPONSE")
+        if(lvpsModifiedResponse){
+            setCleanState({type: "UPDATE_PATTERN_LIST", patternList: lvpsModifiedResponse['patternList']});
+            setSelectedRecords([]);
+        }
+    }
+
     return (
         <>
             {/* Display frame add */}
@@ -56,20 +84,20 @@ export function LvpTable() {
                 <Group>
                     <Breadcrumbs>{items}</Breadcrumbs>
                     <Button variant="outline" color="red"
-                        onClick={() => ShowNotification("Delete")}
+                        onClick={() => handleDeletePattern()}
                         disabled={selectedRecords.length === 0}
                         style={{ marginLeft: "auto" }}>
                         Delete
                     </Button>
                     <Button variant="outline" color="orange"
-                        disabled={selectedRecords.length === 0}
-                        onClick={() => ShowNotification("Deactivate")}>
+                        disabled={selectedRecords.length === 0 || !hasActiveRecords()}
+                        onClick={() => handleModifyStatus("DEACTIVATE")}>
                         Deactivate
                     </Button>
                     <Button variant="outline"
                         color="green"
-                        disabled={selectedRecords.length === 0}
-                        onClick={() => ShowNotification("Activate")}>
+                        disabled={selectedRecords.length === 0 || !hasNonActiveRecords()}
+                        onClick={() => handleModifyStatus("ACTIVATE")}>
                         Activate
                     </Button>
                 </Group>
@@ -84,7 +112,6 @@ export function LvpTable() {
                 idAccessor={({ lvp_identifier }) => `${lvp_identifier}`}
                 selectedRecords={selectedRecords}
                 onSelectedRecordsChange={setSelectedRecords}
-                // onRowClick={({ record, index }) => handleRowClick(record, index)}
                 rowExpansion={{
                     content: ({ record }) => (
                         <Stack p="xs" gap={6}>
@@ -99,22 +126,11 @@ export function LvpTable() {
                                 return (
                                     <Group key={index} gap={6}>
                                         <div>{role.name}: {roleWord}</div>
-                                        {/* <div>Role {index + 1}:</div>
-                                        <div>{role.name}, </div>
-                                        <div>Index: {role.index},</div>
-                                        <div>Type: {role.type}</div> */}
                                     </Group>
                                 );
                             }
                             
                         })}
-                        <Group>
-                            {/* <div> Training Sentence: {record.lvps.} </div> */}
-                        </Group>
-                        {/* <Group gap={6}>
-                          <div className={classes.label}>Mission statement:</div>
-                          <Box fs="italic">“{record.missionStatement}”</Box>
-                        </Group> */}
                         </Stack>
                     ),
                   }}

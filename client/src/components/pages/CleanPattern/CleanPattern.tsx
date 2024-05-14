@@ -3,8 +3,6 @@ import { Text, Stack, Title, Button } from "@mantine/core"
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LvpTable } from "./LvpTable";
-import { Frame } from "../../../utils/models/Frame";
-import { getPatterns } from "../../../api/CleanPatternApiAccessor";
 
 const CleanPattern = () => {
     // This is the hook that allows us to navigate to different pages
@@ -28,20 +26,6 @@ const CleanPattern = () => {
             return <LvpTable />
         }
     }
-
-    const fetchPatternList = async () => {
-        try {
-            console.log(selectedPattern, "Selected Pattern")
-            // const patternList = await getPatterns();
-            // console.log(patternList, "Pattern LIST")
-        }
-        catch (error) {
-            console.log(error)
-            // console.error("Error fetching patternList:", error);
-        }
-    }
-
-    
 
     return (
         <>

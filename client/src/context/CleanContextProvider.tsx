@@ -80,6 +80,13 @@ const cleanReducer = (state: CleanState, action: any): CleanState => {
                 ...state,
                 patternList: action.patternList ?? [],
             };
+
+        case "UPDATE_PATTERN_LIST":
+            console.log(action.patternList, "PATTERN LIST")
+            return {
+                ...state,
+                patternList: action.patternList,
+            };
         default:
             return state;
     }

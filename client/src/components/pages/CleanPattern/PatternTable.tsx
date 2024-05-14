@@ -5,21 +5,15 @@ import { notifications } from '@mantine/notifications';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import { Pattern } from '../../../utils/models/Frame';
-// import frames from "../../../data/frames.json";
 import { Button, Group, Breadcrumbs, Anchor } from '@mantine/core';
 import { ShowNotification } from '../../../utils/Global';
 import { useCleanContext, useCleanDispatchContext } from '../../../context/CleanContextProvider';
-import { Stack } from '@mantine/core';
+
 const columns: DataTableColumn<Pattern>[] = [
     { accessor: 'name', width: '100%' },
 ];
 
 const PAGE_SIZE = 50;
-interface Role {
-    role: string;
-    index: number[];
-    type: string;
-}
 
 export function PatternTable() {
     const cleanState = useCleanContext();
@@ -42,11 +36,6 @@ export function PatternTable() {
     // This function is called when the user clicks on a row
     // It will navigate to the page with the name of the frame
     const handleRowClick = (record: Pattern, index: number) => {
-        notifications.show({
-            title: `Row Clicked`,
-            message: `You clicked on ${record.name}: ${index}!`,
-            withBorder: true,
-        });
         navigate(`/CleanPattern/${record.name}`);
     };
 

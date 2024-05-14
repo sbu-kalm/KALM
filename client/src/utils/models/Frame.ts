@@ -21,6 +21,7 @@ export interface Lvp {
     training_sentence: string;
     lvp_identifier: string;
     example_sentence: string;
+    status: string;
 }
 
 export interface Pattern {
