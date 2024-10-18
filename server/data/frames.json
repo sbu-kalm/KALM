@@ -1,0 +1,1656 @@
+[
+    {
+        "frame": "Being_employed",
+        "properties": [
+            {
+                "name": "Employee",
+                "values": [
+                    "bn:00030618n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Employer",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Field",
+                "values": [
+                    "bn:00007985n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Position",
+                "values": [
+                    "bn:00010073n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Task",
+                "values": [
+                    "bn:00049573n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Age",
+        "properties": [
+            {
+                "name": "Age",
+                "values": [
+                    "bn:00001938n"
+                ],
+                "type": [
+                    "Integer"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Human_gender",
+        "properties": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Gender",
+                "values": [
+                    "bn:00037634n"
+                ],
+                "type": [],
+                "relation": [
+                    "hyponym"
+                ]
+            }
+        ]
+    },
+    {
+        "frame": "Residence",
+        "properties": [
+            {
+                "name": "Resident",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Co_resident",
+                "values": [
+                    "bn:00058564n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Location",
+                "values": [
+                    "bn:00051760n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Being_born",
+        "properties": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ],
+                "type": [
+                    "Integer"
+                ],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Renting",
+        "properties": [
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00054416n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Lessee",
+                "values": [
+                    "bn:00050448n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Lessor",
+                "values": [
+                    "bn:00050446n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ],
+                "type": [
+                    "Currency"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Duration",
+                "values": [
+                    "bn:00022191n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Commerce_buy",
+        "properties": [
+            {
+                "name": "Buyer",
+                "values": [
+                    "bn:00014332n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Seller",
+                "values": [
+                    "bn:00053479n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00014157n",
+                    "bn:00046038n",
+                    "bn:00022071n",
+                    "bn:00054416n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ],
+                "type": [
+                    "Currency"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00066495n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Possession",
+        "properties": [
+            {
+                "name": "Owner",
+                "values": [
+                    "bn:00059954n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Possession",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Cooking",
+        "properties": [
+            {
+                "name": "Cook",
+                "values": [
+                    "bn:00022407n",
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Food",
+                "values": [
+                    "bn:00035650n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00066495n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Dressing",
+        "properties": [
+            {
+                "name": "Wearer",
+                "values": [
+                    "bn:00080753n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Clothing",
+                "values": [
+                    "bn:00006125n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Create_organization",
+        "properties": [
+            {
+                "name": "Creator",
+                "values": [
+                    "bn:00023660n",
+                    "bn:00009631n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Organization",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ],
+                "type": [
+                    "Integer"
+                ],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Travel",
+        "properties": [
+            {
+                "name": "Traveler",
+                "values": [
+                    "bn:00078093n",
+                    "bn:00041942n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Source",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Goal",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Education",
+        "properties": [
+            {
+                "name": "Student",
+                "values": [
+                    "bn:00029806n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Institution",
+                "values": [
+                    "bn:00029812n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Degree",
+                "values": [
+                    "bn:00000554n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Subject",
+                "values": [
+                    "bn:00007985n",
+                    "bn:16324994n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Giving",
+        "properties": [
+            {
+                "name": "Donor",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Recipient",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Theme",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n",
+                    "bn:00055644n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Personal_relationship",
+        "properties": [
+            {
+                "name": "Mother",
+                "values": [
+                    "bn:00034027n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Father",
+                "values": [
+                    "bn:00009616n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Son",
+                "values": [
+                    "bn:00012571n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Daughter",
+                "values": [
+                    "bn:00025364n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Husband",
+                "values": [
+                    "bn:00045106n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Wife",
+                "values": [
+                    "bn:00045106n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Marriage_partner_1",
+                "values": [
+                    "bn:00010161n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Marriage_partner_2",
+                "values": [
+                    "bn:00010161n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Child",
+                "values": [
+                    "bn:00018346n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Parent",
+                "values": [
+                    "bn:00060643n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "People_by_origin",
+        "properties": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Origin",
+                "values": [
+                    "bn:00058564n"
+                ],
+                "type": [],
+                "relation": [
+                    "hyponym"
+                ]
+            }
+        ]
+    },
+    {
+        "frame": "People_by_religion",
+        "properties": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Religion",
+                "values": [
+                    "bn:00032768n"
+                ],
+                "type": [],
+                "relation": [
+                    "hyponym"
+                ]
+            }
+        ]
+    },
+    {
+        "frame": "Collaboration",
+        "properties": [
+            {
+                "name": "Partner1",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Partner2",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Undertaking",
+                "values": [
+                    "bn:00049573n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Quitting",
+        "properties": [
+            {
+                "name": "Employee",
+                "values": [
+                    "bn:00030618n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Employer",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Field",
+                "values": [
+                    "bn:00007985n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Position",
+                "values": [
+                    "bn:00010073n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Medical_conditions",
+        "properties": [
+            {
+                "name": "Patient",
+                "values": [
+                    "bn:00061017n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Ailment",
+                "values": [
+                    "bn:00045952n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Award",
+        "properties": [
+            {
+                "name": "Person",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Award",
+                "values": [
+                    "bn:00000704n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Organization",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ],
+                "type": [
+                    "Integer"
+                ],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Death",
+        "properties": [
+            {
+                "name": "Protagonist",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Cause",
+                "values": [
+                    "bn:00045952n",
+                    "bn:02131709n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Time",
+                "values": [
+                    "bn:00077268n"
+                ],
+                "type": [
+                    "Integer"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Using",
+        "properties": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Building",
+        "properties": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Created_entity",
+                "values": [
+                    "bn:00005956n",
+                    "bn:00021551n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Killing",
+        "properties": [
+            {
+                "name": "Killer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Instrument",
+                "values": [
+                    "bn:00026716n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Arrest",
+        "properties": [
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Suspect",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Charges",
+                "values": [
+                    "bn:00023807n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Attack",
+        "properties": [
+            {
+                "name": "Assailant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Leadership",
+        "properties": [
+            {
+                "name": "Leader",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00041942n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Governed",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Role",
+                "values": [
+                    "bn:00010073n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Manufacturing",
+        "properties": [
+            {
+                "name": "Producer",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Product",
+                "values": [
+                    "bn:00005956n",
+                    "bn:00006126n",
+                    "bn:00021045n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Earnings",
+        "properties": [
+            {
+                "name": "Earner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ],
+                "type": [
+                    "Currency"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00054416n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Beat_opponent",
+        "properties": [
+            {
+                "name": "Winner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00073699n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Loser",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00073699n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Competition",
+                "values": [
+                    "bn:00021338n",
+                    "bn:00021339n",
+                    "bn:00021337n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Cure",
+        "properties": [
+            {
+                "name": "Healer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00027976n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Patient",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Disease",
+                "values": [
+                    "bn:00045952n",
+                    "bn:00027546n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Medication",
+                "values": [
+                    "bn:00054128n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Contacting",
+        "properties": [
+            {
+                "name": "Communicator",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Addressee",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Protest",
+        "properties": [
+            {
+                "name": "Protester",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00041942n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Side",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Submitting_documents",
+        "properties": [
+            {
+                "name": "Submitter",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Authority",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Documents",
+                "values": [
+                    "bn:00028015n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Performing",
+        "properties": [
+            {
+                "name": "Performer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00001176n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Costar",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Role",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00017749n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Performance",
+                "values": [
+                    "bn:00071316n",
+                    "bn:00028604n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Releasing_from_custody",
+        "properties": [
+            {
+                "name": "Suspect",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Sign_agreement",
+        "properties": [
+            {
+                "name": "Signatory",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Agreement",
+                "values": [
+                    "bn:15519080n",
+                    "bn:00022227n",
+                    "bn:00000728n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Publishing",
+        "properties": [
+            {
+                "name": "Author",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Work",
+                "values": [
+                    "bn:15338434n",
+                    "bn:00065106n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Publisher",
+                "values": [
+                    "bn:00059480n",
+                    "bn:00065111n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Venue",
+                "values": [
+                    "bn:00052671n",
+                    "bn:00050563n",
+                    "bn:00022333n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Topic",
+                "values": [
+                    "bn:00074900n",
+                    "bn:00045803n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Losing",
+        "properties": [
+            {
+                "name": "Owner",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Money",
+                "values": [
+                    "bn:00017803n"
+                ],
+                "type": [
+                    "Currency"
+                ],
+                "relation": []
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00054416n",
+                    "bn:15840810n",
+                    "bn:02131709n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Surrendering",
+        "properties": [
+            {
+                "name": "Authorities",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Fugitive",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Charges",
+                "values": [
+                    "bn:00023807n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Text_creation",
+        "properties": [
+            {
+                "name": "Author",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Text",
+                "values": [
+                    "bn:00054523n",
+                    "bn:00076732n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Theft",
+        "properties": [
+            {
+                "name": "Perpetrator",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Victim",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Undressing",
+        "properties": [
+            {
+                "name": "Wearer",
+                "values": [
+                    "bn:00080753n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Clothing",
+                "values": [
+                    "bn:00006125n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Growing_food",
+        "properties": [
+            {
+                "name": "Grower",
+                "values": [
+                    "bn:00046516n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Food",
+                "values": [
+                    "bn:00035650n",
+                    "bn:00035649n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Participation",
+        "properties": [
+            {
+                "name": "Participant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "CoParticipant",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Event",
+                "values": [
+                    "bn:00032021n",
+                    "bn:02131709n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Borrow_lend",
+        "properties": [
+            {
+                "name": "Borrower",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Lender",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Theme",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Restaurant",
+        "properties": [
+            {
+                "name": "Restaurant",
+                "values": [
+                    "bn:00029545n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Price",
+                "values": [
+                    "bn:00025083n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Cuisine",
+                "values": [
+                    "bn:00024323n",
+                    "bn:00066884n",
+                    "bn:00035650n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Import_export",
+        "properties": [
+            {
+                "name": "Importer",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00023235n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Exporter",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n",
+                    "bn:00023235n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Goods",
+                "values": [
+                    "bn:00006126n",
+                    "bn:00021045n",
+                    "bn:00005956n",
+                    "bn:15358232n",
+                    "bn:00012321n",
+                    "bn:00004222n",
+                    "bn:00035650n",
+                    "bn:00035649n",
+                    "bn:00054416n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    },
+    {
+        "frame": "Scheduling",
+        "properties": [
+            {
+                "name": "Agent",
+                "values": [
+                    "bn:00046516n",
+                    "bn:00059480n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Place",
+                "values": [
+                    "bn:00066884n",
+                    "bn:15769800n"
+                ],
+                "type": [],
+                "relation": []
+            },
+            {
+                "name": "Event",
+                "values": [
+                    "bn:00032021n",
+                    "bn:02131709n",
+                    "bn:15840810n"
+                ],
+                "type": [],
+                "relation": []
+            }
+        ]
+    }
+]

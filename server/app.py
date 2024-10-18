@@ -6,6 +6,11 @@ from api.parse_frame_api import parse_frame_api_bp
 from api.training_api import training_api_bp
 from api.clean_patterns import clean_pattern_api_bp
 
+# Let the api files see kalmfl
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'api'))
+
 load_dotenv()
 
 app = Flask(__name__, static_url_path='', static_folder='../client/public')
