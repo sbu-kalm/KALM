@@ -37,7 +37,44 @@ class ParseFrameApiHandler(Resource):
         os.chdir('../../../../../../')
 
         with open('api/resources/results/candidate_parses/candidates.txt', 'r') as f:
-            results = f.readlines()[1:]
-        return (results)
+            content = f.read()
+            blocks = content.split('============================')[1:]
+
+        parsed_results = []
+        counter = 0
+        for block in blocks:
+            counter += 1
+            lines = block.strip().split('\n')
+            print(lines)
+            print(counter)
+            if len(lines) <= 2:
+                if counter % 2 == 0:
+                    parsed_results.append("Sentence cannot be parsed")
+                continue
+
+            action_line = lines[1].strip()
+            action = action_line.split('=')[0].strip()
+
+            role_assignments = []
+
+            for line in lines[2:]:
+                line = line.strip()
+
+                if not line:
+                    continue
+
+                line_parts = line.split('-')
+                
+                if len(line_parts) < 2:
+                    continue
+
+                role = line_parts[0].strip()
+                entity = line_parts[1].strip()
+                role_assignments.append(f"{role}={entity}")
+
+            formatted_result = f"{action}({', '.join(role_assignments)})"
+            parsed_results.append(formatted_result)
+
+        return parsed_results
 
 api.add_resource(ParseFrameApiHandler, "/")
