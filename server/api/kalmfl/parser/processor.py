@@ -150,7 +150,7 @@ class Processor:
 
 
     def import_lemma_lexicon(self):
-        f = open('api/resources/lexicons/lemma_lexicon.json')
+        f = open('server/api/resources/lexicons/lemma_lexicon.json')
         load_dict = json.load(f)
         f.close()
 
@@ -162,7 +162,7 @@ class Processor:
 
     def import_prt_verb_list(self):
 
-        f = open('api/resources/lexicons/prt_verb_lexicon.txt')
+        f = open('server/api/resources/lexicons/prt_verb_lexicon.txt')
         for line in f.readlines():
             self.prt_verbs.add(line.strip('\n'))
         f.close()
@@ -179,7 +179,7 @@ class Processor:
             self.text.append('\n\n' + line.strip('\n') + '\n\n')
             self.raw_sentences.append(line.strip('\n'))
         print(self.ontology)
-        f = open('api/kalmfl/parser/framebasedparsing/test/data/test_sentences_' + self.ontology + '.pl', 'w')
+        f = open('server/api/kalmfl/parser/framebasedparsing/test/data/test_sentences_' + self.ontology + '.pl', 'w')
         for i, sentence in enumerate(self.raw_sentences, 1):
             if '\'' in sentence:
                 f.write('test_sentence(' + str(i) + ',\'' + sentence.replace('\'', '\\\'') + '\').\n')
@@ -195,9 +195,9 @@ class Processor:
         self.init()
 
         if self.phase == 'train':
-            f = open('api/kalmfl/parser/framebasedparsing/train/data/train_' + self.ontology + '.txt', 'r')
+            f = open('server/api/kalmfl/parser/framebasedparsing/train/data/train_' + self.ontology + '.txt', 'r')
         else:
-            f = open('api/testsuite/test_' + self.ontology + '.txt', 'r')
+            f = open('server/api/testsuite/test_' + self.ontology + '.txt', 'r')
         for line in f.readlines():
             if line == '\n':
                 continue
@@ -207,7 +207,7 @@ class Processor:
         f.close()
 
         if self.phase == 'test':
-            f = open('api/kalmfl/parser/framebasedparsing/test/data/test_sentences_' + self.ontology + '.pl', 'w')
+            f = open('server/api/kalmfl/parser/framebasedparsing/test/data/test_sentences_' + self.ontology + '.pl', 'w')
             for i, sentence in enumerate(self.raw_sentences, 1):
                 if '\'' in sentence:
                     f.write('test_sentence(' + str(i) + ',\'' + sentence.replace('\'', '\\\'') + '\').\n')
@@ -380,7 +380,8 @@ class Processor:
 
 
     def serialize(self):
-        f = open('api/kalmfl/parser/framebasedparsing/' + self.phase + '/data/' + self.phase + '_dgs_' + self.ontology + '.pl', 'w')
+        print(os.getcwd())
+        f = open('server/api/kalmfl/parser/framebasedparsing/' + self.phase + '/data/' + self.phase + '_dgs_' + self.ontology + '.pl', 'w')
 
         for sent_id, sentence in enumerate(self.sentences, 1):
 
