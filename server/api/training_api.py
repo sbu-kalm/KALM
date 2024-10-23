@@ -51,7 +51,7 @@ class TrainingApiHandler(Resource):
         Returns:
             str: The output of the training process.
         """
-        command = "python3 api/kalmfl/parser/framebasedparsing/run.py --mode train --ont kalm"
+        command = "python3 api/kalmfl/parser/framebasedparsing/run.py --mode train --ont test"
         process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
         # Print stdout and stderr live to the console
