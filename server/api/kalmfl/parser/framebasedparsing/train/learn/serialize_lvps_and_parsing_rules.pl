@@ -3,7 +3,7 @@
 :- import append/3, member/2, reverse/2, length/2 from basics.
 
 serialize_gold_pairs(GoldPairs,Ontology) :-
-    string:str_cat('../goldpairs/auto_gp_',Ontology,PartialFileName),
+    string:str_cat('../../../../../resources/embeddings/relation/goldpairs/auto_gp_',Ontology,PartialFileName),
     string:str_cat(PartialFileName,'.txt',FileName),
     open(FileName,append,Stream),
     serialize_gold_pairs_helper(GoldPairs,Stream),
