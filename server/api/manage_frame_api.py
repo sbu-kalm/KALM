@@ -65,14 +65,18 @@ class ManageFrameApiHandler(Resource):
             tuple: A tuple containing a list of all frames or an error message, and an HTTP status code.
         """
         try:
-            client = create_mongo_client()
-            db = client['Frames']
-            frames = db['Frames']
-            all_frames = list(frames.find())
-            #convert ObjectId into string
-            for frame in all_frames:
-                frame['_id'] = str(frame['_id'])
-            return json.loads(json_util.dumps(all_frames)), 200
+            # client = create_mongo_client()
+            # db = client['Frames']
+            # frames = db['Frames']
+            # all_frames = list(frames.find())
+            # #convert ObjectId into string
+            # for frame in all_frames:
+            #     frame['_id'] = str(frame['_id'])
+            file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data/frames.json')
+            with open(file_path, 'r') as file:
+                all_frames = json.load(file)
+            # print(all_frames)
+            return all_frames, 200
         except Exception as e:
             print(e)
             return {'error': 'Error retrieving frames'}, 500
