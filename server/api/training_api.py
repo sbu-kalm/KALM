@@ -10,7 +10,6 @@ class TrainingApiHandler(Resource):
         sentence_index = 1 # placeholder
         # convert annotated sentence into format that KALM will understand
         train = f"train('{request.json['input_text']}','{request.json['frame']}',"
-        print(request.json['input_text'])
         pairs = "["
         for word in request.json['words']:
             if ("role" in word.keys()): # word has been annotated
@@ -24,8 +23,8 @@ class TrainingApiHandler(Resource):
         training_pl_path = "api/kalmfl/parser/framebasedparsing/train/data/train_test.pl"
 
         # Write the training data to the file
-        self.write_training_data(training_pl_path, request.json['input_text'], mode='a')
-        self.write_training_data(training_file_path, train)
+        self.write_training_data(training_pl_path, train, mode='a')
+        self.write_training_data(training_file_path, request.json['input_text'])
 
         # Start the training process
         self.start_training_process()
