@@ -219,4 +219,3 @@ train('Mary protests officials.','Protest',index(218,2),[pair('Protester',index(
 train('Mary does something at the age of 16.','Age',index(219,6),[pair('Person',index(219,1),required),pair('Age',index(219,8),required)],[],'[Person:required] did something at age of [Age:required].').
 train('Mary recieves a call from John.','Contacting',index(220,4),[pair('Communicator',index(220,6),required),pair('Addressee',index(220,1),required)],[],'[Addressee:required] receives a call from [Communicator:required].').
 train('Mary is a resident at a street.','Residence',index(221,4),[pair('Resident',index(221,1),required),pair('Location',index(221,7),required)],['occupant','dweller','inhabitant'],'[Resident:required] is a resident at [Location:required].').
-train('Mary buys a car for her daughter.','Commerce_buy',[pair('Buyer'index(1,1),required),pair('Goods'index(1,4),required),pair('Recipient'index(1,7),required)],[],'')

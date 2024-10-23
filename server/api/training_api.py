@@ -1,23 +1,28 @@
 from flask import Blueprint, request
 from flask_restful import Api, Resource
 import subprocess
+import os
 
 training_api_bp = Blueprint('training_api', __name__)
 api = Api(training_api_bp)
 
 class TrainingApiHandler(Resource):
     def post(self):
-        sentence_index = 1 # placeholder
+        sentence_index = 1  # placeholder
         # convert annotated sentence into format that KALM will understand
-        train = f"train('{request.json['input_text']}','{request.json['frame']}',"
+        train = f"\ntrain('{request.json['input_text']}','{request.json['frame']}',"
         pairs = "["
         for word in request.json['words']:
-            if ("role" in word.keys()): # word has been annotated
-                if (word['role']['name'] == "Lexical Units"):
+            if "role" in word.keys():  # word has been annotated
+                if word['role']['name'] == "Lexical Units":
                     train += f"'index({sentence_index},{word['idx'] + 1})',"
                 else:
-                    pairs += f"pair('{word['role']['name']}'index({sentence_index},{word['idx'] + 1}),required),"
-        train += pairs[:-1] + "],[],'')"
+                    pairs += f"pair('{word['role']['name']}',index({sentence_index},{word['idx'] + 1}),required),"
+        if pairs.endswith(","):
+            pairs = pairs[:-1]  # Remove the trailing comma
+        pairs += "]"
+        train += pairs + ",[],'')."
+        
         # Path to the file where the training data will be written
         training_file_path = "api/kalmfl/parser/framebasedparsing/train/data/train_test.txt"
         training_pl_path = "api/kalmfl/parser/framebasedparsing/train/data/train_test.pl"
@@ -27,7 +32,7 @@ class TrainingApiHandler(Resource):
         self.write_training_data(training_file_path, request.json['input_text'])
 
         # Start the training process
-        self.start_training_process()
+        os.system("python3 api/kalmfl/parser/framebasedparsing/run.py --mode train --ont test")
 
         with open('api/kalmfl/parser/framebasedparsing/train/data/train_dgs_test.pl', 'r') as file:
             output = file.read()
@@ -43,34 +48,5 @@ class TrainingApiHandler(Resource):
         """
         with open(file_path, mode) as file:
             file.write(data)
-
-    def start_training_process(self):
-        """
-        Starts the training process by executing the bash command and captures the output.
-
-        Returns:
-            str: The output of the training process.
-        """
-        command = "python3 api/kalmfl/parser/framebasedparsing/run.py --mode train --ont test"
-        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-
-        # Print stdout and stderr live to the console
-        stdout_lines = []
-        stderr_lines = []
-        for stdout_line in iter(process.stdout.readline, ""):
-            print(stdout_line, end='')  # Print to console
-            stdout_lines.append(stdout_line)
-        for stderr_line in iter(process.stderr.readline, ""):
-            print(stderr_line, end='')  # Print to console
-            stderr_lines.append(stderr_line)
-
-        process.stdout.close()
-        process.stderr.close()
-        process.wait()
-
-        if process.returncode == 0:
-            return ''.join(stdout_lines)
-        else:
-            return ''.join(stderr_lines)
 
 api.add_resource(TrainingApiHandler, "/annotate")
