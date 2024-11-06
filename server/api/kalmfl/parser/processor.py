@@ -150,7 +150,6 @@ class Processor:
 
 
     def import_lemma_lexicon(self):
-        print(os.getcwd())
         f = open('api/resources/lexicons/lemma_lexicon.json')
         load_dict = json.load(f)
         f.close()

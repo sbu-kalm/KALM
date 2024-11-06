@@ -11,7 +11,11 @@ import { useManageContext, useManageDispatchContext } from '../../../context/Man
 
 const columns: DataTableColumn<Frame>[] = [
     { accessor: 'name', width: '25%' },
-    { accessor: 'description', width: '75%' },
+    {
+        accessor: 'roles',
+        width: '75%',
+        render: (record) => record.roles?.map(role => role.name).join(', ') || '',
+    },
 ];
 
 const PAGE_SIZE = 100;
