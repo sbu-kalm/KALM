@@ -5,17 +5,18 @@ import os
 
 training_api_bp = Blueprint('training_api', __name__)
 api = Api(training_api_bp)
+sentence_index = 222  # placeholder, kalm's api/kalmfl/parser/framebasedparsing/train/data/train_kalm.pl ended at index 221
 
 class TrainingApiHandler(Resource):
     def post(self):
-        sentence_index = 1  # placeholder
+        global sentence_index
         # convert annotated sentence into format that KALM will understand
         train = f"\ntrain('{request.json['input_text']}','{request.json['frame']}',"
         pairs = "["
         for word in request.json['words']:
             if "role" in word.keys():  # word has been annotated
                 if word['role']['name'] == "Lexical Units":
-                    train += f"'index({sentence_index},{word['idx'] + 1})',"
+                    train += f"index({sentence_index},{word['idx'] + 1}),"
                 else:
                     pairs += f"pair('{word['role']['name']}',index({sentence_index},{word['idx'] + 1}),required),"
         if pairs.endswith(","):
@@ -36,6 +37,7 @@ class TrainingApiHandler(Resource):
 
         with open('api/kalmfl/parser/framebasedparsing/train/data/train_dgs_test.pl', 'r') as file:
             output = file.read()
+        sentence_index += 1
         
         return {"input": train, "output": output}
     def write_training_data(self, file_path, data, mode='w'):
