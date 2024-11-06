@@ -148,6 +148,7 @@ const AnnotationTool = () => {
               borderRadius: "10px",
               width: "fit-content",
               backgroundColor: "#F1F3F5",
+              whiteSpace: "pre-wrap",
             }}
           >
             {response.output}

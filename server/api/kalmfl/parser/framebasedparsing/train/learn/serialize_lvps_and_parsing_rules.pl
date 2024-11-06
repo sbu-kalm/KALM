@@ -25,6 +25,10 @@ serialize_lvp(Lexeme,Template,POS,FrameName,PathsToRoles,Synonyms,Ontology) :-
         ->
         open('../lvps/lvps_kalm.pl',append,Stream)
         ;
+        Ontology = test
+        ->
+        open('../lvps/lvps_test.pl',append,Stream)
+        ;
         open('../lvps/lvps_kalm2.pl',append,Stream)
     ),
     fmt_write(Stream,"%S(Lexeme,\'%S\',\'%S\',%S,",args(lvp,Template,FrameName,POS)),
@@ -71,6 +75,10 @@ serialize_parsing_rules(Path,Ontology) :-
             Ontology = kalm
             ->
             open('../lvps/parsing_rules_kalm.pl',append,Stream)
+            ;
+            Ontology = test
+            ->
+            open('../lvps/parsing_rules_test.pl',append,Stream)
             ;
             open('../lvps/parsing_rules_kalm2.pl',append,Stream)
         ),
@@ -158,6 +166,10 @@ serialize_learned_sentence(Sentence,FrameName,LUIndex,LabeledRoles,Synonyms,lvp(
         Ontology = kalm
         ->
         open('../lvps/learned_sentences_kalm.pl',append,Stream)
+        ;
+        Ontology = test
+        ->
+        open('../lvps/learned_sentences_test.pl',append,Stream)
         ;
         open('../lvps/learned_sentences_kalm2.pl',append,Stream)
     ),
