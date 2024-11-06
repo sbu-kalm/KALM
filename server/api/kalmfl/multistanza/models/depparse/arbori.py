@@ -235,7 +235,7 @@ def contains_cycle(edges):
         return False
 
     while len(unvisited) > 0:
-        v = random.sample(unvisited, 1)[0]
+        v = random.sample(sorted(unvisited), 1)[0]
 
         cycle_found = dfs(v)
         if cycle_found:

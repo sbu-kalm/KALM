@@ -381,7 +381,7 @@ class Processor:
 
     def serialize(self):
         print(os.getcwd())
-        f = open('server/api/kalmfl/parser/framebasedparsing/' + self.phase + '/data/' + self.phase + '_dgs_' + self.ontology + '.pl', 'w')
+        f = open('api/kalmfl/parser/framebasedparsing/' + self.phase + '/data/' + self.phase + '_dgs_' + self.ontology + '.pl', 'w')
 
         for sent_id, sentence in enumerate(self.sentences, 1):
 

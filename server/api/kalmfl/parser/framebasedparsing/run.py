@@ -65,6 +65,6 @@ f = open('api/config/xsb.properties', 'r')
 lines = f.read().split('\n')
 xsb_path_str = lines[3].split('=')[1]
 f.close()
-os.chdir('server/api/kalmfl/parser/framebasedparsing/' + args.mode + '/run')
+os.chdir('api/kalmfl/parser/framebasedparsing/' + args.mode + '/run')
 subprocess.call(xsb_path_str + " -e \"[" + args.mode + "_" + args.ont + "], halt.\"", shell=True)
 os.chdir('../../../')

@@ -7,45 +7,45 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'api'))
 
-def parse_frame_ontology(input_file, output_file):
+def parse_frame_ont_line(line):
+    frame_pattern = re.compile(r"fp\('([^']+)'\s*,\s*\[(.*)\]\)\.")
+    property_pattern = re.compile(r"property\('([^']+)'\s*,\s*\[(.*?)\](?:,\s*\[(.*?)\])?(?:,\s*\[(.*?)\])?\)")
+
+    frame_match = frame_pattern.match(line)
+    if not frame_match:
+        return None
+
+    frame_name = frame_match.group(1)
+    properties_str = frame_match.group(2)
+
+    roles = []
+    for prop_match in property_pattern.finditer(properties_str):
+        role_name = prop_match.group(1)
+        values_str = prop_match.group(2)
+        values = [v.strip().strip("'") for v in values_str.split(',')]
+        types_str = prop_match.group(3) or ""
+        types = [t.strip().strip("'") for t in types_str.split(',')] if types_str else []
+        relations_str = prop_match.group(4) or ""
+        relations = [r.strip().strip("'") for r in relations_str.split(',')] if relations_str else []
+        roles.append({"name": role_name, "values": values, "type": types, "relation": relations})
+
+    return {"name": frame_name, "roles": roles, "description": ""}
+
+def convert_frame_ont_to_json(frame_ont_path, frames_json_path):
     frames = []
-
-    with open(input_file, 'r') as file:
+    with open(frame_ont_path, 'r') as file:
         for line in file:
-            match = re.match(r"fp\('([^']+)',\[(.+)\]\)\.", line.strip())
-            if match:
-                frame_name = match.group(1)
-                properties_str = match.group(2)
-                properties = []
+            frame = parse_frame_ont_line(line)
+            if frame:
+                frames.append(frame)
 
-                prop_matches = re.findall(r"property\('([^']+)',\[(.*?)\](?:,\[(.*?)\])?(?:,\[(.*?)\])?\)", properties_str)
-                for prop_match in prop_matches:
-                    prop_name = prop_match[0]
-                    prop_values = prop_match[1].split(',')
-                    prop_values = [val.strip().strip("'") for val in prop_values if val]
-                    prop_type = prop_match[2].split(',') if prop_match[2] else []
-                    prop_type = [val.strip().strip("'") for val in prop_type if val]
-                    prop_rel = prop_match[3].split(',') if prop_match[3] else []
-                    prop_rel = [val.strip().strip("'") for val in prop_rel if val]
+    with open(frames_json_path, 'w') as file:
+        json.dump(frames, file, indent=4)
 
-                    properties.append({
-                        'name': prop_name,
-                        'values': prop_values,
-                        'type': prop_type,
-                        'relation': prop_rel
-                    })
-
-                frames.append({
-                    'frame': frame_name,
-                    'properties': properties
-                })
-
-    with open(output_file, 'w') as json_file:
-        json.dump(frames, json_file, indent=4)
 
 # Run this to download the stanza library necessary to run KALM
 # stanza.download()
 
 # Run this if frames.json does not exist in server/data
-# parse_frame_ontology('api/resources/frameont/frame_ont.txt', 'data/frames.json')
+# convert_frame_ont_to_json('api/resources/frameont/frame_ont.txt', 'data/frames.json')
     

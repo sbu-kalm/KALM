@@ -1,7 +1,7 @@
 [
     {
-        "frame": "Being_employed",
-        "properties": [
+        "name": "Being_employed",
+        "roles": [
             {
                 "name": "Employee",
                 "values": [
@@ -50,11 +50,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Age",
-        "properties": [
+        "name": "Age",
+        "roles": [
             {
                 "name": "Age",
                 "values": [
@@ -73,11 +74,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Human_gender",
-        "properties": [
+        "name": "Human_gender",
+        "roles": [
             {
                 "name": "Person",
                 "values": [
@@ -96,11 +98,12 @@
                     "hyponym"
                 ]
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Residence",
-        "properties": [
+        "name": "Residence",
+        "roles": [
             {
                 "name": "Resident",
                 "values": [
@@ -125,11 +128,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Being_born",
-        "properties": [
+        "name": "Being_born",
+        "roles": [
             {
                 "name": "Person",
                 "values": [
@@ -156,11 +160,12 @@
                 ],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Renting",
-        "properties": [
+        "name": "Renting",
+        "roles": [
             {
                 "name": "Goods",
                 "values": [
@@ -204,11 +209,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Commerce_buy",
-        "properties": [
+        "name": "Commerce_buy",
+        "roles": [
             {
                 "name": "Buyer",
                 "values": [
@@ -264,11 +270,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Possession",
-        "properties": [
+        "name": "Possession",
+        "roles": [
             {
                 "name": "Owner",
                 "values": [
@@ -286,11 +293,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Cooking",
-        "properties": [
+        "name": "Cooking",
+        "roles": [
             {
                 "name": "Cook",
                 "values": [
@@ -325,11 +333,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Dressing",
-        "properties": [
+        "name": "Dressing",
+        "roles": [
             {
                 "name": "Wearer",
                 "values": [
@@ -346,11 +355,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Create_organization",
-        "properties": [
+        "name": "Create_organization",
+        "roles": [
             {
                 "name": "Creator",
                 "values": [
@@ -386,11 +396,12 @@
                 ],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Travel",
-        "properties": [
+        "name": "Travel",
+        "roles": [
             {
                 "name": "Traveler",
                 "values": [
@@ -416,11 +427,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Education",
-        "properties": [
+        "name": "Education",
+        "roles": [
             {
                 "name": "Student",
                 "values": [
@@ -454,11 +466,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Giving",
-        "properties": [
+        "name": "Giving",
+        "roles": [
             {
                 "name": "Donor",
                 "values": [
@@ -488,11 +501,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Personal_relationship",
-        "properties": [
+        "name": "Personal_relationship",
+        "roles": [
             {
                 "name": "Mother",
                 "values": [
@@ -573,11 +587,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "People_by_origin",
-        "properties": [
+        "name": "People_by_origin",
+        "roles": [
             {
                 "name": "Person",
                 "values": [
@@ -596,11 +611,12 @@
                     "hyponym"
                 ]
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "People_by_religion",
-        "properties": [
+        "name": "People_by_religion",
+        "roles": [
             {
                 "name": "Person",
                 "values": [
@@ -619,11 +635,12 @@
                     "hyponym"
                 ]
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Collaboration",
-        "properties": [
+        "name": "Collaboration",
+        "roles": [
             {
                 "name": "Partner1",
                 "values": [
@@ -650,11 +667,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Quitting",
-        "properties": [
+        "name": "Quitting",
+        "roles": [
             {
                 "name": "Employee",
                 "values": [
@@ -687,11 +705,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Medical_conditions",
-        "properties": [
+        "name": "Medical_conditions",
+        "roles": [
             {
                 "name": "Patient",
                 "values": [
@@ -708,11 +727,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Award",
-        "properties": [
+        "name": "Award",
+        "roles": [
             {
                 "name": "Person",
                 "values": [
@@ -747,11 +767,12 @@
                 ],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Death",
-        "properties": [
+        "name": "Death",
+        "roles": [
             {
                 "name": "Protagonist",
                 "values": [
@@ -787,11 +808,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Using",
-        "properties": [
+        "name": "Using",
+        "roles": [
             {
                 "name": "Agent",
                 "values": [
@@ -809,11 +831,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Building",
-        "properties": [
+        "name": "Building",
+        "roles": [
             {
                 "name": "Agent",
                 "values": [
@@ -840,11 +863,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Killing",
-        "properties": [
+        "name": "Killing",
+        "roles": [
             {
                 "name": "Killer",
                 "values": [
@@ -870,11 +894,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Arrest",
-        "properties": [
+        "name": "Arrest",
+        "roles": [
             {
                 "name": "Authorities",
                 "values": [
@@ -900,11 +925,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Attack",
-        "properties": [
+        "name": "Attack",
+        "roles": [
             {
                 "name": "Assailant",
                 "values": [
@@ -923,11 +949,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Leadership",
-        "properties": [
+        "name": "Leadership",
+        "roles": [
             {
                 "name": "Leader",
                 "values": [
@@ -954,11 +981,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Manufacturing",
-        "properties": [
+        "name": "Manufacturing",
+        "roles": [
             {
                 "name": "Producer",
                 "values": [
@@ -977,11 +1005,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Earnings",
-        "properties": [
+        "name": "Earnings",
+        "roles": [
             {
                 "name": "Earner",
                 "values": [
@@ -1011,11 +1040,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Beat_opponent",
-        "properties": [
+        "name": "Beat_opponent",
+        "roles": [
             {
                 "name": "Winner",
                 "values": [
@@ -1046,11 +1076,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Cure",
-        "properties": [
+        "name": "Cure",
+        "roles": [
             {
                 "name": "Healer",
                 "values": [
@@ -1085,11 +1116,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Contacting",
-        "properties": [
+        "name": "Contacting",
+        "roles": [
             {
                 "name": "Communicator",
                 "values": [
@@ -1108,11 +1140,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Protest",
-        "properties": [
+        "name": "Protest",
+        "roles": [
             {
                 "name": "Protester",
                 "values": [
@@ -1132,11 +1165,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Submitting_documents",
-        "properties": [
+        "name": "Submitting_documents",
+        "roles": [
             {
                 "name": "Submitter",
                 "values": [
@@ -1163,11 +1197,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Performing",
-        "properties": [
+        "name": "Performing",
+        "roles": [
             {
                 "name": "Performer",
                 "values": [
@@ -1203,11 +1238,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Releasing_from_custody",
-        "properties": [
+        "name": "Releasing_from_custody",
+        "roles": [
             {
                 "name": "Suspect",
                 "values": [
@@ -1233,11 +1269,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Sign_agreement",
-        "properties": [
+        "name": "Sign_agreement",
+        "roles": [
             {
                 "name": "Signatory",
                 "values": [
@@ -1257,11 +1294,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Publishing",
-        "properties": [
+        "name": "Publishing",
+        "roles": [
             {
                 "name": "Author",
                 "values": [
@@ -1308,11 +1346,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Losing",
-        "properties": [
+        "name": "Losing",
+        "roles": [
             {
                 "name": "Owner",
                 "values": [
@@ -1344,11 +1383,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Surrendering",
-        "properties": [
+        "name": "Surrendering",
+        "roles": [
             {
                 "name": "Authorities",
                 "values": [
@@ -1375,11 +1415,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Text_creation",
-        "properties": [
+        "name": "Text_creation",
+        "roles": [
             {
                 "name": "Author",
                 "values": [
@@ -1397,11 +1438,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Theft",
-        "properties": [
+        "name": "Theft",
+        "roles": [
             {
                 "name": "Perpetrator",
                 "values": [
@@ -1429,11 +1471,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Undressing",
-        "properties": [
+        "name": "Undressing",
+        "roles": [
             {
                 "name": "Wearer",
                 "values": [
@@ -1450,11 +1493,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Growing_food",
-        "properties": [
+        "name": "Growing_food",
+        "roles": [
             {
                 "name": "Grower",
                 "values": [
@@ -1472,11 +1516,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Participation",
-        "properties": [
+        "name": "Participation",
+        "roles": [
             {
                 "name": "Participant",
                 "values": [
@@ -1504,11 +1549,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Borrow_lend",
-        "properties": [
+        "name": "Borrow_lend",
+        "roles": [
             {
                 "name": "Borrower",
                 "values": [
@@ -1537,11 +1583,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Restaurant",
-        "properties": [
+        "name": "Restaurant",
+        "roles": [
             {
                 "name": "Restaurant",
                 "values": [
@@ -1577,11 +1624,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Import_export",
-        "properties": [
+        "name": "Import_export",
+        "roles": [
             {
                 "name": "Importer",
                 "values": [
@@ -1618,11 +1666,12 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     },
     {
-        "frame": "Scheduling",
-        "properties": [
+        "name": "Scheduling",
+        "roles": [
             {
                 "name": "Agent",
                 "values": [
@@ -1651,6 +1700,7 @@
                 "type": [],
                 "relation": []
             }
-        ]
+        ],
+        "description": ""
     }
 ]
