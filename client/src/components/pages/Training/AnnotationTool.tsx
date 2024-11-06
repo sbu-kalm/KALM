@@ -108,17 +108,20 @@ const AnnotationTool = () => {
             </div> : 
             <Flex gap={"xl"}>
                 <Flex gap={"sm"} direction={"column"} style={{minWidth: "230px"}}>
-                    <Title order={4} c="blue">Lexical Unit</Title>
+                    {/* <Title order={4} c="blue">Lexical Unit</Title>
                     <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px", width: "100%"}}>
                         <Flex direction={"column"} style={{height: "100px", overflowY: "scroll", flexShrink: 0, width: "100%"}}>
                             <Button onClick={() => clickRole(0)} style={{height: "35px", backgroundColor: `${activeItemIdx === 0 && roles.length > 0 ? roles[0].color : "white"}`}} fullWidth justify={"flex-start"} fw={500} c={"black"}>
                                 {roles.length > 0 ? roles[0].name : "Lexical Units"}
                             </Button>
                         </Flex>
-                    </div>
+                    </div> */}
                     <Title order={4} c="blue">Roles</Title>
                     <div style={{border: "1px solid #C4C4C4", borderRadius: "10px", padding: "10px", width: "100%"}}>
-                        <Flex direction={"column"} style={{height: "300px", overflowY: "scroll", flexShrink: 0, width: "100%"}}>
+                        <Flex direction={"column"} style={{height: "415px", overflowY: "scroll", flexShrink: 0, width: "100%"}}>
+                            <Button onClick={() => clickRole(0)} style={{height: "35px", backgroundColor: `${activeItemIdx === 0 && roles.length > 0 ? roles[0].color : "white"}`}} fullWidth justify={"flex-start"} fw={500} c={"black"}>
+                                {roles.length > 0 ? roles[0].name : "Lexical Units"}
+                            </Button>
                             {roles.slice(1).map((role, index) => {
                                 return <div>
                                         <Button onClick={() => clickRole(index + 1)} style={{height: "35px", backgroundColor: `${activeItemIdx !== null && roles[activeItemIdx].name === role.name ? role.color : 'white'}`}} fullWidth justify={"flex-start"} key={index} fw={500} c={"black"}>
