@@ -12,6 +12,13 @@ interface Word {
     role?: Role
 }
 
+function parseLvpOutput(output : string) {
+    const lvpIndex = output.indexOf("lvp");
+    if (lvpIndex === -1)
+        return output;
+    return output.substring(lvpIndex);
+}
+
 // send annotated sentence to KALM
 export const sendAnnotation = async ({text, frame, words}: {text: string, frame: string, words: Word[]}) => {
     try {
@@ -27,6 +34,7 @@ export const sendAnnotation = async ({text, frame, words}: {text: string, frame:
         console.log(res);
         if (res.ok) {
             const resData = await res.json();
+            resData.output = parseLvpOutput(resData.output);
             return resData; // get valence pattern back
         } else {
             console.error("Error in submitting training sentence ", res.status, res.statusText);
