@@ -3,7 +3,7 @@ const baseUrl = "http://127.0.0.1:5000";
 
 export const getRoles = async ({frameId}: {frameId: string}): Promise<Role[]> => {
     try {
-        const res = await fetch(`http://127.0.0.1:5000/flask/frames/${frameId}`, {
+        const res = await fetch(`${baseUrl}/flask/frames/${frameId}`, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });
