@@ -24,3 +24,6 @@ app.register_blueprint(manage_frame_api_bp, url_prefix='/flask')
 app.register_blueprint(parse_frame_api_bp, url_prefix='/parse')
 app.register_blueprint(training_api_bp, url_prefix='/training')
 app.register_blueprint(clean_pattern_api_bp, url_prefix='/clean')
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0')
