@@ -1,0 +1,596 @@
+{
+
+  "relation_types": [
+    {
+      "type": "nsubj",
+      "labels": ["nsubj"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "obj",
+      "labels": ["obj"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "iobj",
+      "labels": ["iobj"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "csubj",
+      "labels": ["csubj"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "ccomp",
+      "labels": ["ccomp"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "xcomp",
+      "labels": ["xcomp"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "obl",
+      "labels": ["obl"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "vocative",
+      "labels": ["vocative"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "expl",
+      "labels": ["expl"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "dislocated",
+      "labels": ["dislocated"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "advcl",
+      "labels": ["advcl"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "advmod",
+      "labels": ["advmod"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "discourse",
+      "labels": ["discourse"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "aux",
+      "labels": ["aux"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "cop",
+      "labels": ["cop"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },{
+      "type": "mark",
+      "labels": ["mark"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "nmod",
+      "labels": ["nmod"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "appos",
+      "labels": ["appos"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "nummod",
+      "labels": ["nummod"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "acl",
+      "labels": ["acl"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "amod",
+      "labels": ["amod"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "det",
+      "labels": ["det"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "clf",
+      "labels": ["clf"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "case",
+      "labels": ["case"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "conj",
+      "labels": ["conj"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "cc",
+      "labels": ["cc"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "fixed",
+      "labels": ["fixed"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "flat",
+      "labels": ["flat"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "compound",
+      "labels": ["compound"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "labels": ["list"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "paratixis",
+      "labels": ["paratixis"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "orphan",
+      "labels": ["orphan"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "goeswith",
+      "labels": ["goeswith"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "reparandum",
+      "labels": ["reparandum"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "punct",
+      "labels": ["punct"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "root",
+      "labels": ["root"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    },
+    {
+      "type": "dep",
+      "labels": ["dep"],
+      "dashArray": "3,3",
+      "color": "purple",
+      "args": [
+        {
+          "role": "tail",
+          "targets": []
+        },
+        {
+          "role": "head",
+          "targets": []
+        }
+      ]
+    }
+  ]
+}

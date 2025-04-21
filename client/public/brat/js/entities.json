@@ -1,0 +1,106 @@
+{
+  "entity_types": [
+    {
+      "type"   : "ADJ",
+      "labels" : ["Adjective", "ADJ"],
+      "bgColor": "#FFFDA8",
+      "borderColor": "#a9a500"
+    },
+    {
+      "type"   : "ADP",
+      "labels" : ["Adposition", "ADP"],
+      "bgColor": "#FFE8BE",
+      "borderColor": "#b27300"
+    },
+    {
+      "type"   : "ADV",
+      "labels" : ["Adverb", "ADV"],
+      "bgColor": "#FFFDA8",
+      "borderColor": "#a9a500"
+    },
+    {
+      "type"   : "AUX",
+      "labels" : ["Auxiliary", "AUX"],
+      "bgColor": "#ADF6A2",
+      "borderColor": "#20940e"
+    },
+    {
+      "type"   : "CCONJ",
+      "labels" : ["CCONJ", "CCONJ"],
+      "bgColor": "#FFFFFF",
+      "borderColor": "#666666"
+    },
+    {
+      "type"   : "DET",
+      "labels" : ["Determiner", "DET"],
+      "bgColor": "#CCADF6",
+      "borderColor": "#491097"
+    },
+    {
+      "type"   : "INTJ",
+      "labels" : ["Interjection", "INTJ"],
+      "bgColor": "#E3E3E3",
+      "borderColor": "#5a5a5a"
+    },
+    {
+      "type"   : "NOUN",
+      "labels" : ["Noun", "NOUN"],
+      "bgColor": "#A4BCED",
+      "borderColor": "#1a3d85"
+    },
+    {
+      "type"   : "NUM",
+      "labels" : ["Numeral", "NUM"],
+      "bgColor": "#CCADF6",
+      "borderColor": "#491097"
+    },
+    {
+      "type"   : "PART",
+      "labels" : ["Partical", "PART"],
+      "bgColor": "#CCDAF6",
+      "borderColor": "#1a4499"
+    },
+    {
+      "type"   : "PRON",
+      "labels" : ["PRON", "PRON"],
+      "bgColor": "#FFFDA8",
+      "borderColor": "#a9a500"
+    },
+    {
+      "type"   : "PROPN",
+      "labels" : ["Proper Noun", "PROPN"],
+      "bgColor": "#A4BCED",
+      "borderColor": "#1a3d85"
+    },
+    {
+      "type"   : "PUNCT",
+      "labels" : ["Punctuation", "PUNCT"],
+      "bgColor": "#E3E3E3",
+      "borderColor": "#5a5a5a"
+    },
+    {
+      "type"   : "SCONJ",
+      "labels" : ["Subordinating Conjunction", "SCONJ"],
+      "bgColor": "#E4CBF6",
+      "borderColor": "#641a99"
+    },
+    {
+      "type"   : "SYM",
+      "labels" : ["Symbol", "SYM"],
+      "bgColor": "#E4CBF6",
+      "borderColor": "#641a99"
+    },
+    {
+      "type"   : "VERB",
+      "labels" : ["Verb", "VERB"],
+      "bgColor": "#ADF6A2",
+      "borderColor": "#20940e"
+    },
+    {
+      "type"   : "X",
+      "labels" : ["Other", "X"],
+      "bgColor": "#7fa2ff",
+      "borderColor": "darken"
+    }
+  ]
+}
