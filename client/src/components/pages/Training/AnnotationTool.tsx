@@ -4,6 +4,7 @@ import tinycolor from "tinycolor2";
 import { useTrainingContext } from "../../../context/TrainingContextProvider";
 import { sendAnnotation } from "../../../api/TrainingApiAccessor";
 import { getFrames } from "../../../api/GeneralApiAccessor";
+import BratVisualizer from "../../global/Brat";
 
 interface Role {
   name: string;
@@ -19,6 +20,7 @@ interface Word {
 interface Response {
   input: string;
   output: string;
+  bratData: any;
 }
 
 const AnnotationTool = () => {
@@ -120,40 +122,46 @@ const AnnotationTool = () => {
       </Flex>
 
       {response ? (
-        <div>
-          <Title order={4} c="blue">
-            Input to KALM Training
-          </Title>
-          <Text
-            size="sm"
-            style={{
-              padding: "10px 15px",
-              margin: "10px 0px",
-              borderRadius: "10px",
-              width: "fit-content",
-              backgroundColor: "#F1F3F5",
-            }}
-          >
-            {response.input}
-          </Text>
-          <br />
-          <Title order={4} c="blue">
-            Output to KALM Training
-          </Title>
-          <Text
-            size="sm"
-            style={{
-              padding: "10px 15px",
-              margin: "10px 0px",
-              borderRadius: "10px",
-              width: "fit-content",
-              backgroundColor: "#F1F3F5",
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            {response.output}
-          </Text>
-        </div>
+        <>
+          <div>
+            <Title order={4} c="blue">
+              Input to KALM Training
+            </Title>
+            <Text
+              size="sm"
+              style={{
+                padding: "10px 15px",
+                margin: "10px 0px",
+                borderRadius: "10px",
+                width: "fit-content",
+                backgroundColor: "#F1F3F5",
+              }}
+            >
+              {response.input}
+            </Text>
+            <br />
+            <Title order={4} c="blue">
+              Output to KALM Training
+            </Title>
+            <Text
+              size="sm"
+              style={{
+                padding: "10px 15px",
+                margin: "10px 0px",
+                borderRadius: "10px",
+                width: "fit-content",
+                backgroundColor: "#F1F3F5",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {response.output}
+            </Text>
+          </div>
+          <BratVisualizer
+            collData={response.bratData.collData}
+            docData={response.bratData.docData}
+          />
+        </>
       ) : (
         <Flex gap={"xl"}>
           <Flex gap={"sm"} direction={"column"} style={{ minWidth: "230px" }}>
