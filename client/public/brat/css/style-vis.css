@@ -45,30 +45,30 @@ text {
   display: none;
 }
 
-svg {
+#brat_container svg {
   width: 100%;
   height: 1px;
   border: 1px solid #7fa2ff;
   font-size: 15px;
   /* font-size: 14px; */
 }
-svg.reselect {
+#brat_container svg.reselect {
   border: 1px solid #ff3333;
 }
 
 /* "basic" font */
-text {
+#brat_container text {
   font-size: 13px;
   font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
   0% { color: #9999ff; margin-top: 0; }
   50% { color: #ffffff; margin-top: 7px; }
   100% { color: #9999ff; margin-top: 0; }
 }
 
-path {
+#brat_container path {
   pointer-events: none;
 }
 
