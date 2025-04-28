@@ -18,7 +18,7 @@ import Training from "./components/pages/Training/Training";
 import CleanPattern from "./components/pages/CleanPattern/CleanPattern";
 import QuestionAnswer from "./components/pages/QuestionAnswer";
 import FAQ from "./components/pages/FAQ";
-import BratVisualizer from "./components/pages/Brat";
+import BratVisualizer from "./components/global/Brat";
 import "../src/css/NavbarStyle.css";
 import { ManageContextProvider } from "./context/ManageContextProvider";
 import { TrainingContextProvider } from "./context/TrainingContextProvider";
@@ -128,7 +128,6 @@ function App() {
             />
             <Route path="/questionAnswer" element={<QuestionAnswer />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/brat-test" element={<BratVisualizer />} />
           </Routes>
         </AppShell.Main>
       </AppShell>
