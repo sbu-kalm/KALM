@@ -2,6 +2,7 @@ from flask import Blueprint, request
 from flask_restful import Api, Resource
 import subprocess
 import os
+from brat import get_brat_data
 
 training_api_bp = Blueprint('training_api', __name__)
 api = Api(training_api_bp)
@@ -37,8 +38,14 @@ class TrainingApiHandler(Resource):
         with open('api/kalmfl/parser/framebasedparsing/train/lvps/lvps_test.pl', 'r') as file:
             output = file.read()
         sentence_index += 1
+        collData, doc = get_brat_data(request.json['input_text'])
+
+        bratData = {
+            "collData": collData,
+            "doc": doc
+        }
         
-        return {"input": train, "output": output}
+        return {"input": train, "output": output, "bratData": bratData}
     def write_training_data(self, file_path, data, mode='w'):
         """
         Writes the training data to the specified file.
