@@ -1,7 +1,12 @@
 import { useEffect } from "react";
 declare var Util: any;
 
-const BratVisualizer = (collData : any, docData : any) => {
+export interface BratProps {
+  collData: Object;
+  docData: Object;
+}
+
+const BratVisualizer = ({ collData, docData }: BratProps) => {
   useEffect(() => {
     const loadScript = (src: string) =>
       new Promise((resolve, reject) => {
@@ -30,18 +35,22 @@ const BratVisualizer = (collData : any, docData : any) => {
         await loadScript(`${bratLocation}/client/src/visualizer.js`);
 
         if (typeof Util !== "undefined") {
-            const webFontURLs = [
-              bratLocation + "/static/fonts/Astloch-Bold.ttf",
-              bratLocation + "/static/fonts/PT_Sans-Caption-Web-Regular.ttf",
-              bratLocation + "/static/fonts/Liberation_Sans-Regular.ttf",
-            ];  
+          const webFontURLs = [
+            bratLocation + "/static/fonts/Astloch-Bold.ttf",
+            bratLocation + "/static/fonts/PT_Sans-Caption-Web-Regular.ttf",
+            bratLocation + "/static/fonts/Liberation_Sans-Regular.ttf",
+          ];
 
-            Util.embed("brat_container", collData, docData, webFontURLs);
+          Util.embed(
+            "brat_container",
+            collData,
+            docData,
+            webFontURLs
+          );
         } else {
           console.error("Util is not loaded.");
         }
-
-      } catch(error) {
+      } catch (error) {
         console.error(error);
       }
     })();

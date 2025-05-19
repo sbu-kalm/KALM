@@ -5,6 +5,7 @@ import { useTrainingContext } from "../../../context/TrainingContextProvider";
 import { sendAnnotation } from "../../../api/TrainingApiAccessor";
 import { getFrames } from "../../../api/GeneralApiAccessor";
 import BratVisualizer from "../../global/Brat";
+import { BratProps } from "../../global/Brat";
 
 interface Role {
   name: string;
@@ -20,7 +21,7 @@ interface Word {
 interface Response {
   input: string;
   output: string;
-  bratData: any;
+  bratData: BratProps;
 }
 
 const AnnotationTool = () => {
@@ -157,6 +158,7 @@ const AnnotationTool = () => {
               {response.output}
             </Text>
           </div>
+        
           <BratVisualizer
             collData={response.bratData.collData}
             docData={response.bratData.docData}
