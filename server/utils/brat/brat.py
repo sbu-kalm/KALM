@@ -4,7 +4,7 @@ import stanza
 # stanza.download('en')
 
 class Node:
-    def __init__(self,id, text,lemm, upos, xpos, feats, head, deprel, misc):
+    def __init__(self,id, text,lemm, upos, xpos, feats, head, deprel, start, end):
         self.id = id
         self.text = text
         self.lemm = lemm
@@ -13,23 +13,21 @@ class Node:
         self.feats = feats
         self.headList = head
         self.deprelList = deprel
-        self.misc = misc
-        resultList = self.getStartEnd()
-        self.start = resultList[0]
-        self.end = resultList[1]
+        self.start = start
+        self.end = end
 
-    def getStartEnd(self):
-        m = self.misc
-        m = m.split("|")
-        startList = m[0].split("=")
-        start = int(startList[1])
-        endList = m[1].split("=")
-        end = int(endList[1])
-        result = [start,end]
-        return result
+    # def getStartEnd(self):
+    #     m = self.misc
+    #     m = m.split("|")
+    #     startList = m[0].split("=")
+    #     start = int(startList[1])
+    #     endList = m[1].split("=")
+    #     end = int(endList[1])
+    #     result = [start,end]
+    #     return result
     
 def get_brat_data(sent):
-    nlp = stanza.Pipeline('en',processors="tokenize,pos,lemma,depparsealt")
+    nlp = stanza.Pipeline('en',processors="tokenize,pos,lemma,depparse")
     firstSentence = nlp(sent).sentences[0]
     modifiedSentence = modifySentence(firstSentence)
     modifiedFirstSentence = nlp(modifiedSentence).sentences[0]
@@ -75,7 +73,7 @@ def getKAnnotationDocForSentence(sent,parsedSent,k):
     return collData, doc
 
 def getEntityTypes():
-    entityPath = 'entities.json'
+    entityPath = 'utils/brat/entities.json'
     with open(entityPath, 'r') as f:
         entitiesJson = json.load(f)
 
@@ -83,7 +81,7 @@ def getEntityTypes():
     return entityTypeList
 
 def getRelationTypes():
-    relationPath = 'relation_types.json'
+    relationPath = 'utils/brat/relation_types.json'
     with open(relationPath,'r') as f:
         relationJson = json.load(f)
     relationTypeList = relationJson["relation_types"]
@@ -96,13 +94,13 @@ def getRelationListFromNodes(nodeList,k):
     count = 0 #counts the number of relations
     for i in range(0,len(nodeList)):
         tempNode = nodeList[i]
-        if str(tempNode.headList[k]) != "0":
+        if tempNode.headList != 0:
             count = count + 1
             tempList = []
             tempR = str(r+str(count))
             tempList.append(tempR)
-            tempList.append(str(tempNode.deprelList[k]))
-            indexArray = [["tail",str(t+str(tempNode.headList[k]))],["head",str(t+str(tempNode.id))]]
+            tempList.append(tempNode.deprelList)
+            indexArray = [["tail",str(t+str(tempNode.headList))],["head",str(t+str(tempNode.id))]]
             tempList.append(indexArray)
             relationList.append(tempList)
     return relationList
@@ -133,7 +131,7 @@ def getNodeListForASenetnce(sent):
     for i in range(0,numOfWords):
         word = wordList[i]
         newNode = Node(word.id, word.text,word.lemma,word.upos
-                       ,word.xpos,word.feats,word.alt_head,word.alt_deprel,word.misc)
+                       ,word.xpos,word.feats,word.head,word.deprel,word.start_char,word.end_char)
         nodesList.append(newNode)
     return nodesList
 

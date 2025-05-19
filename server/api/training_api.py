@@ -38,11 +38,11 @@ class TrainingApiHandler(Resource):
         with open('api/kalmfl/parser/framebasedparsing/train/lvps/lvps_test.pl', 'r') as file:
             output = file.read()
         sentence_index += 1
-        collData, doc = get_brat_data(request.json['input_text'])
+        collData, docData = get_brat_data(request.json['input_text'])
 
         bratData = {
             "collData": collData,
-            "doc": doc
+            "docData": docData
         }
         
         return {"input": train, "output": output, "bratData": bratData}
