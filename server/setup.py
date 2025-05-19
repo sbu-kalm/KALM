@@ -1,4 +1,3 @@
-import kalmfl.multistanza as stanza
 import json
 import re
 
@@ -6,6 +5,9 @@ import re
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'api'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'api/kalmfl'))
+
+import kalmfl.multistanza as stanza
 
 def parse_frame_ont_line(line):
     frame_pattern = re.compile(r"fp\('([^']+)'\s*,\s*\[(.*)\]\)\.")
@@ -44,7 +46,7 @@ def convert_frame_ont_to_json(frame_ont_path, frames_json_path):
 
 
 # Run this to download the stanza library necessary to run KALM
-# stanza.download()
+stanza.download()
 
 # Run this if frames.json does not exist in server/data
 # convert_frame_ont_to_json('api/resources/frameont/frame_ont.txt', 'data/frames.json')
